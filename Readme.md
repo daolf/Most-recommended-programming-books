@@ -1,4 +1,4 @@
-Full methodology available [here]()
+Full methodology available [here](https://www.daolf.com/posts/best-programming-books/)
 
 ## 25 most recommended programming books of all-time
 
