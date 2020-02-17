@@ -4,7 +4,7 @@ Full methodology available [here]()
 
 
 ### 25. [Compilers](https://amzn.to/2UXmXYQ) by Alfred V. Aho / Monica S. Lam / Ravi Sethi / Jeffrey D. Ullman (% recommended)
-![](/images/programming_book_list/26.jpg#center)
+![](https://www.daolf.com/images/programming_book_list/26.jpg#center)
 "Compilers: Principles, Techniques and Tools, known to professors, students, and developers worldwide as the "Dragon Book," is available in a new edition.  Every chapter has been completely revised to reflect developments in software engineering, programming languages, and computer architecture that have occurred since 1986, when the last edition published.  The authors, recognizing that few readers will ever go on to construct a compiler, retain their focus on the broader set of problems faced in software design and software development."[Amazon.com](https://amzn.to/2UXmXYQ)
 
 ### 24. [Continuous Delivery](https://amzn.to/2OZ9JXS) by Jez Humble & David Farley (% recommended)
@@ -24,7 +24,7 @@ managing all changes, from check-in to release. Finally, they discuss the “eco
 support continuous delivery, from infrastructure, data and configuration management to governance." [Amazon.com](https://amzn.to/2OZ9JXS)
 
 ### 23. [Algorithms](https://amzn.to/2u2vpuG) by Robert Sedgewick & Kevin Wayne (% recommended)
-![](/images/programming_book_list/24.jpg#center)
+![](https://www.daolf.com/images/programming_book_list/24.jpg#center)
 "The algorithms in this book represent a body of knowledge developed over the last 50 years that has become indispensable, not just for professional programmers and computer science students but for any student with interests in science, mathematics, and engineering, not to mention students who use computation in the liberal arts."[Amazon.com](https://amzn.to/2u2vpuG)
 
 ### 22. [The Self-Taught Programmer](https://amzn.to/325cN9T) by Cory Althoff (% recommended)
