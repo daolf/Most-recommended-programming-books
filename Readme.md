@@ -254,4 +254,6 @@ I hope you enjoyed this article.
 
 I must admit, this one took a while to write. If you liked this article and feel like Twitter would like it please do not hesitate to love and retweet, it really does help :). 
 
+See also: [Most recommended startup books](https://github.com/daolf/Most-recommended-startup-books)
+
 *Originally publicated on my [personnal blog](https://www.daolf.com/posts/best-programming-books/)*
