@@ -247,7 +247,7 @@ Although the order might suprise some, by definition, most of you must have hear
 A few additional things I learned making this list: 
 
 - Marting Fowler, Robert C. Martin and Steve McConnell are the only authors with several books in the list.
-- Cracking to Code interview is the most recent book on the list, released in 2015.
+- Cracking the Coding interview is the most recent book on the list, released in 2015.
 - [Python Programming](https://amzn.to/321qbMx), by John Zelle was the most cited book focused on one language. It would have #5 had I taken it into account.
 
 I hope you enjoyed this article. 
