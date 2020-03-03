@@ -1,5 +1,15 @@
 # 📕 25 most recommended programming books of all-time
 
+## Table of Content
+
+- [Methodology](#methodology)
+- [Most recommended programming books](#25-most-recommended-programming-books-of-all-time)
+- [Most recommended Python books (coming soon)](#25-most-recommended-programming-books-of-all-time)
+- [Most recommended JavaScript books (coming soon)](#25-most-recommended-javascript-books-of-all-time)
+- [Most recommended Java books (coming soon)](#25-most-recommended-java-books-of-all-time)
+
+---
+
 There are countless lists on the internet claiming to be **the** list of must-read programming books and it seemed that all those lists always recommended that same books minus two or three odd choices.
 
 Finding good resources for learning programming is always tricky. Every-one has its own opinion about what book is the best to learn, and as we say in french, "Color and tastes should not be argued about".
@@ -252,8 +262,17 @@ A few additional things I learned making this list:
 
 I hope you enjoyed this article. 
 
-I must admit, this one took a while to write. If you liked this article and feel like Twitter would like it please do not hesitate to love and retweet, it really does help :). 
+I must admit, those lists take a while to make. If you liked this article and feel like Twitter would like it please do not hesitate to love and retweet, it really does help :). 
 
 See also: [Most recommended startup books](https://github.com/daolf/Most-recommended-startup-books)
 
 *Originally publicated on my [personnal blog](https://www.daolf.com/posts/best-programming-books/)*
+
+## 25 most recommended Python books of all-time
+(coming soon)
+
+## 25 most recommended JavaScript books of all-time
+(coming soon)
+
+## 25 most recommended Java books of all-time
+(coming soon)
