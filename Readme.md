@@ -145,7 +145,7 @@ The columns in this book are about a more glamorous aspect of the profession: pr
 
 ### 15. [Peopleware](https://amzn.to/2P2YRIh) by Tom DeMarco & Tim Lister (17.6% recommended)
 ![](https://www.daolf.com/images/programming_book_list/15.jpg#center)
-"Drawing on their software development and management experience, and highlighting the insights and wisdom of other successful managers, Mantle and Lichty provide the rules, tools, and insights you need to manage and understand people and teams in order to deliver software successfully and avoid projects that have run catastrophically over schedule and budget.	The unique insight of this longtime bestseller is that the major issues of software development are human, not technical. They're not easy issues; but solve them, and you'll maximize your chances of success.	With a blend of software engineering facts and thought-provoking opinions, Fred Brooks offers insight for anyone managing complex projects."[Amazon.com](https://amzn.to/2P2YRIh)
+"The unique insight of this longtime bestseller is that the major issues of software development are human, not technical. They're not easy issues; but solve them, and you'll maximize your chances of success."[Amazon.com](https://amzn.to/2P2YRIh)
 
 ### 14. [Introduction to Algorithms](https://amzn.to/2SAdPrt) by Thomas H. Cormen / Charles E. Leiserson / Ronald L. Rivest / Clifford Stein (17.6% recommended)
 ![](https://www.daolf.com/images/programming_book_list/14.jpg#center)
