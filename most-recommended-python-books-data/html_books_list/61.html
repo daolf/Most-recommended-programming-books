@@ -1,0 +1,1135 @@
+<!DOCTYPE html><html lang="en"><head><script src="https://rules.quantcount.com/rules-p-vtXWdjTgf6e_3.js" async=""></script><script type="text/javascript">
+
+(function() {
+	if(typeof amzn_assoc_utils==="undefined"){amzn_assoc_utils={};}if(typeof amzn_assoc_utils.parse==="undefined"){amzn_assoc_utils.parse=(function(){var d,b,a={'"':'"',"\\":"\\","/":"/",b:"\b",f:"\f",n:"\n",r:"\r",t:"\t"},m,k=function(n){throw {name:"SyntaxError",message:n,at:d,text:m};},g=function(n){if(n&&n!==b){k("Expected '"+n+"' instead of '"+b+"'");}b=m.charAt(d);d+=1;return b;},f=function(){var o,n="";if(b==="-"){n="-";g("-");}while(b>="0"&&b<="9"){n+=b;g();}if(b==="."){n+=".";while(g()&&b>="0"&&b<="9"){n+=b;}}if(b==="e"||b==="E"){n+=b;g();if(b==="-"||b==="+"){n+=b;g();}while(b>="0"&&b<="9"){n+=b;g();}}o=+n;if(!isFinite(o)){k("Bad number");}else{return o;}},h=function(){var q,p,o="",n;if(b==='"'){while(g()){if(b==='"'){g();return o;}if(b==="\\"){g();if(b==="u"){n=0;for(p=0;p<4;p+=1){q=parseInt(g(),16);if(!isFinite(q)){break;}n=n*16+q;}o+=String.fromCharCode(n);}else{if(typeof a[b]==="string"){o+=a[b];}else{break;}}}else{o+=b;}}}k("Bad string");},j=function(){while(b&&b<=" "){g();}},c=function(){switch(b){case"t":g("t");g("r");g("u");g("e");return true;case"f":g("f");g("a");g("l");g("s");g("e");return false;case"n":g("n");g("u");g("l");g("l");return null;}k("Unexpected '"+b+"'");},l,i=function(){var n=[];if(b==="["){g("[");j();if(b==="]"){g("]");return n;}while(b){n.push(l());j();if(b==="]"){g("]");return n;}g(",");j();}}k("Bad array");},e=function(){var o,n={};if(b==="{"){g("{");j();if(b==="}"){g("}");return n;}while(b){o=h();j();g(":");if(Object.hasOwnProperty.call(n,o)){k('Duplicate key "'+o+'"');}n[o]=l();j();if(b==="}"){g("}");return n;}g(",");j();}}k("Bad object");};l=function(){j();switch(b){case"{":return e();case"[":return i();case'"':return h();case"-":return f();default:return b>="0"&&b<="9"?f():c();}};return function(p,o){var n;m=p;d=0;b=" ";n=l();j();if(b){k("Syntax error");}return n;};}());}if(typeof amzn_assoc_utils.stringify==="undefined"){amzn_assoc_utils.stringify=function(b){var a="";if(typeof JSON!=="undefined"){a=JSON.stringify(b);}return a;};}if(typeof amzn_assoc_utils.addCssRules==="undefined"){amzn_assoc_utils.addCssRules=function(g,n){var h=document.createElement("style"),m,e=0,k="";h.appendChild(document.createTextNode(""));document.head.appendChild(h);m=h.sheet;for(e=0,rl=n.length;e<rl;e++){var d=1,l=n[e],b=n[e][0],f="";if(Object.prototype.toString.call(l[1][0])==="[object Array]"){l=l[1];d=0;}for(var c=l.length;d<c;d++){var a=l[d];f+=a[0]+":"+a[1]+(a[2]?" !important":"")+";\n";}if(typeof g==="string"){m.insertRule(g+"{"+b+"{"+f+"}}",m.cssRules.length);}else{m.insertRule(b+"{"+f+"}",m.cssRules.length);}}};}window.trackingUtils=function(l,c,e,o,p,h,d,r,t,n,q){var g={},j=new RegExp("/(ref=[\\w]+)/?","i"),a="assocPayloadId",i=function(u){return u&&encodeURIComponent(u).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");},m=(function(){var u=document.createElement("a");u.href=(window.location!==window.parent.location)?document.referrer:document.location;return u.protocol+"//"+u.hostname+((u.port===""||u.port==="80"||u.port==="443")?"":(":"+u.port))+(u.pathname.indexOf("/")!==0?("/"+u.pathname):u.pathname);}()),s=(function(){return i(m);}()),k=function(u,w,x,v){if(typeof x==="string"&&x!==""){if(u.search===""){u.search="?"+w+"="+x;}else{if(!u.search.match(new RegExp("[?&]"+w+"="))){u.search=u.search.replace(/\?/,"?"+w+"="+x+"&");}else{if(v){u.search=u.search.replace(new RegExp(w+"=([^&]*)"),w+"="+x);}}}}return u;},f=function(w,u,v){if(typeof v==="string"&&v!==""){if(!w.match(/\?/)){w=w+"?"+u+"="+v;}else{if(!w.match(u)){w=w.replace(/\?/,"?"+u+"="+v+"&");}}}return w;},b=function(v){var u=(typeof d!=="undefined")?d:0;if(typeof v!=="undefined"){u=v;}return u;};g.addRefUrls=function(z,A,v,u){var B=new RegExp("^http://.*(amazon|endless|myhabit|amazonwireless|javari|smallparts)\\.(com|ca|co\\.jp|de|fr|co\\.uk|cn|it|es)/.*","i"),w,y,x;for(x=0;x<z.length;x++){z[x].rel="nofollow";w=String(z[x].href);if(y=w.match(B)){z[x].href=g.addTrackingParameters(z[x],A,v,u);}}};g.addRefRefUrl=function(u){return k(u,"ref-refURL",s);};g.getRefRefUrl=function(){return s;};g.getRawRefUrl=function(){return m;};g.addSignature=function(v,u,w){return k(k(v,"sig",u),"sigts",w);};g.addLinkCode=function(v,u){return k(v,"linkCode",u);};g.addTrackingId=function(v,u){return k(v,"tag",u);};g.addLinkId=function(u,v){return k(u,"linkId",v);};g.addSubtag=function(u,v){return k(u,"ascsubtag",v);};g.addCreativeAsin=function(u,v){return k(k(u,"creativeASIN",v),"adId",v);};g.addAdType=function(v,u){return k(v,"adType",u);};g.addAdMode=function(u,v){return k(u,"adMode",v);};g.addAdFormat=function(v,u){return k(v,"adFormat",u);};g.addImpressionTimestamp=function(u,v){if(typeof v==="number"){v=v.toString();}return k(u,"impressionTimestamp",v);};g.convertToRedirectedUrl=function(u,x,v){var w=document.createElement("a");w.setAttribute("href",x);if(typeof v!=="undefined"){k(w,v,i(u.getAttribute("href")),true);}else{w.setAttribute("href",x+"/"+w.getAttribute("href"));}u.setAttribute("href",w.getAttribute("href"));return u;};g.getImpressionToken=function(){return h;};g.generateTransitId=function(){return g.getHashedImpressionToken();};g.getHashedImpressionToken=function(){var u=o.split("/");var v=u[u.length-2];return v;};g.getTransitId=function(){if(typeof assoc_session_storage!=="undefined"){var u=assoc_session_storage.get(a);return u;}return null;};g.getClickUrl=function(){return p;};g.addImpressionToken=function(v,w){var u=b(w);if(typeof h==="string"&&h!==""){k(v,"imprToken",h);if(typeof u!=="undefined"){k(v,"slotNum",u);}}return v;};g.addImpressionTokenStr=function(w,v){var u=b(v);if(typeof h==="string"&&h!==""){w=f(w,"imprToken",h);if(typeof u!=="undefined"){w=f(w,"slotNum",u);}}return w;};g.addTrackingParameters=function(A,B,z,E,x,u,y,w,v,F,D,C){return g.addSignature(g.addCreativeAsin(g.addLinkId(g.addTrackingId(g.addSubtag(g.addLinkCode(g.addRefRefUrl(g.addImpressionToken(g.addRefMarker(g.addAdType(g.addAdMode(g.addAdFormat(g.addImpressionTimestamp(A,C),D),F),v),x))),z),r),E),B),u),y,w);};g.addRefMarker=function(v,x){var w,u=false;if(typeof x==="undefined"){return v;}if(w=v.pathname.match(j)){v.pathname=v.pathname.replace(w[1],"ref="+x);}else{u=(v.pathname.charAt(v.pathname.length-1)==="/");v.pathname=v.pathname+(u?"":"/")+"ref="+x;}return v;};g.getRefMarker=function(u){var v;if(v=u.pathname.match(j)){return v[1].substr(4);}else{return undefined;}};g.getCurrentURL=function(){return(window.location!==window.parent.location)?document.referrer:document.location.href;};g.makeForesterCall=function(w){var u=undefined,v;if(typeof JSON!=="undefined"){v=JSON.stringify(w);}else{if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){v=amzn_assoc_utils.stringify(w);}else{return;}}if(typeof o==="string"){u=o+"?assoc_payload="+encodeURIComponent(v);g.generateImage(u);}};g.recordImpression=function(w,u,z,x,B){z.linkCode=w;z.trackingId=u;z.refUrl=g.getCurrentURL();if(n||!t){g.makeForesterCall(z);}else{g.addABPFlag(z,g.makeForesterCall);}if(typeof x==="undefined"||!x){var y=(new Date()).getTime();var A=(typeof B!=="undefined")?B:"";var v=e+"?l="+w+"&t="+u+"&o="+l+"&cb="+y+A;g.generateImage(v);}};g.createAssocPayload=function(y,w,v,u){y.linkCode=w;y.trackingId=v;y.refUrl=u;var x="";if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){x=amzn_assoc_utils.stringify(y);}return x;};g.recordAESImpression=function(w,u,x){if(typeof q==="string"){var z=g.createAssocPayload(x,w,u,g.getCurrentURL());var v=g.getHashedImpressionToken();var y=q+v+"/pixel?assoc_payload="+encodeURIComponent(z);g.generateImage(y);}};g.recordTransit=function(){if(!(g.getTransitId())||g.isUTMParamPresentInUrl(g.getCurrentURL())){assoc_session_storage.set(a,g.generateTransitId());}};g.isUTMParamPresentInUrl=function(v){var u=v.match(/utm_source=/i);return(u!==null);};g.addAAXClickUrls=function(v){var x,w,u;if(typeof v==="undefined"||typeof p==="undefined"){return;}for(w=0;w<v.length;w++){u=String(v[w].href);if(u.indexOf(p)<0){x=p+u;v[w].href=x;}}};g.addAAXClickUrl=function(u){if(typeof u==="undefined"||u.indexOf(p)===0){return u;}return p+u;};g.updateLinks=function(v,x){var w,u;if(typeof x!=="function"){return;}for(w=0;w<v.length;w++){u=String(v[w].href);v[w].href=x(u);}};g.elementInViewPort=function(u){var v=u.getBoundingClientRect(),w=(v.top>=0&&v.left>=0&&v.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&v.right<=(window.innerWidth||document.documentElement.clientWidth));return{posX:v.left+window.pageXOffset,posY:v.top+window.pageYOffset,inViewPort:w};};g.recordViewability=function(z,y,v,w){if(typeof o==="string"){var x=g.createViewbilityPayload(z,y,v,w);var u=o+x+"&cb="+(new Date()).getTime();g.generateImage(u);}};g.recordAESViewability=function(B,A,v,w){if(typeof q==="string"){var x=g.createViewbilityPayload(B,A,v,w);var u=g.getHashedImpressionToken();var z=encodeURIComponent(x);var y=q+u+"/pixel/"+z+"&cb="+(new Date()).getTime();g.generateImage(y);}};g.createViewbilityPayload=function(z,y,v,x){var w={};if(typeof y!=="undefined"){w.above_the_fold=y;}if(typeof v!=="undefined"){w.topPos=v;}if(typeof x!=="undefined"){w.leftPos=x;}if(typeof z!=="undefined"){if(Object.keys(w).length===0){w.viewable=true;}w.slotNum=z;}var u="";if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){u=amzn_assoc_utils.stringify({adViewability:[w]});}return u;};g.generateImage=function(u){if(typeof u!=="undefined"){(new Image()).src=u;}};g.addABPFlag=function(x,F){var z=false,y=2,w=document.body?document.body.appendChild(new Image()):new Image(),v=document.body?document.body.appendChild(new Image()):new Image(),C=false,A=false,u=Math.random()*11,E=t+"?ch=*&rn=*",D=function(H,G){if(y===0||G>1000){x.supplySideMetadata={ABPInstalled:y===0&&z};H(x);}else{setTimeout(function(){D(H,G*2);},G*2);}},B=function(){if(--y){return;}z=!C&&A;};w.style.display="none";v.style.display="none";w.onload=B;w.onerror=function(){C=true;B();};w.src=E.replace(/\*/,1).replace(/\*/,u);v.onload=B;v.onerror=function(){A=true;B();};v.src=E.replace(/\*/,2).replace(/\*/,u);D(F,250);};return g;};var assoc_session_storage=(function(){var a={};a.get=function(c){var d=null;if(typeof(window.sessionStorage)!=="undefined"){try{d=window.sessionStorage.getItem(c);}catch(b){}}return d;};a.set=function(c,d){if(typeof(window.sessionStorage)!=="undefined"){try{window.sessionStorage.setItem(c,d);}catch(b){}}};return a;}());window.elemTracker=function(b){var a={};a.trackElements=function(d,c){var f,e;if(typeof d!=="undefined"&&d.length>0&&typeof c==="function"){window.addEventListener("scroll",function(){for(f=0;f<d.length;f++){e=b.elementInViewPort(d[f]);if(e.inViewPort){c();}}},false);}};return a;};
+	var amznAutoTaggerMaker=function(h,v,B){var D={CA:"ca",CN:"cn",IN:"in",DE:"de",FR:"fr",GB:"co.uk",JP:"co.jp",US:"com"},j={CA:[],CN:[],IN:[],DE:["javari"],FR:["javari"],GB:["javari"],JP:["javari"],US:["smallparts","amazonwireless","endless","myhabit"]},F=(function(){var P=-1,O={};O.getNextSlotNum=function(){return ++P;};return O;}()),q,o,e=Math.max(document.body.scrollHeight,document.body.offsetHeight,document.documentElement.clientHeight,document.documentElement.scrollHeight,document.documentElement.offsetHeight),m=Math.max(document.body.scrollWidth,document.body.offsetWidth,document.documentElement.clientWidth,document.documentElement.scrollWidth,document.documentElement.offsetWidth),y={totalDocWidth:m,totalDocHeight:e,logType:"onetag_pageload",pageTitle:document.title},a="w50",J="w61",H="g12",C={},b=new RegExp("%3F"),w=new Object(),x=false,l="",s="",u=0,L=0,d=0,G=new RegExp("amzn.to"),r=new RegExp(h.redirectorEndPoint),E=["kdp.amazon.com"],N=[],I="assocPayloadId",c=function(P){var Q,O=false;for(Q=0;Q<E.length;Q++){if(P.match(E[Q])){O=true;break;}}return O;},p=function(O){return O.nextSibling&&O.nextSibling.tagName==="IMG"&&O.nextSibling.hasAttribute("src")&&(O.nextSibling.getAttribute("src").search(/ir-[a-z]{2}\.amazon-adsystem\.com/)>-1||O.nextSibling.getAttribute("src").search(/www\.assoc-amazon\.*/)>-1);},n=function(O){if(!O.href.match(r)){O.href=h.redirectorEndPoint+O.href;}},k=function(Y,ae){var Z=new RegExp("/(ref=[\\w]+)/?","i"),U,ad=false,P,S,T=false,X=Y.search.match(/\?tag=([^&]+)|&tag=([^&]+)|\?tag-value=([^&]+)|&tag-value=([^&]+)|\?tag_value=([^&]+)|&tag_value=([^&]+)|\?t=([^&]+)|&t=([^&]+)/),R=Y.search.match(/\?tag=|&tag=|\?tag-value=|&tag-value=|\?tag_value=|&tag_value=|\?t=|&t=/),O=Y.search.match(/(linkCode|link_code|lc)=([^&]+)/i),W=v.elementInViewPort(Y),ac={autoTagged:false,overwritten:false,geoRedirected:false,atf:W.inViewPort},Q=F.getNextSlotNum(),V={destinationURL:Y.href,slotNum:Q,atfInFirstLoad:W.inViewPort,posX:W.posX,posY:W.posY,logType:"onetag_textlink"},ab=p(Y),aa;ac.slotNum=Q;if(Y.search===""){Y.search="?imprToken="+v.getImpressionToken()+"&slotNum="+Q;}else{Y.search=Y.search.replace(/\?/,"?imprToken="+v.getImpressionToken()+"&slotNum="+Q+"&");}if(h.enableAutoTagging){ac.autoTagged=true;if(X){if(h.overwrite){for(S=1;S<9;S++){if(X[S]!=undefined){Y.search=Y.search.replace(X[S],ae);break;}}ac.overwritten=true;ad=true;}}else{if(R){Y.search=Y.search.replace(/tag=/,"tag="+ae);ad=true;}else{Y.search=Y.search.replace(/\?/,"?tag="+ae+"&");ad=true;}}}if(O&&typeof h.overridableLinkCodes[O[2]]!=="undefined"){T=true;}if(O&&!T){P=O[2];}else{P=ad?a:J;}if(O){V.oldLinkCode=O[2];Y.search=Y.search.replace(O[2],P);}else{Y.search=Y.search.replace(/\?/,"?linkCode="+P+"&");}if(ad){aa=ae;}else{if(typeof X!=="undefined"&&X instanceof Array&&X.length>=S+1&&typeof X[S]==="string"){aa=X[S];}else{aa="";}}if(C.shouldBeGeoRedirected()){ac.geoRedirected=true;n(Y);}if(Y.hasAttribute("data-amzn-asin")&&!Y.search.match("creativeASIN")){Y.search=Y.search.replace(/\?/,"?creativeASIN="+Y.getAttribute("data-amzn-asin")+"&");}if(C.shouldTrackTransit(h)){v.recordTransit();V[I]=v.getTransitId();}N.push({pos:W,slotNum:Q,linkCode:P,linkInfo:V,skipIRCall:ab,imprTag:aa});Y.href=v.addAAXClickUrl(Y.href);return ac;},A=function(O){if(O.href.match(b)){o=O.href.split(b);O.href=o[0]+"?"+decodeURIComponent(o[1]);}},t=function(P,O,S){var R,Q;for(R=0;R<P.length;R++){for(Q=0;Q<O.length;Q++){if(window.addEventListener){P[R].addEventListener(O[Q],S,false);}else{P[R].attachEvent("on"+O[Q],S);}}}},K=function(O,P){var Q=false;t([O],["touchstart"],function(){Q=false;});t([O],["touchmove"],function(){Q=true;});t([O],["click","touchend"],function(R){if(Q){return;}O.setAttribute("href",P);});t([O],["auxclick","contextmenu"],function(R){O.setAttribute("href",P);});t([O],["mouseup"],function(R){if(R.button===1||R.ctrlKey){O.setAttribute("href",P);}});},M=function(){var O="";for(i=0;i<h.itemRefs.length;i++){if(typeof h.itemRefs[i].type!=="undefined"&&h.itemRefs[i].type==="ASIN"&&typeof h.itemRefs[i].sourceLink!=="undefined"&&String(h.itemRefs[i].sourceLink).match(G)!==null&&typeof h.itemRefs[i].destinationLink!=="undefined"){w[h.itemRefs[i].sourceLink]=h.itemRefs[i].destinationLink;if(l!==""){O=",";}l=l+O+h.itemRefs[i].sourceLink;u++;}}},f=function(P,O){B.trackElements([P],function(){if(typeof O!==undefined&&O.slotNum!==undefined&&(O.viewed===undefined||!O.viewed)){v.recordViewability(O.slotNum);if(C.shouldInteractWithAES(h)){v.recordAESViewability(O.slotNum);}O.viewed=true;}});},g=function(O,P){K(O,O.getAttribute("href"));O.setAttribute("href",P);},z=function(){var Q,P,O;for(Q=0;Q<N.length;Q++){P=N[Q];O=P.pos;v.recordImpression(P.linkCode,P.imprTag,P.linkInfo,P.skipIRCall,P.slotNum);v.recordViewability(P.slotNum,O.inViewPort,O.posX,O.posY);if(C.shouldInteractWithAES(h)){v.recordAESImpression(P.linkCode,P.imprTag,P.linkInfo);v.recordAESViewability(P.slotNum,O.inViewPort,O.posX,O.posY);}}N=[];};if(h.locale!=undefined){q=h.locale;}else{q="US";}C.shouldBeGeoRedirected=function(){return h.enableGeoRedirection&&(h.region!==""&&h.region!==h.viewerCountry);};C.publisherCallBack=function(){window["amzn_assoc_client_cb_"+h.adUnitSlotNum]({type:"onload",data:{},widget:C});};C.decorateLinkElement=function(O){A(O);linkProperties=k(O,h.trackingId);f(O,linkProperties);return linkProperties;};C.shouldTrackTransit=function(O){return((typeof O.disableTransitTracking==="undefined")||!O.disableTransitTracking);};C.shouldInteractWithAES=function(O){return((typeof O.enableAESInteraction!=="undefined")&&O.enableAESInteraction);};C.tagLinks=function(af){var ah,ag,P,aa,aj,ac=[],al=0,X,Z,ai,ae,ak,O,Y,V=0,R=0,ab=0,Q=0,U=0,S=0,T,W,ad="";P=D[q];aa=j[q];aj=new RegExp("^(http|https)://(www|[\\w\\-\\.]+)?amazon\\.("+P+")/","i");if(aa){for(al=0;al<aa.length;al++){X=P;if(P=="co.jp"){X="co.jp|jp";}ac[al]=new RegExp("^(http|https)://(www\\.)?("+aa[al]+")\\.("+X+")/","i");}}Z=af.getElementsByTagName("a");if(!x){M();x=true;}for(ah=0;ah<Z.length;ah++){Y=undefined;ai=String(Z[ah].href);if(ae=ai.match(aj)&&!c(ai)){Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}else{if(h.isShortLinksSupported&&(ak=ai.match(G))!==null){L++;if(s!==""){ad=",";}s=s+ad+Z[ah].href;T=w[Z[ah].href];if(typeof T!=="undefined"){d++;Z[ah].setAttribute("href",T);Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}else{if(C.shouldBeGeoRedirected()){Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}}}else{for(O=0;O<ac.length;O++){if(ae=ai.match(ac[O])){C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}}}}if(typeof Y!=="undefined"){if(Y.autoTagged){R++;}if(Y.overwritten){S++;}if(Y.geoRedirected){ab++;}if(Y.atf){Q++;}else{U++;}V++;}}y.numLinks=V;y.numAutoTaggedLinks=R;y.autoTaggingEnabled=h.enableAutoTagging;y.geoRedirectEnabled=h.enableGeoRedirection;y.disableTransitTracking=h.disableTransitTracking;y.numLinksATF=Q;y.numLinksBTF=U;y.shortLinksInLivePool=l;y.shortLinksInPage=s;y.shortLinksInLivePoolCount=u;y.shortLinksInPageCount=L;y.shortLinksMatchCount=d;if(C.shouldTrackTransit(h)){v.recordTransit();y[I]=v.getTransitId();}v.recordImpression(h.linkCode,h.trackingId,y);if(C.shouldInteractWithAES(h)){v.recordAESImpression(h.linkCode,h.trackingId,y);}t([window],["load"],z);};return C;};
+    var spec = {
+        trackingId : "fivboo-20",
+        region : "US",
+        overwrite : false,
+        enableAutoTagging : false,
+        linkCode : "w49",
+        overridableLinkCodes :  {   "am1": ""   , "am2": ""   , "am3": ""   , "as1": ""   , "as2": ""   , "as3": ""   , "as4": ""   , "li1": ""   , "li2": ""   , "li3": ""   , "ll1": ""   , "ll2": ""   },
+        enableGeoRedirection : true,
+        redirectorEndPoint : "https://assoc-redirect.amazon.com/g/r/",
+        adUnitSlotNum : "0",
+        itemRefs : [{"type":"ASIN","id":"0321884914","destUrl":{},"sourceType":{}},{"type":"ASIN","id":"1593275994","destUrl":{},"sourceType":{}}],
+        isShortLinksSupported : true,
+        viewerCountry : "US",
+        disableTransitTracking : false,
+        enableAESInteraction : false
+    }, trackingUtils = window.trackingUtils(
+        "1",
+        "//fls-na.amazon-adsystem.com/1/associates-ads/1/OP/r/json",
+        "//ir-na.amazon-adsystem.com/e/ir",
+        "https://aax-us-east.amazon-adsystem.com/x/px/Qlrlvmxe7GphTbL0CqUTvpoAAAFwkazeBgEAAAFKAXaUNE0/", "https://aax-us-east.amazon-adsystem.com/x/c/Qlrlvmxe7GphTbL0CqUTvpoAAAFwkazeBgEAAAFKAXaUNE0/", "nde8Kx34kxdABXPTwqJnPA", undefined, undefined, undefined, true,
+        "https://assoc-na.associate-amazon.com/onetag/"
+    );
+
+    window.amznAutoTagger = amznAutoTaggerMaker(spec, trackingUtils, window.elemTracker(trackingUtils));
+    window.amznAutoTagger.tagLinks(document);
+    window.amznAutoTagger.publisherCallBack();
+}());
+
+ //# sourceURL=dynscript-0.js</script><script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-T2J2B8H&amp;t=gtm1&amp;cid=993098560.1582991990"></script><meta class="foundation-mq-small"><meta class="foundation-mq-small-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-large"><meta class="foundation-mq-large-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xxlarge"><meta class="foundation-data-attribute-namespace">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Five Books">
+        <meta name="copyright" content="Five Books">
+        <link rel="stylesheet" href="https://fivebooks.com/app/themes/five-books/dist/style.css?r=1581849690">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
+		    <script src="https://secure.quantserve.com/quant.js" async="" type="text/javascript"></script><script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WWCS8B9"></script><script>
+	    window.dataLayer = window.dataLayer || [];
+	    window.dataLayer.push({
+	      'interviewId' : '45207'
+	    });
+	    </script>
+		<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WWCS8B9');</script>
+	<!-- End Google Tag Manager -->
+        <title>The Best Learning Python Books | Five Books Expert Recommendations</title>
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v13.0 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="The best books on learning Python and data science, recommended by Vicki Boykis, who discusses how to code and better understand programming &amp; data science.">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://fivebooks.com/best-books/learning-python-and-data-science-vicki-boykis/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Best Learning Python Books | Five Books Expert Recommendations">
+<meta property="og:description" content="The best books on learning Python and data science, recommended by Vicki Boykis, who discusses how to code and better understand programming &amp; data science.">
+<meta property="og:url" content="https://fivebooks.com/best-books/learning-python-and-data-science-vicki-boykis/">
+<meta property="og:site_name" content="Five Books">
+<meta property="article:publisher" content="https://www.facebook.com/bestbooksoneverything/">
+<meta property="article:section" content="Computing">
+<meta property="fb:app_id" content="179767102823809">
+<meta property="og:image" content="https://fivebooks.com/best-books/learning-python-and-data-science-vicki-boykis/shareimage.jpg">
+<meta property="og:image:secure_url" content="https://fivebooks.com/best-books/learning-python-and-data-science-vicki-boykis/shareimage.jpg">
+<meta property="og:image:width" content="1400">
+<meta property="og:image:height" content="1400">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="The best books on learning Python and data science, recommended by Vicki Boykis, who discusses how to code and better understand programming &amp; data science.">
+<meta name="twitter:title" content="Five Books: The best books on Learning Python and Data Science, recommended by Vicki Boykis">
+<meta name="twitter:site" content="@five_books">
+<meta name="twitter:image" content="https://fivebooks.com/best-books/learning-python-and-data-science-vicki-boykis/shareimage.jpg">
+<meta name="twitter:creator" content="@five_books">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://fivebooks.com/#organization","name":"Five Books","url":"https://fivebooks.com/","sameAs":["https://www.facebook.com/bestbooksoneverything/","https://twitter.com/five_books"],"logo":{"@type":"ImageObject","@id":"https://fivebooks.com/#logo","url":"https://fivebooks.com/app/uploads/2015/12/logo.png","width":926,"height":174,"caption":"Five Books"},"image":{"@id":"https://fivebooks.com/#logo"}},{"@type":"WebSite","@id":"https://fivebooks.com/#website","url":"https://fivebooks.com/","name":"Five Books","description":"The best books on everything","publisher":{"@id":"https://fivebooks.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://fivebooks.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://fivebooks.com/best-books/learning-python-and-data-science-vicki-boykis/#webpage","url":"https://fivebooks.com/best-books/learning-python-and-data-science-vicki-boykis/","inLanguage":"en-US","name":"The Best Learning Python Books | Five Books Expert Recommendations","isPartOf":{"@id":"https://fivebooks.com/#website"},"datePublished":"2019-07-15T08:35:57+00:00","dateModified":"2019-07-15T09:07:39+00:00","description":"The best books on learning Python and data science, recommended by Vicki Boykis, who discusses how to code and better understand programming & data science.","breadcrumb":{"@id":"https://fivebooks.com/best-books/learning-python-and-data-science-vicki-boykis/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://fivebooks.com/best-books/learning-python-and-data-science-vicki-boykis/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://fivebooks.com/category/technology/","url":"https://fivebooks.com/category/technology/","name":"Technology"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://fivebooks.com/category/technology/computing/","url":"https://fivebooks.com/category/technology/computing/","name":"Computing"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://fivebooks.com/best-books/learning-python-and-data-science-vicki-boykis/","url":"https://fivebooks.com/best-books/learning-python-and-data-science-vicki-boykis/","name":"Learning Python and Data Science"}}]}]}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel="dns-prefetch" href="//js.stripe.com">
+<link rel="stylesheet" id="wp-block-library-css" href="https://fivebooks.com/wp/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="elasticpress-related-posts-block-css" href="https://fivebooks.com/app/plugins/elasticpress/dist/css/related-posts-block-styles.min.css?ver=3.3" type="text/css" media="all">
+<link rel="stylesheet" id="wsl-widget-css" href="https://fivebooks.com/app/plugins/wordpress-social-login/assets/css/style.css?ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="megamenu-css" href="https://fivebooks.com/app/uploads/maxmegamenu/style.css?ver=bd02c8" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://fivebooks.com/wp/wp-includes/css/dashicons.min.css?ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="megamenu-genericons-css" href="https://fivebooks.com/app/plugins/megamenu-pro/icons/genericons/genericons/genericons.css?ver=1.9.3" type="text/css" media="all">
+<link rel="stylesheet" id="megamenu-fontawesome-css" href="https://fivebooks.com/app/plugins/megamenu-pro/icons/fontawesome/css/font-awesome.min.css?ver=1.9.3" type="text/css" media="all">
+<link rel="stylesheet" id="megamenu-fontawesome5-css" href="https://fivebooks.com/app/plugins/megamenu-pro/icons/fontawesome5/css/all.min.css?ver=1.9.3" type="text/css" media="all">
+<script type="text/javascript" src="https://fivebooks.com/app/themes/five-books/jquery-3.2.1.min.js"></script>
+<link rel="https://api.w.org/" href="https://fivebooks.com/wp-json/">
+<link rel="alternate" type="application/json+oembed" href="https://fivebooks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://fivebooks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F&amp;format=xml">
+<meta name="viewport" content="width=device-width, initial-scale=1"><style type="text/css">/** Mega Menu CSS: fs **/</style>
+
+        <script type="text/javascript">
+            var ajaxurl = "https://fivebooks.com/wp/wp-admin/admin-ajax.php";
+        </script>
+        	
+	<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	var cCode = "US";
+	if(!(cCode=="GB" || cCode=="US" || cCode=="CA")) {
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-4770039255278715",
+	    enable_page_level_ads: true
+	  });
+	}
+	</script>
+            <link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=fivebooks.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=fivebooks.com"></script><style></style></head>
+
+<body class="interview-template-default single single-interview postid-45207 mega-menu-top-menu">
+	<div class="contain-to-grid top-menu-wrap -inside">
+    <div class="hidden-menu-el -mobile" id="mobile-menu-ui">
+    	<div class="row small-menu-icons">
+          <div class="small-3 columns">
+				<!-- <a href="/random-interview"><i class="menu-item fa fa-random should-dim"></i></a>-->
+				<a href="https://twitter.com/five_books" target="_blank"><i class="menu-item fa fa-twitter should-dim"></i></a>
+			</div>
+			<div class="small-3 columns">
+				<a href="https://www.facebook.com/bestbooksoneverything/" target="_blank"><i class="menu-item fa fa-facebook should-dim"></i></a>
+			</div>
+			<div class="small-3 columns">
+				<a href="http://eepurl.com/WUlL1" target="_blank"><i class="menu-item fa fa-envelope-o should-dim"></i></a>
+			</div>
+			<div class="small-3 columns">
+				<a href="/search/"><i class="menu-item fa fa-search should-dim" data-reveal-id="search-dialog" id="search-popup-toggle"></i></a>
+			</div>
+		</div>
+    </div>
+    <div class="row top-menu" id="main-menu">
+            <div class="medium-4 small-4 columns menu-left" style="margin-top:-5px;">
+            <div class="show-for-medium-up">      
+                <a href="/support-us" class="button-support-us" style="padding: 5px; margin-top: 0;">Support Us</a>
+            </div>
+            <div class="show-for-small-only">
+                <i class="menu-item fa fa-bars" id="mobile-menu-toggle"></i>
+            </div>
+        </div>
+       		            <div class="medium-4 small-4 columns menu-logo">
+                <a class="menu-item " href="/"><img width="122px" src="https://fivebooks.com/app/themes/five-books/assets/images/logo-floating-nav-no-text.png"></a>
+        	</div>
+                        <div class="medium-4 small-4 columns menu-right">
+                    <div class="show-for-medium-up">
+                <a href="/random-interview" class="button-random-interview"><i class="fa fa-random" aria-hidden="true"></i></a>
+		<a class="button-instagram" href="https://www.instagram.com/five_books/" target="_blank"><i class="menu-item fa fa-instagram should-dim"></i></a>
+                <a class="button-twitter" href="https://twitter.com/five_books" target="_blank"><i class="menu-item fa fa-twitter should-dim"></i></a>
+                <a class="button-facebook" href="https://www.facebook.com/bestbooksoneverything/" target="_blank"><i class="menu-item fa fa-facebook should-dim"></i></a>
+                <i class="menu-item fa fa-search should-dim" id="search-toggle"></i>
+                <form class="hidden-menu-el" id="search-ui" action="/" method="GET">
+    <div class="row collapse">
+        <div class="small-10 columns">
+            <input type="text" placeholder="Search" id="search-input" name="s">
+        </div>
+        <div class="small-2 columns">
+            <a href="#" class="button postfix">&nbsp;</a>
+        </div>
+    </div>
+</form>
+            </div>
+        </div>
+
+            </div>
+</div>
+    <div class="contain-to-grid under-menu">
+        <div class="row top-menu">
+            <div class="medium-6 small-4 columns menu-logo small-centered end">
+                <a class="menu-item " href="/"><img width="122px" src="https://fivebooks.com/app/themes/five-books/assets/images/logo-floating-nav.png"></a>
+            </div>
+        </div>
+    </div>
+            <div class="horizontal-menu">
+        <div class="twenty-col">
+        <div class="row">
+         <div id="mega-menu-wrap-top_menu" class="mega-menu-wrap"><div class="mega-menu-toggle"><div class="mega-toggle-blocks-left"><div class="mega-toggle-block mega-html-block mega-toggle-block-1" id="mega-toggle-block-1"><a href="/search" style="
+    border-radius: 0 0 0 0;
+    border: 0;
+    margin: 0;
+    line-height: 40px;
+    height: 40px;
+    background: transparent;
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+">Search</a></div></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class="mega-toggle-block mega-menu-toggle-block mega-toggle-block-2" id="mega-toggle-block-2" tabindex="0"><span class="mega-toggle-label" role="button" aria-expanded="false"><span class="mega-toggle-label-closed">MENU</span><span class="mega-toggle-label-open">MENU</span></span></div></div></div><ul id="mega-menu-top_menu" class="mega-menu max-mega-menu mega-menu-horizontal" data-event="hover_intent" data-effect="disabled" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="0" data-mobile-force-width="false" data-second-click="close" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="false" data-sticky-enabled="true" data-sticky-desktop="true" data-sticky-mobile="false" data-sticky-offset="48" data-sticky-expand="true" data-sticky-expand-mobile="true"><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-37978" id="mega-menu-item-37978"><a class="mega-menu-link" href="#" aria-haspopup="true" aria-expanded="false" tabindex="0">Nonfiction<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-row" id="mega-menu-37978-0">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-37978-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-37979" id="mega-menu-item-37979"><a class="mega-menu-link" href="https://fivebooks.com/category/art-books/">Art<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-37980" id="mega-menu-item-37980"><a class="mega-menu-link" href="https://fivebooks.com/category/art-books/architecture/">Architecture</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-37982" id="mega-menu-item-37982"><a class="mega-menu-link" href="https://fivebooks.com/category/art-books/history-of-art/">Art History</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-47304" id="mega-menu-item-47304"><a class="mega-menu-link" href="https://fivebooks.com/category/art-books/design/">Design, Illustration</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-47303" id="mega-menu-item-47303"><a class="mega-menu-link" href="https://fivebooks.com/category/art-books/fashion-style/">Fashion &amp; Style</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-37983" id="mega-menu-item-37983"><a class="mega-menu-link" href="https://fivebooks.com/category/art-books/modern-art/">Modern and Contemporary Art</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-37984" id="mega-menu-item-37984"><a class="mega-menu-link" href="https://fivebooks.com/category/art-books/photography/">Photography</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-37989" id="mega-menu-item-37989"><a class="mega-menu-link" href="https://fivebooks.com/category/business/">Business<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-37991" id="mega-menu-item-37991"><a class="mega-menu-link" href="https://fivebooks.com/category/business/how-to-invest/">How to Invest</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-45231" id="mega-menu-item-45231"><a class="mega-menu-link" href="https://fivebooks.com/category/business/leadership/">Leadership</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-45220" id="mega-menu-item-45220"><a class="mega-menu-link" href="https://fivebooks.com/category/business/marketing/">Marketing</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-44696" id="mega-menu-item-44696"><a class="mega-menu-link" href="https://fivebooks.com/category/economics/">Economics<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-37988" id="mega-menu-item-37988"><a class="mega-menu-link" href="https://fivebooks.com/category/economics/behavioural-economics/">Behavioural Economics</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-44699" id="mega-menu-item-44699"><a class="mega-menu-link" href="https://fivebooks.com/category/economics/development-economics/">Development Economics</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-37986" id="mega-menu-item-37986"><a class="mega-menu-link" href="https://fivebooks.com/category/economics/economic-history/">Economic History</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-37987" id="mega-menu-item-37987"><a class="mega-menu-link" href="https://fivebooks.com/category/economics/finance/">Finance</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-44700" id="mega-menu-item-44700"><a class="mega-menu-link" href="https://fivebooks.com/category/economics/financial-crisis/">Financial Crisis</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-37990" id="mega-menu-item-37990"><a class="mega-menu-link" href="https://fivebooks.com/category/economics/globalisation-inequality/">Globalisation &amp; Inequality</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-44701" id="mega-menu-item-44701"><a class="mega-menu-link" href="https://fivebooks.com/category/economics/world-economies/">World Economies</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-46687" id="mega-menu-item-46687"><a class="mega-menu-link" href="https://fivebooks.com/category/environment/">Environment<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-46688" id="mega-menu-item-46688"><a class="mega-menu-link" href="https://fivebooks.com/category/environment/climate-change/">Climate Change</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-46689" id="mega-menu-item-46689"><a class="mega-menu-link" href="https://fivebooks.com/category/environment/environmental-ethics/">Environmental Ethics</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-37992" id="mega-menu-item-37992"><a class="mega-menu-link" href="https://fivebooks.com/category/food-and-cooking/">Food &amp; Cooking<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-37994" id="mega-menu-item-37994"><a class="mega-menu-link" href="https://fivebooks.com/category/food-and-cooking/best-cookbooks/">Best Cookbooks</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-37995" id="mega-menu-item-37995"><a class="mega-menu-link" href="https://fivebooks.com/category/food-and-cooking/food-history-of-food/">Food &amp; History of Food</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-37996" id="mega-menu-item-37996"><a class="mega-menu-link" href="https://fivebooks.com/category/food-and-cooking/wine-drinks/">Wine &amp; Drinks</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-37978-0-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-37997" id="mega-menu-item-37997"><a class="mega-menu-link" href="https://fivebooks.com/category/health-and-lifestyle/">Health &amp; Lifestyle<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38001" id="mega-menu-item-38001"><a class="mega-menu-link" href="https://fivebooks.com/category/health-and-lifestyle/death/">Death &amp; Dying</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-43297" id="mega-menu-item-43297"><a class="mega-menu-link" href="https://fivebooks.com/category/health-and-lifestyle/education/">Education</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38002" id="mega-menu-item-38002"><a class="mega-menu-link" href="https://fivebooks.com/category/health-and-lifestyle/family-relationships/">Family &amp; Relationships</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38000" id="mega-menu-item-38000"><a class="mega-menu-link" href="https://fivebooks.com/category/health-and-lifestyle/happiness/">Happiness</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38003" id="mega-menu-item-38003"><a class="mega-menu-link" href="https://fivebooks.com/category/health-and-lifestyle/sex-sexuality/">Sex &amp; Sexuality</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38004" id="mega-menu-item-38004"><a class="mega-menu-link" href="https://fivebooks.com/category/history/">History<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38005" id="mega-menu-item-38005"><a class="mega-menu-link" href="https://fivebooks.com/category/history/ancient-history/">Ancient History</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38007" id="mega-menu-item-38007"><a class="mega-menu-link" href="https://fivebooks.com/category/history/early-modern-history/">Early Modern History</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-39999" id="mega-menu-item-39999"><a class="mega-menu-link" href="https://fivebooks.com/category/history/historical-figures/">Historical Figures</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38008" id="mega-menu-item-38008"><a class="mega-menu-link" href="https://fivebooks.com/category/history/medieval-history/">Medieval History</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38009" id="mega-menu-item-38009"><a class="mega-menu-link" href="https://fivebooks.com/category/history/modern-history/">Modern History</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38010" id="mega-menu-item-38010"><a class="mega-menu-link" href="https://fivebooks.com/category/history/military-history/">Military History</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38011" id="mega-menu-item-38011"><a class="mega-menu-link" href="https://fivebooks.com/category/language/">Language<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38012" id="mega-menu-item-38012"><a class="mega-menu-link" href="https://fivebooks.com/category/language/grammar-punctuation/">Grammar &amp; Punctuation</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38133" id="mega-menu-item-38133"><a class="mega-menu-link" href="https://fivebooks.com/category/language/learning-languages/">Learning Languages</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38013" id="mega-menu-item-38013"><a class="mega-menu-link" href="https://fivebooks.com/category/language/linguistics/">Linguistics</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-45531" id="mega-menu-item-45531"><a class="mega-menu-link" href="https://fivebooks.com/category/law-and-constitutions/">Law</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-40114" id="mega-menu-item-40114"><a class="mega-menu-link" href="https://fivebooks.com/category/literary-nonfiction-and-biography/">Literary Nonfiction<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-41635" id="mega-menu-item-41635"><a class="mega-menu-link" href="https://fivebooks.com/category/literary-nonfiction-and-biography/biography/">Biography</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-39993" id="mega-menu-item-39993"><a class="mega-menu-link" href="https://fivebooks.com/category/literary-nonfiction-and-biography/essays/">Essays</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-39994" id="mega-menu-item-39994"><a class="mega-menu-link" href="https://fivebooks.com/category/literary-nonfiction-and-biography/memoir/">Memoir</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-39996" id="mega-menu-item-39996"><a class="mega-menu-link" href="https://fivebooks.com/category/literary-nonfiction-and-biography/famous-artists/">Famous Artists</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-39995" id="mega-menu-item-39995"><a class="mega-menu-link" href="https://fivebooks.com/category/literary-nonfiction-and-biography/travel-books/">Travel</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-45134" id="mega-menu-item-45134"><a class="mega-menu-link" href="https://fivebooks.com/category/literary-nonfiction-and-biography/true-crime/">True Crime</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-37978-0-2">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38029" id="mega-menu-item-38029"><a class="mega-menu-link" href="https://fivebooks.com/category/music-and-drama/">Music &amp; Drama<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38030" id="mega-menu-item-38030"><a class="mega-menu-link" href="https://fivebooks.com/category/music-and-drama/classical-music-opera-book/">Classical Music &amp; Opera</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38032" id="mega-menu-item-38032"><a class="mega-menu-link" href="https://fivebooks.com/category/music-and-drama/film-cinema-tv/">Film &amp; Cinema</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38031" id="mega-menu-item-38031"><a class="mega-menu-link" href="https://fivebooks.com/category/music-and-drama/music-books/">Music</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38033" id="mega-menu-item-38033"><a class="mega-menu-link" href="https://fivebooks.com/category/music-and-drama/theatre/">Theatre</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38034" id="mega-menu-item-38034"><a class="mega-menu-link" href="https://fivebooks.com/category/nature/">Nature<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38099" id="mega-menu-item-38099"><a class="mega-menu-link" href="https://fivebooks.com/category/nature/dinosaurs-the-prehistoric-world/">Dinosaurs &amp; the Prehistoric World</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38100" id="mega-menu-item-38100"><a class="mega-menu-link" href="https://fivebooks.com/category/nature/the-earth/">The Earth</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38102" id="mega-menu-item-38102"><a class="mega-menu-link" href="https://fivebooks.com/category/nature/plants-trees-flowers/">Plants, Trees &amp; Flowers</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38035" id="mega-menu-item-38035"><a class="mega-menu-link" href="https://fivebooks.com/category/philosophy/">Philosophy<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38103" id="mega-menu-item-38103"><a class="mega-menu-link" href="https://fivebooks.com/category/philosophy/ancient-philosophy/">Ancient Philosophy</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38104" id="mega-menu-item-38104"><a class="mega-menu-link" href="https://fivebooks.com/category/philosophy/ethics-moral-philosophy/">Ethics &amp; Moral Philosophy</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38105" id="mega-menu-item-38105"><a class="mega-menu-link" href="https://fivebooks.com/category/philosophy/great-philosophers/">Great Philosophers</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38107" id="mega-menu-item-38107"><a class="mega-menu-link" href="https://fivebooks.com/category/philosophy/social-political-philosophy/">Social &amp; Political Philosophy</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38036" id="mega-menu-item-38036"><a class="mega-menu-link" href="https://fivebooks.com/category/politics-and-society/">Politics &amp; Society<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38110" id="mega-menu-item-38110"><a class="mega-menu-link" href="https://fivebooks.com/category/politics-and-society/conflict-war/">Conflict &amp; War</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38112" id="mega-menu-item-38112"><a class="mega-menu-link" href="https://fivebooks.com/category/politics-and-society/feminism/">Feminism</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38113" id="mega-menu-item-38113"><a class="mega-menu-link" href="https://fivebooks.com/category/politics-and-society/foreign-policy-international-relations/">Foreign Policy &amp; International Relations</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38114" id="mega-menu-item-38114"><a class="mega-menu-link" href="https://fivebooks.com/category/politics-and-society/human-rights/">Human Rights</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38115" id="mega-menu-item-38115"><a class="mega-menu-link" href="https://fivebooks.com/category/politics-and-society/terrorism/">Terrorism</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38014" id="mega-menu-item-38014"><a class="mega-menu-link" href="https://fivebooks.com/category/psychology/">Psychology<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-44131" id="mega-menu-item-44131"><a class="mega-menu-link" href="https://fivebooks.com/category/psychology/mental-health/">Mental Health</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-44132" id="mega-menu-item-44132"><a class="mega-menu-link" href="https://fivebooks.com/category/psychology/neuroscience/">Neuroscience</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-44127" id="mega-menu-item-44127"><a class="mega-menu-link" href="https://fivebooks.com/category/psychology/psychoanalysis/">Psychoanalysis</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-44128" id="mega-menu-item-44128"><a class="mega-menu-link" href="https://fivebooks.com/category/psychology/psychology-research/">Psychology Research</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-44130" id="mega-menu-item-44130"><a class="mega-menu-link" href="https://fivebooks.com/category/psychology/self-help/">Self Help</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-37978-0-3">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38037" id="mega-menu-item-38037"><a class="mega-menu-link" href="https://fivebooks.com/category/religion/">Religion<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38116" id="mega-menu-item-38116"><a class="mega-menu-link" href="https://fivebooks.com/category/religion/atheist-books/">Best Atheist Books</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38117" id="mega-menu-item-38117"><a class="mega-menu-link" href="https://fivebooks.com/category/religion/buddhism/">Buddhism</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38118" id="mega-menu-item-38118"><a class="mega-menu-link" href="https://fivebooks.com/category/religion/christian-books/">Christian</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38121" id="mega-menu-item-38121"><a class="mega-menu-link" href="https://fivebooks.com/category/religion/islamic/">Islamic</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38122" id="mega-menu-item-38122"><a class="mega-menu-link" href="https://fivebooks.com/category/religion/jewish-books/">Jewish</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38123" id="mega-menu-item-38123"><a class="mega-menu-link" href="https://fivebooks.com/category/history/religious-history/">Religious History</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38020" id="mega-menu-item-38020"><a class="mega-menu-link" href="https://fivebooks.com/category/mathematics-and-science/">Science<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38021" id="mega-menu-item-38021"><a class="mega-menu-link" href="https://fivebooks.com/category/mathematics-and-science/astronomy/">Astronomy</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38022" id="mega-menu-item-38022"><a class="mega-menu-link" href="https://fivebooks.com/category/mathematics-and-science/biology/">Biology</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38023" id="mega-menu-item-38023"><a class="mega-menu-link" href="https://fivebooks.com/category/mathematics-and-science/geoscience/">Geoscience</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38025" id="mega-menu-item-38025"><a class="mega-menu-link" href="https://fivebooks.com/category/mathematics-and-science/maths-statistics/">Maths &amp; Statistics</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-44320" id="mega-menu-item-44320"><a class="mega-menu-link" href="https://fivebooks.com/category/moon-landing/">Moon Landing</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38026" id="mega-menu-item-38026"><a class="mega-menu-link" href="https://fivebooks.com/category/mathematics-and-science/popular-science/">Popular Science</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38028" id="mega-menu-item-38028"><a class="mega-menu-link" href="https://fivebooks.com/category/mathematics-and-science/physics/">Physics</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38038" id="mega-menu-item-38038"><a class="mega-menu-link" href="https://fivebooks.com/category/sports-games-and-hobbies/">Sports, Games &amp; Hobbies<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38124" id="mega-menu-item-38124"><a class="mega-menu-link" href="https://fivebooks.com/category/sports-games-and-hobbies/football-soccer/">Football (Soccer)</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38126" id="mega-menu-item-38126"><a class="mega-menu-link" href="https://fivebooks.com/category/sports-games-and-hobbies/hobbies/">Hobbies</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38125" id="mega-menu-item-38125"><a class="mega-menu-link" href="https://fivebooks.com/category/sports-games-and-hobbies/sport-sporting-culture/">Sport &amp; Sporting Culture</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-current-interview-ancestor mega-current-menu-parent mega-current-interview-parent mega-menu-item-has-children mega-menu-item-38039" id="mega-menu-item-38039"><a class="mega-menu-link" href="https://fivebooks.com/category/technology/">Technology<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38127" id="mega-menu-item-38127"><a class="mega-menu-link" href="https://fivebooks.com/category/technology/artificial-intelligence/">Artificial Intelligence</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-current-interview-ancestor mega-current-menu-parent mega-current-interview-parent mega-menu-item-38128" id="mega-menu-item-38128"><a class="mega-menu-link" href="https://fivebooks.com/category/technology/computing/">Computing</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38129" id="mega-menu-item-38129"><a class="mega-menu-link" href="https://fivebooks.com/category/technology/digital-age/">Digital Age</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38130" id="mega-menu-item-38130"><a class="mega-menu-link" href="https://fivebooks.com/category/technology/history-of-technology/">History of Technology</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38132" id="mega-menu-item-38132"><a class="mega-menu-link" href="https://fivebooks.com/category/technology/internet/">Internet</a></li>			</ul>
+</li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-38040" id="mega-menu-item-38040"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/" aria-haspopup="true" aria-expanded="false" tabindex="0">Fiction &amp; Literature<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-row" id="mega-menu-38040-0">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-38040-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38134" id="mega-menu-item-38134"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/classic-english-literature/">Classic English Literature</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38136" id="mega-menu-item-38136"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/contemporary-fiction/">Contemporary Fiction</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38137" id="mega-menu-item-38137"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/literary-criticism/">Literary Criticism</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38138" id="mega-menu-item-38138"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/literary-figures/">Literary Figures</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-48738" id="mega-menu-item-48738"><a class="mega-menu-link" href="https://fivebooks.com/books/classics/">Classical Studies</a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-38040-0-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38141" id="mega-menu-item-38141"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/romance/">Romance</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38738" id="mega-menu-item-38738"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/comics-graphic-novels/">Comics &amp; Graphic Novels</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38142" id="mega-menu-item-38142"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/crime-mysteries/">Crime &amp; Mysteries</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38143" id="mega-menu-item-38143"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/fairy-tales-mythology/">Fairy Tales &amp; Mythology</a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-38040-0-2">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38144" id="mega-menu-item-38144"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/historical-fiction/">Historical Fiction</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38145" id="mega-menu-item-38145"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/horror-books/">Horror</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38146" id="mega-menu-item-38146"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/humour/">Humour</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38148" id="mega-menu-item-38148"><a class="mega-menu-link" href="https://fivebooks.com/category/literary-nonfiction-and-biography/memoir/">Memoir</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38139" id="mega-menu-item-38139"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/poetry/">Poetry</a></li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-38040-0-3">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38149" id="mega-menu-item-38149"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/science-fiction/">Science Fiction</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38140" id="mega-menu-item-38140"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/short-stories/">Short Stories</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38151" id="mega-menu-item-38151"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/thrillers/">Thrillers</a></li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-38041" id="mega-menu-item-38041"><a class="mega-menu-link" href="https://fivebooks.com/category/world/" aria-haspopup="true" aria-expanded="false" tabindex="0">World<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-row" id="mega-menu-38041-0">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-38041-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38062" id="mega-menu-item-38062"><a class="mega-menu-link" href="https://fivebooks.com/category/world/africa/">Africa<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38197" id="mega-menu-item-38197"><a class="mega-menu-link" href="https://fivebooks.com/category/world/africa/egypt/">Egypt</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38198" id="mega-menu-item-38198"><a class="mega-menu-link" href="https://fivebooks.com/category/world/africa/nigeria/">Nigeria</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-44223" id="mega-menu-item-44223"><a class="mega-menu-link" href="http://fivebooks.com/category/world/africa/rwanda/">Rwanda</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38200" id="mega-menu-item-38200"><a class="mega-menu-link" href="https://fivebooks.com/category/world/africa/south-africa/">South Africa</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38201" id="mega-menu-item-38201"><a class="mega-menu-link" href="https://fivebooks.com/category/world/africa/zimbabwe/">Zimbabwe</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38063" id="mega-menu-item-38063"><a class="mega-menu-link" href="https://fivebooks.com/category/world/americas/">Americas<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38160" id="mega-menu-item-38160"><a class="mega-menu-link" href="https://fivebooks.com/category/world/americas/latin-america/" aria-haspopup="true" aria-expanded="false">Latin America<span class="mega-indicator"></span></a>
+				<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38161" id="mega-menu-item-38161"><a class="mega-menu-link" href="https://fivebooks.com/category/world/americas/latin-america/argentina/">Argentina</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38159" id="mega-menu-item-38159"><a class="mega-menu-link" href="https://fivebooks.com/category/world/americas/latin-america/brazil/">Brazil</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38163" id="mega-menu-item-38163"><a class="mega-menu-link" href="https://fivebooks.com/category/world/americas/latin-america/chile/">Chile</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38166" id="mega-menu-item-38166"><a class="mega-menu-link" href="https://fivebooks.com/category/world/americas/latin-america/cuba/">Cuba</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38165" id="mega-menu-item-38165"><a class="mega-menu-link" href="https://fivebooks.com/category/world/americas/latin-america/mexico/">Mexico</a></li>				</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38167" id="mega-menu-item-38167"><a class="mega-menu-link" href="https://fivebooks.com/category/world/americas/united-states/">United States</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-42889" id="mega-menu-item-42889"><a class="mega-menu-link" href="https://fivebooks.com/category/world/americas/canada/">Canada</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-38041-0-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38064" id="mega-menu-item-38064"><a class="mega-menu-link" href="https://fivebooks.com/category/world/arctic-antarctica/">Arctic &amp; Antarctica</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38065" id="mega-menu-item-38065"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/">Asia<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38168" id="mega-menu-item-38168"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/afghanistan/">Afghanistan</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38169" id="mega-menu-item-38169"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/burma/">Burma</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38170" id="mega-menu-item-38170"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/best-books-china/">China</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38171" id="mega-menu-item-38171"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/india/">India</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38173" id="mega-menu-item-38173"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/japan/">Japan</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38177" id="mega-menu-item-38177"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/north-korea/">Korea</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38175" id="mega-menu-item-38175"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/pakistan/">Pakistan</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-46656" id="mega-menu-item-46656"><a class="mega-menu-link" href="https://fivebooks.com/best-books/syed-ashfaqul-haque-on-bangladesh/">Bangladesh</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-46654" id="mega-menu-item-46654"><a class="mega-menu-link" href="https://fivebooks.com/best-books/ahilan-kadirgamar-on-sri-lanka/">Sri Lanka</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-46657" id="mega-menu-item-46657"><a class="mega-menu-link" href="https://fivebooks.com/best-books/singapore-sharlene-teo/">Singapore</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-46936" id="mega-menu-item-46936"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/vietnam/">Vietnam</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-38041-0-2">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38066" id="mega-menu-item-38066"><a class="mega-menu-link" href="https://fivebooks.com/category/world/australia/">Australia</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38067" id="mega-menu-item-38067"><a class="mega-menu-link" href="https://fivebooks.com/category/world/europe/">Europe<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38178" id="mega-menu-item-38178"><a class="mega-menu-link" href="https://fivebooks.com/category/world/europe/belgium/">Belgium</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38179" id="mega-menu-item-38179"><a class="mega-menu-link" href="https://fivebooks.com/category/world/europe/britain/">Britain</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38180" id="mega-menu-item-38180"><a class="mega-menu-link" href="https://fivebooks.com/category/world/europe/france/">France</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38181" id="mega-menu-item-38181"><a class="mega-menu-link" href="https://fivebooks.com/category/world/europe/germany/">Germany</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38182" id="mega-menu-item-38182"><a class="mega-menu-link" href="https://fivebooks.com/category/world/europe/greece/">Greece</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38183" id="mega-menu-item-38183"><a class="mega-menu-link" href="https://fivebooks.com/category/world/europe/ireland/">Ireland</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38184" id="mega-menu-item-38184"><a class="mega-menu-link" href="https://fivebooks.com/category/world/europe/italy/">Italy</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38185" id="mega-menu-item-38185"><a class="mega-menu-link" href="https://fivebooks.com/category/world/europe/netherlands/">Netherlands</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-48943" id="mega-menu-item-48943"><a class="mega-menu-link" href="https://fivebooks.com/books/norway/">Norway</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-38041-0-3">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38069" id="mega-menu-item-38069"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/middle-east/">Middle East<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38186" id="mega-menu-item-38186"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/middle-east/iran/">Iran</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38187" id="mega-menu-item-38187"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/middle-east/iraq/">Iraq</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38188" id="mega-menu-item-38188"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/middle-east/israel/">Israel</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38191" id="mega-menu-item-38191"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/middle-east/syria/">Syria</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38192" id="mega-menu-item-38192"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/middle-east/turkey/">Turkey</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-46653" id="mega-menu-item-46653"><a class="mega-menu-link" href="https://fivebooks.com/best-books/bernard-haykel-on-yemen/">Yemen</a></li>			</ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-38068" id="mega-menu-item-38068"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/russia/">Russia &amp; FSU<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38193" id="mega-menu-item-38193"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/azerbaijan/">Azerbaijan</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38194" id="mega-menu-item-38194"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/georgia/">Georgia</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38195" id="mega-menu-item-38195"><a class="mega-menu-link" href="https://fivebooks.com/category/world/asia/russia/">Russia</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-46659" id="mega-menu-item-46659"><a class="mega-menu-link" href="https://fivebooks.com/best-books/ukraine-marci-shore/">Ukraine</a></li>			</ul>
+</li>		</ul>
+</li>	</ul>
+</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-grid mega-menu-item-38042" id="mega-menu-item-38042"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/" aria-haspopup="true" aria-expanded="false" tabindex="0">Kids<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-row" id="mega-menu-38042-0">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-38042-0-0">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-50330" id="mega-menu-item-50330"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/search-by-age/">Search by Age<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-50557" id="mega-menu-item-50557"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/search-by-age/ages-3-5/">Ages 3-5</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-50558" id="mega-menu-item-50558"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/search-by-age/ages-6-8/">Ages 6-8</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-50559" id="mega-menu-item-50559"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/search-by-age/ages-9-12/">Ages 9-12</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-50560" id="mega-menu-item-50560"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/search-by-age/young-adult/">Young Adult</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-38042-0-1">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-has-children mega-menu-item-50332" id="mega-menu-item-50332"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/search-by-topic/">Search by Topic<span class="mega-indicator"></span></a>
+			<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-50562" id="mega-menu-item-50562"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/search-by-topic/economics-best-kids-books/">Economics</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38052" id="mega-menu-item-38052"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/family-pets/">Family &amp; Pets</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38053" id="mega-menu-item-38053"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/happiness-mental-health/">Happiness &amp; Mental Health</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-50563" id="mega-menu-item-50563"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/search-by-topic/history-best-kids-books/">History</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-50564" id="mega-menu-item-50564"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/search-by-topic/nature-environment/">Nature and Environment</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-50565" id="mega-menu-item-50565"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/search-by-topic/politics-current-affairs/">Politics</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-50566" id="mega-menu-item-50566"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/search-by-topic/science/">Science</a></li>			</ul>
+</li>		</ul>
+</li><li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-38042-0-2">
+		<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-50333" id="mega-menu-item-50333"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/best-childrens-books-of-2019/">Best Children's Books of 2019</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-50678" id="mega-menu-item-50678"><a class="mega-menu-link" href="https://fivebooks.com/books/book-recommendations-from-schoolteachers/">High School Teachers Recommend Books by Subject</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-38056" id="mega-menu-item-38056"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/novels-novelists/">Novels &amp; Novelists</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-44669" id="mega-menu-item-44669"><a class="mega-menu-link" href="https://fivebooks.com/category/best-kids-books/by-children-for-children/">By Kids for Kids</a></li>		</ul>
+</li>	</ul>
+</li><li class="mega-menu-row" id="mega-menu-38042-2">
+	<ul class="mega-sub-menu">
+<li class="mega-menu-column mega-menu-columns-3-of-12" id="mega-menu-38042-2-0"></li>	</ul>
+</li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-41075" id="mega-menu-item-41075"><a class="mega-menu-link" href="https://fivebooks.com/books/best-books-of-2020/" aria-haspopup="true" aria-expanded="false" tabindex="0">Best Books of 2020<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-50954" id="mega-menu-item-50954"><a class="mega-menu-link" href="https://fivebooks.com/best-books/biography-2020-nbcc-elizabeth-taylor/">Biography</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-50958" id="mega-menu-item-50958"><a class="mega-menu-link" href="https://fivebooks.com/best-books/autobiography-memoirs-2020-mark-athitakis/">Memoirs and Autobiography</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-50955" id="mega-menu-item-50955"><a class="mega-menu-link" href="https://fivebooks.com/best-books/childrens-2020-krishna-grady/">Kids' Books</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-50956" id="mega-menu-item-50956"><a class="mega-menu-link" href="https://fivebooks.com/best-books/editors-picks-the-most-anticipated-novels-of-early-2020-cal-flyn/">Fiction</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-50959" id="mega-menu-item-50959"><a class="mega-menu-link" href="https://fivebooks.com/category/fiction/crime-mysteries/best-mystery-books-2020/">Mysteries</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-42208" id="mega-menu-item-42208"><a class="mega-menu-link" href="https://fivebooks.com/new-books/" aria-haspopup="true" aria-expanded="false" tabindex="0">New Books<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-45377" id="mega-menu-item-45377"><a class="mega-menu-link" href="https://fivebooks.com/new-books/">All</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-48752" id="mega-menu-item-48752"><a class="mega-menu-link" href="https://fivebooks.com/category/economics/new-economics-books/">Economics</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-47898" id="mega-menu-item-47898"><a class="mega-menu-link" href="https://fivebooks.com/category/mathematics-and-science/maths-statistics/new-math-books/">Mathematics</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-47897" id="mega-menu-item-47897"><a class="mega-menu-link" href="https://fivebooks.com/category/philosophy/new-philosophy-books/">Philosophy</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-49235" id="mega-menu-item-49235"><a class="mega-menu-link" href="https://fivebooks.com/category/history/new-history-books/">History</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-44726" id="mega-menu-item-44726"><a class="mega-menu-link" href="https://fivebooks.com/category/new-in-paperback/">Paperbacks</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-44864" id="mega-menu-item-44864"><a class="mega-menu-link" href="https://fivebooks.com/category/new-editions/">New Editions (of old books)</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-50199" id="mega-menu-item-50199"><a class="mega-menu-link" href="https://fivebooks.com/best-books/gifts-for-book-lovers/">Gifts for Book Lovers</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-44226" id="mega-menu-item-44226"><a class="mega-menu-link" href="https://fivebooks.com/category/audiobooks/" aria-haspopup="true" aria-expanded="false" tabindex="0">Audiobooks<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-44836" id="mega-menu-item-44836"><a class="mega-menu-link" href="https://fivebooks.com/audiobook-highlights-great-actors-read-great-books/">Actors Read Great Books</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-45973" id="mega-menu-item-45973"><a class="mega-menu-link" href="https://fivebooks.com/books/best-audiobooks-for-kids/">Best Audiobooks for Kids</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-48008" id="mega-menu-item-48008"><a class="mega-menu-link" href="https://fivebooks.com/category/audiobooks/great-books-narrated-by-their-author/">Books Narrated by Their Authors</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-50119" id="mega-menu-item-50119"><a class="mega-menu-link" href="https://fivebooks.com/category/audiobooks/best-audiobook-thrillers/">Best Audiobook Thrillers</a></li><li class="mega-menu-item mega-menu-item-type-taxonomy mega-menu-item-object-category mega-menu-item-50325" id="mega-menu-item-50325"><a class="mega-menu-link" href="https://fivebooks.com/category/audiobooks/best-history-audiobooks/">Best History Audiobooks</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-47266" id="mega-menu-item-47266"><a class="mega-menu-link" href="https://fivebooks.com/books/book-awards/" aria-haspopup="true" aria-expanded="false" tabindex="0">Book Awards<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-49774" id="mega-menu-item-49774"><a class="mega-menu-link" href="https://fivebooks.com/best-books/sci-fi-2019-arthur-c-clarke/">Arthur C Clarke (Science fiction)</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-49768" id="mega-menu-item-49768"><a class="mega-menu-link" href="https://fivebooks.com/books/baillie-gifford-prize/">Baillie Gifford (Nonfiction)</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-49769" id="mega-menu-item-49769"><a class="mega-menu-link" href="https://fivebooks.com/books/booker-prize/">Booker (Fiction)</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-49775" id="mega-menu-item-49775"><a class="mega-menu-link" href="https://fivebooks.com/books/best-kids-books-2019-carnegie-medal/">Carnegie Medal (Children’s)</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-49770" id="mega-menu-item-49770"><a class="mega-menu-link" href="https://fivebooks.com/books/nobel-prize/">Nobel (Various)</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-49771" id="mega-menu-item-49771"><a class="mega-menu-link" href="https://fivebooks.com/books/royal-society-book-prizes/">The Royal Society (Science)</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-49773" id="mega-menu-item-49773"><a class="mega-menu-link" href="https://fivebooks.com/best-books/best-historical-fiction-2019-walter-scott-prize-shortlist/">Walter Scott (Historical fiction)</a></li><li class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-49772" id="mega-menu-item-49772"><a class="mega-menu-link" href="https://fivebooks.com/books/wolfson-prize/">Wolfson (History)</a></li></ul>
+</li><li class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-38043" id="mega-menu-item-38043"><a class="mega-menu-link" href="https://fivebooks.com/experts/" tabindex="0">Experts</a></li></ul></div>         </div></div></div>         <style>
+<!--
+
+div#tintBox {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position:fixed;
+    background: #000;
+    z-index: 8;
+    opacity: 0;
+    display: none;
+}
+-->
+</style>
+<div id="tintBox"></div>
+
+
+<div class="twenty-col">
+    <div class="row content-section">
+        <div class="main-content">
+
+            <div class="small-20 columns">
+                                
+                <article class="complete-interview">
+                    
+                        <div class="row">
+                            <div class="medium-4 columns">    
+			    	<p class="hide-for-small" style="margin-top: 0.8rem; text-align: center; margin-bottom: 1.125rem;">
+	<a style="display: inline-block; width: 6.5rem" class="reader-button" href="/reader-lists">Make Your<br>Own List</a>
+</p>
+<div class="alignleft hide-for-small" style="max-width: 150px; margin: 1rem auto;">
+<ins data-fivebooks-zoneid="1" data-fivebooks-category="technology/computing" data-fivebooks-id="ef0dbb2b89dcbb1a650ce88ca4840ffd" data-fivebooks-country="US" data-fivebooks-seq="0" id="fivebooks-0-0" data-fivebooks-loaded="1" style="text-decoration: none;"><div id="beacon_ab52c61d53" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="https://fivebooks.com/serve/delivery/lg.php?bid=0&amp;cid=0&amp;zid=1&amp;source={obfs:}&amp;loc=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F&amp;cb=ab52c61d53" width="0" height="0" alt="" style="width: 0px; height: 0px;"></div></ins>
+<script async="" src="//fivebooks.com/serve/delivery/asyncjs.php"></script>
+</div> 
+                            </div>
+                            <div class="page-content header-right-column medium-16 columns">
+                                <div class="row">
+                                    <h3 class="block-heading -wholepage interview-heading"><a href="https://fivebooks.com/category/technology/">Technology</a> » <a href="https://fivebooks.com/category/technology/computing/">Computing</a></h3>
+                                    <div class="medium-14 columns">
+                                        <div class="row">
+                                            <div class="small-20 medium-20 columns">
+                                                <h1 class="interview-title">The best books on <span class="subject">Learning Python and Data Science</span></h1><h4 class="interview-name">recommended by Vicki Boykis</h4>                                                
+                                                                         
+                                                <p class="interview-description">What do we mean when we talk about 'big data', and how can be become better critical consumers of it? Data scientist <strong>Vicki Boykis</strong> recommends the best books for learning Python—a language, she says, as versatile as a Swiss Army knife—and shows that it's possible to teach yourself coding and data science.</p>
+                                                                                                            <p class="interview-credit">Interview by <a href="https://fivebooks.com/interviewer/edouard-mathieu/" class="interviewer-name">Edouard Mathieu</a></p>
+                                                                                                </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                                            
+
+                                </div>
+
+                                <div class="row">
+                                     <div class="medium-25 columns interview-page-bookshelf">                                    
+                                                                                <style>
+.buy.submit {
+    display: none;
+    background-color: #fb6f73;
+    height: 3.6rem;
+    width: 6.5rem;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: "AN", "Lato", sans-serif;
+    line-height: 1.2em;
+    text-decoration: none;
+    position: absolute;
+    /*margin-right: 5rem;*/
+    padding: 0.6rem 10px;
+    left: -9.4rem;
+    /*right: 0;
+    top: -5rem;*/
+
+   }
+.buy.submit:hover {
+background-color: #fbefef;
+color: #fb6f73;
+}
+   @media only screen and (min-width: 64.0625em){
+   .buy.submit { display: block; }
+   }
+</style>
+<a class="buy submit hideNoLink" id="buyfive" target="_blank" href="https://www.amazon.com/gp/aws/cart/add.html?ASIN.1=0321884914&amp;Quantity.1=1&amp;ASIN.2=1430219483&amp;Quantity.2=1&amp;ASIN.3=1617290343&amp;Quantity.3=1&amp;ASIN.4=0393310728&amp;Quantity.4=1&amp;ASIN.5=0124077269&amp;Quantity.5=1&amp;AssociateTag=fivebooksbuy5-20" data-href-us="https://www.amazon.com/gp/aws/cart/add.html?ASIN.1=0321884914&amp;Quantity.1=1&amp;ASIN.2=1430219483&amp;Quantity.2=1&amp;ASIN.3=1617290343&amp;Quantity.3=1&amp;ASIN.4=0393310728&amp;Quantity.4=1&amp;ASIN.5=0124077269&amp;Quantity.5=1&amp;AssociateTag=fivebooksbuy5-20" data-href-uk="https://www.amazon.co.uk/gp/aws/cart/add.html?ASIN.1=0321884914&amp;Quantity.1=1&amp;ASIN.2=1430219483&amp;Quantity.2=1&amp;ASIN.3=1617290343&amp;Quantity.3=1&amp;ASIN.4=0393310728&amp;Quantity.4=1&amp;ASIN.5=0124077269&amp;Quantity.5=1&amp;AssociateTag=buyall5-21" data-amzn-asin="0321884914">Buy all books</a>
+<section class="book-list dynamic-bookshelf" data-overlay-type="interview-book">
+    <div class="row">
+        <ul class="books book-covers">
+            
+            <div class="small-16 medium-20 columns books-themselves">
+                                <div class="row">
+                                            <li class="single-book small-4 columns " data-book-id="45215" data-position="0">
+			<a href="https://fivebooks.com/book/learn-python-the-hard-way/buy" rel="nofollow" target="_blank">
+			    <div class="buy-button bookshelf">Read</div>                                                        <div id="learn-python-the-hard-way" class="cover-wrap picture book-cover-1 " style="height: 235.5px">
+    <img width="230" height="300" src="https://fivebooks.com/app/uploads/books/BC_0321884914-230x300.jpg" class="cover wp-post-image" alt="The best books on Learning Python and Data Science - Learn Python the Hard Way by Zed A. Shaw" title="The best books on Learning Python and Data Science - Learn Python the Hard Way by Zed A. Shaw" srcset="https://fivebooks.com/app/uploads/books/BC_0321884914-230x300.jpg 230w, https://fivebooks.com/app/uploads/books/BC_0321884914.jpg 384w, https://fivebooks.com/app/uploads/books/BC_0321884914-314x409.jpg 314w" sizes="(max-width: 230px) 100vw, 230px"></div>
+    <p class="book-number -display -shelf">1</p>
+<h2 class="book-title -listbook"><span class="title">Learn Python the Hard Way</span> <br>
+    by Zed A. Shaw</h2>
+			</a>			</li>
+                                            <li class="single-book small-4 columns " data-book-id="45217" data-position="1">
+			<a href="https://fivebooks.com/book/coders-at-work-reflections-on-the-craft-of-programming/buy" rel="nofollow" target="_blank">
+			    <div class="buy-button bookshelf">Read</div>                                                        <div id="coders-at-work-reflections-on-the-craft-of-programming" class="cover-wrap picture book-cover-2 " style="height: 235.5px">
+    <img width="200" height="300" src="https://fivebooks.com/app/uploads/books/BC_1430219483-200x300.jpg" class="cover wp-post-image" alt="The best books on Learning Python and Data Science - Coders at Work: Reflections on the Craft of Programming by Peter Seibel" title="The best books on Learning Python and Data Science - Coders at Work: Reflections on the Craft of Programming by Peter Seibel" srcset="https://fivebooks.com/app/uploads/books/BC_1430219483-200x300.jpg 200w, https://fivebooks.com/app/uploads/books/BC_1430219483.jpg 333w, https://fivebooks.com/app/uploads/books/BC_1430219483-314x471.jpg 314w" sizes="(max-width: 200px) 100vw, 200px"></div>
+    <p class="book-number -display -shelf">2</p>
+<h2 class="book-title -listbook"><span class="title">Coders at Work: Reflections on the Craft of Programming</span> <br>
+    by Peter Seibel</h2>
+			</a>			</li>
+                                            <li class="single-book small-4 columns " data-book-id="45221" data-position="2">
+<a href="https://fivebooks.com/book/big-data-principles-and-best-practices-of-scalable-realtime-data-systems/listen" rel="nofollow" target="_blank">
+			    <div class="listen-button bookshelf"><svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C114.517 32 0 146.497 0 288v51.429a16.003 16.003 0 0 0 8.213 13.978l23.804 13.262c-.005.443-.017.886-.017 1.331 0 61.856 50.144 112 112 112h24c13.255 0 24-10.745 24-24V280c0-13.255-10.745-24-24-24h-24c-49.675 0-91.79 32.343-106.453 77.118L32 330.027V288C32 164.205 132.184 64 256 64c123.796 0 224 100.184 224 224v42.027l-5.547 3.09C459.79 288.343 417.676 256 368 256h-24c-13.255 0-24 10.745-24 24v176c0 13.255 10.745 24 24 24h24c61.856 0 112-50.144 112-112 0-.445-.012-.888-.017-1.332l23.804-13.262A16.002 16.002 0 0 0 512 339.428V288c0-141.482-114.497-256-256-256zM144 288h16v160h-16c-44.112 0-80-35.888-80-80s35.888-80 80-80zm224 160h-16V288h16c44.112 0 80 35.888 80 80s-35.888 80-80 80z" class=""></path></svg></div></a>			<a href="https://fivebooks.com/book/big-data-principles-and-best-practices-of-scalable-realtime-data-systems/buy" rel="nofollow" target="_blank">
+			    <div class="buy-button bookshelf">Read</div>                                                        <div id="big-data-principles-and-best-practices-of-scalable-realtime-data-systems" class="cover-wrap picture book-cover-3 " style="height: 235.5px">
+    <img width="239" height="300" src="https://fivebooks.com/app/uploads/books/BC_1617290343-239x300.jpg" class="cover wp-post-image" alt="The best books on Learning Python and Data Science - Big Data: Principles and Best Practices of Scalable Realtime Data Systems Nathan Marz (with James Warren)" title="The best books on Learning Python and Data Science - Big Data: Principles and Best Practices of Scalable Realtime Data Systems Nathan Marz (with James Warren)" srcset="https://fivebooks.com/app/uploads/books/BC_1617290343-239x300.jpg 239w, https://fivebooks.com/app/uploads/books/BC_1617290343.jpg 399w, https://fivebooks.com/app/uploads/books/BC_1617290343-314x393.jpg 314w" sizes="(max-width: 239px) 100vw, 239px"></div>
+    <p class="book-number -display -shelf">3</p>
+<h2 class="book-title -listbook"><span class="title">Big Data: Principles and Best Practices of Scalable Realtime Data Systems</span> <br>
+    Nathan Marz (with James Warren)</h2>
+			</a>			</li>
+                                            <li class="single-book small-4 columns " data-book-id="45223" data-position="3">
+			<a href="https://fivebooks.com/book/how-to-lie-with-statistics/buy" rel="nofollow" target="_blank">
+			    <div class="buy-button bookshelf">Read</div>                                                        <div id="how-to-lie-with-statistics" class="cover-wrap picture book-cover-4 " style="height: 235.5px">
+    <img width="200" height="300" src="https://fivebooks.com/app/uploads/books/BC_0393310728-200x300.jpg" class="cover wp-post-image" alt="The best books on Learning Python and Data Science - How To Lie With Statistics by Darrell Huff" title="The best books on Learning Python and Data Science - How To Lie With Statistics by Darrell Huff" srcset="https://fivebooks.com/app/uploads/books/BC_0393310728-200x300.jpg 200w, https://fivebooks.com/app/uploads/books/BC_0393310728.jpg 333w, https://fivebooks.com/app/uploads/books/BC_0393310728-314x471.jpg 314w" sizes="(max-width: 200px) 100vw, 200px"></div>
+    <p class="book-number -display -shelf">4</p>
+<h2 class="book-title -listbook"><span class="title">How To Lie With Statistics</span> <br>
+    by Darrell Huff</h2>
+			</a>			</li>
+                                            <li class="single-book small-4 columns " data-book-id="45226" data-position="4">
+			<a href="https://fivebooks.com/book/computer-organization-and-design-mips-edition-the-hardware-software-interface/buy" rel="nofollow" target="_blank">
+			    <div class="buy-button bookshelf">Read</div>                                                        <div id="computer-organization-and-design-mips-edition-the-hardware-software-interface" class="cover-wrap picture book-cover-5 " style="height: 235.5px">
+    <img width="254" height="300" src="https://fivebooks.com/app/uploads/books/BC_0124077269-254x300.jpg" class="cover wp-post-image" alt="The best books on Learning Python and Data Science - Computer Organization and Design MIPS Edition: The Hardware/Software Interface by David A. Patterson &amp; John L. Hennessy" title="The best books on Learning Python and Data Science - Computer Organization and Design MIPS Edition: The Hardware/Software Interface by David A. Patterson &amp; John L. Hennessy" srcset="https://fivebooks.com/app/uploads/books/BC_0124077269-254x300.jpg 254w, https://fivebooks.com/app/uploads/books/BC_0124077269-314x371.jpg 314w, https://fivebooks.com/app/uploads/books/BC_0124077269.jpg 423w" sizes="(max-width: 254px) 100vw, 254px"></div>
+    <p class="book-number -display -shelf">5</p>
+<h2 class="book-title -listbook"><span class="title">Computer Organization and Design MIPS Edition: The Hardware/Software Interface</span> <br>
+    by David A. Patterson &amp; John L. Hennessy</h2>
+			</a>			</li>
+                                    </div>
+            </div>
+        </ul>
+    </div>
+</section>
+<section class="show-for-medium-down book-list-mobile">
+    <div class="row _small-tint">
+        <ul class="small-20 column books book-covers" style="margin-left:0; list-style-type: none;">
+		                            <li id="mobile-book-0" class="column small-4" style="margin-bottom:1rem;" data-book-id="45215" data-position="0">
+<div class="picture book-cover-1 ">
+<a href="https://fivebooks.com/book/learn-python-the-hard-way/buy" rel="nofollow" target="_blank">
+    <img width="384" height="500" src="https://fivebooks.com/app/uploads/books/BC_0321884914.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_0321884914.jpg 384w, https://fivebooks.com/app/uploads/books/BC_0321884914-230x300.jpg 230w, https://fivebooks.com/app/uploads/books/BC_0321884914-314x409.jpg 314w" sizes="(max-width: 384px) 100vw, 384px"></a></div>
+			</li>
+                                            <li id="mobile-book-1" class="column small-4" style="margin-bottom:1rem;" data-book-id="45217" data-position="1">
+<div class="picture book-cover-2 ">
+<a href="https://fivebooks.com/book/coders-at-work-reflections-on-the-craft-of-programming/buy" rel="nofollow" target="_blank">
+    <img width="333" height="500" src="https://fivebooks.com/app/uploads/books/BC_1430219483.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_1430219483.jpg 333w, https://fivebooks.com/app/uploads/books/BC_1430219483-200x300.jpg 200w, https://fivebooks.com/app/uploads/books/BC_1430219483-314x471.jpg 314w" sizes="(max-width: 333px) 100vw, 333px"></a></div>
+			</li>
+                                            <li id="mobile-book-2" class="column small-4" style="margin-bottom:1rem;" data-book-id="45221" data-position="2">
+<div class="picture book-cover-3 ">
+<a href="https://fivebooks.com/book/big-data-principles-and-best-practices-of-scalable-realtime-data-systems/buy" rel="nofollow" target="_blank">
+    <img width="399" height="500" src="https://fivebooks.com/app/uploads/books/BC_1617290343.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_1617290343.jpg 399w, https://fivebooks.com/app/uploads/books/BC_1617290343-239x300.jpg 239w, https://fivebooks.com/app/uploads/books/BC_1617290343-314x393.jpg 314w" sizes="(max-width: 399px) 100vw, 399px"></a></div>
+			</li>
+                                            <li id="mobile-book-3" class="column small-4" style="margin-bottom:1rem;" data-book-id="45223" data-position="3">
+<div class="picture book-cover-4 ">
+<a href="https://fivebooks.com/book/how-to-lie-with-statistics/buy" rel="nofollow" target="_blank">
+    <img width="333" height="500" src="https://fivebooks.com/app/uploads/books/BC_0393310728.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_0393310728.jpg 333w, https://fivebooks.com/app/uploads/books/BC_0393310728-200x300.jpg 200w, https://fivebooks.com/app/uploads/books/BC_0393310728-314x471.jpg 314w" sizes="(max-width: 333px) 100vw, 333px"></a></div>
+			</li>
+                                            <li id="mobile-book-4" class="column small-4" style="margin-bottom:1rem;" data-book-id="45226" data-position="4">
+<div class="picture book-cover-5 ">
+<a href="https://fivebooks.com/book/computer-organization-and-design-mips-edition-the-hardware-software-interface/buy" rel="nofollow" target="_blank">
+    <img width="423" height="500" src="https://fivebooks.com/app/uploads/books/BC_0124077269.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_0124077269.jpg 423w, https://fivebooks.com/app/uploads/books/BC_0124077269-254x300.jpg 254w, https://fivebooks.com/app/uploads/books/BC_0124077269-314x371.jpg 314w" sizes="(max-width: 423px) 100vw, 423px"></a></div>
+			</li>
+                                    
+        </ul>
+        <ul class="small-20 column books book-covers" style="margin-left:0; list-style-type: none;">
+		                            <li id="mobile-book-0" class="row" style="margin-bottom:1rem;" data-book-id="45215" data-position="0">
+<div class="column small-20">
+<a href="https://fivebooks.com/book/learn-python-the-hard-way/buy" rel="nofollow" target="_blank"><h2 class="book-title -listbook"><span class="book-number" style="display: inline-block; font-style: normal;">1</span> <span class="title">Learn Python the Hard Way</span> 
+    by Zed A. Shaw</h2>
+</a></div>
+			</li>
+                                            <li id="mobile-book-1" class="row" style="margin-bottom:1rem;" data-book-id="45217" data-position="1">
+<div class="column small-20">
+<a href="https://fivebooks.com/book/coders-at-work-reflections-on-the-craft-of-programming/buy" rel="nofollow" target="_blank"><h2 class="book-title -listbook"><span class="book-number" style="display: inline-block; font-style: normal;">2</span> <span class="title">Coders at Work: Reflections on the Craft of Programming</span> 
+    by Peter Seibel</h2>
+</a></div>
+			</li>
+                                            <li id="mobile-book-2" class="row" style="margin-bottom:1rem;" data-book-id="45221" data-position="2">
+<div class="column small-20">
+<a href="https://fivebooks.com/book/big-data-principles-and-best-practices-of-scalable-realtime-data-systems/buy" rel="nofollow" target="_blank"><h2 class="book-title -listbook"><span class="book-number" style="display: inline-block; font-style: normal;">3</span> <span class="title">Big Data: Principles and Best Practices of Scalable Realtime Data Systems</span> 
+    Nathan Marz (with James Warren)</h2>
+</a></div>
+			</li>
+                                            <li id="mobile-book-3" class="row" style="margin-bottom:1rem;" data-book-id="45223" data-position="3">
+<div class="column small-20">
+<a href="https://fivebooks.com/book/how-to-lie-with-statistics/buy" rel="nofollow" target="_blank"><h2 class="book-title -listbook"><span class="book-number" style="display: inline-block; font-style: normal;">4</span> <span class="title">How To Lie With Statistics</span> 
+    by Darrell Huff</h2>
+</a></div>
+			</li>
+                                            <li id="mobile-book-4" class="row" style="margin-bottom:1rem;" data-book-id="45226" data-position="4">
+<div class="column small-20">
+<a href="https://fivebooks.com/book/computer-organization-and-design-mips-edition-the-hardware-software-interface/buy" rel="nofollow" target="_blank"><h2 class="book-title -listbook"><span class="book-number" style="display: inline-block; font-style: normal;">5</span> <span class="title">Computer Organization and Design MIPS Edition: The Hardware/Software Interface</span> 
+    by David A. Patterson &amp; John L. Hennessy</h2>
+</a></div>
+			</li>
+                                    
+        </ul>
+    </div></section>                                    </div>
+                                </div>
+
+                            </div>            
+
+                        <div id="interviewcontent" class="small-20 medium-13 columns medium-push-4 interview-content -with-drop-cap">
+                            <div class="social-buttons show-for-small">
+                                <div class="row">
+                                    <div class="small-10 medium-5 columns">
+                                        <a href="https://twitter.com/intent/tweet?text=Vicki+Boykis+recommends+the+best+books+on+Learning+Python+and+Data+Science&amp;url=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F&amp;via=five_books" target="_blank"><i class="fa fa-twitter"></i></a>
+                                    </div>
+                                    <div class="small-10 medium-5 columns end">
+        								<a href="https://www.facebook.com/dialog/share?app_id=179767102823809&amp;href=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F&amp;redirect_uri=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F" target="_blank"><i class="fa fa-facebook facebook"></i></a><br>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <p class="question selectionShareable"><span class="drop-cap f">F</span>irst off, before we discuss your books on learning Python and data science, how did you become a data science consultant? What brought you on this path?</p>
+<p class="selectionShareable">Like many other people in this field, I didn’t study it right from the start. I actually started my journey with an undergraduate degree in economics; I was interested in both English and maths, but didn’t want to pick either at the exclusion of the other. I then started working in Washington DC as a consultant, where I was mainly working with a ton of spreadsheets. I learned that my coworkers were using programs called SAS and R to work faster, and that’s how I first started working with data programmatically. I later moved to a few data analysis jobs at larger companies.</p>
+<p class="selectionShareable">These jobs were never tied to the data engineering team; the data was provided to us and we just had to analyze it. And that’s when I decided to learn Python, how to code, and how to use big data technologies, so that I could manipulate and clean this data myself. Nowadays, I work as a consulting data scientist for many large companies in the United States, on a one-off project basis in data science and engineering.</p>
+<p class="question selectionShareable">What has been your experience of learning all of these skills by yourself? If somebody wanted to take the same path today, would you advise them to go through an official degree or to try and learn by themselves?</p>
+<p class="selectionShareable">You can get to a certain point of competency by learning by yourself, which would be enough to get a first data science job. Once you get past this point, you do need some guardrails to really master some of the deeper subjects, especially in computer science.</p>
+<p class="selectionShareable"></p><p class="pullquote inline-el selectionShareable">“When working on my own projects, I prefer Python”</p><p class="selectionShareable"></p>
+<p class="selectionShareable">When learning on your own, you tend to skip some fundamentals that can appear superficial or unneeded at the time, but would have allowed you to have a better understanding of some issues you’ll run into as a data scientist. You don’t have to complete a full program, but even a couple of courses will be extremely helpful. One of the best things you can do is also to look for a senior person to mentor you. I’ve been lucky to find a couple of those people in my career, and it has pushed me forward tremendously.</p>
+<p class="question selectionShareable">For your data science tasks, you personally choose to use Python much more than other languages, including R. What major differences have you found between those languages, and why do you tend to favor Python?</p>
+<p class="selectionShareable">Usually in consulting jobs, you come in and whatever the programming environment is, you adapt to it. I learned very quickly to become a programming polyglot, but when working on my own projects, I prefer Python. For me, it’s an incredibly useful Swiss-army-knife-type of language. You can use it for data analysis, to put up a webserver, to build a web app, to interact with cloud services, for machine learning, and so on. It’s a little worse than R for hardcore statistics, but most of the time in real life projects, we’re working with the full data pipeline from ingestion to analysis; and for that I really prefer Python for its flexibility.</p>
+<p class="selectionShareable"></p><aside class="ancillary-block -left show-for-medium-up anchor-offset" id="book-45215" data-book-id="45215">
+        <div class="single-book inline -placeholders ">
+        <a href="https://fivebooks.com/book/learn-python-the-hard-way/buy" rel="nofollow" id="book-learn-python-the-hard-way" target="_blank">            <img width="384" height="500" src="https://fivebooks.com/app/uploads/books/BC_0321884914.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_0321884914.jpg 384w, https://fivebooks.com/app/uploads/books/BC_0321884914-230x300.jpg 230w, https://fivebooks.com/app/uploads/books/BC_0321884914-314x409.jpg 314w" sizes="(max-width: 384px) 100vw, 384px">            <p class="buy-button selectionShareable">Read</p>        </a>
+             
+    </div>
+</aside>
+
+<aside class="show-for-small-only inline-el" data-book-id="45215">
+    <div class="row single-book -with-number _small-tint">
+    	<div class="small-2 columns">
+    		<p class="book-number -display selectionShareable">1</p>
+    	</div>
+        <div class="small-6 columns">
+            <a href="https://fivebooks.com/book/learn-python-the-hard-way/buy" rel="nofollow" target="_blank">                <img width="384" height="500" src="https://fivebooks.com/app/uploads/books/BC_0321884914.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_0321884914.jpg 384w, https://fivebooks.com/app/uploads/books/BC_0321884914-230x300.jpg 230w, https://fivebooks.com/app/uploads/books/BC_0321884914-314x409.jpg 314w" sizes="(max-width: 384px) 100vw, 384px">            </a>        </div>
+        <div class="small-12 columns">
+            <div class="book-title -inline">
+                <h2 class="title">
+                    Learn Python the Hard Way                </h2>
+                <h3 class="author">
+                    by Zed A. Shaw                </h3>
+            </div>
+            <a class="buy-button" style="float: left" rel="nofollow" target="_blank" href="https://fivebooks.com/book/learn-python-the-hard-way/buy">Read</a>                    </div>
+
+    </div>
+</aside>
+<p class="selectionShareable"></p>
+<p class="question selectionShareable">With that in mind, let’s talk about the first book you’ve chosen: <em>Learn Python the Hard Way</em>&nbsp;by Zed Shaw. Why did you pick this one, particularly over all the other books teaching Python?</p>
+<p class="selectionShareable">Zed Shaw has written a lot of <em>Learn X the Hard Way</em> books. Initially he put them on his website for free, which is how a lot of people found out about them. He’s experimented with many ways to monetize his work, and I believe the only way to get the books now is to pay for them—but it’s completely worth it!</p>
+<p class="selectionShareable">
+</p><div class="inline-box -donate inline-el d3">
+	    <div class="row">
+	        <div class="columns">
+	            <p class="explanation selectionShareable">Support Five Books</p>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="columns">
+				<p class="also selectionShareable">Five Books interviews are expensive to produce. If you're enjoying this interview, please support us by <a class="donate_link" href="/support-us/">donating a small amount</a>.</p>
+	        </div>
+	    </div>
+</div>
+<p class="selectionShareable"></p>
+<p class="selectionShareable">I chose this book because a lot of other Python books talk about theory, and <em>Learn Python the Hard Way</em> is first and foremost about building things. His approach is to say: ‘Coding is going to suck at first; you’re not going to understand anything. But just do this stuff that I tell you to do, and eventually it’s all going to make sense.’ He goes through all of the building blocks that you need to master Python. It’s been updated for Python 3, which is very important as well. It’s very practical and down to earth, with about 50 to 60 exercises, and it’s written in a way that doesn’t feel overwhelming and that really allows you to go through all of them.</p>
+<p class="selectionShareable"></p><aside class="ancillary-block -left show-for-medium-up anchor-offset" id="book-45217" data-book-id="45217">
+        <div class="single-book inline -placeholders ">
+        <a href="https://fivebooks.com/book/coders-at-work-reflections-on-the-craft-of-programming/buy" rel="nofollow" id="book-coders-at-work-reflections-on-the-craft-of-programming" target="_blank">            <img width="333" height="500" src="https://fivebooks.com/app/uploads/books/BC_1430219483.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_1430219483.jpg 333w, https://fivebooks.com/app/uploads/books/BC_1430219483-200x300.jpg 200w, https://fivebooks.com/app/uploads/books/BC_1430219483-314x471.jpg 314w" sizes="(max-width: 333px) 100vw, 333px">            <p class="buy-button selectionShareable">Read</p>        </a>
+             
+    </div>
+</aside>
+
+<aside class="show-for-small-only inline-el" data-book-id="45217">
+    <div class="row single-book -with-number _small-tint">
+    	<div class="small-2 columns">
+    		<p class="book-number -display selectionShareable">2</p>
+    	</div>
+        <div class="small-6 columns">
+            <a href="https://fivebooks.com/book/coders-at-work-reflections-on-the-craft-of-programming/buy" rel="nofollow" target="_blank">                <img width="333" height="500" src="https://fivebooks.com/app/uploads/books/BC_1430219483.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_1430219483.jpg 333w, https://fivebooks.com/app/uploads/books/BC_1430219483-200x300.jpg 200w, https://fivebooks.com/app/uploads/books/BC_1430219483-314x471.jpg 314w" sizes="(max-width: 333px) 100vw, 333px">            </a>        </div>
+        <div class="small-12 columns">
+            <div class="book-title -inline">
+                <h2 class="title">
+                    Coders at Work: Reflections on the Craft of Programming                </h2>
+                <h3 class="author">
+                    by Peter Seibel                </h3>
+            </div>
+            <a class="buy-button" style="float: left" rel="nofollow" target="_blank" href="https://fivebooks.com/book/coders-at-work-reflections-on-the-craft-of-programming/buy">Read</a>                    </div>
+
+    </div>
+</aside>
+<p class="selectionShareable"></p>
+<p class="question selectionShareable">Your next choice is <em>Coders at Work</em> by Peter Seibel, subtitled ‘Reflections on the craft of programming’. Is this meant to teach you to code <em>well</em>, beyond what basic books usually teach you about programming?</p>
+<p class="selectionShareable">This is more of a ‘cultural’ book about programming, in which you won’t get a lot of specific, technical advice on how to program in Python, C or Java. What you’ll get is an introduction to the industry by the people who founded it; people like Brendan Eich, who wrote JavaScript, or Joshua Bloch, who was one of the main contributors to Java. It’s about how those people got into programming and how they think about it. It’s a very conversational book that really helps you to learn the culture of this industry you’re coming into, and some of its terminology. And it’s a much lighter read than <em>Learn Python the Hard Way</em>, of course.</p>
+<p class="question selectionShareable">When you haven’t followed an engineering curriculum and haven’t been immersed in the engineer culture, is it important to catch up with that to be able to really work in this industry?</p>
+<p class="selectionShareable">It’s extremely important. You’ll be working with people who have been writing code since they were 10 years old. They’ve very much immersed in this world, and as a beginner, it can be intimidating to ask certain things, because it gives away your ‘status’ and the fact that you don’t know as much. To balance that, this book will for example give you a good overview of the history of computer development, what kind of programming languages there are and how they’ve come about—all these things that you wouldn’t necessarily get from online courses and technical books.</p>
+<p class="question selectionShareable">Have you found the computer/data science industry to be welcoming to outsiders, or at least people who haven’t received a proper degree in the field?</p>
+<p class="selectionShareable">In spite of my answer to the last question, I still think it’s one of the most welcoming industries that you can get into. I worked hard but I do consider that I had some luck by stumbling into data just as it was getting big, around 2011-2012. None of my friends, be they nurses, doctors, lawyers, actuaries, could have found their job without a lot of advanced studies and official certifications. For all the problems that the computer science industry has, it’s probably one of the most egalitarian, at least on the particular issue of qualifications.</p>
+<p class="selectionShareable"></p><aside class="ancillary-block -left show-for-medium-up anchor-offset" id="book-45221" data-book-id="45221">
+        <div class="single-book inline -placeholders ">
+        <a href="https://fivebooks.com/book/big-data-principles-and-best-practices-of-scalable-realtime-data-systems/buy" rel="nofollow" id="book-big-data-principles-and-best-practices-of-scalable-realtime-data-systems" target="_blank">            <img width="399" height="500" src="https://fivebooks.com/app/uploads/books/BC_1617290343.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_1617290343.jpg 399w, https://fivebooks.com/app/uploads/books/BC_1617290343-239x300.jpg 239w, https://fivebooks.com/app/uploads/books/BC_1617290343-314x393.jpg 314w" sizes="(max-width: 399px) 100vw, 399px">            <p class="buy-button selectionShareable">Read</p>        </a>
+            <a class="listen-button" href="https://fivebooks.com/book/big-data-principles-and-best-practices-of-scalable-realtime-data-systems/listen" rel="nofollow" target="_blank">
+			    <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C114.517 32 0 146.497 0 288v51.429a16.003 16.003 0 0 0 8.213 13.978l23.804 13.262c-.005.443-.017.886-.017 1.331 0 61.856 50.144 112 112 112h24c13.255 0 24-10.745 24-24V280c0-13.255-10.745-24-24-24h-24c-49.675 0-91.79 32.343-106.453 77.118L32 330.027V288C32 164.205 132.184 64 256 64c123.796 0 224 100.184 224 224v42.027l-5.547 3.09C459.79 288.343 417.676 256 368 256h-24c-13.255 0-24 10.745-24 24v176c0 13.255 10.745 24 24 24h24c61.856 0 112-50.144 112-112 0-.445-.012-.888-.017-1.332l23.804-13.262A16.002 16.002 0 0 0 512 339.428V288c0-141.482-114.497-256-256-256zM144 288h16v160h-16c-44.112 0-80-35.888-80-80s35.888-80 80-80zm224 160h-16V288h16c44.112 0 80 35.888 80 80s-35.888 80-80 80z" class=""></path></svg></a> 
+    </div>
+</aside>
+
+<aside class="show-for-small-only inline-el" data-book-id="45221">
+    <div class="row single-book -with-number _small-tint">
+    	<div class="small-2 columns">
+    		<p class="book-number -display selectionShareable">3</p>
+    	</div>
+        <div class="small-6 columns">
+            <a href="https://fivebooks.com/book/big-data-principles-and-best-practices-of-scalable-realtime-data-systems/buy" rel="nofollow" target="_blank">                <img width="399" height="500" src="https://fivebooks.com/app/uploads/books/BC_1617290343.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_1617290343.jpg 399w, https://fivebooks.com/app/uploads/books/BC_1617290343-239x300.jpg 239w, https://fivebooks.com/app/uploads/books/BC_1617290343-314x393.jpg 314w" sizes="(max-width: 399px) 100vw, 399px">            </a>        </div>
+        <div class="small-12 columns">
+            <div class="book-title -inline">
+                <h2 class="title">
+                    Big Data: Principles and Best Practices of Scalable Realtime Data Systems                </h2>
+                <h3 class="author">
+                    Nathan Marz (with James Warren)                </h3>
+            </div>
+            <a class="buy-button" style="float: left" rel="nofollow" target="_blank" href="https://fivebooks.com/book/big-data-principles-and-best-practices-of-scalable-realtime-data-systems/buy">Read</a>            <a class="listen-button" style="float: left; margin-left:1rem;" href="https://fivebooks.com/book/big-data-principles-and-best-practices-of-scalable-realtime-data-systems/listen" rel="nofollow" target="_blank">
+			    <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C114.517 32 0 146.497 0 288v51.429a16.003 16.003 0 0 0 8.213 13.978l23.804 13.262c-.005.443-.017.886-.017 1.331 0 61.856 50.144 112 112 112h24c13.255 0 24-10.745 24-24V280c0-13.255-10.745-24-24-24h-24c-49.675 0-91.79 32.343-106.453 77.118L32 330.027V288C32 164.205 132.184 64 256 64c123.796 0 224 100.184 224 224v42.027l-5.547 3.09C459.79 288.343 417.676 256 368 256h-24c-13.255 0-24 10.745-24 24v176c0 13.255 10.745 24 24 24h24c61.856 0 112-50.144 112-112 0-.445-.012-.888-.017-1.332l23.804-13.262A16.002 16.002 0 0 0 512 339.428V288c0-141.482-114.497-256-256-256zM144 288h16v160h-16c-44.112 0-80-35.888-80-80s35.888-80 80-80zm224 160h-16V288h16c44.112 0 80 35.888 80 80s-35.888 80-80 80z" class=""></path></svg></a>        </div>
+
+    </div>
+</aside>
+<p class="selectionShareable"></p>
+<p class="question selectionShareable">For your third book choice you decided to turn to ‘big data’, a very trendy concept, but one that seems really key to understanding how programmers deal with data in today’s world.</p>
+<p class="selectionShareable">This book written by Nathan Marz is a bit ‘old’, at least in computer science time: it was published in 2015. It’s really one of the problems with books in this field: they’re very quickly considered ancient even though they were only written a few years ago.</p>
+<p class="selectionShareable"></p><p class="pullquote inline-el selectionShareable">“For all the problems that the computer science industry has, it’s probably one of the most egalitarian”</p><p class="selectionShareable"></p>
+<p class="selectionShareable">This book, however, remains a great read if you want to understand how modern data architecture works, and especially distributed data systems. For example, it explains really well what the Lambda architecture is, i.e. the combination of streaming and batch data that you can combine together for analysis. It also covers the differences between relational data and ‘NoSQL’ databases. It’s also very practical and walks you through how to implement some of the actual principles and frameworks that it presents. It’s basically a great way to catch up with all of these new fundamentals of computer science that have appeared in the last 10 years or so.</p>
+<p class="question selectionShareable">Can you try to explain in simple terms what ‘big data’ means, and how it changes the day-to-day work of a programmer or data scientist?</p>
+<p class="selectionShareable">When we talk about ‘big data’, we basically mean any dataset that you can no longer process in memory on a single computer, and so you need multiple computers to work with it. It also means that you need to build systems to coordinate this work, to make sure that none of your data is double-processed or forgotten at any point. For a programmer, it means going beyond languages and programs, and learning to work with data architectures and distributed systems.</p>
+<p class="selectionShareable"></p><aside class="ancillary-block -left show-for-medium-up anchor-offset" id="book-45223" data-book-id="45223">
+        <div class="single-book inline -placeholders ">
+        <a href="https://fivebooks.com/book/how-to-lie-with-statistics/buy" rel="nofollow" id="book-how-to-lie-with-statistics" target="_blank">            <img width="333" height="500" src="https://fivebooks.com/app/uploads/books/BC_0393310728.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_0393310728.jpg 333w, https://fivebooks.com/app/uploads/books/BC_0393310728-200x300.jpg 200w, https://fivebooks.com/app/uploads/books/BC_0393310728-314x471.jpg 314w" sizes="(max-width: 333px) 100vw, 333px">            <p class="buy-button selectionShareable">Read</p>        </a>
+             
+    </div>
+</aside>
+
+<aside class="show-for-small-only inline-el" data-book-id="45223">
+    <div class="row single-book -with-number _small-tint">
+    	<div class="small-2 columns">
+    		<p class="book-number -display selectionShareable">4</p>
+    	</div>
+        <div class="small-6 columns">
+            <a href="https://fivebooks.com/book/how-to-lie-with-statistics/buy" rel="nofollow" target="_blank">                <img width="333" height="500" src="https://fivebooks.com/app/uploads/books/BC_0393310728.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_0393310728.jpg 333w, https://fivebooks.com/app/uploads/books/BC_0393310728-200x300.jpg 200w, https://fivebooks.com/app/uploads/books/BC_0393310728-314x471.jpg 314w" sizes="(max-width: 333px) 100vw, 333px">            </a>        </div>
+        <div class="small-12 columns">
+            <div class="book-title -inline">
+                <h2 class="title">
+                    How To Lie With Statistics                </h2>
+                <h3 class="author">
+                    by Darrell Huff                </h3>
+            </div>
+            <a class="buy-button" style="float: left" rel="nofollow" target="_blank" href="https://fivebooks.com/book/how-to-lie-with-statistics/buy">Read</a>                    </div>
+
+    </div>
+</aside>
+<p class="selectionShareable"></p>
+<p class="question selectionShareable">After three books about programming and <a href="https://fivebooks.com/best-books/programming-computer-science-ana-bell/">computer science</a>, let’s now turn sideways and look at one of the other building blocks of data science: statistics. You recommended <em>How to Lie with Statistics,</em> a popular book written by Darrell Huff and published in 1954.</p>
+<p class="selectionShareable">Indeed it was written in the 50s; Darrell Huff was not a statistician himself. He was a journalist, who tried to introduce how you can lie with statistics to people who may not be aware of this problem. It covers things like the typical ‘correlation doesn’t imply causation’, but also how random sampling works, how pie charts and bar charts can be misleading, and so on.</p>
+<p class="selectionShareable"></p><p class="pullquote inline-el selectionShareable">“Data can be manipulated and changed in so many ways”</p><p class="selectionShareable"></p>
+<p class="selectionShareable">It’s a must-read for anyone who works in business or in this industry in general. You can very easily lie with data. Often times, companies will say: ‘this is data, therefore it’s the truth’. But data can be manipulated and changed in so many ways. This book will teach you how to think honestly about the data that you are analyzing and presenting to different people, and how to be a more critical consumer of data as well, something that is essential in today’s world.</p>
+<p class="question selectionShareable">Let’s go back to the topic of learning these subjects: what about statistics? Can you learn this by yourself, and should you think about going back to school if you want to understand all of the intricacies?</p>
+<p class="selectionShareable">If you’re doing something very advanced like artificial intelligence—or if you want to work at Google Brain, for example—you probably do need to take formal courses. But for most data science projects, you really don’t.</p>
+<p class="selectionShareable"></p><div class="inline-box -newsletter inline-el">
+    <p class="explanation selectionShareable">Get the weekly Five Books newsletter</p>
+    <form action="//fivebooks.us8.list-manage.com/subscribe/post?u=ce22475e3f1c122db90ab6515&amp;id=31a730e97e" method="post" class="plain-form -red sign-up">
+        <input class="field" type="email" name="EMAIL">
+        <input class="submit" type="submit" value="Subscribe">
+    </form>
+</div>
+<p class="selectionShareable"></p>
+<p class="selectionShareable">An interesting thing that’s happening is that the models that data scientists have put together are starting to become commoditized. Software products by Amazon, Google or Microsoft let you construct models and train them in the cloud with tremendous computing power, without worrying too much about the mathematical implementation behind it. What matters more is knowing which algorithm to pick, how to tune the parameters of the model, and how to interpret the results in the right way. It’s become easier to create models, but it’s really the interpretation of those models that matters now.</p>
+<p class="selectionShareable"></p><aside class="ancillary-block -left show-for-medium-up anchor-offset" id="book-45226" data-book-id="45226">
+        <div class="single-book inline -placeholders ">
+        <a href="https://fivebooks.com/book/computer-organization-and-design-mips-edition-the-hardware-software-interface/buy" rel="nofollow" id="book-computer-organization-and-design-mips-edition-the-hardware-software-interface" target="_blank">            <img width="423" height="500" src="https://fivebooks.com/app/uploads/books/BC_0124077269.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_0124077269.jpg 423w, https://fivebooks.com/app/uploads/books/BC_0124077269-254x300.jpg 254w, https://fivebooks.com/app/uploads/books/BC_0124077269-314x371.jpg 314w" sizes="(max-width: 423px) 100vw, 423px">            <p class="buy-button selectionShareable">Read</p>        </a>
+             
+    </div>
+</aside>
+
+<aside class="show-for-small-only inline-el" data-book-id="45226">
+    <div class="row single-book -with-number _small-tint">
+    	<div class="small-2 columns">
+    		<p class="book-number -display selectionShareable">5</p>
+    	</div>
+        <div class="small-6 columns">
+            <a href="https://fivebooks.com/book/computer-organization-and-design-mips-edition-the-hardware-software-interface/buy" rel="nofollow" target="_blank">                <img width="423" height="500" src="https://fivebooks.com/app/uploads/books/BC_0124077269.jpg" class="cover wp-post-image" alt="" srcset="https://fivebooks.com/app/uploads/books/BC_0124077269.jpg 423w, https://fivebooks.com/app/uploads/books/BC_0124077269-254x300.jpg 254w, https://fivebooks.com/app/uploads/books/BC_0124077269-314x371.jpg 314w" sizes="(max-width: 423px) 100vw, 423px">            </a>        </div>
+        <div class="small-12 columns">
+            <div class="book-title -inline">
+                <h2 class="title">
+                    Computer Organization and Design MIPS Edition: The Hardware/Software Interface                </h2>
+                <h3 class="author">
+                    by David A. Patterson &amp; John L. Hennessy                </h3>
+            </div>
+            <a class="buy-button" style="float: left" rel="nofollow" target="_blank" href="https://fivebooks.com/book/computer-organization-and-design-mips-edition-the-hardware-software-interface/buy">Read</a>                    </div>
+
+    </div>
+</aside>
+<p class="selectionShareable"></p>
+<p class="question selectionShareable">Your last choice goes towards a different path: you picked <em>Computer Organization and Design</em>, a book by David Patterson and John Hennessy.</p>
+<p class="selectionShareable">This is a textbook that covers how computers work from the ground up. It includes hardware, software, and operating systems. It’s a really thick book, but also a really good one! What I’ve found during my move to data science is that the more I work in this field, the more I need to understand how to optimize my code, how the instructions move through the various big data systems that I mentioned earlier, and how all of this can impact performance. It’s really important for me, for example, to understand how data moves through a network and can be slowed down by bandwidth limitations.</p>
+<p class="selectionShareable"></p><p class="pullquote inline-el selectionShareable">“This is the book I’d recommend reading if you missed out on a formal computer science education”</p><p class="selectionShareable"></p>
+<p class="selectionShareable"> This is the book I’d recommend reading if you missed out on a formal computer science education. Some data scientists tend to forget about these aspects because the structures they use, such as R data tables or Python data frames, are abstracting away what’s going on under the hood. You don’t need to know everything from end to end, but having a general idea of why things can be under-optimized will be very helpful.</p>
+<p class="question selectionShareable">In a typical undergraduate computer science curriculum, this would be one of the first courses you’d take—but you chose to dedicate your last recommendation to this topic. For somebody learning this from scratch, does it make more sense to start with practical programming tasks, and wait a while before moving on to understanding the inner workings of computer systems?</p>
+<p class="selectionShareable">Something that’s really motivated me in my learning was to have concrete projects to work on. The first time I really witnessed the power of computer programming was when I was doing some data cleaning at work, and made the effort of automating this cleaning; by the end I was blown away by how fast the process had become. This idea of making the computer work for me was very powerful. It’s only later that you start having an interest for understanding the inner workings of computer hardware, once you stumble upon a few problems in your programming. So yes, it does make sense to read this book a bit later on, once you’ve mastered the basics of whatever language you are interested in.</p>
+<p class="question selectionShareable">Finally, is there anything you’d particularly recommend doing (or avoiding) to someone who’d like to take a path similar to yours?</p>
+<p class="selectionShareable">It’s easy to get overwhelmed when you go down this path. People always say to start with projects, but it can be hard at the beginning to even think of what to do. Finding a mentor on specialized websites or at data science meetups can be a great way of solving this issue, by having an experienced person telling you where to start.</p>
+<p class="selectionShareable">
+</p><div class="inline-box -donate inline-el d3">
+	    <div class="row">
+	        <div class="columns">
+	            <p class="explanation selectionShareable">Support Five Books</p>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="columns">
+				<p class="also selectionShareable">Five Books interviews are expensive to produce. If you're enjoying this interview, please support us by <a class="donate_link" href="/support-us/">donating a small amount</a>.</p>
+	        </div>
+	    </div>
+</div>
+<p class="selectionShareable"></p>
+<p class="selectionShareable">For people who are already working at a job that revolves around data, I’d recommend focusing on your personal ‘pain points’ and trying to solve them with programming; for me, this was automating things I was doing with Excel spreadsheets. There’s a very good book dedicated to these kinds of very actionable tasks, called <a href="https://www.amazon.com/Automate-Boring-Stuff-Python-Programming/dp/1593275994" data-amzn-asin="1593275994" target="_blank"><em>Automate the Boring Stuff with Python</em></a>; this would be another great book to read for those moving from typical office applications to programming.</p>
+                            <div class="date-and-credit">
+            <p class="credit selectionShareable">Interview by <a href="https://fivebooks.com/interviewer/edouard-mathieu/" class="interviewer-name">Edouard Mathieu</a></p>
+        </div>
+                            <div class="update">
+                            <p class="selectionShareable"><em>Five Books aims to keep its book recommendations and interviews up to date. If you are the interviewee and would like to update your choice of books (or even just what you say about them) please email us at <a href="mailto:editor@fivebooks.com">editor@fivebooks.com</a></em></p>
+                            </div>
+                            <div class="social-buttons">
+                                <div class="row">
+                                    <div class="small-10 medium-5 columns">
+                                        <a href="https://twitter.com/intent/tweet?text=Vicki+Boykis+recommends+the+best+books+on+Learning+Python+and+Data+Science&amp;url=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F&amp;via=five_books" target="_blank"><i class="fa fa-twitter"></i></a>
+                                    </div>
+                                    <div class="small-10 medium-5 columns end">
+        								<a href="https://www.facebook.com/dialog/share?app_id=179767102823809&amp;href=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F&amp;redirect_uri=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F" target="_blank"><i class="fa fa-facebook facebook"></i></a><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="medium-20 columns bio-component tags">
+                                <a href="https://fivebooks.com/category/technology/computing/" rel="tag">Computing</a> <a href="https://fivebooks.com/category/technology/" rel="tag">Technology</a>                                </div>
+                            </div>
+
+                                                    </div>
+                        
+                        <div id="interview-right-col" class="show-for-medium-up medium-3 columns interviewee-bio _small-tint" style="height: 7569px;">
+                            <div id="interview-bio" class="row">
+                                <div class="small-5 medium-20 columns bio-component image">
+                                    <img class="picture" src="https://fivebooks.com/app/uploads/2019/07/yjewjpOI-100x100.jpeg">
+                                                                </div>
+                                <div class="small-15 medium-20 columns bio-component name">
+                                    <p class="heading">Vicki Boykis</p>
+                                </div>
+                                <div class="small-15 medium-20 columns bio-component biography">
+                                    <p><span style="font-weight: 400;">Vicki Boykis graduated from Penn State University in Economics, before deciding to become a data scientist. She also holds an MBA from Temple University. She is now a consultant in data science for CapTech, helping companies across a broad range of industries by building and analyzing data using Python and machine learning.</span></p>
+                                </div>
+                            </div>
+                            <div id="interview-tags" class="row show-for-medium-up">
+                                                                    <div class="medium-20 columns bio-component tags -top-tags">
+                                        <a href="https://fivebooks.com/category/technology/computing/" rel="tag">Computing</a> <a href="https://fivebooks.com/category/technology/" rel="tag">Technology</a>                                    </div>
+                                                            </div>
+                            <div id="interview-social" class="row show-for-medium-up no-border">
+                                <div class="read-later-and-social">
+    <div class="read-later small-10 medium-20 columns">
+        <a href="#" class="read-later slide-toggle" data-toggle="sidebar-menu">Save for later</a>
+        <div class="hidden-el read-later-menu" id="sidebar-menu">
+            <ul>
+                <!--<li><iframe border="0" scrolling="no" width="78" height="17" allowtransparency="true" frameborder="0"
+style="margin-bottom: -3px; z-index: 1338; border: 0px; background-color: transparent; overflow: hidden;"
+src="https://www.instapaper.com/e2?url=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F&title=Vicki+Boykis+recommends+the+best+books+on+Learning+Python+and+Data+Science&description=What+do+we+mean+when+we+talk+about+%26%23039%3Bbig+data%26%23039%3B%2C+and+how+can+be+become+better+critical+consumers+of+it%3F+Data+scientist+Vicki+Boykis+recommends+the+best+books+for+learning+Python%E2%80%94a+language%2C+she+says%2C+as+versatile+as+a+Swiss+Army+knife%E2%80%94and+shows+that+it%26%23039%3Bs+possible+to+teach+yourself+coding+and+data+science."
+></iframe></li>-->
+                <li><div class="kindleWidget" style="display:inline-block;padding:3px;cursor:pointer;font-size:11px;font-family:sans-serif;white-space:nowrap;line-height:1;border-radius:3px;border:#ccc thin solid;color:black;background:transparent url('https://d1xnn692s7u6t6.cloudfront.net/button-gradient.png') repeat-x;background-size:contain;" id="vpDlMTzLkhU5WKg7DciZR2jeuCre"><img style="vertical-align:middle;margin:0;padding:0;border:none;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png"><span style="vertical-align:middle;margin-left:3px;">Kindle</span></div></li>
+
+                <li><div class="pocket-btn"><iframe width="66" height="22" id="pocket-button-0" frameborder="0" allowtransparency="true" scrolling="NO" src="https://widgets.getpocket.com/v1/button?label=pocket&amp;count=none&amp;v=1&amp;url=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F&amp;title=The%20Best%20Learning%20Python%20Books%20%7C%20Five%20Books%20Expert%20Recommendations&amp;src=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F&amp;r=0.7802613086343853"></iframe></div>
+<script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="social small-10 medium-20 columns">
+        <a href="https://twitter.com/intent/tweet?text=Vicki+Boykis+recommends+the+best+books+on+Learning+Python+and+Data+Science&amp;url=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F&amp;via=five_books" target="_blank"><i class="fa fa-twitter tweet"></i></a><br>
+        <a href="https://www.facebook.com/dialog/share?app_id=179767102823809&amp;href=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F&amp;redirect_uri=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F" target="_blank"><i class="fa fa-facebook facebook"></i></a><br>
+    </div>
+
+</div>
+                            </div>
+                            <div id="interview-related" class="row show-for-medium-up">
+                                <div class="related-block">
+	<div class="small-20 columns">
+		<div id="related-container" class="row related-item-container" style="height: 7569px; padding-top: 391.085px; display: block;">
+							<div id="related-item-0" class="columns related-item">
+					<div class="inline inline-interview">
+						<a href="https://fivebooks.com/best-books/cybersecurity-misha-glenny/">
+							<img class="picture" src="https://fivebooks.com/app/uploads/2015/09/misha-glenny2-100x100.jpg" width="100" height="100">
+							<h2 class="interview-title -linkedinterview">Misha Glenny  on  <span class="subject">Cybersecurity Books</span></h2>
+						</a>
+					</div>
+				</div>
+							<div id="related-item-1" class="columns related-item">
+					<div class="inline inline-interview">
+						<a href="https://fivebooks.com/best-books/video-games-katherine-isbister/">
+							<img class="picture" src="https://fivebooks.com/app/uploads/2016/06/isbister-100x100.jpeg" width="100" height="100">
+							<h2 class="interview-title -linkedinterview">Katherine Isbister  on  <span class="subject">Video Games Books</span></h2>
+						</a>
+					</div>
+				</div>
+							<div id="related-item-2" class="columns related-item">
+					<div class="inline inline-interview">
+						<a href="https://fivebooks.com/best-books/learning-python-and-data-science-vicki-boykis/">
+							<img class="picture" src="https://fivebooks.com/app/uploads/2019/07/yjewjpOI-100x100.jpeg" width="100" height="100">
+							<h2 class="interview-title -linkedinterview">Vicki Boykis  on  <span class="subject">Learning Python and Data Science Books</span></h2>
+						</a>
+					</div>
+				</div>
+							<div id="related-item-3" class="columns related-item">
+					<div class="inline inline-interview">
+						<a href="https://fivebooks.com/best-books/information-age-nicholas-carr/">
+							<img class="picture" src="https://fivebooks.com/app/uploads/2015/09/nicholas-carr1-100x100.jpg" width="100" height="100">
+							<h2 class="interview-title -linkedinterview">Nicholas Carr  on  <span class="subject">Impact of the Information Age Books</span></h2>
+						</a>
+					</div>
+				</div>
+							<div id="related-item-4" class="columns related-item">
+					<div class="inline inline-interview">
+						<a href="https://fivebooks.com/best-books/artificial-intelligence-calum-chace/">
+							<img class="picture" src="https://fivebooks.com/app/uploads/2016/06/Grand-Canyon-100x100.jpg" width="100" height="100">
+							<h2 class="interview-title -linkedinterview">Calum Chace  on  <span class="subject">Artificial Intelligence Books</span></h2>
+						</a>
+					</div>
+				</div>
+							<div id="related-item-5" class="columns related-item">
+					<div class="inline inline-interview">
+						<a href="https://fivebooks.com/best-books/lev-grossman-internet/">
+							<img class="picture" src="https://fivebooks.com/app/uploads/2015/10/lev-grossman-100x100.jpg" width="100" height="100">
+							<h2 class="interview-title -linkedinterview">Lev Grossman  on  <span class="subject">World Wide Web Books</span></h2>
+						</a>
+					</div>
+				</div>
+							<div id="related-item-6" class="columns related-item">
+					<div class="inline inline-interview">
+						<a href="https://fivebooks.com/best-books/computer-games-tom-chatfield/">
+							<img class="picture" src="https://fivebooks.com/app/uploads/2016/06/Tom-Chatfield-100x100.png" width="100" height="100">
+							<h2 class="interview-title -linkedinterview">Tom Chatfield  on  <span class="subject">Computer Games Books</span></h2>
+						</a>
+					</div>
+				</div>
+							<div id="related-item-7" class="columns related-item">
+					<div class="inline inline-interview">
+						<a href="https://fivebooks.com/best-books/george-dyson-on-the-origins-of-computing/">
+							<img class="picture" src="https://fivebooks.com/app/uploads/2015/09/George-Dyson2-100x100.jpg" width="100" height="100">
+							<h2 class="interview-title -linkedinterview">George Dyson  on  <span class="subject">The Origins of Computing</span></h2>
+						</a>
+					</div>
+				</div>
+							<div id="related-item-8" class="columns related-item">
+					<div class="inline inline-interview">
+						<a href="https://fivebooks.com/best-books/computer-science-data-science-hadley-wickham/">
+							<img class="picture" src="https://fivebooks.com/app/uploads/2018/08/hadley-100x100.png" width="100" height="100">
+							<h2 class="interview-title -linkedinterview">Hadley Wickham  on  <span class="subject">Computer Science for Data Scientists Books</span></h2>
+						</a>
+					</div>
+				</div>
+							<div id="related-item-9" class="columns related-item">
+					<div class="inline inline-interview">
+						<a href="https://fivebooks.com/best-books/quantum-computing-chris-bernhardt/">
+							<img class="picture" src="https://fivebooks.com/app/uploads/2019/05/bernhardt-100x100.jpg" width="100" height="100">
+							<h2 class="interview-title -linkedinterview">Chris Bernhardt  on  <span class="subject">The Best Quantum Computing Books</span></h2>
+						</a>
+					</div>
+				</div>
+							<div id="related-item-10" class="columns related-item">
+					<div class="inline inline-interview">
+						<a href="https://fivebooks.com/best-books/data-science-roger-peng/">
+							<img class="picture" src="https://fivebooks.com/app/uploads/2018/10/Intro-to-Data-Science_Author-100x100.jpg" width="100" height="100">
+							<h2 class="interview-title -linkedinterview">Roger D. Peng  on  <span class="subject">Data Science Books</span></h2>
+						</a>
+					</div>
+				</div>
+							<div id="related-item-11" class="columns related-item">
+					<div class="inline inline-interview">
+						<a href="https://fivebooks.com/best-books/stephen-baker-watson/">
+							<img class="picture" src="https://fivebooks.com/app/uploads/2015/11/stephen-baker-100x100.jpg" width="100" height="100">
+							<h2 class="interview-title -linkedinterview">Stephen Baker  on  <span class="subject">Watson Books</span></h2>
+						</a>
+					</div>
+				</div>
+					</div>
+	</div>
+</div>                            </div>
+                        </div>
+
+                    </div>
+                        <div class="show-for-small-only small-20 columns interviewee-bio _small-tint _medium-nopadding">
+                            <div id="interview-bio" class="row">
+                                <div class="small-5 medium-20 columns bio-component image">
+                                    <img class="picture" src="https://fivebooks.com/app/uploads/2019/07/yjewjpOI-100x100.jpeg">
+                                                                </div>
+                                <div class="small-15 medium-20 columns bio-component name">
+                                    <p class="heading"><a name="bio"></a>Vicki Boykis</p>
+                                </div>
+                                <div class="small-15 medium-20 columns bio-component biography">
+                                    <p><span style="font-weight: 400;">Vicki Boykis graduated from Penn State University in Economics, before deciding to become a data scientist. She also holds an MBA from Temple University. She is now a consultant in data science for CapTech, helping companies across a broad range of industries by building and analyzing data using Python and machine learning.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                </article>
+                <aside class="further-reading">
+                                                            <div class="row">
+                        <div class="medium-17 small-20 columns">
+                            <h3 class="block-heading">Popular interviews</h3>
+                        </div>
+                    </div>
+                    <div class="row big-recommend">
+                                                                                                        
+<div class="medium-3 small-6 columns">
+    <img class="picture" src="https://fivebooks.com/app/uploads/2015/09/Nigel-Warburton1-150x180.jpg">
+</div>
+<div class="medium-14 small-14 columns end">
+    <h5 class="section">Philosophy</h5>
+    <a href="https://fivebooks.com/best-books/critical-thinking-nigel-warburton/">
+        <h2 class="interview-title -big-recommend">Nigel Warburton on <br>
+            <span class="subject">Critical Thinking</span></h2>
+        <p class="interview-description">Do you know your straw man arguments from your weasel words? Nigel Warburton, Five Books' philosophy editor and author of&nbsp;<em>Thinking from A to Z,&nbsp;</em>selects five of the best books on critical thinking—and explains how they will help us make better informed decisions and construct more valid arguments.</p>
+    </a>
+</div>
+                                            </div>
+                    <div class="row">
+                        <div class="medium-17 small-20 columns">
+                            <h3 class="block-heading">Most recent</h3>
+                        </div>
+                    </div>
+                    <div class="row big-recommend a">
+                                                                            
+<div class="medium-3 small-6 columns">
+    <img class="picture" src="https://fivebooks.com/app/uploads/2020/02/Izzo-150x180.jpeg">
+</div>
+<div class="medium-14 small-14 columns end">
+    <h5 class="section">Historical Figures</h5>
+    <a href="https://fivebooks.com/best-books/verdi-francesco-izzo/">
+        <h2 class="interview-title -big-recommend">Francesco Izzo on <br>
+            <span class="subject">Verdi</span></h2>
+        <p class="interview-description">Nearly everyone knows the photo of Verdi's funeral, the streets of Milan packed with people paying homage to the great composer. How did the son of an innkeeper from Le Roncole become not only one of the most famous opera composers of all time but also a prominent symbol of Italy's <em>Risorgimento</em>? Verdi expert Francesco Izzo discusses the books to read to best understand the man, the myths, and the music.</p>
+    </a>
+</div>
+                                            </div>
+                </aside>
+            </div>
+
+        </div>
+    </div>
+</div><script id="pocket-btn-js" src="https://widgets.getpocket.com/v1/j/btn.js?v=1"></script>
+
+    <div class="frontpage-footer">
+        <div class="row">
+            <div class="small-12 medium-8 columns">
+                <h3 class="support">About</h3>
+                <div class="row">
+                    <div class="medium-8 small-12 columns">
+                       <p>We ask experts to recommend the five best books in their subject and explain their selection in an interview.</p>
+<p>This site has an archive of more than one thousand interviews, or five thousand book recommendations. We publish at least two new interviews per week.</p>
+<p>Five Books participates in the Amazon Associate program and earns money from qualifying purchases.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="small-12 medium-4 columns footer-tools">
+                <a class="footer-link" href="http://eepurl.com/WUlL1" target="_blank"><i class="fa fa-envelope-o"></i>Newsletter</a>
+				<a class="footer-link" href="/contact-us">Contact us</a>
+                <a class="footer-link" href="/privacy-policy">Privacy Policy</a>
+                <a class="footer-link" href="/Terms-of-Service">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="the-colophon">© Five Books 2020</p>
+
+    <script type="text/javascript">
+window.FiveBooks = window.FiveBooks || {};
+window.FiveBooks.Page = { Status: "STALE", Generated: new Date(Date.parse('Sat, 29 Feb 2020 12:40:21 +0000')), Location: "US" };
+</script>
+
+<script src="https://fivebooks.com/app/themes/five-books/dist/fb.js?r=1581849690"></script>
+         <script>
+
+       
+         var divtintBox = false;
+         (function($) {
+        	 $('.horizontal-menu li.mega-menu-item').on('open_panel', function() {
+     	       toggleDiv(true)
+     	    });
+        	 $('.horizontal-menu li.mega-menu-item').on('close_panel', function() {
+     	       toggleDiv(false)
+     	    });
+        	})(jQuery);
+
+         var timer;
+ 
+function toggleDiv(open) {
+	$('#tintBox').stop()
+	clearInterval(timer);
+	timer = setInterval(function() {
+    if(divtintBox==true && open==false) {
+	       $('#tintBox').stop().fadeTo(250, 0, function() {
+	    	   $('#tintBox').hide();
+	       });
+	     divtintBox=false;
+ 	       }
+    else if (divtintBox==false && open==true) {
+	      $('#tintBox').show();
+	      $('#tintBox').stop().fadeTo(250,0.4);
+	       divtintBox=true;
+	       }
+	}, 100);
+}
+
+        	
+         </script>
+    <script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+<script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":".interview-content","exclude":".social-buttons"}):setTimeout(k,500);})();</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div id="amzn-assoc-ad-75c6523e-bec1-443a-bc34-239b504f57c9"></div><script async="" src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=75c6523e-bec1-443a-bc34-239b504f57c9"></script>
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-vtXWdjTgf6e_3"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-vtXWdjTgf6e_3.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+<script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+<script type="text/javascript" src="https://fivebooks.com/wp/wp-includes/js/hoverIntent.min.js?ver=1.8.1"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var megamenu = {"timeout":"300","interval":"100"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://fivebooks.com/app/plugins/megamenu/js/maxmegamenu.js?ver=2.7.4"></script>
+<script type="text/javascript" src="https://fivebooks.com/app/plugins/megamenu-pro/assets/public.js?ver=1.9.3"></script>
+<script type="text/javascript" src="https://fivebooks.com/wp/wp-includes/js/wp-embed.min.js?ver=5.3.2"></script>
+
+	<div id="search-dialog" class="reveal-modal search-dialog tiny" data-reveal="" aria-labelledby="search-dialog" aria-hidden="true" role="dialog">
+	  <form action="/" method="GET">
+	      <div class="row">
+	          <div class="columns">
+	              <input type="text" placeholder="Search Five Books" id="search-input" name="s">
+	              <input type="hidden" name="post_type" value="interview">
+	          </div>
+	          <div class="columns">
+	              <input type="submit" class="button" value="Search">
+	          </div>
+	      </div>
+	  </form>
+	</div>
+<!-- Sat, 29 Feb 2020 12:40:21 +0000 -->
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.7aeb03ce9f308997020e5998720fbbf7.html?origin=https%3A%2F%2Ffivebooks.com" title="Twitter settings iframe" style="display: none;"></iframe><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeMetricsController0" allowpaymentrequest="true" src="https://js.stripe.com/v2/m/outer.html#url=https%3A%2F%2Ffivebooks.com%2Fbest-books%2Flearning-python-and-data-science-vicki-boykis%2F&amp;title=The%20Best%20Learning%20Python%20Books%20%7C%20Five%20Books%20Expert%20Recommendations&amp;referrer=&amp;muid=0d0df52b-c831-457d-b826-a1bbddabe9f0&amp;sid=dac74251-3d27-47e5-b382-6cf42b00ef38&amp;preview=false" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe><div class="selectionSharer" id="selectionSharerPopover" style="position:absolute;">  <div id="selectionSharerPopover-inner">    <ul>      <li><a class="action tweet" href="" title="Share this selection on Twitter" target="_blank">Tweet</a></li>      <li><a class="action email" href="" title="Share this selection by email" target="_blank"><svg width="20" height="20"><path stroke="#FFF" stroke-width="6" d="m16,25h82v60H16zl37,37q4,3 8,0l37-37M16,85l30-30m22,0 30,30"></path></svg></a></li>      <li><a class="action facebook" href="" title="Share this selection on Facebook" target="_blank" style="display: inline-block;">Facebook</a></li>    </ul>  </div></div><div id="selectionSharerPopunder" class="selectionSharer">  <div id="selectionSharerPopunder-inner">    <label>Share this selection</label>    <ul>      <li><a class="action tweet" href="" title="Share this selection on Twitter" target="_blank">Tweet</a></li>      <li><a class="action email" href="" title="Share this selection by email" target="_blank"><svg width="20" height="20"><path stroke="#FFF" stroke-width="6" d="m16,25h82v60H16zl37,37q4,3 8,0l37-37M16,85l30-30m22,0 30,30"></path></svg></a></li>      <li><a class="action facebook" href="" title="Share this selection on Facebook" target="_blank" style="display: inline-block;">Facebook</a></li>    </ul>  </div></div></body></html>

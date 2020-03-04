@@ -1,0 +1,2077 @@
+<!DOCTYPE html><html xmlns:ng="http://angularjs.org" id="ng-app" lang="en" ng-app="TH" class="ng-scope"><head ng-controller="DZHeadController" class="ng-scope">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" ng-attr-content="{{ service.description }}" content="A list of some of the top books that will help both beginners and experienced developers learn more about the Python language and its programming applications.">
+    <meta name="keywords" ng-attr-content="{{ service.keywords }}" content="python,book review,book list,open source,python programming,beginner developer">
+
+    <meta property="og:description" ng-attr-content="{{ service.description }}" content="A list of some of the top books that will help both beginners and experienced developers learn more about the Python language and its programming applications.">
+
+    <meta ng-attr-content="{{ service.noIndex ? 'noindex' : '' }}" ng-attr-name="{{ service.noIndex ? 'robots' : '' }}" name="" content="">
+
+    <meta property="og:site_name" ng-attr-content="{{ service.siteName }}" content="dzone.com">
+    <meta property="og:title" ng-attr-content="{{ service.title }}" content="Top 10 Best Python Book for Beginners and Experienced Developers - DZone Open Source">
+    <meta property="og:url" ng-attr-content="{{ service.canonical }}" content="https://dzone.com/articles/top-10-best-python-book-for-beginners-amp-experien">
+    <!-- ngIf: service.img --><meta ng-if="service.img" ng-attr-content="{{ service.img }}" property="og:image" content="//dz2cdn3.dzone.com/storage/article-thumb/10463966-thumb.jpg" class="ng-scope"><!-- end ngIf: service.img -->
+    <!-- ngIf: service.type --><meta ng-if="service.type" ng-attr-content="{{ service.type }}" property="og:type" content="review" class="ng-scope"><!-- end ngIf: service.type -->
+
+    <meta name="twitter:site" content="@DZoneInc">
+    <!-- ngIf: service.twitterImage -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" ng-attr-content="{{ service.description }}" content="A list of some of the top books that will help both beginners and experienced developers learn more about the Python language and its programming applications.">
+    <meta name="twitter:title" ng-attr-content="{{ service.title }}" content="Top 10 Best Python Book for Beginners and Experienced Developers - DZone Open Source">
+
+    <!-- ngIf: service.wordCount --><meta ng-if="service.wordCount" property="article:wordcount" ng-attr-content="{{service.wordCount}}" content="1375" class="ng-scope"><!-- end ngIf: service.wordCount -->
+    <meta name="referrer" content="origin">
+    <meta name="google-site-verification" content="kndbhxcupfEqWmZclhCpB6vlgOs7QSmx2UHAGGnP2mA">
+
+    <link rel="dns-prefetch" href="//www.googletagservices.com">
+    <link rel="dns-prefetch" href="//secure.adnxs.com">
+    <link rel="dns-prefetch" href="//hn.inspectlet.com">
+    <link rel="dns-prefetch" href="//inspectletws.herokuapp.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//a.optnmstr.com">
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.inspectlet.com">
+    <link rel="dns-prefetch" href="//csi.gstatic.com">
+
+    <link rel="image_src" ng-href="//dz2cdn3.dzone.com/storage/article-thumb/10463966-thumb.jpg" href="//dz2cdn3.dzone.com/storage/article-thumb/10463966-thumb.jpg">
+
+    <!-- ngIf: service.prevPage -->
+    <!-- ngIf: service.nextPage -->
+    <link rel="icon" type="image/x-icon" href="/themes/dz20/images/favicon.png">
+
+    <title ng-bind="service.title" class="ng-binding">Top 10 Best Python Book for Beginners and Experienced Developers - DZone Open Source</title>
+
+    <meta name="df-verify" content="df0d76632b4543">
+
+<link rel="stylesheet" type="text/css" href="//dz2cdn3.dzone.com/storage/pub/13077464-combined.css" charset="utf-8"><link rel="stylesheet" type="text/css" href="//dz2cdn3.dzone.com/storage/pub/13077480-combined.css" charset="utf-8"><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=dzone.com" as="script"><script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-TSD9TZP&amp;cid=1879801020.1582991860"></script><script type="text/javascript" async="" src="https://ml314.com/tag.aspx?2912020"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=dzone.com"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2020022401.js" async=""></script></head>
+<body>
+
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-K25QL22"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" type="text/javascript" src="https://www.googletagservices.com/tag/js/gpt.js"></script><script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://dzone.com",
+            "logo": "https://dzone.com/themes/dz20/images/dz_cropped.png",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+1-919-678-0300",
+                "contactType": "customer service"
+            }]
+        }
+    </script>
+
+    <div class="ng-toast ng-toast--right ng-toast--bottom ng-toast--animate-fade"><ul class="ng-toast__list"><!-- ngRepeat: message in messages --></ul></div>
+
+    <div class="container-fluid header" th-element="header" th-element-groups="[]" ng-hide="$root.isHidden('header')" data-th-element-name="header"><div class="row mainHeaderRow" th-element="mainHeaderRow" th-element-groups="['header']" ng-hide="$root.isHidden('mainHeaderRow')" data-th-element-name="mainHeaderRow"><div class="col-md-12 mainHeader headerHeaderV2 oUhbWOfRPSwBoUhM ng-scope" th-element="mainHeader" th-element-groups="['header','mainHeaderRow']" ng-hide="$root.isHidden('mainHeader')" data-th-element-name="mainHeader" data-th-widget="header.headerV2" data-widget-header-header-v2="" ng-controller="mainHeader">
+<script type="text/ng-template" id="like-article.html">
+        <div class="dz-like"
+             ng-class='{liked: status.liked}'
+             ng-click='like()'
+
+<a href="#">
+    <i ng-class="{'icon-thumbs-up-alt': status.liked, 'icon-thumbs-up liked': !status.liked}"></i>
+    <span>Like ({{ status.score }})</span>
+</a>
+</div>
+</script>
+
+<script type="text/ng-template" id="refcard-save.html">
+    <button type="button" ng-class="{'icon-star gold': status.saved, 'icon-star-empty': !status.saved}"
+            ng-click="save()" class="btn btn-save btn-lg"><span class="save-title">Save</span><span ng-if="status.saved"
+                                                                                                    class="d-letter">D</span>
+    </button>
+</script>
+
+<div class="header-top">
+    <div class="header-container">
+        <div class="pull-left logo-container">
+            <div class="logo">
+                <a class="inner" href="/"><img src="/themes/dz20/images/dz_cropped.png" alt="DZone"></a>
+            </div>
+
+        <div class="active-portal"><a href="/open-source-news-tutorials-tools">Open Source Zone</a></div>
+        </div>
+
+        <div class="pull-right login-and-search">
+
+                <div class="dz-intro">Over a million developers have joined DZone.</div>
+                <!-- ngIf: !$root.user.authenticated --><div class="mobile-invisible sign-in-join ng-scope" ng-if="!$root.user.authenticated"><a href="#" ng-click="login()">Log In</a> <span class="dz-intro-span">/</span> <a href="#" ng-click="signIn()">Join</a></div><!-- end ngIf: !$root.user.authenticated -->
+                <button class="join-icon"><!-- ngIf: !$root.user.authenticated --><i class="icon-user ng-scope" ng-if="!$root.user.authenticated" ng-click="login()"></i><!-- end ngIf: !$root.user.authenticated --></button>
+                <div class="headerSearch">
+                    <button class="icon-search dropdown-toggle" ng-click="focusSearch()" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li>
+                            <form class="form-wrapper ng-pristine ng-invalid ng-invalid-required">
+                                <label for="search" class="sr-only">Search</label>
+                                <input id="search" role="search" ng-model="searchT" type="text" placeholder="Search" required="" class="ng-pristine ng-untouched ng-invalid ng-invalid-required">
+                                <input type="button" value="Search" class="btn btn-action search-button" ng-click="allResults()" ng-disabled="searchT.length < 3" disabled="disabled">
+                            </form>
+                        </li>
+
+                      <div class="results-area">
+                          <div class="col-md-12"><th-loader flag="loading" class="ng-isolate-scope"><div ng-show="flag" class="loading-indicator ng-hide"><i class="icon-spin6 animate-spin"></i></div></th-loader></div>
+                          <!-- ngRepeat: node in nodes -->
+                      </div>
+
+                      <!-- ngIf: totalResults || haveResults -->
+                    </ul>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="header-bottom">
+
+
+
+    <ul class="portals header-container scrollable-ul">
+            <li>
+                <a href="/refcardz" id="header-refcardz">
+                    <em>
+                      Refcardz
+                    </em>
+                </a>
+            </li>
+            <li>
+                <a href="/research" id="header-research">
+                    <em>
+                      Research
+                    </em>
+                </a>
+            </li>
+            <li>
+                <a href="/webinars" id="header-webinars">
+                    <em>
+                      Webinars
+                    </em>
+                </a>
+            </li>
+            <li class="last-portal-link">
+                <a href="/portals" id="header-portals" ng-click="toggleZones('/portals', $event)">
+                    <em>
+                      Zones
+                      <span class="collapsible-toggle ">
+                        <i class="icon-angle-down"></i>
+                        <i class="icon-angle-up"></i>
+                      </span>
+                    </em>
+                </a>
+            </li>
+
+        <li class="separator" aria-hidden="true" style="color: #d9dcdd">|</li>
+        <li class="portal-topics ">
+          <ul>
+                <li>
+                    <a href="/agile-methodology-training-tools-news" id="header-2" ng-class="{'active-state': isActivePortal(2)}">
+                        Agile
+                    </a>
+                </li>
+                <li>
+                    <a href="/artificial-intelligence-tutorials-tools-news" id="header-4001" ng-class="{'active-state': isActivePortal(4001)}">
+                        AI
+                    </a>
+                </li>
+                <li>
+                    <a href="/big-data-analytics-tutorials-tools-news" id="header-3" ng-class="{'active-state': isActivePortal(3)}">
+                        Big Data
+                    </a>
+                </li>
+                <li>
+                    <a href="/cloud-computing-tutorials-tools-news" id="header-4" ng-class="{'active-state': isActivePortal(4)}">
+                        Cloud
+                    </a>
+                </li>
+                <li>
+                    <a href="/database-sql-nosql-tutorials-tools-news" id="header-5" ng-class="{'active-state': isActivePortal(5)}">
+                        Database
+                    </a>
+                </li>
+                <li>
+                    <a href="/devops-tutorials-tools-news" id="header-6" ng-class="{'active-state': isActivePortal(6)}">
+                        DevOps
+                    </a>
+                </li>
+                <li>
+                    <a href="/enterprise-integration-training-tools-news" id="header-7" ng-class="{'active-state': isActivePortal(7)}">
+                        Integration
+                    </a>
+                </li>
+                <li>
+                    <a href="/iot-developer-tutorials-tools-news-reviews" id="header-8" ng-class="{'active-state': isActivePortal(8)}">
+                        IoT
+                    </a>
+                </li>
+                <li>
+                    <a href="/java-jdk-development-tutorials-tools-news" id="header-1" ng-class="{'active-state': isActivePortal(1)}">
+                        Java
+                    </a>
+                </li>
+                <li>
+                    <a href="/microservices-news-tutorials-tools" id="header-6001" ng-class="{'active-state': isActivePortal(6001)}">
+                        Microservices
+                    </a>
+                </li>
+                <li>
+                    <a href="/open-source-news-tutorials-tools" id="header-7001" class="active-state" ng-class="{'active-state': isActivePortal(7001)}">
+                        Open Source
+                    </a>
+                </li>
+                <li>
+                    <a href="/apm-tools-performance-monitoring-optimization" id="header-10" ng-class="{'active-state': isActivePortal(10)}">
+                        Performance
+                    </a>
+                </li>
+                <li>
+                    <a href="/application-web-network-security" id="header-2001" ng-class="{'active-state': isActivePortal(2001)}">
+                        Security
+                    </a>
+                </li>
+                <li>
+                    <a href="/web-development-programming-tutorials-tools-news" id="header-11" ng-class="{'active-state': isActivePortal(11)}">
+                        Web Dev
+                    </a>
+                </li>
+          </ul>
+        </li>
+    </ul>
+</div></div></div></div><div class="container-fluid body withSlider" th-element="body" th-element-groups="[]" ng-hide="$root.isHidden('body')" data-th-element-name="body"><div class="row mainContentRow" th-element="mainContentRow" th-element-groups="['body']" ng-hide="$root.isHidden('mainContentRow')" data-th-element-name="mainContentRow"><div class="col-md-12 announcementBar1 announcementBar oUhbYlrRaqMaoUhM ng-scope" th-element="announcementBar1" th-element-groups="['body','mainContentRow']" ng-hide="$root.isHidden('announcementBar1')" data-th-element-name="announcementBar1" data-th-widget="announcementBar" data-widget-announcement-bar="" ng-controller="announcementBar1" style="margin-bottom: 10px;"><!-- ngIf: announcement && toShow --><div ng-if="announcement &amp;&amp; toShow" back-img="" hasimage="false" img="https://dz2cdn1.dzone.com/notificationImage.html?id=4205647" imgbackup="/notificationImage.html?id=4205647" id="acontainer" class="ann-container ng-scope" style="margin-right: 0px; margin-left: 0px;">
+    <div class="ann-body ng-binding">That's Not How This Works: All Development Should be Secure Development!&nbsp;</div><!-- ngIf: announcement.link --><a ng-if="announcement.link" class="ann-link ng-binding ng-scope" ng-click="track(announcement.id)" ng-ref="https://dzone.com/webinars/thats-not-how-this-works-all-development-should-be">Learn More<span class="icon-right-dir"></span></a><!-- end ngIf: announcement.link -->
+</div><!-- end ngIf: announcement && toShow -->
+</div><div class="col-md-12 articleContent4 articleContent oUhbblYOaqbcblYOaqbcC ng-scope" th-element="articleContent4" th-element-groups="['body','mainContentRow']" ng-hide="$root.isHidden('articleContent4')" data-th-element-name="articleContent4" data-th-widget="article.content" data-widget-article-content="" header-change-trigger="" ng-controller="articleContent4">
+<script type="text/ng-template" id="like-article.html">
+        <div class="dz-like"
+             ng-class='{liked: status.liked}'
+             ng-click='like()'
+
+<a href="#">
+    <i ng-class="{'icon-thumbs-up-alt': status.liked, 'icon-thumbs-up liked': !status.liked}"></i>
+    <span>Like ({{ status.score }})</span>
+</a>
+</div>
+</script>
+
+<script type="text/ng-template" id="link-article-save.html">
+    <div class="save "
+         ng-class="{'icon-star gold': status.saved, 'icon-star-empty': !status.saved}"
+         ng-click="save()"><span
+                class="action-label">
+                {{ status.saved ? 'Saved' : 'Save' }}</span></div>
+</script>
+
+<script type="text/ng-template" id="like-article.html">
+    <div class="dz-like" ng-class="{'icon-thumbs-up-alt liked': status.liked, 'icon-thumbs-up': !status.liked}" ng-click="like()"><span class="action-label"><span>Like</span><span ng-if="status.liked" class="d-letter">d</span></span>
+        <a href="#">
+            <span>({{ status.score }})</span>
+        </a>
+    </div>
+</script>
+
+<!-- ngIf: articles[0].id == 2513743 --><div class="articles-wrap ng-scope" ng-if="articles[0].id == 2513743">
+        <!-- ngIf: ads.top.show() && articles[0].readyForAd --><div ng-if="ads.top.show() &amp;&amp; articles[0].readyForAd" class="ad-container ng-scope">
+            <div dc-slot="ads.top.slot()" tags="ads.top.tags(articles[0])" size="ads.top.size()" class="ng-isolate-scope" id="div-gpt-ad-1435246566686-0"></div>
+        </div><!-- end ngIf: ads.top.show() && articles[0].readyForAd -->
+
+
+    <div>
+        <th-if-scroll relative-to="top" from="0" to="50" callback="activateT(articles[0])" class="ng-isolate-scope"></th-if-scroll>
+    </div>
+
+
+    <!-- ngIf: articles[0].id == 2513743 --><div class="article-stream widget-top-border ng-scope" ng-class="{'widget-top-border': articles[0].published }" ng-if="articles[0].id == 2513743">
+    <div class="social-media-icons mobile-only ng-scope" follow-dzone="">
+<div class="top-social">
+    <p>Let's be friends:</p>
+    <ul class="icons-only ng-isolate-scope" ng-class="{open: isOpen}" click-outside="outside()">
+        <li class="rss-icon" id="rss-spotlight-1">
+            <a href="/pages/feeds"><i class="icon-rss-1"></i></a>
+        </li>
+        <li class="twitter-icon">
+            <a href="https://twitter.com/DZoneInc" target="_blank"><i class="icon-twitter"></i></a>
+        </li>
+        <li class="facebook-icon">
+            <a href="https://www.facebook.com/DZoneInc" target="_blank"><i class="icon-facebook-1"></i></a>
+        </li>
+        <li class="google-icon">
+            <a href="https://plus.google.com/+dzone/posts" target="_blank"><i class="icon-gplus"></i></a>
+        </li>
+        <li class="linkedin-icon">
+            <a href="https://www.linkedin.com/company/devada-team" target="_blank"><i class="icon-linkedin-1"></i></a>
+        </li>
+
+            <ul class="social-dropdown dropdown-menu">
+                <li class="rss" id="rss-spotlight"><a href="/pages/feeds"><i class="icon-rss-squared"></i> <span>RSS Feed</span></a></li>
+                <li class="twitter" id="twitter-spotlight">
+                    <a href="https://twitter.com/DZoneInc" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">Follow @DZoneInc</a>
+                </li>
+                <li class="fb-like" id="fb-spotlight" data-href="https://www.facebook.com/DZoneInc" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></li>
+                <li class="google-plus" id="gplus-spotlight">
+                    <div class="g-follow" data-annotation="bubble" data-height="20" data-href="https://plus.google.com/108688665090780146602" data-rel="publisher"></div>
+                </li>
+                <li class="linkedin" id="linkedin-spotlight">
+                    <script type="IN/FollowCompany" data-id="114427" data-counter="right"></script></li></ul></ul></div></div>
+        <div ng-show="!edition || (width > 1024 &amp;&amp; edition)" class="content-right-images ng-isolate-scope" header-affix-element="div.content">
+
+           <!--Sponsor Logo-->
+           <!-- ngIf: articles[0].readyForAd && (width > 1024) -->
+
+            <!-- ngIf: articles[0].readyForAd && (width > 1024) -->
+
+            <!-- ngIf: articles[0].readyForAd && 0 > 1 && !articles[0].partner.isSponsoringArticle && (width > 1024) -->
+
+        </div>
+
+            <div id="article-2513743">
+                <script type="application/ld+json">
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "Article",
+                        "headline": "Top 10 Best Python Book for Beginners and Experienced Developers",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Rinu Gour"
+                        },
+                        "audience": "software developers",
+                        "keywords": "python,book review,book list,open source,python programming,beginner developer",
+                        "timeRequired": "PT4M",
+                        "commentCount": 4,
+                        "wordCount": "1000",
+                        "accessMode": "textual, visual",
+                        "dateCreated": "2018-10-16T12:01:02Z",
+                        "datePublished": "2018-10-16T00:00:00Z",
+                        "dateModified": "2019-06-24T06:31:36Z",
+                        "articleSection": "open-source-news-tutorials-tools",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "DZone",
+                            "url": "https://dzone.com",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://dzone.com/themes/dz20/images/dz_cropped.png"
+                            }
+                        },
+                        "articleBody": "Learning Python Learning Python While it comes to Python programming, this Python books covers a lot of basic areas. At a beginner’s level, it is a very nice book for gaining a better insight into programming with Python variables and operators in Python. It also can be used to derive a strong foundation for the subject matter. Moreover, it covers important areas of Python, such as version like Python 2.X and 3.X. If you want to gain an in-depth understanding, it is quite a simple book for the job. In addition, it is an ideal way to begin, as a new programmer or a professional developer (in other languages). This is the best Python book for beginners. Python Cookbook Python Cookbook Python Cookbook is a ticket to all the crucial areas of Python language. It introduces critical techniques and skills that are much-needed in Python programming. It includes everything, from a simple string concentration to that of recursive decent parsers writing. There are some chapters in the book on the subject generators and iteration techniques. On several fronts, it also carries a practical approach. Moreover, this books is packed with efficient and necessary chapters. A must-read for those who want to become good at Python programming. Python for Data Analysis Python For Data Analysis If we're talking about cleaning, influencing, processing, and gathering of data, this book is a complete guide. Basically, this book revolves around the area of data-intensive applications. Also, it contains an excellent introduction to data analysis issues. Basically, for learning the various tools, it is the best Python book. In addition, there are some exceptional solutions for effectively analyzing the data in this book. It is very easy to read and understand. Moreover, this book is very good for professional programmers and researchers. Those who are already well-versed with the basics will find a lot of value in this book. Python Essential Reference Python Essential Reference When it comes to gaining the most out of Python, this is an exceptional reference. It includes a clear-cut understanding of the Python and shares what is happening in the programming language. Moreover, it provides a detailed overview of the Python Programming language with syntax in Python. Basically, it helps in gaining a practical knowledge of the subject, and we can say this book is the one that programmers need to read first. In addition, this book also includes the omitted sections of Python 2. Python Programming: An Introduction to Computer Science Python Programming This book is a key to Python for beginners and new Python programmers. To the world of computer science, it is a perfect introduction. There are some foundational concepts of computer science in a form that is clear and easy to understand. This book is all about theory and its practical application, and provides the strong foundation on the subject. Furthermore, it touches essential subjects like introduction to and structure of computer programs. This book is popular for its clarity in explaining the various concepts related to Python programming, and has already gained huge popularity in the market. Python in a Nutshell Python in a Nutshell On Python programming language, this acts as a very easy guide. When it comes to areas like official library and language references, it is a perfect source. Those who already have their fundamentals on Python strong, they should opt for this book. Regarding the subject, it deals with many advanced and complicated areas. Moreover, it explains the core of Python language clearly. Also, includes interpretations of various Python programmers. Even if someone thinking to start coding, this book will be the perfect one to go for. Violent Python: A Cookbook for Hackers, Forensic Analysts, Penetration Testers and Security Engineers Violent Python If we talk about the best introduction to Python programming, Violent Python is one. It provides a clear-cut understanding about the various areas of the language like tools and concepts. In addition, when it comes to security concepts, it is the best book to read. Also, it deals with Python forensics and tool integration for complicated protocols like SMB. Those programmers who already have a good understanding of the Python language should use this book to advance their skills. Learn Python in One Day and Learn It Well Learn Python in One Day and Learn It Well Basically, the best way to learn anything is by doing it. Same is with Python. If you want to learn Python well, start with the Python installation. At the end of this book, there is a complete project to practice the applications of all the concepts taught in the whole book. Most importantly, working on the project will help you to master the language, and it gives you an immense sense of achievement. Moreover, this book will also help you to retain the knowledge of a language. Python Pocket Reference Python Pocket Reference The book Python Pocket Reference includes both Python 3.4 and Python 2.7. Basically, it is the convenient pocket guide for perfect for job quick reference. In this book, there is concise, need to know information on Python types and prominent Python tools. In addition, it includes special methods, built-in functions, and exceptions. It also includes commonly-used standard library Python modules. This book of Python lets you pinpoint exactly what you need. Python Machine Learning Python Machine Learning When it comes to using Python for critical questions of data, go for Python Machine Learning. This book is good for both, whether you are a beginner or you are a master. It also enhances your Python knowledge, if you are already a Python programmer. Ultimately, it is an unmissable resource for learning Python. Conclusion As a result, we have seen so many good Python books. Since there is enough description mentioned above for each book of Python, it will help you to select what is good for you. Choose the best up for your requirements. Hope this article will assit your search for best books for Python. Keep reading, keep learning.",
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "https://dzone.com/articles/top-10-best-python-book-for-beginners-amp-experien"
+                        },
+                        "image": {
+                            "@type": "ImageObject",
+                            "url": "https://dzone.com//dz2cdn3.dzone.com/storage/article-thumb/10463966-thumb.jpg"
+                        }
+                    }
+                </script>
+            </div>
+
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "DZone",
+                        "item": "https://dzone.com"
+                    }, {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Open Source Zone",
+                        "item": "https://dzone.com/open-source-news-tutorials-tools"
+                    }, {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Top 10 Best Python Book for Beginners and Experienced Developers",
+                        "item": "https://dzone.com/articles/top-10-best-python-book-for-beginners-amp-experien"
+                    }]
+                }
+            </script>
+
+        <article>
+            <div class="content" ng-class="{'content-full': (width <= 1024 &amp;&amp; edition)}">
+                <div class="header">
+                    <div class="col-xs-12 breadcrumb-padding">
+                        <a href="/">DZone</a>
+                        &gt;
+                            <a href="/open-source-news-tutorials-tools">Open Source Zone</a>
+                            &gt;
+                            <a href="#">Top 10 Best Python Book for Beginners and Experienced Developers</a>
+                    </div>
+                    <div class="header-title">
+                        <!-- ngIf: articles[0].rawType != 'guide' --><div class="title ng-scope" ng-if="articles[0].rawType != 'guide'">
+                            <h1 class="article-title">
+                                Top 10 Best Python Book for Beginners and Experienced Developers
+                            </h1>
+                        </div><!-- end ngIf: articles[0].rawType != 'guide' -->
+
+                        <!-- ngIf: articles[0].rawType == 'guide' -->
+
+                        <div class="subhead">
+                            <h3>
+                                If you've been looking for the next level in Python programming, take a look at this book list taht should be able to one-up your current knowledge.
+                            </h3>
+                        </div>
+
+                        <!-- ngIf: articles[0].rawType != 'guide' && articles[0].rawType != 'whitepaper' --><div class="publish-meta ng-scope" ng-if="articles[0].rawType != 'guide' &amp;&amp; articles[0].rawType != 'whitepaper'">
+
+
+    <div class="article-author-meta">
+        <a href="/users/3416227/rinu.html">
+             <img src="https://dz2cdn4.dzone.com/thumbnail?fid=10167935&amp;w=80" data-src="https://dz2cdn4.dzone.com/thumbnail?fid=10167935&amp;w=80" class="avatar lazyloaded" width="40">
+        </a> by
+
+        <div class="author-info">
+                        <span class="author-name">
+                            <a th-popup="users.profile.mini" popup-data="{user: 3416227}" href="/users/3416227/rinu.html" class="ng-isolate-scope">
+                                Rinu Gour</a>
+                        </span>
+
+        </div>
+
+            <!-- ngIf: author.isCore -->
+
+        ·
+    </div>
+                            <span class="author-date">Oct. 16, 18</span>
+                            ·
+                                <a href="/open-source-news-tutorials-tools" id="portal-name"><span class="portal-name">Open Source
+                                Zone</span></a>
+                            ·
+                                <article-type type="'review'" class="ng-isolate-scope"><span class="ng-binding">Review</span></article-type>
+                        </div><!-- end ngIf: articles[0].rawType != 'guide' && articles[0].rawType != 'whitepaper' -->
+
+                        <!-- ngIf: articles[0].rawType == 'whitepaper' -->
+
+                    </div>
+                </div>
+                    <!-- ngIf: article.isOld -->
+
+                <div class="author-n-useraction">
+                    <div class="like action">
+                        <dz-like template="like-article.html" node="articles[0]" class="ng-isolate-scope">
+    <div class="dz-like icon-thumbs-up" ng-class="{'icon-thumbs-up-alt liked': status.liked, 'icon-thumbs-up': !status.liked}" ng-click="like()"><span class="action-label"><span>Like</span><!-- ngIf: status.liked --></span>
+        <a href="#">
+            <span class="ng-binding">(2)</span>
+        </a>
+    </div>
+</dz-like>
+                    </div>
+
+                    <div class="comment action">
+                        <p ng-show="!articles[0].isLocked" slider-toggle="commentsSlider" slider-data="{parent: articles[0]}" activate-with-url-params="{showComments: articles[0].id}" class="ng-isolate-scope">
+                            <span><i class="icon-comment" tooltip-html-unsafe=""></i></span>
+                            Comment (<span class="comment-after number-of-comments ng-binding" ng-bind="articles[0].nComments">3</span>)
+                        </p>
+                        <p ng-show="articles[0].isLocked" class="ng-hide">
+                <span><i class="icon-icon-comment comment-disabled" tooltip-html-unsafe="Comments have been disabled for this article"></i></span>
+                        </p>
+                    </div>
+
+                    <div class="save action">
+                        <dz-save template="link-article-save.html" node="articles[0]" class="save ng-isolate-scope">
+    <div ng-class="{'icon-star gold': status.saved, 'icon-star-empty': !status.saved}" ng-click="save()" class="save icon-star-empty"><span class="save-title">Save</span><!-- ngIf: status.saved --></div>
+</dz-save>
+                    </div>
+
+                    <div class="tweet action"><a ng-href="#" ng-click="shareTwitter($event, articles[0].header.title, articles[0].url)" class="title" target="_blank" href="#"><span><i class="icon-twitter"></i></span>
+                            <span class="action-label">Tweet</span></a>
+                    </div>
+
+                    <div class="pull-right">
+                        <div class="article-views action ng-binding"><i class="icon-eye"></i> 42.18k
+
+                            <span class="action-label">Views</span>
+                        </div>
+
+                            <!-- ngIf: canEdit(articles[0]) || canDelete(articles[0]) -->
+                    </div>
+                </div>
+                    <div class="signin-prompt">
+                        <p>Join the DZone community and get the full member experience.</p>
+                        <a id="article-signin-prompt" href="#" ng-click="loginForm()">Join For Free</a>
+                    </div>
+                    <div class="arrow-down"></div>
+
+                <!-- ngIf: articles[0].readyForAd --><div ng-if="articles[0].readyForAd" class="ng-scope">
+                  <div class="article-bumper  article-bumper-top ng-isolate-scope" dc-slot="ads.bt1.slot(articles[0], 0)" tags="ads.bt1.tags(articles[0], 0)" size="ads.bt1.size(articles[0], 0)" id="div-gpt-ad-1435246566686-1"></div>
+                </div><!-- end ngIf: articles[0].readyForAd -->
+
+                <!-- ngIf: !edition || (articles[0].rawType != 'refcard' && articles[0].rawType != 'guide') --><div ng-if="!edition || (articles[0].rawType != 'refcard' &amp;&amp; articles[0].rawType != 'guide')" class="ng-scope">
+                    <div class="content-html" dz-code-container="" ng-non-bindable="">
+                    <p pid="2" style="text-align: left;"><img alt="Best Python Book" class="fr-fin fr-dib" height="800" sizes="(max-width: 800px) 100vw, 800px" src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-books.jpg" srcset="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-books.jpg 800w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-books-150x150.jpg 150w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-books-300x300.jpg 300w" width="800"></p> 
+<p pid="179"><br></p> 
+<h2>Learning Python</h2> 
+<p pid="6"><a href="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/lrg-1.jpg" rel="nofollow" title="Best Python Book"><img alt="Best Python Book" class="fr-fin fr-dib" height="500" sizes="(max-width: 378px) 100vw, 378px" src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/lrg-1.jpg" srcset="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/lrg-1.jpg 378w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/lrg-1-113x150.jpg 113w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/lrg-1-227x300.jpg 227w" width="321"></a></p> 
+<p pid="60" style="text-align: center;"><em>&nbsp;Learning Python</em></p> 
+<p pid="181"><br></p> 
+<p pid="9">While it comes to Python programming, this Python books covers a lot of basic areas. At a beginner’s level, it is a very nice book for gaining a better insight into programming with&nbsp;<a href="https://data-flair.training/blogs/python-variables-and-data-types/" rel="nofollow">Python variables</a>&nbsp;and&nbsp;operators in Python. It also can be used to derive a strong foundation for the subject matter.</p> 
+<p pid="10">Moreover, it covers important areas of Python, such as version like Python 2.X and 3.X.&nbsp; If you want to gain an in-depth understanding, it is quite a simple book for the job. In addition, it is an ideal way to begin, as a new programmer or a professional developer (in other languages). This is the best Python book for beginners.</p> 
+<h2>Python Cookbook</h2> 
+<p pid="11"><a href="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-cookbook-final-1.jpg" rel="nofollow" title="Best python Book"><img alt="Best python Book" class="fr-fin fr-dib" height="500" sizes="(max-width: 378px) 100vw, 378px" src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-cookbook-final-1.jpg" srcset="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-cookbook-final-1.jpg 378w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-cookbook-final-1-113x150.jpg 113w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-cookbook-final-1-227x300.jpg 227w" width="378"></a></p> 
+<p pid="72" style="text-align: center;"><em>Python Cookbook</em></p> 
+<p pid="180"><br></p> 
+<p pid="14"><em>Python Cookbook</em> is a ticket to all the crucial areas of Python language. It introduces critical techniques and skills that are much-needed in Python programming. It includes everything, from a simple string concentration to that of recursive decent parsers writing.</p> 
+<p pid="15">There are some chapters in the book on the subject generators and iteration techniques. On several fronts, it also carries a practical approach. Moreover, this books is packed with efficient and necessary chapters. A must-read for those who want to become good at Python programming.</p> 
+<h2>Python for Data Analysis</h2> 
+<p pid="17"><a href="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-For-Data-Analysis-1.jpg" rel="nofollow" title="Best Python Book"><img alt="Best Python Book" class="fr-fin fr-dib" height="500" sizes="(max-width: 378px) 100vw, 378px" src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-For-Data-Analysis-1.jpg" srcset="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-For-Data-Analysis-1.jpg 378w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-For-Data-Analysis-1-113x150.jpg 113w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-For-Data-Analysis-1-227x300.jpg 227w" width="378"></a></p> 
+<p pid="84" style="text-align: center;"><em>Python For Data Analysis</em></p> 
+<p pid="19"><br></p> 
+<p pid="20">If we're talking about cleaning, influencing, processing, and gathering of data, this book is a complete guide. Basically, this book revolves around the area of data-intensive applications. Also, it contains an excellent introduction to data analysis issues. Basically, for learning the various tools, it is the best Python book.</p> 
+<p pid="22">In addition, there are some exceptional solutions for effectively analyzing the data in this book. It is very easy to read and understand. Moreover, this book is very good for professional programmers and researchers. Those who are already well-versed with the basics will find a lot of value in this book.</p> 
+<h2>Python Essential Reference</h2> 
+<p pid="23"><a href="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-essential-reference-final-1.jpg" rel="nofollow" title="Best Python Book"><img alt="Best Python Book" class="fr-fin fr-dib" height="500" sizes="(max-width: 378px) 100vw, 378px" src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-essential-reference-final-1.jpg" srcset="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-essential-reference-final-1.jpg 378w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-essential-reference-final-1-113x150.jpg 113w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-essential-reference-final-1-227x300.jpg 227w" width="378"></a></p> 
+<p pid="24" style="text-align: center;"><em>Python Essential Reference</em></p> 
+<p pid="25"><br></p> 
+<p pid="26">When it comes to gaining the most out of Python, this is an exceptional reference. It includes a clear-cut understanding of the Python and shares what is happening in the programming language.</p> 
+<p pid="27">Moreover, it provides a detailed overview of the Python Programming language with&nbsp;<a href="https://data-flair.training/blogs/python-syntax-semantics/" rel="nofollow">syntax in Python</a>. Basically, it helps in gaining a practical knowledge of the subject, and we can say this book is the one that programmers need to read first. In addition, this book also includes the omitted sections of Python 2.</p> 
+<h2>Python Programming: An Introduction to Computer Science</h2> 
+<p pid="28"><a href="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-Programming-final-1.jpg" rel="nofollow" title="Best Python Book"><img alt="Best Python Book" class="fr-fin fr-dib" height="500" sizes="(max-width: 378px) 100vw, 378px" src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-Programming-final-1.jpg" srcset="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-Programming-final-1.jpg 378w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-Programming-final-1-113x150.jpg 113w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-Programming-final-1-227x300.jpg 227w" width="378"></a></p> 
+<p pid="108" style="text-align: center;"><em>Python Programming</em></p> 
+<p pid="30"><br></p> 
+<p pid="31">This book is a key to Python for beginners and new Python programmers. To the world of computer science, it is a perfect introduction. There are some foundational concepts of computer science in a form that is clear and easy to understand. This book is all about theory and its practical application, and provides the strong foundation on the subject.</p> 
+<p pid="33">Furthermore, it touches essential subjects like introduction to and structure of computer programs. This book is popular for its clarity in explaining the various concepts related to Python programming, and has already gained huge popularity in the market.</p> 
+<h2>Python in a Nutshell</h2> 
+<p pid="34"><a href="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-in-a-nutshell-1.jpg" rel="nofollow" title="Best Python Book"><img alt="Best Python Book" class="fr-fin fr-dib" height="500" sizes="(max-width: 378px) 100vw, 378px" src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-in-a-nutshell-1.jpg" srcset="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-in-a-nutshell-1.jpg 378w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-in-a-nutshell-1-113x150.jpg 113w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-in-a-nutshell-1-227x300.jpg 227w" width="378"></a></p> 
+<p pid="120" style="text-align: center;"><em>Python in a Nutshell</em></p> 
+<p pid="36"><br></p> 
+<p pid="37">On Python programming language, this acts as a very easy guide. When it comes to areas like official library and language references, it is a perfect source. Those who already have their&nbsp;<a href="https://data-flair.training/blogs/python-features/" target="_blank" rel="nofollow">fundamentals on Python</a>&nbsp;strong, they should opt for this book.</p> 
+<p pid="38">Regarding the subject, it deals with many advanced and complicated areas. Moreover, it explains the core of Python language clearly. Also, includes interpretations of various Python programmers. Even if someone thinking to start coding, this book will be the perfect one to go for.</p> 
+<h2>Violent Python: A Cookbook for Hackers, Forensic Analysts, Penetration Testers and Security Engineers</h2> 
+<p pid="39"><a href="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Violent-Python-1.jpg" rel="nofollow" title="Best Python Book"><img alt="Best Python Book" class="fr-fin fr-dib" height="500" sizes="(max-width: 406px) 100vw, 406px" src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Violent-Python-1.jpg" srcset="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Violent-Python-1.jpg 406w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Violent-Python-1-122x150.jpg 122w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Violent-Python-1-244x300.jpg 244w" width="406"></a></p> 
+<p pid="132" style="text-align: center;"><em>Violent Python</em></p> 
+<p pid="42">If we talk about the best introduction to&nbsp;<a href="https://data-flair.training/blogs/cgi-programming-python/" target="_blank" rel="nofollow">Python programming</a>, <em>Violent Python</em> is one. It provides a clear-cut understanding about the various areas of the language like tools and concepts.</p> 
+<p pid="43">In addition, when it comes to security concepts, it is the best book to read. Also, it deals with&nbsp;<a href="https://data-flair.training/blogs/python-forensics/" target="_blank" rel="nofollow">Python forensics</a>&nbsp;and tool integration for complicated protocols like SMB. Those programmers who already have a good understanding of the Python language should use this book to advance their skills.&nbsp;</p> 
+<h2>Learn Python in One Day and Learn It Well</h2> 
+<p pid="44"><a href="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Learn-Python-In-One-Day-1.jpg" rel="nofollow" title="Best Python Book"><img alt="Best Python Book" class="fr-fin fr-dib" height="500" sizes="(max-width: 378px) 100vw, 378px" src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Learn-Python-In-One-Day-1.jpg" srcset="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Learn-Python-In-One-Day-1.jpg 378w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Learn-Python-In-One-Day-1-113x150.jpg 113w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Learn-Python-In-One-Day-1-227x300.jpg 227w" width="378"></a></p> 
+<p pid="144" style="text-align: center;"><em>Learn Python in One Day and Learn It Well</em></p> 
+<p pid="46"><br></p> 
+<p pid="47">Basically, the best way to learn anything is by doing it. Same is with Python. If you want to learn Python well, start with the&nbsp;<a href="https://data-flair.training/blogs/python-installation-tutorial/" rel="nofollow">Python installation</a>. At the end of this book, there is a complete project to practice the applications of all the concepts taught in the whole book.</p> 
+<p pid="48">Most importantly, working on the project will help you to master the language, and it gives you an immense sense of achievement. Moreover, this book will also help you to retain the knowledge of a language.</p> 
+<h2>Python Pocket Reference</h2> 
+<p pid="49"><a href="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-pocket-reference-final-1.jpg" rel="nofollow" title="Best Python Book"><img alt="Best Python Book" class="fr-fin fr-dib" height="500" sizes="(max-width: 378px) 100vw, 378px" src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-pocket-reference-final-1.jpg" srcset="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-pocket-reference-final-1.jpg 378w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-pocket-reference-final-1-113x150.jpg 113w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-pocket-reference-final-1-227x300.jpg 227w" width="378"></a></p> 
+<p pid="156" style="text-align: center;"><em>Python Pocket Reference</em></p> 
+<p pid="51"><br></p> 
+<p pid="52">The book <em>Python Pocket Reference</em> includes both Python 3.4 and Python 2.7. Basically, it is the convenient pocket guide for perfect for job quick reference. In this book, there is concise, need to know information on Python types and prominent&nbsp;<a href="https://data-flair.training/blogs/python-tools/" target="_blank" rel="nofollow">Python tools</a>.</p> 
+<p pid="53">In addition, it includes special methods, built-in functions, and exceptions. It also includes commonly-used standard library&nbsp;<a href="https://data-flair.training/blogs/python-modules/" target="_blank" rel="nofollow">Python modules</a>. This book of Python lets you pinpoint exactly what you need.</p> 
+<h2>Python Machine Learning</h2> 
+<p pid="54"><a href="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/51MWlrcCY-L._SX258_BO1204203200_-1.jpg" rel="nofollow" title="Best Python Book"><img alt="Best Python Book" class="fr-fin fr-dib" height="500" sizes="(max-width: 378px) 100vw, 378px" src="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/51MWlrcCY-L._SX258_BO1204203200_-1.jpg" srcset="https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/51MWlrcCY-L._SX258_BO1204203200_-1.jpg 378w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/51MWlrcCY-L._SX258_BO1204203200_-1-113x150.jpg 113w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/51MWlrcCY-L._SX258_BO1204203200_-1-227x300.jpg 227w" width="378"></a></p> 
+<p pid="55" style="text-align: center;"><em>&nbsp;Python Machine Learning</em></p> 
+<p pid="56"><br></p> 
+<p pid="57">When it comes to using Python for critical questions of data, go for&nbsp;<a href="https://data-flair.training/blogs/python-machine-learning-tutorial/" rel="nofollow">Python Machine Learning</a>. This book is good for both, whether you are a beginner or you are a master. It also enhances your Python knowledge, if you are already a Python programmer. Ultimately, it is an unmissable resource for learning Python.</p> 
+<h2>Conclusion</h2> 
+<p pid="59">As a result, we have seen so many good Python books. Since there is enough description mentioned above for each book of Python, it will help you to select what is good for you. Choose the best up for your requirements. Hope this article will assit your search for best books for Python. </p> 
+<p pid="59">Keep reading, keep learning.</p>
+                </div>
+                </div><!-- end ngIf: !edition || (articles[0].rawType != 'refcard' && articles[0].rawType != 'guide') -->
+
+                <!-- ngIf: (articles[0].rawType == 'refcard' || articles[0].rawType == 'guide') && edition -->
+
+                <!-- ngIf: articles[0].readyForAd --><div ng-if="articles[0].readyForAd" class="ng-scope">
+                    <!-- ngIf: articles[0].readyForAd --><div class="article-bumper article-bumper-bottom ng-scope ng-isolate-scope" ng-if="articles[0].readyForAd" dc-slot="ads.bt2.slot(articles[0], 0)" tags="ads.bt2.tags(articles[0], 0)" size="ads.bt2.size(articles[0], 0)" id="div-gpt-ad-1435246566686-2"></div><!-- end ngIf: articles[0].readyForAd -->
+                </div><!-- end ngIf: articles[0].readyForAd -->
+
+            <!-- ngIf: articles[0].rawType != 'article' -->
+
+                    <!-- ngIf: !edition --><div ng-if="!edition" class="related ng-scope">
+                        <h3>Like This Article? Read More From DZone</h3>
+                        <div class="row">
+                            <div class="relateddiv col-xs-6 col-md-6">
+                                <a href="/articles/book-review-supercharged-python-by-brian-overland?fromrel=true">
+                                    <img class="relatedimg col-xs-3 col-md-3 lazyload" src="" data-src="https://dz2cdn1.dzone.com/thumbnail?fid=12809900&amp;w=120" alt="Book review – Supercharged Python, by Brian Overland and John Bennet" width="60">
+                                </a>
+                                <a href="/articles/book-review-supercharged-python-by-brian-overland?fromrel=true" class="col-xs-9 col-md-9">Book review – Supercharged Python, by Brian Overland and John Bennet</a>
+                            </div>
+
+                            <div class="relateddiv col-xs-6 col-md-6">
+                                <a href="/articles/four-reasons-why-python-is-a-good-programming-lang?fromrel=true">
+                                    <img class="relatedimg col-xs-3 col-md-3 lazyload" src="" data-src="https://dz2cdn3.dzone.com/thumbnail?fid=2021098&amp;w=120" alt="Four Reasons Why Python Is a Good Programming Language" width="60">
+                                </a>
+                                <a href="/articles/four-reasons-why-python-is-a-good-programming-lang?fromrel=true" class="col-xs-9 col-md-9">
+                                    Four Reasons Why Python Is a Good Programming Language</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="relateddiv col-xs-6 col-md-6">
+                                <a href="/articles/how-junior-developers-can-contribute-to-open-sourc?fromrel=true">
+                                    <img class="relatedimg col-xs-3 col-md-3 lazyload" src="" data-src="https://dz2cdn2.dzone.com/thumbnail?fid=3209401&amp;w=120" alt="How Junior Developers Can Contribute to Open-Source Projects" width="60">
+                                </a>
+                                <a href="/articles/how-junior-developers-can-contribute-to-open-sourc?fromrel=true" class="col-xs-9 col-md-9">How Junior Developers Can Contribute to Open-Source Projects</a>
+                            </div>
+
+                            <div class="relateddiv col-xs-6 col-md-6">
+                                <a href="/refcardz/getting-started-git?fromrel=true">
+                                    <img class="relatedimg col-xs-3 col-md-3 lazyload" src="" data-src="https://dz2cdn3.dzone.com/thumbnail?fid=11325530&amp;w=120" alt="Getting Started With Git" width="60">
+                                </a>
+                                <a href="/refcardz/getting-started-git?fromrel=true" class="col-xs-9 col-md-9">
+                                    <p class="relatedres">Free DZone Refcard</p>
+                                    Getting Started With Git</a>
+                            </div>
+                        </div>
+                    </div><!-- end ngIf: !edition -->
+
+
+            <!-- ngIf: articles[0].rawType != 'article' && articles[0].pdf -->
+
+
+            <div class="article-topics">
+                <div class="topic-label">Topics:</div>
+                <div class="topics">
+                        <span class="topics-tag">python
+                            ,</span><span class="topics-tag">book review
+                            ,</span><span class="topics-tag">book list
+                            ,</span><span class="topics-tag">open source
+                            ,</span><span class="topics-tag">python programming
+                            ,</span><span class="topics-tag">beginner developer</span>
+                </div>
+            </div>
+            <div class="author-n-useraction">
+                <div class="like action">
+                    <dz-like template="like-article.html" node="articles[0]" class="ng-isolate-scope">
+    <div class="dz-like icon-thumbs-up" ng-class="{'icon-thumbs-up-alt liked': status.liked, 'icon-thumbs-up': !status.liked}" ng-click="like()"><span class="action-label"><span>Like</span><!-- ngIf: status.liked --></span>
+        <a href="#">
+            <span class="ng-binding">(2)</span>
+        </a>
+    </div>
+</dz-like>
+                </div>
+
+                <div class="comment action">
+                    <p ng-show="!articles[0].isLocked" slider-toggle="commentsSlider" slider-data="{parent: articles[0]}" activate-with-url-params="{showComments: articles[0].id}" class="ng-isolate-scope">
+                        <span><i class="icon-comment" tooltip-html-unsafe=""></i></span>
+                        Comment (<span class="comment-after number-of-comments ng-binding" ng-bind="articles[0].nComments">3</span>)
+                    </p>
+                    <p ng-show="articles[0].isLocked" class="ng-hide">
+            <span><i class="icon-icon-comment comment-disabled" tooltip-html-unsafe="Comments have been disabled for this article"></i></span>
+                    </p>
+                </div>
+
+                <div class="save action">
+                    <dz-save template="link-article-save.html" node="articles[0]" class="save ng-isolate-scope">
+    <div ng-class="{'icon-star gold': status.saved, 'icon-star-empty': !status.saved}" ng-click="save()" class="save icon-star-empty"><span class="save-title">Save</span><!-- ngIf: status.saved --></div>
+</dz-save>
+                </div>
+
+                <div class="tweet action"><a ng-href="#" ng-click="shareTwitter($event, articles[0].header.title, articles[0].url)" class="title" target="_blank" href="#"><span><i class="icon-twitter"></i></span>
+                        <span class="action-label">Tweet</span></a>
+                </div>
+
+                <div class="pull-right">
+                    <div class="article-views action ng-binding"><i class="icon-eye"></i> 42.18k
+
+                        <span class="action-label">Views</span></div>
+
+                        <!-- ngIf: !edition && (canEdit(articles[0]) || canDelete(articles[0])) -->
+                </div>
+            </div>
+                <div class="attribution">
+                    <p>Published at DZone with permission
+                        of 
+                            <span>Rinu Gour
+                        . <!-- ngIf: articles[0].source --><span ng-if="articles[0].source" class="ng-scope"><a href="https://data-flair.training/blogs/best-python-book/" target="_blank">See the original article here.<i class="icon-link-ext-alt"></i></a></span><!-- end ngIf: articles[0].source --></span></p>
+                    <p>Opinions expressed by DZone contributors are their own.</p>
+                </div>
+            <load-article node="article || articles[0]" class="ng-isolate-scope"></load-article>
+        </div></article>
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <th-if-scroll relative-to="bottom" from="-20" to="0" callback="activateB(articles[0])" class="ng-isolate-scope"></th-if-scroll>
+        </div>
+    </div><!-- end ngIf: articles[0].id == 2513743 -->
+
+        <!-- Had to use a nested ng-if to ensure that this section loads after the top of the page-->
+        <!-- TODO: Figure out why partnerResources get loaded before the rest of the article -->
+        <!-- ngIf: true --><div ng-if="true" class="ng-scope">
+          <!-- ngIf: true --><div ng-if="true" class="ng-scope">
+
+<div class="layout-card widget-top-border partner-resources-block" style="width:100%;margin-bottom: 1em;">
+
+    <div class="main-container">
+        <div class="featured-header">
+            <h2>
+                    Open Source<span> Partner Resources</span>
+            </h2>
+        </div>
+
+        <div class="partner-resources-container">
+                <div class="resource-block ng-isolate-scope" dc-slot="'/2916070/dz2_partner_resource_link'" tags="ads.partnerResources.tags(articles[0], 'pr' + calculatePartnerResourceIndex())" size="['fluid']" id="div-gpt-ad-1435246566686-3"></div>
+                <div class="resource-block ng-isolate-scope" dc-slot="'/2916070/dz2_partner_resource_link'" tags="ads.partnerResources.tags(articles[0], 'pr' + calculatePartnerResourceIndex())" size="['fluid']" id="div-gpt-ad-1435246566686-4"></div>
+                <div class="resource-block ng-isolate-scope" dc-slot="'/2916070/dz2_partner_resource_link'" tags="ads.partnerResources.tags(articles[0], 'pr' + calculatePartnerResourceIndex())" size="['fluid']" id="div-gpt-ad-1435246566686-5"></div>
+                <div class="resource-block ng-isolate-scope" dc-slot="'/2916070/dz2_partner_resource_link'" tags="ads.partnerResources.tags(articles[0], 'pr' + calculatePartnerResourceIndex())" size="['fluid']" id="div-gpt-ad-1435246566686-6"></div>
+                <div class="resource-block ng-isolate-scope" dc-slot="'/2916070/dz2_partner_resource_link'" tags="ads.partnerResources.tags(articles[0], 'pr' + calculatePartnerResourceIndex())" size="['fluid']" id="div-gpt-ad-1435246566686-7"></div>
+                <div class="resource-block ng-isolate-scope" dc-slot="'/2916070/dz2_partner_resource_link'" tags="ads.partnerResources.tags(articles[0], 'pr' + calculatePartnerResourceIndex())" size="['fluid']" id="div-gpt-ad-1435246566686-8"></div>
+        </div>
+
+    </div>
+</div>
+
+
+
+          </div><!-- end ngIf: true -->
+        </div><!-- end ngIf: true -->
+
+        <!-- ngIf: articles[1] && !articles[1].partner.isSponsoringArticle && width >= 768 -->
+
+        <!-- ngIf: articles[1] && !articles[1].partner.isSponsoringArticle && width < 768 -->
+
+
+</div><!-- end ngIf: articles[0].id == 2513743 -->
+<!-- ngRepeat: article in articles --><!-- ngIf: $index > 0 || article.id != 2513743 --><!-- end ngRepeat: article in articles -->
+
+<div style="clear: both;"></div>
+<!-- ngIf: !isPreview --><th-if-scroll ng-if="!isPreview" relative-to="bottom" from="-50" to="50" callback="loadMore()" class="ng-scope ng-isolate-scope"></th-if-scroll><!-- end ngIf: !isPreview --></div></div></div><div class="container-fluid footerOuter" th-element="footerOuter" th-element-groups="[]" ng-hide="$root.isHidden('footerOuter')" data-th-element-name="footerOuter"><div class="row row2" th-element="row2" th-element-groups="['footerOuter']" ng-hide="$root.isHidden('row2')" data-th-element-name="row2"><div class="col-md-12 container3" th-element="container3" th-element-groups="['footerOuter','row2']" ng-hide="$root.isHidden('container3')" data-th-element-name="container3"><div class="container container3" th-element="container3" th-element-groups="['footerOuter','row2','container3']" ng-hide="$root.isHidden('container3')" data-th-element-name="container3"><div class="row footer" th-element="footer" th-element-groups="['footerOuter','row2','container3','container3']" ng-hide="$root.isHidden('footer')" data-th-element-name="footer"></div></div></div></div></div><div class="componentsSlider5 componentsSlider oUhballbvbdSaoUhM ng-scope" th-element="componentsSlider5" th-element-groups="[]" ng-hide="$root.isHidden('componentsSlider5')" data-th-element-name="componentsSlider5" data-th-widget="components.slider" data-widget-components-slider="" ng-controller="componentsSlider5"><!-- ngIf: _ready -->
+
+<div class="slider-outer-wrapper" ng-class="{open: _sliderOpen}">
+
+    <!-- ngIf: _ready -->
+</div>
+
+</div>
+
+    <div class="row">
+        <a href="#" class="back-to-top"><i class="icon-up-big"></i></a>
+    </div>
+
+
+    <script type="text/ng-template" id="/themes/dz20/widgets/header/sections/widget.html">
+<span dropdown is-open="dropdown.open" ng-class="{small: width < 768}">
+    <span dropdown-toggle class="sections"><i class="icon-menu"></i>
+        <span class="menuLabel" ng-if="width < 768"></span></span>
+    <ul class="dropdown-menu ul-first" ng-style="width < 768 ? {'top': headerSize + 0 + 'px', 'padding-top': '15px'} : {}">
+        <li><a href="/links">Links</a></li>
+        <li><a href="/refcardz">Refcardz</a></li>
+        <li><a href="/guides">Guides</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li class="divider"></li>
+
+        <li class="post-title"><span>Zones</span></li>
+        <li ng-repeat="topic in portals" class="dropdown">
+            <a ng-href="{{ topic.url }}">{{ topic.name }}</a>
+        </li>
+        <li class="divider"></li>
+        <li class="post-title"><span>Post</span></li>
+        <li><a href="/links">Link</a></li>
+        <li><a href="/article/post.html">Article</a></li>
+    </ul>
+</span>
+
+
+    </script>
+
+<script type="text/ng-template" id="followus.html">
+<div class="top-social">
+    <p>Let's be friends:</p>
+    <ul class="icons-only" ng-class="{open: isOpen}" click-outside="outside()">
+        <li class="rss-icon" id="rss-spotlight-1">
+            <a href="/pages/feeds"><i class="icon-rss-1"></i></a>
+        </li>
+        <li class="twitter-icon">
+            <a href="https://twitter.com/DZoneInc" target="_blank"><i class="icon-twitter"></i></a>
+        </li>
+        <li class="facebook-icon">
+            <a href="https://www.facebook.com/DZoneInc" target="_blank"><i class="icon-facebook-1"></i></a>
+        </li>
+        <li class="google-icon">
+            <a href="https://plus.google.com/+dzone/posts" target="_blank"><i class="icon-gplus"></i></a>
+        </li>
+        <li class="linkedin-icon">
+            <a href="https://www.linkedin.com/company/devada-team" target="_blank"><i class="icon-linkedin-1"></i></a>
+        </li>
+
+            <ul class="social-dropdown dropdown-menu">
+                <li class="rss" id="rss-spotlight"><a href="/pages/feeds"><i class="icon-rss-squared"></i> <span>RSS Feed</span></a></li>
+                <li class="twitter" id="twitter-spotlight">
+                    <a href="https://twitter.com/DZoneInc" class="twitter-follow-button" data-show-count="true"
+                       data-show-screen-name="false">Follow @DZoneInc</a>
+                </li>
+                <li class="fb-like" id="fb-spotlight" data-href="https://www.facebook.com/DZoneInc"
+                    data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></li>
+                <li class="google-plus" id="gplus-spotlight">
+                    <div class="g-follow" data-annotation="bubble" data-height="20"
+                         data-href="https://plus.google.com/108688665090780146602" data-rel="publisher"></div>
+                </li>
+                <li class="linkedin" id="linkedin-spotlight">
+                    <script type="IN/FollowCompany" data-id="114427" data-counter="right"></script>
+                
+            
+    
+
+<script type="text/ng-template" id="dzlike.html">
+<div class="dz-like " ng-class="{liked: status.liked}" ng-click="like()">
+    <a href="#">
+        <i class="icon-up-dir"></i>
+        <span>{{ status.score }}</span>
+    </a>
+</div>
+</script><script type="text/ng-template" id="dztopicselect.html"><ui-select  ng-if="canAddTopics" ng-model="editing.topics" theme="bootstrap" multiple tagging tagging-label="(add topic)"
+           tagging-tokens=",">
+    <ui-select-match class="input-tags"><div class="topics-tag">{{ $item }}</div></ui-select-match>
+    <ui-select-choices
+            refresh="topicsRefresh($select.search)"
+            refresh-delay="250"
+            repeat="topic in foundTopics | filter: $select.search">
+        <div ng-bind-html="topic | highlight: $select.search"></div>
+    </ui-select-choices>
+</ui-select>
+<ui-select ng-if="!canAddTopics" ng-model="editing.topics" theme="bootstrap" multiple>
+    <ui-select-match><div class="topics-tag">{{ $item }}</div></ui-select-match>
+    <ui-select-choices
+            refresh="topicsRefresh($select.search)"
+            refresh-delay="250"
+            repeat="topic in foundTopics | filter: $select.search">
+        <div ng-bind-html="topic | highlight: $select.search"></div>
+    </ui-select-choices>
+</ui-select></script><script type="text/ng-template" id="dzsave.html"><i class="icon-star-empty" ng-class="{'icon-star gold': status.saved, 'icon-star-empty': !status.saved}" tooltip-html-unsafe="{{status.saved ? 'Saved' : 'Save'}}" ng-click="save()"></i>
+<!--<span ng-class="{'gold count': status.saved}">{{ status.count }}</span>--></script><script type="text/ng-template" id="overlay.html"><div class="ngdialog th-overlay">
+    <div class="ngdialog-overlay">
+        <div class="overlay-box">
+            <i class="icon-spin5 animate-spin"></i>
+
+            <p>{{ message }}</p>
+        </div>
+    </div>
+</div></script><script type="text/ng-template" id="inline-editable.html"><div class="inline-editable" ng-if="!status.editing" ng-click="edit()" ng-transclude></div>
+<div class="inline-editor-wrapper" ng-if="status.editing">
+    <textarea class="inline-editor" ng-model="status.editValue" ng-if="type == 'textarea'"></textarea>
+    <input class="inline-editor" ng-model="status.editValue" ng-if="type == 'input'"></textarea>
+    <div class="inline-editor-tools">
+        <button class="btn select-ok" ng-disabled="!status.editValue" ng-click="save()"><i class="icon-check-1"></i></button>
+        <button class="btn select-cancel" ng-disabled="!editable" ng-click="cancel()"><i class="icon-cancel-1"></i></button>
+    </div>
+</div></script><script type="text/ng-template" id="dzupload.html"><span class="btn btn-upload" >
+    <div ng-bind-html="label"></div>
+    <div class="progress-container" ng-style="{visibility: uploading ? 'visible' : 'hidden'}">
+        <progressbar max="100" value="progress"><span>{{ progress }}</span></progressbar>
+    </div>
+    <input type="file" ng-file-drop ng-file-select ng-file-change="upload($files)" />
+</span></script><script type="text/ng-template" id="dzfollow.html"><button class="btn btn-follow" ng-class="{'btn-success': !status.followed, 'btn-warning': status.followed, 'hidden': followed.id == $root.user.id}" ng-click="follow()"><span ng-if="!status.followed"><i class="icon-plus"></i> Follow</span><span ng-if="status.followed" class="following">Following</span><span ng-if="status.followed" class="hover">Unfollow</span></button></script><script type="text/ng-template" id="dzphoto.html"><i class="icon-camera-alt photo" type="file" ng-file-drop ng-file-select ng-file-change="upload($files)"></i></script><script type="text/ng-template" id="dialog.confirm.html"><p>{{ message }}</p></script><script type="text/ng-template" id="dialog.skeleton.html"><div class="dialog-title">
+    <h1 ng-if="$dialog.title">{{ $dialog.title }}</h1>
+</div>
+<div class="dialog-body {{ $dialog.extraClass }}" ng-include="$dialog.template"></div>
+<div class="dialog-footer">
+    <div class="dialog-buttons" ng-if="$dialog.buttons">
+        <button ng-repeat="button in $dialog.buttons" ng-hide="button.hidden" ng-disabled="button.disabled || $dialog.executing"
+                class="btn btn-{{ button.type || 'info' }}" ng-click="$dialog.runAction(button)">
+            <span class="icon-spin6 animate-spin" ng-if="button.executing"></span>{{ button.label || button.name }}</button>
+    </div>
+</div></script><script type="text/ng-template" id="dialog.message.html"><div class="message-icon">
+    <i class="icon-{{ icon }}"></i>
+</div>
+<div class="message-text">
+    <p class="message-title" ng-bind-html="trustAsHtml(title)"></p>
+    <p ng-bind-html="trustAsHtml(message)"></p>
+</div>
+</script>
+<script type="text/javascript">
+
+    var TH_CORE_VARS = {};
+
+    try {
+        TH_CORE_VARS.additional = {};
+
+        TH_CORE_VARS.additional.matchedUrl = {"name":"dzone:articles:view","mapping":"/articles/**","mappingPatterns":{}};
+        TH_CORE_VARS.additional.request = [{"site":{"keywords":"programming, software development, devops, java, agile, web, iot, database, mobile, big data, cloud","name":"DZone.com","description":"Programming, Web Development, and DevOps news, tutorials and tools for beginners to experts. Hundreds of free publications, over 1M members, totally free.","id":7,"title":"DZone: Programming & DevOps news, tutorials & tools"},"dev":false,"context":"","theme":"dz20","cdn":["dz2cdn1.dzone.com","dz2cdn2.dzone.com","dz2cdn3.dzone.com","dz2cdn4.dzone.com"],"user":{"realName":null,"authenticated":false,"profile":"/users/2500002/anon-user.html","name":"Anonymous","GDPRStatus":null,"id":2500002,"avatar":"https://secure.gravatar.com/avatar/?d=identicon&r=PG"}}];
+        TH_CORE_VARS.additional.loadedScripts = [["/lib/jquery/jquery.js","/lib/lodash/lodash.js","/lib/moment/moment.js","/scripts/utils.js","/lib/angular/angular.js","/lib/angular/angular-sanitize.js","/lib/local-storage/angular-local-storage.js","/lib/bootstrap/dropdown.js","/lib/angular-ui/bootstrap.js","/lib/angular-ui/select.js","/lib/bootstrap-switch/bootstrap-switch.js","/lib/ngDialog/js/ngDialog.js","/lib/angular-moment/angular-moment.js","/scripts/app.js","/scripts/socket.js","/scripts/services.js","/scripts/ui-services.js","/scripts/directives.js","/scripts/filters.js","/lib/angular/angular-cookies.js","/lib/angulartics/angulartics.js","/lib/angulartics/angulartics-ga.js","/lib/angular-touch/angular-touch.min.js","/lib/dataTables/datatables.min.js","/lib/elastic/elastic.js","/lib/ng-file-upload/angular-file-upload-all.js","/scripts/dzone.js","/scripts/ads.js","/scripts/social-media.js","/scripts/head.js","/scripts/links.js","/scripts/utilities/directives.js","/scripts/utilities/services.js","/scripts/utilities/editor.js","/lib/bootstrap-slider/bootstrap-slider.js","/lib/bootstrap-slider/directive.js","/lib/sb/sb.js","/lib/angular-animate.min.js","/lib/angular-sanitize.min.js","/lib/ngToast.min.js","/lib/lazysizes.min.js","/lib/angular-draganddrop/draganddrop.js","/widgets/article/content/utils.js","/widgets/components/slider/service.js","/widgets/header/headerV2/resize.js","/widgets/sidebar/content/list/service.js","/widgets/sidebar/tapBar/directive.js","/widgets/sidebar/tapBar/service.js"]];
+        TH_CORE_VARS.additional.botInfo = [{"isRenderBot":false}];
+        TH_CORE_VARS.additional.portals = [[{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"agile","color":"red","name":"Agile","topic":8,"id":2,"shortTitle":"agile-methodology-training-tools-news","url":"/agile-methodology-training-tools-news"},{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"ai","color":"purple","name":"AI","topic":2551,"id":4001,"shortTitle":"artificial-intelligence-tutorials-tools-news","url":"/artificial-intelligence-tutorials-tools-news"},{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"big-data","color":"green","name":"Big Data","topic":6129,"id":3,"shortTitle":"big-data-analytics-tutorials-tools-news","url":"/big-data-analytics-tutorials-tools-news"},{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"cloud","color":"orange","name":"Cloud","topic":30,"id":4,"shortTitle":"cloud-computing-tutorials-tools-news","url":"/cloud-computing-tutorials-tools-news"},{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"database","color":"purple","name":"Database","topic":59,"id":5,"shortTitle":"database-sql-nosql-tutorials-tools-news","url":"/database-sql-nosql-tutorials-tools-news"},{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"devops","color":"yellow","name":"DevOps","topic":31,"id":6,"shortTitle":"devops-tutorials-tools-news","url":"/devops-tutorials-tools-news"},{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"integration","color":"green","name":"Integration","topic":1138,"id":7,"shortTitle":"enterprise-integration-training-tools-news","url":"/enterprise-integration-training-tools-news"},{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"iot","color":"orange","name":"IoT","topic":48,"id":8,"shortTitle":"iot-developer-tutorials-tools-news-reviews","url":"/iot-developer-tutorials-tools-news-reviews"},{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"java","color":"purple","name":"Java","topic":1,"id":1,"shortTitle":"java-jdk-development-tutorials-tools-news","url":"/java-jdk-development-tutorials-tools-news"},{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"microservices","color":"green","name":"Microservices","topic":13268,"id":6001,"shortTitle":"microservices-news-tutorials-tools","url":"/microservices-news-tutorials-tools"},{"hideFromHomepageWidgets":true,"hideFromNav":true,"code":"mobile","color":"yellow","name":"Mobile","topic":29,"id":9,"shortTitle":"mobile-app-developer-tutorials-tools-news","url":"/mobile-app-developer-tutorials-tools-news"},{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"open-source","color":"purple","name":"Open Source","topic":75,"id":7001,"shortTitle":"open-source-news-tutorials-tools","url":"/open-source-news-tutorials-tools"},{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"performance","color":"red","name":"Performance","topic":653,"id":10,"shortTitle":"apm-tools-performance-monitoring-optimization","url":"/apm-tools-performance-monitoring-optimization"},{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"security","color":"green","name":"Security","topic":85,"id":2001,"shortTitle":"application-web-network-security","url":"/application-web-network-security"},{"hideFromHomepageWidgets":false,"hideFromNav":false,"code":"webdev","color":"orange","name":"Web Dev","topic":35,"id":11,"shortTitle":"web-development-programming-tutorials-tools-news","url":"/web-development-programming-tutorials-tools-news"},{"hideFromHomepageWidgets":true,"hideFromNav":true,"code":"inspiration-station ","color":"purple","name":"Writers'","topic":16873,"id":3001,"shortTitle":"writers-zone","url":"/writers-zone"}]];
+        TH_CORE_VARS.additional.loadedStyles = [["/lib/bootstrap/bootstrap.less","/lib/fontello/css/fontello.css","/lib/fontello/css/animation.css","/lib/angular-ui/select.css","/lib/ngDialog/css/ngDialog.css","/less/ngDialog-theme.less","/less/container.less","/lib/bootstrap-switch/bootstrap-switch.css","/lib/dataTables/datatables.min.css","/less/dzone20.less","/less/fonts.less","/less/directives.less","/lib/sb/sb.css","/lib/bootstrap-slider/bootstrap-slider.css","/lib/codemirror/lib/codemirror.css","/less/ngToast.min.css","/less/ngToast-animations.min.css","/less/layout.less","/widgets/announcementBar/widget.less","/widgets/article/content/article-content.less","/widgets/components/slider/widget.less","/widgets/content/commentsSlider/widget.less","/widgets/header/headerV2/widget.less","/widgets/sidebar/content/list/list.less","/widgets/sidebar/tapBar/sidebar-list.less","/widgets/sidebar/tapBar/widget.less"]];
+        TH_CORE_VARS.additional.model = [{"metaData":{"title":"Top 10 Best Python Book for Beginners and Experienced Developers - DZone Open Source","description":"A list of some of the top books that will help both beginners and experienced developers learn more about the Python language and its programming applications.","keywords":"programming, software development, devops, java, agile, web, iot, database, mobile, big data, cloud,python,book review,book list,open source,python programming,beginner developer,article","siteName":"dzone.com","url":"https://dzone.com","img":"https://dz2cdn3.dzone.com/storage/article-thumb/10463966-thumb.jpg","imgprop":"og:image","twitterImage":"https://dz2cdn3.dzone.com/storage/article-thumb/10463966-thumb.jpg","type":"article","wordCount":987,"canonical":"https://dzone.com/articles/top-10-best-python-book-for-beginners-amp-experien","noIndex":false,"noFollow":false,"prevPage":null,"nextPage":null,"pubDate":"2018-10-16","id":2513743,"author":"Rinu Gour","section":"Open Source","useEscapedFragment":false,"robots":false,"robotsTag":""},"lastAuthor":{"id":3416227,"username":"Rinu","type":"user","plug":"rinu","gold":0,"silver":1,"bronze":1,"reputation":1318,"moderator":false,"superuser":false,"avatar":"https://dzone.com/users/3416227/photo/view.html"},"articleType":"article/review","publisher":"dre-dzone","enableThreadedComments":true,"portal":{"id":7001,"code":"open-source","title":"Open Source","shortTitle":"open-source-news-tutorials-tools","blurb":" - NEW ZONE - The Open Source Zone focuses on the community. It covers everything you need to know about contributing to an open-source community, creating your own, and what the benefits of it are. It also covers how to move your platform to become more open, and the impact on licensing. This Zone is the one-stop shop for information on how to get involved in open source."},"contentType":"article","content":{"id":"2513743","type":"article","plug":"top-10-best-python-book-for-beginners-amp-experien","creationDate":"2018-10-16 12:01:02.0"}}];
+        TH_CORE_VARS.additional.requiresModule = ["dndLists","generalDirectives","monospaced.elastic","angularFileUpload","ui.bootstrap-slider","angulartics","angulartics.google.analytics","ngCookies","ngSanitize","ui.select","ui.bootstrap","angularMoment","ngTouch","ngDialog","LocalStorageModule"];
+        TH_CORE_VARS.additional.TH_CSRF = "518391226031193085";
+            } catch (e) {
+        console.error(e);
+    }
+</script>
+<script type="text/javascript">
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function () {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+                '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+<script type="text/javascript" src="//dz2cdn2.dzone.com/storage/pub/13077468-combined.js" charset="utf-8"></script><script type="text/javascript" src="//dz2cdn2.dzone.com/storage/pub/13077481-combined.js" charset="utf-8"></script><script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-410289-1', 'auto');
+    ga('require', 'linkid', 'linkid.js');
+    ga('require', 'GTM-TSD9TZP');
+    ga('set', 'siteSpeedSampleRate', 25);
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K25QL22');</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K25QL22"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager -->
+
+    <style>
+#adtoniq-msgr-bar {
+	position: fixed;
+	bottom: -20%;
+	left: 0;
+	width: 100%;
+	min-height: 30px;
+	z-index: 99999;
+	padding: 15px 0;
+	font-family: sans-serif;
+	font-size: 16px;
+	text-align: center;
+	background: #222;
+	color: #fff;
+	-webkit-transition: bottom 500ms ease-in-out;
+	transition: bottom 500ms ease-in-out
+}
+
+#adtoniq-msgr-bar p {
+	margin: 0 0 10px !important
+}
+
+#adtoniq-msgr-bar a {
+	color: #fff !important;
+	text-decoration: underline !important
+}
+
+#adtoniq-msgr-bar a:hover {
+	color: #d3d3d3 !important;
+	text-decoration: underline !important
+}
+
+#adtoniq-msgr-bar.reveal-alert {
+	bottom: 0;
+	-webkit-transition: bottom 500ms ease-in-out;
+	transition: bottom 500ms ease-in-out
+}
+
+#adtoniq-msgr-bar #adtoniq-msg-buttons {
+	display: inline-block;
+}
+
+#adtoniq-msg-buttons button {
+	margin-left: 20px;
+}
+
+
+#adtoniq-msgr-bar .btn-msg-bar {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 10px 30px;
+	border-radius: 0;
+	background-color: #395972;
+	color: #fff !important;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+#adtoniq-msgr-bar .btn-msg-bar:hover {
+	background: #283e50
+}
+
+#adtoniq-msgr-bar .btn-msg-bar+.btn-msg-bar {
+	margin-left: 10px
+}
+
+#adtoniq-msgr-bar #adtoniq-msg {
+	display: inline
+}
+
+#adtoniq-msgr-bar #adtoniq-btns {
+	display: inline
+}
+
+</style>
+<script>
+adtoniq=function(){var G="";var L=document.createElement("a");L.href=window.location.href;var O="dzone.com";var N=O;var E="ontouchstart" in window||navigator.msMaxTouchPoints;var w="https://p.tinynewsfeed.com";var D="https://p.tinynewsfeed.com/";var ay="https://d2r7bmv6l6bnd1.cloudfront.net/e/3eJyrVkpVslJQyi8oycxT0lFQygHxElNK8zJLQNxyEDelKj8vVS85P1epFgA8Bg27."+Math.random()+".png";var a="https://d2r7bmv6l6bnd1.cloudfront.net/e/3eJyrVkpVslJQyi8oycxT0lFQygHxclOLixPTM/PSQSLlIJGUqvy8VL3k/FylWgBu3g70."+Math.random()+".png";var K="https://d2r7bmv6l6bnd1.cloudfront.net/e/3eJyrVkpVslJQyi8oyS8tUdJRUMoBcXNTi4sT0zPz0kEi5SCRlKr8vFS95PxcpVoAhmMPdQ==."+Math.random()+".png";var af="https://d2r7bmv6l6bnd1.cloudfront.net/e/3eJyrVkpVslJQKkotTi1R0lFQygHxyhMzixNBvHIQL6UqPy9VLzk/V6kWACqMDUQ=."+Math.random()+".png";var x="https://p.tinynewsfeed.com/";var q="71f58310-ed21-445d-a563-700d5bf3d910";var h="1389";var j="master-live";var C="off";var s="6";var al=[{width:"300",height:"600",cssSelector:".content-right-images .sidebar-ad:nth-child(1)",stripeId:"118623",autoRotate:"30",directAd:[{imageUrl:"https://d3mxb4g4h2m0ai.cloudfront.net/i/3eJyVzcEKAiEQgOFXWeZcqxB02Jss0anLFnQcJhUzHDU0iqJ3L/cFovvH/78gw9CBZ3K2iJE4k3exCHXc4yZQqX4kfba4DelEYUfx69jGKjJpnA4Klakp+iu6GSDPwixXUj7WUvaX7GDRAbXJr2aDtwb/a99hAPNM0fY6Mbw/9wVHQw==",clickThroughUrl:"https://d3mxb4g4h2m0ai.cloudfront.net/d/3eJx9UE1LxDAQ/StLDntym9SCSKFI2V28uPixguAlTNMhjdt82KSsKP53Mz0KOoeBYd6b9958sYnVKzakFGLNOZxjARY+vSuUtxxHiMkoUAPyCXsT+c06TaemAwllVd4JquvqFd1ju6fNFmwAo10TQMmn51a2ffLOvEs9+g5GacGBxn4dlVQDOIdjvrVMfxF32Qv+ostyU4nNpSCin1N2is0DwFHujDYp4w4wnTAZpwkR5m40ccCpuU+5R3axYkCh25ej3C8Jt5RQ3i4ih0XDoksEnAn4f5jsRXxcCVG8BU2UM6tZT67phez7B7G2e9E=",campaignStartTime:"",campaignEndTime:""},{imageUrl:"https://d3mxb4g4h2m0ai.cloudfront.net/i/3eJydzDsKAjEQANCrLFO7m4BgsV1YvIArWA6TD3EkP8kGRfHukt7K+sF7Q4F5AI7kXRULxULsUxXqsuIxUN14IXN1uDYtChk8nRUqu+XEd/QhawpYmx4jB67O5GTHvZTPg5TTrXjYDUC9/7F1a93+Wh8wg33l5CaTI3y+VOZCnQ==",clickThroughUrl:"https://d3mxb4g4h2m0ai.cloudfront.net/d/3eJyNUE1LxDAQ/StLDnuybWpBpFCk7O5N8aOC4GWYpCGNmya1SVhR/O9m9qzgHAaG98F788VW1m7YFOMS2qrCUyhxxk/vSunnSlkM0UiUk6putnE9dgIB66a+5TTXzesoH/sDITucFzTadQtKeHruoR+jd+YdtPUCLYQkitlYE5T0btwGCXJC55TNlufrL/0+h1G/u0BdNLy45KT3KebEqntAHGBvtImZfofrUUXjNDGWJLJwUmt3H/MO7GLDkMr3LwMczk131BSGJAhLhP2rTU7BP644L98WTcoTa9lIsemJ7PsH25J8zg==",campaignStartTime:"",campaignEndTime:""}],preMarkup:"<div style='min-height: 600px; position: relative; text-align: center; width: 100%;'>",postMarkup:"</div>"},{width:"728",height:"90",cssSelector:".articles-wrap.ng-scope .ad-container.ng-scope .ng-isolate-scope",stripeId:"118623",autoRotate:"30",directAd:[{imageUrl:"https://d3mxb4g4h2m0ai.cloudfront.net/i/3eJyVzbEKwjAQgOFXKTdrIy5qt1DEyaUVHI8zCTGSSyKJKIrvrukLiPvH/78gQdeAY7Imi544kbMhC3kccespF9eTOhvc+Xgiv6fwdWxCEYkUDgeJUpcY3BXtBJAnoeer5fqxWbSXZGHWANXHr2SFtwr/St+hA/2MwbQqMrw/hPlHBQ==",clickThroughUrl:"https://d3mxb4g4h2m0ai.cloudfront.net/d/3eJx9UE1LxDAQ/StLDntym9SCSKFI2V28uPixguAlTNMhjdt82KSsKP53Mz0KOoeBYd6b9958sYnVKzakFGLNOZxjARY+vSuUtxxHiMkoUAPyCXsT+c06TaemAwllVd4JquvqFd1ju6fNFmwAo10TQMmn51a2ffLOvEs9+g5GacGBxn4dlVQDOIdjvrVMfxF32Qv+ostyU4nNpSCin1N2is0DwFHujDYp4w4wnTAZpwkR5m40ccCpuU+5R3axYkCh25ej3C8Jt5RQ3i4ih0XDoksEnAn4f5jsRXxcCVG8BU2UM6tZT67phez7B7G2e9E=",campaignStartTime:"",campaignEndTime:""},{imageUrl:"https://d3mxb4g4h2m0ai.cloudfront.net/i/3eJydzEsKwjAQANCrlFnbRtyo3YXiBVrB5TD5EEfykzQoineX7F25fvDekGHsgAM5W8REIRO7WIS8LHjyVFaeSF8tLlWJTBrns0Rp1hT5js4nRR5LVX1gz8XqFE2/3x2ex+1wyw42HVDbf2TNarN/0geMYF4p2kGnAJ8v6n5CXw==",clickThroughUrl:"https://d3mxb4g4h2m0ai.cloudfront.net/d/3eJyNUE1LxDAQ/StLDnuybWpBpFCk7O5N8aOC4GWYpCGNmya1SVhR/O9m9qzgHAaG98F788VW1m7YFOMS2qrCUyhxxk/vSunnSlkM0UiUk6putnE9dgIB66a+5TTXzesoH/sDITucFzTadQtKeHruoR+jd+YdtPUCLYQkitlYE5T0btwGCXJC55TNlufrL/0+h1G/u0BdNLy45KT3KebEqntAHGBvtImZfofrUUXjNDGWJLJwUmt3H/MO7GLDkMr3LwMczk131BSGJAhLhP2rTU7BP644L98WTcoTa9lIsemJ7PsH25J8zg==",campaignStartTime:"",campaignEndTime:""}],preMarkup:"<div style='min-height: 90px; position: relative; display: block;padding: 1em 0;text-align: center;clear: both;'>",postMarkup:"</div>"},{width:"728",height:"90",cssSelector:".advertPancake8 .ng-isolate-scope",stripeId:"118623",directAd:{imageUrl:"https://d3mxb4g4h2m0ai.cloudfront.net/i/3eJyVzbEKwjAQgOFXKTdrIy5qt1DEyaUVHI8zCTGSSyKJKIrvrukLiPvH/78gQdeAY7Imi544kbMhC3kccespF9eTOhvc+Xgiv6fwdWxCEYkUDgeJUpcY3BXtBJAnoeer5fqxWbSXZGHWANXHr2SFtwr/St+hA/2MwbQqMrw/hPlHBQ==",clickThroughUrl:"https://d3mxb4g4h2m0ai.cloudfront.net/d/3eJx9UE1LxDAQ/StLDntym9SCSKFI2V28uPixguAlTNMhjdt82KSsKP53Mz0KOoeBYd6b9958sYnVKzakFGLNOZxjARY+vSuUtxxHiMkoUAPyCXsT+c06TaemAwllVd4JquvqFd1ju6fNFmwAo10TQMmn51a2ffLOvEs9+g5GacGBxn4dlVQDOIdjvrVMfxF32Qv+ostyU4nNpSCin1N2is0DwFHujDYp4w4wnTAZpwkR5m40ccCpuU+5R3axYkCh25ej3C8Jt5RQ3i4ih0XDoksEnAn4f5jsRXxcCVG8BU2UM6tZT67phez7B7G2e9E=",campaignStartTime:"",campaignEndTime:""},preMarkup:"<div style='min-height: 90px; position: relative; display: block;padding: 1em 0;text-align: center;clear: both;'>",postMarkup:"</div>"},{width:"728",height:"90",cssSelector:".advertPancake10 .ng-isolate-scope",stripeId:"118623",directAd:{imageUrl:"https://d3mxb4g4h2m0ai.cloudfront.net/i/3eJyVzbEKwjAQgOFXKTdrIy5qt1DEyaUVHI8zCTGSSyKJKIrvrukLiPvH/78gQdeAY7Imi544kbMhC3kccespF9eTOhvc+Xgiv6fwdWxCEYkUDgeJUpcY3BXtBJAnoeer5fqxWbSXZGHWANXHr2SFtwr/St+hA/2MwbQqMrw/hPlHBQ==",clickThroughUrl:"https://d3mxb4g4h2m0ai.cloudfront.net/d/3eJx9UE1LxDAQ/StLDntym9SCSKFI2V28uPixguAlTNMhjdt82KSsKP53Mz0KOoeBYd6b9958sYnVKzakFGLNOZxjARY+vSuUtxxHiMkoUAPyCXsT+c06TaemAwllVd4JquvqFd1ju6fNFmwAo10TQMmn51a2ffLOvEs9+g5GacGBxn4dlVQDOIdjvrVMfxF32Qv+ostyU4nNpSCin1N2is0DwFHujDYp4w4wnTAZpwkR5m40ccCpuU+5R3axYkCh25ej3C8Jt5RQ3i4ih0XDoksEnAn4f5jsRXxcCVG8BU2UM6tZT67phez7B7G2e9E=",campaignStartTime:"",campaignEndTime:""},preMarkup:"<div style='min-height: 90px; position: relative; display: block;padding: 1em 0;text-align: center;clear: both;'>",postMarkup:"</div>"}];var ai=[];var n="";var T="${waisaDisable}";var f="PGRpdiBjbGFzcz0icGlfJXN0cmlwZWlkJSI+CiAgICA8IS0tIGRvbWFpbjogc3RyaXBlLnJzLXN0cmlwZS5jb20gLS0+CiAgICA8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgogICAgICAgIC5waV8lc3RyaXBlaWQlIGRpdiwgLnBpXyVzdHJpcGVpZCUgYSwgLnBpXyVzdHJpcGVpZCUgaW1nLCAucGlfJXN0cmlwZWlkJSB1bCwgLnBpXyVzdHJpcGVpZCUgbGkgeyBtYXJnaW46IDA7IHBhZGRpbmc6IDA7IGxpbmUtaGVpZ2h0OiAwOyBsaXN0LXN0eWxlOiBub25lOyBib3JkZXI6IDA7IHZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTsgfSAucGlfJXN0cmlwZWlkJSB7IHBvc2l0aW9uOiByZWxhdGl2ZTsgbWF4LXdpZHRoOiAlc3RyaXBlX3dpZHRoJXB4OyBtYXJnaW46IDAgYXV0bzsgb3ZlcmZsb3c6IGhpZGRlbjsgfSAucGlfJXN0cmlwZWlkJSBhIHsgZGlzcGxheTogYmxvY2s7IGJvcmRlcjogMDsgYm9yZGVyLXN0eWxlOiBub25lOyBvdXRsaW5lOiBub25lOyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IH0gLnBpXyVzdHJpcGVpZCUgaW1nIHsgZGlzcGxheTogYmxvY2s7IG1heC13aWR0aDogMTAwJTsgYm9yZGVyOiAwOyBvdXRsaW5lOiBub25lOyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IH0gLnBpXyVzdHJpcGVpZCUgLnBpX2JyYW5kIGltZyB7IG1heC13aWR0aDogODRweDsgfSAucGlfJXN0cmlwZWlkJSAucGlfYnJhbmQgeyBwb3NpdGlvbjogYWJzb2x1dGU7IGRpc3BsYXk6IGJsb2NrOyB3aWR0aDogMTVweDsgaGVpZ2h0OiAxNXB4OyBvdmVyZmxvdzogaGlkZGVuOyByaWdodDogMDsgdG9wOiAwOyBjdXJzb3I6IHBvaW50ZXI7IHotaW5kZXg6IDEwMDA7IHRyYW5zaXRpb246IHdpZHRoIC4zczsgbGluZS1oZWlnaHQ6IDA7IH0gLnBpXyVzdHJpcGVpZCUgLnBpX2JyYW5kOmhvdmVyIHsgd2lkdGg6IDg0cHg7IH0gLnBpXyVzdHJpcGVpZCUgLnBpX2F1IGltZyB7IGhlaWdodDogYXV0bzsgd2lkdGg6IDEwMCU7IG1heC13aWR0aDogJXN0cmlwZV93aWR0aCVweDsgfQogICAgPC9zdHlsZT4KICAgIDxkaXYgY2xhc3M9InBpX2JyYW5kIj4KICAgICAgICA8YSBocmVmPSJodHRwczovL3N0cmlwZS5ycy1zdHJpcGUuY29tL2JyYW5kaW5nLz91dG1fc291cmNlPWNvbnRlbnRzdHJpcGUmdXRtX21lZGl1bT13ZWImdXRtX2NhbXBhaWduPXJzXyVzdHJpcGVpZCUmdXRtX2NvbnRlbnQ9bG9nbyZyc190eXBlPXdlYiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9mb2xsb3cgbm9vcGVuZXIiPgogICAgICAgICAgICA8aW1nIHNyYz0iaHR0cHM6Ly9wLnRpbnluZXdzZmVlZC5jb20vci9iIiBoZWlnaHQ9IjE1IiBhbHQ9IkxlYXJuIG1vcmUgYWJvdXQgUmV2ZW51ZVN0cmlwZS4uLiI+CiAgICAgICAgPC9hPgogICAgPC9kaXY+CiAgICA8ZGl2IGNsYXNzPSJwaV9hdSI+CiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly9zdHJpcGUucnMtc3RyaXBlLmNvbS9zdHJpcGUvcmVkaXJlY3Q/Y3NfZW1haWw9e3tHVUlEfX0mY3Nfc3RyaXBlaWQ9JXN0cmlwZWlkJSZjc19vZmZzZXQ9MCZjc19jb250YWluZXJ0eXBlPXdlYiZjc19lc3A9cG93ZXJpbmJveF93ZWIiIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vZm9sbG93IG5vb3BlbmVyIj48aW1nIGFsdD0iIiBzcmM9Imh0dHBzOi8vcC50aW55bmV3c2ZlZWQuY29tL3IvYT9zPSVzdHJpcGVpZCUiPjwvYT4KICAgIDwvZGl2Pgo8L2Rpdj4K";var k={};var ah="";var ac="";var ar="off";var av=null;var y=null;var U;var ab=false;var aq=false;var ao=false;var Z=false;var g=false;var aw=false;var ae=false;var b=false;var p="";var I=0;var u=false;var J=0;var R=Math.floor(Math.random()*10000000);var m=0;var W=[];var c=[];var aj=[];var ap=[];var aa=[];var F=[];var H=[];var S=null;var V=v("adtoniq_choice");var B=null;var ag=false;var au=0;function r(aD){if(document.getElementsByClassName){return document.getElementsByClassName(aD)}var l=[];var aC=new RegExp("(^| )"+aD+"( |$)");var aB=document.getElementsByTagName("*");for(var aA=0,az=aB.length;aA<az;aA++){if(aC.test(aB[aA].className)){l.push(aB[aA])}}return l}function o(l){ax(l,"")}function ax(aA,az){var aB=r(aA);if(aB){for(var l=0;l<aB.length;l++){aB[l].style.display=az}}}function at(){ax("adtoniq_adblocked","none");ax("adtoniq_acceptable","none");ax("adtoniq_blocked_analytics","none");o("adtoniq_nonblocked");o("adtoniq_protect")}function Y(l){if(document.readyState==="loading"){window.addEventListener("DOMContentLoaded",function(){l()})}else{l()}}function M(){var az=c.length;for(var l=0;l<az;l++){c[l]()}o("adtoniq_nonblocked");o("adtoniq_protect")}function e(){o("adtoniq_adblocked");if(Z){o("adtoniq_acceptable")}else{o("adtoniq_adblocked_no_acceptable")}}var Q=false,z=false;var P=false;function X(){if(!P&&(ao||aq)){if(V=="track"){Y(e)}function az(){P=true;if(av&&!av()){return}var aD=ap.length;for(var aC=0;aC<aD;aC++){ap[aC](V,x)}}if(document.readyState==="loading"){window.addEventListener("DOMContentLoaded",function(){az()})}else{az()}}function l(){return/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)}if(Q&&z){if(ao||aq){if(l()){document.body.className+=" adtoniq-mobile"}}else{Y(M)}var aB=W.length;for(var aA=0;aA<aB;aA++){W[aA](ao,aq,Z,ae)}}}function v(l){var az="; "+document.cookie;var aA=az.split("; "+l+"=");if(aA.length==2){return aA.pop().split(";").shift()}}function am(aA,aB,aC){var l="";if(aC){var az=new Date();az.setTime(az.getTime()+(aC*24*60*60*1000));l="; expires="+az.toUTCString()}document.cookie=aA+"="+aB+l+"; path=/"}function t(){Q=true;X()}function ak(){z=true;X()}function ad(az,l){if(!l){l=window.location.href}az=az.replace(/[\[\]]/g,"\\$&");var aB=new RegExp("[?&]"+az+"(=([^&#]*)|&|#|$)"),aA=aB.exec(l);if(!aA){return null}if(!aA[2]){return""}return decodeURIComponent(aA[2].replace(/\+/g," "))}function A(az,l){l.parentNode.insertBefore(az,l.nextSibling)}function an(){if(ah!=="${msgAdUnitMsg}"&&ah.length>0&&ac!=="${msgAdUnitMsgSelector}"&&ac.length>0){var aA=document.querySelectorAll(ac);for(i=0;i<aA.length;i++){var l=aA[i];var az=document.createElement("div");az.insertAdjacentHTML("beforeend",ah);var aB=az.getElementsByClassName("adtoniq-optin");if(aB&&aB.length==1){aB[0].onclick=function(){function aD(){am("adtoniq_choice","track",365);location.reload()}const aC=document.createElement("img");aC.src=ay;aC.style.width="1px";aC.style.height="1px";document.body.appendChild(aC);if(aC.complete){aD()}else{aC.addEventListener("load",aD);aC.addEventListener("error",aD)}}}A(az,l);l.parentNode.removeChild(l)}}}return{setup:function(){isSetPreviewCookie=ad("atdoniq-preview");if(isSetPreviewCookie=="1"){am("adt_mc",1,0)}if(j=="master-preview"){var az=v("adt_mc");ag=(az!="1")}if(ar=="on"){var l=document.querySelector("meta[name='adtoniq-exclude']");if(l){ag=true}}if(!ag){adtoniq.setup2()}},addBobber:function(l){W.push(l)},addAdBlockerCallback:function(l){W.push(l)},setAdUnitLocator:function(l){S=l},onBlocked:function(l){if(P){if(ao||aq){if(V!="track"){e();l(V,true)}}}else{ap.push(l)}},onMessaging:function(l){aj.push(l)},messagingEvent:function(l){var aA=aj.length;for(var az=0;az<aA;az++){aj[az](l)}},onAnalyticsBlocked:function(l){aa.push(l)},setGA:function(az,aA,l){p=az;I=aA;u=l},setIntegration:function(az,l){w=az},setProxy:function(l){x=l},getProxy:function(){return x},setCollector:function(l){D=l},setId:function(l){h=l},optOut:function(aA){function aB(){am("adtoniq_choice","do-not-track",365)}const l=document.createElement("img");l.src=K;l.style.width="1px";l.style.height="1px";document.body.appendChild(l);if(l.complete){aB()}else{l.addEventListener("load",aB);l.addEventListener("error",aB)}for(var az=0;az<H.length;az++){H[az]()}},optIn:function(aA){function aB(){am("adtoniq_choice","track",365)}const l=document.createElement("img");l.src=a;l.style.width="1px";l.style.height="1px";document.body.appendChild(l);if(l.complete){aB()}else{l.addEventListener("load",aB);l.addEventListener("error",aB)}for(var az=0;az<F.length;az++){F[az]()}},onOptIn:function(l){F.push(l)},onOptOut:function(l){H.push(l)},setEnableAdtoniq:function(l){av=l},setShouldShowAds:function(l){y=l},addNoAdBlockerCallback:function(l){c.push(l)},laybait:function(){function az(aA,aC){var aB=new XMLHttpRequest();aB.open("get",aA);aB.responseType="blob";aB.onload=function(){var aD=new FileReader();aD.onload=function(){aC(this.result)};aD.readAsDataURL(aB.response)};aB.send()}function l(){var aA=new Image();aA.onload=function(){az(aA.src,function(aB){ao=aB.length<=5;ak()})};aA.onerror=function(){ao=true;ak()};aA.src="https://static-42andpark-com.s3-us-west-2.amazonaws.com/ads/ad-300x250.png"}l();document.addEventListener("DOMContentLoaded",function(aD){var aC=document.createElement("iframe");aC.src="https://d2r7bmv6l6bnd1.cloudfront.net/1389.html?o="+(typeof(V)!="undefined"?(V=="track"?"t":"d"):"u")+"&r="+document.referrer;aC.setAttribute("style","position:absolute;left:-10px;width:1px;height:1px;");document.body.appendChild(aC);var aB=null;function aE(){var aJ="pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links";var aI="width: 1px !important; height: 1px !important; position: absolute !important; left: -10000px !important; top: -1000px !important;";aB=document.createElement("div");aB.id="zippity";aB.setAttribute("class",aJ);aB.setAttribute("style",aI);document.body.appendChild(aB)}function aH(){var aJ=window.document.body.getAttribute("abp")!==null||aB.offsetParent===null||aB.offsetHeight==0||aB.offsetWidth==0||aB.offsetLeft==0||aB.offsetTop==0||aB.clientHeight==0||aB.clientWidth==0;if(window.getComputedStyle!==undefined&&!aJ){var aI=window.getComputedStyle(aB,null);aJ=aI.getPropertyValue("display")=="none"||aI.getPropertyValue("visibility")=="hidden"}if(aJ){aq=true}return aJ}aE();var aG=new Date();var aF=null;var aA=setInterval(function(){if(aH()){if(aF){clearTimeout(aF)}try{document.body.removeChild(aB)}catch(aI){}clearInterval(aA);t()}},100);aF=setTimeout(function(){clearInterval(aA);try{document.body.removeChild(aB)}catch(aI){}t()},1*1000)})},setup2:function(){if(typeof N==="undefined"){return}if(V=="track"){o("adtoniq_nonblocked")}adtoniq.onBlocked(function(az,aA){function l(){adtoniq.inflateAdUnit()}if(az=="do-not-track"){an()}else{if(az!="track"){adtoniq.onOptIn(l)}else{l()}}});adtoniq.laybait()},waisaChoice:function(aC){var l=!!window.adtoniqAlertData?window.adtoniqAlertData:null;var az=document.getElementById("adtoniq-msgr-bar");if(!az){var az=document.createElement("div");az.id="adtoniq-msgr-bar"}az.classList.add("adtoniq-waisa");az.innerHTML=l.waisaContent;var aD=document.createElement("div");aD.id="adtoniq-msg-buttons";aD.classList.add("adtoniq-waisa");var aB=document.createElement("button");aB.innerHTML="Clear my choice";aD.appendChild(aB);aB.onclick=function(aF){function aG(){document.cookie="adtoniq_choice=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";location.reload()}const aE=document.createElement("img");aE.src=af;aE.style.width="1px";aE.style.height="1px";document.body.appendChild(aE);if(aE.complete){aG()}else{aE.addEventListener("load",aG);aE.addEventListener("error",aG)}};var aA=document.createElement("button");aA.innerHTML="Close";aD.appendChild(aA);aA.onclick=function(aE){document.body.classList.remove("adtoniq-body");adtoniq.messagingEvent("hide");az.parentNode.removeChild(az)};az.appendChild(aD);document.body.appendChild(az);az.classList.add("reveal-alert");document.body.classList.add("adtoniq-body");adtoniq.messagingEvent("show");aC.preventDefault();return false},inflateAdUnit:function(){if(j=="master-preview"){var a4=v("adt_mc");if(a4!="1"){return}}if(!(isSetPreviewCookie=="1")&&n!=="${stripeSplit}"&&n.length>0){if(Math.floor(Math.random()*parseInt(n))!=0){return}}function aB(bc){if(T!=="on"){var bb=document.createElement("img");bb.src="//d2t7a3zbo166a9.cloudfront.net/images/logos/A-15x15.png";bb.style.setProperty("float","right");var bd=document.createElement("span");bd.innerText="Why am I seeing this ad?";bd.style.display="none";bd.style.fontSize="10px";bd.style.paddingRight="10px";bd.style.verticalAlign="top";bd.style.right="-20px";bd.style.top="-20px";bd.style.position="absolute";bd.style.width="160px";bd.style.color="rgb(0, 0, 0)";var ba=document.createElement("a");ba.href="#";ba.appendChild(bb);ba.appendChild(bd);ba.style.position="relative";ba.style.display="block";ba.style.zIndex="9";ba.style.setProperty("float","right");ba.style.height="20px";ba.style.boxShadow="none";ba.onmouseenter=function(){bd.style.display=""};ba.onmouseleave=function(){bd.style.display="none"};ba.onclick=adtoniq.waisaChoice;bc=bc.parentNode;bc.parentNode.insertBefore(ba,bc);if(C=="on"){bc.style.border="2px solid  red"}bc.parentNode.style.height=(bc.parentNode.clientHeight+20)+"px"}}function aP(bd,bb,bc,ba){var be=bb.getAttribute(bc);if(be==null){be=ba}bd.setAttribute(bc,be)}function aW(bb,ba){var bc=ba.getAttribute("style");if(bc){if(bc[bc.length-1]!=";"){bc+=";"}bc=bc.replace(/;/g," !important;");bb.setAttribute("style",bc)}}function aF(bc,bb,ba){if(ba.getAttribute(bc)){bb.setAttribute(bc,ba.getAttribute(bc))}}function aJ(bb,ba){aW(bb,ba)}function a7(ba,bb){bb.parentNode.insertBefore(ba,bb)}function a8(bb,ba){bb.insertAdjacentHTML("beforeend","<a href='"+ba.clickThroughUrl+"?fqdn=dzone.com' target='_blank'><img src = '"+ba.imageUrl+"?fqdn=dzone.com'></a>")}for(var a6=0;a6<al.length&&au<s;a6++){var a3=al[a6];var l=a3.width;var az=a3.height;var a1=a3.cssSelector;var a2=a3.stripeId;var aC=a3.url;var aE=a3.preMarkup;var aA=a3.postMarkup;var aV=a3.format;var a0=a3.autoRotate;var aI=a3.directAd;if(aC!=null&&!location.pathname.match(aC)){continue}var aS=S?S():document.querySelectorAll(a1);var aN=Math.min(aS.length,s-au,6-au);var aD;if(aV){aD=k[aV]}else{aD=f}au+=aN;for(i=0;i<aN;i++){var aM=aS[i];if(aM){if(aE){var aH="_x"+(Math.floor(Math.random()*10000)+1)+"x_";var aG=aE+"<div id='"+aH+"'></div>"+aA;d=document.createElement("div");d.insertAdjacentHTML("beforeend",aG);A(d.firstChild,aM);aM.parentNode.removeChild(aM);aM=document.querySelector("#"+aH)}var aK=document.createElement("div");if(aI!=null){if(aI instanceof Array){var aO=aI;aO.ad=aK;var a5=Math.floor(Math.random()*aO.length);aI=aO[a5];if(a0!=null){var aL=new Date();function aZ(){aL=new Date()}document.addEventListener("mousemove",aZ,false);setInterval(function(){if(document.hidden){return}if(new Date().getTime()-aL.getTime()>1000*60*5){return}var ba=0;if(aO.length>1){while(ba==aO.lastAdNum){ba=Math.floor(Math.random()*aO.length)}}aO.lastAdNum=ba;aI=aO[ba];aO.ad.innerHTML="";a8(aO.ad,aI)},Math.max(30,a0)*1000)}}a8(aK,aI)}else{aK.classList.add("pi_"+a2);var aY=document.createAttribute("powerinbox");aK.setAttributeNode(aY);aK.innerHTML=atob(aD).split("%stripeid%").join(a2).split("%stripe_width%").join(l)}A(aK,aM);aB(aM);aM.parentNode.removeChild(aM)}}}for(var a6=0;a6<ai.length&&au<s;a6++){var a1=ai[a6].cssSelector;var aQ=ai[a6].src_id;var aC=ai[a6].url;var aE=ai[a6].preMarkup;var aA=ai[a6].postMarkup;var l=ai[a6].width;var az=ai[a6].height;var aV=ai[a6].format;var aT=ai[a6].cn;if(aC!=null&&!location.pathname.match(aC)){continue}var aS=S?S():document.querySelectorAll(a1);var a9=Math.min(aS.length,s-au,6-au);au+=a9;for(i=0;i<a9;i++){var aM=aS[i];if(aM){if(aE){var aH="_x"+(Math.floor(Math.random()*10000)+1)+"x_";var aG=aE+"<div id='"+aH+"'></div>"+aA;d=document.createElement("div");d.insertAdjacentHTML("beforeend",aG);A(d.firstChild,aM);aM.parentNode.removeChild(aM);aM=document.querySelector("#"+aH)}var aK;var aX=Math.round(new Date().getTime()/1000);if(aV){var aR=document.createElement("iframe");aR.setAttribute("scrolling","no");aR.frameBorder=0;aR.style.position="absolute";aR.style.height="100%";aR.style.width="100%";aR.style.left=0;aR.style.top=0;aR.src=x+"m/f?a=${encryptedArgs}&s="+aQ+"&f="+encodeURIComponent(aV+":"+aT)+"&b="+aX;aK=document.createElement("div");aK.style.overflow="hidden";var aU=aV.split("x");aK.style.paddingTop=(100*aU[1]/aU[0]).toFixed(2)+"%";aK.style.position="relative";aK.appendChild(aR)}else{aK=document.createElement("iframe");aK.setAttribute("scrolling","no");aK.frameBorder=0;aK.style.position="relative";aK.style.height=az+"px";aK.style.width=l+"px";aK.src=x+"m/f?a=${encryptedArgs}&s="+aQ+"&f="+encodeURIComponent(l+":"+az+":"+aT)+"&b="+aX}A(aK,aM);aB(aM);aM.parentNode.removeChild(aM)}}}},setFilter:function(l){am("adtoniq-filter",l,365)},setJson:function(l){al=l}}}();adtoniq.setup();(function(){var c={targetedUsers:"adsonly",greetingMsg:'<span style="max-width: 800px;padding-top: 3px;"> <h2 style=" color: #ffffff!important; margin-bottom: 10px; margin-top: 0; font-family: Helvetica Neue,Helvetica,sans-serif; margin-bottom: 10px; line-height: 1.2; font-weight: 600; font-size: 1.5em; margin-top: 0;">You can leave your ad blocker on and still support us</h2> <div id=""> <p class="targetadt" style="color: #ffffff; font-family: Helvetica Neue,Helvetica,sans-serif; font-size: 14px; line-height: 1.3; max-width: 680px; margin: 0!important;">We respect your decision to block adverts and trackers while browsing the Internet. If you would like to support our content, though, you can choose to view a small number of premium adverts on our site by hitting the \'Support\' button. These heavily vetted ads will not track you, and will fund our work. </p><p class="targetadt" style="color: #ffffff; font-family: Helvetica Neue,Helvetica,sans-serif; font-size: 14px; line-height: 1.3; max-width: 680px; margin: 0!important;">Thank you for your support!</p></div></span>',confirmMsg:"",protectionUrl:"",rejectMsg:"",customBtnClass:"",waisaContent:"<p>We respect your decision to block adverts and trackers while browsing the internet. You're currently supporting The DZone's content by seeing a small number of premium adverts. These heavily vetted ads will not track you, and will fund our work.<br><br>If you changed your mind you can click opt out. Thanks for being a part of DZone.</p>",rejectBtnText:"No Thanks",protectionCss:"",protectionStatus:"none",confirmBtnText:"Support"};var m={};window.adtoniqAlertData=c;var u=!!window.adtoniqAlertData?window.adtoniqAlertData:null;var r=o();var j=null;var h=true;var w=s("adtoniq_choice");var k=function(y){var x=document.createElement("a");x.href=y;return x};function f(){var x=g();return u.protectionStatus!="none"&&x&&k(x).pathname==location.pathname}window.addEventListener("DOMContentLoaded",function(){if(!window.adtoniq){console.error("Cannot run messenger bar module -- adtoniq global is not found");return false}if(!u){console.error("Cannot run messenger bar module -- no data found");return false}if((u.targetedUsers==="all"&&!w)||f()){v()}else{if(u.targetedUsers==="adsplus"){adtoniq.onAnalyticsBlocked(e)}if(u.targetedUsers==="adsonly"){adtoniq.onBlocked(a)}}},false);function g(){var x=u.protectionUrl;if(x.length==0){return""}if(x.substr(0,1)!="/"){x="/"+x}if(x.substr(x.length-1,1)!="/"){x=x+"/"}return x}function p(z){var y=false,x=g();if(x.length>0){switch(u.protectionStatus){case"none":break;case"allButHome":y=location.pathname!="/"&&location.pathname!=x;if(y&&(!z||z!="track")){location.href=x}else{document.body.style.display="block !important"}break;case"all":y=location.pathname!=x;if(y&&(!z||z!="track")){location.href=x}else{document.body.style.display="block !important"}break;case"css":break}}return y}function e(x,y){if(x&&!y){v()}}function a(x){if(!x){v()}}function v(){p(w);document.body.appendChild(r);j=setTimeout(function(){r.classList.add("reveal-alert");r.addEventListener("click",n,false);document.body.classList.add("adtoniq-body");adtoniq.messagingEvent("show")},50)}function n(x){if(x.target.id==="adtoniq-msg-track-btn"||x.target.id==="adtoniq-msg-no-track-btn"){if(typeof adtoniq.optIn==="function"){if(x.target.name=="track"){adtoniq.optIn()}else{adtoniq.optOut()}q(x.target.name);r.removeEventListener("click",n,false);clearTimeout(j)}}}function o(){var x=document.createElement("div");x.id="adtoniq-msgr-bar";x.innerHTML=b();return x}function b(A){var x=u.confirmBtnText.length>0?'<button id="adtoniq-msg-track-btn" name="track" class="btn-msg-bar '+u.customBtnClass+'">'+u.confirmBtnText+"</button>":"";var y=u.rejectBtnText.length>0?'<button id="adtoniq-msg-no-track-btn" name="do-not-track" class="btn-msg-bar '+u.customBtnClass+'">'+u.rejectBtnText+"</button>":"";var z='<button id="adtoniq-msg-close-btn" name="close" class="btn-msg-bar">Close</button>';var C=!A?u.greetingMsg:A==="confirm"?u.confirmMsg:u.rejectMsg;C='<div id="adtoniq-msg">'+C+"</div>";var B=!A?x+y:z;C+='<div id="adtoniq-btns">'+B+"</div>";return C}function q(x){if(c.confirmMsg.length==0){l()}else{r.innerHTML=b(x==="track"?"confirm":"reject");r.addEventListener("click",l,false)}}function l(){r.classList.remove("reveal-alert");r.addEventListener("click",l,false);r.addEventListener("transitionend",t,false);document.body.classList.remove("adtoniq-body");adtoniq.messagingEvent("hide")}function t(){document.body.removeChild(r);r.removeEventListener("transitionend",t,false)}function s(x){var y="; "+document.cookie;var z=y.split("; "+x+"=");if(z.length===2){return z.pop().split(";").shift()}return null}}());
+</script>
+<style>#adtoniq-msgr-bar #adtoniq-msg {display: inline-block;}
+#adtoniq-msg {width: 75%;float: left;text-align: left;}
+#adtoniq-msgr-bar #adtoniq-btns {display: inline-block;}
+#adtoniq-btns { width: 25%!important; float: right!important; margin-right: 0px!important; max-width: 150px;}
+button#adtoniq-msg-track-btn { width: 100%; display: block;}
+button#adtoniq-msg-no-track-btn { background-color: transparent!important; width: 100%; margin: 0!important; margin-top: 11px!important; color: #000000!important; font-weight: 600; font-size: 12px; border: 0; border: none;}
+
+#adtoniq-msgr-bar #adtoniq-msg-no-track-btn.btn-msg-bar {color: #ffffff!important;}
+
+#adtoniq-msgr-bar, #adtoniq-msgr-bar.reveal-alert {background-color: #222635; opacity: 1; width: 100%; max-width: 1300px; margin: 0 auto; left: 0; right: 0; padding: 20px; border-top:2px solid #29a8ff;z-index: 999999999;} #adtoniq-msg-track-btn, #adtoniq-msg-close-btn, .adtoniq-waisa button {color: #ffffff!important;background-color: #29a8ff!important;margin-top: 0px;font-size: 13px;line-height: 24px;border-radius: 2px!important;font-weight: 500;padding: 10px 18px!important;letter-spacing: 1px;text-transform: uppercase; border: 0; border: none;} #adtoniq-msg {width: 70%;float: left;text-align: left;}#adtoniq-btns {width: 30%;float: none;text-align: right; margin-right:40px;} #adtoniq-msgr-bar.adtoniq-waisa p { font-size: 14px !important; line-height: 1.2; display: block; width: 100%; margin: 0 auto !important; text-align: center; max-width: 80%;} #adtoniq-msg-buttons.adtoniq-waisa { width: 100%; margin-top: 20px; } button#adtoniq-msg-track-btn {float: right;} p.a_deets {color: #ffffff;} #adtoniq-msgr-bar.adtoniq-waisa p { color: #ffffff; min-height: 120px; }
+
+
+#a_hider .a_deets { display: inline-block; margin-bottom: 0!important;}
+#a_hider.a_showme .a_deets, #a_hider.a_showme .arrow { display: none; }
+#a_hider .targetadt { display: none; }
+#a_hider.a_showme .targetadt { display: block; }
+
+#a_hider { cursor: pointer; }
+
+#a_hider:hover { cursor: pointer; }
+#a_hider:hover .a_deets { text-decoration: underline; }
+
+.arrow { height: 7px; width: 7px; border: 1px solid #000000; border-width: 2px 2px 0 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); display: inline-block; -webkit-transform: rotate(135deg); -ms-transform: rotate(135deg); transform: rotate(135deg); margin-left: 10px; padding-bottom: 2px; padding-left: 2px; }
+
+@media screen and (max-width:1015px){ 
+#adtoniq-msgr-bar .p.targetadt{max-width: 100%!important;margin: 0 auto!important;}
+
+button#adtoniq-msg-track-btn, #adtoniq-msgr-bar #adtoniq-msg-no-track-btn.btn-msg-bar { width: auto; float: right; }
+div#adtoniq-msg h2 { font-size: 20px!important; }
+
+p.a_deets { font-size: 14px!important; }
+#adtoniq-msg { width: 60%; }
+#a_hider.a_showme p.targetadt { font-size: 12px!important;}
+#adtoniq-msgr-bar, #adtoniq-msgr-bar.reveal-alert {width: auto!important; padding: 15px;}
+#adtoniq-msgr-bar #adtoniq-msg-no-track-btn.btn-msg-bar { padding: 10px 0;}
+} 
+
+@media screen and (max-width:640px){ 
+#adtoniq-msgr-bar .p.targetadt{max-width: 100%!important;margin: 0 auto!important;}
+
+div#adtoniq-msg h2 { font-size: 18px!important; }
+p.a_deets { font-size: 11px!important; }
+#adtoniq-msg { width: 60%; }
+#a_hider.a_showme p.targetadt { font-size: 12px!important;}
+} 
+
+@media screen and (max-width:565px){ 
+#adtoniq-msg { width: 170px; padding-right: 30px; width: 65%; padding-right: 25px; }
+
+#adtoniq-msgr-bar, #adtoniq-msgr-bar.reveal-alert { padding: 10px; width: auto!important; max-width: none; }
+#adtoniq-msg-track-btn, #adtoniq-msg-close-btn, .adtoniq-waisa button, #adtoniq-msgr-bar #adtoniq-msg-no-track-btn.btn-msg-bar { font-size: 11px; line-height: 17px; padding: 8px 14px!important;}
+}
+
+
+@media screen and (max-width:339px){ 
+    #adtoniq-msg { width: 99%; padding-bottom: 7px; }
+	#adtoniq-btns {width: 100%!important; float: none!important; margin-top: 20px;text-align: center;display: block!important;}
+	#adtoniq-msgr-bar #adtoniq-btns { display: inline!important; }
+	#adtoniq-msg-track-btn, #adtoniq-msg-no-track-btn { display: inline-block!important; }
+	button#adtoniq-msg-track-btn, #adtoniq-msgr-bar #adtoniq-msg-no-track-btn.btn-msg-bar { float: left; }
+	button#adtoniq-msg-no-track-btn { margin-top: 0!important; }
+}
+
+
+#adtoniq-msgr-bar.adtoniq-waisa.reveal-alert { z-index: 999; }
+.adtoniq-waisa.reveal-alert #adtoniq-msg-buttons { text-align: center; }
+.adtoniq-waisa.reveal-alert #adtoniq-msg-buttons button { margin: 10px; }
+
+@media (max-width: 768px)
+.adtoniq-mobile .articles-wrap.ng-scope .ad-container.ng-scope .ng-isolate-scope {
+    display: none;
+}</style>
+
+<script type="text/javascript">
+    (function() {
+            function controller($scope, TH$Dialog, $location, $rootScope, $timeout, TH$SharedVars, $service, TH$LocalStorage) {
+
+    $scope.searchT ='';
+    $scope.zonesOpen = false;
+
+    TH$SharedVars.bind($scope, 'searchT', 'searchTerm', true);
+
+    $scope.login = function() {
+        TH$Dialog.open({
+            loadWidget: 'users.loginForm',
+            size: 'modalForm',
+            showClose: true
+        });
+    };
+
+    $scope.signIn = function() {
+        TH$Dialog.open({
+            loadWidget: 'users.registration',
+            size: 'modalFormExtended',
+            showClose: true
+        });
+    };
+
+    $scope.allResults = function() {
+        window.location='/search';
+    };
+
+    $("#search").keyup(function(e) {
+        var length = ($scope.searchT ? $scope.searchT.length : 0);
+        $scope.searchT = ($scope.searchT ? $scope.searchT : '');
+
+        if (e.keyCode === 13 && length > 2) {
+            $scope.allResults();
+        } else {
+            $scope.search();
+        }
+    });
+
+    $scope.focusSearch = function() {
+        $timeout(function() {
+            $("#search").focus();
+        }, 100)
+    };
+
+    $scope.search = function() {
+        var length = ($scope.searchT ? $scope.searchT.length : 0);
+        $scope.loading = (length > 2);
+        if (length < 3) {
+            if ($scope.nodes || $scope.nodes == []) {
+                $timeout(function() {
+                    $scope.nodes = [];
+                    $scope.cType = [];
+                    $scope.related = [];
+                    $scope.pager = [];
+                    $scope.searchParam = [];
+                    $scope.totalResults = null;
+
+                }, 100)
+            }
+            return false;
+        }
+
+        var term = $scope.searchT;
+        if ($scope.prevTerm == term) {
+            return;
+        }
+
+        $scope.prevTerm = term;
+
+        TH$LocalStorage.value('searchValue', term);
+        term = (term ? term : '');
+        $service.nextPage({term: term, pageSize: 7}, null, true).then(function(data) {
+            $scope.loading = false;
+            var curPage = 1;
+            $scope.nodes = data.pages.newest[curPage];
+            $scope.haveResults = ($scope.nodes) ? true : false;
+            $scope.totalResults = data.totalItems;
+        });
+    }
+
+    $scope.toggleZones = function(url, $event) {
+        $event.preventDefault();
+        $scope.zonesOpen = !$scope.zonesOpen;
+    }
+}
+
+            var WMODEL_DATA = {};
+            WMODEL_DATA.isAdmin = false;
+        WMODEL_DATA.getPortals = null;
+        WMODEL_DATA.OPTIONS = {};
+        WMODEL_DATA.user = {"karma":40,"country":null,"website":null,"city":null,"about":null,"avatar":"https://secure.gravatar.com/avatar/?d=identicon&r=PG","realName":"$$ANON_USER$$","websiteUrl":"","jobRole":null,"tagline":null,"company":null,"id":2500002,"job":null};
+        TH.installWidgetController('header.headerV2', 'mainHeader', WMODEL_DATA, typeof controller == 'function' ? controller : null, [{name: 'nextPage', data: true}], ' oUhbWOfRPSwBoUhM', null);
+        })();
+        (function() {
+            function controller($scope, TH$Dialog, TH$Service, $window, $rootScope) {
+
+    var body = $(".body"),
+        announcement = $(".announcementBar"),
+        marginRight = body.css("marginRight"),
+        marginLeft = body.css("marginLeft");
+
+    $scope.goToRegistration = function() {
+        TH$Dialog.open({
+            loadWidget: 'users.registration',
+            size: 'modalFormExtended',
+            showClose: true,
+            data: {
+                fromDownload: true,
+                redirectUrl: $scope.announcement.link
+            }
+        });
+    };
+
+    $scope.track = function(id) {
+        var data = {
+            siteNotification: id
+        };
+        if ($rootScope.user.authenticated) {
+            TH$Service.exec('dzoneUsers.trackAnnouncementBar', data).then(function() {
+            });
+            $window.location.href = $scope.announcement.link;
+        } else {
+            $scope.goToRegistration();
+        }
+    };
+
+    $(window).resize(function() {
+        marginRight = body.css("marginRight");
+        marginLeft = body.css("marginLeft");
+        $scope.setBarWidth()
+    });
+
+    if (!(announcement.next().is(".layout-card"))) {
+        announcement.css("margin-bottom", "10px");
+    }
+
+    $scope.toShow = ($scope.announcement && $scope.announcement.anononly) ? !($rootScope.user.authenticated) : true;
+
+    $scope.setBarWidth = function() {
+        var container = $("#acontainer");
+        container.css("margin-right", "-" + marginRight);
+        container.css("margin-left", "-" + marginLeft);
+    }
+}
+
+TH.directive('backImg', function() {
+    return function(scope, element, attrs) {
+        if (attrs.hasimage == "true") {
+            var img = new Image();
+            img.onload = a(attrs.img, element, scope);
+            img.onerror = a(attrs.imgbackup, element, scope);
+            img.src = attrs.img;
+        }
+        scope.setBarWidth();
+    };
+});
+
+var a = function(url, element) {
+    element.css({
+        'background-image': 'url(' + url + ')',
+        'background-size': 'cover'
+    });
+};
+            var WMODEL_DATA = {};
+            WMODEL_DATA.OPTIONS = {};
+        WMODEL_DATA.announcement = {"id":4205647,"body":"That's Not How This Works: All Development Should be Secure Development! ","link":"https://dzone.com/webinars/thats-not-how-this-works-all-development-should-be","title":"Learn More","img2":"/notificationImage.html?id=4205647","img":"https://dz2cdn1.dzone.com/notificationImage.html?id=4205647","hasImage":false,"anononly":false};
+        TH.installWidgetController('announcementBar', 'announcementBar1', WMODEL_DATA, typeof controller == 'function' ? controller : null, null, ' oUhbYlrRaqMaoUhM', null);
+        })();
+        (function() {
+            function controller($scope, $sce, $analytics, $service, SideBarService, TH$Dialog,$rootScope, TH$Location, $q, $window,
+                    DZtopicsString, shareThis, $location, TH$Service, DZHeadService, $timeout, ArticleAdsService) {
+
+    var current = ($scope.articles && $scope.articles.length) ? $scope.articles[0] : null;
+    var loading = null;
+    var lastLoaded = current;
+    var cache = {};
+
+
+    $scope.width = $(window).width();
+    $scope.voted = null;
+    $scope.articleJson = {};
+    $scope.serp = {
+        'title': '',
+        'url': '',
+        'description': ''
+    };
+
+    $scope.canDelete = function(article) {
+        return article.canDelete;
+    };
+
+    $scope.canEdit = function(article) {
+        return article.canEdit;
+    };
+
+    $scope.canPublish = function (article) {
+        return article.canPublish;
+    };
+
+    $scope.loginForm = function () {
+
+        TH$Dialog.open({
+            loadWidget: 'users.loginForm',
+            size: 'modalForm',
+            showClose: true,
+            data: {
+                fromDownload: true
+            }
+        });
+    };
+
+    $scope.delete= function(article) {
+        TH$Dialog.confirm("Are you sure you want to permanently delete this article?").then(function() {
+            TH$Service.action('delete', {type: 'node', id: article.id}).then(function() {
+                TH$Dialog.success('Article deleted');
+                newArticle(article.type);
+            });
+        });
+    };
+
+    $scope.publish = function(article) {
+        TH$Dialog.confirm("Are you sure you want to publish this article?").then(function () {
+            TH$Service.action('nodes.publish', {type: 'node', id: article.id}, {}, true)
+                .then(function () {
+                    TH$Dialog.success('Article Published', 'Your article was successfully published');
+                    article.published = true;
+                }, function () {
+                    TH$Dialog.error('Article not Published', 'There was an error publishing teh article');
+                });
+        });
+    };
+
+    $scope.shareTwitter = function($event, title, url){
+        $event.preventDefault();
+        $event.stopPropagation();
+        var twitter = 'https://twitter.com/intent/tweet';
+        var link = $location.protocol() + '://' + location.host + url;
+        var ref = location.host;
+        var params = '?text=' + encodeURIComponent(title) + '&url=' + link + '&ref=dzone.com&via=DZoneInc';
+        var win = window.open(twitter + params, '_blank');
+        win.focus();
+    };
+
+    function newArticle(type) {
+        current.article = {
+            body: '',
+            title: '',
+            image: null,
+            topics: [],
+            sources: [],
+            notes: '',
+            published: false,
+            canDelete: false
+        };
+
+        current.bodyImages = [];
+        setEditUrl(null, type);
+    };
+
+    function setEditUrl(id, type) {
+        TH$Location.apply(function ($location) {
+
+            var url;
+
+            if (id) {
+                if (type == 'article') {
+                    url = '/content/' + id + '/edit.html';
+                } else {
+                    url = '/dzone/staff/' + type + (type == 'refcard' ? 'z' : 's') + '/' + id + '/edit.html';
+                }
+            } else {
+                if (type == 'article') {
+                    url = '/content/article/post.html';
+                } else if (type == 'refcard'){
+                    url = '/dzone/staff/' + type + 'z' + '/add.html';
+                }else{
+                    url = '/content/article/post.html'
+                }
+            }
+            $timeout(function(){
+                $location.path(url);
+            },1000);
+        });
+    };
+
+    function setCurrentInSidebar(article) {
+        var title = (article.header) ? article.header.title : article.title;
+        var titleEll = (article.header) ? article.header.titleEll : article.title;
+        SideBarService.active = article.title ? article : {
+            id: article.id,
+            type: 'article',
+            title:  $scope.edition ? titleEll : title,
+            url: article.url,
+            imageUrl: article.articleImage
+        }
+    }
+
+    if (current) {
+        loadPartner(current);
+        loadRichSnippetData(current);
+        setCurrentInSidebar(current);
+        setMeta(current);
+        current.fullHtml = $sce.trustAsHtml(current.articleContent);
+    }
+
+    function setMeta(current){
+        var portal = (current.portal) ? current.portal.name : '';
+        var keywords = (current.articleTags) ? current.articleTags.toString() : portal;
+        var title = current.header ? current.header.title : current.title;
+
+        if(!title){
+            return;
+        }
+        DZHeadService.title = title+' - DZone '+portal;
+        DZHeadService.description = current.metaDescription;
+        DZHeadService.keywords = keywords;
+        DZHeadService.url = $location.absUrl();
+        DZHeadService.canonical = $location.protocol() + '://' + $location.host() + current.url;
+        var imageLink = current.header ? current.header.imageLink : current.imageLink;
+        DZHeadService.img = imageLink;
+        DZHeadService.type = current.articleType;
+        DZHeadService.wordCount = current.wordCount;
+
+        var maxTitleLength = 70;
+        var localTitle = title;
+        if (localTitle.length > maxTitleLength) {
+            localTitle = localTitle.substring(0, maxTitleLength);
+        }
+
+        var maxDescriptionLength = 150;
+        var description = current.metaDescription;
+        if (description.length > maxDescriptionLength) {
+            description = description.substring(0, maxDescriptionLength) + ' ...';
+        }
+
+        $scope.serp.title = localTitle + ' - DZone ' + portal;
+        $scope.serp.url = DZHeadService.canonical;
+        $scope.serp.description = description;
+    }
+
+    function getArticle(id) {
+
+        if (cache[id]) {
+            return $q.when(cache[id]);
+        } else {
+            var promise =  $service({article: id});
+
+            promise.then(function(article) {
+                article.fullHtml = $sce.trustAsHtml(article.articleContent);
+            });
+
+            return promise;
+        }
+    }
+
+    function loadArticleInList(id) {
+        loading = id;
+
+        if (cache[id]) {
+            $scope.articles.push(cache[id]);
+            lastLoaded = cache[id];
+            loading = null;
+        } else {
+            $scope.articles.push({type: 'loader'});
+
+            getArticle(id)
+                .then(function(article) {
+                    $scope.articles.pop();
+                    $scope.articles.push(article);
+                    lastLoaded = article;
+                    loading = null;
+                    cache[article.id] = article;
+
+                    loadPartner(article);
+                    loadRichSnippetData(current);
+                });
+        }
+    }
+
+    function loadRichSnippetData(article) {
+
+        var rs = {
+            bodyProp: 'articleBody',
+            date: moment(article.articleDate).format(),
+            articleType: 'https://schema.org/Article'
+        };
+
+        article.rs = rs;
+    }
+
+    var articleNumber = 1;
+
+    function attachPartner(article, partners) {
+
+        article.showLogo = true;
+
+        if (!_.isNumber(partners.lastUsed)) {
+            toUse = partners.lastUsed
+        }else{
+            toUse = partners.lastUsed + 1;
+        }
+
+        if (toUse >= partners.length || !toUse) {
+            toUse = 0;
+        }
+
+        if(partners){
+            article.showLogo = (partners.length < 2 && articleNumber % 2) ? false : article.showLogo;
+        }else{
+            article.showLogo = false;
+        }
+
+        if(!articleNumber || article.partner){
+            return;
+        }
+
+        article.readyForAd = true;
+        article.partner = partners[toUse];
+        $scope.partners.lastUsed = toUse;
+        articleNumber++;
+    }
+
+
+    function loadPartner(article) {
+
+        var partners = $scope.partners;
+
+        if (!article.portalId) {
+            if ($scope.portal) {
+                article.portal = _.findWhere($scope.portals, {id: $scope.portal.id});
+            } else {
+            }
+        } else {
+            article.portal = _.findWhere($scope.portals, {id: article.portalId});
+        }
+        if (article.portal) {
+            if (partners[article.portal.id]) {
+                var _partners = partners[article.portal.id];
+                _partners.lastUsed = $scope.partners.lastUsed;
+                attachPartner(article, _partners);
+            } else {
+                $service.partners({portal: article.portal.id}).then(function(_partners) {
+                    partners[article.portal.id] = _partners;
+                    attachPartner(article, _partners);
+                });
+            }
+        }
+
+        if (article.readyForAd || article.partner) {
+            article.readyForAd = true;
+            return;
+        }
+
+    }
+
+    $scope.loadMore = function() {
+
+        if (loading) {
+            return;
+        }
+
+        var next = SideBarService.findNext(lastLoaded ? lastLoaded.id : null);
+
+        if (next) {
+            loadArticleInList(next);
+
+            // Fetch json data for creating the JSON-LD script in DOM
+            TH$Service.data('articles.getArticleJsonData', {articleId: next}).then(function(result) {
+                $scope.articleJson[next] = result;
+            }).catch(function(error) {
+                console.error(error);
+            });
+        }
+    };
+
+    // Watch the articleJson dictionary for any new JSON data being inserted
+    // When new values are added, put a watch on the next article's div
+    // used for adding the JSON-LD script to. Once the DOM has been rendered
+    // containing this div, create the JSON-LD script and attach it to this container.
+    $scope.$watch('articleJson', function(newValue) {
+        var keys = Object.keys(newValue);
+        if (keys.length) {
+            var selector = '#article-' + keys[0];
+            var articleId = parseInt(keys[0]);
+            $scope.waitForElement(selector, function() {
+                $scope.injectArticleJson(articleId)
+            });
+        }
+    }, true);
+
+    /**
+     * Wait for the given element to be rendered in the DOM and then
+     * run the given callback once the element is ready.
+     *
+     * @param selector - selector used to query the element
+     * @param callback - callback run once the element has been rendered
+     */
+    $scope.waitForElement = function(selector, callback) {
+        if ($(selector).length) {
+            callback();
+        } else {
+            setTimeout(function() {
+                $scope.waitForElement(selector, callback);
+            }, 100);
+        }
+    };
+
+    /**
+     * Builds the JSON-LD script for the given article and injects
+     * it into the appropriate place in the DOM.
+     *
+     * @param article - id of the article
+     */
+    $scope.injectArticleJson = function(article) {
+        var json = $scope.articleJson[article];
+        var script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = json;
+        var jsonDivId = '#article-' + article;
+        var jsonDiv = angular.element(jsonDivId);
+        if (jsonDiv.length) {
+            jsonDiv.append(script);
+            // Remove the key/value pair from the dictionary now
+            // that is has been dealt with
+            delete $scope.articleJson[article];
+        }
+    };
+
+    $scope.activate = function(article) {
+
+        if(article.type == 'loader'){
+            return;
+        }
+
+        $rootScope.model.portal = article.portal;
+        $scope.addShareCount(article);
+
+        if (current && article.id == current.id) {
+            return;
+        }
+
+        current = article;
+        setCurrentInSidebar(article);
+
+        TH$Location.apply(function($location) {
+            $location.path(article.url);
+        });
+
+        var title = article.header ? article.header.title : article.title;
+
+        setMeta(article);
+        $timeout(function(){
+            if (!article.viewTracked) {
+                TH$Service.action('nodes.trackView', {type: 'node', id: article.id}, {}, true);
+                article.views++;
+                article.viewTracked = true;
+                if (window.ga) {
+                    window.ga('set', 'dimension2', article.articleType ? ('article/' + article.articleType) : 'article');
+                    window.ga('set', 'dimension3', moment(article.articleDate).format('YYYY-MM-DD'));
+                    window.ga('set', 'dimension4', _.indexOf($scope.articles, article));
+                    window.ga('set', 'dimension5', article.zonetop || 'undefined');
+                    window.ga('set', 'dimension6', article.pubPlug || 'undefined');
+                    window.ga('set', 'dimension7', article.articleTags || 'undefined');
+                    var lastAuthor = article.authors[article.authors.length - 1].name;
+                    var lastAuthorCompany = article.authors[article.authors.length - 1].company;
+                    window.ga('set', 'dimension8', lastAuthor || 'undefined');
+                    window.ga('set', 'dimension9', article.partner ? article.partner.details.name : 'undefined');
+                    window.ga('set', 'dimension10', lastAuthorCompany || 'undefined');
+                    window.ga('set', 'dimension11', article.authors[0].claimed || 'undefined');
+                }
+                $analytics.pageTrack(article.url);
+            }
+        },0);
+    };
+
+    $scope.toggleComments = function(article) {
+        if(!article.isLocked) {
+            TH$Service.action('articles.lockNode', {type: 'node', id: article.id}).then(function(result) {
+                if(result){
+                    article.isLocked = true;
+                    TH$Dialog.success('You have disabled all comments for this Article');
+                }else{
+                    TH$Dialog.error('error','Your requested was denied')
+                }
+            });
+        }else {
+            TH$Service.action('articles.unlockNode', {type: 'node', id: article.id}).then(function(result) {
+                if(result){
+                    article.isLocked = false;
+                    TH$Dialog.success('You have enabled all comments for this Article');
+                }else{
+                    TH$Dialog.error('error','Your requested was denied')
+                }
+            });
+        }
+    };
+
+    $scope.toggleLimitComments = function (article) {
+        if (!article.isLimited) {
+            TH$Service.action('articles.limitNode', {type: 'node', id: article.id}).then(function (result) {
+                if (result) {
+                    article.isLimited = true;
+                    TH$Dialog.success('You have limited comments for this Article. Now all comments will go through moderation.');
+                } else {
+                    TH$Dialog.error('error', 'Your requested was denied')
+                }
+            });
+        } else {
+            TH$Service.action('articles.unlimitNode', {type: 'node', id: article.id}).then(function (result) {
+                if (result) {
+                    article.isLimited = false;
+                    TH$Dialog.success('You removed the limits for comments on this Article');
+                } else {
+                    TH$Dialog.error('error', 'Your requested was denied')
+                }
+            });
+        }
+    };
+
+    $scope.activateT = function(article) {
+        $scope.activate(article);
+    };
+
+    $scope.activateB = function(article) {
+        $scope.activate(article);
+    };
+
+    SideBarService.fn.onSelected = function(node) {
+        $scope.articles = [];
+
+        loadArticleInList(node.id);
+
+        $scope.activate(node);
+        $($window).scrollTop(0);
+    };
+
+    $scope.upvoteArticle = function () {
+    };
+
+    $scope.addShareCount = function(article){
+    };
+
+    $scope.share = function(socialNet, url, title){
+        shareThis.shareThis(socialNet, $location.protocol()+'://'+$location.host()+':'+$location.port()+url, title);
+    };
+
+    Object.size = function(obj) {
+        var size = 0, key;
+        for (key in obj) {
+            if (obj.hasOwnProperty(key)) size++;
+        }
+        return size;
+    };
+
+
+    $scope.share = function(socialNet, url, title){
+        shareThis.shareThis(socialNet, $location.protocol()+'://'+$location.host()+':'+$location.port()+url, title);
+    };
+
+    $scope.mailShareLink = function(article) {
+        var title = article.header ? article.header.title : article.title;
+        var link = article.header ? article.header.link : article.link;
+        return 'mailto:?subject=' + encodeURIComponent(title) +  '&body=Article: ' + encodeURIComponent('https://dzone.com/' + link);
+    };
+
+    $scope.ads = ArticleAdsService($scope.edition, $scope.width);
+
+    var partnerResourceIndex = 0;
+
+    $scope.calculatePartnerResourceIndex = function() {
+      partnerResourceIndex++;
+
+      return partnerResourceIndex;
+    }
+}
+            var WMODEL_DATA = {};
+            WMODEL_DATA.authenticated = false;
+        WMODEL_DATA.firstArticleContent = null;
+        WMODEL_DATA.daysOldBody = "Technology moves quickly and this #type was published #time.  Some or all of its contents may be outdated.";
+        WMODEL_DATA.isPreview = false;
+        WMODEL_DATA.partners = {"7001":[]};
+        WMODEL_DATA.edition = null;
+        WMODEL_DATA.perms = {"canDecidePick":false,"canPublish":false};
+        WMODEL_DATA.OPTIONS = {};
+        WMODEL_DATA.daysOldTitle = "Heads up...this #type is old!";
+        WMODEL_DATA.articles = [{"pubPlug":"dre-dzone","modDate":1561357896000,"articleImage":"//dz2cdn3.dzone.com/storage/article-thumb/10463966-thumb.jpg","rawType":"article","canEdit":false,"viewTracked":true,"source":"https://data-flair.training/blogs/best-python-book/","accessMode":["textual","visual"],"metaDescription":"A list of some of the top books that will help both beginners and experienced developers learn more about the Python language and its programming applications.","articleType":"review","draft":false,"portalId":7001,"isLocked":false,"relatedRefcard":[{"img":11325530,"id":520220,"title":"Getting Started With Git","url":"/refcardz/getting-started-git"}],"readyForAd":true,"canPublish":false,"articleContent":"","articleTypePre":"https://schema.org/Article","canDelete":false,"likeStatus":{"score":2,"canLike":false,"liked":false},"id":2513743,"nComments":3,"views":42180,"bodyProp":"reviewBody","originalSource":"https://data-flair.training/blogs/best-python-book/","isOld":false,"isLimited":false,"image":"//dz2cdn3.dzone.com/storage/article-thumb/10463966-thumb.jpg","wordCount":1375,"articleTags":["python","book review","book list","open source","python programming","beginner developer"],"canonical":"https://dzone.com/articles/top-10-best-python-book-for-beginners-amp-experien","published":true,"url":"/articles/top-10-best-python-book-for-beginners-amp-experien","tldr":"If you've been looking for the next level in Python programming, take a look at this book list taht should be able to one-up your current knowledge.","saveStatus":{"saved":false,"count":10,"canSave":false},"deleted":false,"pdf":null,"partner":null,"relatedArticles":[{"img":12809900,"id":2916117,"title":"Book review – Supercharged Python, by Brian Overland and John Bennet","url":"/articles/book-review-supercharged-python-by-brian-overland"},{"img":2021098,"id":1241306,"title":"Four Reasons Why Python Is a Good Programming Language","url":"/articles/four-reasons-why-python-is-a-good-programming-lang"},{"img":3209401,"id":1360403,"title":"How Junior Developers Can Contribute to Open-Source Projects","url":"/articles/how-junior-developers-can-contribute-to-open-sourc"}],"zonetop":"","publisher":{"name":"DZone","logo":"https://dzone.com/themes/dz20/images/logo.png"},"header":{"imageLink":"//dz2cdn3.dzone.com/storage/article-thumb/10463966-thumb.jpg","titleEll":"Top 10 Best Python Book for Beginners and...","imageUrl":"//dz2cdn3.dzone.com/storage/article-thumb/10463966-thumb.jpg","link":"/articles/top-10-best-python-book-for-beginners-amp-experien","id":2513743,"title":"Top 10 Best Python Book for Beginners and Experienced Developers","type":"article"},"articleDate":"2018-10-16","shortDesc":"<p pid=\"2\" style=\"text-align: left;\"><img alt=\"Best Python Book\" class=\"fr-fin fr-dib\" height=\"800\" sizes=\"(max-width: 800px) 100vw, 800px\" src=\"https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-books.jpg\" srcset=\"https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-books.jpg 800w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-books-150x150.jpg 150w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/Python-books-300x300.jpg 300w\" width=\"800\" /></p>\n<p pid=\"179\"><br /></p>\n<h2>Learning Python</h2>\n<p pid=\"6\"><a href=\"https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/lrg-1.jpg\" rel=\"tc-fancybox-group5374\" title=\"Best Python Book\"><img alt=\"Best Python Book\" class=\"fr-fin fr-dib\" height=\"500\" sizes=\"(max-width: 378px) 100vw, 378px\" src=\"https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/lrg-1.jpg\" srcset=\"https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/lrg-1.jpg 378w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/lrg-1-113x150.jpg 113w, https://d2h0cx97tjks2p.cloudfront.net/blogs/wp-content/uploads/lrg-1-227x300.jpg 227w\" width=\"321\" /></a></p>\n<p pid=\"60\"...","plug":"top-10-best-python-book-for-beginners-amp-experien","authors":[{"isStaff":false,"aboutAuthor":null,"claimed":null,"partnerOf":[],"isCore":false,"avatar":10167935,"url":"/users/3416227/rinu.html","realName":"Rinu Gour","isMVB":false,"name":"Rinu","tagline":null,"company":"","id":3416227,"isClaimed":false}]}];
+        TH.installWidgetController('article.content', 'articleContent4', WMODEL_DATA, typeof controller == 'function' ? controller : null, [{name: 'partners', data: true},{name: 'DEFAULT', data: true}], ' oUhbblYOaqbcblYOaqbcC', null);
+        })();
+        (function() {
+            function controller($scope, $service, $location, SideBarService, $timeout) {
+
+    if ($scope.edition) {
+        $scope.date = moment($scope.editionDate).utc().format('MMM DD, YYYY');
+    }
+
+    SideBarService.ctx.pageSize = $scope.pageSize;
+    SideBarService.ctx.isPreview = $scope.isPreview;
+    SideBarService.ctx.mode = $scope.mode;
+
+    SideBarService.fn.loader = $service;
+
+    var $window = $(window);
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        $scope.width = windowsize;
+    }
+    // Execute on load
+    checkWidth()
+    // Bind event listener
+    $(window).resize(checkWidth);
+
+
+    if ($scope.edition) {
+        SideBarService.ctx.edition = $scope.edition;
+    }
+
+    SideBarService.fn.scrollCheck = function() {
+        $scope.$emit('thIfScrollCheck');
+    };
+
+    var currentFilter;
+
+    $scope.$on('$locationChangeSuccess', function() {
+
+        if (!$location.search().filter) {
+            $scope.filter = 'latest';
+        } else {
+            $scope.filter = $location.search().filter;
+
+            if ($scope.filter == 'latest') {
+                $location.search('filter', null);
+            }
+        }
+
+        if (currentFilter == $scope.filter) {
+            return;
+        }
+
+        currentFilter = $scope.filter;
+
+        SideBarService.ctx.filter = $scope.filter;
+    });
+
+    $scope.display = SideBarService.getList();
+
+    $scope.$watchCollection(function() {
+        return SideBarService.getList();
+    }, function (n) {
+        $scope.display = n;
+    });
+
+    $scope.isActive = SideBarService.isActive;
+
+    $scope.isExcluded = SideBarService.isExcluded;
+
+    $scope.loadMore = SideBarService.load;
+
+    $scope.loading = function() {
+        return SideBarService.ctx.loading;
+    };
+
+    TH.on('TapBarStatusChange', function(expanded) {
+        if (expanded) {
+            SideBarService.unblock();
+        }
+    })
+
+}
+            var WMODEL_DATA = {};
+            WMODEL_DATA.mode = null;
+        WMODEL_DATA.isPreview = false;
+        WMODEL_DATA.editionName = "";
+        WMODEL_DATA.editionDate = null;
+        WMODEL_DATA.pageSize = 20;
+        WMODEL_DATA.edition = null;
+        WMODEL_DATA.OPTIONS = {};
+        TH.installWidgetController('sidebar.content.list', 'sidebarContentList7', WMODEL_DATA, typeof controller == 'function' ? controller : null, [{name: 'DEFAULT', data: true}], ' oUhbkSMaaqbcdvVkcC', null);
+        })();
+        (function() {
+            function controller($scope) {
+    var $window = $(window);
+
+    function checkWidth() {
+        var windowsize = $window.width();
+        var $element = $('div.sidebar.sidebarTapBar');
+        $scope.width = windowsize;
+        if(windowsize <= 1024 && $scope.edition){
+            $('.fixContentRight').removeClass('fixContentRight');
+            $('.tap').show();
+        }else if($scope.edition){
+            $('.tap').hide();
+            $('.mainContentRow').addClass('fixContentRight');
+            $element.removeClass('tapNotExpanded');
+            $element.addClass('expanded');
+        }
+    }
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+}
+            var WMODEL_DATA = {};
+            WMODEL_DATA.edition = null;
+        WMODEL_DATA.slot = null;
+        WMODEL_DATA.OPTIONS = {};
+        TH.installWidgetController('sidebar.tapBar', 'sidebar', WMODEL_DATA, typeof controller == 'function' ? controller : null, null, ' oUhbkSMadabfWVcC oUhbkSMadabbWQbVkcC', null);
+        })();
+        (function() {
+            function controller($scope,  shareThis, TH$Dialog, TH$Service, $location) {
+    $scope.getEditUrl = function(id, type) {
+        if (!type || type == 'article') {
+            return '/content/' + id + '/edit.html';
+        } else {
+            return '/dzone/staff/' + type + (type == 'refcard' ? 'z' : 's') + '/' + id + '/edit.html';
+        }
+    };
+
+    $scope.share = function(socialNet, url, title){
+        shareThis.shareThis(socialNet, url, title);
+    };
+
+    $scope.canDelete = function(article) {
+        return article.canDelete;
+    };
+
+    $scope.canPublish = function(article) {
+        return article.canPublish;
+    };
+
+    $scope.canEdit = function(article) {
+        return article.canEdit;
+    };
+
+    $scope.toggleComments = function(article) {
+        if(!article.isLocked) {
+            TH$Service.action('articles.lockNode', {type: 'node', id: article.id}).then(function(result) {
+                if(result){
+                    article.isLocked = true;
+                    TH$Dialog.success('You have disabled all comments for this Article');
+                }else{
+                    TH$Dialog.error('error','Your requested was denied')
+                }
+            });
+        }else {
+            TH$Service.action('articles.unlockNode', {type: 'node', id: article.id}).then(function(result) {
+                if(result){
+                    article.isLocked = false;
+                    TH$Dialog.success('You have enabled all comments for this Article');
+                }else{
+                    TH$Dialog.error('error','Your requested was denied')
+                }
+            });
+        }
+    };
+
+    $scope.toggleLimitComments = function (article) {
+        if (!article.isLimited) {
+            TH$Service.action('articles.limitNode', {type: 'node', id: article.id}).then(function (result) {
+                if (result) {
+                    article.isLimited = true;
+                    TH$Dialog.success('You have limited comments for this Article. Now all comments will go through moderation.');
+                } else {
+                    TH$Dialog.error('error', 'Your requested was denied')
+                }
+            });
+        } else {
+            TH$Service.action('articles.unlimitNode', {type: 'node', id: article.id}).then(function (result) {
+                if (result) {
+                    article.isLimited = false;
+                    TH$Dialog.success('You removed the limits for comments on this Article');
+                } else {
+                    TH$Dialog.error('error', 'Your requested was denied')
+                }
+            });
+        }
+    };
+
+    $scope.shareTwitter = function($event, title, url){
+
+        $event.preventDefault();
+        $event.stopPropagation();
+        var twitter = 'https://twitter.com/intent/tweet';
+        var link = $location.protocol() + '://' + location.host + url;
+        var ref = location.host;
+        var params = '?text=' + encodeURIComponent(title) + '&url=' + link + '&ref=dzone.com&via=DZoneInc';
+        var win = window.open(twitter + params, '_blank');
+        win.focus();
+    };
+
+    $scope.edit = function(link) {
+        TH$Dialog.open({
+            loadWidget: 'links.postPreview',
+            widgetArgs: {
+                edit: link.id
+            },
+            size: 'xbig'
+        }).then(function (result) {
+            $scope.link.title = result.title;
+            $scope.link.linkDescription = result.content;
+            $scope.link.thumb = result.thumb;
+            $scope.link.tags = result.topics;
+        });
+    };
+
+    $scope.deleteLink = function(article) {
+        var title = article.title;
+        var type = 'link';
+        if(article.header){
+            title = (article.header.type == 'article') ? article.header.title : article.title;
+            type = (article.header.type == 'article') ? 'article' : 'link';
+        }
+        TH$Dialog.confirm('Do you want to delete "' + title + '"?').then(function() {
+            return TH$Service.action('delete', {type: type, id: article.id});
+        }).then(function() {
+            article.deleted = true;
+        });
+    };
+}
+
+
+            var WMODEL_DATA = {};
+            WMODEL_DATA.OPTIONS = {};
+        TH.installWidgetController('content.commentsSlider', 'contentCommentsSlider6', WMODEL_DATA, typeof controller == 'function' ? controller : null, null, ' oUhbaqbcaibvnWffWVcC', null);
+        })();
+        (function() {
+            
+            var WMODEL_DATA = {};
+            WMODEL_DATA.name = "commentsSlider";
+        WMODEL_DATA.slot = null;
+        WMODEL_DATA.OPTIONS = {"name":"commentsSlider"};
+        TH.installWidgetController('components.slider', 'componentsSlider5', WMODEL_DATA, typeof controller == 'function' ? controller : null, null, ' oUhballbvbdSaoUhM', null);
+        })();
+        </script>
+    <script type="text/javascript">
+
+        TH.installWidgetDirective('users.profile.mini', 'usersProfileMini', {"service":{"user":"="},"extra":null}, 'widget.html', '/widgets/users/profile/mini/widget.js', [{name: 'DEFAULT', data: true}], ' oUhbwfbqddOeffWVcC', null, ['widget.less']);
+        
+        TH.installWidgetDirective('header.sections', 'headerSections', {"service":null,"extra":null}, 'widget.html', '/widgets/header/sections/widget.js', null, ' oUhbWOfbRllbgfgpM', null, ['sections.less']);
+        
+        TH.installWidgetDirective('users.registration', 'usersRegistration', {"service":null,"extra":null}, 'widget.html', '/widgets/users/registration/widget.js', [{name: 'validateMail', data: false},{name: 'validateUsername', data: false}], ' oUhbwfbfZvbllfWVcC', ['/scripts/utilities/tools.js'], ['widget.less']);
+        
+        TH.installWidgetDirective('errors.recaptcha', 'errorsRecaptcha', {"service":null,"extra":null}, 'widget.html', '/widgets/errors/recaptcha/widget.js', null, ' oUhbfptaR_fSfWVcC', null, ['widget.less']);
+        
+        TH.installWidgetDirective('links.sources.mini', 'linksSourcesMini', {"service":{"link":"="},"extra":null}, 'widget.html', '', [{name: 'DEFAULT', data: true}], ' oUhbdhbqvRbefWfSC', null, ['mini.less']);
+        
+        TH.installWidgetDirective('assets.mini', 'assetsMini', {"service":{"asset":"="},"extra":null}, 'widget.html', '', [{name: 'DEFAULT', data: true}], ' oUhbcgvWfSoUhM', null, ['widget.less']);
+        
+        TH.installWidgetDirective('links.postPreview', 'linksPostPreview', {"service":{"url":"=","edit":"="},"extra":null}, 'widget.html', '/widgets/links/postPreview/widget.js', [{name: 'topics', data: true},{name: 'DEFAULT', data: true}], ' oUhbdhbnvqjXfoUhM', null, ['widget.less']);
+        
+        TH.installWidgetDirective('manage.revisions', 'manageRevisions', {"service":{"node":"=","body":"=","masterTemplate":"=","format":"=","mode":"="},"extra":null}, 'widget.html', '/widgets/manage/revisions/widget.js', [{name: 'DEFAULT', data: true},{name: 'revision', data: true}], ' oUhbXYVajkgpfWVcC', null, ['widget.less']);
+        
+        TH.installWidgetDirective('leads.addCRM', 'leadsAddCRM', {"service":null,"extra":null}, 'widget.html', '/widgets/leads/addCRM/widget.js', [{name: 'DEFAULT', data: true}], ' oUhb_ObOQnKRMnM oUhbcgvKRcgcONfPC', ['/scripts/utilities/tools.js'], ['add-crm.less','add-ref.less']);
+        
+        TH.installWidgetDirective('links.postV2', 'linksPostV2', {"service":null,"extra":null}, 'widget.html', '/widgets/links/postV2/widget.js', null, ' oUhbdhbnvXZqyBC', null, ['postV2.less']);
+        
+        TH.installWidgetDirective('users.questionForm', 'usersQuestionForm', {"service":null,"extra":null}, 'widget.html', '/widgets/users/questionForm/widget.js', null, ' oUhbwfbuglldnfWVcC', null, ['widget.less']);
+        
+        TH.installWidgetDirective('loading', 'loading', {"service":null,"extra":null}, 'widget.html', '/widgets/loading/widget.js', null, ' oUhbjOfQoUhM', null, ['widget.less']);
+        
+        TH.installWidgetDirective('refcardz.mini', 'refcardzMini', {"service":{"asset":"="},"extra":null}, 'widget.html', '', [{name: 'DEFAULT', data: true}], ' oUhbfSbmWfSoUhM', null, ['widget.less']);
+        
+        TH.installWidgetDirective('links.listV2', 'linksListV2', {"service":null,"extra":null}, 'widget.ftl', '/widgets/links/listV2/widget.js', [{name: 'linkData', data: true},{name: 'parseLink', data: true},{name: 'list', data: true}], ' oUhbdhbdvXVkyBC', ['directives.js','filters.js'], ['listV2.less']);
+        
+        TH.installWidgetDirective('users.uiPrefs', 'usersUiPrefs', {"service":null,"extra":null}, 'widget.html', '/widgets/users/uiPrefs/widget.js', null, '', null, null);
+        
+        TH.installWidgetDirective('users.loginForm', 'usersLoginForm', {"service":null,"extra":null}, 'widget.html', '/widgets/users/loginForm/widget.js', null, ' oUhbwfbjZcpWoUhM', null, ['widget.less']);
+        
+        TH.installWidgetDirective('users.noMembership', 'usersNoMembership', {"service":null,"extra":null}, 'widget.html', '/widgets/users/noMembership/widget.js', null, ' oUhbwfblaYfjhfWVcC', null, ['widget.less']);
+        
+        TH.installWidgetDirective('errors.general', 'errorsGeneral', {"service":null,"extra":null}, 'widget.html', '/widgets/errors/general/widget.js', null, ' oUhbfptQbfWfWVcC', null, ['widget.less']);
+        
+        TH.installWidgetDirective('manage.customNotifications.preview', 'manageCustomNotificationsPreview', {"service":null,"extra":null}, 'widget.html', '/widgets/manage/customNotifications/preview/widget.js', null, ' oUhbXYVMwrjrYVdgpZfnkZfnkM dLgZWBLPpWkKeXB', null, ['preview.less','/lib/froala-2/css/froala_style.min.css']);
+        
+        TH.installWidgetDirective('header.zonesDropdown', 'headerZonesDropdown', {"service":{"portal":"="},"extra":{"hover":"="}}, 'widget.html', '/widgets/header/zonesDropdown/widget.js', [{name: 'DEFAULT', data: true}], '', null, null);
+        
+        TH.installWidgetDirective('manage.customNotifications.test', 'manageCustomNotificationsTest', {"service":{"customNotification":"="},"extra":null}, 'widget.html', '/widgets/manage/customNotifications/test/widget.js', [{name: 'searchGroups', data: true},{name: 'DEFAULT', data: true},{name: 'searchUsers', data: true}], ' oUhbXYVMwrjrYVdgpcgcoUhM', null, ['widget.less']);
+        
+        TH.installWidgetDirective('content.commentBox', 'contentCommentBox', {"service":{"parent":"="},"extra":{"count":"=","limited":"="}}, 'widget.html', '/widgets/content/commentBox/widget.js', [{name: 'post', data: false},{name: 'edit', data: false},{name: 'DEFAULT', data: true}], ' oUhbaqbcaibevMkaqbC', null, ['comments.less']);
+        
+        TH.installWidgetDirective('article.listV2', 'articleListV2', {"service":null,"extra":null}, 'widget.html', '/widgets/article/listV2/widget.js', [{name: 'list', data: true},{name: 'sortCount', data: true}], ' oUhbblYOdvXKuV_VkcC', ['directives.js'], ['article-list.less']);
+            </script>
+<iframe src="https://d2r7bmv6l6bnd1.cloudfront.net/1389.html?o=u&amp;r=" style="position:absolute;left:-10px;width:1px;height:1px;"></iframe><script type="text/javascript" id="">jQuery.ajax({url:"https:\/\/dzone.com\/articles\/top-10-best-python-book-for-beginners-amp-experien",data:{},error:function(a,b){dataLayer.push({event:"httperror",statuscode:a.status})}});</script>
+<script type="text/javascript" id="">(function(b,a,c){var e=decodeURIComponent;var d="||";var g=";;",f="split",h="length",m="indexOf",k="localStorage",l="_ccmdt";b[c]=b[c]||{};b[c].us={};a=b[k]?b[k][l]||"":(a=a.cookie.match(l+"\x3d([^;]*)"))&&a[1]||"";e=e(a)[f](d);a=e[h];if(0<a)for(;a--;)d=e[a][f]("\x3d"),1<d[h]&&(-1<d[1][m](g)?(b[c].us[d[0]]=d[1][f](g),b[c].us[d[0]].pop()):b[c].us[d[0]]=d[1])})(window,document,"_ml");
+(function(){_ml=window._ml||{};_ml.eid="65559";_ml.cid=google_tag_manager["GTM-K25QL22"].macro(3);_ml.fp=google_tag_manager["GTM-K25QL22"].macro(6);_ml.ef=["*email","*username"];_ml.informer={callback:function(a,b){"undefined"==typeof dataLayer||_ml.isEmptyObj(_ml.us)||dataLayer.push({event:"Bombora_Informer",Bombora_Topic:_ml.us.tp&&0<_ml.us.tp.length?_ml.us.tp[0]:"",Bombora_Industry:_ml.us.ind,Bombora_Company_Revenue:_ml.us.cr,Bombora_Company_Size:_ml.us.cs,Bombora_Domain:_ml.us.dm,Bombora_Seniority:_ml.us.sn,Bombora_Predictive_Category:_ml.us.pc&&
+0<_ml.us.pc.length?_ml.us.pc[0]:"",Bombora_Decision_Maker:_ml.us.dcm,Bombora_Functional_Area:_ml.us.fa&&0<_ml.us.fa.length?_ml.us.fa[0]:"",Bombora_Install_Data:_ml.us.ins&&0<_ml.us.ins.length?_ml.us.ins[0]:"",Bombora_Professional_Group:_ml.us.pg&&0<_ml.us.pg.length?_ml.us.pg[0]:"",Bombora_Education:_ml.us.edu})},enable:!0};var b=document.getElementsByTagName("script")[0],a=new Date,c=document.createElement("script");c.type="text/javascript";c.async=!0;c.src="https://ml314.com/tag.aspx?"+a.getDate()+
+a.getMonth()+a.getFullYear();b.parentNode.insertBefore(c,b)})();</script>
+<script type="text/javascript" id="">var t=document.querySelector(".sidebar");t.parentNode.removeChild(t);var a=document.querySelectorAll("th-if-scroll");for(i=0;i<e.length;i++){var b=a[i];b.parentNode.removeChild(b)};</script></body></html>

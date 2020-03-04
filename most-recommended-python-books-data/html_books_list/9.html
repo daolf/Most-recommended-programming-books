@@ -1,0 +1,1419 @@
+<!DOCTYPE html><html lang="en" class="js"><!--<![endif]--><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style><meta http-equiv="x-ua-compatible" content="IE=edge">
+<script async="true" type="text/javascript" src="https://sslwidget.criteo.com/event?a=18344&amp;v=5.5.0&amp;p0=e%3Dce%26m%3D%255B%255D&amp;p1=e%3Dexd%26site_type%3Dd&amp;p2=e%3Dvh&amp;p3=e%3Ddis&amp;adce=1&amp;tld=apress.com&amp;dtycbr=64572" data-owner="criteo-tag"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script><script type="text/javascript" async="" src="//static.criteo.net/js/ld/ld.js"></script><script async="" src="https://cdn.akanoo.com/t/29332a9a968f.js"></script><script src="https://connect.facebook.net/signals/config/1751570271830302?v=2.9.15&amp;r=stable" async=""></script><script src="https://connect.facebook.net/signals/config/248706079052512?v=2.9.15&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="//static.hotjar.com/c/hotjar-1526384.js?sv=5"></script><script type="text/javascript" async="" src="//static.ads-twitter.com/uwt.js"></script><script type="text/javascript" async="" src="//bat.bing.com/bat.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/61bII03-TtCmSUR7dw9MJF9q/recaptcha__en.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-M48LJF&amp;gtm_auth=H9WR51Mt3jYIbQSiz_4-IQ&amp;gtm_preview=env-1&amp;gtm_cookies_win=x"></script><script type="text/javascript" src="//static.apress.com/spcom/js/vendor/googleapis/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.optimizely.com/js/8200882355.js"></script>
+<script type="text/javascript" id="angular-script" src="//static.apress.com/spcom/js/vendor/googleapis/ajax/libs/angularjs/1.2.17/angular.min.js"></script>
+<script type="text/javascript" id="script-1474669854" src="//static.apress.com/spcom/min/prod.js?r=SNAPSHOT"></script>
+<link rel="stylesheet" type="text/css" href="//static.apress.com/spcom/min/modern_sprcom-cms-frontend_apress.css?r=SNAPSHOT">
+<!--[if (lt IE 9) & (!IEMobile)]><link rel="stylesheet" type="text/css" href="//static.apress.com/spcom/min/ielt9_sprcom-cms-frontend_apress.css?r=SNAPSHOT" media="screen" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="//static.apress.com/spcom/min/print.css?r=SNAPSHOT" media="print">
+<link rel="stylesheet" type="text/css" href="/spcom/css/vendor/font-awesome.min.css?r=SNAPSHOT">
+<!--[if lt IE 9]><script type="text/javascript" id="ielt9js" charset="utf-8" src="//static.apress.com/spcom/min/ielt9.js"></script>
+<![endif]-->
+<script type="text/javascript" src="../spcom-wicket/spcom-resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/res/js/wicket-event-jquery.min-ver-87249521D58623E8D15C637C803164BE.js"></script>
+<script type="text/javascript" src="../spcom-wicket/spcom-resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/res/js/wicket-ajax-jquery.min-ver-1E3E2C819CFEECC7B8726A03B239BFC4.js"></script>
+<script type="text/javascript" id="wicket-ajax-base-url">
+/*<![CDATA[*/
+Wicket.Ajax.baseUrl="gp/python";
+/*]]>*/
+</script>
+<script type="text/javascript" id="cm-context-url">
+/*<![CDATA[*/
+var cmContextUrl = '/apress-gp/gp/python';
+/*]]>*/
+</script>
+
+<title>Python Books &amp; eBooks | Apress</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
+<link rel="icon" href="../favicon.ico" type="image/ico">
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<script>
+/*<![CDATA[*/
+
+document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+/*]]>*/
+</script>
+
+<script type="text/javascript">sharedDataLayer = [{"session":{"authentication":{"loginStatus":"logged out"}},"customEvents":[],"page":{"sharedDataLayer":"present"},"user":{"segment":{},"profile":{}}}]
+function sprMerge(current, update) {
+  Object.keys(update).forEach(function(key) {
+    if (current.hasOwnProperty(key)
+            && typeof current[key] === 'object'
+            && !(current[key] instanceof Array)) {
+      sprMerge(current[key], update[key]);
+    } else {
+      current[key] = update[key];
+    }
+  });
+  return current;
+}
+    </script>
+<script type="text/javascript">
+appDataLayer = [{'geo-country-code' : 'US'}];
+sharedDataLayer = sharedDataLayer || [];
+dataLayer = sprMerge(sharedDataLayer, appDataLayer);
+</script>
+
+<!-- Google Tag Manager -->
+<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl+'&gtm_auth=H9WR51Mt3jYIbQSiz_4-IQ&gtm_preview=env-1&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M48LJF');</script>
+<!-- End Google Tag Manager -->
+
+
+<meta name="description" content="Learn everything about Python programming, data analytics using Python or the internet of things with Apress books for professionals &amp; beginners.">
+<meta http-equiv="content-language" content="en">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:title" content="Python Books &amp; eBooks | Apress">
+<meta property="og:description" content="Learn everything about Python programming, data analytics using Python or the internet of things with Apress books for professionals &amp; beginners.">
+<meta property="og:site_name" content="www.apress.com">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://resource-cms.springernature.com/springer-cms/rest/v1/content/16537448/data/v5">
+<meta property="fb:admins" content="100001154999617">
+<meta property="fb:pages" content="341168879741, 143932312346551, 199235833463190, 145327659223282, 304238573037854, 346209515556394, 99912541035, 108064145914608, 370429855420, 170400356321916, 273358886101252, 370987992963178, 1565916643629420, 424373190938938, 152586274808123, 152749531404582, 274648772592090, 168287986591458, 284820978207661, 121336764582486, 174395066291972, 124330454291947, 58364190265, 114336798618606, 177450032338982, 460115770673632, 526326927441845, 401070179903991, 35223474166, 2055004118104490, 227993570999679, 121053321387843, 146393288729580">
+<script type="text/javascript" id="trackedAffiliates">
+/*<![CDATA[*/
+var trackedAffiliates = ['PPC.Google AdWords.3.EPR653.SM', 'Affiliate.CommissionJunction.3.EPR868-EN', 'PDM.Soquero.3.EPR653', 'PPC.Google AdWords.EPR653-GoogleShopping_Product_EN', 'PPC.Google AdWords.3.EPR653.DAL', 'Affiliate.Zanox.3.EPR868-DE', 'PPC.Google AdWords.3.EPR653.GMT', 'Affiliate.CommissionJunction.3.EPR868-DE', 'PPC.Google AdWords.EPR653-GoogleShopping_Product_CH', 'PDM.ChannelAdvisor.3.EPR653', 'Banner.Banner RTB.3.EPR653.Sociomantic', 'PPC.Google AdWords.EPR653-GoogleShopping_Product_DE', 'Affiliate.Zanox.3.EPR868-EN', 'PPC.Google AdWords.3.EPR653.IT', 'PPC.Google AdWords.3.EPR653.FR', 'PPC.BING.3.EPR632-DS-PPC-DAL', 'PPC.Google AdWords.3.EPR653.West', 'PPC.Google AdWords.EPR653-GoogleShopping_Product_UK', 'Banner.Banner RTB.3.EPR653.Criteo', 'PPC.BING.3.EPR632.West', 'PPC.BING.3.EPR632.DAL'];
+var generalCookieDomain = '.apress.com';
+
+/*]]>*/
+</script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+Wicket.Event.add(window, "domready", function(event) { 
+Wicket.Ajax.ajax({"sc":":submit","c":"idb","u":"./python?0-1.IBehaviorListener.0-body-content-rows-0-columns-0-area-components-6-item-grid-grid_body-row-column-1-item-grid-grid_body-container-form-submit","e":"click","f":"ida","bsh":[function(attrs, jqXHR, settings){;$('#idb').addClass('btn-loading').removeClass('btn-primary');$('button#idb').attr('disabled', 'disabled')}],"m":"POST","coh":[function(attrs, jqXHR, textStatus){if(jqXHR.responseText.indexOf('<ajax-response><redirect>')!=0){;$('#idb').addClass('btn-primary');$('button#idb').removeAttr('disabled')};$('#idb').removeClass('btn-loading');if (typeof Wicket.channelManager.channels['0'] != 'undefined') Wicket.channelManager.channels['0'].callbacks = new Array();}]});;
+;});
+/*]]>*/
+</script>
+<script src="https://springer-www.baynote.net/baynote/tags3/common?customerId=springer&amp;code=www&amp;timeout=undefined&amp;onFailure=undefined"></script><script async="" src="https://script.hotjar.com/modules.e483a7fd5848d79df4ee.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><link type="text/css" href="https://cdn.cookielaw.org/skins/5.2.0/default_flat_top_two_button_black/v2/css/optanon.css" rel="stylesheet"><style>#optanon ul#optanon-menu li { background-color:  !important }#optanon ul#optanon-menu li.menu-item-selected { background-color:  !important }#optanon #optanon-popup-wrapper .optanon-white-button-middle { background-color: #FFCC00 !important }.optanon-alert-box-wrapper .optanon-alert-box-button-middle { background-color: #FFCC00 !important; border-color: #FFCC00 !important; }#optanon #optanon-popup-wrapper .optanon-white-button-middle button { color: #000000 !important }.optanon-alert-box-wrapper .optanon-alert-box-button-middle button { color: #000000 !important }#optanon #optanon-popup-bottom { background-color: #F2F2F2 !important }#optanon.modern #optanon-popup-top, #optanon.modern #optanon-popup-body-left-shading { background-color: #F2F2F2 !important }.optanon-alert-box-wrapper { background-color: !important }.optanon-alert-box-wrapper .optanon-alert-box-bg p { color: !important }.optanon-alert-box-body p a {
+    color: #fff;
+    font-family: Source Sans Pro,arial,helvetica,sans-serif;
+    text-decoration: underline;
+}</style><script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><script src="https://springer-www.baynote.net/baynote/tags3/policy?customerId=springer&amp;code=www&amp;subdomain=&amp;userId=UNASSIGNED&amp;userPolicyRequested=true&amp;dataFormat=script"></script><script src="https://geolocation.onetrust.com/cookieconsentpub/v1/geo/countries/EU?callback=jQuery33103220094911494451_1582991528642&amp;_=1582991528643"></script></head>
+<body class="cms  cms-lang-es cms-client-apress" style="padding-top: 70px;">
+<div>
+<a class="link" id="print-header" href="http://www.apress.com">
+<img src="/spcom/sites/apress/images/logo-print.png">
+www.apress.com
+</a>
+</div>
+<div class="page-wrapper">
+<header>
+<script type="text/javascript" src="//static.apress.com/spcom/min/SNAPSHOT/apress.header.prod.js" defer="defer"></script>
+<div class="branding-container">
+<div class="row">
+<div class="columns small-6 large-4">
+<a class="brand" href="/" title="Apress">
+<img src="/spcom/sites/apress/images/logo.svg" alt="apress">
+</a>
+</div>
+<nav class="columns small-6 hide-for-large meta">
+<ul>
+<li class="meta__search">
+<a href="#search" class="search icon">
+Search
+</a>
+</li>
+<li class="meta__menu">
+<a href="#menu" class="menu icon">
+Menu
+</a>
+</li>
+</ul>
+</nav>
+<nav class="columns large-8 small-12 user">
+<ul class="menu--primary">
+<li class="cart" id="basket-widget" data-site-prefix="gp" data-cart-page-link="https://checkout.apress.com/checkout/cart" data-messages__cart-empty="Your cart is currently empty.">
+<script type="text/mustache-template" id="mustache-template--cart">
+<div class="cart__contents">
+<table>
+<thead>
+<tr>
+<th>Cover</th>
+<th>Description</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+{{#items}}
+<tr>
+<td class="cover" rowspan="3">
+<figure class="cover">
+<img src="{{{coverUrl}}}">
+</figure>
+</td>
+<td class="title"><a href="{{productLinkFragment}}">{{title}}</a></td>
+<td class="price" rowspan="3">{{{price}}}</td>
+</tr>
+<tr>
+<td class="description">{{description}}</td>
+</tr>
+<tr>
+<td class="quantity">Quantity: {{quantity}}</td>
+</tr>
+{{/items}}
+</tbody>
+<tfoot>
+<tr class="total">
+<td class="" colspan="2">{{resources.subtotal}}</td>
+<td class="subtotal">{{{totalPrice}}}</td>
+</tr>
+</tfoot>
+</table>
+<div class="cart-buttons">
+<a href="https://checkout.apress.com/checkout/cart" class="btn btn-primary btn-monster">{{resources.viewCart}}</a>
+</div>
+</div>
+</script>
+<a href="https://checkout.apress.com/checkout/cart" class="cart">
+<span class="label">Cart </span>
+<span class="font-icon">V</span>
+<span class="quantity"></span>
+</a>
+<div class="cart__contents cart--empty__contents" style="display: none">Your cart is currently empty.</div>
+</li>
+<li class="account">
+
+<a class="logout" href="#">Login</a>
+<ul class="menu--secondary items">
+
+<li class=""><a href="https://www.apress.com/public/profile">Account</a></li><li class=""><a href="https://www.apress.com/public/profile/bookshelf">Bookshelf</a></li>
+
+<li><a href="http://login.apress.com/public/en/login?url=https%3A%2F%2Fwww.apress.com%2Fgp%2Fpython" class="account-link login-link returnURL">Login</a></li>
+<li></li>
+</ul>
+</li>
+<li class="access">
+<a href="http://www.apress.com/apress-access" class="link--action link--direct">Apress Access</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="navi-container">
+<nav class="row main">
+<ul class="menu--primary columns large-8" id="mainNavigation">
+<li><a href="#">Categories</a><ul class="menu--secondary">
+<li class=""><a href="/gp/apple">Apple &amp; iOS</a></li><li class=""><a href="/gp/big-data">Big Data &amp; Analytics</a></li><li class=""><a href="/gp/business">Business</a></li><li class=""><a href="/gp/databases">Databases</a></li><li class=""><a href="/gp/enterprise-software">Enterprise Software</a></li><li class=""><a href="/gp/game-development">Game Development</a></li><li class=""><a href="/gp/graphics">Graphics</a></li><li class=""><a href="/gp/hardware-maker">Hardware &amp; Maker</a></li><li class=""><a href="/gp/java">Java</a></li><li class=""><a href="/gp/machine-learning">Machine Learning</a></li><li class=""><a href="/gp/microsoft">Microsoft &amp; .NET</a></li><li class=""><a href="/gp/mobile">Mobile</a></li><li class=""><a href="/gp/networking">Networking &amp; Cloud</a></li><li class=""><a href="/gp/open-source">Open Source</a></li><li class=""><a href="/gp/programming">Programming</a></li><li class=""><a href="/gp/python">Python</a></li><li class=""><a href="/gp/security">Security</a></li><li class=""><a href="/gp/web-development">Web Development</a></li><li class=""><a href="/gp/services/publishing-partners">Publishing Partners</a></li>
+</ul></li><li><a href="#">Services</a><ul class="menu--secondary">
+<li class=""><a href="/gp/about">About Us</a></li><li class=""><a href="/gp/services/academics">Academics</a></li><li class=""><a href="/gp/shop/affiliate/springer-nature">Affiliate Program</a></li><li class=""><a href="/gp/services/book-reviewers">Book Reviewers</a></li><li class=""><a href="/gp/services/customer-support/buying-in-the-apress-shop">Customer Support</a></li><li class=""><a href="/gp/services/events">Events</a></li><li class=""><a href="/gp/services/news">News &amp; Newsletter</a></li><li class=""><a href="/gp/services/rights-permission">Rights &amp; Permissions</a></li><li class=""><a href="/gp/services/source-code">Source Code</a></li><li class=""><a href="/gp/services/errata">Submit Errata</a></li><li class=""><a href="/gp/services/tech-review">Technical Reviewers</a></li><li class=""><a href="/gp/services/user-groups">User Groups</a></li>
+</ul></li><li><a href="/gp/apress-open">Apress Open</a></li><li><a href="/gp/blog">Blog</a></li><li><a href="/gp/write-for-us">Write</a></li><li><a href="#">Shop</a><ul class="menu--secondary">
+<li class=""><a href="/gp/shop">Shop Apress.com</a></li><li class=""><a href="/gp/services/booksellers">Booksellers</a></li><li class=""><a href="/gp/services/bulk-sales">Bulk Sales</a></li><li class=""><a href="/gp/services/corporate-sales">Corporate Sales</a></li><li class=""><a href="/gp/services/librarians">Librarians</a></li>
+</ul></li>
+</ul>
+<div class="columns small-12 large-3 large-offset-1 search">
+<form method="get" action="/gp/search" accept-charset="UTF-8">
+<div id="search-field"><div class="search-field ">
+            <input type="text" autocomplete="off" class="search__term" placeholder="Search" id="query" name="query" value="" aria-autocomplete="off">
+            
+        </div></div>
+<button type="submit" class="search__submit">Search</button>
+</form>
+</div>
+</nav>
+</div>
+<script type="text/javascript" src="/spcom/min/apress.components.js" defer="defer"></script>
+</header>
+<div id="content">
+
+<div id="idc" class="">
+
+<div class="layout-full-grid">
+<div class="placement-main">
+
+
+
+<div id="ide" class="cms-banner cms-banner-size-m cms-banner-color-invert" style="background-image: url(https://resource-cms.springernature.com/springer-cms/rest/v1/content/10734942/data/v3);">
+
+<div class="row">
+
+<div class="cms-banner-text">
+<div class="cms-banner-text-inner">
+<h1>Python</h1>
+<div><p>Develop apps and programs with the latest tools and methods</p></div>
+<a class="btn btn-primary" href="http://www.apress.com/gp/product-search?countryChanged=true&amp;topic=I29080&amp;facet-type=type__book&amp;returnUrl=gp%2Fpython">Browse all titles</a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="id1" class="cms-container cms-container-overflow cms-highlight-0"><div class="row"><div class="columns small-12 ">
+<div class="cms-recommendation-long">
+<div class="headline-and-link">
+
+<div class="section-header">
+<h2 id="c10623488">
+Highlights
+</h2>
+
+</div>
+
+
+</div>
+
+<ul class="row small-up-2 medium-up-3 large-up-5 products">
+<li class="product-teaser cms-col-item cms-col-mod-2 cms-col-mod-3 cms-col-mod-4 cms-col-mod-5 cms-col-mod-6 cms-col-mod-7 cms-col-mod-8 columns">
+
+<div class="product-graphic" data-mh="id1" style="height: 22px;">
+<a href="/gp/book/9781484248997" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 1'}});" data-baynote-pid="978-1-4842-4899-7">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-4899-7.jpg" title="Practical Cryptography in Python" alt="Practical Cryptography in Python"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-4899-7.jpg" title="Practical Cryptography in Python" alt="Practical Cryptography in Python">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484248997" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 1'}});" data-baynote-pid="978-1-4842-4899-7">Practical Cryptography in Python</a></h3>
+<p>Nielson, S. (et al.)
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook, Softcover
+</p>
+
+<span class="from"> from </span>
+<span class="price-container">
+<span class="price">26,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li><li class="product-teaser cms-col-item columns">
+
+<div class="product-graphic" data-mh="id1" style="height: 22px;">
+<a href="/gp/book/9781484245491" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 2'}});" data-baynote-pid="978-1-4842-4549-1">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-4549-1.jpg" title="Python for Teenagers" alt="Python for Teenagers"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-4549-1.jpg" title="Python for Teenagers" alt="Python for Teenagers">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484245491" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 2'}});" data-baynote-pid="978-1-4842-4549-1">Python for Teenagers</a></h3>
+<p>Payne, J.R.
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook, Softcover
+</p>
+
+<span class="from"> from </span>
+<span class="price-container">
+<span class="price">16,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li><li class="product-teaser cms-col-item cms-col-mod-2 columns">
+
+<div class="product-graphic" data-mh="id1" style="height: 22px;">
+<a href="/gp/book/9781484243534" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 3'}});" data-baynote-pid="978-1-4842-4353-4">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-4353-4.jpg" title="Text Analytics with Python" alt="Text Analytics with Python"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-4353-4.jpg" title="Text Analytics with Python" alt="Text Analytics with Python">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484243534" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 3'}});" data-baynote-pid="978-1-4842-4353-4">Text Analytics with Python</a></h3>
+<p>Sarkar, D.
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook, Softcover
+</p>
+
+<span class="from"> from </span>
+<span class="price-container">
+<span class="price">24,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li><li class="product-teaser cms-col-item cms-col-mod-3 columns">
+
+<div class="product-graphic" data-mh="id1" style="height: 22px;">
+<a href="/gp/book/9781484244326" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 4'}});" data-baynote-pid="978-1-4842-4432-6">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-4432-6.jpg" title="DevOps in Python" alt="DevOps in Python"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-4432-6.jpg" title="DevOps in Python" alt="DevOps in Python">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484244326" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 4'}});" data-baynote-pid="978-1-4842-4432-6">DevOps in Python</a></h3>
+<p>Zadka, M.
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook, Softcover
+</p>
+
+<span class="from"> from </span>
+<span class="price-container">
+<span class="price">26,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li><li class="product-teaser cms-col-item cms-col-mod-2 cms-col-mod-4 columns">
+
+<div class="product-graphic" data-mh="id1" style="height: 22px;">
+<a href="/gp/book/9781484242452" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 5'}});" data-baynote-pid="978-1-4842-4245-2">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-4245-2.jpg" title="Numerical Python " alt="Numerical Python "></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-4245-2.jpg" title="Numerical Python " alt="Numerical Python ">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484242452" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 5'}});" data-baynote-pid="978-1-4842-4245-2">Numerical Python </a></h3>
+<p>Johansson, R.
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook, Softcover
+</p>
+
+<span class="from"> from </span>
+<span class="price-container">
+<span class="price">29,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li><li class="product-teaser cms-col-item cms-col-mod-5 columns">
+
+<div class="product-graphic" data-mh="id1" style="height: 22px;">
+<a href="/gp/book/9781484250006" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 6'}});" data-baynote-pid="978-1-4842-5000-6">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-5000-6.jpg" title="Python for SAS Users" alt="Python for SAS Users"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-5000-6.jpg" title="Python for SAS Users" alt="Python for SAS Users">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484250006" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 6'}});" data-baynote-pid="978-1-4842-5000-6">Python for SAS Users</a></h3>
+<p>Betancourt, R. (et al.)
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook, Softcover
+</p>
+
+<span class="from"> from </span>
+<span class="price-container">
+<span class="price">26,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li><li class="product-teaser cms-col-item cms-col-mod-2 cms-col-mod-3 cms-col-mod-6 columns">
+
+<div class="product-graphic" data-mh="id1" style="height: 22px;">
+<a href="/gp/book/9781484242575" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 7'}});" data-baynote-pid="978-1-4842-4257-5">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-4257-5.jpg" title="PyTorch Recipes" alt="PyTorch Recipes"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-4257-5.jpg" title="PyTorch Recipes" alt="PyTorch Recipes">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484242575" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 7'}});" data-baynote-pid="978-1-4842-4257-5">PyTorch Recipes</a></h3>
+<p>Mishra, P.
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook, Softcover
+</p>
+
+<span class="from"> from </span>
+<span class="price-container">
+<span class="price">22,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li><li class="product-teaser cms-col-item cms-col-mod-7 columns">
+
+<div class="product-graphic" data-mh="id1" style="height: 22px;">
+<a href="/gp/book/9781484249604" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 8'}});" data-baynote-pid="978-1-4842-4960-4">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-4960-4.jpg" title="Learn PySpark" alt="Learn PySpark"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-4960-4.jpg" title="Learn PySpark" alt="Learn PySpark">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484249604" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 8'}});" data-baynote-pid="978-1-4842-4960-4">Learn PySpark</a></h3>
+<p>Singh, P.
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook, Softcover
+</p>
+
+<span class="from"> from </span>
+<span class="price-container">
+<span class="price">24,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li><li class="product-teaser cms-col-item cms-col-mod-2 cms-col-mod-4 cms-col-mod-8 columns">
+
+<div class="product-graphic" data-mh="id1" style="height: 22px;">
+<a href="/gp/book/9781484248584" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 9'}});" data-baynote-pid="978-1-4842-4858-4">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-4858-4.jpg" title=" Practical Data Science with Python 3" alt=" Practical Data Science with Python 3"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-4858-4.jpg" title=" Practical Data Science with Python 3" alt=" Practical Data Science with Python 3">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484248584" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 9'}});" data-baynote-pid="978-1-4842-4858-4"> Practical Data Science with Python 3</a></h3>
+<p>Varga, E.
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook, Softcover
+</p>
+
+<span class="from"> from </span>
+<span class="price-container">
+<span class="price">24,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li><li class="product-teaser cms-col-item cms-col-mod-3 columns">
+
+<div class="product-graphic" data-mh="id1" style="">
+<a href="/gp/book/9781484245224" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 10'}});" data-baynote-pid="978-1-4842-4522-4">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-4522-4.jpg" title="Python for the Life Sciences" alt="Python for the Life Sciences"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-4522-4.jpg" title="Python for the Life Sciences" alt="Python for the Life Sciences">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484245224" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 10'}});" data-baynote-pid="978-1-4842-4522-4">Python for the Life Sciences</a></h3>
+<p>Lancaster, A. (et al.)
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook, Softcover
+</p>
+
+<span class="from"> from </span>
+<span class="price-container">
+<span class="price">26,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li>
+</ul>
+
+</div>
+</div></div></div>
+
+<div id="idf" class="cms-container cms-highlight-1"><div class="row"><div class="columns small-12 ">
+<div class="cms-columns-row">
+<div class="row">
+<div class="columns  small-12 medium-8">
+
+
+
+<div id="id11" class="cms-container cms-highlight-0">
+<div class="cms-common cms-article default-table">
+<p class="taxonomy">
+
+
+</p>
+
+
+
+
+
+
+
+<div class="cms-richtext"><p class="intro--paragraph">Python is the fastest growing major programming language worldwide. Our Python books provide relevant and practical information for anyone from programming beginners to experienced developers working with Python. Learn to apply the Python language and its APIs to data analytics, web and game development, as well as the internet of things.</p></div>
+</div>
+</div>
+
+
+
+</div><div class="columns  small-12 medium-4">
+<div id="id12" class="cms-container cms-container-close cms-highlight-0">
+<div class="cms-bg-image-teaser cms-bg-image-teaser-with-img" style="background-image: url(//resource-cms.springernature.com/springer-cms/rest/v1/content/10718586/data/v2);" data-mh="mh-id2">
+<a href="/gp/services/source-code" style="min-height: 167px;">
+<div class="cms-bg-image-teaser__content">
+<h3>We're on GitHub</h3>
+<div class="cms-richtext"><p>Get easier access to all Apress source code.</p></div>
+<div class="btn btn-primary btn-monster">Learn More</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div>
+
+<div id="id3" class="cms-container cms-container-overflow cms-highlight-0"><div class="row"><div class="columns small-12 ">
+<div class="cms-recommendation-long">
+<div class="headline-and-link">
+
+<div class="section-header">
+<h2 id="c10623496">
+New Releases
+</h2>
+
+</div>
+
+
+<span class="related"><a href="/gp/product-search?topic=I29080&amp;facet-type=type__book&amp;format=ebook&amp;returnUrl=gp%2Fpython">see all</a></span>
+
+</div>
+
+<ul class="row small-up-2 medium-up-3 large-up-5 products">
+<li class="product-teaser cms-col-item cms-col-mod-2 cms-col-mod-3 cms-col-mod-4 cms-col-mod-5 cms-col-mod-6 cms-col-mod-7 cms-col-mod-8 columns">
+
+<div class="product-graphic" data-mh="id3" style="height: 22px;">
+<a href="/gp/book/9781484253557#otherversion=9781484253557" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 1'}});" data-baynote-pid="978-1-4842-5355-7">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-5355-7.jpg" title="Python Projects for Beginners" alt="Python Projects for Beginners"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-5355-7.jpg" title="Python Projects for Beginners" alt="Python Projects for Beginners">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484253557#otherversion=9781484253557" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 1'}});" data-baynote-pid="978-1-4842-5355-7">Python Projects for Beginners</a></h3>
+<p>Milliken, C.
+(2020)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook
+</p>
+
+<span class="from">  </span>
+<span class="price-container">
+<span class="price">26,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li><li class="product-teaser cms-col-item columns">
+
+<div class="product-graphic" data-mh="id3" style="height: 22px;">
+<a href="/gp/book/9781484253588#otherversion=9781484253588" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 2'}});" data-baynote-pid="978-1-4842-5358-8">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-5358-8.jpg" title="Designing Microservices with Django" alt="Designing Microservices with Django"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-5358-8.jpg" title="Designing Microservices with Django" alt="Designing Microservices with Django">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484253588#otherversion=9781484253588" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 2'}});" data-baynote-pid="978-1-4842-5358-8">Designing Microservices with Django</a></h3>
+<p>Hochrein, A.
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook
+</p>
+
+<span class="from">  </span>
+<span class="price-container">
+<span class="price">22,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li><li class="product-teaser cms-col-item cms-col-mod-2 columns">
+
+<div class="product-graphic" data-mh="id3" style="height: 22px;">
+<a href="/gp/book/9781484250310#otherversion=9781484250310" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 3'}});" data-baynote-pid="978-1-4842-5031-0">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-5031-0.jpg" title="Building Android Apps in Python Using Kivy with Android Studio" alt="Building Android Apps in Python Using Kivy with Android Studio"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-5031-0.jpg" title="Building Android Apps in Python Using Kivy with Android Studio" alt="Building Android Apps in Python Using Kivy with Android Studio">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484250310#otherversion=9781484250310" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 3'}});" data-baynote-pid="978-1-4842-5031-0">Building Android Apps in Python Using Kivy with Android Studio</a></h3>
+<p>Gad, A.F.M.
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook
+</p>
+
+<span class="from">  </span>
+<span class="price-container">
+<span class="price">26,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li><li class="product-teaser cms-col-item cms-col-mod-3 columns">
+
+<div class="product-graphic" data-mh="id3" style="height: 22px;">
+<a href="/gp/book/9781484245231#otherversion=9781484245231" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 4'}});" data-baynote-pid="978-1-4842-4523-1">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-4523-1.jpg" title="Python for the Life Sciences" alt="Python for the Life Sciences"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-4523-1.jpg" title="Python for the Life Sciences" alt="Python for the Life Sciences">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484245231#otherversion=9781484245231" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 4'}});" data-baynote-pid="978-1-4842-4523-1">Python for the Life Sciences</a></h3>
+<p>Lancaster, A. (et al.)
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook
+</p>
+
+<span class="from">  </span>
+<span class="price-container">
+<span class="price">26,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li><li class="product-teaser cms-col-item cms-col-mod-2 cms-col-mod-4 columns">
+
+<div class="product-graphic" data-mh="id3" style="height: 22px;">
+<a href="/gp/book/9781484248591#otherversion=9781484248591" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 5'}});" data-baynote-pid="978-1-4842-4859-1">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-4859-1.jpg" title=" Practical Data Science with Python 3" alt=" Practical Data Science with Python 3"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-4859-1.jpg" title=" Practical Data Science with Python 3" alt=" Practical Data Science with Python 3">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484248591#otherversion=9781484248591" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 5'}});" data-baynote-pid="978-1-4842-4859-1"> Practical Data Science with Python 3</a></h3>
+<p>Varga, E.
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook
+</p>
+
+<span class="from">  </span>
+<span class="price-container">
+<span class="price">24,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li>
+</ul>
+
+</div>
+</div></div></div>
+
+<div id="id13" class="cms-container cms-container-grid cms-highlight-1"><div class="row"><div class="columns small-12 ">
+<div class="cms-grid-collection">
+
+
+
+<div class="cms-collection-list">
+<ul class="row small-up-1  medium-up-2">
+<li class="columns">
+<div id="id14" class="cms-container cms-highlight-1">
+<div class="cms-common cms-person-list">
+
+
+<h1 id="c10781282">
+Featured Author
+</h1>
+
+
+
+<ul>
+
+<li class="cms-person" id="id15">
+
+<div class="cms-person">
+<div class="overview cms-person-not-linked cms-person-with-details">
+<img class="avatar" id="id16" src="//resource-cms.springernature.com/springer-cms/rest/v1/img/16449040/v1/spcom-apress-person-medium" title="Federico Marani" alt="New Content Item">
+<div class="description">
+<h3>Federico Marani</h3>
+<p class="description--paragraph">
+
+
+</p>
+<p class="description--paragraph">
+
+
+
+
+<a href="https://twitter.com/flagZ" class="external">https://twitter.com/flagZ</a>
+
+</p>
+</div>
+</div>
+<div class="person-detail"><p>Federico Marani has been a freelance software engineer and DevOps specialist for over 15 years. With a background in Computer Science and a Msc in Business Psychology, he has worked in companies ranging from e-commerce, finance, medical and banking companies. He started developing web applications with Python 1.5.2 on RedHat systems has been using Django since the first 1.x versions, more than 8 years ago. He now consults on technology strategy and tech teams with startups, and still very hands-on with coding. Open sourced a lot of code online, some of which is part of GNU Social. In his spare time, he enjoys playing drums and running.<br></p></div>
+</div>
+
+</li>
+
+</ul>
+</div>
+</div>
+</li><li class="columns">
+
+
+
+<div id="id4" class="cms-container cms-container-overflow cms-highlight-0">
+<div class="cms-recommendation-long">
+<div class="headline-and-link">
+
+<div class="section-header">
+<h2 id="c10701068">
+Featured Titles
+</h2>
+
+</div>
+
+
+</div>
+
+<ul class="row small-up-1 products">
+<li class="product-teaser cms-col-item cms-col-mod-2 cms-col-mod-3 cms-col-mod-4 cms-col-mod-5 cms-col-mod-6 cms-col-mod-7 cms-col-mod-8 columns">
+
+<div class="product-graphic" data-mh="id4">
+<a href="/gp/book/9781484240984" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 1'}});" data-baynote-pid="978-1-4842-4098-4">
+
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-4098-4.jpg" title="Practical Django 2 and Channels 2" alt="Practical Django 2 and Channels 2"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-4098-4.jpg" title="Practical Django 2 and Channels 2" alt="Practical Django 2 and Channels 2">
+
+</a>
+</div>
+<div class="product-information">
+<h3><a href="/gp/book/9781484240984" onmousedown="wt.sendinfo({linkId: 'recommendation', customClickParameter : { 2 : 'shoppage.recommendedproducts - 1'}});" data-baynote-pid="978-1-4842-4098-4">Practical Django 2 and Channels 2</a></h3>
+<p>Marani, F.
+(2019)</p>
+
+
+<p class="format">
+<strong>Format:</strong>
+eBook, Softcover
+</p>
+
+<span class="from"> from </span>
+<span class="price-container">
+<span class="price">19,99&nbsp;€</span>
+
+</span>
+
+</div>
+
+</li>
+</ul>
+
+</div>
+</div>
+
+
+
+</li>
+</ul>
+</div>
+</div>
+</div></div></div>
+
+<div id="id18" class="cms-container cms-container-grid cms-highlight-0"><div class="row"><div class="columns small-12 ">
+<div class="cms-grid-collection">
+
+
+
+<div class="cms-collection-list">
+<ul class="row small-up-1  medium-up-2">
+<li class="columns">
+<div id="id19" class="cms-container cms-highlight-0">
+<div class="cms-common cms-person-list">
+
+
+<h1 id="c10781286">
+Meet the Editor
+</h1>
+
+
+
+<ul>
+
+<li class="cms-person" id="id1a">
+
+<div class="cms-person">
+<div class="overview cms-person-not-linked">
+<img class="avatar" id="id1b" src="//resource-cms.springernature.com/springer-cms/rest/v1/img/15966062/v6/spcom-apress-person-medium" title="Celestin Suresh John" alt="Celestin Suresh John">
+<div class="description">
+<h3>Celestin Suresh John</h3>
+<p class="description--paragraph">
+
+<span class="person-position">Manager Apress India - Senior Editor</span>
+<br>
+
+
+<span class="person-department">Machine Learning, Big Data, Cloud Computing, Networking</span>
+<br>
+
+</p>
+<p class="description--paragraph">
+
+
+<span class="person-phone-prefix">Tel.:</span>
+<span class="person-phone">+91 9168 92 7888</span>
+<br>
+
+
+<a class="person-email internal" href="mailto:celestinjohn@apress.com">celestinjohn@apress.com</a>
+<br>
+
+
+</p>
+</div>
+</div>
+
+</div>
+
+</li>
+
+</ul>
+</div>
+</div>
+</li><li class="columns">
+<div id="id1c" class="cms-container cms-container-close cms-highlight-0">
+<div class="cms-bg-image-teaser cms-bg-image-teaser-with-img" style="background-image: url(//resource-cms.springernature.com/springer-cms/rest/v1/content/10787480/data/v1);" data-mh="mh-id5">
+<a href="/gp/apress-open/apressopen-titles" style="min-height: 227px;">
+<div class="cms-bg-image-teaser__content">
+<h3>Free high-quality content for developers worldwide</h3>
+<div class="cms-richtext"><p>Download our open source content</p></div>
+<div class="btn btn-primary btn-monster">Browse free ApressOpen titles</div>
+</div>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div></div></div>
+
+<div id="id1d" class="cms-container cms-container-grid cms-highlight-1"><div class="row"><div class="columns small-12 ">
+<div class="cms-grid-collection">
+
+
+
+<div class="cms-collection-list">
+<ul class="row small-up-1  medium-up-2">
+<li class="columns">
+<div id="id1e" class="cms-container cms-highlight-0">
+<a class="cms-daily-deal-small cms-daily-deal" href="/gp/book/9781484242346?wt_mc=Internal.Banner.3.EPR868.APR_DotD_Teaser" data-mh="mh-id6">
+
+<div class="daily-deal-cover">
+<div>
+<noscript><img src="//images.springer.com/sgw/books/medium/978-1-4842-4234-6.jpg" title="Mindful Design" alt="Mindful Design"></noscript>
+<img class="lazy lazy-marked" src="//images.springer.com/_default" data-original="//images.springer.com/sgw/books/medium/978-1-4842-4234-6.jpg" title="Mindful Design" alt="Mindful Design">
+</div>
+</div>
+<div class="daily-deal-text">
+<h3 class="daily-deal-title">Daily Deal</h3>
+<h4 class="daily-deal-product-title">Mindful Design</h4>
+<div class="price-container">
+<span class="price">4,99&nbsp;€</span>
+<span class="unreduced-price">19,25&nbsp;€</span>
+</div>
+<div class="daily-deal-cta">Get this deal!</div>
+</div>
+
+</a>
+</div>
+</li><li class="columns">
+<div id="id1f" class="cms-highlight-0">
+<div class="cms-widget-subscription">
+
+
+<h2 id="c10842006">
+Join our newsletter and get a 5€ voucher
+</h2>
+
+
+
+<form id="ida" method="post" action="./python?0-1.IFormSubmitListener-body-content-rows-0-columns-0-area-components-6-item-grid-grid_body-row-column-1-item-grid-grid_body-container-form"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden"><input type="hidden" name="ida_hf_0" id="ida_hf_0"></div>
+<div class="cms-richtext"><p>Subscribe now to stay up to date on: Daily Deals, discount promotions, events &amp; new releases. Save up to 90% on eBook purchases.</p></div>
+<div class="form-section">
+<div class="form-row">
+<label for="id7">Email Address*</label>
+<input type="text" value="" name="email" id="id7" required="required">
+<label id="id20" style="display:none"></label>
+</div>
+</div>
+<button type="submit" class="btn btn-monster btn-primary" value="Submit" name=":submit" id="idb" onmousedown="dataLayer.push({&quot;eventCategory&quot;:&quot;Alerts&quot;,&quot;event&quot;:&quot;data-track&quot;,&quot;eventLabel&quot;:&quot;\/gp\/python&quot;,&quot;eventAction&quot;:&quot;subscribe for marketing&quot;});">Sign up now</button>
+</form>
+<div class="cms-richtext">
+
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div></div></div>
+
+<div id="id21" class="cms-container cms-container-grid cms-highlight-1"><div class="row"><div class="columns small-12 ">
+<div class="cms-grid-collection">
+
+
+<h2 id="c10776956">
+Why Shop on Apress.com?
+</h2>
+
+
+
+
+<div class="cms-richtext"><p class="intro--paragraph"><img alt="" class="float--left" title="" src="//resource-cms.springernature.com/springer-cms/rest/v1/content/6660820/data/v3">The books in our Apress Shop come with free worldwide shipping for print copies, and our eBooks can be read on any device.</p></div>
+<div class="cms-collection-list">
+<ul class="row small-up-1 medium-up-3">
+<li class="columns">
+<div id="id22" class="">
+
+<div class="cms-teaser-text">
+
+<div class="cms-teaser-box cms-teaser-box-with-icon cms-teaser-box-titled-icon" data-mh="mh-id8" style="height: 116px;">
+<div class="article-meta">
+
+
+</div>
+<div class="cms-font-icon">&lt;</div>
+<h3>Over 3,000 titles in programming &amp; IT</h3>
+
+</div>
+</div>
+
+</div>
+</li><li class="columns">
+<div id="id23" class="">
+
+<div class="cms-teaser-text">
+
+<div class="cms-teaser-box cms-teaser-box-with-icon cms-teaser-box-titled-icon" data-mh="mh-id8" style="height: 116px;">
+<div class="article-meta">
+
+
+</div>
+<div class="cms-font-icon">w</div>
+<h3>Free shipping for print books worldwide</h3>
+
+</div>
+</div>
+
+</div>
+</li><li class="columns">
+<div id="id24" class="">
+
+<div class="cms-teaser-text">
+
+<div class="cms-teaser-box cms-teaser-box-with-icon cms-teaser-box-titled-icon" data-mh="mh-id8" style="height: 116px;">
+<div class="article-meta">
+
+
+</div>
+<div class="cms-font-icon">m</div>
+<h3>eBooks can be read on all devices</h3>
+
+</div>
+</div>
+
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div></div></div>
+
+<div id="id25" class="cms-container cms-container-grid cms-highlight-0"><div class="row"><div class="columns small-12 ">
+<div class="cms-grid-collection">
+
+
+<h2 id="c10270022">
+Stay informed
+</h2>
+
+
+
+
+
+<div class="cms-collection-list">
+<ul class="row small-up-1 medium-up-3">
+<li class="columns">
+<div id="id26" class="">
+
+<a class="cms-teaser-text" href="https://twitter.com/apress">
+
+<div class="cms-teaser-box cms-teaser-box-with-icon" data-mh="mh-id9" style="height: 207px;">
+<div class="article-meta">
+
+
+</div>
+<div class="cms-font-icon">1</div>
+<h3>Twitter</h3>
+<p>Daily tweets from the Apress team!</p>
+</div>
+</a>
+
+</div>
+</li><li class="columns">
+<div id="id27" class="">
+
+<a class="cms-teaser-text" href="https://www.facebook.com/ApressMedia/">
+
+<div class="cms-teaser-box cms-teaser-box-with-icon" data-mh="mh-id9" style="height: 207px;">
+<div class="article-meta">
+
+
+</div>
+<div class="cms-font-icon">2</div>
+<h3>Facebook</h3>
+<p>Get the latest information&nbsp;about Apress titles, authors, and events.</p>
+</div>
+</a>
+
+</div>
+</li><li class="columns">
+<div id="id28" class="">
+
+<a class="cms-teaser-text" href="https://www.linkedin.com/company/apress/">
+
+<div class="cms-teaser-box cms-teaser-box-with-icon" data-mh="mh-id9" style="height: 207px;">
+<div class="article-meta">
+
+
+</div>
+<div class="cms-font-icon">3</div>
+<h3>LinkedIn</h3>
+<p>Connect with us for company updates, new book announcements,&nbsp;and informative articles.</p>
+</div>
+</a>
+
+</div>
+</li><li class="columns">
+<div id="id29" class="">
+
+<a class="cms-teaser-text" href="https://www.instagram.com/apresshq/">
+
+<div class="cms-teaser-box cms-teaser-box-with-icon" data-mh="mh-id9" style="height: 303px;">
+<div class="article-meta">
+
+
+</div>
+<div class="cms-font-icon">5</div>
+<h3>Instagram</h3>
+<p>Check out our photos from our travels and conferences around the world!</p>
+</div>
+</a>
+
+</div>
+</li><li class="columns">
+<div id="id2a" class="">
+
+<a class="cms-teaser-text" href="https://www.youtube.com/channel/UCToEnUFnPa1GjN_ovvomCEw">
+
+<div class="cms-teaser-box cms-teaser-box-with-icon" data-mh="mh-id9" style="height: 303px;">
+<div class="article-meta">
+
+
+</div>
+<div class="cms-font-icon">4</div>
+<h3>YouTube</h3>
+<p>Subscribe to our channel for author interviews, book trailers, exclusive behind-the-scenes conference content, and more!</p>
+</div>
+</a>
+
+</div>
+</li><li class="columns">
+<div id="id2b" class="">
+
+<a class="cms-teaser-text" href="https://github.com/Apress">
+
+<div class="cms-teaser-box cms-teaser-box-with-icon" data-mh="mh-id9" style="height: 303px;">
+<div class="article-meta">
+
+
+</div>
+<div class="cms-font-icon">Ì</div>
+<h3>GitHub</h3>
+<p>Your go-to for source code that goes&nbsp;along with your Apress book.</p>
+</div>
+</a>
+
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div></div></div>
+
+
+
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+<footer>
+<div class="footer__links">
+<div class="row row-narrow">
+<div class="column small-12 large-6">
+<div class="row">
+<div class="column small-12 medium-8" id="column0">
+<a class="footer__links__headline flap--mobile">Apress A-Z</a>
+<div>
+<div class="footer__links__column__links row small-up-2">
+<div class="columns">
+<ul>
+<li class=""><a href="/gp/apple">Apple &amp; iOS</a></li><li class=""><a href="/gp">ASP.NET</a></li><li class=""><a href="/gp/big-data">Big Data &amp; Analytics</a></li><li class=""><a href="/gp/business">Business</a></li><li class=""><a href="/gp/databases">Databases</a></li><li class=""><a href="/gp/enterprise-software">Enterprise Software</a></li><li class=""><a href="/gp/game-development">Game Development</a></li><li class=""><a href="/gp/graphics">Graphics</a></li><li class=""><a href="/gp/hardware-maker">Hardware &amp; Maker</a></li><li class=""><a href="/gp/java">Java</a></li><li class=""><a href="/gp/machine-learning">Machine Learning</a></li>
+</ul>
+</div>
+<div class="columns">
+<ul>
+<li class=""><a href="/gp/microsoft">Microsoft &amp; .NET</a></li><li class=""><a href="/gp/mobile">Mobile</a></li><li class=""><a href="/gp/networking">Networking &amp; Cloud</a></li><li class=""><a href="/gp/open-source">Open Source</a></li><li class=""><a href="/gp/programming">Programming</a></li><li class=""><a href="/gp/services/publishing-partners">Publishing Partners</a></li><li class=""><a href="/gp/python">Python</a></li><li class=""><a href="/gp/security">Security</a></li><li class=""><a href="/gp/web-development">Web Development</a></li><li class=""><a href="/gp/services/publishing-partners">Publishing Partners</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="column small-12 medium-4" id="column1">
+<a class="footer__links__headline flap--mobile">Services</a>
+<div>
+<ul class="footer__links__column__links">
+<li class=""><a href="/gp/about">About Us</a></li><li class=""><a href="/gp/services/academics">Academics</a></li><li class=""><a href="/gp/shop/affiliate/springer-nature">Affiliate Program</a></li><li class=""><a href="/gp/services/book-reviewers">Book Reviewers</a></li><li class=""><a href="/gp/services/customer-support/buying-in-the-apress-shop">Customer Support</a></li><li class=""><a href="/gp/services/events">Events</a></li><li class=""><a href="/gp/services/news">News &amp; Newsletter</a></li><li class=""><a href="/gp/services/rights-permission">Rights &amp; Permissions</a></li><li class=""><a href="/gp/services/source-code">Source Code</a></li><li class=""><a href="/gp/services/errata">Submit Errata</a></li><li class=""><a href="/gp/services/tech-review">Technical Reviewers</a></li><li class=""><a href="/gp/services/user-groups">User Groups</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="column small-12 large-6">
+<div class="row">
+<div class="column small-12 medium-4" id="column2">
+<a class="footer__links__headline flap--mobile">Write for Us</a>
+<div>
+<ul class="footer__links__column__links">
+<li class=""><a href="/gp/write-for-us">Write</a></li><li class=""><a href="/gp/write-for-us/submit-a-proposal">Submit a proposal</a></li><li class=""><a href="/gp/write-for-us/publishing-process">Publishing process</a></li><li class=""><a href="/gp/write-for-us/author-services">Documents for Current Authors</a></li>
+</ul>
+</div>
+</div>
+<div class="column small-12 medium-4" id="column3">
+<a class="footer__links__headline flap--mobile">Company</a>
+<div>
+<ul class="footer__links__column__links">
+<li class=""><a href="/gp/about">About Us</a></li><li class=""><a href="/gp/blog">Blog</a></li><li class=""><a href="/gp/services/events">Events</a></li><li class=""><a href="/gp/services/customer-support/buying-in-the-apress-shop/faq">FAQ</a></li><li class=""><a href="/gp/services/news">News</a></li><li class=""><a href="/gp/services/publishing-partners">Publishing Partners</a></li><li class=""><a href="/gp/services/contact-us">Contact Us</a></li><li class=""><a href="/gp/about/team">Team</a></li>
+</ul>
+</div>
+</div>
+<div class="column small-12 medium-4">
+<h6 class="footer__links__headline">&nbsp;</h6>
+<div class="footer__links__payment">
+<i>¶</i>
+<i>¢</i>
+<i>“</i>
+<i>¡</i>
+</div>
+<div class="footer__links__trustpilot">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__meta">
+<div class="row">
+<div class="column small-8 medium-9">
+<ul class="footer__meta__links">
+<li><a class="footer__meta__logo" href="/"></a></li>
+
+<li class=""><span>© 2020 Apress is part of Springer Nature</span></li><li class=""><a href="/gp/legal/web-site-terms-and-conditions-of-use/10875332">Terms &amp; Conditions</a></li><li class=""><a href="/gp/legal">Privacy Policy</a></li>
+
+</ul>
+</div>
+<div class="column small-4 medium-3" style="padding-left: 0;">
+<ul class="footer__meta__social" style="margin: 0px -4px;">
+
+<li class="footer-icon"><a href="https://twitter.com/apress">1</a></li><li class="footer-icon"><a href="https://www.facebook.com/ApressMedia/">2</a></li><li class="footer-icon"><a href="https://www.linkedin.com/company/apress/">3</a></li><li class="footer-icon"><a href="https://www.youtube.com/channel/UCToEnUFnPa1GjN_ovvomCEw">4</a></li><li class="footer-icon"><a href="https://www.instagram.com/apresshq/">5</a></li>
+
+</ul>
+</div>
+<style>
+/*<![CDATA[*/
+
+.footer__meta__social li { padding: 4px; margin: 0.35714rem 0 0 0rem;}
+
+/*]]>*/
+</style>
+</div>
+</div>
+</footer>
+<div>
+
+<script type="text/javascript">/*<![CDATA[*/ 
+		var webtrekkConfig = webtrekkConfig || {
+			trackId : '933650246438988', 
+			trackDomain: 'springergmbh01.webtrekk.net', 
+			domain : 'www.apress.com;checkout.apress.com;secure.worldpay.com', 
+			cookie : '1', 
+			executePluginFunction : 'wt_socialMedia;wt_scrollposition' 
+		};
+		var pageConf = {
+			contentId : 'gp.python', 
+			contentGroup : {"1":"gp","2":"python"}, 
+			customParameter : {"5":"cms-page-group-unmapped"}, 
+			linkTrack : 'link',
+			linkTrackAttribute : 'id',
+			heatmap : '0', 
+			form : '0'
+		};
+		var wt = new webtrekkV3(pageConf);
+		wt.customerId='';
+		wt.customSessionParameter={};
+		wt.mediaCode='wt_mc;cm_mmc';
+		wt.linkTrackDownloads='avi;bmp;csv;doc;docx;dotx;eps;exe;gif;gz;jpeg;jpg;m4v;mov;mp3;mp4;mpg;pdf;png;ppt;pptx;ps;rss;rtf;swf;tar;tar.gz;tgz;tif;txt;wmv;xls;xlsx;zip';
+		wt.sendinfo();
+	/*]]>*/
+</script>
+
+</div><iframe src="https://a1859010085.cdn.optimizely.com/client_storage/a1859010085.html" hidden="" aria-hidden="true" tabindex="-1" title="Optimizely Internal Frame" height="0" width="0" style="display: none;"></iframe>
+<noscript>
+<div id="jsnotice" class="prompt-bar">
+<p>JavaScript is currently disabled, this site works much better if you
+<a href="http://enable-javascript.com/">
+enable JavaScript in your browser</a>.
+</p>
+</div>
+</noscript>
+
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M48LJF&gtm_auth=H9WR51Mt3jYIbQSiz_4-IQ&gtm_preview=env-1&gtm_cookies_win=x;"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager -->
+
+
+
+<!--[if lt IE 7]> </html> <![endif]-->
+<!--[if IE 7]> </html> <![endif]-->
+<!--[if IE 8]> </html> <![endif]-->
+<!--[if IE 9]> </html> <![endif]-->
+<!--[if gt IE 9]><!-->  <!--<![endif]-->
+<script type="text/javascript" id="">google_tag_manager["GTM-M48LJF"].macro(4)(document,"click",function(a){a=google_tag_manager["GTM-M48LJF"].macro(5)(a.target,"data-track");(window.target=a)&&pushPayload("click",a)});google_tag_manager["GTM-M48LJF"].macro(6)(document,"change",function(a){(a=google_tag_manager["GTM-M48LJF"].macro(7)(a.target,"data-track"))&&"select"===a.nodeName.toLowerCase()&&pushPayload("click",a)});(google_tag_manager["GTM-M48LJF"].macro(8)||google_tag_manager["GTM-M48LJF"].macro(9)||google_tag_manager["GTM-M48LJF"].macro(10)||google_tag_manager["GTM-M48LJF"].macro(11))&&("false"==google_tag_manager["GTM-M48LJF"].macro(12)||"datalayer-update"==google_tag_manager["GTM-M48LJF"].macro(13))&&pushPayload("ecommerce");
+function pushPayload(a,b){payload=null;"click"===a?payload=google_tag_manager["GTM-M48LJF"].macro(28)(b):"ecommerce"===a&&(payload=google_tag_manager["GTM-M48LJF"].macro(42));window.dataLayer.push(payload)};</script><script type="text/javascript" id="">(function(){var b=[],a=0,d="data-internal-tracking",f="_",g="internal";Array.prototype.slice.call(document.getElementsByTagName("a")).forEach(function(c){if(null!==c.getAttribute(d)&&void 0!==c.getAttribute("href")){var e=c.getAttribute(d).split(f);null!==c.getAttribute(d).match(new RegExp(g,"ig"))&&(b[a]={},b[a].name=c.getAttribute(d),b[a].id=e[1],b[a].id+=" "+e[2],b[a].id+=" "+e[3],a+=1)}});0<a&&dataLayer.push({event:"promotionView",ecommerce:{promoView:{promotions:b}}})})();</script><script type="text/javascript" id="">var trackedAffiliates=["Affiliate.CommissionJunction.Authors","Affiliate.CommissionJunction","PPC.BING","PPC.Google AdWords"],gaTrackedAffiliates=["commission_junction_authors","commission_junction"];function getQueryVariable(b){var a=window.location.search.substring(1);a=a.split("\x26");for(var c=0;c<a.length;c++){var d=a[c].split("\x3d");if(d[0]==b)return d[1]}return!1}function trackAffiliate(b){var a=".apress.com";$.cookie("trkaff",b,{domain:a,path:"/",expires:30})}
+$(document).ready(function(){var b=getQueryVariable("wt_mc");if(b&&"undefined"!==typeof trackedAffiliates){b=b.replace("%20"," ").replace("+"," ");console.log(b);for(var a=0;a<trackedAffiliates.length;a++)if(-1<b.indexOf(trackedAffiliates[a])){trackAffiliate(trackedAffiliates[a]);break}}if((b=getQueryVariable("utm_source"))&&"undefined"!==typeof gaTrackedAffiliates)for(b=b.replace("%20"," ").replace("+"," "),console.log(b),a=0;a<gaTrackedAffiliates.length;a++)if(-1<b.indexOf(gaTrackedAffiliates[a])){trackAffiliate(gaTrackedAffiliates[a]);
+break}});</script>
+
+
+<script type="text/javascript" id="" charset="UTF-8" src="https://cdn.cookielaw.org/consent/b589a1f5-912d-490a-a0b5-ea056273e418.js"></script><script type="text/javascript" id="">var BaynoteJSVersion="Version: V1151-03",BaynoteIgnored=!1,BN_READY_SIGNAL="ReadySignal",Strategy={ScriptDOMInject:2,OnLoadInject:3};if("undefined"==typeof baynote_globals)var baynote_globals={};baynote_globals.CommonResourceURL="/baynote/tags3/common";baynote_globals.CommonResourceID="Common";baynote_globals.PolicyResourceID="Policy";baynote_globals.CustomerStatus="/baynote/customerstatus2";baynote_globals.CommonScriptId="commonScriptId";
+baynote_globals.DefaultInjectStrategy="undefined"!=typeof baynote_inject_strategy?baynote_inject_strategy:Strategy.ScriptDOMInject;baynote_globals.ServerTimeout="undefined"!=typeof baynote_server_timeout?baynote_server_timeout:void 0;baynote_globals.UseWindowName="undefined"!=typeof baynote_use_window_name?baynote_use_window_name:!1;baynote_globals.waitForReady=!1;baynote_globals.checkStatus=!1;baynote_globals.keepTrail=!1;baynote_globals.trailLength=5;bnIsOpera=0<=navigator.userAgent.indexOf("Opera");
+bnIsSafari=0<=navigator.userAgent.indexOf("AppleWebKit");bnIsKonqueror=0<=navigator.userAgent.indexOf("Konqueror");bnIsKHTML=bnIsSafari||bnIsKonqueror||0<=navigator.userAgent.indexOf("KHTML");bnIsIE=0<=navigator.userAgent.indexOf("compatible")&&0<=navigator.userAgent.indexOf("MSIE")&&!bnIsOpera;bnIsMozilla=0<=navigator.userAgent.indexOf("Gecko")&&!bnIsKHTML;function BNLog(){this.timeBase=(new Date).getTime();this.lines=[];this.lastLine="";this.repCount=0}
+BNLog.prototype.log=function(a){if(a==this.lastLine)++this.repCount;else{0<this.repCount&&this.lines.push("___ ABOVE REPEATED "+this.repCount+" TIME"+(1<this.repCount?"S":""));this.lastLine=a;this.repCount=0;var b=(new Date).getTime()-this.timeBase;this.lines.push(b+": "+a)}};BNLog.prototype.toString=function(){0<this.repCount&&(this.lines.push("___ ABOVE REPEATED "+this.repCount+" TIME"+(1<this.repCount?"S":"")),this.lastLine="",this.repCount=0);return this.lines.join("\n")};
+if("undefined"==typeof bnLog)var bnLog=new BNLog;function BNCriticalSectionQueue(){this.waitList={};this.lastId=0}BNCriticalSectionQueue.prototype.issueId=function(){return++this.lastId};BNCriticalSectionQueue.prototype.enqueue=function(a,b){this.waitList[a]=b};BNCriticalSectionQueue.prototype.getWaiter=function(a){return null==a?null:this.waitList[a]};BNCriticalSectionQueue.prototype.firstWaiter=function(){return this.getWaiter(this.nextWaiterKeyAfter(null))};
+BNCriticalSectionQueue.prototype.nextWaiterAfter=function(a){return this.getWaiter(this.nextWaiterKeyAfter(a))};BNCriticalSectionQueue.prototype.nextWaiterKeyAfter=function(a){for(var b in this.waitList)if("object"==typeof this.waitList[b]){if(null==a)return b;a==b&&(a=null)}return null};BNCriticalSectionQueue.prototype.nextPredecessor=function(a,b){for(var c=b;null!=c;c=this.nextWaiterAfter(c.id))if(c.enter||0!=c.number&&(c.number<a.number||c.number==a.number&&c.id<a.id))return c;return null};
+function BNCriticalSection(a){this.csQueue=a;this.debug=1}BNCriticalSection.prototype.enter=function(a){this.enterFunc=a;this.id=this.csQueue.issueId();this.csQueue.enqueue(this.id,this);this.enter=!0;this.number=(new Date).getTime();this.enter=!1;this.attempt(this.csQueue.firstWaiter())};BNCriticalSection.prototype.leave=function(){this.debug&&bnLog.log("LEAVE "+this.id);this.number=0};
+BNCriticalSection.prototype.attempt=function(a){var b=this.csQueue.nextPredecessor(this,a);if(null!=b){this.debug&&bnLog.log("WAIT "+this.id);var c=this;return setTimeout(function(){c.attempt(b)},50)}this.debug&&bnLog.log("ENTER "+this.id);this.enterFunc()};function BNResourceManager(a){this.csQueue=new BNCriticalSectionQueue;this.critSec=null;this.debug=1;this.resources={};this.waiting={};this.onloadInjected=!1;this.strategy="undefined"!=typeof a?a:Strategy.ScriptDOMInject}
+BNResourceManager.prototype.getResource=function(a){return this.resources[a]};BNResourceManager.prototype.loadResource=function(a,b,c,d,f){if("undefined"==typeof this.resources[a]){this.resources[a]=null;var e=new BNCriticalSection(this.csQueue);e.enter(function(){bnResourceManager.inject(a,b,c,e,d,f)})}};
+BNResourceManager.prototype.inject=function(a,b,c,d,f,e){this.critSec=d;this.debug&&bnLog.log("INJECT "+this.critSec.id+" ("+a+")");"undefined"!=typeof c&&"script"!=c&&"img"!=c?bnLog.log("Unexpected resource type to loadResource: "+c):this.defaultInject(a,b,c,f,e)};
+BNResourceManager.prototype.defaultInject=function(a,b,c,d,f){if(!BaynoteIgnored)if(!c||"script"==c)this.strategy!=Strategy.OnLoadInject||a!=baynote_globals.CommonResourceID&&a!=baynote_globals.PolicyResourceID||this.onloadInjected?this.injectHandler(a,b,d,f):(c=function(){bnResourceManager.injectHandler(a,b,d,f)},window.addEventListener?window.addEventListener("load",c,!1):window.attachEvent?window.attachEvent("onload",c):window.onload=c,this.onloadInjected=!0);else if("img"==c){var e=document.createElement("IMG");
+c=function(){bnResourceManager.registerAndAddResource(a,e)};e.addEventListener?e.addEventListener("load",c,!1):e.attachEvent?e.attachEvent("onload",c):e.onload=c;e.src=b;e.style.display="none";c=document.getElementsByTagName("body");var g=c[0];setTimeout(function(){null!=g&&g.appendChild(e)},5)}};
+BNResourceManager.prototype.injectHandler=function(a,b,c,d,f){if(!this.resources[a])if("undefined"!=typeof f)f.src="","function"==typeof d&&d(),BaynoteIgnored=!0,bnLog.log("FATAL: Treating Baynote as down. Resource '"+a+"' took more than "+c+" mSec");else{var e=document.createElement("script");setTimeout(function(){var a=document.getElementsByTagName("head");e.language="javascript";e.src=b;a[0].appendChild(e)},50);if(void 0===c||null===c)c=baynote_globals.ServerTimeout;"undefined"!=typeof c&&setTimeout(function(){bnResourceManager.injectHandler(a,
+b,c,d,e)},c)}};BNResourceManager.prototype.waitForResource=function(a,b,c,d,f,e){with(this)if(getResource(a))this.runCallback(b);else{"undefined"==typeof waiting[a]&&(waiting[a]=[]);var g=waiting[a];g[g.length]=b;c&&this.loadResource(a,c,d,f,e)}};BNResourceManager.prototype.wakeUpWaiting=function(a){with(this){var b=waiting[a];if(!b)return;for(var c=0;c<b.length;c++)if(b[c]){var d=b[c];b[c]=null;this.debug&&d&&bnLog.log("CALLBACK "+a+": "+d);this.runCallback(d)}}};
+BNResourceManager.prototype.registerAndAddResource=function(a,b){this.debug&&bnLog.log("REGISTER "+(this.critSec?this.critSec.id:"")+" ("+a+")");this.resources[a]=b;this.wakeUpWaiting(a);this.critSec&&this.critSec.leave();setTimeout("bnResourceManager.wakeUpWaiting('"+a+"')",5E3)};BNResourceManager.prototype.registerResource=function(a){this.registerAndAddResource(a,!0)};BNResourceManager.prototype.removeResource=function(a){this.resources[a]=null;delete this.resources[a]};
+BNResourceManager.prototype.runCallback=function(a){"function"==typeof a?a():alert("Invalid callback, type\x3d"+typeof a)};if("undefined"==typeof bnResourceManager)var bnResourceManager=new BNResourceManager(baynote_globals.DefaultInjectStrategy);function BNSystem(){this.testServer=null}BNSystem.prototype.getCookieValue=function(a,b){b||(b=baynote_globals.cookieSubDomain);b&&(a+="-"+b);var c="(?:; )?"+a+"\x3d([^;]*);?";c=new RegExp(c);return c.test(document.cookie)?decodeURIComponent(RegExp.$1):null};
+BNSystem.prototype.setCookie=function(a,b,c,d,f,e){b=encodeURIComponent(b);"NEVER"==d?(d=new Date,d.setFullYear(d.getFullYear()+500),d=d.toGMTString()):"SESSION"==d&&(d="");""!=c&&(c=";Path\x3d"+c);""!=d&&(d=";expires\x3d"+d);f||(f=baynote_globals.cookieDomain?baynote_globals.cookieDomain:"");""!=f&&(f=";domain\x3d"+f);e||(e=baynote_globals.cookieSubDomain);e&&(a+="-"+e);a=a+"\x3d"+b+d+c+f;if(4096<a.length)return!1;document.cookie=a;return!0};
+BNSystem.prototype.removeCookie=function(a,b){this.setCookie(a,"","/","Mon, 1 Jan 1990 00:00:00",b)};BNSystem.prototype.getURLParam=function(a,b){b||(b=window.location.href);var c=new RegExp("[\\?\x26]"+a+"\x3d([^\x26#]*)");return(c=c.exec(b))?c[1]:null};BNSystem.prototype.getTestServer=function(){if(null!=this.testServer)return this.testServer;var a=this.getCookieValue("bn_test");a||(a="");return this.testServer=a};if("undefined"==typeof bnSystem)var bnSystem=new BNSystem;
+function BNTag(a){a?(this.id=a.id+1,this.server=a.server,this.customerId=a.customerId,this.code=a.code):this.id=0;this.attrs={};this.docAttrs={};this.css={}}BNTag.prototype.getCommonResourceId=function(){return baynote_globals.CommonResourceID};BNTag.prototype.getCommonResourceAddress=function(a){var b="?",c;for(c in a)"server"!=c&&(b+=c+"\x3d"+encodeURIComponent(a[c])+"\x26");a=b.substring(0,b.length-1);return a=this.server+baynote_globals.CommonResourceURL+a};
+BNTag.prototype.getFailsafeResourceId=function(){return"Failsafe"};BNTag.prototype.getFailsafeResourceAddress=function(){var a=BaynoteJSVersion.split(" ")[1],b=bnSystem.getCookieValue("bn_u");return this.server+baynote_globals.CustomerStatus+"?customerId\x3d"+this.customerId+"\x26code\x3d"+this.code+"\x26v\x3d"+a+"\x26u\x3d"+b};BNTag.prototype.getParam=function(a,b){var c=this[a];return"undefined"==typeof c||null==c?b:c};if("undefined"==typeof baynote_tag){window.bn_tags=[];var baynote_tag=new BNTag(null)}
+function bnReadySignal(){bnResourceManager.registerResource(BN_READY_SIGNAL)}function bnCall(a,b,c){var d=bnResourceManager.getResource(a);if(!d)bnResourceManager.waitForResource(a,function(){bnCall(a,b,c)});else if("object"==typeof d){var f=d[b];"function"==typeof f&&f.call(d,c)}}
+function bnWaitForCustomerStatus(a){if(bnCheckCustomerStatus())bnResourceManager.runCallback(a);else{var b=baynote_tag.getFailsafeResourceId();bnResourceManager.waitForResource(b,function(){bnWaitForCustomerStatus(a)},baynote_tag.getFailsafeResourceAddress(),"img")}}function bnCheckCustomerStatus(){var a=baynote_tag.getFailsafeResourceId();return bnResourceManager.getResource(a)?!0:!1}
+var BaynoteAPI={getURLParam:function(a,b){return bnSystem.getURLParam(a,b)},init:function(a){if(a&&a.server&&a.customerId&&a.code){a.timeout||(a.timeout=baynote_globals.ServerTimeout);a.onFailure||(a.onFailure=baynote_globals.onFailure);var b=bnSystem.getTestServer();if(b){var c=/^https?:\/\/[^/]*\.baynote\.(com|net):?\d*(\/.*)?$/;c.test(b)?a.server=b:bnLog.log('Ignoring invalid test server "'+b+'"')}a.server&&(baynote_tag.server=a.server);a.customerId&&(baynote_tag.customerId=a.customerId);a.code&&
+(baynote_tag.code=a.code);b=baynote_tag.getCommonResourceId();bnResourceManager.getResource(b)?BaynoteIgnored||bnCommon.completePreload(a):bnResourceManager.waitForResource(b,function(){BaynoteAPI.init(a)},baynote_tag.getCommonResourceAddress(a),"script",a.timeout,a.onFailure)}else bnLog.log("ERROR: init called with insufficient arguments - needs server, customerId, code")},execute:function(a,b){var c=baynote_tag.getCommonResourceId();"undefined"==typeof bnResourceManager.getResource(c)?bnLog.log("WARN: common not loaded - exiting execute; consider calling init first"):
+"undefined"==typeof bnCommon?bnResourceManager.waitForResource(c,function(){BaynoteAPI.execute(a,b)}):bnCommon.waitAndExecute(a,b)},executeAll:function(a){var b=baynote_tag.getCommonResourceId();"undefined"==typeof bnResourceManager.getResource(b)?bnLog.log("WARN: common not loaded - exiting executeAll; consider calling init first"):"undefined"==typeof bnCommon?bnResourceManager.waitForResource(b,function(){BaynoteAPI.executeAll(a)}):bnCommon.waitAndExecuteAll(a)},call:function(a,b,c,d){var f=baynote_tag.getCommonResourceId();
+"undefined"==typeof bnResourceManager.getResource(f)?bnLog.log("WARN: common not loaded - exiting call; consider calling init first"):"undefined"==typeof bnCommon?bnResourceManager.waitForResource(f,function(){BaynoteAPI.call(a,b,c,d)}):bnCommon.finishCall(a,b,c,d)},isBaynoteIgnored:function(){return BaynoteIgnored},getCookieDomain:function(){var a=window.location.href,b=a.indexOf("//");a=a.substring(b+2);b=a.indexOf("/");a=0>b?a:a.substring(0,b);b=a.indexOf(".");a=a.substring(b+1);a;return a}};
+baynote_globals.cookieDomain=BaynoteAPI.getCookieDomain();var preLoadObj={},bn_locHref=window.location.href;0==bn_locHref.indexOf("https://")?preLoadObj.server="https://springer-www.baynote.net":preLoadObj.server="http://springer-www.baynote.net";preLoadObj.customerId="springer";preLoadObj.code="www";BaynoteAPI.init(preLoadObj);("undefined"==typeof baynoteObserver||"boolean"!=typeof baynoteObserver||baynoteObserver)&&BaynoteAPI.execute("observer");
+("undefined"==typeof baynoteGuide||"boolean"!=typeof baynoteGuide||baynoteGuide)&&BaynoteAPI.execute("recommendation");"undefined"==typeof baynoteDisableAjax||"boolean"!=typeof baynoteDisableAjax||baynoteDisableAjax||BaynoteAPI.execute("ajax");</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","248706079052512");fbq("set","agent","tmgoogletagmanager","248706079052512");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=248706079052512&amp;ev=PageView&amp;noscript=1"></noscript>
+<script type="text/javascript" id="">var shopToken;var japanese=false;if(location.hostname.indexOf("qa")>-1)switch("es".toUpperCase()){case "GB":shopToken="3a95868f894c";break;case "US":shopToken="ef3099bda7bf";break;case "JP":shopToken="97ae876be7fc";japanese=true;break;default:shopToken="857c46f55b74"}else switch("es".toUpperCase()){case "GB":shopToken="d4acfa47ffaa";break;case "US":shopToken="43e542fc44a5";break;case "JP":shopToken="8db6f731b08c";japanese=true;break;default:shopToken="29332a9a968f"}
+(function(p,r,e,d,i,c,t){p["Akanoo"]=i;p[i]=p[i]||function(){(p[i].c=p[i].c||[]).push(arguments)},p[i].l=1*new Date;c=r.createElement(e),t=r.getElementsByTagName(e)[0];c.async=1;c.src="https://cdn.akanoo.com/t/"+d+".js";t.parentNode.insertBefore(c,t)})(window,document,"script",shopToken,"at");var screenType;
+if("\/gp\/python"==="/checkout/welcome")screenType="account";else if("\/gp\/python"==="/checkout/address")screenType="shipping";else if("\/gp\/python"==="/checkout/placeOrder")screenType="billing";else if("\/gp\/python"==="/checkout/payment")screenType="payment";else if("undefined"==="cart")screenType="basket";else if("www.apress.com"==="login.apress.com")screenType="account";else if("undefined"==="profile")screenType="account";else if("\/gp\/python"===
+"/public/profile/bookshelf")screenType="account";else if(google_tag_manager["GTM-M48LJF"].macro(52))screenType="undefined";else screenType="overview";at("type",screenType);if(google_tag_manager["GTM-M48LJF"].macro(53))at("user","status","[object Object]");if(google_tag_manager["GTM-M48LJF"].macro(54))at("user","id",google_tag_manager["GTM-M48LJF"].macro(55));at("product","isbn","undefined");at("product","eisbn","N\/A");if(localStorage.getItem("hasJournalInBasket"))at("user","flag","hasJournalInBasket");
+if(screenType==="basket"){localStorage.removeItem("hasJournalInBasket");google_tag_manager["GTM-M48LJF"].macro(56).checkout.products.forEach(function(v){if(v.variant==="journal")at("user","flag","hasJournalInBasket");at("updateItem",v.id,v.quantity)})}if(google_tag_manager["GTM-M48LJF"].macro(57))at("category","undefined");if(google_tag_manager["GTM-M48LJF"].macro(58).indexOf("token\x3d")>-1)localStorage["has_voucher"]="1";if(localStorage["has_voucher"])at("incentive","1");
+at("bind","target",function(event){if(event.group==="1")dataLayer.push({"event":"Akanoo","akanoo-event-type":event.type,"akanoo-event-campaign":event.campaign})});at("bind","display",function(event){dataLayer.push({"event":"Akanoo","akanoo-event-type":event.type,"akanoo-event-campaign":event.campaign})});at("bind","confirm",function(event){dataLayer.push({"event":"Akanoo","akanoo-event-type":event.type,"akanoo-event-campaign":event.campaign})});
+at("bind","abort",function(event){dataLayer.push({"event":"Akanoo","akanoo-event-type":event.type,"akanoo-event-campaign":event.campaign})});at("send");</script>
+<script type="text/javascript" id="">(function(){try{if(0<=window.location.pathname.search("/book/978")){var c=[],e=dataLayer[0].ecommerce.detail.products;for(a=0;a<e.length;a++)c.push(e[a].id.replace(/-/g,""));dataLayer.push({event:"fireRemarketingTag",google_tag_params:{ecomm_prodid:c,ecomm_pagetype:"product"}})}else if(0<=window.location.pathname.search("/checkout/cart")){var b=google_tag_manager["GTM-M48LJF"].macro(63);dataLayerProductCnt=b.length;c=[];for(var d=0,a=0;a<dataLayerProductCnt;a++)"ppv"!==b[a].productType&&(c.push(b[a].productId.replace(/-/g,
+"")),d+=Number(b[a].productGrossAmount)*Number(b[a].productQuantity));dataLayer.push({event:"fireRemarketingTag",google_tag_params:{ecomm_prodid:c,ecomm_pagetype:google_tag_manager["GTM-M48LJF"].macro(64),ecomm_totalvalue:d}})}else if(0<=window.location.pathname.search("/checkout/thankYou")){b=google_tag_manager["GTM-M48LJF"].macro(65);dataLayerProductCnt=b.length;c=[];for(a=d=0;a<dataLayerProductCnt;a++)"ppv"!==b[a].productType&&(c.push(b[a].productId.replace(/-/g,"")),d+=Number(b[a].productGrossAmount)*Number(b[a].productQuantity));dataLayer.push({event:"fireRemarketingTag",
+google_tag_params:{ecomm_prodid:c,ecomm_pagetype:"Purchase",ecomm_totalvalue:d}})}}catch(f){}})();</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1751570271830302");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1751570271830302&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="" src="https://s.marvellousmachine.net/"></script><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.4398167191236846"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.003029775768595533" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=5011997&amp;Ver=2&amp;mid=9beb8f9b-aabe-25dd-d46f-50969542e9ba&amp;pi=0&amp;lg=en-US&amp;sw=1920&amp;sh=1080&amp;sc=24&amp;tl=Python%20Books%20%26%20eBooks%20%7C%20Apress&amp;p=https%3A%2F%2Fwww.apress.com%2Fgp%2Fpython&amp;r=&amp;lt=7538&amp;evt=pageLoad&amp;msclkid=N&amp;rn=615468"></div><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-469cf41adb11dc78be68c1ae7f9457a4.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
+
+<script type="text/javascript" id="">function OptanonWrapper(){};</script>
+
+</body></html>

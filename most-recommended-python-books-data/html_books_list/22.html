@@ -1,0 +1,1342 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Serious Python — A book on advanced Python development</title>
+    <link rel="icon" type="image/png" href="img/serious-python.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The book that teaches you how to write
+                                      state of the art Python applications.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@juldanjou">
+    <meta name="twitter:title" content="Serious Python">
+    <meta name="twitter:description" content="The book that teaches you how to
+                                              write state of the art Python applications.">
+    <meta name="twitter:image" content="https://serious-python.com/img/serious-python.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/stack-interface.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/iconsmind.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/theme-serpy.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/custom.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://js.driftt.com/include/1582991700000/sb3ggficm2fb.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-25393581-3', 'auto', {'allowLinker': true});
+ga('send', 'pageview');
+    </script>
+  <script src="https://assets.gumroad.com/assets/gumroad-overlay-ae4c986d063996b850a594099261362ed5933ef0ed1eacc386d510ec340c34c9.js"></script><script async="" src="https://static.hotjar.com/c/hotjar-833407.js?sv=6"></script><script src="https://cdn.convertkit.com/assets/CKJS4.js?v=21" id="_ck_js_tag"></script><script charset="utf-8" src="https://platform.twitter.com/js/moment~timeline~tweet.67dc174b757b0258b54544be2c7b1fe0.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/tweet.20efc6472c99ea54fc0ebc8ec0a9e5c5.js"></script><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1011816067/?random=1582991640352&amp;cv=9&amp;fst=1582991640352&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1080&amp;u_aw=1920&amp;u_cd=24&amp;u_his=2&amp;u_tz=0&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;gtm=2oa2j0&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fserious-python.com%2F&amp;tiba=Serious%20Python%20%E2%80%94%20A%20book%20on%20advanced%20Python%20development&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><script async="" src="https://script.hotjar.com/modules.e483a7fd5848d79df4ee.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><style type="text/css">a.gumroad-button { background-color: white !important; background-image: url("https://gumroad.com/button/button_bar.jpg") !important; background-repeat: repeat-x !important; border-radius: 4px !important; box-shadow: rgba(0, 0, 0, .4) 0 0 2px !important; color: #999 !important; display: inline-block !important; font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif !important; font-size: 16px !important; font-style: normal !important; font-weight: 500 !important; line-height: 50px !important; padding: 0 15px !important; text-shadow: none !important; text-decoration: none !important; } .gumroad-button-logo { background-image: url("https://gumroad.com/button/button_logo.png") !important; background-size: cover !important; height: 17px !important; width: 16px !important; display: inline-block !important; margin-bottom: -3px !important; margin-right: 15px !important; } .gumroad-loading-indicator { background: white; border-radius: 50%; box-shadow: 0 1px 2px rgba(0, 0, 0, .1); box-sizing: border-box; display: none; height: 60px; left: 50% !important; margin-left: -30px !important; margin-top: -30px !important; padding: 10px; position: fixed; top: 50% !important; width: 60px; z-index: 99997; } .gumroad-loading-indicator i { background: url("https://gumroad.com/js/loading-rainbow.svg"); height: 40px; width: 40px; display: inline-block; background-size: contain; animation: gumroad-spin 1.5s infinite linear; } .gumroad-overlay-iframe { position: fixed !important; overflow: hidden !important; z-index: 99998 !important; top: 0 !important; right: 0 !important; width: 0; height: 0; border: none !important; margin: 0 !important; padding: 0 !important; zoom: 1; } @keyframes gumroad-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(359deg); } } </style></head>
+  <body class=" " style="">
+    <a id="start"></a>
+    <nav id="menu-bar" class="sticky-top bar bar--sm bar-1 bg--dark hidden-xs ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-1 col-md-2 hidden-xs">
+            <div class="bar__module">
+              <a class="inner-link" href="#start">
+                <img class="logo logo-dark" alt="logo" src="img/serpy-logo.png">
+                <img class="logo logo-light" alt="logo" src="img/serpy-logo.png">
+              </a>
+            </div>
+            <!--end module-->
+          </div>
+          <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+            <div class="bar__module">
+              <ul class="menu-horizontal text-left">
+                <li>
+                  <a class="inner-link" href="#toc">Table of Contents</a>
+                </li>
+                <li>
+                  <a class="inner-link" href="#experts">Experts List</a>
+                </li>
+                <li>
+                  <a class="inner-link" href="#testimonials">
+                    Testimonials
+                  </a>
+                </li>
+                <li>
+                  <a class="inner-link" href="#faq">
+                    FAQ
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--end module-->
+            <div class="bar__module">
+              <a class="btn btn--sm type--uppercase inner-link" href="#sample-chapter">
+                <span class="btn__text">
+                  Get the sample chapter
+                </span>
+              </a>
+              <a class="btn btn--sm btn--primary type--uppercase inner-link" href="#packages">
+                <span class="btn__text">
+                  Buy Now
+                </span>
+              </a>
+            </div>
+            <!--end module-->
+          </div>
+        </div>
+        <!--end of row-->
+      </div>
+      <!--end of container-->
+    </nav>
+    <div class="main-container">
+      <section class="text-center cta cta-3 bg--dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="switchable__text">
+                <h1>My easy button to master Python</h1>
+                <p class="lead">
+                  </p><blockquote>“I will recommend this to fellow devs who wish to
+                    take their Python skills to next level. Thanks a lot Julien.”
+                    — Smital Desai</blockquote>
+                <p></p>
+                <br>
+                <a class="btn btn--primary type--uppercase inner-link" href="#packages">
+                  <span class="btn__text">
+                    Buy Now
+                  </span>
+                </a>
+                <a class="btn type--uppercase inner-link" href="#sample-chapter">
+                  <span class="btn__text">
+                    Get the sample chapter
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="offset-md-1 col-md-5">
+              <img alt="Image" class="block" src="img/serious-python.png" style="width: 100%;">
+            <!--
+          </div-->
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </div></div></section>
+      <section class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-8">
+              <p class="lead">
+                You have to put in the sweat, blood, and tears to become a jedi
+                of Python. Maybe you think: <em>If you skip the mistakes that
+                others have made means you’re not good enough to write
+                efficient code. It means you’re not worthy</em>.
+              </p>
+              <h1>Wrong.</h1>
+              <br>
+              <h2>It just means everyone else knows a secret you don’t.</h2>
+              <br>
+              <p class="lead">
+                When they write code, they’re following specific battle-tested
+                strategies and methods to leapfrog over mistakes. They get
+                faster code with fewer errors.
+              </p>
+              <p class="lead">
+                You can, too.
+              </p>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+      <section class="text-center ">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-10">
+              <div class="slider" data-paging="true" data-children="3">
+                <div class="testimonial">
+                  <blockquote>
+                    “First advanced book on architecture about Python project
+                    that is clear, clever, and easy to read :)”
+                  </blockquote>
+                  <h5>rkadeFR</h5>
+                  <span>Amazon review<br>⭐⭐⭐⭐⭐</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+      <section class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-8">
+              <h2>
+                After I spent years working every day in Python, I compiled my best lessons into an ebook.
+              </h2>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+
+      <a id="sample-chapter"></a>
+      <section class=" bg--secondary imageblock feature-large">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6">
+              <h2><i class="icon icon--sm icon-Arrow-Right" style="vertical-align: middle;"></i> Get the sample chapter</h2>
+              <p class="lead">
+                Get the table of contents and a free chapter of the book. I
+                promise that you’ll get an instantly actionable tip. Or I’ll
+                make up for it by giving you a free 15-min “pick my brain”
+                consult.
+              </p>
+              <div><div class="ck_form_container ck_inline" data-ck-version="7">
+  <div class="ck_form ck_naked ck_vertical width500">
+  <div class="ck_form_fields">
+    <div id="ck_success_msg" style="display:none;">
+      <p>Success! Check your inbox for your free chapter.</p>
+    </div>
+
+    <!--  Form starts here  -->
+    <form id="ck_subscribe_form" class="ck_subscribe_form" action="https://forms.convertkit.com/landing_pages/452046/subscribe" data-remote="true">
+      <input type="hidden" value="{&quot;form_style&quot;:&quot;naked&quot;,&quot;embed_style&quot;:&quot;inline&quot;,&quot;embed_trigger&quot;:&quot;scroll_percentage&quot;,&quot;scroll_percentage&quot;:&quot;70&quot;,&quot;delay_seconds&quot;:&quot;10&quot;,&quot;display_position&quot;:&quot;br&quot;,&quot;display_devices&quot;:&quot;all&quot;,&quot;days_no_show&quot;:&quot;15&quot;,&quot;converted_behavior&quot;:&quot;show&quot;}" id="ck_form_options">
+      <input type="hidden" name="id" value="452046" id="landing_page_id">
+      <input type="hidden" name="ck_form_recaptcha" value="" id="ck_form_recaptcha">
+      <div class="ck_errorArea">
+        <div id="ck_error_msg" style="display:none">
+          <p>There was an error submitting your subscription. Please try again.</p>
+        </div>
+      </div>
+      <div class="ck_control_group ck_email_field_group">
+        <label class="ck_label" for="ck_emailField" style="display: none">Email Address</label>
+        <input type="text" name="first_name" class="ck_first_name" id="ck_firstNameField" placeholder="First Name">
+        <input type="email" name="email" class="ck_email_address" id="ck_emailField" placeholder="Email Address" required="">
+      </div>
+      <div class="ck_control_group ck_captcha2_h_field_group ck-captcha2-h" style="position: absolute !important;left: -999em !important;">
+        <input type="text" name="captcha2_h" class="ck-captcha2-h" id="ck_captcha2_h" placeholder="We use this field to detect spam bots. If you fill this in, you will be marked as a spammer.">
+      </div>
+
+
+      <button class="subscribe_button ck_subscribe_button btn fields" id="ck_subscribe_button">
+        Get the chapter
+      </button>
+    </form>
+  </div>
+
+</div>
+
+</div>
+
+
+<style type="text/css">/* Layout */
+  .ck_form.ck_naked {
+  /* divider image */
+	background: transparent;
+	line-height: 1.5em;
+	overflow: hidden;
+	color: #666;
+	font-size: 16px;
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	clear: both;
+	margin: 20px 0px;
+	text-align: center;
+}
+
+.ck_form.ck_naked p {
+	padding: 0px;
+}
+
+.ck_form, .ck_form * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ck_form.ck_naked .ck_form_fields {
+	width: 100%;
+	float: left;
+	padding: 5%;
+}
+/* Form fields */
+
+.ck_errorArea {
+	display: none; /* temporary */
+}
+
+#ck_success_msg {
+	padding: 10px 10px 0px;
+	border: solid 1px #ddd;
+	background: #eee;
+}
+
+.ck_form.ck_naked input[type="text"], .ck_form.ck_naked input[type="email"] {
+	font-size: 18px;
+	padding: 10px 8px;
+	width: 34%;
+	border: 1px solid #d6d6d6; /* stroke */
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px; /* border radius */
+	background-color: #fff; /* layer fill content */
+	margin-bottom: 5px;
+	height: auto;
+	float: left;
+	margin: 0px;
+	margin-right: 1%;
+	height: 42px;
+}
+
+.ck_form input[type="text"]:focus, .ck_form input[type="email"]:focus {
+	outline: none;
+	border-color: #aaa;
+}
+
+.ck_form.ck_naked .ck_subscribe_button {
+    width: 100%;
+    color: #fff;
+    margin: 0px;
+    padding:  9px 0px;
+    font-size: 18px;
+    background: #235b8c;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px; /* border radius */
+    cursor: pointer;
+    border: none;
+    text-shadow: none;
+    width: 30%;
+    float: left;
+    height: 42px;
+  }
+
+
+.ck_converted_content {
+  display: none;
+	padding: 5%;
+	background: #fff;
+}
+
+/* max width 500 */
+
+	.ck_form.ck_naked.width500 .ck_subscribe_button {
+		width: 100%;
+		float: none;
+		margin-top: 5px;
+	}
+
+	.ck_form.ck_naked.width500 input[type="text"], .ck_form.ck_naked.width500 input[type="email"] {
+		width: 49%;
+	}
+
+	.ck_form.ck_naked.width500 input[type="email"] {
+		margin-right: 0px;
+		width: 50%;
+	}
+
+/* max width 400 */
+
+	.ck_form.ck_naked.width400 .ck_subscribe_button, .ck_form.ck_naked.width400 input[type="text"], .ck_form.ck_naked.width400 input[type="email"] {
+		width: 100%;
+		float: none;
+		margin-top: 5px;
+	}
+
+.ck_slide_up, .ck_modal, .ck_slide_up .ck_naked, .ck_modal .ck_naked  {
+	min-width: 400px;
+}
+
+.page .ck_form.ck_naked {
+	margin: 50px auto;
+	max-width: 700px;
+}
+
+
+/* v6 */
+
+.ck_slide_up.ck_form_v6, .ck_modal.ck_form_v6, .ck_slide_up.ck_form_v6 .ck_naked, .ck_modal.ck_form_v6 .ck_naked {
+  min-width: 0 !important;
+}
+
+.ck_form_v6 #ck_success_msg {
+	padding: 0px 10px;
+}
+
+@media all and (max-width: 403px) {
+  .ck_form_v6.ck_modal .ck_naked {
+    padding-top: 30px;
+  }
+}
+
+@media all and (max-width: 499px) {
+  .ck_form_v6.ck_modal .ck_naked + .ck_close_link {
+    color: #fff;
+    top: 10px;
+  }
+}
+
+.ck_form_v6.ck_slide_up .ck_naked + .ck_close_link {
+  right: 10px;
+  top: -5px;
+}
+
+@media all and (min-width: 600px) {
+  .ck_form_v6.ck_slide_up .ck_naked + .ck_close_link {
+    right: 35px;
+  }
+}
+
+
+
+.ck_form.ck_naked .ck_subscribe_button {
+  padding-top: 5px;
+}
+
+</style>
+</div><script async="" src="https://forms.convertkit.com/452046?v=7" id="_ck_452046"></script>
+              <!--end of feature group-->
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+        <div class="imageblock__content col-md-4 col-sm-3 pos-right">
+          <div class="background-image-holder" style="background: url(&quot;img/scapy-ipad.jpg&quot;); opacity: 1;">
+            <img alt="image" src="img/scapy-ipad.jpg">
+          </div>
+        </div>
+      </section>
+
+
+      <section class="text-center ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-8">
+              <h1>"How can this book help me?"</h1>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+      <section class="text-center ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="feature feature-3 boxed boxed--lg boxed--border">
+                <i class="icon icon--lg icon-Medal-2"></i>
+                <h4>Best Practice</h4>
+                <p>
+                  Methods &amp; advice you should follow when writing your code and
+                  designing applications. These will help you get the most out
+                  of Python, and build future-proof programs. If you're already
+                  working on something, you'll be able to apply the techniques
+                  discussed right away to improve your current code.
+                </p>
+              </div>
+              <!--end feature-->
+            </div>
+            <div class="col-md-4">
+              <div class="feature feature-3 boxed boxed--lg boxed--border">
+                <i class="icon icon--lg icon-Snorkel"></i>
+                <h4>Deep Down Diving</h4>
+                <p>
+                  You will get introduced to some of the Python internals to
+                  get a better understanding of how to write efficient code.
+                  You will gain a greater insight into the inner workings of
+                  the language. You will be unbeatable about how Python works
+                  deep down.
+                </p>
+              </div>
+              <!--end feature-->
+            </div>
+            <div class="col-md-4">
+              <div class="feature feature-3 boxed boxed--lg boxed--border">
+                <i class="icon icon--lg icon-Drill"></i>
+                <h4>Solving Problems</h4>
+                <p>
+                  Battle-tested solutions to tackle problems such as testing,
+                  porting, or scaling Python code, applications and libraries.
+                  You will avoid making the mistakes that others have made,
+                  saving you time. You'll discover strategies that will help
+                  you maintain your software in the long run.
+                </p>
+              </div>
+              <!--end feature-->
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+      <section class="text-center ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-8">
+              <h1>When you develop a Python application, there are <b>hundreds
+                  of problems to solve</b></h1>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+      <section class="text-center ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="feature boxed boxed--border border--round">
+                <i class="icon--lg icon-Boom"></i>
+                <span class="h5 color--primary">Testing</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="feature boxed boxed--border border--round">
+                <i class="icon--lg icon-Empty-Box"></i>
+                <span class="h5 color--primary">Packaging</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="feature boxed boxed--border border--round">
+                <i class="icon--lg icon-Gentleman"></i>
+                <span class="h5 color--primary">Code style</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="feature boxed boxed--border border--round">
+                <i class="icon--lg icon-Books"></i>
+                <span class="h5 color--primary">Libraries</span>
+              </div>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="feature boxed boxed--border border--round">
+                <i class="icon--lg icon-Big-Data"></i>
+                <span class="h5 color--primary">Database management</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="feature boxed boxed--border border--round">
+                <i class="icon--lg icon-Plug-In"></i>
+                <span class="h5 color--primary">Dynamic code plug-in</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="feature boxed boxed--border border--round">
+                <i class="icon--lg icon-Folder-WithDocument"></i>
+                <span class="h5 color--primary">Documentation</span>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="feature boxed boxed--border border--round">
+                <i class="icon--lg icon-Bodybuilding"></i>
+                <span class="h5 color--primary">Performance</span>
+              </div>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+
+      <section class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-8">
+              <h1>This book offers <b>shortcuts</b>:</h1>
+              <br>
+              <p>
+                <img src="img/learning-curve.png">
+              </p>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+      </section>
+
+      <a id="toc"></a>
+      <section class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-8">
+              <h1>Here's what it includes:</h1>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+      </section>
+
+      <section>
+        <!--end of container-->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="text-block">
+                <h3>Starting your project</h3>
+                <h5>Versions of Python</h5>
+                <h5>Laying Out Your Project</h5>
+                <h5>Version Numbering</h5>
+                <h5>Coding Style &amp; Automated Checks</h5>
+              </div>
+              <div class="text-block">
+                <h3>Modules, Libraries and Frameworks</h3>
+                <h5>The Import System</h5>
+                <h5>Useful Standard libraries</h5>
+                <h5>External libraries</h5>
+                <h5>Package Installation: Getting More From pip</h5>
+                <h5>Using and Choosing Frameworks</h5>
+              </div>
+              <div class="text-block">
+                <h3>Documentation and Good API Practice</h3>
+                <h5>Documenting with Sphinx</h5>
+                <h5>Getting started with Sphinx and reST</h5>
+                <h5>Sphinx modules</h5>
+                <h5>Automating the Table of Contents with autosummary</h5>
+                <h5>Automating Testing with doctest</h5>
+                <h5>Writing a Sphinx Extension</h5>
+                <h5>Managing Changes to Your API</h5>
+              </div>
+              <div class="text-block">
+                <h3>Handling Timestamps and Time Zones</h3>
+                <h5>The Problem of Missing Time Zones</h5>
+                <h5>Building Default datetime Objects</h5>
+                <h5>Time Zone-Aware Timestamps with dateutil</h5>
+                <h5>Serializing datetime Objects</h5>
+                <h5>Solving Ambiguous Times</h5>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="text-block">
+                <h3>Distributing Your Software</h3>
+                <h5>A Bit of History</h5>
+                <h5>Packaging with setup.cfg</h5>
+                <h5>The Wheel Format Distribution Standard</h5>
+                <h5>Sharing Your Work with the World</h5>
+                <h5>Entry points</h5>
+              </div>
+              <div class="text-block">
+                <h3>Unit Testing</h3>
+                <h5>The Basics of Testing</h5>
+                <h5>Virtual Environments</h5>
+                <h5>Using virtualenv with tox</h5>
+              </div>
+              <div class="text-block">
+                <h3>Methods and Decorators</h3>
+                <h5>Decorators and When to Use Them</h5>
+                <h5>How Methods Work in Python</h5>
+                <h5>Static methods</h5>
+                <h5>Class method</h5>
+                <h5>Abstract methods</h5>
+                <h5>Mixing Static, Class, and Abstract Methods</h5>
+                <h5>The Truth About super</h5>
+              </div>
+              <div class="text-block">
+                <h3>Functional Programming</h3>
+                <h5>Creating Pure Functions</h5>
+                <h5>Generators</h5>
+                <h5>List comprehensions</h5>
+                <h5>Functional Functions Functioning</h5>
+                <h5>Using itertools Functions</h5>
+              </div>
+              <div class="text-block">
+                <h3>The Abstract Syntax Tree, Hy, And Lisp-Like Attributes</h3>
+                <h5>Looking at the AST</h5>
+                <h5>Writing a Program Using the AST</h5>
+                <h5>Extending flake8 with AST checks</h5>
+                <h5>A Quick Introduction to Hy</h5>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="text-block">
+                <h3>Performances and Optimizations</h3>
+                <h5>Data Structures</h5>
+                <h5>Understanding Behavior Through Profiling</h5>
+                <h5>Definiting Functions Efficiently</h5>
+                <h5>Ordered Lists and Bisect</h5>
+                <h5>Namedtuple and Slots</h5>
+                <h5>Memoization</h5>
+                <h5>Faster Python with PyPy</h5>
+                <h5>Achieving Zero Copy with the Buffer Protocol</h5>
+              </div>
+              <div class="text-block">
+                <h3>Scaling and Architecture</h3>
+                <h5>Multithreading in Python and Its Limitations</h5>
+                <h5>Multiprocessing vs. Multithreading</h5>
+                <h5>Event-Driven Architecture</h5>
+                <h5>Other Options and asyncio</h5>
+                <h5>Service-Oriented Architecture</h5>
+                <h5>Interprocess Communication with ZeroMQ</h5>
+              </div>
+              <div class="text-block">
+                <h3>Managing Relational Databases</h3>
+                <h5>RDBMS, ORMs, and When to Use Them</h5>
+                <h5>Database Backends</h5>
+                <h5>Streaming data with Flask and PostgreSQL</h5>
+              </div>
+              <div class="text-block">
+                <h3>Write Less, Code More</h3>
+                <h5>Using Six for Python&nbsp;2 and 3 Support</h5>
+                <h5>Using Python Like Lisp to Make a Single Dispatcher</h5>
+                <h5>Context Managers</h5>
+                <h5>Less Boilerplate with attr</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a id="experts"></a>
+      <section class="text-center bg--secondary">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <h1>Learn Straight From the Experts</h1>
+              <p class="lead">
+                <em>Serious Python</em> includes <strong>eight
+                  interviews from experienced Python developers</strong>. They
+                share their know-how and wisdom on the various themes covered
+                in the book.
+              </p>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+
+      <section class="bg--secondary">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="feature feature-5 boxed boxed--border">
+                <img src="img/dhellmann.png" style="max-width: 100px;">
+                <div class="feature__body">
+                  <h4>Doug Hellmann</h4>
+                  <p>
+                    Doug is an open source programmer, working as a Senior
+                    Principal Software Engineer at Red&nbsp;Hat. He contributes to
+                    OpenStack, the largest open-source project using Python and
+                    wrote several Python books himself.
+                  </p>
+                </div>
+              </div>
+              <!--end feature-->
+            </div>
+            <div class="col-sm-6">
+              <div class="feature feature-5 boxed boxed--border">
+                <img src="img/ncoghlan.png" style="max-width: 100px;">
+                <div class="feature__body">
+                  <h4>Nick Coghlan</h4>
+                  <p>
+                    Nick is a developer of the Python programming language;
+                    he's responsible for various feature that you'll use when
+                    programming with Python!
+                  </p>
+                </div>
+              </div>
+              <!--end feature-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="feature feature-5 boxed boxed--border">
+                <img src="img/cdevienne.png" style="max-width: 100px;">
+                <div class="feature__body">
+
+                  <h4>Christophe de Vienne</h4>
+                  <p>
+                    Christophe is a Python developer, responsible for various
+                    Python libraries and framework. He wrote a lot of very
+                    large Python application and maintained them during several
+                    years.
+                  </p>
+
+                </div>
+              </div>
+              <!--end feature-->
+            </div>
+            <div class="col-sm-6">
+              <div class="feature feature-5 boxed boxed--border">
+                <img src="img/rcollins.png" style="max-width: 100px;">
+                <div class="feature__body">
+                  <h4>Robert Collins</h4>
+                  <p>
+                    Robert is a software engineer that worked on many Python
+                    libraries, especially in the unit and functional testing
+                    domain.
+                  </p>
+                </div>
+              </div>
+              <!--end feature-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="feature feature-5 boxed boxed--border">
+                <img src="img/vstinner.png" style="max-width: 100px;">
+                <div class="feature__body">
+                  <h4>Victor Stinner</h4>
+                  <p>
+                    Victor is a long time CPython developer. He is well known
+                    in the community for working on making CPython faster and
+                    leads several performance-oriented projects. He likes to
+                    talk about optimizations, profiling, and performance when
+                    using Python, and how to make the right decisions.
+                  </p>
+                </div>
+              </div>
+              <!--end feature-->
+            </div>
+            <div class="col-sm-6">
+              <div class="feature feature-5 boxed boxed--border">
+                <img src="img/harlowja.png" style="max-width: 100px;">
+                <div class="feature__body">
+                  <h4>Joshua Harlow</h4>
+                  <p>
+                    Joshua is a highly experienced engineer in distributed
+                    systems, working at GoDaddy. Josh is very knowledgeable on
+                    principles that make Python application resilient and
+                    faults tolerant as he wrote and maintained several of those
+                    over the years.
+                  </p>
+                </div>
+              </div>
+              <!--end feature-->
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-offset-3 col-sm-6">
+              <div class="feature feature-5 boxed boxed--border">
+                <img src="img/dfontaine.png" style="max-width: 100px;">
+                <div class="feature__body">
+                  <h4>Dimitri Fontaine</h4>
+                  <p>
+                    Dimitri is a senior PostgreSQL contributor. He had the
+                    chance to work with a lots of Python developers and has a
+                    few opinions about how you should handle your database.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--end feature-->
+            <div class="col-sm-offset-3 col-sm-6">
+              <div class="feature feature-5 boxed boxed--border">
+                <img src="img/ptagliamonte.png" style="max-width: 100px;">
+                <div class="feature__body">
+                  <h4>Paul Tagliamonte</h4>
+                  <p>
+                    Paul is a open source hacker and the creator of the Hy
+                    programming language, a Lisp inspired dialect of Python.
+                    Paul has a great understanding of the Python interpreter
+                    and its abstract syntax tree.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--end feature-->
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+
+      <section class="imageblock switchable feature-large">
+        <div class="imageblock__content col-md-4 col-sm-4 pos-right">
+          <div class="background-image-holder" style="background: url(&quot;img/jd-background.jpg&quot;); opacity: 1;">
+            <img alt="image" src="img/jd-background.jpg">
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-8 text-justify">
+              <h2>Who's the Author?</h2>
+              <p class="lead">
+                Hi, I'm <a href="https://julien.danjou.info">Julien</a>, a Free
+                Software hacker for close to twenty years now. For more than 12
+                years, I've been developing software using Python.<br>
+                I spent those last years as a Project Team Leader in OpenStack,
+                a distributed cloud platform. It's the largest existing
+                open-source Python code base (2.5 millions of lines of Python).
+                <br>
+                Today, I work at Datadog and runs my own company
+                <a href="https://mergify.io">Mergify</a> — where I write Python
+                code everyday.
+              </p>
+              <br>
+              <div>
+                <img src="img/jd.jpg" style="float: left; width: 80px;
+                     margin-right: 30px;
+                     border-radius: 100px;">
+                <h3>Julien Danjou</h3>
+                <span>Staff Engineer at Datadog / Founder at Mergify</span>
+              </div>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+
+      <a id="testimonials"></a>
+      <section class=" bg--dark text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <h1>"A Must Read"</h1>
+              <p class="lead">
+                The readers of <em>Serious Python</em> (previously named
+                <em>The Hacker's Guide to Python</em>) talk about it better than anyone else.
+              </p>
+              <a class="ba-award" href="https://bookauthority.org/books/best-functional-programming-books?t=unokoc&amp;s=award&amp;book=1593278780" target="_blank" style="margin:20px; outline:0"><img src="https://award.bookauthority.org/best-functional-programming-books.png?b=1593278780&amp;c=1&amp;v=6&amp;w=150" style="width:150px; height:137px; border:0" alt="The best Functional Programming books of all time"></a>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+
+      <section class=" bg--dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="testimonial testimonial-2">
+                <div class="testimonial__body boxed boxed--border
+                            bg--secondary">
+                  <twitter-widget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-0" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;" data-tweet-id="1125796555657830405"></twitter-widget>
+                  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="testimonial testimonial-2">
+                <div class="testimonial__body boxed boxed--border
+                            bg--secondary">
+                  <twitter-widget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-1" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;" data-tweet-id="1126064757809864704"></twitter-widget>
+                  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="testimonial testimonial-2">
+                <div class="testimonial__body boxed boxed--border
+                            bg--secondary">
+                  <twitter-widget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-2" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;" data-tweet-id="1089183792454090752"></twitter-widget>
+                  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="testimonial testimonial-2">
+                <div class="testimonial__body boxed boxed--border
+                     bg--secondary">
+                  <twitter-widget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-3" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;" data-tweet-id="933990863738466304"></twitter-widget>
+                  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="testimonial testimonial-2">
+                <div class="testimonial__body boxed boxed--border
+                            bg--secondary">
+                  <twitter-widget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-4" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;" data-tweet-id="1005781068786659328"></twitter-widget>
+                  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="testimonial testimonial-2">
+                <div class="testimonial__body boxed boxed--border
+                     bg--secondary">
+                  <twitter-widget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-5" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;" data-tweet-id="938302026567553029"></twitter-widget>
+                  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="testimonial testimonial-2">
+                <div class="testimonial__body boxed boxed--border
+                     bg--secondary">
+                  <twitter-widget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-6" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;" data-tweet-id="449192343301021696"></twitter-widget>
+                  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="testimonial testimonial-2">
+                <div class="testimonial__body boxed boxed--border
+                     bg--secondary">
+                  <twitter-widget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-7" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;" data-tweet-id="662106486127095808"></twitter-widget>
+                  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="testimonial testimonial-2">
+                <div class="testimonial__body boxed boxed--border
+                     bg--secondary">
+                  <twitter-widget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-8" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;" data-tweet-id="742798759449481217"></twitter-widget>
+                  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="testimonial testimonial-2">
+                <div class="testimonial__body boxed boxed--border
+                     bg--secondary">
+                  <twitter-widget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-9" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;" data-tweet-id="751439717468610560"></twitter-widget>
+                  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="testimonial testimonial-2">
+                <div class="testimonial__body boxed boxed--border
+                            bg--secondary">
+                  <twitter-widget class="twitter-tweet twitter-tweet-rendered" id="twitter-widget-10" style="position: static; visibility: visible; display: block; transform: rotate(0deg); max-width: 100%; width: 500px; min-width: 220px; margin-top: 10px; margin-bottom: 10px;" data-tweet-id="1086350647170121735"></twitter-widget>
+                  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+
+
+      <a id="packages"></a>
+      <section class="text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 col-lg-8">
+              <h1>Ready to master Python?</h1>
+              <h3>Money back guaranteed!</h3>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+
+      <section class="pricing-section-2 text-center ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="pricing pricing-3">
+                <div class="pricing__head bg--secondary boxed">
+                  <h5>Starter</h5>
+                  <span class="h1">
+                    <span class="pricing__dollar">$</span>19</span>
+                </div>
+                <div>
+                  <img src="img/package-starter.png" style="height: 150px; margin-top: 20px; margin-bottom: 20px;">
+                </div>
+                <ul>
+                  <li>
+                    <i class="icon icon--xs icon-Book"></i>
+                    &nbsp;
+                    <span>The ebook in PDF, HTML, MOBI and EPUB formats</span>
+                  </li>
+                  <li>
+                    <i class="icon icon--xs icon-Speach-Bubble"></i>
+                    &nbsp;
+                    <span>8 experts interviews</span>
+                  </li>
+                </ul>
+                <a class="btn btn--primary" data-gumroad-single-product="true" href="https://gum.co/serpys?wanted=true" style="transform: none;
+                   width: 100%;
+                   border-radius: 0 0 0 6px;
+                   " target="_blank">
+                  <span class="btn__text">
+                    Purchase
+                  </span>
+                </a>
+              </div>
+              <!--end pricing-->
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="pricing pricing-3">
+                <div class="pricing__head bg--primary boxed">
+                  <span class="label">Best-Seller</span>
+                  <h5>Standard</h5>
+                  <span class="h1">
+                    <span class="pricing__dollar">$</span>49</span>
+                </div>
+                <div>
+                  <img src="img/package-standard.png" style="height: 150px; margin-top: 20px; margin-bottom: 20px;">
+                </div>
+                <ul>
+                  <li>
+                    <i class="icon icon--xs icon-Book"></i>
+                    &nbsp;
+                    <span>The ebook in PDF, HTML, MOBI and EPUB formats</span>
+                  </li>
+                  <li>
+                    <i class="icon icon--xs icon-Speach-Bubble"></i>
+                    &nbsp;
+                    <span>8 experts interviews</span>
+                  </li>
+                  <li>
+                    <i class="icon icon--xs icon-Next"></i>
+                    &nbsp;
+                    <span>Future editions of the ebook</span>
+                  </li>
+                  <li>
+                    <i class="icon icon--xs icon-Data-Network"></i>
+                    &nbsp;
+                    <span>A ready-to-run Docker image with a Python
+                    environment, exercises, and samples to run as notebooks </span>
+                  </li>
+                </ul>
+                <a class="btn btn--primary" data-gumroad-single-product="true" href="https://gum.co/serpy?wanted=true" style="width: 100%; transform: none; border-radius: 0 0 6px 6px;" target="_blank">
+                  <span class="btn__text">
+                    Purchase
+                  </span>
+                </a>
+              </div>
+              <!--end pricing-->
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="pricing pricing-3">
+                <div class="pricing__head bg--secondary boxed">
+                  <h5>Enterprise</h5>
+                  <span class="h1">
+                    <span class="pricing__dollar">$</span>199</span>
+                </div>
+                <div>
+                  <img src="img/package-enterprise.png" style="height: 150px; margin-top: 20px; margin-bottom: 20px;">
+                </div>
+                <ul>
+                  <li>
+                    <i class="icon icon--xs icon-Book"></i>
+                    &nbsp;
+                    <span>The ebook in PDF, HTML, MOBI and EPUB formats</span>
+                  </li>
+                  <li>
+                    <i class="icon icon--xs icon-Speach-Bubble"></i>
+                    &nbsp;
+                    <span>8 experts interviews</span>
+                  </li>
+                  <li>
+                    <i class="icon icon--xs icon-Next"></i>
+                    &nbsp;
+                    <span>Future editions of the ebook</span>
+                  </li>
+                  <li>
+                    <i class="icon icon--xs icon-Data-Network"></i>
+                    &nbsp;
+                    <span>A ready-to-run Docker image with a Python
+                    environment, exercises, and samples to run as notebooks </span>
+                  </li>
+                  <li>
+                    <i class="icon icon--xs icon-Microphone-4"></i>
+                    &nbsp;
+                    <span>One hour of consulting time where I will review your
+                      project and advise you</span>
+                  </li>
+                  <li>
+                    <i class="icon icon--xs icon-Diploma-2"></i>
+                    &nbsp;
+                    <span>License to share with 20 members of your team</span>
+                  </li>
+                </ul>
+                <a class="btn btn--primary" data-gumroad-single-product="true" href="https://gum.co/serpye?wanted=true" style="width: 100%; transform: none; border-radius: 0 0 6px 6px;" target="_blank">
+                  <span class="btn__text">
+                    Purchase
+                  </span>
+                </a>
+              </div>
+              <!--end pricing-->
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+      <a id="faq"></a>
+      <section class=" bg--dark" id="faq">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="text-block">
+                <h4>Frequently Asked Questions</h4>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="text-block">
+                <h5>Can I get a printed version?</h5>
+                <p>
+                  My editor <a href="https://nostarch.com/seriouspython">No
+                  Starch Press</a> distributes a printed version that you can
+                  find on <a href="https://nostarch.com/seriouspython">their
+                  Web site</a>, on
+                  <a href="https://www.amazon.com/gp/product/B074S4G1L5/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B074S4G1L5&amp;linkCode=as2&amp;tag=juliendanjou-20&amp;linkId=2d68dde537d79ba5e334d4291ad37fff">Amazon</a>
+                  or in your favorite local book store (<em>ISBN-13
+                  978-1-59327-878-6</em>).
+                </p>
+              </div>
+              <div class="text-block">
+                <h5>What if the book is not for me?</h5>
+                <p>
+                  If you think the book has no value to you, then I don't
+                  want your money.
+                  <a href="mailto:julien+serpy@danjou.info">Ask me for a
+                    refund</a>.
+                </p>
+              </div>
+              <div class="text-block">
+                <h5>I need a license for more than 20 users.</h5>
+                <p>
+                  Let's discuss this over
+                  <a href="mailto:julien+serpy@danjou.info">email</a>.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="text-block">
+                <h5>Can I upgrade to another package?</h5>
+                <p>
+                  Yes. Just
+                  <a href="mailto:julien+serpy@danjou.info">forward me your
+                    purchase receipt and tell me which package you'd like to
+                    upgrade to</a>.
+                </p>
+              </div>
+              <div class="text-block">
+                <h5>I probably need more than a book. Are you available for
+                  consulting?</h5>
+                <p>
+                  Let's
+                  <a href="mailto:julien+serpy@danjou.info">talk about that
+                    over email</a>.
+                </p>
+              </div>
+              <div class="text-block">
+                <h5>I have another question!</h5>
+                <p>
+                  Send me an
+                  <a href="mailto:julien+serpy@danjou.info">email</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </section>
+
+      <footer class="footer-3 text-center-xs space--xs ">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+            </div>
+            <div class="col-sm-6 text-right text-center-xs">
+              <ul class="social-list list-inline list--hover">
+                <li>
+                  <a href="https://julien.danjou.info">
+                    <i class="icon-Male icon icon--xs"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:julien+serpy@danjou.info">
+                    <i class="icon-Mail icon icon--xs"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/juldanjou">
+                    <i class="icon-Twitter icon icon--xs"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/SeriousPython/">
+                    <i class="icon-Facebook icon icon--xs"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--end of row-->
+          <div class="row">
+            <div class="col-sm-6">
+              <p class="type--fine-print">
+              </p>
+            </div>
+            <div class="col-sm-6 text-right text-center-xs">
+              <span class="type--fine-print">©
+                <span class="update-year">2020</span> <a href="mailto:julien+serpy@danjou.info">Julien Danjou</a></span>
+            </div>
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+      </footer>
+    </div><div class="all-page-modals"></div>
+    <!-- Start of Async Drift Code -->
+    <script>
+      "use strict";
+
+      !function() {
+          var t = window.driftt = window.drift = window.driftt || [];
+          if (!t.init) {
+              if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+              t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+              t.factory = function(e) {
+                  return function() {
+                      var n = Array.prototype.slice.call(arguments);
+                      return n.unshift(e), t.push(n), t;
+                  };
+              }, t.methods.forEach(function(e) {
+                  t[e] = t.factory(e);
+              }), t.load = function(t) {
+                  var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                  o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                  var i = document.getElementsByTagName("script")[0];
+                  i.parentNode.insertBefore(o, i);
+              };
+          }
+      }();
+      drift.SNIPPET_VERSION = '0.3.1';
+      drift.load('sb3ggficm2fb');
+    </script>
+    <!-- End of Async Drift Code -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://gumroad.com/js/gumroad.js"></script>
+    <script type="text/javascript">
+      ga('require', 'linker');
+      ga('linker:autoLink', ['gumroad.com'] );
+    </script>
+    <!-- Global site tag (gtag.js) - Google AdWords: 1011816067 -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-1011816067"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-1011816067');
+    </script>
+    <!-- Hotjar Tracking Code for scaling-python.com -->
+    <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:833407,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  
+
+<div class="container containerMeasure" style="opacity:0;pointer-events:none;"></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.7aeb03ce9f308997020e5998720fbbf7.html?origin=https%3A%2F%2Fserious-python.com" title="Twitter settings iframe" style="display: none;"></iframe><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-469cf41adb11dc78be68c1ae7f9457a4.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe><div class="gumroad-loading-indicator"><i></i></div><div id="drift-widget-container" style="position: absolute; z-index: 2147483647;"><iframe id="drift-widget" src="https://js.driftt.com/deploy/assets/index.html" title="Drift Messenger" role="complementary" style="border: none; display: block; height: 0px !important; width: 0px !important; position: fixed; top: auto; left: auto; bottom: 0px; right: 0px; visibility: hidden; z-index: 2147483647; max-height: 100vh; max-width: 100vw; transition: none 0s ease 0s; background: none transparent; opacity: 1; pointer-events: auto; touch-action: auto;" class="drift-widget-hidden"></iframe></div></body></html>

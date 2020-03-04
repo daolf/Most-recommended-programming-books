@@ -1,0 +1,1059 @@
+<!DOCTYPE html><html lang="fr"><head>
+    <meta charset="utf-8">
+    <title>PythonBooks - Learn Python the easy way !</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="PythonBooks showcase the bests free ebooks about the Python programming language. The easiest way to learn Python for free! ">
+    <meta name="author" content="Revolunet">
+
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/pythonbooks.css?2908" media="all">
+
+    <!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+    <link rel="shortcut icon" href="./img/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="./assets/ico/apple-touch-icon-57-precomposed.png">
+<script charset="utf-8" src="https://platform.twitter.com/js/button.93a0c25c2d2f3081c705c98c2d9dec0e.js"></script></head>
+
+<body class="loaded">
+
+    <a href="https://github.com/revolunet/PythonBooks" class="github"><img src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub"></a>
+
+    <!-- ==========================
+    NAVBAR
+    =========================== -->
+    <div class="navbar navbar-fixed-top pbhead">
+        <img src="./img/logo_pythonbooks.png" alt="python tutorials" width="300" height="50">
+        <h1>The best free Python resources</h1>
+        <a href="http://www.revolunet.com" target="_blank" title="revolunet" id="headerlink">by revolunet - rich web apps for desktop and mobile</a>
+        <ul id="social_buttons">
+            <li>
+                <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 71px; height: 20px;" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.7aeb03ce9f308997020e5998720fbbf7.fr.html#dnt=false&amp;id=twitter-widget-1&amp;lang=fr&amp;original_referer=https%3A%2F%2Fpythonbooks.revolunet.com%2F&amp;size=m&amp;text=Here%20are%20the%20best%20Python%20ressources%20to%20learn%20%23python%20for%20free%20!%20%23webdevelopment%20%23python&amp;time=1582991568887&amp;type=share&amp;url=https%3A%2F%2Fpythonbooks.revolunet.com%2F&amp;via=revolunet"></iframe>
+                <script id="twitter-wjs" src="//platform.twitter.com/widgets.js"></script><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </li>
+        </ul>
+    </div>
+
+    <!-- adding loader -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
+    <div class="container">
+        <!-- ==========================
+        JOBS
+        =========================== -->
+        <!--
+        <div class="row">
+            <a class="recrutement span12" href="mailto:contact@revolunet.com?subject=work at revolunet" target="_blank"> {{ • We're hiring talented web developers in Paris, France • }}</a>
+            <div class="pythonbooks span12">
+                <p>See also :</p>
+                <a href="http://jsbooks.revolunet.com/" target="_blank">
+                    <img src="./img/logo_jsbooks.png" alt="Javascript Books" title="Learn Javascript for free !" width="100" height="27">
+                </a>
+            </div>
+        </div>
+        -->
+        <div class="row">
+            <div class="jsbooks span12">
+                <p>See also :</p>
+                <a href="http://jsbooks.revolunet.com/" target="_blank">
+                    <img src="./img/logo_jsbooks.png" alt="Javascript Books" title="Learn Javascript for free !" width="" height="14">
+                </a>
+            </div>
+
+            <div class="span12 row-fluid">
+                <p class="span1">Filter by :</p>
+                <ul id="filterBy">
+                    <li><a href="#" data-level="any" class="active" title="filter books by All">All</a></li>
+                    <li><a href="#" data-level="Beginner" title="filter books by Beginner">Beginner</a></li>
+                    <li><a href="#" data-level="Intermediate" title="filter books by Intermediate">Intermediate</a></li>
+                    <li><a href="#" data-level="Advanced" title="filter books by Advanced">Advanced</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ///////// BOOKS -->
+        <div class="row" id="issueswrap">
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="https://www.packtpub.com/packt/free-ebook/python-raspberry-pi-cookbook">
+            <div class="view"></div>
+            <div title="Raspberry Pi Cookbook for Python Programmers" id="cover" style="background:black url('img/Raspberry Pi Cookbook for Python Programmers.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Raspberry Pi Cookbook for Python Programmers">Raspberry Pi Cookbook for Python Programmers</h2>
+          </a>
+          <h3><a href="https://www.packtpub.com/packt/free-ebook/python-raspberry-pi-cookbook" target="_blank">Tim Cox</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Over 50 tailor-made recipes for programmers to get the most out of Raspberry Pi using Python to unleash its huge potential</p>
+        </div>
+         <div class="span4 booksection Advanced">
+          <a target="_blank" href="http://www.greenteapress.com/complexity/thinkcomplexity.pdf">
+            <div class="view"></div>
+            <div title="Think Complexity" id="cover" style="background:black url('img/cover_complexity.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Think Complexity">Think Complexity</h2>
+          </a>
+          <h3><a href="http://www.greenteapress.com/" target="_blank">Allen B. Downey</a></h3>
+          <p class="level">Advanced</p>
+          <p class="description">This book is about complexity science, data structures and algorithms, intermediate programming in Python, and the philosophy of science.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://www.tangowithdjango.com/book17/">
+            <div class="view"></div>
+            <div title="How to Tango with Django" id="cover" style="background:black url('img/cover_tangowithdjango.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="How to Tango with Django">How to Tango with Django</h2>
+          </a>
+          <h3><a href="http://leifos.me" target="_blank">Leif Azzopardi</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">A beginner's guide to web development with Django 1.7. This book has been designed to get you going fast and to learn by example. You'll learn the key aspects of the Python Django Framework by developing an application called Rango.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://python3porting.com/pdfs/SupportingPython3-screen-1.0-latest.pdf">
+            <div class="view"></div>
+            <div title="Porting to Python 3: An in-depth guide" id="cover" style="background:black url('img/cover_porting_python3.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Porting to Python 3: An in-depth guide">Porting to Python 3: An in-depth guide</h2>
+          </a>
+          <h3><a href="http://regebro.wordpress.com/" target="_blank">Lennart Regebro</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">This book guides you through the process of porting your Python 2 code to Python 3, from choosing a porting strategy to solving your distribution issues. Using plenty of code examples is takes you cross the hurdles and shows you the new Python features.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python_3">
+            <div class="view"></div>
+            <div title="Non-Programmer's Tutorial for Python 3" id="cover" style="background:black url('img/Python3-powered.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Non-Programmer's Tutorial for Python 3">Non-Programmer's Tutorial for Python 3</h2>
+          </a>
+          <h3><a href="http://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python_3" target="_blank">Josh Cogliati and others</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">The Non-Programmers' Tutorial For Python 3 is a tutorial designed to be an introduction to the Python programming language. This guide is for someone with no programming experience.</p>
+        </div>
+         <div class="span4 booksection Advanced">
+          <a target="_blank" href="https://www.packtpub.com/free-ebook/opencv-python">
+            <div class="view"></div>
+            <div title="Learning OpenCV 3 Computer Vision with Python - Second Edition" id="cover" style="background:black url('img/Learning-OpenCV-3-Computer-Vision-with-Python-Second-Edition.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Learning OpenCV 3 Computer Vision with Python - Second Edition">Learning OpenCV 3 Computer Vision with Python - Second Edition</h2>
+          </a>
+          <h3><a href="https://www.packtpub.com/free-ebook/opencv-python" target="_blank">Joe Minichino, Joseph Howse</a></h3>
+          <p class="level">Advanced</p>
+          <p class="description">[registration] Unleash the power of computer vision with Python using OpenCV</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://www.briggs.net.nz/snake-wrangling-for-kids.html">
+            <div class="view"></div>
+            <div title="Snake Wrangling for Kids" id="cover" style="background:black url('img/cover_snakewrangling.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Snake Wrangling for Kids">Snake Wrangling for Kids</h2>
+          </a>
+          <h3><a href="http://jasonrbriggs.com" target="_blank">Jason R. Briggs</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">[DOWNLOAD REQUIRED] For children 8 years and older, who would like to learn computer programming. It covers the very basics of programming, and uses the Python programming language to teach the concepts.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://jessenoller.com/good-to-great-python-reads/">
+            <div class="view"></div>
+            <div title="A bit of Python &amp; other things." id="cover" style="background:black url('img/cover_jessenoller.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="A bit of Python &amp; other things.">A bit of Python &amp; other things.</h2>
+          </a>
+          <h3><a href="http://jessenoller.com/" target="_blank">Jesse Noller</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">A usefull page with good links to read about Python</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://agiliq.com/books/djenofdjango/">
+            <div class="view"></div>
+            <div title="Djen of Django" id="cover" style="background:black url('img/djenofdjango.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Djen of Django">Djen of Django</h2>
+          </a>
+          <h3><a href="http://agiliq.com/" target="_blank">Agiliq</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Djen of Django is a book consisting of a series of small Django projects based on small real-world examples. For instance, building a Pastebin, a Blog or a Project Management Application. Djen of Django focuses on teaching the reader Django best practices through the use of real-world examples.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="https://www.raspberrypi.org/magpi-issues/Essentials_Games_v1.pdf">
+            <div class="view"></div>
+            <div title="Make Games with Python" id="cover" style="background:black url('img/make_games_with_python.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Make Games with Python">Make Games with Python</h2>
+          </a>
+          <h3><a href="http://sean.mtracey.org/" target="_blank">Sean M. Tracey</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">In this book, we are going to learn to make games on the Raspberry Pi with Pygame. We'll look at drawing, animation, keyboard and mouse controls, sound, and physics. This book isn't for absolute programming beginners, but it's not far from it.</p>
+        </div>
+         <div class="span4 booksection Advanced">
+          <a target="_blank" href="http://greenteapress.com/thinkstats2/thinkstats2.pdf">
+            <div class="view"></div>
+            <div title="Think Stats 2e" id="cover" style="background:black url('img/cover_stats.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Think Stats 2e">Think Stats 2e</h2>
+          </a>
+          <h3><a href="http://www.greenteapress.com/" target="_blank">Allen B. Downey</a></h3>
+          <p class="level">Advanced</p>
+          <p class="description">Think Stats is an introduction to Probability and Statistics for Python programmers.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="https://www.packtpub.com/free-ebook/mastering-python">
+            <div class="view"></div>
+            <div title="Mastering Python" id="cover" style="background:black url('img/Mastering-Python.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Mastering Python">Mastering Python</h2>
+          </a>
+          <h3><a href="https://www.packtpub.com/free-ebook/mastering-python" target="_blank">Rick van Hattem</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">[registration] Master the art of writing beautiful and powerful Python by using all of the features that Python 3.5 offers</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="https://www.packtpub.com/packt/free-ebook/learning-python">
+            <div class="view"></div>
+            <div title="Learning Python" id="cover" style="background:black url('img/Learning_Python.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Learning Python">Learning Python</h2>
+          </a>
+          <h3><a href="https://www.packtpub.com/packt/free-ebook/learning-python" target="_blank">Fabrizio Romano</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Learn to code like a professional with Python – an open source, versatile, and powerful programming language</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://www.fullstackpython.com/table-of-contents.html">
+            <div class="view"></div>
+            <div title="Full Stack Python" id="cover" style="background:black url('img/fullstackpython.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Full Stack Python">Full Stack Python</h2>
+          </a>
+          <h3><a href="http://www.mattmakai.com/" target="_blank">Matt Makai</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">You're knee deep in learning the Python programming language. The syntax is starting to make sense. Now you want to take your knowledge and make something real. This book explains each Python web application stack layer and provides the resources.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://www.davekuhlman.org/python_101.html">
+            <div class="view"></div>
+            <div title="Python 101 - Introduction to Python" id="cover" style="background:black url('img/cover_python101.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Python 101 - Introduction to Python">Python 101 - Introduction to Python</h2>
+          </a>
+          <h3><a href="http://www.rexx.com/~dkuhlman" target="_blank">Dave Kuhlman</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">This document is a syllabus for a first course in Python programming. This course contains an introduction to the Python language, instruction in the important and commonly used features of the language, and practical excercises in the use of those features.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="https://media.readthedocs.org/pdf/python-guide/latest/python-guide.pdf">
+            <div class="view"></div>
+            <div title="The Hitchhiker’s Guide to Python!" id="cover" style="background:black url('img/PythonGuide.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="The Hitchhiker’s Guide to Python!">The Hitchhiker’s Guide to Python!</h2>
+          </a>
+          <h3><a href="http://kennethreitz.com/" target="_blank">Kenneth Reitz</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">This opinionated guide exists to provide both novice and expert Python developers a best-practice handbook to the installation, configuration, and usage of Python on a daily basis.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="https://github.com/downloads/diveintomark/diveintopython3/dive-into-python3.pdf">
+            <div class="view"></div>
+            <div title="Dive into Python 3" id="cover" style="background:black url('img/cover_divepython3.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Dive into Python 3">Dive into Python 3</h2>
+          </a>
+          <h3><a href="http://getpython3.com/diveintopython3/" target="_blank">Mark Pilgrim</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Dive Into Python 3 covers what's new in Python 3 and how its differs from Python 2.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://learnpythonthehardway.org/book">
+            <div class="view"></div>
+            <div title="Learn Python The Hard Way" id="cover" style="background:black url('img/cover_learnpython.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Learn Python The Hard Way">Learn Python The Hard Way</h2>
+          </a>
+          <h3><a href="http://learnpythonthehardway.org/" target="_blank">Zed A. Shaw</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">Have you always wanted to learn how to code but never thought you could? Do you want to challenge your brain in a new way? </p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="https://pymotw.com/2/contents.html">
+            <div class="view"></div>
+            <div title="Python Module of the week" id="cover" style="background:black url('img/cover_pymotw.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Python Module of the week">Python Module of the week</h2>
+          </a>
+          <h3><a href="http://www.doughellmann.com/" target="_blank">Doug Hellman</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">The Python Module of the Week series, or PyMOTW, is a tour of the Python standard library through short and concrete examples. It covers more than 50 modules.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/">
+            <div class="view"></div>
+            <div title="Probabilistic Programming and Bayesian Methods for Hackers: Using Python and PyMC" id="cover" style="background:black url('img/BMH.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Probabilistic Programming and Bayesian Methods for Hackers: Using Python and PyMC">Probabilistic Programming and Bayesian Methods for Hackers: Using Python and PyMC</h2>
+          </a>
+          <h3><a href="http://www.camdp.com" target="_blank">Cam Davidson-Pilon</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">aka 'Bayesian Methods for Hackers': An introduction to Bayesian methods + probabilistic programming in data analysis with a computation/understanding-first, mathematics-second point of view. All in pure Python ;)</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="https://www.py4e.com/book">
+            <div class="view"></div>
+            <div title="Python for Everybody" id="cover" style="background:black url('img/cover_python4everybody.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Python for Everybody">Python for Everybody</h2>
+          </a>
+          <h3><a href="http://www.dr-chuck.com/" target="_blank">Charles R. Severance</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">The goal of this book is to provide an Informatics-oriented introduction to programming. The primary approach taken in this book is using Python to solve data analysis problems common in the world of Informatics.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="https://dl.dropboxusercontent.com/u/18065445/web2py/web2py_manual_5th.pdf">
+            <div class="view"></div>
+            <div title="web2py Complete Manual" id="cover" style="background:black url('img/web2py.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="web2py Complete Manual">web2py Complete Manual</h2>
+          </a>
+          <h3><a href="http://web2py.com" target="_blank">Massimo Di Pierro</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">As you will learn in the following pages, web2py tries to lower the barrier of entry to web development by focusing on three main goals: ease of use, rapid development and security</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="https://inventwithpython.com/pygame/">
+            <div class="view"></div>
+            <div title="Making Games with Python and Pygame" id="cover" style="background:black url('img/cover_makinggame.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Making Games with Python and Pygame">Making Games with Python and Pygame</h2>
+          </a>
+          <h3><a href="https://inventwithpython.com" target="_blank">Al Sweigart</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Teaches the Pygame 2D graphics library with the source code for 11 games.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://www.greenteapress.com/pythonhydro/pythonhydro.pdf">
+            <div class="view"></div>
+            <div title="Python in Hydrology" id="cover" style="background:black url('img/cover_python_in_hydrology.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Python in Hydrology">Python in Hydrology</h2>
+          </a>
+          <h3><a href="http://civil.iisc.ernet.in/~satkumar/" target="_blank">Sat Kumar Tomer</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">Python in Hydrology is written for learning Python using its applications in hydrology. The book covers the basic applications of hydrology, and also the advanced topic like use of copula.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://www.dsimb.inserm.fr/~fuchs/python/cours_python.pdf">
+            <div class="view"></div>
+            <div title="Python course" id="cover" style="background:black url('img/cover_python101.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Python course">Python course</h2>
+          </a>
+          <h3><a href="http://www.dsimb.inserm.fr/~fuchs/" target="_blank">Patrick Fuchs</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">[FRENCH] Beginner and progressive course about Python theory and concepts</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="docs.pylonsproject.org/projects/pyramid_tutorials/en/latest/index.html">
+            <div class="view"></div>
+            <div title="Pyramid for Humans" id="cover" style="background:black url('img/cover_pyramid.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Pyramid for Humans">Pyramid for Humans</h2>
+          </a>
+          <h3><a href="http://pyramid.readthedocs.org/en/latest/index.html" target="_blank">Community</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">With this tutorial, discover Pyramid a Python web application development framework. Its primary goal is to make it easier for a Python developer to create web applications.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://ark4n.files.wordpress.com/2010/01/python_para_desenvolvedores_2ed.pdf">
+            <div class="view"></div>
+            <div title="Python para Desenvolvedores (2nd Edition)" id="cover" style="background:black url('img/cover_pypd_2ed_th.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Python para Desenvolvedores (2nd Edition)">Python para Desenvolvedores (2nd Edition)</h2>
+          </a>
+          <h3><a href="http://ark4n.wordpress.com/python/" target="_blank">Luiz Eduardo Borges</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">[PORTUGUESE] Este livro aborda assuntos que incluem: criação de interfaces com usuário, computação gráfica, aplicações para internet, sistemas distribuídos, entre outros.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://gnosis.cx/TPiP/">
+            <div class="view"></div>
+            <div title="Text Processing in Python" id="cover" style="background:black url('img/cover_text_processing_in_python.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Text Processing in Python">Text Processing in Python</h2>
+          </a>
+          <h3><a href="http://gnosis.cx/TPiP/" target="_blank">David Mertz</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">This is an example-driven, hands on tutorial that carefully teaches programmers how to accomplish numerous text processing tasks using Python.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://www.oreilly.com/programming/free/files/functional-programming-python.pdf">
+            <div class="view"></div>
+            <div title="Functional Programming in Python" id="cover" style="background:black url('img/cover_functional_programming_in_python.gif') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Functional Programming in Python">Functional Programming in Python</h2>
+          </a>
+          <h3><a href="http://www.oreilly.com/programming/free/functional-programming-python.csp" target="_blank">David Mertz</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">In this paper, David Mertz, a director of Python Software Foundation, examines the functional aspects of the language and points out which options work well and which ones you should generally decline.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://chimera.labs.oreilly.com/books/1234000000754/index.html">
+            <div class="view"></div>
+            <div title="Test-Driven Development with Python" id="cover" style="background:black url('img/testdriven.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Test-Driven Development with Python">Test-Driven Development with Python</h2>
+          </a>
+          <h3><a href="http://www.oreillynet.com/pub/au/5721" target="_blank">Harry Percival</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">This book uses a concrete example—the development of a website, from scratch—to teach the TDD metholology, and how it applies to web programming, from the basics of database integration and javascript, going via browser-automation tools like Selenium, to advanced (and trendy) topics like NoSQL, websockets and Async programming.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://exploreflask.com">
+            <div class="view"></div>
+            <div title="Explore Flask" id="cover" style="background:black url('img/exploreflask.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Explore Flask">Explore Flask</h2>
+          </a>
+          <h3><a href="http://robert.io" target="_blank">Robert Picard.</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">This book is a collection of the best practices for using Flask. There are a lot of pieces to the average Flask application.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="https://www.packtpub.com/free-ebook/learning-ipython">
+            <div class="view"></div>
+            <div title="Learning IPython for Interactive Computing and Data Visualization - Second Edition" id="cover" style="background:black url('img/Learning-IPython-for-Interactive-Computing-and-Data-Visualization-Second-Edition.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Learning IPython for Interactive Computing and Data Visualization - Second Edition">Learning IPython for Interactive Computing and Data Visualization - Second Edition</h2>
+          </a>
+          <h3><a href="https://www.packtpub.com/free-ebook/learning-ipython" target="_blank">Cyrille Rossant</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">[registration] Get started with Python for data analysis and numerical computing in the Jupyter notebook</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://biopython.org/DIST/docs/tutorial/Tutorial.pdf">
+            <div class="view"></div>
+            <div title="Biopython" id="cover" style="background:black url('img/cover_biopython.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Biopython">Biopython</h2>
+          </a>
+          <h3><a href="http://biopython.org/wiki/Main_Page" target="_blank">Various authors</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">This is a tutorial and cookbook for Biopython (Biopython is a set of freely available toos for biological computations.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://www.oreilly.com/programming/free/files/how-to-make-mistakes-in-python.pdf">
+            <div class="view"></div>
+            <div title="How to Make Mistakes in Python" id="cover" style="background:black url('img/cover_how_to_make_mistakes_in_python.gif') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="How to Make Mistakes in Python">How to Make Mistakes in Python</h2>
+          </a>
+          <h3><a href="http://mike.pirnat.com/" target="_blank">Mike Pirnat</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Even the best programmers make mistakes. In this O’Reilly report, Mike Pirnat dissects some of his most memorable blunders, peeling them back layer-by-layer to reveal just what went wrong.</p>
+        </div>
+         <div class="span4 booksection Advanced">
+          <a target="_blank" href="https://raw.githubusercontent.com/mdipierro/nlib/master/docs/book_numerical.pdf">
+            <div class="view"></div>
+            <div title="Annotated Algorithms In Python" id="cover" style="background:black url('img/annotated-algorithms.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Annotated Algorithms In Python">Annotated Algorithms In Python</h2>
+          </a>
+          <h3><a href="https://twitter.com/mdipierro" target="_blank">Massimo Di Pierro</a></h3>
+          <p class="level">Advanced</p>
+          <p class="description">This book is assembled from lectures given by the author over a period of 10 years at the School of Computing of DePaul University. The lectures cover multiple classes, including Analysis and Design of Algorithms, Scientific Computing, Monte Carlo Simulations, and Parallel Algorithms.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://inforef.be/swi/download/apprendre_python.pdf">
+            <div class="view"></div>
+            <div title="Programmez avec Python 2" id="cover" style="background:black url('img/cover_apprendrepython2.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Programmez avec Python 2">Programmez avec Python 2</h2>
+          </a>
+          <h3><a href="http://inforef.be/swi/python.htm" target="_blank">Gérard Swinnen</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">[FRENCH] Apprenez à programmer avec Python 2. Découvrez la programmation et le language Python grâce à cet ouvrage de référence.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="https://media.readthedocs.org/pdf/intermediatepythongithubio/latest/intermediatepythongithubio.pdf">
+            <div class="view"></div>
+            <div title="Intermediate Python" id="cover" style="background:black url('img/cover_IntermediatePython_Yasoob2.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Intermediate Python">Intermediate Python</h2>
+          </a>
+          <h3><a href="http://pythontips.com/" target="_blank">Muhammad Yasoob</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Python is an amazing language with a strong and friendly community of programmers. However, there is a lack of documentation on what to learn after getting the basics of Python down your throat. Through this book I aim to solve this problem. I would give you bits of information about some interesting topics which you can further explore.  The topics which are discussed in this book open up your mind towards some nice corners of Python language. This book is an outcome of my desire to have something like this when I was beginning to learn Python.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://www.oreilly.com/programming/free/files/from-future-import-python.pdf">
+            <div class="view"></div>
+            <div title="Picking a Python Version: A Manifesto" id="cover" style="background:black url('img/cover_picking_python_version_manifesto.gif') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Picking a Python Version: A Manifesto">Picking a Python Version: A Manifesto</h2>
+          </a>
+          <h3><a href="http://www.oreilly.com/programming/free/from-future-import-python.csp" target="_blank">David Mertz</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">This report guides you through the implicit decision tree of choosing what Python version, implementation, and distribution is best suited for you.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://www.eecs.wsu.edu/~schneidj/PyBook/swan.pdf">
+            <div class="view"></div>
+            <div title="Algorithmic Problem Solving with Python" id="cover" style="background:black url('img/algo_ps_python.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Algorithmic Problem Solving with Python">Algorithmic Problem Solving with Python</h2>
+          </a>
+          <h3><a href="http://www.eecs.wsu.edu/~schneidj/" target="_blank">John B. Schneider...</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">Python's syntax and idioms are much easier to learn than those of most other full-featured languages. This book uses programming language Python to introduce folks to programming and algorithmic thinking.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://inventwithpython.com/cracking/">
+            <div class="view"></div>
+            <div title="Cracking Codes with Python" id="cover" style="background:black url('img/CrackingCodes_cover.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Cracking Codes with Python">Cracking Codes with Python</h2>
+          </a>
+          <h3><a href="https://inventwithpython.com" target="_blank">Al Sweigart</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">This book features the source code to several ciphers and hacking programs for these ciphers.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://effbot.org/zone/librarybook-index.htm">
+            <div class="view"></div>
+            <div title="The Standard Python Library" id="cover" style="background:black url('img/cover_pythonstandardlibrairy.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="The Standard Python Library">The Standard Python Library</h2>
+          </a>
+          <h3><a href="http://effbot.org/zone/" target="_blank">Fredrik Lundh</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">This book provides a brief description of each module of the +200 Python standard library and usage examples</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://files.swaroopch.com/python/byte_of_python.pdf">
+            <div class="view"></div>
+            <div title="A byte of Python" id="cover" style="background:black url('img/cover_swaroop.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="A byte of Python">A byte of Python</h2>
+          </a>
+          <h3><a href="http://www.swaroopch.org/" target="_blank">Swaroop C H</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">This book aims to help you learn the wonderful Python language and show how to get things done quickly and painlessly - in effect 'The Perfect Anti-venom to your programming problems'.</p>
+        </div>
+         <div class="span4 booksection Advanced">
+          <a target="_blank" href="http://programmingcomputervision.com/downloads/ProgrammingComputerVision_CCdraft.pdf">
+            <div class="view"></div>
+            <div title="Programming Computer Vision with Python" id="cover" style="background:black url('img/cover_computervision.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Programming Computer Vision with Python">Programming Computer Vision with Python</h2>
+          </a>
+          <h3><a href="http://www.janeriksolem.net/" target="_blank">Jan Erik Solem</a></h3>
+          <p class="level">Advanced</p>
+          <p class="description">[PDF DRAFT] This book gives an entry point to hands-on computer vision (images, videos...) with enough understanding of the underlying theory and algorithms.</p>
+        </div>
+         <div class="span4 booksection Advanced">
+          <a target="_blank" href="http://ianozsvald.com/HighPerformancePythonfromTrainingatEuroPython2011_v0.2.pdf">
+            <div class="view"></div>
+            <div title="High Performance Python tutorial" id="cover" style="background:black url('img/cover_highperf.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="High Performance Python tutorial">High Performance Python tutorial</h2>
+          </a>
+          <h3><a href="http://ianozsvald.com/2011/07/25/high-performance-python-tutorial-v0-2-from-europython-2011" target="_blank">Ian Ozsvald</a></h3>
+          <p class="level">Advanced</p>
+          <p class="description">In this 55 pages tutorial, Ian Ozsvald shows you a number of techniques to get a 10-500 performance increase in your Python apps, from profiling, to PyPy, numPy, Multiprocessing...</p>
+        </div>
+         <div class="span4 booksection Advanced">
+          <a target="_blank" href="http://greenteapress.com/thinkstats/thinkstats.pdf">
+            <div class="view"></div>
+            <div title="Think Stats" id="cover" style="background:black url('img/cover_stats.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Think Stats">Think Stats</h2>
+          </a>
+          <h3><a href="http://www.greenteapress.com/" target="_blank">Allen B. Downey</a></h3>
+          <p class="level">Advanced</p>
+          <p class="description">Think Stats is an introduction to Probability and Statistics for Python programmers.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="https://automatetheboringstuff.com/">
+            <div class="view"></div>
+            <div title="Automate the Boring Stuff with Python " id="cover" style="background:black url('img/automate_cover_medium.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Automate the Boring Stuff with Python ">Automate the Boring Stuff with Python </h2>
+          </a>
+          <h3><a href="https://inventwithpython.com/" target="_blank">Al Sweigart</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">Learn how to use Python to write programs that do in minutes what would take you hours to do by hand -- no prior programming experience required. Once you've mastered the basics of programming, you'll create Python programs that effortlessly perform useful and impressive feats of automation.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://scipy-lectures.github.com/">
+            <div class="view"></div>
+            <div title="Python Scientific lecture notes" id="cover" style="background:black url('img/cover_scientific.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Python Scientific lecture notes">Python Scientific lecture notes</h2>
+          </a>
+          <h3><a href="http://scipy-lectures.github.com/AUTHORS.html" target="_blank">By The Community</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Teaching material on the scientific Python ecosystem, a quick introduction to central tools and techniques. The different chapters each correspond to a 1 to 2 hours course with increasing level of expertise, from beginner to expert.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://www.greenteapress.com/thinkpython/thinkpython.pdf">
+            <div class="view"></div>
+            <div title="Think Python" id="cover" style="background:black url('img/cover_thinkpython.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Think Python">Think Python</h2>
+          </a>
+          <h3><a href="http://www.greenteapress.com/" target="_blank">Allen B. Downey</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">A very exhaustive book covering most of the language features, from datatypes to OOP and debugging.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://ianozsvald.com/HighPerformancePythonfromTrainingatEuroPython2011_v0.2.pdf">
+            <div class="view"></div>
+            <div title="High Performance Python" id="cover" style="background:black url('img/cover_highperf.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="High Performance Python">High Performance Python</h2>
+          </a>
+          <h3><a href="http://ianozsvald.com/" target="_blank">Ian Ozsvald</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">By exploring the fundamental theory behind design choices, this practical guide helps you gain a deeper understanding of Python's implementation. You'll learn how to locate performance bottlenecks and significantly speed up your code in high-data-volume programs.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://inforef.be/swi/download/apprendre_python3_5.pdf">
+            <div class="view"></div>
+            <div title="Programmez avec Python 3" id="cover" style="background:black url('img/cover_apprendrepython3.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Programmez avec Python 3">Programmez avec Python 3</h2>
+          </a>
+          <h3><a href="http://inforef.be/swi/python.htm" target="_blank">Gérard Swinnen</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">[FRENCH] Apprenez à programmer avec Python 3. Mise à jour du précédent ouvrage avec les spécificité de Python 3.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="https://www.packtpub.com/packt/free-ebook/practical-data-analysis">
+            <div class="view"></div>
+            <div title="Practical Data Analysis" id="cover" style="background:black url('img/Practical Data Analysis.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Practical Data Analysis">Practical Data Analysis</h2>
+          </a>
+          <h3><a href="https://www.packtpub.com/packt/free-ebook/practical-data-analysis" target="_blank">Hector Cuesta</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Transform, model and visualize your data through hands-on projects, developed in open source tools</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://gettingstartedwithdjango.com/">
+            <div class="view"></div>
+            <div title="Getting Started with Django" id="cover" style="background:black url('img/cover_gettingstartedwithdjango.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Getting Started with Django">Getting Started with Django</h2>
+          </a>
+          <h3><a href="http://brack3t.com/" target="_blank">Kenneth Love</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">Getting Started with Django (or GSWD) is a series of video-based lessons meant to take you from novice to competent [1], or maybe even beyond.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://interactivepython.org/runestone/static/pythonds/index.html">
+            <div class="view"></div>
+            <div title="Problem Solving with Algorithms and Data Structures Using Python" id="cover" style="background:black url('img/PythonDScover.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Problem Solving with Algorithms and Data Structures Using Python">Problem Solving with Algorithms and Data Structures Using Python</h2>
+          </a>
+          <h3><a href="http://reputablejournal.com/" target="_blank">B. Miller &amp; D. Ranum</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">This book is a CS2 data structures textbook, with a review of Python concepts in chapter 1</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="https://inventwithpython.com/chapters/">
+            <div class="view"></div>
+            <div title="Invent Your Own Computer Games with Python" id="cover" style="background:black url('img/cover_invent4th_thumb.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Invent Your Own Computer Games with Python">Invent Your Own Computer Games with Python</h2>
+          </a>
+          <h3><a href="https://inventwithpython.com/invent4thed/" target="_blank">Al Sweigart</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">Learn to program with the source code for several simple ASCII-art (and later, 2D graphical Pygame) games.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://pymbook.readthedocs.io/en/latest/">
+            <div class="view"></div>
+            <div title="Python for you and me" id="cover" style="background:black url('img/pym.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Python for you and me">Python for you and me</h2>
+          </a>
+          <h3><a href="http://kushaldas.in" target="_blank">Kushal Das</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">A book for the total new comers into Python world. Was started as book for students before they read Python tutorial.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="https://www.packtpub.com/packt/free-ebook/python-machine-learning-algorithms">
+            <div class="view"></div>
+            <div title="Building Machine Learning Systems with Python" id="cover" style="background:black url('img/Building-Machine-Learning-Systems-with-Python.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Building Machine Learning Systems with Python">Building Machine Learning Systems with Python</h2>
+          </a>
+          <h3><a href="https://www.packtpub.com/packt/free-ebook/python-machine-learning-algorithms" target="_blank">Willi Richert, Luis Pedro Coelho</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Expand your Python knowledge and learn all about machine-learning libraries in this user-friendly manual</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://www.itmaybeahack.com/book/python-2.6/html/index.html">
+            <div class="view"></div>
+            <div title="Building skills in Python" id="cover" style="background:black url('img/cover_buildingskillspython.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Building skills in Python">Building skills in Python</h2>
+          </a>
+          <h3><a href="http://www.itmaybeahack.com" target="_blank">Steven F. Lot </a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">This 450+ page book has 42 chapters that will help you build Python programming skills through a series of exercises. This book includes six projects from straight-forward to sophisticated that will help solidify your Python skills.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="https://readthedocs.org/projects/kivy/downloads/">
+            <div class="view"></div>
+            <div title="Kivy programming Guide" id="cover" style="background:black url('img/cover_kivy.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Kivy programming Guide">Kivy programming Guide</h2>
+          </a>
+          <h3><a href="http://kivy.org/" target="_blank">Kivy</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Discover Kivy the multitouch Python framework for desktop and mobile, and learn how to create a simple game.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href=" http://www.toonzcat.com/media/pythonfree.pdf">
+            <div class="view"></div>
+            <div title="Python 3x Programming (sample)" id="cover" style="background:black url('img/py3programming.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Python 3x Programming (sample)">Python 3x Programming (sample)</h2>
+          </a>
+          <h3><a href="http://www.toonzcat.com/book.html" target="_blank">Jody S. Ginther</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">(4 free chapters) Python 3x Programming, Made Fun and Easier by Jody S. Ginther is for the beginning programmer who wants to learn visually and have some fun while learning programming. The full course will take the beginner from ground zero to making their own arcade style game complete with; music, sound, graphics, and how to make a distribution package to share it with your friends in 21 lessons.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://www.diveintopython.net/download/diveintopython-pdf-5.4.zip">
+            <div class="view"></div>
+            <div title="Dive into Python (2004)" id="cover" style="background:black url('img/cover_divepython.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Dive into Python (2004)">Dive into Python (2004)</h2>
+          </a>
+          <h3><a href="http://getpython3.com/diveintopython3/" target="_blank">Mark Pilgrim</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Dive Into Python is a free Python book (from 2004) for experienced programmers. It covers many basics of the language</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://beastie.cs.ua.edu/cs150/book/index.html">
+            <div class="view"></div>
+            <div title="An introduction to Python" id="cover" style="background:black url('img/cover_alabamaintro.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="An introduction to Python">An introduction to Python</h2>
+          </a>
+          <h3><a href="http://lusth.cs.ua.edu/" target="_blank">John C. Lusth</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">A complete scholar overview of all Python 3 functionnalities from the Alabama University.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="https://www.gitbook.com/download/pdf/book/djangogirls/djangogirls-tutorial?lang=en">
+            <div class="view"></div>
+            <div title="Django Girls Tutorial" id="cover" style="background:black url('img/cover_djangogirls_tutorial.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Django Girls Tutorial">Django Girls Tutorial</h2>
+          </a>
+          <h3><a href="https://djangogirls.org/" target="_blank">Community</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">It's a very beginner-friendly tutorial with introductions to the command line, Python, Django, HTML and CSS. </p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://flask.pocoo.org/docs/tutorial/">
+            <div class="view"></div>
+            <div title="Flask microframework" id="cover" style="background:black url('img/cover_flask.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Flask microframework">Flask microframework</h2>
+          </a>
+          <h3><a href="http://lucumr.pocoo.org/" target="_blank">Armin Ronacher</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Learn the Flask web microframework by example. Flask aims to keep the core simple but extensible and gives you freedom to choose the libraries of your choice.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://edge.launchpad.net/improve-python-spanish-doc/0.4/0.4.0/+download/Python%20para%20todos.pdf">
+            <div class="view"></div>
+            <div title="Python para todos" id="cover" style="background:black url('img/tutorial-python.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Python para todos">Python para todos</h2>
+          </a>
+          <h3><a href="http://mundogeek.net/" target="_blank">Raúl González Duque</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">[SPANISH] Libro sobre programación en Python a modo de tutorial, adecuado para todos los niveles de aprendizaje, desde novatos hasta expertos que quieren conocer más sobre Python.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="https://www.packtpub.com/packt/free-ebook/what-you-need-know-about-machine-learning2">
+            <div class="view"></div>
+            <div title="What You Need to Know about Machine Learning" id="cover" style="background:black url('img/What_You_Need_to_Know_about_Machine_Learning.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="What You Need to Know about Machine Learning">What You Need to Know about Machine Learning</h2>
+          </a>
+          <h3><a href="https://www.packtpub.com/packt/free-ebook/what-you-need-know-about-machine-learning2" target="_blank">Gabriel A. Cánepa</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">This book lays the foundation for your work in the world of Machine Learning, providing the basic understanding, knowledge, and skills that you can build on with experience and time</p>
+        </div>
+         <div class="span4 booksection Advanced">
+          <a target="_blank" href="http://www.nltk.org/book/">
+            <div class="view"></div>
+            <div title="Natural Language Processing with Python" id="cover" style="background:black url('img/cover_nltk.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Natural Language Processing with Python">Natural Language Processing with Python</h2>
+          </a>
+          <h3><a href="http://www.nltk.org/" target="_blank">S. Bird, E. Klein...</a></h3>
+          <p class="level">Advanced</p>
+          <p class="description">Practical introduction to programming for language processing, written by the creators of NLTK.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://guidetodatamining.com/assets/guideChapters/Guide2DataMining.pdf">
+            <div class="view"></div>
+            <div title="A Programmer's Guide to Data Mining" id="cover" style="background:black url('img/cover_guidetodatamining.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="A Programmer's Guide to Data Mining">A Programmer's Guide to Data Mining</h2>
+          </a>
+          <h3><a href="http://zacharski.org/" target="_blank">Ron Zacharski</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">A guide to practical data mining, collective intelligence, and building recommendation systems.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://www.openbookproject.net/thinkcs/python/english2e/">
+            <div class="view"></div>
+            <div title="How to Think Like a Computer Scientist: Learning with Python 2nd Ed." id="cover" style="background:black url('img/gasp_lessons.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="How to Think Like a Computer Scientist: Learning with Python 2nd Ed.">How to Think Like a Computer Scientist: Learning with Python 2nd Ed.</h2>
+          </a>
+          <h3><a href="http://greenteapress.com/" target="_blank">Jeffrey Elkner...</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">This book teaches you Python right in the browser.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="https://developers.google.com/edu/python/">
+            <div class="view"></div>
+            <div title="Python Course" id="cover" style="background:black url('img/cover_googledevelopers.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Python Course">Python Course</h2>
+          </a>
+          <h3><a href="http://developers.google.com" target="_blank">Google</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">This is a free class for people with a little bit of programming experience who want to learn Python.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://www.itmaybeahack.com/buildingskills/oodesign.html#book-oodesign">
+            <div class="view"></div>
+            <div title="Building skills in Programming" id="cover" style="background:black url('img/cover_buildingskillnonpro.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Building skills in Programming">Building skills in Programming</h2>
+          </a>
+          <h3><a href="http://www.itmaybeahack.com" target="_blank">Steven F. Lot</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">How do you learn to program? Through a series of simple exercises that teach programming fundamentals with an easy-to-use, easy-to-learn programming language.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://chimera.labs.oreilly.com/books/1230000000393/index.html">
+            <div class="view"></div>
+            <div title="Python Cookbook, Third Edition" id="cover" style="background:black url('img/cover_python_cookbook.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Python Cookbook, Third Edition">Python Cookbook, Third Edition</h2>
+          </a>
+          <h3><a href="http://chimera.labs.oreilly.com/books/1230000000393" target="_blank">Various authors</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">This book is aimed at more experienced Python programmers who are looking to deepen their understanding of the language and modern programming idioms.</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="https://www.packtpub.com/packt/free-ebook/what-you-need-know-about-python2">
+            <div class="view"></div>
+            <div title="What You Need to Know about Python" id="cover" style="background:black url('img/What_You_Need_to_Know_about_Python.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="What You Need to Know about Python">What You Need to Know about Python</h2>
+          </a>
+          <h3><a href="https://www.packtpub.com/packt/free-ebook/what-you-need-know-about-python2" target="_blank">Pierluigi Riti</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">The absolute essentials you need to know to get Python up and running</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://interactivepython.org/runestone/static/thinkcspy/index.html">
+            <div class="view"></div>
+            <div title="How to Think Like a Computer Scientist: Second Interactive Edition" id="cover" style="background:black url('img/runestone.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="How to Think Like a Computer Scientist: Second Interactive Edition">How to Think Like a Computer Scientist: Second Interactive Edition</h2>
+          </a>
+          <h3><a href="http://reputablejournal.com" target="_blank">B. Miller &amp; D. Ranum</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">This interactive book teaches you Python the interactive way, right in the browser.</p>
+        </div>
+         <div class="span4 booksection Advanced">
+          <a target="_blank" href="https://www.packtpub.com/packt/free-ebook/advanced-python-machine-learning">
+            <div class="view"></div>
+            <div title="Advanced Machine Learning with Python" id="cover" style="background:black url('img/Advanced-Machine-Learning-with-Python.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Advanced Machine Learning with Python">Advanced Machine Learning with Python</h2>
+          </a>
+          <h3><a href="https://www.packtpub.com/packt/free-ebook/advanced-python-machine-learning" target="_blank">John Hearty</a></h3>
+          <p class="level">Advanced</p>
+          <p class="description">[registration] Solve challenging data science problems by mastering cutting-edge machine learning techniques in Python</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://www.oreilly.com/programming/free/20-python-libraries-you-arent-using-but-should.csp">
+            <div class="view"></div>
+            <div title="20 Python libraries You Aren't Using (But Should)" id="cover" style="background:black url('img/cover_20_python.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="20 Python libraries You Aren't Using (But Should)">20 Python libraries You Aren't Using (But Should)</h2>
+          </a>
+          <h3><a href="http://www.oreilly.com/pub/au/6789" target="_blank">Caleb Hattingh</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">The Python ecosystem is vast and far-reaching in both scope and depth. Starting out in this crazy, open-source forest is daunting, and even with years of experience, it still requires continual effort to keep up-to-date with the best libraries and techniques. This report helps you explore some of the lesser known Python libraries and tools, including third-party modules and several extremely useful tools in the standard library that deserve more attention</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://www.clips.ua.ac.be/sites/default/files/modeling-creativity.pdf">
+            <div class="view"></div>
+            <div title="Modeling Creativity" id="cover" style="background:black url('img/modelingcreativity.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Modeling Creativity">Modeling Creativity</h2>
+          </a>
+          <h3><a href="http://www.organisms.be/" target="_blank">Tom De Smedt</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">Case studies in Python - using the libraries nodebox and pattern the author creates wonderful fractals and infographics; python code snippets included</p>
+        </div>
+         <div class="span4 booksection Beginner">
+          <a target="_blank" href="http://anandology.com/python-practice-book/index.html">
+            <div class="view"></div>
+            <div title="Python Practice Book" id="cover" style="background:black url('img/cover_python_practice_book.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Python Practice Book">Python Practice Book</h2>
+          </a>
+          <h3><a href="http://anandology.com/" target="_blank">Anand Chitipothu.</a></h3>
+          <p class="level">Beginner</p>
+          <p class="description">This book is prepared from the training notes of Anand Chitipothu. Anand conducts Python trainings classes on a semi-regular basis in Bangalore, India.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="https://media.readthedocs.org/pdf/django/latest/django.pdf">
+            <div class="view"></div>
+            <div title="Django Tutorial" id="cover" style="background:black url('img/cover_django.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Django Tutorial">Django Tutorial</h2>
+          </a>
+          <h3><a href="https://docs.djangoproject.com/en/dev/intro/" target="_blank">Community</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">With this hands-on tutorial, discover Django the popular high-level Python Web framework that encourages rapid development and clean, pragmatic design.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://buildingskills.itmaybeahack.com/book/oodesign-3.1/html/index.html">
+            <div class="view"></div>
+            <div title="Building skills in OOP" id="cover" style="background:black url('img/cover_buildingskillsoop.jpg') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Building skills in OOP">Building skills in OOP</h2>
+          </a>
+          <h3><a href="http://homepage.mac.com/s_lott/" target="_blank">Steven F. Lot </a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">How do you move from OO programming to OO design? This 301-page book has 49 chapters that will help you build OO design skills through the creation of a moderately complex family of application programs.</p>
+        </div>
+         <div class="span4 booksection Intermediate">
+          <a target="_blank" href="http://www.brpreiss.com/books/opus7/html/book.html">
+            <div class="view"></div>
+            <div title="Data Structures and Algorithms with Object-Oriented Design Patterns in Python" id="cover" style="background:black url('img/cover_datastructandalg.png') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="Data Structures and Algorithms with Object-Oriented Design Patterns in Python">Data Structures and Algorithms with Object-Oriented Design Patterns in Python</h2>
+          </a>
+          <h3><a href="http://www.brpreiss.com" target="_blank">Bruno R. Preiss</a></h3>
+          <p class="level">Intermediate</p>
+          <p class="description">This book is about the fundamentals of data structures and algorithms. It uses object oriented design patterns and teaches topics like stacks, queues, lists, hashing and graphs. There are also versions for other programming languages.</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- ==========================
+    FOOTER
+    =========================== -->
+    <div class="footer">
+        <hr>
+        <a href="http://www.revolunet.com" target="_blank" onclick="_gaq.push(['_trackEvent', 'pythonbooks', 'clic footer'])">
+            <img src="img/revologo.png" width="150" height="29" alt="Revolunet">
+        </a>
+        <p>We provide high quality web applications for desktop and mobile.</p>
+
+        <a href="mailto:contact@revolunet.com" target="_blank" alt="revolunet" id="footerlink">Get in touch</a> <br>
+
+        <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 62px; height: 20px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.7aeb03ce9f308997020e5998720fbbf7.fr.html#dnt=false&amp;id=twitter-widget-0&amp;lang=fr&amp;screen_name=revolunet&amp;show_count=false&amp;show_screen_name=false&amp;size=m&amp;time=1582991568885" data-screen-name="revolunet"></iframe>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="./js/mustache.js"></script>
+
+    <script type="text/javascript">
+
+    function randOrd(){
+      return (Math.round(Math.random())-0.5);
+    }
+
+    function filterBy() {
+        var // var's sort by
+            active = 'active',
+            btFilterBy = $('#filterBy').find('a'),
+            booksection = $('.booksection');
+
+        // interaction filter by level
+        btFilterBy.on('click', function(e) {
+            e.preventDefault();
+            var level = $(this).data('level');
+            if (level==='any') {
+                // restore all books
+                booksection.show();
+            } else {
+                booksection.not('.' + level).fadeOut('fast');
+                booksection.filter('.' + level).fadeIn('fast');
+            }
+
+            btFilterBy.removeClass(active);
+            $(this).addClass(active);
+        });
+    }
+
+
+    $(document).ready(function() {
+      $('body').addClass('loaded');
+      $.getJSON('./issues.json?' + Math.random(), function(data) {
+        var template = $('#booktpl').html();
+        data.books.sort(randOrd);
+        var html = Mustache.to_html(template, data);
+        $('#issueswrap').html(html);
+                    filterBy();
+      });
+      $('#mod_infos').hide();
+      $('a.#infos').on('click', function(){
+          $('#mod_infos').slideToggle();
+      });
+    });
+    </script>
+
+    <script id="booktpl" type="text/template">
+        {{#books}}
+         <div class="span4 booksection {{ level }}">
+          <a target="_blank" href="{{url}}">
+            <div class="view"></div>
+            <div title="{{ title }}" id="cover" style="background:black url('{{cover}}') no-repeat center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover">
+            </div>
+            <h2 title="{{ title }}">{{title}}</h2>
+          </a>
+          <h3><a href="{{authorUrl}}" target="_blank">{{author}}</a></h3>
+          <p class="level">{{level}}</p>
+          <p class="description">{{info}}</p>
+        </div>
+        {{/books}}
+    </script>
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script><script src="https://ssl.google-analytics.com/ga.js" type="text/javascript"></script>
+        <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-294393-1");
+        pageTracker._trackPageview();
+    } catch(err) {}</script>
+
+  
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.7aeb03ce9f308997020e5998720fbbf7.html?origin=https%3A%2F%2Fpythonbooks.revolunet.com" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe"></iframe></body></html>

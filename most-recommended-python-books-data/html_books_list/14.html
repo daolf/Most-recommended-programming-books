@@ -1,0 +1,1404 @@
+<!DOCTYPE html><html dir="ltr" lang="en-gb"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"58581d3af9",applicationID:"280694242"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>best python coding book - Raspberry Pi Forums</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - Raspberry Pi Forums" href="/forums/app.php/feed?sid=26e4a4d87b0e5f278b638df7bf225c8e">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="/forums/app.php/feed/topics?sid=26e4a4d87b0e5f278b638df7bf225c8e">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - General discussion" href="/forums/app.php/feed/forum/63?sid=26e4a4d87b0e5f278b638df7bf225c8e">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - best python coding book" href="/forums/app.php/feed/topic/156748?sid=26e4a4d87b0e5f278b638df7bf225c8e">
+	
+
+<!--[if IE]><link rel="shortcut icon" href="./styles/rpi/theme/images/favicon.png"><![endif]-->
+<!-- <link rel="apple-touch-icon-precomposed" href="./styles/rpi/theme/images/apple-touch-icon-precomposed.gif"> -->
+<link rel="icon" href="./styles/rpi/theme/images/favicon.png">
+<link rel="icon" sizes="16x16" href="./styles/rpi/theme/images/favicon.png">
+
+	<link rel="canonical" href="https://www.raspberrypi.org/forums/viewtopic.php?t=156748">
+
+<link rel="preconnect stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700|Space+Mono">
+<link rel="preconnect stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" media="all" type="text/css" crossorigin="">
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="https://www.raspberrypi.org/app/themes/mind-control/style.min.css?ver=20190621135900">
+<link href="./styles/rpi/theme/stylesheet.css?assets_version=76" rel="stylesheet" type="text/css" media="screen, projection">
+<link href="./styles/rpi/theme/colours_rpi.css?assets_version=76" rel="stylesheet" type="text/css" media="screen, projection">
+<link href="./styles/rpi/theme/print.css?assets_version=76" rel="stylesheet" type="text/css" media="print">
+
+
+
+
+
+
+</head>
+
+<body id="phpbb" class="notouch section-viewtopic ltr  section-forums hasjs" style="">
+
+
+<div id="overall-wrap">
+  <a id="top" class="anchor" accesskey="t"></a>
+  <header class="o-header">
+    <nav class="o-container o-header__container">
+      <a class="o-header__home-link" href="/">
+        <span class="u-visually-hidden">Home</span>
+      </a>
+
+      <div class="o-header__nav">
+        <ul class="c-nav">
+          <li class="c-nav__item">
+            <a class="c-nav__link c-nav__link--products" href="/products/">
+              Products
+            </a>
+          </li>
+          <li class="c-nav__item">
+            <a class="c-nav__link c-nav__link--blog" href="/blog/">
+              Blog
+            </a>
+          </li>
+          <li class="c-nav__item">
+            <a class="c-nav__link c-nav__link--downloads" href="/downloads/">
+              Downloads
+            </a>
+          </li>
+          <li class="c-nav__item">
+            <a class="c-nav__link c-nav__link--community" href="/community/">
+              Community
+            </a>
+          </li>
+          <li class="c-nav__item">
+            <a class="c-nav__link c-nav__link--help" href="/help/">
+              Help
+            </a>
+          </li>
+          <li class="c-nav__item">
+            <a class="c-nav__link c-nav__link--forums" href="/forums/">
+              Forums
+            </a>
+          </li>
+          <li class="c-nav__item">
+            <a class="c-nav__link c-nav__link--education" href="/education/">
+              Education
+            </a>
+          </li>
+          <li class="c-nav__item">
+            <a class="c-nav__link c-nav__link--projects" href="https://projects.raspberrypi.org/?ref=nav">
+              Projects
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="o-header__spacer"></div>
+
+      <div class="o-header__search-toggle">
+        <span aria-hidden="true" class="c-search-toggle">
+          <span class="u-visually-hidden">Open Search Input</span>
+        </span>
+      </div>
+
+      <div class="o-header__toggle">
+        <span aria-hidden="true" class="c-nav-toggle">
+          <span class="c-nav-toggle__icon">
+            <span class="c-nav-toggle__icon-inner">
+              <span class="u-visually-hidden">Open Navigation</span>
+            </span>
+          </span>
+        </span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="o-header__search">
+    <form action="/" class="c-search" role="search" method="GET">
+        <div class="o-container c-search__container">
+            <input type="search" class="c-search__input" placeholder="Search Raspberry Pi" name="s">
+            <button class="c-search__submit">Search</button>
+        </div>
+    </form>
+  </div>
+
+  <script>
+    var header = document.querySelector('.o-header')
+    var navToggle = document.querySelector('.c-nav-toggle')
+
+    navToggle.addEventListener('click', function (event) {
+      event.preventDefault()
+
+      header.classList.toggle('o-header--nav-open')
+
+      document.querySelector('.c-nav-toggle__icon').classList.toggle('c-nav-toggle__icon--open')
+      document.querySelector('.c-nav-toggle__icon-inner').classList.toggle('c-nav-toggle__icon-inner--open')
+    })
+
+    var searchToggle = document.querySelector('.c-search-toggle')
+
+    searchToggle.addEventListener('click', function (event) {
+      event.preventDefault()
+
+      var searchContainer = document.querySelector('.o-header__search')
+      var searchInput = document.querySelector('.c-search__input')
+
+      searchInput.blur()
+      searchToggle.classList.toggle('c-search-toggle--open')
+      searchContainer.classList.toggle('o-header__search--open')
+
+      if (searchContainer.classList.contains('o-header__search--open')) {
+        searchInput.focus()
+      }
+    })
+  </script>
+
+	<div id="wrap-head">
+		<div id="site-header">
+			<div class="chunk">
+				<ul id="site-menu">
+					<li data-skip-responsive="true" class="site-menu"><a href="https://www.raspberrypi.org/quick-start-guide">Quick Start Guide</a></li>
+<li data-skip-responsive="true" class="site-menu"><a href="/forums/app.php/help/faq?sid=26e4a4d87b0e5f278b638df7bf225c8e" rel="help" title="Frequently Asked Questions">Forum FAQ</a></li>
+<li class="site-menu">
+	<a href="#" title="About">About</a>
+	<ul>
+		<li><a href="https://www.raspberrypi.org/about">About us</a></li>
+		<li><a href="https://www.raspberrypi.org/contact-us">Contact us</a></li>
+		<li><a href="https://www.raspberrypi.org/technical-help-and-resource-documents">Technical, help and resource documents</a></li>
+		<li><a href="https://www.raspberrypi.org/trademark-rules">Trademark rules</a></li>
+	</ul>
+</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="site-nav" role="navigation">
+			<div class="chunk">
+
+				
+				<div class="site-nav">
+
+					
+										<div id="site-search" role="search">
+						<form action="./search.php?sid=26e4a4d87b0e5f278b638df7bf225c8e" method="get">
+							<fieldset>
+								<input name="keywords" type="search" maxlength="128" title="Search for keywords" size="20" value="" placeholder="Search"><button type="submit" title="Search"><i class="fa fa-search"></i></button><input type="hidden" name="sid" value="26e4a4d87b0e5f278b638df7bf225c8e">
+
+							</fieldset>
+						</form>
+					</div>
+					
+					<ul role="menubar">
+											<li class="font-icon rightside" data-skip-responsive="true"><a href="./ucp.php?mode=login&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" title="Login" accesskey="x" role="menuitem"><i class="fa fa-power-off"></i><span class="nav-rh-2">Login</span></a></li>
+												<li class="font-icon rightside" data-skip-responsive="true"><a href="./ucp.php?mode=register&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" role="menuitem"><i class="fa fa-pencil-square-o"></i><span class="nav-rh-2">Register</span></a></li>
+																																		</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+		
+		
+<div id="wrap-subhead">
+	<div class="chunk">
+		<div class="wrap-subhead">
+			<ul id="breadcrumbs" role="menubar">
+				<li class="font-icon responsive-menu dropdown-container" data-skip-responsive="true">
+  <a href="#" class="responsive-menu-link dropdown-trigger dropdown-toggle"><i class="fa fa-bars"></i></a>
+  <div class="dropdown hidden">
+    <div class="pointer"><div class="pointer-inner"></div></div>
+    <ul class="dropdown-contents" role="menu">
+      
+              <li class="separator"></li>
+                                <li class="font-icon icon-search-unanswered"><a href="./search.php?search_id=unanswered&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" role="menuitem"><i class="fa fa-file-o"></i>Unanswered topics</a></li>
+        <li class="font-icon icon-search-active"><a href="./search.php?search_id=active_topics&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" role="menuitem"><i class="fa fa-fire"></i>Active topics</a></li>
+            <li class="separator site-menu"></li>
+
+      <li data-skip-responsive="true" class="site-menu"><a href="https://www.raspberrypi.org/quick-start-guide">Quick Start Guide</a></li>
+<li data-skip-responsive="true" class="site-menu"><a href="/forums/app.php/help/faq?sid=26e4a4d87b0e5f278b638df7bf225c8e" rel="help" title="Frequently Asked Questions">Forum FAQ</a></li>
+<li class="site-menu">
+	<a href="#" title="About">About</a>
+	<ul>
+		<li><a href="https://www.raspberrypi.org/about">About us</a></li>
+		<li><a href="https://www.raspberrypi.org/contact-us">Contact us</a></li>
+		<li><a href="https://www.raspberrypi.org/technical-help-and-resource-documents">Technical, help and resource documents</a></li>
+		<li><a href="https://www.raspberrypi.org/trademark-rules">Trademark rules</a></li>
+	</ul>
+</li>
+
+          </ul>
+  </div>
+</li>
+												<li class="breadcrumbs rightside">
+															<span class="crumb"><a href="./index.php?sid=26e4a4d87b0e5f278b638df7bf225c8e" accesskey="h" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-navbar-reference="index" title="Board index"><i class="fa fa-home"></i><span>Board index</span></a></span>
+																	<span class="crumb"><a href="./viewforum.php?f=19&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="19" title="Community">Community</a></span>
+																							<span class="crumb"><a href="./viewforum.php?f=63&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="63" title="General discussion">General discussion</a></span>
+																				</li>
+							</ul>
+
+		</div>
+
+		<div id="subhead-title">
+			<h2 class="topic-title"><a href="./viewtopic.php?f=63&amp;t=156748&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">best python coding book</a></h2>
+			
+					</div>
+
+	</div>
+</div>
+
+<div id="wrap-body">
+	<div class="chunk">
+
+		
+		<div class="action-bar top">
+
+			<div class="buttons">
+				
+							<a href="./posting.php?mode=reply&amp;f=63&amp;t=156748&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="button font-icon" title="Post a reply">
+					<i class="fa fa-reply"></i>Post Reply				</a>
+			
+							</div>
+
+				<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select dropdown-toggle"><i class="fa fa-wrench"></i></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="font-icon icon-print"><a href="./viewtopic.php?f=63&amp;t=156748&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e&amp;view=print" title="Print view" accesskey="p"><i class="fa fa-print"></i>Print view</a></li>							</ul>
+		</div>
+	</div>
+
+			
+							<div class="search-box" role="search">
+					<form method="get" id="topic-search" action="./search.php?sid=26e4a4d87b0e5f278b638df7bf225c8e">
+					<fieldset>
+						<input class="inputbox search" type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…">
+						<button class="button" type="submit" title="Search"><i class="fa fa-search"></i></button>
+						<input type="hidden" name="t" value="156748">
+<input type="hidden" name="sf" value="msgonly">
+<input type="hidden" name="sid" value="26e4a4d87b0e5f278b638df7bf225c8e">
+
+					</fieldset>
+					</form>
+				</div>
+			
+							<div class="pagination">
+					12 posts
+											• Page <strong>1</strong> of <strong>1</strong>
+									</div>
+			
+			
+		</div>
+
+		
+		
+		
+											<div id="p1022433" class="post has-profile bg2">
+				<div class="inner">
+
+				<dl class="postprofile" id="profile1022433">
+					<dt class="no-profile-rank no-avatar">
+						<div class="avatar-container">
+																											</div>
+
+						
+						<a href="./memberlist.php?mode=viewprofile&amp;u=200390&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="username">totalwise</a>
+						
+					</dt>
+
+					
+					
+					
+				<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=200390&amp;sr=posts&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">3</a></dd>				<dd class="profile-joined"><strong>Joined:</strong> Thu Aug 11, 2016 10:31 am</dd>				
+				
+												
+												
+				</dl>
+
+				<div class="postbody">
+										<div id="post_content1022433">
+					
+					<h3 class="first"><a href="#p1022433">best python coding book</a></h3>
+
+				
+				
+															<ul class="posts-buttons">
+																																																									<li>
+									<a href="./posting.php?mode=quote&amp;f=63&amp;p=1022433&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" title="Reply with quote"><i class="fa fa-quote-left"></i><span>Quote</span></a>
+								</li>
+																				</ul>
+									
+				
+					
+					<p class="author"><a href="./viewtopic.php?p=1022433&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e#p1022433">Thu Aug 11, 2016 10:35 am</a> </p>
+
+					
+					
+					
+					<div class="content">Hi<br>
+<br>
+My nephew wants to learn to code and I've bought him a raspberry pi (original B board). I got him a teach yourself python book from the local library. He's had a go at it using python 3 on his raspberry pi book. he is running raspberry pi noobs OS on his board. <br>
+<br>
+The books version of python is not compatible with the pi python. Apparantly a lot of the operations dont work.<br>
+<br>
+I was curious which book would be best to buy for him.<br>
+<br>
+Thanks.</div>
+
+					
+															
+															
+										</div>
+
+				</div>
+
+				</div>
+											</div>
+
+			<hr class="divider">
+														<div id="p1022453" class="post has-profile bg1">
+				<div class="inner">
+
+				<dl class="postprofile" id="profile1022453">
+					<dt class="no-profile-rank has-avatar">
+						<div class="avatar-container">
+																						<a href="./memberlist.php?mode=viewprofile&amp;u=119273&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="avatar"><img class="avatar" src="./download/file.php?avatar=119273_1563303336.jpg" width="80" height="39" alt="User avatar"></a>																				</div>
+
+						
+						<a href="./memberlist.php?mode=viewprofile&amp;u=119273&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="username">B.Goode</a>
+						
+					</dt>
+
+					
+					
+					
+				<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=119273&amp;sr=posts&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">9358</a></dd>				<dd class="profile-joined"><strong>Joined:</strong> Mon Sep 01, 2014 4:03 pm</dd>				
+				
+																			<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> UK</dd>
+													
+												
+				</dl>
+
+				<div class="postbody">
+										<div id="post_content1022453">
+					
+					<h3><a href="#p1022453">Re: best python coding book</a></h3>
+
+				
+				
+															<ul class="posts-buttons">
+																																																									<li>
+									<a href="./posting.php?mode=quote&amp;f=63&amp;p=1022453&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" title="Reply with quote"><i class="fa fa-quote-left"></i><span>Quote</span></a>
+								</li>
+																				</ul>
+									
+				
+					
+					<p class="author"><a href="./viewtopic.php?p=1022453&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e#p1022453">Thu Aug 11, 2016 11:24 am</a> </p>
+
+					
+					
+					
+					<div class="content">Welcome to the forums.<br>
+
+<blockquote><div><cite>totalwise wrote:</cite>
+<br>
+I was curious which book would be best to buy for him.<br>
+
+</div></blockquote>
+
+That is likely to depend on his interests, his actual age, his reading ability and perhaps on his native language ('mother tongue ')<br>
+<br>
+The Raspberry Pi Foundation's website has their own introduction here:<a href="https://www.raspberrypi.org/learning/python-intro/" class="postlink">https://www.raspberrypi.org/learning/python-intro/</a><br>
+<br>
+There are lots of other demonstrations and tutorials at the same site.</div>
+
+					
+															
+															
+										</div>
+
+				</div>
+
+				</div>
+											</div>
+
+			<hr class="divider">
+														<div id="p1022509" class="post has-profile bg2">
+				<div class="inner">
+
+				<dl class="postprofile" id="profile1022509">
+					<dt class="no-profile-rank no-avatar">
+						<div class="avatar-container">
+																											</div>
+
+						
+						<a href="./memberlist.php?mode=viewprofile&amp;u=20512&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="username">scotty101</a>
+						
+					</dt>
+
+					
+					
+					
+				<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=20512&amp;sr=posts&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">3811</a></dd>				<dd class="profile-joined"><strong>Joined:</strong> Fri Jun 08, 2012 6:03 pm</dd>				
+				
+												
+												
+				</dl>
+
+				<div class="postbody">
+										<div id="post_content1022509">
+					
+					<h3><a href="#p1022509">Re: best python coding book</a></h3>
+
+				
+				
+															<ul class="posts-buttons">
+																																																									<li>
+									<a href="./posting.php?mode=quote&amp;f=63&amp;p=1022509&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" title="Reply with quote"><i class="fa fa-quote-left"></i><span>Quote</span></a>
+								</li>
+																				</ul>
+									
+				
+					
+					<p class="author"><a href="./viewtopic.php?p=1022509&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e#p1022509">Thu Aug 11, 2016 1:36 pm</a> </p>
+
+					
+					
+					
+					<div class="content"><blockquote><div><cite>totalwise wrote:</cite>
+The books version of python is not compatible with the pi python. Apparantly a lot of the operations dont work.</div></blockquote>
+
+There are two active versions of Python. Python2 and Python3, Check which one the book is written for. This might explain the differences.<br>
+<br>
+You run run either version on a raspberry pi using either<br>
+python - For Python2<br>
+python3 - For Python3<br>
+<br>
+The easiest difference to spot is with the print statement. Print is a function in python3.
+<blockquote><div><cite>Python 2 wrote:</cite>print "Hello World"</div></blockquote>
+<blockquote><div><cite>Python 3 wrote:</cite>print("Hello World")</div></blockquote></div>
+
+					
+															
+															<div id="sig1022509" class="signature">Electronic and Computer Engineer<br>
+Pi Interests: Home Automation, IOT, Python and Tkinter</div>
+										</div>
+
+				</div>
+
+				</div>
+											</div>
+
+			<hr class="divider">
+														<div id="p1022517" class="post has-profile bg1">
+				<div class="inner">
+
+				<dl class="postprofile" id="profile1022517">
+					<dt class="no-profile-rank no-avatar">
+						<div class="avatar-container">
+																											</div>
+
+						
+						<a href="./memberlist.php?mode=viewprofile&amp;u=200390&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="username">totalwise</a>
+						
+					</dt>
+
+					
+					
+					
+				<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=200390&amp;sr=posts&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">3</a></dd>				<dd class="profile-joined"><strong>Joined:</strong> Thu Aug 11, 2016 10:31 am</dd>				
+				
+												
+												
+				</dl>
+
+				<div class="postbody">
+										<div id="post_content1022517">
+					
+					<h3><a href="#p1022517">Re: best python coding book</a></h3>
+
+				
+				
+															<ul class="posts-buttons">
+																																																									<li>
+									<a href="./posting.php?mode=quote&amp;f=63&amp;p=1022517&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" title="Reply with quote"><i class="fa fa-quote-left"></i><span>Quote</span></a>
+								</li>
+																				</ul>
+									
+				
+					
+					<p class="author"><a href="./viewtopic.php?p=1022517&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e#p1022517">Thu Aug 11, 2016 1:51 pm</a> </p>
+
+					
+					
+					
+					<div class="content">Thank you<br>
+I will sit with him and see what version he should be using.</div>
+
+					
+															
+															
+										</div>
+
+				</div>
+
+				</div>
+											</div>
+
+			<hr class="divider">
+														<div id="p1022855" class="post has-profile bg2">
+				<div class="inner">
+
+				<dl class="postprofile" id="profile1022855">
+					<dt class="no-profile-rank has-avatar">
+						<div class="avatar-container">
+																						<a href="./memberlist.php?mode=viewprofile&amp;u=73731&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="avatar"><img class="avatar" src="./download/file.php?avatar=73731_1384997118.jpg" width="89" height="90" alt="User avatar"></a>																				</div>
+
+						
+						<a href="./memberlist.php?mode=viewprofile&amp;u=73731&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="username">DougieLawson</a>
+						
+					</dt>
+
+					
+					
+					
+				<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=73731&amp;sr=posts&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">37135</a></dd>				<dd class="profile-joined"><strong>Joined:</strong> Sun Jun 16, 2013 11:19 pm</dd>				
+				
+																												<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> Basingstoke, UK</dd>
+																						
+													<dd class="profile-contact">
+						<strong>Contact:</strong>
+												<a class="contact-icon contact-icon-phpbb_website" href="http://twitter.com/DougieLawson" title="Website">Website
+						</a>
+												<a class="contact-icon contact-icon-phpbb_twitter" href="http://twitter.com/DougieLawson" title="Twitter">Twitter
+						</a>
+											</dd>
+								
+				</dl>
+
+				<div class="postbody">
+										<div id="post_content1022855">
+					
+					<h3><a href="#p1022855">Re: best python coding book</a></h3>
+
+				
+				
+															<ul class="posts-buttons">
+																																																									<li>
+									<a href="./posting.php?mode=quote&amp;f=63&amp;p=1022855&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" title="Reply with quote"><i class="fa fa-quote-left"></i><span>Quote</span></a>
+								</li>
+																				</ul>
+									
+				
+					
+					<p class="author"><a href="./viewtopic.php?p=1022855&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e#p1022855">Fri Aug 12, 2016 10:20 am</a> </p>
+
+					
+					
+					
+					<div class="content"><blockquote><div><cite>totalwise wrote:</cite>Thank you<br>
+I will sit with him and see what version he should be using.</div></blockquote>
+
+There's no question. ALL new development of new programs should use python3. All the stuff provided by the Raspberry Pi Foundation is written in python3.</div>
+
+					
+															
+															<div id="sig1022855" class="signature"><strong>Note:</strong> Having anything humorous in your signature is completely banned on this forum. Wear a tin-foil hat and you'll get a ban.<br>
+<br>
+Any DMs sent on Twitter will be answered next month.<br>
+<br>
+This is a doctor free zone.</div>
+										</div>
+
+				</div>
+
+				</div>
+											</div>
+
+			<hr class="divider">
+														<div id="p1023162" class="post has-profile bg1">
+				<div class="inner">
+
+				<dl class="postprofile" id="profile1023162">
+					<dt class="no-profile-rank no-avatar">
+						<div class="avatar-container">
+																											</div>
+
+						
+						<a href="./memberlist.php?mode=viewprofile&amp;u=86104&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="username">hal8000</a>
+						
+					</dt>
+
+					
+					
+					
+				<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=86104&amp;sr=posts&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">187</a></dd>				<dd class="profile-joined"><strong>Joined:</strong> Fri Oct 04, 2013 5:22 pm</dd>				
+				
+												
+												
+				</dl>
+
+				<div class="postbody">
+										<div id="post_content1023162">
+					
+					<h3><a href="#p1023162">Re: best python coding book</a></h3>
+
+				
+				
+															<ul class="posts-buttons">
+																																																									<li>
+									<a href="./posting.php?mode=quote&amp;f=63&amp;p=1023162&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" title="Reply with quote"><i class="fa fa-quote-left"></i><span>Quote</span></a>
+								</li>
+																				</ul>
+									
+				
+					
+					<p class="author"><a href="./viewtopic.php?p=1023162&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e#p1023162">Fri Aug 12, 2016 8:54 pm</a> </p>
+
+					
+					
+					
+					<div class="content">I've always found the "Head First" series reader friendly and helpful. It may not be everyone's<br>
+favourite but see if Head First Python is in your library:<br>
+<br>
+<a href="http://www.headfirstlabs.com/books/hfpython/" class="postlink">http://www.headfirstlabs.com/books/hfpython/</a><br>
+<br>
+Its based on Python 3  BTW, and the best thing about a library is if your son doesn't<br>
+like it, you've not wasted any money.</div>
+
+					
+															
+															
+										</div>
+
+				</div>
+
+				</div>
+											</div>
+
+			<hr class="divider">
+														<div id="p1024720" class="post has-profile bg2">
+				<div class="inner">
+
+				<dl class="postprofile" id="profile1024720">
+					<dt class="no-profile-rank no-avatar">
+						<div class="avatar-container">
+																											</div>
+
+						
+						<a href="./memberlist.php?mode=viewprofile&amp;u=200390&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="username">totalwise</a>
+						
+					</dt>
+
+					
+					
+					
+				<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=200390&amp;sr=posts&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">3</a></dd>				<dd class="profile-joined"><strong>Joined:</strong> Thu Aug 11, 2016 10:31 am</dd>				
+				
+												
+												
+				</dl>
+
+				<div class="postbody">
+										<div id="post_content1024720">
+					
+					<h3><a href="#p1024720">Re: best python coding book</a></h3>
+
+				
+				
+															<ul class="posts-buttons">
+																																																									<li>
+									<a href="./posting.php?mode=quote&amp;f=63&amp;p=1024720&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" title="Reply with quote"><i class="fa fa-quote-left"></i><span>Quote</span></a>
+								</li>
+																				</ul>
+									
+				
+					
+					<p class="author"><a href="./viewtopic.php?p=1024720&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e#p1024720">Tue Aug 16, 2016 11:27 am</a> </p>
+
+					
+					
+					
+					<div class="content">I asked specifically what was wrong and he told me that the pyton tutorial made a text entry box for user to enter a name I think when the code is executed it asks end user to enter their name and after the end user enters their name it would respond based on that.<br>
+<br>
+The python in pi would not create the text entry box. I'm assuming this is a python3 for pi limitation. I will just buy him a dedicated python on pi book. Stuck for ideas though.</div>
+
+					
+															
+															
+										</div>
+
+				</div>
+
+				</div>
+											</div>
+
+			<hr class="divider">
+														<div id="p1024739" class="post has-profile bg1">
+				<div class="inner">
+
+				<dl class="postprofile" id="profile1024739">
+					<dt class="no-profile-rank no-avatar">
+						<div class="avatar-container">
+																											</div>
+
+						
+						<a href="./memberlist.php?mode=viewprofile&amp;u=20512&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="username">scotty101</a>
+						
+					</dt>
+
+					
+					
+					
+				<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=20512&amp;sr=posts&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">3811</a></dd>				<dd class="profile-joined"><strong>Joined:</strong> Fri Jun 08, 2012 6:03 pm</dd>				
+				
+												
+												
+				</dl>
+
+				<div class="postbody">
+										<div id="post_content1024739">
+					
+					<h3><a href="#p1024739">Re: best python coding book</a></h3>
+
+				
+				
+															<ul class="posts-buttons">
+																																																									<li>
+									<a href="./posting.php?mode=quote&amp;f=63&amp;p=1024739&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" title="Reply with quote"><i class="fa fa-quote-left"></i><span>Quote</span></a>
+								</li>
+																				</ul>
+									
+				
+					
+					<p class="author"><a href="./viewtopic.php?p=1024739&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e#p1024739">Tue Aug 16, 2016 12:16 pm</a> </p>
+
+					
+					
+					
+					<div class="content"><blockquote><div><cite>totalwise wrote:</cite>made a text entry box for user to enter a name I think when the code is executed it asks end user to enter their name and after the end user enters their name it would respond based on that.</div></blockquote>
+
+There is no "python in pi" variant of python. Python on the Pi is the same as you'd find on any other standard Linux distribution.<br>
+If you can post the code example then we might be able to help but off the top of my head I can't think of how this tutorial might bring up a dialog box without using a non-standard library.</div>
+
+					
+															
+															<div id="sig1024739" class="signature">Electronic and Computer Engineer<br>
+Pi Interests: Home Automation, IOT, Python and Tkinter</div>
+										</div>
+
+				</div>
+
+				</div>
+											</div>
+
+			<hr class="divider">
+														<div id="p1030293" class="post has-profile bg2">
+				<div class="inner">
+
+				<dl class="postprofile" id="profile1030293">
+					<dt class="no-profile-rank no-avatar">
+						<div class="avatar-container">
+																											</div>
+
+						
+						<a href="./memberlist.php?mode=viewprofile&amp;u=202301&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="username">ilneill</a>
+						
+					</dt>
+
+					
+					
+					
+				<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=202301&amp;sr=posts&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">1</a></dd>				<dd class="profile-joined"><strong>Joined:</strong> Sun Aug 28, 2016 10:05 am</dd>				
+				
+												
+												
+				</dl>
+
+				<div class="postbody">
+										<div id="post_content1030293">
+					
+					<h3><a href="#p1030293">Re: best python coding book</a></h3>
+
+				
+				
+															<ul class="posts-buttons">
+																																																									<li>
+									<a href="./posting.php?mode=quote&amp;f=63&amp;p=1030293&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" title="Reply with quote"><i class="fa fa-quote-left"></i><span>Quote</span></a>
+								</li>
+																				</ul>
+									
+				
+					
+					<p class="author"><a href="./viewtopic.php?p=1030293&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e#p1030293">Mon Aug 29, 2016 8:24 am</a> </p>
+
+					
+					
+					
+					<div class="content">Hi,<br>
+<br>
+I have found the "Python for Informatics" book to be very useful for Python v2.7. Teaches all the basics and many more advanced topics. Certainly, it is a book I return to when I have questions or need some reminding of things...<br>
+<br>
+I found it for free on the kindle - just search for the book name on the Amazon site.<br>
+<br>
+Ian</div>
+
+					
+															
+															
+										</div>
+
+				</div>
+
+				</div>
+											</div>
+
+			<hr class="divider">
+														<div id="p1281313" class="post has-profile bg1">
+				<div class="inner">
+
+				<dl class="postprofile" id="profile1281313">
+					<dt class="no-profile-rank no-avatar">
+						<div class="avatar-container">
+																											</div>
+
+						
+						<a href="./memberlist.php?mode=viewprofile&amp;u=239313&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="username">AdaStefan</a>
+						
+					</dt>
+
+					
+					
+					
+				<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=239313&amp;sr=posts&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">5</a></dd>				<dd class="profile-joined"><strong>Joined:</strong> Wed Jul 19, 2017 4:18 am</dd>				
+				
+												
+												
+				</dl>
+
+				<div class="postbody">
+										<div id="post_content1281313">
+					
+					<h3><a href="#p1281313">Re: best python coding book</a></h3>
+
+				
+				
+															<ul class="posts-buttons">
+																																																									<li>
+									<a href="./posting.php?mode=quote&amp;f=63&amp;p=1281313&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" title="Reply with quote"><i class="fa fa-quote-left"></i><span>Quote</span></a>
+								</li>
+																				</ul>
+									
+				
+					
+					<p class="author"><a href="./viewtopic.php?p=1281313&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e#p1281313">Mon Mar 05, 2018 5:58 am</a> </p>
+
+					
+					
+					
+					<div class="content">Re python v.2.... you might look into <a href="https://developers.google.com/edu/python/" class="postlink">https://developers.google.com/edu/python/</a></div>
+
+					
+															
+															
+										</div>
+
+				</div>
+
+				</div>
+											</div>
+
+			<hr class="divider">
+														<div id="p1281354" class="post has-profile bg2">
+				<div class="inner">
+
+				<dl class="postprofile" id="profile1281354">
+					<dt class="no-profile-rank no-avatar">
+						<div class="avatar-container">
+																											</div>
+
+						
+						<a href="./memberlist.php?mode=viewprofile&amp;u=133522&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="username">jahboater</a>
+						
+					</dt>
+
+					
+					
+					
+				<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=133522&amp;sr=posts&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">5074</a></dd>				<dd class="profile-joined"><strong>Joined:</strong> Wed Feb 04, 2015 6:38 pm</dd>				
+				
+																			<dd class="profile-custom-field profile-phpbb_location"><strong>Location:</strong> West Dorset</dd>
+													
+												
+				</dl>
+
+				<div class="postbody">
+										<div id="post_content1281354">
+					
+					<h3><a href="#p1281354">Re: best python coding book</a></h3>
+
+				
+				
+															<ul class="posts-buttons">
+																																																									<li>
+									<a href="./posting.php?mode=quote&amp;f=63&amp;p=1281354&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" title="Reply with quote"><i class="fa fa-quote-left"></i><span>Quote</span></a>
+								</li>
+																				</ul>
+									
+				
+					
+					<p class="author"><a href="./viewtopic.php?p=1281354&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e#p1281354">Mon Mar 05, 2018 8:26 am</a> </p>
+
+					
+					
+					
+					<div class="content">Re: python 2.x  <br>
+<br>
+<a href="https://docs.python.org/2/whatsnew/2.7.html" class="postlink">https://docs.python.org/2/whatsnew/2.7.html</a><br>
+<br>
+Why learn, or teach anyone, a language thats soon to be obsolete?</div>
+
+					
+															
+															
+										</div>
+
+				</div>
+
+				</div>
+											</div>
+
+			<hr class="divider">
+														<div id="p1287621" class="post has-profile bg1">
+				<div class="inner">
+
+				<dl class="postprofile" id="profile1287621">
+					<dt class="no-profile-rank no-avatar">
+						<div class="avatar-container">
+																											</div>
+
+						
+						<a href="./memberlist.php?mode=viewprofile&amp;u=261884&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="username">moontan13</a>
+						
+					</dt>
+
+					
+					
+					
+				<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=261884&amp;sr=posts&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">1</a></dd>				<dd class="profile-joined"><strong>Joined:</strong> Sun Mar 18, 2018 3:17 am</dd>				
+				
+												
+												
+				</dl>
+
+				<div class="postbody">
+										<div id="post_content1287621">
+					
+					<h3><a href="#p1287621">Re: best python coding book</a></h3>
+
+				
+				
+															<ul class="posts-buttons">
+																																																									<li>
+									<a href="./posting.php?mode=quote&amp;f=63&amp;p=1287621&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" title="Reply with quote"><i class="fa fa-quote-left"></i><span>Quote</span></a>
+								</li>
+																				</ul>
+									
+				
+					
+					<p class="author"><a href="./viewtopic.php?p=1287621&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e#p1287621">Sun Mar 18, 2018 3:28 am</a> </p>
+
+					
+					
+					
+					<div class="content">I just want to throw out there that many public libraries will try to find, or even buy books they don't have if you request them. Just ask.</div>
+
+					
+															
+															
+										</div>
+
+				</div>
+
+				</div>
+											</div>
+
+			<hr class="divider">
+					
+		
+					<form id="viewtopic" method="post" action="./viewtopic.php?f=63&amp;t=156748&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">
+			<fieldset class="display-options" style="margin-top: 0; ">
+								<label>Display posts from previous:<select name="st" id="st" style="display: none;"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select><div class="chosen-container chosen-container-single chosen-container-single-nosearch" style="width: auto;" title="" id="st_chosen"><a class="chosen-single" tabindex="-1"><span>All posts</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off" readonly=""></div><ul class="chosen-results"></ul></div></div></label><label>Sort by<select name="sk" id="sk" style="display: none;"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select><div class="chosen-container chosen-container-single chosen-container-single-nosearch" style="width: auto;" title="" id="sk_chosen"><a class="chosen-single" tabindex="-1"><span>Post time</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off" readonly=""></div><ul class="chosen-results"></ul></div></div></label><label><select name="sd" id="sd" style="display: none;"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select><div class="chosen-container chosen-container-single chosen-container-single-nosearch" style="width: auto;" title="" id="sd_chosen"><a class="chosen-single" tabindex="-1"><span>Ascending</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off" readonly=""></div><ul class="chosen-results"></ul></div></div></label><input type="submit" name="sort" value="Go" class="button2">
+							</fieldset>
+			</form>
+		
+				<div class="action-bar bottom">
+			<div class="buttons">
+				
+							<a href="./posting.php?mode=reply&amp;f=63&amp;t=156748&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="button font-icon" title="Post a reply">
+					<i class="fa fa-reply"></i>Post Reply				</a>
+			
+							</div>
+
+				<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select dropdown-toggle"><i class="fa fa-wrench"></i></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="font-icon icon-print"><a href="./viewtopic.php?f=63&amp;t=156748&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e&amp;view=print" title="Print view" accesskey="p"><i class="fa fa-print"></i>Print view</a></li>							</ul>
+		</div>
+	</div>
+
+			
+			
+							<div class="pagination">
+					12 posts
+											• Page <strong>1</strong> of <strong>1</strong>
+									</div>
+						<div class="clear"></div>
+		</div>
+
+				
+	<p class="jumpbox-return"><a href="./viewforum.php?f=63&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" class="left-box arrow-left" accesskey="r">Return to “General discussion”</a></p>
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select dropdown-toggle">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="./viewforum.php?f=19&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Community</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=63&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">General discussion</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=117&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Announcements</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=90&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Other languages</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=75&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Deutsch</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=76&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Español</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=65&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Français</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=79&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Italiano</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=88&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Nederlands</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=82&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">日本語</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=103&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Polski</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=74&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Português</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=84&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Русский</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=89&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Türkçe</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=57&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">User groups and events</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=106&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">The MagPi</a></li>
+																<li><a href="./viewforum.php?f=12&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Using the Raspberry Pi</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=91&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Beginners</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=28&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Troubleshooting</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=29&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Advanced users</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=102&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Assistive technology and accessibility</a></li>
+																<li><a href="./viewforum.php?f=17&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Education</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=99&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Picademy</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=49&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Teaching and learning resources</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=48&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Staffroom, classroom and projects</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=104&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Astro Pi</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=94&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Mathematica</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=111&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">High Altitude Balloon</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=112&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Weather station</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=120&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Code Club</a></li>
+																<li><a href="./viewforum.php?f=14&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Programming</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=33&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">C/C++</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=81&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Java</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=32&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Python</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=77&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Scratch</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=34&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Other programming languages</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=105&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Windows 10 for IoT</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=95&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Wolfram Language</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=72&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Bare metal, Assembly language</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=67&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Graphics programming</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=68&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">OpenGLES</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=69&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">OpenVG</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=70&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">OpenMAX</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=31&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">General programming discussion</a></li>
+																<li><a href="./viewforum.php?f=15&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Projects</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=36&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Networking and servers</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=37&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Automation, sensing and robotics</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=38&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Graphics, sound and multimedia</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=41&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Other projects</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=35&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Media centres</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=78&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Gaming</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=114&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">AIY Projects</a></li>
+																<li><a href="./viewforum.php?f=16&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Hardware and peripherals</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=43&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Camera board</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=98&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Compute Module</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=108&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Official Foundation Display</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=45&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">HATs and other add-ons</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=107&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Device Tree</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=44&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Interfacing (DSI, CSI, I2C, etc.)</a></li>
+																<li><a href="./viewforum.php?f=18&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Operating system distributions</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=66&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Raspbian</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=116&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Raspberry Pi Desktop for PC and Mac</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=56&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Other</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=73&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Android</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=50&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Debian</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=85&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">FreeBSD</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=54&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Gentoo</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=71&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Linux Kernel</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=86&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">NetBSD</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=87&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">openSUSE</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=80&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Plan 9</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=52&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Puppy</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=53&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Arch</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=51&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Pidora / Fedora</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=55&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">RISCOS</a></li>
+																<li>&nbsp; &nbsp;&nbsp; &nbsp;<a href="./viewforum.php?f=131&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Ubuntu</a></li>
+																<li><a href="./viewforum.php?f=20&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Ye Olde Pi Shoppe</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=93&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">For sale</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=61&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Wanted</a></li>
+																<li><a href="./viewforum.php?f=21&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Off topic</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=62&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e">Off topic discussion</a></li>
+										</ul>
+		</div>
+	</div>
+
+		
+	</div>
+</div>
+
+		
+	
+	<div id="wrap-footer">
+		<div id="site-footer-nav" role="navigation">
+			<div class="chunk">
+				<ul class="site-footer-nav" role="menubar">
+					<li class="small-icon icon-home breadcrumbs">
+																		<span class="crumb"><a href="./index.php?sid=26e4a4d87b0e5f278b638df7bf225c8e" data-navbar-reference="index" title="Board index">Board index</a></span>
+											</li>
+					
+										<li class="rightside">All times are <span title="UTC">UTC</span></li>
+																<li class="small-icon icon-delete-cookies rightside"><a href="./ucp.php?mode=delete_cookies&amp;sid=26e4a4d87b0e5f278b638df7bf225c8e" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+															</ul>
+			</div>
+		</div>
+
+    <footer class="o-footer">
+        <div class="o-footer__slice">
+            <div class="o-footer__container">
+                <div class="o-footer__nav">
+                    <div class="c-footer-nav">
+                        <span class="c-footer-nav__title">About Us</span>
+
+                        <ul class="c-footer-nav__list">
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="/about">About us</a>
+                            </li>
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="/about/meet-the-team">Our team</a>
+                            </li>
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="/about/governance">Governance</a>
+                            </li>
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="/safeguarding">Safeguarding</a>
+                            </li>
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="/about/supporters">Our supporters</a>
+                            </li>
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="https://raspberrypi.workable.com/">Jobs</a>
+                            </li>
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="/contact">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="o-footer__nav">
+                    <div class="c-footer-nav">
+                        <span class="c-footer-nav__title">Support</span>
+
+                        <ul class="c-footer-nav__list">
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="/help">Help</a>
+                            </li>
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="/documentation">Documentation</a>
+                            </li>
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="https://projects.raspberrypi.org/">Projects</a>
+                            </li>
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="/training">Training</a>
+                            </li>
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="/downloads">Downloads</a>
+                            </li>
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="/research-and-insights">Research</a>
+                            </li>
+                            <li class="c-footer-nav__item">
+                                <a class="c-footer-nav__link" href="/help/faqs">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="o-footer__newsletter">
+                    <form action="https://raspberrypi.hosted.phplist.com/lists/?p=subscribe&amp;id=1" class="c-footer-newsletter" method="POST">
+                        <span class="c-footer-newsletter__legend">
+                            Sign up to our newsletter
+                        </span>
+                        <input class="c-footer-newsletter__input" name="email" placeholder="Your email here" required="" type="email">
+                        <input type="hidden" name="htmlemail" value="1">
+                        <input type="hidden" name="list[3]" value="signup">
+                        <input type="hidden" name="listname[3]" value="Raspberry Pi Weekly">
+                        <input class="c-footer-newsletter__input--verification-code" type="text" name="VerificationCodeX" value="" size="20">
+                        <button class="c-footer-newsletter__button" name="subscribe">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <div class="o-footer__info">
+                    <ul class="c-footer-social">
+                        <li class="c-footer-social__item">
+                            <a class="c-footer-social__link c-footer-social__link--facebook" href="https://www.facebook.com/raspberrypi">
+                                <span class="u-visually-hidden">Like Raspberry Pi on Facebook</span>
+                            </a>
+                        </li>
+                        <li class="c-footer-social__item">
+                            <a class="c-footer-social__link c-footer-social__link--twitter" href="https://twitter.com/Raspberry_Pi">
+                                <span class="u-visually-hidden">Follow Raspberry Pi on Twitter</span>
+                            </a>
+                        </li>
+                        <li class="c-footer-social__item">
+                            <a class="c-footer-social__link c-footer-social__link--instagram" href="https://www.instagram.com/raspberrypifoundation/">
+                                <span class="u-visually-hidden">Check out what we’re having for lunch on Instagram</span>
+                            </a>
+                        </li>
+                        <li class="c-footer-social__item">
+                            <a class="c-footer-social__link c-footer-social__link--youtube" href="https://youtube.com/raspberrypi">
+                                <span class="u-visually-hidden">Subscribe to the Raspberry Pi YouTube channel</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="c-footer-charity">
+                        Raspberry Pi Foundation<br>
+                        UK Registered Charity 1129409
+                    </p>
+
+                    <p class="c-footer-additional">
+                        <a class="c-footer-additional__link" href="/accessibility">Accessibility</a>
+                        <a class="c-footer-additional__link" href="/privacy">Privacy</a>
+                        <a class="c-footer-additional__link" href="/cookies">Cookies</a>
+                        <a class="c-footer-additional__link" href="/trademark-rules">Trademark rules and brand guidelines</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+		<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+			<div id="darken">&nbsp;</div>
+		</div>
+
+		<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+			<a href="#" class="alert_close"></a>
+			<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+		</div>
+		<div id="phpbb_confirm" class="phpbb_alert">
+			<a href="#" class="alert_close"></a>
+			<div class="alert_text"></div>
+		</div>
+
+		<div style="display: none;">
+			<a id="bottom" class="anchor" accesskey="z"></a>
+					</div>
+</div>
+
+<script type="text/javascript" src="./assets/javascript/jquery.min.js?assets_version=76"></script>
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=76"></script>
+<script type="text/javascript" src="/forums/styles/rpi/template/js.cookie.js?assets_version=76"></script>
+<script type="text/javascript" src="/forums/styles/rpi/template/forum_fn.js?assets_version=76"></script>
+<script type="text/javascript" src="/forums/styles/rpi/template/ajax.js?assets_version=76"></script>
+<script type="text/javascript" src="/forums/styles/rpi/template/chosen.jquery.min.js?assets_version=76"></script>
+
+
+<script>
+	$(function() {
+		$("#st, #sd, #sk, #ch").chosen({
+			disable_search: true,
+			width: "auto"
+		});
+	});
+</script>
+
+<script>
+	// $(function() {
+	//
+	// 	var sidebarRecentPostDiv = document.getElementById("sidebar-recent-posts");
+	//
+	// 	$.get('/forums/app.php/feed?sid=26e4a4d87b0e5f278b638df7bf225c8e', function (data) {
+	// 		$(data).find("entry").each(function (i) {
+	// 			var el = $(this);
+	// 			var entryWrap = document.createElement("div");
+	//
+	// 			var entryTitle = document.createElement("a");
+	// 			var entryAuthor = document.createElement("span");
+	// 			var entryContent = document.createElement("span");
+	//
+	// 			entryTitle.className = ("sidebar-recent-title");
+	// 			entryAuthor.className = ("sidebar-recent-author");
+	// 			entryContent.className = ("sidebar-recent-content");
+	//
+	// 			function cutText(name) {
+	// 				var elementText = el.find(name).text();
+	//
+	// 				if (name == "title") {
+	// 					elementText = elementText.substring(elementText.indexOf("•") + 2);
+	// 				} else if (name == "content") {
+	// 					elementText = elementText.replace(/(<([^>]+)>)/ig,"");
+	// 				}
+	//
+	// 				if (elementText.length > 50) {
+	// 					return elementText.substr(0, 50);
+	// 				} else {
+	// 					return elementText;
+	// 				};
+	// 			};
+	//
+	// 			entryTitle.textContent = cutText("title");
+	// 			entryAuthor.textContent = "by " + cutText("author");
+	// 			entryContent.textContent = cutText("content");
+	// 			entryURL = el.find("id").text();
+	//
+	// 			$(entryTitle).attr("href", entryURL);
+	//
+	// 			entryWrap.appendChild(entryTitle);
+	// 			entryWrap.appendChild(entryAuthor);
+	// 			entryWrap.appendChild(entryContent);
+	//
+	// 			sidebarRecentPostDiv.appendChild(entryWrap);
+	//
+	// 			if (++i >= 5) {
+	// 				return false;
+	// 			}
+	// 		});
+	// 	});
+	//
+	// });
+</script>
+
+
+
+
+
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46270871-9', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" id="cookiebanner" src="https://cdnjs.cloudflare.com/ajax/libs/cookie-banner/1.2.2/cookiebanner.min.js" data-bg="#999798" data-fg="#ffffff" data-link="#ffffff" data-moreinfo="https://www.raspberrypi.org/cookies" data-accept-on-scroll="true" data-message="We use cookies to ensure that we give you the best experience on our website. By continuing to visit this site you agree to our use of cookies." data-moreinfo-decoration="underline" integrity="sha384-ZtuZyMr5oH1P/r7ZKXXHFBkIZoNaDZ+aHMHxGUZWP0Zfwk6TgyUlgcR5QIx1kj1U" crossorigin="anonymous"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"58581d3af9","applicationID":"280694242","transactionName":"bwZRZ0cCX0FUVhVYWVZMZkFcTFddR0AMQhlOClZEQQxBW1YbEVlG","queueTime":0,"applicationTime":58,"atts":"Q0FSEQ8YTE8=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div class="cookiebanner" style="position: fixed; left: 0px; right: 0px; height: auto; min-height: 21px; z-index: 255; background: rgb(153, 151, 152); color: rgb(255, 255, 255); line-height: 21px; padding: 5px 16px; font-family: arial, sans-serif; font-size: 14px; text-align: center; bottom: 0px; opacity: 1;"><div class="cookiebanner-close" style="float: right; padding-left: 5px; cursor: pointer;">✖</div><span>We use cookies to ensure that we give you the best experience on our website. By continuing to visit this site you agree to our use of cookies. <a href="https://www.raspberrypi.org/cookies" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: rgb(255, 255, 255); font-weight: normal;">Learn more</a></span></div></body></html>

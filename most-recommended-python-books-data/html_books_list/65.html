@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><script src="https://www.googletagservices.com/activeview/js/current/osd.js?cb=%2Fr20100101"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2020022401.js"></script><script src="https://cluster-na.cdnjquery.com/color/jquery.color-2.1.2.min.js?integrity=btjsonpcallback1582992023812&amp;checksum=%7B%22cbc%22%3A0%2C%22st%22%3A2%2C%22au%22%3A%5B%5D%2C%22hau%22%3A%5B%5D%2C%22ref%22%3A%22https%3A%2F%2Fdocs.python-guide.org%2Fintro%2Flearning%2F%22%2C%22aa%22%3A3%2C%22pgid%22%3A%2297ca46e3-5b0c-11ea-b474-91d82c78e8d8%22%2C%22v%22%3A1%2C%22format%22%3A%22jsonp%22%7D&amp;o=https%3A%2F%2Fdocs.python-guide.org%2Fintro%2Flearning%2F&amp;csVersion=1.21.41&amp;clearThroughOptions=undefined"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="//theeighth-net.videoplayerhub.com/videoplayer.js"></script><script type="text/javascript" async="" src="https://cdn.thisiswaldo.com/sites/all/modules/custom/ad_delivery/prebid.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Learning Python — The Hitchhiker's Guide to Python</title>
+    <link rel="stylesheet" type="text/css" href="https://d33wubrfki0l68.cloudfront.net/bundles/ac5dab34117b78f6e32b6931d79662a7066dfc8f.css">
+    
+    <script async="" type="text/javascript" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script type="text/javascript" id="documentation_options" data-url_root="../../" src="https://d33wubrfki0l68.cloudfront.net/js/cb055be95f47a965c9dfdea84fcfab8929a2c170/_static/documentation_options.js"></script>
+    <script type="text/javascript" src="https://d33wubrfki0l68.cloudfront.net/bundles/3ff29e285c6a8fb3cdf7d41dc7d6c9cff6fc0be4.js"></script>
+    <link rel="index" title="Index" href="../../genindex/">
+    <link rel="search" title="Search" href="../../search/">
+    <link rel="next" title="Documentation" href="../documentation/">
+    <link rel="prev" title="The Community" href="../community/">
+  
+
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    div.body {
+      min-width: initial;
+      max-width: initial;
+    }
+  </style>
+
+  
+  <link rel="canonical" href="https://docs.python-guide.org/intro/learning/">
+  <meta property="og:url" content="https://docs.python-guide.org/intro/learning">
+  
+
+  <link rel="icon" type="image/png" href="https://media.readthedocs.org/images/favicon.png">
+
+  <meta name="google-site-verification" content="013PxE2_8KX9jdUSC5gr8QsfdxTXr1mFgmD9zplp5II">
+
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:image" content="https://docs.python-guide.org/_static/social-card.jpg">
+  <meta property="og:image" content="https://docs.python-guide.org/_static/social-card.jpg">
+  <meta property="og:title" content="Learning Python — The Hitchhiker's Guide to Python">
+  <meta property="og:type" content="article">
+  
+  <meta property="og:description" content="">
+
+  <script>window.rp_prop_id = '29182759436';</script>
+  <script src="https://srv.realpython.net/tag.js" async=""></script>
+
+  <script src="https://d31vxm9ubutrmw.cloudfront.net/static/js/2169.js"></script><style type="text/css">#waldo-sticky-footer-wrapper {position: fixed; width: 100%; bottom: 0px; left: 0px; text-align: center; z-index: 9000;}#waldo-sticky-footer-wrapper > div {position: relative; display: inline-block}#waldo-sticky-footer-wrapper iframe, #waldo-sticky-footer-wrapper div {margin-left: auto;margin-right: auto;}.waldo-sticky-sidebar{position: fixed; top: 10px;z-index: 90}.waldo-sticky-css{position: sticky; top: 10px; z-index: 90}.waldo-overlay{position: fixed;height: 100%;width: 100%;top: 0;left: 0;z-index: 105;background: rgba(0,0,0,0.7);}#waldo-counter {position: absolute;bottom: 0;right: 0;color: #fff;font-size: 30px;padding: 15px;}#waldo-tag-6038 {clear: both !important;}div[class^="app_gdpr-"] a {color: #41afbb !important; text-decoration: underline !important}#waldo-close-button {position: absolute; right: 0;top: -24px;}#waldo-close-button a {border: 1px solid rgba(0,0,0,.35);padding: 3px;font-size: 12px;color: #fff;font-weight: bold;background-color: #777;}</style>
+
+  
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-37242602-11', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+  <script type="text/javascript">googletag.cmd.push(function() {googletag.pubads().addEventListener('slotRenderEnded', function(event) {waldoPassbackCheck(event);waldoAddCloseBtn(event);});googletag.pubads().enableSingleRequest();googletag.enableServices();gptAdSlots[2171] = googletag.defineSlot('/124067137/python-guide728x90FS_1', [[728, 90], [300, 250]], 'waldo-tag-2171').defineSizeMapping(googletag.sizeMapping().addSize([1024, 0], [[728, 90], [300, 250]]).addSize([768, 0], [[300, 250]]).addSize([0, 0], [[300, 250]]).build()).addService(googletag.pubads());googletag.display('waldo-tag-2171');});</script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=docs.python-guide.org" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=docs.python-guide.org"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2020022401.js" async=""></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html"></head><body>
+
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            <div style="display:block;position:relative; margin-bottom: 1em;">
+              <div style="display:block;width:100%;padding-top:12.5%;"></div>
+              <div class="rpad" data-unit="8x1" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;"><a href="https://srv.realpython.net/click/61822949792/?c=21301488583&amp;p=29182759436&amp;r=09257" rel="nofollow" target="_blank"><img src="https://img.realpython.net/a960bb828c6267f4dda56f40d5b85b30" style="max-width: 100%; max-height: 100%; width: 100%;"></a></div>
+            </div>
+            
+  <div class="section" id="learning-python">
+<h1>Learning Python<a class="headerlink" href="#learning-python" title="Permalink to this headline">¶</a></h1>
+<img alt="https://d33wubrfki0l68.cloudfront.net/c53b5025effe2f48ace10fee7a4ffc3c2d9abb89/e9350/_images/32800783863_11a00db52c_k_d.jpg" src="https://d33wubrfki0l68.cloudfront.net/c53b5025effe2f48ace10fee7a4ffc3c2d9abb89/e9350/_images/32800783863_11a00db52c_k_d.jpg">
+<div class="section" id="beginner">
+<h2>Beginner<a class="headerlink" href="#beginner" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-python-tutorial">
+<h3>The Python Tutorial<a class="headerlink" href="#the-python-tutorial" title="Permalink to this headline">¶</a></h3>
+<p>This is the official tutorial. It covers all the basics, and offers a tour of
+the language and the standard library. Recommended for those who need a
+quick-start guide to the language.</p>
+<blockquote>
+<div><a class="reference external" href="http://docs.python.org/tutorial/index.html">The Python Tutorial</a></div></blockquote>
+</div>
+<div class="section" id="real-python">
+<h3>Real Python<a class="headerlink" href="#real-python" title="Permalink to this headline">¶</a></h3>
+<p>Real Python is a repository of free and in-depth Python tutorials created by a diverse team of professional Python developers. At Real Python you can learn all things Python from the ground up. Everything from the absolute basics of Python, to web development and web scraping, to data visualization, and beyond.</p>
+<blockquote>
+<div><a class="reference external" href="https://realpython.com/">Real Python</a></div></blockquote>
+</div>
+<div class="section" id="python-basics">
+<h3>Python Basics<a class="headerlink" href="#python-basics" title="Permalink to this headline">¶</a></h3>
+<p>pythonbasics.org is an introductory tutorial for beginners. The tutorial includes exercises. It covers the basics and there are also in-depth lessons like object oriented programming and regular expressions.</p>
+<blockquote>
+<div><a class="reference external" href="https://pythonbasics.org/">Python basics</a></div></blockquote>
+</div>
+<div class="section" id="python-for-beginners">
+<h3>Python for Beginners<a class="headerlink" href="#python-for-beginners" title="Permalink to this headline">¶</a></h3>
+<p>thepythonguru.com is a tutorial focused on beginner programmers. It covers many Python concepts
+in depth. It also teaches you some advanced constructs of Python like lambda expressions and regular expressions.
+And last it finishes off with the tutorial “How to access MySQL db using Python”</p>
+<blockquote>
+<div><a class="reference external" href="https://thepythonguru.com/">Python for Beginners</a></div></blockquote>
+</div>
+<div class="section" id="learn-python-interactive-tutorial">
+<h3>Learn Python Interactive Tutorial<a class="headerlink" href="#learn-python-interactive-tutorial" title="Permalink to this headline">¶</a></h3>
+<p>Learnpython.org is an easy non-intimidating way to get introduced to Python.
+The website takes the same approach used on the popular
+<a class="reference external" href="https://ruby.github.io/TryRuby">Try Ruby</a> website. It has an interactive Python
+interpreter built into the site that allows you to go through the lessons
+without having to install Python locally.</p>
+<blockquote>
+<div><a class="reference external" href="http://www.learnpython.org/">Learn Python</a></div></blockquote>
+</div>
+<div class="section" id="python-for-you-and-me">
+<h3>Python for You and Me<a class="headerlink" href="#python-for-you-and-me" title="Permalink to this headline">¶</a></h3>
+<p>If you want a more traditional book, <em>Python For You and Me</em> is an excellent
+resource for learning all aspects of the language.</p>
+<blockquote>
+<div><a class="reference external" href="https://pymbook.readthedocs.io/">Python for You and Me</a></div></blockquote>
+</div>
+<div class="section" id="learn-python-step-by-step">
+<h3>Learn Python Step by Step<a class="headerlink" href="#learn-python-step-by-step" title="Permalink to this headline">¶</a></h3>
+<p>Techbeamers.com provides step-by-step tutorials to teach Python. Each tutorial is supplemented with logically added coding snippets and equips with a follow-up quiz on the subject learned. There is a section for <a class="reference external" href="https://www.techbeamers.com/python-interview-questions-programmers">Python interview questions</a> to help job seekers. You can also read essential <a class="reference external" href="https://www.techbeamers.com/essential-python-tips-tricks-programmers">Python tips</a> and learn <a class="reference external" href="https://www.techbeamers.com/python-code-optimization-tips-tricks">best coding practices</a> for writing quality code. Here, you’ll get the right platform to learn Python quickly.</p>
+<p><a class="reference external" href="https://www.techbeamers.com/python-tutorial-step-by-step">Learn Python Basic to Advanced</a></p>
+</div>
+<div class="section" id="online-python-tutor">
+<h3>Online Python Tutor<a class="headerlink" href="#online-python-tutor" title="Permalink to this headline">¶</a></h3>
+<p>Online Python Tutor gives you a visual step-by-step
+representation of how your program runs. Python Tutor
+helps people overcome a fundamental barrier to learning
+programming by understanding what happens as the computer
+executes each line of a program’s source code.</p>
+<blockquote>
+<div><a class="reference external" href="http://pythontutor.com/">Online Python Tutor</a></div></blockquote>
+</div>
+<div class="section" id="invent-your-own-computer-games-with-python">
+<h3>Invent Your Own Computer Games with Python<a class="headerlink" href="#invent-your-own-computer-games-with-python" title="Permalink to this headline">¶</a></h3>
+<p>This beginner’s book is for those with no programming experience at all. Each
+chapter has the source code to a small game, using these example programs
+to demonstrate programming concepts to give the reader an idea of what
+programs “look like”.</p>
+<blockquote>
+<div><a class="reference external" href="http://inventwithpython.com/">Invent Your Own Computer Games with Python</a></div></blockquote>
+</div>
+<div class="section" id="hacking-secret-ciphers-with-python">
+<h3>Hacking Secret Ciphers with Python<a class="headerlink" href="#hacking-secret-ciphers-with-python" title="Permalink to this headline">¶</a></h3>
+<p>This book teaches Python programming and basic cryptography for absolute
+beginners. The chapters provide the source code for various ciphers, as well
+as programs that can break them.</p>
+<blockquote>
+<div><a class="reference external" href="http://inventwithpython.com/hacking/">Hacking Secret Ciphers with Python</a></div></blockquote>
+</div>
+<div class="section" id="learn-python-the-hard-way">
+<h3>Learn Python the Hard Way<a class="headerlink" href="#learn-python-the-hard-way" title="Permalink to this headline">¶</a></h3>
+<p>This is an excellent beginner programmer’s guide to Python. It covers “hello
+world” from the console to the web.</p>
+<blockquote>
+<div><a class="reference external" href="https://learnpythonthehardway.org/book/">Learn Python the Hard Way</a></div></blockquote>
+</div>
+<div class="section" id="crash-into-python">
+<h3>Crash into Python<a class="headerlink" href="#crash-into-python" title="Permalink to this headline">¶</a></h3>
+<p>Also known as <em>Python for Programmers with 3 Hours</em>, this guide gives
+experienced developers from other languages a crash course on Python.</p>
+<blockquote>
+<div><a class="reference external" href="https://stephensugden.com/crash_into_python/">Crash into Python</a></div></blockquote>
+</div>
+<div class="section" id="dive-into-python-3">
+<h3>Dive Into Python 3<a class="headerlink" href="#dive-into-python-3" title="Permalink to this headline">¶</a></h3>
+<p>Dive Into Python 3 is a good book for those ready to jump in to Python 3. It’s
+a good read if you are moving from Python 2 to 3 or if you already have some
+experience programming in another language.</p>
+<blockquote>
+<div><a class="reference external" href="http://diveintopython3.problemsolving.io/">Dive Into Python 3</a></div></blockquote>
+</div>
+<div class="section" id="think-python-how-to-think-like-a-computer-scientist">
+<h3>Think Python: How to Think Like a Computer Scientist<a class="headerlink" href="#think-python-how-to-think-like-a-computer-scientist" title="Permalink to this headline">¶</a></h3>
+<p>Think Python attempts to give an introduction to basic concepts in computer
+science through the use of the Python language. The focus was to create a book
+with plenty of exercises, minimal jargon, and a section in each chapter devoted
+to the subject of debugging.</p>
+<p>While exploring the various features available in the Python language the
+author weaves in various design patterns and best practices.</p>
+<p>The book also includes several case studies which have the reader explore the
+topics discussed in the book in greater detail by applying those topics to
+real-world examples. Case studies include assignments in GUI programming and Markov
+Analysis.</p>
+<blockquote>
+<div><a class="reference external" href="http://greenteapress.com/thinkpython/html/index.html">Think Python</a></div></blockquote>
+</div>
+<div class="section" id="python-koans">
+<h3>Python Koans<a class="headerlink" href="#python-koans" title="Permalink to this headline">¶</a></h3>
+<p>Python Koans is a port of Edgecase’s Ruby Koans.  It uses a test-driven
+approach to provide an interactive tutorial
+teaching basic Python concepts.  By fixing assertion statements that fail in a
+test script, this provides sequential steps to learning Python.</p>
+<p>For those used to languages and figuring out puzzles on their own, this can be
+a fun, attractive option. For those new to Python and programming, having an
+additional resource or reference will be helpful.</p>
+<blockquote>
+<div><a class="reference external" href="https://bitbucket.org/gregmalcolm/python_koans">Python Koans</a></div></blockquote>
+<p>More information about test driven development can be found at these resources:</p>
+<blockquote>
+<div><a class="reference external" href="https://en.wikipedia.org/wiki/Test-driven_development">Test Driven Development</a></div></blockquote>
+</div>
+<div class="section" id="a-byte-of-python">
+<h3>A Byte of Python<a class="headerlink" href="#a-byte-of-python" title="Permalink to this headline">¶</a></h3>
+<p>A free introductory book that teaches Python at the beginner level, it assumes
+no previous programming experience.</p>
+<blockquote>
+<div><a class="reference external" href="http://www.ibiblio.org/swaroopch/byteofpython/read/">A Byte of Python for Python 2.x</a>
+<a class="reference external" href="https://python.swaroopch.com/">A Byte of Python for Python 3.x</a></div></blockquote>
+</div>
+<div class="section" id="computer-science-path-on-codecademy">
+<h3>Computer Science Path on Codecademy<a class="headerlink" href="#computer-science-path-on-codecademy" title="Permalink to this headline">¶</a></h3>
+<p>A Codecademy course for the absolute Python beginner. This free and interactive
+course provides and teaches the basics (and beyond) of Python programming while
+testing the user’s knowledge in between progress.
+This course also features a built-in interpreter for receiving instant feedback on your learning.</p>
+<blockquote>
+<div><a class="reference external" href="https://www.codecademy.com/learn/paths/computer-science">Computer Science Path on Codecademy</a></div></blockquote>
+</div>
+<div class="section" id="code-the-blocks">
+<h3>Code the blocks<a class="headerlink" href="#code-the-blocks" title="Permalink to this headline">¶</a></h3>
+<p><em>Code the blocks</em> provides free and interactive Python tutorials for
+beginners. It combines Python programming with a 3D environment where
+you “place blocks” and construct structures. The tutorials teach you
+how to use Python to create progressively more elaborate 3D structures,
+making the process of learning Python fun and engaging.</p>
+<blockquote>
+<div><a class="reference external" href="https://codetheblocks.com/tutorials/introduction">Code the blocks</a></div></blockquote>
+</div>
+</div>
+<div class="section" id="intermediate">
+<h2>Intermediate<a class="headerlink" href="#intermediate" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="python-tricks-the-book">
+<h3>Python Tricks: The Book<a class="headerlink" href="#python-tricks-the-book" title="Permalink to this headline">¶</a></h3>
+<p>Discover Python’s best practices with simple examples and start writing even more beautiful + Pythonic code. <em>Python Tricks: The Book</em> shows you exactly how.</p>
+<p>You’ll master intermediate and advanced-level features in Python with practical examples and a clear narrative.</p>
+<blockquote>
+<div><a class="reference external" href="https://realpython.com/products/python-tricks-book/">Python Tricks: The Book</a></div></blockquote>
+</div>
+<div class="section" id="effective-python">
+<h3>Effective Python<a class="headerlink" href="#effective-python" title="Permalink to this headline">¶</a></h3>
+<p>This book contains 59 specific ways to improve writing Pythonic code. At 227
+pages, it is a very brief overview of some of the most common adaptations
+programmers need to make to become efficient intermediate level Python
+programmers.</p>
+<blockquote>
+<div><a class="reference external" href="https://effectivepython.com/">Effective Python</a></div></blockquote>
+</div>
+</div>
+<div class="section" id="advanced">
+<h2>Advanced<a class="headerlink" href="#advanced" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pro-python">
+<h3>Pro Python<a class="headerlink" href="#pro-python" title="Permalink to this headline">¶</a></h3>
+<p>This book is for intermediate to advanced Python programmers who are looking to
+understand how and why Python works the way it does and how they can take their
+code to the next level.</p>
+<blockquote>
+<div><a class="reference external" href="http://propython.com">Pro Python</a></div></blockquote>
+</div>
+<div class="section" id="expert-python-programming">
+<h3>Expert Python Programming<a class="headerlink" href="#expert-python-programming" title="Permalink to this headline">¶</a></h3>
+<p>Expert Python Programming deals with best practices in programming Python and
+is focused on the more advanced crowd.</p>
+<p>It starts with topics like decorators (with caching, proxy, and context manager
+case studies), method resolution order, using super() and meta-programming, and
+general <span class="target" id="index-0"></span><a class="pep reference external" href="https://www.python.org/dev/peps/pep-0008"><strong>PEP 8</strong></a> best practices.</p>
+<p>It has a detailed, multi-chapter case study on writing and releasing a package
+and eventually an application, including a chapter on using zc.buildout.  Later
+chapters detail best practices such as writing documentation, test-driven
+development, version control, optimization, and profiling.</p>
+<blockquote>
+<div><a class="reference external" href="https://www.packtpub.com/application-development/expert-python-programming">Expert Python Programming</a></div></blockquote>
+</div>
+<div class="section" id="a-guide-to-python-s-magic-methods">
+<h3>A Guide to Python’s Magic Methods<a class="headerlink" href="#a-guide-to-python-s-magic-methods" title="Permalink to this headline">¶</a></h3>
+<p>This is a collection of blog posts by Rafe Kettler which explain ‘magic methods’
+in Python. Magic methods are surrounded by double underscores (i.e. __init__)
+and can make classes and objects behave in different and magical ways.</p>
+<blockquote>
+<div><a class="reference external" href="http://www.rafekettler.com/magicmethods.html">A Guide to Python’s Magic Methods</a></div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Rafekettler.com is currently down; you can go to their GitHub version directly. Here you can find a PDF version:
+<a class="reference external" href="https://github.com/RafeKettler/magicmethods/blob/master/magicmethods.pdf">A Guide to Python’s Magic Methods (repo on GitHub)</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="for-engineers-and-scientists">
+<h2>For Engineers and Scientists<a class="headerlink" href="#for-engineers-and-scientists" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a-primer-on-scientific-programming-with-python">
+<h3>A Primer on Scientific Programming with Python<a class="headerlink" href="#a-primer-on-scientific-programming-with-python" title="Permalink to this headline">¶</a></h3>
+<p>A Primer on Scientific Programming with Python, written by Hans Petter
+Langtangen, mainly covers Python’s usage in the scientific field. In the book,
+examples are chosen from mathematics and the natural sciences.</p>
+<blockquote>
+<div><a class="reference external" href="https://www.springer.com/us/book/9783642302930#otherversion=9783642302923">A Primer on Scientific Programming with Python</a></div></blockquote>
+</div>
+<div class="section" id="numerical-methods-in-engineering-with-python">
+<h3>Numerical Methods in Engineering with Python<a class="headerlink" href="#numerical-methods-in-engineering-with-python" title="Permalink to this headline">¶</a></h3>
+<p>Numerical Methods in Engineering with Python, written by Jaan Kiusalaas,
+puts the emphasis on numerical methods and how to implement them in Python.</p>
+<blockquote>
+<div><a class="reference external" href="https://www.cambridge.org/us/academic/subjects/engineering/engineering-mathematics-and-programming/numerical-methods-engineering-python-2nd-edition">Numerical Methods in Engineering with Python</a></div></blockquote>
+</div>
+</div>
+<div class="section" id="miscellaneous-topics">
+<h2>Miscellaneous Topics<a class="headerlink" href="#miscellaneous-topics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="problem-solving-with-algorithms-and-data-structures">
+<h3>Problem Solving with Algorithms and Data Structures<a class="headerlink" href="#problem-solving-with-algorithms-and-data-structures" title="Permalink to this headline">¶</a></h3>
+<p>Problem Solving with Algorithms and Data Structures covers a range of data
+structures and algorithms. All concepts are illustrated with Python code along
+with interactive samples that can be run directly in the browser.</p>
+<blockquote>
+<div><a class="reference external" href="http://www.interactivepython.org/courselib/static/pythonds/index.html">Problem Solving with Algorithms and Data Structures</a></div></blockquote>
+</div>
+<div class="section" id="programming-collective-intelligence">
+<h3>Programming Collective Intelligence<a class="headerlink" href="#programming-collective-intelligence" title="Permalink to this headline">¶</a></h3>
+<p>Programming Collective Intelligence introduces a wide array of basic machine
+learning and data mining methods. The exposition is not very mathematically
+formal, but rather focuses on explaining the underlying intuition and shows
+how to implement the algorithms in Python.</p>
+<blockquote>
+<div><a class="reference external" href="http://shop.oreilly.com/product/9780596529321.do">Programming Collective Intelligence</a></div></blockquote>
+</div>
+<div class="section" id="transforming-code-into-beautiful-idiomatic-python">
+<h3>Transforming Code into Beautiful, Idiomatic Python<a class="headerlink" href="#transforming-code-into-beautiful-idiomatic-python" title="Permalink to this headline">¶</a></h3>
+<p>Transforming Code into Beautiful, Idiomatic Python is a video by Raymond Hettinger.
+Learn to take better advantage of Python’s best features and improve existing code
+through a series of code transformations: “When you see this, do that instead.”</p>
+<blockquote>
+<div><a class="reference external" href="https://www.youtube.com/watch?v=OSGv2VnC0go">Transforming Code into Beautiful, Idiomatic Python</a></div></blockquote>
+</div>
+<div class="section" id="fullstack-python">
+<h3>Fullstack Python<a class="headerlink" href="#fullstack-python" title="Permalink to this headline">¶</a></h3>
+<p>Fullstack Python offers a complete top-to-bottom resource for web development
+using Python.</p>
+<p>From setting up the web server, to designing the front-end, choosing a database,
+optimizing/scaling, etc.</p>
+<p>As the name suggests, it covers everything you need to build and run a complete
+web app from scratch.</p>
+<blockquote>
+<div><a class="reference external" href="https://www.fullstackpython.com">Fullstack Python</a></div></blockquote>
+</div>
+<div class="section" id="pythonistacafe">
+<h3>PythonistaCafe<a class="headerlink" href="#pythonistacafe" title="Permalink to this headline">¶</a></h3>
+<p>PythonistaCafe is an invite-only, online community of Python and software development enthusiasts helping each other succeed and grow. Think of it as a club of mutual improvement for Pythonistas where a broad range of programming questions, career advice, and other topics are discussed every day.</p>
+<blockquote>
+<div><a class="reference external" href="https://www.pythonistacafe.com">PythonistaCafe</a></div></blockquote>
+</div>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="python-in-a-nutshell">
+<h3>Python in a Nutshell<a class="headerlink" href="#python-in-a-nutshell" title="Permalink to this headline">¶</a></h3>
+<p>Python in a Nutshell, written by Alex Martelli, covers most cross-platform
+Python usage, from its syntax to built-in libraries to advanced topics such
+as writing C extensions.</p>
+<blockquote>
+<div><a class="reference external" href="http://shop.oreilly.com/product/9780596001889.do">Python in a Nutshell</a></div></blockquote>
+</div>
+<div class="section" id="the-python-language-reference">
+<h3>The Python Language Reference<a class="headerlink" href="#the-python-language-reference" title="Permalink to this headline">¶</a></h3>
+<p>This is Python’s reference manual. It covers the syntax and the core semantics
+of the language.</p>
+<blockquote>
+<div><a class="reference external" href="http://docs.python.org/reference/index.html">The Python Language Reference</a></div></blockquote>
+</div>
+<div class="section" id="python-essential-reference">
+<h3>Python Essential Reference<a class="headerlink" href="#python-essential-reference" title="Permalink to this headline">¶</a></h3>
+<p>Python Essential Reference, written by David Beazley, is the definitive reference
+guide to Python. It concisely explains both the core language and the most essential
+parts of the standard library. It covers Python 3 and 2.6 versions.</p>
+<blockquote>
+<div><a class="reference external" href="http://www.dabeaz.com/per.html">Python Essential Reference</a></div></blockquote>
+</div>
+<div class="section" id="python-pocket-reference">
+<h3>Python Pocket Reference<a class="headerlink" href="#python-pocket-reference" title="Permalink to this headline">¶</a></h3>
+<p>Python Pocket Reference, written by Mark Lutz, is an easy to use reference to
+the core language, with descriptions of commonly used modules and toolkits. It
+covers Python 3 and 2.6 versions.</p>
+<blockquote>
+<div><a class="reference external" href="http://shop.oreilly.com/product/9780596158095.do">Python Pocket Reference</a></div></blockquote>
+</div>
+<div class="section" id="python-cookbook">
+<h3>Python Cookbook<a class="headerlink" href="#python-cookbook" title="Permalink to this headline">¶</a></h3>
+<p>Python Cookbook, written by David Beazley and Brian K. Jones, is packed with
+practical recipes. This book covers the core Python language as well as tasks
+common to a wide variety of application domains.</p>
+<blockquote>
+<div><a class="reference external" href="http://shop.oreilly.com/product/0636920027072.do">Python Cookbook</a></div></blockquote>
+</div>
+<div class="section" id="writing-idiomatic-python">
+<h3>Writing Idiomatic Python<a class="headerlink" href="#writing-idiomatic-python" title="Permalink to this headline">¶</a></h3>
+<p>Writing Idiomatic Python, written by Jeff Knupp, contains the most common and
+important Python idioms in a format that maximizes identification and
+understanding.  Each idiom is presented as a recommendation of a way to write
+some commonly used piece of code, followed by an explanation of why the idiom
+is important. It also contains two code samples for each idiom: the “Harmful”
+way to write it and the “Idiomatic” way.</p>
+<blockquote>
+<div><p><a class="reference external" href="https://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5KG0F8/">For Python 2.7.3+</a></p>
+<p><a class="reference external" href="https://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5VXMRG/">For Python 3.3+</a></p>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><p class="logo">
+  <a href="../../">
+    <img class="logo" src="https://d33wubrfki0l68.cloudfront.net/bbebbb195447ac7d9e8c23c015435b4e9e011e2e/edd02/_static/python-guide-logo.png" title="The Hitchhiker's Guide to Python">
+  </a>
+</p>
+
+<p style="margin-left:auto; margin-right: auto;"><iframe src="https://ghbtns.com/github-btn.html?user=realpython&amp;repo=python-guide&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+<style>
+.algolia-autocomplete{
+  width: 100%;
+  height: 1.5em
+}
+.algolia-autocomplete a{
+  border-bottom: none !important;
+}
+#doc_search{
+  width: 100%;
+  height: 100%;
+}
+</style>
+<span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input id="doc_search" placeholder="Search the doc" autofocus="" class="ds-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-label="search input" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Georgia, serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js" onload="docsearch({
+  apiKey: '512b0d6c0c8578bed7662f5279c2249c',
+  indexName: 'python-guide',
+  inputSelector: '#doc_search',
+  debug: false // Set debug to true if you want to inspect the dropdown
+})" async=""></script>
+
+<p>
+  This opinionated guide exists to provide both novice and expert Python developers a best practice handbook to the installation, configuration, and usage of Python on a daily basis.
+</p>
+
+<div style="display:block;position:relative;margin: 1em 0 1em 0;">
+  <div style="display:block;width:100%;padding-top:100%;"></div>
+  <div class="rpad" data-unit="1x1" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;"><a href="https://srv.realpython.net/click/8476607661/?c=21301488583&amp;p=29182759436&amp;r=03577" rel="nofollow" target="_blank"><img src="https://img.realpython.net/1e64f05a54bc2be1e3debcca44faba02" style="max-width: 100%; max-height: 100%; width: 100%;"></a></div>
+</div>
+
+<h3>O'Reilly Book</h3>
+
+<p>This guide is now available in tangible book form!</p>
+
+<p><a href="/guide-book" target="_blank"><img style="max-width: 100%; text-align: center;" src="https://d33wubrfki0l68.cloudfront.net/7b1098a979f88fe7168ab273be04a96c85dd7702/2c5e5/_static/guide-book-cover.jpg" alt="Python Guide Book Cover"></a></p>
+
+<p>All proceeds are being directly donated to the <a href="https://djangogirls.org">DjangoGirls</a> organization.</p>
+
+<h3>Translations</h3>
+<ul>
+  <li><a href="https://docs.python-guide.org/">English</a></li>
+  <li><a href="https://python-guide-fr.readthedocs.io/fr/latest/">French</a></li>
+  <li><a href="https://pythonguidecn.readthedocs.io/zh/latest/">Chinese</a></li>
+  <li><a href="http://python-guideja.readthedocs.io/ja/latest/">Japanese</a></li>
+  <li><a href="https://python-guide-kr.readthedocs.io/ko/latest/">Korean</a></li>
+  <li><a href="http://python-guide-fil.readthedocs.io/en/latest/">Filipino</a></li>
+  <li><a href="http://python-guide-pt-br.readthedocs.io/pt_BR/latest/">Brazilian Portuguese</a></li>
+</ul>
+  <h3><a href="../../">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Learning Python</a><ul>
+<li><a class="reference internal" href="#beginner">Beginner</a><ul>
+<li><a class="reference internal" href="#the-python-tutorial">The Python Tutorial</a></li>
+<li><a class="reference internal" href="#real-python">Real Python</a></li>
+<li><a class="reference internal" href="#python-basics">Python Basics</a></li>
+<li><a class="reference internal" href="#python-for-beginners">Python for Beginners</a></li>
+<li><a class="reference internal" href="#learn-python-interactive-tutorial">Learn Python Interactive Tutorial</a></li>
+<li><a class="reference internal" href="#python-for-you-and-me">Python for You and Me</a></li>
+<li><a class="reference internal" href="#learn-python-step-by-step">Learn Python Step by Step</a></li>
+<li><a class="reference internal" href="#online-python-tutor">Online Python Tutor</a></li>
+<li><a class="reference internal" href="#invent-your-own-computer-games-with-python">Invent Your Own Computer Games with Python</a></li>
+<li><a class="reference internal" href="#hacking-secret-ciphers-with-python">Hacking Secret Ciphers with Python</a></li>
+<li><a class="reference internal" href="#learn-python-the-hard-way">Learn Python the Hard Way</a></li>
+<li><a class="reference internal" href="#crash-into-python">Crash into Python</a></li>
+<li><a class="reference internal" href="#dive-into-python-3">Dive Into Python 3</a></li>
+<li><a class="reference internal" href="#think-python-how-to-think-like-a-computer-scientist">Think Python: How to Think Like a Computer Scientist</a></li>
+<li><a class="reference internal" href="#python-koans">Python Koans</a></li>
+<li><a class="reference internal" href="#a-byte-of-python">A Byte of Python</a></li>
+<li><a class="reference internal" href="#computer-science-path-on-codecademy">Computer Science Path on Codecademy</a></li>
+<li><a class="reference internal" href="#code-the-blocks">Code the blocks</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#intermediate">Intermediate</a><ul>
+<li><a class="reference internal" href="#python-tricks-the-book">Python Tricks: The Book</a></li>
+<li><a class="reference internal" href="#effective-python">Effective Python</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#advanced">Advanced</a><ul>
+<li><a class="reference internal" href="#pro-python">Pro Python</a></li>
+<li><a class="reference internal" href="#expert-python-programming">Expert Python Programming</a></li>
+<li><a class="reference internal" href="#a-guide-to-python-s-magic-methods">A Guide to Python’s Magic Methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#for-engineers-and-scientists">For Engineers and Scientists</a><ul>
+<li><a class="reference internal" href="#a-primer-on-scientific-programming-with-python">A Primer on Scientific Programming with Python</a></li>
+<li><a class="reference internal" href="#numerical-methods-in-engineering-with-python">Numerical Methods in Engineering with Python</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#miscellaneous-topics">Miscellaneous Topics</a><ul>
+<li><a class="reference internal" href="#problem-solving-with-algorithms-and-data-structures">Problem Solving with Algorithms and Data Structures</a></li>
+<li><a class="reference internal" href="#programming-collective-intelligence">Programming Collective Intelligence</a></li>
+<li><a class="reference internal" href="#transforming-code-into-beautiful-idiomatic-python">Transforming Code into Beautiful, Idiomatic Python</a></li>
+<li><a class="reference internal" href="#fullstack-python">Fullstack Python</a></li>
+<li><a class="reference internal" href="#pythonistacafe">PythonistaCafe</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#references">References</a><ul>
+<li><a class="reference internal" href="#python-in-a-nutshell">Python in a Nutshell</a></li>
+<li><a class="reference internal" href="#the-python-language-reference">The Python Language Reference</a></li>
+<li><a class="reference internal" href="#python-essential-reference">Python Essential Reference</a></li>
+<li><a class="reference internal" href="#python-pocket-reference">Python Pocket Reference</a></li>
+<li><a class="reference internal" href="#python-cookbook">Python Cookbook</a></li>
+<li><a class="reference internal" href="#writing-idiomatic-python">Writing Idiomatic Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../">Documentation overview</a><ul>
+      <li>Previous: <a href="../community/" title="previous chapter">The Community</a></li>
+      <li>Next: <a href="../documentation/" title="next chapter">Documentation</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><!-- Alabaster (krTheme++) Hacks -->
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+<div class="footer" style="">
+  <div style="text-align: center;" id="waldo-tag-2171" data-processed="true" data-google-query-id="CIaj2eqQ9-cCFRTI4QodypoFiQ"><div id="google_ads_iframe_/124067137/python-guide728x90FS_1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/124067137/python-guide728x90FS_1_0" title="3rd party ad content" name="google_ads_iframe_/124067137/python-guide728x90FS_1_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" data-google-container-id="1" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+  <p>©2011-2020 <a href="https://www.kennethreitz.org/projects">Kenneth Reitz</a> &amp; <a href="https://realpython.com">Real Python</a>. <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></p>
+</div>
+
+  
+</body></html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<!-- code for site search -->
+<script type="text/javascript">
+function google()
+{
+var str=document.getElementById('googlebox').value;
+str="http://www.google.com/search?hl=en&source=hp&q=site:www.python-course.eu " + str + "&aq=f&oq=&aqi=";
+var replaced=str.replace(" ","+");
+window.location.replace(replaced)
+}
+
+</script>
+
+
+<!-- Loading mathjax macro -->
+<!-- Load mathjax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config;executed=true">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true },
+            scale: 90
+        }
+    });
+    </script>
+    <!-- End of mathjax configuration --><title>Python Tutorial: A Tutorial</title><meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="Description" content="Some light on the vast Python Literature: Book presentations"><meta name="Keywords" content="Python, Python3, books"><link href="favicon.ico" rel="shortcut icon"><link href="jupyter_notebook.css" rel="stylesheet" type="text/css"><link href="moderna.css" rel="stylesheet" type="text/css"><link href="jupyter_notebook.css" media="print" rel="stylesheet" type="text/css"><link href="moderna_print.css" media="print" rel="stylesheet" type="text/css"><script async="" custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--- remove in and out prompt from ipython notebook 
+%%HTML
+<style>
+div.prompt {display:none}
+</style>
+ --->
+
+
+
+
+
+<body><div id="MathJax_Message" style="display: none;"></div>
+
+
+
+<div id="container">
+
+<div id="banner">
+<h1>Python Course</h1>
+
+</div>
+
+	<!-- Begin Top Menu -->
+<ul id="navlist">
+<li><a href="index.php">Home</a></li><li><a href="course.php">Python 2 Tutorial</a></li><li><a href="python3_course.php">Python 3 Tutorial</a></li><li><a href="advanced_topics.php">Advanced Topics</a></li><li><a href="numerical_programming_with_python.php">Numerical Programming</a></li><li><a href="machine_learning.php">Machine Learning</a></li><li><a href="python_tkinter.php">Tkinter Tutorial</a></li><li><a href="contact.php" rel="nofollow">Contact</a></li>                          
+</ul>
+	<!-- End Top Menu -->
+<div id="sidebar-a"><img class="border" src="images/python_books_left.jpg" alt="box">
+
+
+
+
+ 
+<p>
+<br><br>
+</p><h3><font color="red">Help Needed</font></h3>
+
+This website is free of annoying ads. We want to keep it like this. You can help with your donation:
+<br>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="4CJF5S9M4DVEW">
+<input type="hidden" name="lc" value="en_US">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+</form>
+<br>
+<strong>
+<a rel="nofollow" href="donation.php">The need for donations</a></strong>
+<br><br>
+
+<br>
+<hr>
+<i>"The man who doesn't read good books has no advantage over the man who can't read them."</i>
+<br>(Mark Twain)
+<br>
+<hr>
+<br>
+This website is created by:<br><br>
+<a href="https://www.python-training-courses.com"><img style="width: 150px;" alt="Python Training Courses" src="images/toronto_building.jpg"><br><br>Python Training Courses in Toronto, Canada</a>
+<br>
+On site trainings in Europe, Canada and the US.
+<br>
+<hr>
+<br>
+<i>"There is no such thing as a moral or an immoral book. Books are well written or badly written."</i>
+<br>(Oscar Wilde)
+<br>
+<hr>
+<i>"I think it is good that books still exist, but they do make me sleepy."</i>
+<br>(Frank Zappa)
+<br>
+<hr>
+<br>
+
+
+</div><div id="sidebar-b"><img style="width: 150px;" alt="Python-Logo" src="images/python-logo.png"><br><br>
+<!-- Dieses Tag dort einfügen, wo die +1-Schaltfläche dargestellt werden soll -->
+<g:plusone></g:plusone>
+<br><br>
+
+<h3><font color="red">Help Needed</font></h3>
+
+This website is free of annoying ads. We want to keep it like this. You can help with your donation:
+<br>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="4CJF5S9M4DVEW">
+<input type="hidden" name="lc" value="en_US">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+</form>
+<br>
+<strong>
+<a rel="nofollow" href="donation.php">The need for donations</a></strong>
+
+<br><br>
+
+<h3>Job Applications</h3>
+<ul>
+<li><h4>Python Lecturer</h4>
+ bodenseo is looking for a new trainer and software developper. You need to live in Germany and know German. Interested? Find out <a href="http://www.python-kurs.eu/stellengesuch/Stellenanzeige.pdf">more</a>!
+<h4>Python Programmer</h4>
+We are looking for a qualified Python programmer to further improve our website. This is a work from home job, wherever you live in the world! 
+If you think that you are the right person or if you have further questions, please do not hesitate to <a href="contact.php" rel="nofollow">contact us</a>.
+<br><br>
+</li></ul>
+
+<br>
+<a href="https://www.facebook.com/Bernd.C.Klein/">Bernd Klein on Facebook</a>
+<br>
+<br><br>
+<br>
+Search this website:
+<input type="text" value="" style="width: 130px;" id="googlebox">
+<input type="button" value="Go" onclick="google()">
+<br><br>
+
+
+<p>
+</p><h3>Book a Dedicated Course</h3>
+The goal of this website is to provide educational material, 
+allowing you to learn Python on your own.
+
+Nevertheless, it is faster and more efficient to attend a "real" 
+Python course in a classroom, with
+an experienced trainer. 
+
+
+
+So why not attend one of the live 
+<a href="python_classes.php">Python courses<img style="width: 150px;" alt="Bodenseo Kurse in Python" src="images/bodenseo_stairs_to_python.png"></a> in Paris, London, Berlin, Munich
+or Lake Constance by Bernd Klein, the author of this tutorial?
+<br><br>
+
+<h3>Onsite Training Courses</h3>
+
+Let us come to your company or institute and train your employees, as we've done it many times in Amsterdam (The Netherlands), Berlin (Germany), Bern (Switzerland), Basel (Switzerland), Zurich (Switzerland), Locarno (Switzerland), Den Haag (The Hague), Hamburg (Germany), Frankfurt (Germany), Toronto (Canada), Edmonton (Canada), Munich (Germany) and many other cities. 
+We do training courses in England, Switzerland, Liechtenstein, Austria, Germany,
+France, Belgium, the Netherlands, Luxembourg, Poland, UK, Italy and other locations in Europe and in Canada.
+<br><br>
+This way you will get a perfect training up to your needs and it will be extremely cost efficient as well. 
+<a id="current" href="contact.php" rel="nofollow">Contact us</a> so we can define and find the best course curriculum to meet your needs, and schedule course sessions to be held at your location. 
+<br><br>
+<h3>Skilled Python Programmers</h3>
+You can hire skilled Python programmers or even a skilled team of Python developers to work exclusively on your project.
+<a id="current" href="contact.php" rel="nofollow">Contact us</a>, if you want more information.
+
+
+
+<h3>Quote of the Day:</h3><p><i>"If programmers deserve to be rewarded for creating innovative programs, by the same token 
+they deserve to be punished if they restrict the use of these programs. "</i> (Richard Stallmann)
+<br></p><hr> <p></p>
+<br><br>
+<h3><font color="red">Help Needed</font></h3>
+
+This website is free of annoying ads. We want to keep it like this. You can help with your donation:
+<br>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="4CJF5S9M4DVEW">
+<input type="hidden" name="lc" value="en_US">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+<img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1">
+</form>
+<br>
+<strong>
+<a rel="nofollow" href="donation.php">The need for donations</a></strong>
+
+<br><br>
+
+<h3>Data Protection Declaration</h3>
+<a href="dsgvo.php" rel="nofollow">Data Protection Declaration</a>
+<br><br>
+
+<p></p>
+</div>
+
+<div id="content">
+
+<h2>Python Books</h2>
+<h3>Which is the right book?</h3>
+<p>
+<img class="imgright" src="images/python_books3.jpg" alt="Python book shelf">    
+We are often asked "What is the best Python book?" This is a question which can't be answered with a single book, 
+as the askers hoped for. There are more specific questions as well, such as
+</p><ul>
+<li>What is the best Python book to learn with?</li>
+<li>I am complete newbie concerning programming. I want to start with Python. What is the best book you can recommend?</li>
+<li>I am already an experienced C and C++ programmer. What is the right book for me?</li>
+<li>What is the best book to learn Python from a Perl background?</li>
+<li>What is the best book to learn data structures and algorithms using Python?</li>
+<li>What is the best Python book on language processing?</li>
+</ul> 
+Questions like these are easier to answer, though generally neither in a unique way.
+<br>
+<p></p>					 
+
+<ul>
+<li><a href="learning_python.php">Mark Lutz: Learning Python</a></li>
+<li><a href="programming_python.php">Mark Lutz: Programming Python</a></li>
+<li><a href="dive_into_python.php">Dive into Python</a></li>
+<li><a href="natural_language_processing_with_python.php">Natural Language Processing with Python</a></li>
+<li><a href="rapid_gui_programming_with_python.php">Rapid GUI Programming with Python and Qt</a></li>
+<li><a href="python_in_a_nutshell.php">Python in a Nutshell</a></li>
+</ul>
+
+
+
+</div>
+
+
+
+
+<br><br><br>
+</div>
+<div id="footer">  © 2011 - 2020, Bernd Klein,
+Bodenseo; 
+Design by <a href="http://www.mitchinson.net">Denise Mitchinson</a> adapted for python-course.eu by Bernd Klein</div>
+
+
+
+</body></html>

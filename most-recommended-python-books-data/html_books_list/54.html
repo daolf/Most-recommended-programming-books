@@ -1,0 +1,563 @@
+<!DOCTYPE html><html lang="en-US"><head><script type="text/javascript" src="https://clarium.global.ssl.fastly.net/gpt/a/wrap.js?v2_1"></script><script type="text/javascript" src="https://sb.scorecardresearch.com/beacon.js"></script><script type="text/javascript">
+
+(function() {
+	if(typeof amzn_assoc_utils==="undefined"){amzn_assoc_utils={};}if(typeof amzn_assoc_utils.parse==="undefined"){amzn_assoc_utils.parse=(function(){var d,b,a={'"':'"',"\\":"\\","/":"/",b:"\b",f:"\f",n:"\n",r:"\r",t:"\t"},m,k=function(n){throw {name:"SyntaxError",message:n,at:d,text:m};},g=function(n){if(n&&n!==b){k("Expected '"+n+"' instead of '"+b+"'");}b=m.charAt(d);d+=1;return b;},f=function(){var o,n="";if(b==="-"){n="-";g("-");}while(b>="0"&&b<="9"){n+=b;g();}if(b==="."){n+=".";while(g()&&b>="0"&&b<="9"){n+=b;}}if(b==="e"||b==="E"){n+=b;g();if(b==="-"||b==="+"){n+=b;g();}while(b>="0"&&b<="9"){n+=b;g();}}o=+n;if(!isFinite(o)){k("Bad number");}else{return o;}},h=function(){var q,p,o="",n;if(b==='"'){while(g()){if(b==='"'){g();return o;}if(b==="\\"){g();if(b==="u"){n=0;for(p=0;p<4;p+=1){q=parseInt(g(),16);if(!isFinite(q)){break;}n=n*16+q;}o+=String.fromCharCode(n);}else{if(typeof a[b]==="string"){o+=a[b];}else{break;}}}else{o+=b;}}}k("Bad string");},j=function(){while(b&&b<=" "){g();}},c=function(){switch(b){case"t":g("t");g("r");g("u");g("e");return true;case"f":g("f");g("a");g("l");g("s");g("e");return false;case"n":g("n");g("u");g("l");g("l");return null;}k("Unexpected '"+b+"'");},l,i=function(){var n=[];if(b==="["){g("[");j();if(b==="]"){g("]");return n;}while(b){n.push(l());j();if(b==="]"){g("]");return n;}g(",");j();}}k("Bad array");},e=function(){var o,n={};if(b==="{"){g("{");j();if(b==="}"){g("}");return n;}while(b){o=h();j();g(":");if(Object.hasOwnProperty.call(n,o)){k('Duplicate key "'+o+'"');}n[o]=l();j();if(b==="}"){g("}");return n;}g(",");j();}}k("Bad object");};l=function(){j();switch(b){case"{":return e();case"[":return i();case'"':return h();case"-":return f();default:return b>="0"&&b<="9"?f():c();}};return function(p,o){var n;m=p;d=0;b=" ";n=l();j();if(b){k("Syntax error");}return n;};}());}if(typeof amzn_assoc_utils.stringify==="undefined"){amzn_assoc_utils.stringify=function(b){var a="";if(typeof JSON!=="undefined"){a=JSON.stringify(b);}return a;};}if(typeof amzn_assoc_utils.addCssRules==="undefined"){amzn_assoc_utils.addCssRules=function(g,n){var h=document.createElement("style"),m,e=0,k="";h.appendChild(document.createTextNode(""));document.head.appendChild(h);m=h.sheet;for(e=0,rl=n.length;e<rl;e++){var d=1,l=n[e],b=n[e][0],f="";if(Object.prototype.toString.call(l[1][0])==="[object Array]"){l=l[1];d=0;}for(var c=l.length;d<c;d++){var a=l[d];f+=a[0]+":"+a[1]+(a[2]?" !important":"")+";\n";}if(typeof g==="string"){m.insertRule(g+"{"+b+"{"+f+"}}",m.cssRules.length);}else{m.insertRule(b+"{"+f+"}",m.cssRules.length);}}};}window.trackingUtils=function(l,c,e,o,p,h,d,r,t,n,q){var g={},j=new RegExp("/(ref=[\\w]+)/?","i"),a="assocPayloadId",i=function(u){return u&&encodeURIComponent(u).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");},m=(function(){var u=document.createElement("a");u.href=(window.location!==window.parent.location)?document.referrer:document.location;return u.protocol+"//"+u.hostname+((u.port===""||u.port==="80"||u.port==="443")?"":(":"+u.port))+(u.pathname.indexOf("/")!==0?("/"+u.pathname):u.pathname);}()),s=(function(){return i(m);}()),k=function(u,w,x,v){if(typeof x==="string"&&x!==""){if(u.search===""){u.search="?"+w+"="+x;}else{if(!u.search.match(new RegExp("[?&]"+w+"="))){u.search=u.search.replace(/\?/,"?"+w+"="+x+"&");}else{if(v){u.search=u.search.replace(new RegExp(w+"=([^&]*)"),w+"="+x);}}}}return u;},f=function(w,u,v){if(typeof v==="string"&&v!==""){if(!w.match(/\?/)){w=w+"?"+u+"="+v;}else{if(!w.match(u)){w=w.replace(/\?/,"?"+u+"="+v+"&");}}}return w;},b=function(v){var u=(typeof d!=="undefined")?d:0;if(typeof v!=="undefined"){u=v;}return u;};g.addRefUrls=function(z,A,v,u){var B=new RegExp("^http://.*(amazon|endless|myhabit|amazonwireless|javari|smallparts)\\.(com|ca|co\\.jp|de|fr|co\\.uk|cn|it|es)/.*","i"),w,y,x;for(x=0;x<z.length;x++){z[x].rel="nofollow";w=String(z[x].href);if(y=w.match(B)){z[x].href=g.addTrackingParameters(z[x],A,v,u);}}};g.addRefRefUrl=function(u){return k(u,"ref-refURL",s);};g.getRefRefUrl=function(){return s;};g.getRawRefUrl=function(){return m;};g.addSignature=function(v,u,w){return k(k(v,"sig",u),"sigts",w);};g.addLinkCode=function(v,u){return k(v,"linkCode",u);};g.addTrackingId=function(v,u){return k(v,"tag",u);};g.addLinkId=function(u,v){return k(u,"linkId",v);};g.addSubtag=function(u,v){return k(u,"ascsubtag",v);};g.addCreativeAsin=function(u,v){return k(k(u,"creativeASIN",v),"adId",v);};g.addAdType=function(v,u){return k(v,"adType",u);};g.addAdMode=function(u,v){return k(u,"adMode",v);};g.addAdFormat=function(v,u){return k(v,"adFormat",u);};g.addImpressionTimestamp=function(u,v){if(typeof v==="number"){v=v.toString();}return k(u,"impressionTimestamp",v);};g.convertToRedirectedUrl=function(u,x,v){var w=document.createElement("a");w.setAttribute("href",x);if(typeof v!=="undefined"){k(w,v,i(u.getAttribute("href")),true);}else{w.setAttribute("href",x+"/"+w.getAttribute("href"));}u.setAttribute("href",w.getAttribute("href"));return u;};g.getImpressionToken=function(){return h;};g.generateTransitId=function(){return g.getHashedImpressionToken();};g.getHashedImpressionToken=function(){var u=o.split("/");var v=u[u.length-2];return v;};g.getTransitId=function(){if(typeof assoc_session_storage!=="undefined"){var u=assoc_session_storage.get(a);return u;}return null;};g.getClickUrl=function(){return p;};g.addImpressionToken=function(v,w){var u=b(w);if(typeof h==="string"&&h!==""){k(v,"imprToken",h);if(typeof u!=="undefined"){k(v,"slotNum",u);}}return v;};g.addImpressionTokenStr=function(w,v){var u=b(v);if(typeof h==="string"&&h!==""){w=f(w,"imprToken",h);if(typeof u!=="undefined"){w=f(w,"slotNum",u);}}return w;};g.addTrackingParameters=function(A,B,z,E,x,u,y,w,v,F,D,C){return g.addSignature(g.addCreativeAsin(g.addLinkId(g.addTrackingId(g.addSubtag(g.addLinkCode(g.addRefRefUrl(g.addImpressionToken(g.addRefMarker(g.addAdType(g.addAdMode(g.addAdFormat(g.addImpressionTimestamp(A,C),D),F),v),x))),z),r),E),B),u),y,w);};g.addRefMarker=function(v,x){var w,u=false;if(typeof x==="undefined"){return v;}if(w=v.pathname.match(j)){v.pathname=v.pathname.replace(w[1],"ref="+x);}else{u=(v.pathname.charAt(v.pathname.length-1)==="/");v.pathname=v.pathname+(u?"":"/")+"ref="+x;}return v;};g.getRefMarker=function(u){var v;if(v=u.pathname.match(j)){return v[1].substr(4);}else{return undefined;}};g.getCurrentURL=function(){return(window.location!==window.parent.location)?document.referrer:document.location.href;};g.makeForesterCall=function(w){var u=undefined,v;if(typeof JSON!=="undefined"){v=JSON.stringify(w);}else{if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){v=amzn_assoc_utils.stringify(w);}else{return;}}if(typeof o==="string"){u=o+"?assoc_payload="+encodeURIComponent(v);g.generateImage(u);}};g.recordImpression=function(w,u,z,x,B){z.linkCode=w;z.trackingId=u;z.refUrl=g.getCurrentURL();if(n||!t){g.makeForesterCall(z);}else{g.addABPFlag(z,g.makeForesterCall);}if(typeof x==="undefined"||!x){var y=(new Date()).getTime();var A=(typeof B!=="undefined")?B:"";var v=e+"?l="+w+"&t="+u+"&o="+l+"&cb="+y+A;g.generateImage(v);}};g.createAssocPayload=function(y,w,v,u){y.linkCode=w;y.trackingId=v;y.refUrl=u;var x="";if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){x=amzn_assoc_utils.stringify(y);}return x;};g.recordAESImpression=function(w,u,x){if(typeof q==="string"){var z=g.createAssocPayload(x,w,u,g.getCurrentURL());var v=g.getHashedImpressionToken();var y=q+v+"/pixel?assoc_payload="+encodeURIComponent(z);g.generateImage(y);}};g.recordTransit=function(){if(!(g.getTransitId())||g.isUTMParamPresentInUrl(g.getCurrentURL())){assoc_session_storage.set(a,g.generateTransitId());}};g.isUTMParamPresentInUrl=function(v){var u=v.match(/utm_source=/i);return(u!==null);};g.addAAXClickUrls=function(v){var x,w,u;if(typeof v==="undefined"||typeof p==="undefined"){return;}for(w=0;w<v.length;w++){u=String(v[w].href);if(u.indexOf(p)<0){x=p+u;v[w].href=x;}}};g.addAAXClickUrl=function(u){if(typeof u==="undefined"||u.indexOf(p)===0){return u;}return p+u;};g.updateLinks=function(v,x){var w,u;if(typeof x!=="function"){return;}for(w=0;w<v.length;w++){u=String(v[w].href);v[w].href=x(u);}};g.elementInViewPort=function(u){var v=u.getBoundingClientRect(),w=(v.top>=0&&v.left>=0&&v.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&v.right<=(window.innerWidth||document.documentElement.clientWidth));return{posX:v.left+window.pageXOffset,posY:v.top+window.pageYOffset,inViewPort:w};};g.recordViewability=function(z,y,v,w){if(typeof o==="string"){var x=g.createViewbilityPayload(z,y,v,w);var u=o+x+"&cb="+(new Date()).getTime();g.generateImage(u);}};g.recordAESViewability=function(B,A,v,w){if(typeof q==="string"){var x=g.createViewbilityPayload(B,A,v,w);var u=g.getHashedImpressionToken();var z=encodeURIComponent(x);var y=q+u+"/pixel/"+z+"&cb="+(new Date()).getTime();g.generateImage(y);}};g.createViewbilityPayload=function(z,y,v,x){var w={};if(typeof y!=="undefined"){w.above_the_fold=y;}if(typeof v!=="undefined"){w.topPos=v;}if(typeof x!=="undefined"){w.leftPos=x;}if(typeof z!=="undefined"){if(Object.keys(w).length===0){w.viewable=true;}w.slotNum=z;}var u="";if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){u=amzn_assoc_utils.stringify({adViewability:[w]});}return u;};g.generateImage=function(u){if(typeof u!=="undefined"){(new Image()).src=u;}};g.addABPFlag=function(x,F){var z=false,y=2,w=document.body?document.body.appendChild(new Image()):new Image(),v=document.body?document.body.appendChild(new Image()):new Image(),C=false,A=false,u=Math.random()*11,E=t+"?ch=*&rn=*",D=function(H,G){if(y===0||G>1000){x.supplySideMetadata={ABPInstalled:y===0&&z};H(x);}else{setTimeout(function(){D(H,G*2);},G*2);}},B=function(){if(--y){return;}z=!C&&A;};w.style.display="none";v.style.display="none";w.onload=B;w.onerror=function(){C=true;B();};w.src=E.replace(/\*/,1).replace(/\*/,u);v.onload=B;v.onerror=function(){A=true;B();};v.src=E.replace(/\*/,2).replace(/\*/,u);D(F,250);};return g;};var assoc_session_storage=(function(){var a={};a.get=function(c){var d=null;if(typeof(window.sessionStorage)!=="undefined"){try{d=window.sessionStorage.getItem(c);}catch(b){}}return d;};a.set=function(c,d){if(typeof(window.sessionStorage)!=="undefined"){try{window.sessionStorage.setItem(c,d);}catch(b){}}};return a;}());window.elemTracker=function(b){var a={};a.trackElements=function(d,c){var f,e;if(typeof d!=="undefined"&&d.length>0&&typeof c==="function"){window.addEventListener("scroll",function(){for(f=0;f<d.length;f++){e=b.elementInViewPort(d[f]);if(e.inViewPort){c();}}},false);}};return a;};
+	var amznAutoTaggerMaker=function(h,v,B){var D={CA:"ca",CN:"cn",IN:"in",DE:"de",FR:"fr",GB:"co.uk",JP:"co.jp",US:"com"},j={CA:[],CN:[],IN:[],DE:["javari"],FR:["javari"],GB:["javari"],JP:["javari"],US:["smallparts","amazonwireless","endless","myhabit"]},F=(function(){var P=-1,O={};O.getNextSlotNum=function(){return ++P;};return O;}()),q,o,e=Math.max(document.body.scrollHeight,document.body.offsetHeight,document.documentElement.clientHeight,document.documentElement.scrollHeight,document.documentElement.offsetHeight),m=Math.max(document.body.scrollWidth,document.body.offsetWidth,document.documentElement.clientWidth,document.documentElement.scrollWidth,document.documentElement.offsetWidth),y={totalDocWidth:m,totalDocHeight:e,logType:"onetag_pageload",pageTitle:document.title},a="w50",J="w61",H="g12",C={},b=new RegExp("%3F"),w=new Object(),x=false,l="",s="",u=0,L=0,d=0,G=new RegExp("amzn.to"),r=new RegExp(h.redirectorEndPoint),E=["kdp.amazon.com"],N=[],I="assocPayloadId",c=function(P){var Q,O=false;for(Q=0;Q<E.length;Q++){if(P.match(E[Q])){O=true;break;}}return O;},p=function(O){return O.nextSibling&&O.nextSibling.tagName==="IMG"&&O.nextSibling.hasAttribute("src")&&(O.nextSibling.getAttribute("src").search(/ir-[a-z]{2}\.amazon-adsystem\.com/)>-1||O.nextSibling.getAttribute("src").search(/www\.assoc-amazon\.*/)>-1);},n=function(O){if(!O.href.match(r)){O.href=h.redirectorEndPoint+O.href;}},k=function(Y,ae){var Z=new RegExp("/(ref=[\\w]+)/?","i"),U,ad=false,P,S,T=false,X=Y.search.match(/\?tag=([^&]+)|&tag=([^&]+)|\?tag-value=([^&]+)|&tag-value=([^&]+)|\?tag_value=([^&]+)|&tag_value=([^&]+)|\?t=([^&]+)|&t=([^&]+)/),R=Y.search.match(/\?tag=|&tag=|\?tag-value=|&tag-value=|\?tag_value=|&tag_value=|\?t=|&t=/),O=Y.search.match(/(linkCode|link_code|lc)=([^&]+)/i),W=v.elementInViewPort(Y),ac={autoTagged:false,overwritten:false,geoRedirected:false,atf:W.inViewPort},Q=F.getNextSlotNum(),V={destinationURL:Y.href,slotNum:Q,atfInFirstLoad:W.inViewPort,posX:W.posX,posY:W.posY,logType:"onetag_textlink"},ab=p(Y),aa;ac.slotNum=Q;if(Y.search===""){Y.search="?imprToken="+v.getImpressionToken()+"&slotNum="+Q;}else{Y.search=Y.search.replace(/\?/,"?imprToken="+v.getImpressionToken()+"&slotNum="+Q+"&");}if(h.enableAutoTagging){ac.autoTagged=true;if(X){if(h.overwrite){for(S=1;S<9;S++){if(X[S]!=undefined){Y.search=Y.search.replace(X[S],ae);break;}}ac.overwritten=true;ad=true;}}else{if(R){Y.search=Y.search.replace(/tag=/,"tag="+ae);ad=true;}else{Y.search=Y.search.replace(/\?/,"?tag="+ae+"&");ad=true;}}}if(O&&typeof h.overridableLinkCodes[O[2]]!=="undefined"){T=true;}if(O&&!T){P=O[2];}else{P=ad?a:J;}if(O){V.oldLinkCode=O[2];Y.search=Y.search.replace(O[2],P);}else{Y.search=Y.search.replace(/\?/,"?linkCode="+P+"&");}if(ad){aa=ae;}else{if(typeof X!=="undefined"&&X instanceof Array&&X.length>=S+1&&typeof X[S]==="string"){aa=X[S];}else{aa="";}}if(C.shouldBeGeoRedirected()){ac.geoRedirected=true;n(Y);}if(Y.hasAttribute("data-amzn-asin")&&!Y.search.match("creativeASIN")){Y.search=Y.search.replace(/\?/,"?creativeASIN="+Y.getAttribute("data-amzn-asin")+"&");}if(C.shouldTrackTransit(h)){v.recordTransit();V[I]=v.getTransitId();}N.push({pos:W,slotNum:Q,linkCode:P,linkInfo:V,skipIRCall:ab,imprTag:aa});Y.href=v.addAAXClickUrl(Y.href);return ac;},A=function(O){if(O.href.match(b)){o=O.href.split(b);O.href=o[0]+"?"+decodeURIComponent(o[1]);}},t=function(P,O,S){var R,Q;for(R=0;R<P.length;R++){for(Q=0;Q<O.length;Q++){if(window.addEventListener){P[R].addEventListener(O[Q],S,false);}else{P[R].attachEvent("on"+O[Q],S);}}}},K=function(O,P){var Q=false;t([O],["touchstart"],function(){Q=false;});t([O],["touchmove"],function(){Q=true;});t([O],["click","touchend"],function(R){if(Q){return;}O.setAttribute("href",P);});t([O],["auxclick","contextmenu"],function(R){O.setAttribute("href",P);});t([O],["mouseup"],function(R){if(R.button===1||R.ctrlKey){O.setAttribute("href",P);}});},M=function(){var O="";for(i=0;i<h.itemRefs.length;i++){if(typeof h.itemRefs[i].type!=="undefined"&&h.itemRefs[i].type==="ASIN"&&typeof h.itemRefs[i].sourceLink!=="undefined"&&String(h.itemRefs[i].sourceLink).match(G)!==null&&typeof h.itemRefs[i].destinationLink!=="undefined"){w[h.itemRefs[i].sourceLink]=h.itemRefs[i].destinationLink;if(l!==""){O=",";}l=l+O+h.itemRefs[i].sourceLink;u++;}}},f=function(P,O){B.trackElements([P],function(){if(typeof O!==undefined&&O.slotNum!==undefined&&(O.viewed===undefined||!O.viewed)){v.recordViewability(O.slotNum);if(C.shouldInteractWithAES(h)){v.recordAESViewability(O.slotNum);}O.viewed=true;}});},g=function(O,P){K(O,O.getAttribute("href"));O.setAttribute("href",P);},z=function(){var Q,P,O;for(Q=0;Q<N.length;Q++){P=N[Q];O=P.pos;v.recordImpression(P.linkCode,P.imprTag,P.linkInfo,P.skipIRCall,P.slotNum);v.recordViewability(P.slotNum,O.inViewPort,O.posX,O.posY);if(C.shouldInteractWithAES(h)){v.recordAESImpression(P.linkCode,P.imprTag,P.linkInfo);v.recordAESViewability(P.slotNum,O.inViewPort,O.posX,O.posY);}}N=[];};if(h.locale!=undefined){q=h.locale;}else{q="US";}C.shouldBeGeoRedirected=function(){return h.enableGeoRedirection&&(h.region!==""&&h.region!==h.viewerCountry);};C.publisherCallBack=function(){window["amzn_assoc_client_cb_"+h.adUnitSlotNum]({type:"onload",data:{},widget:C});};C.decorateLinkElement=function(O){A(O);linkProperties=k(O,h.trackingId);f(O,linkProperties);return linkProperties;};C.shouldTrackTransit=function(O){return((typeof O.disableTransitTracking==="undefined")||!O.disableTransitTracking);};C.shouldInteractWithAES=function(O){return((typeof O.enableAESInteraction!=="undefined")&&O.enableAESInteraction);};C.tagLinks=function(af){var ah,ag,P,aa,aj,ac=[],al=0,X,Z,ai,ae,ak,O,Y,V=0,R=0,ab=0,Q=0,U=0,S=0,T,W,ad="";P=D[q];aa=j[q];aj=new RegExp("^(http|https)://(www|[\\w\\-\\.]+)?amazon\\.("+P+")/","i");if(aa){for(al=0;al<aa.length;al++){X=P;if(P=="co.jp"){X="co.jp|jp";}ac[al]=new RegExp("^(http|https)://(www\\.)?("+aa[al]+")\\.("+X+")/","i");}}Z=af.getElementsByTagName("a");if(!x){M();x=true;}for(ah=0;ah<Z.length;ah++){Y=undefined;ai=String(Z[ah].href);if(ae=ai.match(aj)&&!c(ai)){Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}else{if(h.isShortLinksSupported&&(ak=ai.match(G))!==null){L++;if(s!==""){ad=",";}s=s+ad+Z[ah].href;T=w[Z[ah].href];if(typeof T!=="undefined"){d++;Z[ah].setAttribute("href",T);Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}else{if(C.shouldBeGeoRedirected()){Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}}}else{for(O=0;O<ac.length;O++){if(ae=ai.match(ac[O])){C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}}}}if(typeof Y!=="undefined"){if(Y.autoTagged){R++;}if(Y.overwritten){S++;}if(Y.geoRedirected){ab++;}if(Y.atf){Q++;}else{U++;}V++;}}y.numLinks=V;y.numAutoTaggedLinks=R;y.autoTaggingEnabled=h.enableAutoTagging;y.geoRedirectEnabled=h.enableGeoRedirection;y.disableTransitTracking=h.disableTransitTracking;y.numLinksATF=Q;y.numLinksBTF=U;y.shortLinksInLivePool=l;y.shortLinksInPage=s;y.shortLinksInLivePoolCount=u;y.shortLinksInPageCount=L;y.shortLinksMatchCount=d;if(C.shouldTrackTransit(h)){v.recordTransit();y[I]=v.getTransitId();}v.recordImpression(h.linkCode,h.trackingId,y);if(C.shouldInteractWithAES(h)){v.recordAESImpression(h.linkCode,h.trackingId,y);}t([window],["load"],z);};return C;};
+    var spec = {
+        trackingId : "superjsends-20",
+        region : "US",
+        overwrite : false,
+        enableAutoTagging : false,
+        linkCode : "w49",
+        overridableLinkCodes :  {   "am1": ""   , "am2": ""   , "am3": ""   , "as1": ""   , "as2": ""   , "as3": ""   , "as4": ""   , "li1": ""   , "li2": ""   , "li3": ""   , "ll1": ""   , "ll2": ""   },
+        enableGeoRedirection : true,
+        redirectorEndPoint : "https://assoc-redirect.amazon.com/g/r/",
+        adUnitSlotNum : "0",
+        itemRefs : [],
+        isShortLinksSupported : true,
+        viewerCountry : "US",
+        disableTransitTracking : false,
+        enableAESInteraction : false
+    }, trackingUtils = window.trackingUtils(
+        "1",
+        "//fls-na.amazon-adsystem.com/1/associates-ads/1/OP/r/json",
+        "//ir-na.amazon-adsystem.com/e/ir",
+        "https://aax-us-east.amazon-adsystem.com/x/px/QovEn0jvcFkPqV8X2dgole8AAAFwkav5BAEAAAFKAcGAxXE/", "https://aax-us-east.amazon-adsystem.com/x/c/QovEn0jvcFkPqV8X2dgole8AAAFwkav5BAEAAAFKAcGAxXE/", "euIf.Io-fkY0dCE1y80tCA", undefined, undefined, undefined, true,
+        "https://assoc-na.associate-amazon.com/onetag/"
+    );
+
+    window.amznAutoTagger = amznAutoTaggerMaker(spec, trackingUtils, window.elemTracker(trackingUtils));
+    window.amznAutoTagger.tagLinks(document);
+    window.amznAutoTagger.publisherCallBack();
+}());
+
+ //# sourceURL=dynscript-0.js</script><script type="text/javascript" src="https://ads.adthrive.com/core/v1/vendor/prebid/prebid.min.js"></script><script type="text/javascript" src="https://js-sec.indexww.com/ht/p/182496-52135363727691.js"></script><script type="text/javascript" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+	<meta charset="UTF-8">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<title>7 Best Books to Learn Python in 2020</title>
+<script type="text/javascript" src="https://ads.adthrive.com/core/v1/js/adthrive.min.js?threshold=57"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" type="text/javascript" src="https://ads.adthrive.com/sites/5e0cc92517a8be5a76a36c67/ads.min.js?threshold=57"></script><script>
+window.adthrive = window.adthrive || {};
+window.adthrive.cmd = window.adthrive.cmd || [];
+window.adthrive.host = 'ads.adthrive.com';
+window.adthrive.plugin = 'adthrive-ads-1.0.37';
+window.adthrive.threshold = Math.floor(Math.random() * 100 + 1);
+
+(function() {
+	var script = document.createElement('script');
+	script.async = true;
+	script.type = 'text/javascript';
+	script.src = 'https://ads.adthrive.com/sites/5e0cc92517a8be5a76a36c67/ads.min.js?threshold=' + window.adthrive.threshold;
+	var node = document.getElementsByTagName('script')[0];
+	node.parentNode.insertBefore(script, node);
+})();
+</script>
+
+<!-- This site is optimized with the Yoast SEO plugin v13.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Learning Python online through videos, tutorials or other resources is helpful, but another great option is to crack open a good book.">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://www.anysoftwaretools.com/best-python-books/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="7 Best Books to Learn Python in 2020">
+<meta property="og:description" content="Learning Python online through videos, tutorials or other resources is helpful, but another great option is to crack open a good book.">
+<meta property="og:url" content="https://www.anysoftwaretools.com/best-python-books/">
+<meta property="og:site_name" content="AnySoftwareTools">
+<meta property="article:section" content="Buying Guides">
+<meta property="article:published_time" content="2020-02-04T08:49:49+00:00">
+<meta property="article:modified_time" content="2020-02-04T10:31:46+00:00">
+<meta property="og:updated_time" content="2020-02-04T10:31:46+00:00">
+<meta property="og:image" content="https://www.anysoftwaretools.com/wp-content/uploads/python-books.png">
+<meta property="og:image:secure_url" content="https://www.anysoftwaretools.com/wp-content/uploads/python-books.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="400">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="Learning Python online through videos, tutorials or other resources is helpful, but another great option is to crack open a good book.">
+<meta name="twitter:title" content="7 Best Books to Learn Python in 2020">
+<meta name="twitter:image" content="https://www.anysoftwaretools.com/wp-content/uploads/python-books.png">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.anysoftwaretools.com/#website","url":"https://www.anysoftwaretools.com/","name":"AnySoftwareTools","inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":"https://www.anysoftwaretools.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://www.anysoftwaretools.com/best-python-books/#primaryimage","inLanguage":"en-US","url":"https://www.anysoftwaretools.com/wp-content/uploads/python-books.png","width":800,"height":400,"caption":"python books"},{"@type":"WebPage","@id":"https://www.anysoftwaretools.com/best-python-books/#webpage","url":"https://www.anysoftwaretools.com/best-python-books/","name":"7 Best Books to Learn Python in 2020","isPartOf":{"@id":"https://www.anysoftwaretools.com/#website"},"inLanguage":"en-US","primaryImageOfPage":{"@id":"https://www.anysoftwaretools.com/best-python-books/#primaryimage"},"datePublished":"2020-02-04T08:49:49+00:00","dateModified":"2020-02-04T10:31:46+00:00","author":{"@id":"https://www.anysoftwaretools.com/#/schema/person/12b7c374035c32927e7ca8c1bf3550bc"},"description":"Learning Python online through videos, tutorials or other resources is helpful, but another great option is to crack open a good book."},{"@type":["Person"],"@id":"https://www.anysoftwaretools.com/#/schema/person/12b7c374035c32927e7ca8c1bf3550bc","name":"Chris Hwang","image":{"@type":"ImageObject","@id":"https://www.anysoftwaretools.com/#authorlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/b7a97b2b6b1081ffd949097097c0f2e6?s=96&r=g","caption":"Chris Hwang"},"description":"Chris is a lifelong tech enthusiast with a broad range of interests including coding, data analysis, traveling, and more. He used to work as a software programmer immersing himself in the world of codes, now he finds it more interesting talking to real people.","sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="AnySoftwareTools » Feed" href="https://www.anysoftwaretools.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="AnySoftwareTools » Comments Feed" href="https://www.anysoftwaretools.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="AnySoftwareTools » 7 Best Books to Learn Python in 2020 Comments Feed" href="https://www.anysoftwaretools.com/best-python-books/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.anysoftwaretools.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://www.anysoftwaretools.com/wp-includes/js/wp-emoji-release.min.js?ver=5.3.2" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link crossorigin="anonymous" rel="stylesheet" id="generate-fonts-css" href="//fonts.googleapis.com/css?family=Open+Sans:300,regular,italic,600,700" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="https://www.anysoftwaretools.com/wp-content/plugins/menu-icons/vendor/codeinwp/icon-picker/css/types/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
+<link rel="stylesheet" id="menu-icons-extra-css" href="https://www.anysoftwaretools.com/wp-content/plugins/menu-icons/css/extra.min.css?ver=0.12.2" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://www.anysoftwaretools.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="related-posts-by-taxonomy-css" href="https://www.anysoftwaretools.com/wp-content/plugins/related-posts-by-taxonomy/includes/assets/css/styles.css?ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="sfmsb-style-css" href="https://www.anysoftwaretools.com/wp-content/plugins/simple-follow-me-social-buttons-widget/assets/css/style.css?ver=3.3.3" type="text/css" media="all">
+<link rel="stylesheet" id="sfmsb-icons-css" href="https://www.anysoftwaretools.com/wp-content/plugins/simple-follow-me-social-buttons-widget/assets/css/icons.css?ver=3.3.3" type="text/css" media="all">
+<link rel="stylesheet" id="ez-icomoon-css" href="https://www.anysoftwaretools.com/wp-content/plugins/easy-table-of-contents/vendor/icomoon/style.min.css?ver=1.7.1" type="text/css" media="all">
+<link rel="stylesheet" id="ez-toc-css" href="https://www.anysoftwaretools.com/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=1.7.1" type="text/css" media="all">
+<style id="ez-toc-inline-css" type="text/css">
+div#ez-toc-container p.ez-toc-title {font-size: 120%;}div#ez-toc-container p.ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}
+</style>
+<link rel="stylesheet" id="generate-style-css" href="https://www.anysoftwaretools.com/wp-content/themes/generatepress/css/all.min.css?ver=2.4.1" type="text/css" media="all">
+<style id="generate-style-inline-css" type="text/css">
+.post-navigation {display:none;}.single footer.entry-meta {display:none;}@media (max-width:768px){}
+body{background-color:#fafafa;color:#3a3a3a;}a, a:visited{color:#1b78e2;}a:hover, a:focus, a:active{color:#000000;}body .grid-container{max-width:1100px;}.wp-block-group__inner-container{max-width:1100px;margin-left:auto;margin-right:auto;}body, button, input, select, textarea{font-family:"Open Sans", sans-serif;}.entry-content > [class*="wp-block-"]:not(:last-child){margin-bottom:1.5em;}.main-title{font-size:25px;}.main-navigation .main-nav ul ul li a{font-size:14px;}.widget-title{font-weight:600;}button:not(.menu-toggle),html input[type="button"],input[type="reset"],input[type="submit"],.button,.button:visited,.wp-block-button .wp-block-button__link{font-size:15px;}h1{font-weight:600;}h2{font-weight:600;}@media (max-width:768px){.main-title{font-size:20px;}h1{font-size:30px;}h2{font-size:25px;}}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a,.top-bar a:visited{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:#ffffff;color:#3a3a3a;}.site-header a,.site-header a:visited{color:#3a3a3a;}.main-title a,.main-title a:hover,.main-title a:visited{color:#ffffff;}.site-description{color:#757575;}.main-navigation,.main-navigation ul ul{background-color:#2f4468;}.main-navigation .main-nav ul li a,.menu-toggle{color:#ffffff;}.main-navigation .main-nav ul li:hover > a,.main-navigation .main-nav ul li:focus > a, .main-navigation .main-nav ul li.sfHover > a{color:#dee5ed;background-color:#2f4468;}button.menu-toggle:hover,button.menu-toggle:focus,.main-navigation .mobile-bar-items a,.main-navigation .mobile-bar-items a:hover,.main-navigation .mobile-bar-items a:focus{color:#ffffff;}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#ffffff;background-color:rgba(10,10,10,0.31);}.main-navigation .main-nav ul li[class*="current-menu-"] > a:hover,.main-navigation .main-nav ul li[class*="current-menu-"].sfHover > a{color:#ffffff;background-color:rgba(10,10,10,0.31);}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a{color:#dee5ed;background-color:#2f4468;}.main-navigation ul ul{background-color:#3f3f3f;}.main-navigation .main-nav ul ul li a{color:#ffffff;}.main-navigation .main-nav ul ul li:hover > a,.main-navigation .main-nav ul ul li:focus > a,.main-navigation .main-nav ul ul li.sfHover > a{color:#ffffff;background-color:#4f4f4f;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a{color:#ffffff;background-color:#4f4f4f;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a:hover,.main-navigation .main-nav ul ul li[class*="current-menu-"].sfHover > a{color:#ffffff;background-color:#4f4f4f;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:#ffffff;}.entry-title a,.entry-title a:visited{color:#2f4468;}.entry-title a:hover{color:#0a0000;}.entry-meta{color:#878787;}.entry-meta a,.entry-meta a:visited{color:#727272;}.entry-meta a:hover{color:#0a0101;}.sidebar .widget{background-color:#ffffff;}.sidebar .widget .widget-title{color:#000000;}.footer-widgets{color:#ffffff;background-color:#2f4468;}.footer-widgets a,.footer-widgets a:visited{color:#ffffff;}.footer-widgets .widget-title{color:#ffffff;}.site-info{color:#2f4468;}.site-info a,.site-info a:visited{color:#2f4468;}.site-info a:hover{color:#0a0a0a;}.footer-bar .widget_nav_menu .current-menu-item a{color:#0a0a0a;}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:#666666;background-color:#fafafa;border-color:#cccccc;}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:#666666;background-color:#ffffff;border-color:#bfbfbf;}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.button:visited,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#2f4468;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#22304d;}.generate-back-to-top,.generate-back-to-top:visited{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}.generate-back-to-top:hover,.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-40px;width:calc(100% + 80px);max-width:calc(100% + 80px);}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header, .wp-block-group__inner-container{padding:30px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}}.one-container .sidebar .widget{padding:0px;}/* End cached CSS */@media (max-width: 768px){.main-navigation .menu-toggle,.main-navigation .mobile-bar-items,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav{display:none;}[class*="nav-float-"] .site-header .inside-header > *{float:none;clear:both;}}@font-face {font-family: "GeneratePress";src:  url("https://www.anysoftwaretools.com/wp-content/themes/generatepress/fonts/generatepress.eot");src:  url("https://www.anysoftwaretools.com/wp-content/themes/generatepress/fonts/generatepress.eot#iefix") format("embedded-opentype"),  url("https://www.anysoftwaretools.com/wp-content/themes/generatepress/fonts/generatepress.woff2") format("woff2"),  url("https://www.anysoftwaretools.com/wp-content/themes/generatepress/fonts/generatepress.woff") format("woff"),  url("https://www.anysoftwaretools.com/wp-content/themes/generatepress/fonts/generatepress.ttf") format("truetype"),  url("https://www.anysoftwaretools.com/wp-content/themes/generatepress/fonts/generatepress.svg#GeneratePress") format("svg");font-weight: normal;font-style: normal;}.main-navigation .slideout-toggle a:before,.slide-opened .slideout-overlay .slideout-exit:before {font-family: GeneratePress;}.slideout-navigation .dropdown-menu-toggle:before {content: "\f107" !important;}.slideout-navigation .sfHover > a .dropdown-menu-toggle:before {content: "\f106" !important;}
+.navigation-branding .main-title{font-weight:bold;text-transform:none;font-size:25px;}@media (max-width: 768px){.navigation-branding .main-title{font-size:20px;}}
+.main-navigation .main-nav ul li a,.menu-toggle,.main-navigation .mobile-bar-items a{transition: line-height 300ms ease}.main-navigation.toggled .main-nav > ul{background-color: #2f4468}
+</style>
+<link rel="stylesheet" id="tablepress-default-css" href="https://www.anysoftwaretools.com/wp-content/plugins/tablepress/css/default.min.css?ver=1.10" type="text/css" media="all">
+<link rel="stylesheet" id="fancybox-css" href="https://www.anysoftwaretools.com/wp-content/plugins/easy-fancybox/css/jquery.fancybox.min.css?ver=1.3.24" type="text/css" media="screen">
+<link rel="stylesheet" id="generate-blog-css" href="https://www.anysoftwaretools.com/wp-content/plugins/gp-premium/blog/functions/css/style-min.css?ver=1.9.1" type="text/css" media="all">
+<link rel="stylesheet" id="generate-sticky-css" href="https://www.anysoftwaretools.com/wp-content/plugins/gp-premium/menu-plus/functions/css/sticky.min.css?ver=1.9.1" type="text/css" media="all">
+<link rel="stylesheet" id="generate-navigation-branding-css" href="https://www.anysoftwaretools.com/wp-content/plugins/gp-premium/menu-plus/functions/css/navigation-branding.min.css?ver=1.9.1" type="text/css" media="all">
+<style id="generate-navigation-branding-inline-css" type="text/css">
+.navigation-branding img, .site-logo.mobile-header-logo img{height:60px;width:auto;}.navigation-branding .main-title{line-height:60px;}@media (max-width: 1110px){#site-navigation .navigation-branding, #sticky-navigation .navigation-branding{margin-left:10px;}}@media (max-width: 768px){.main-navigation:not(.slideout-navigation) .main-nav{-ms-flex:0 0 100%;flex:0 0 100%;}.main-navigation:not(.slideout-navigation) .inside-navigation{-ms-flex-wrap:wrap;flex-wrap:wrap;display:-webkit-box;display:-ms-flexbox;display:flex;}.nav-aligned-center .navigation-branding, .nav-aligned-left .navigation-branding{margin-right:auto;}.nav-aligned-center  .main-navigation.has-branding:not(.slideout-navigation) .inside-navigation .main-nav,.nav-aligned-center  .main-navigation.has-sticky-branding.navigation-stick .inside-navigation .main-nav,.nav-aligned-left  .main-navigation.has-branding:not(.slideout-navigation) .inside-navigation .main-nav,.nav-aligned-left  .main-navigation.has-sticky-branding.navigation-stick .inside-navigation .main-nav{margin-right:0px;}}
+</style>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/plugins/simple-follow-me-social-buttons-widget/assets/js/front-widget.js?ver=3.3.3"></script>
+<link rel="https://api.w.org/" href="https://www.anysoftwaretools.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.anysoftwaretools.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.anysoftwaretools.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.3.2">
+<link rel="shortlink" href="https://www.anysoftwaretools.com/?p=4680">
+<link rel="alternate" type="application/json+oembed" href="https://www.anysoftwaretools.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.anysoftwaretools.com%2Fbest-python-books%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.anysoftwaretools.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.anysoftwaretools.com%2Fbest-python-books%2F&amp;format=xml">
+<style type="text/css" id="simple-css-output">.comment-metadata a { display: none;}.comment-metadata .reply { color: transparent;}.comment-metadata .reply a { display: inline-block;}</style><link rel="pingback" href="https://www.anysoftwaretools.com/xmlrpc.php">
+<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-26208273-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-26208273-1');
+</script><link rel="amphtml" href="https://www.anysoftwaretools.com/best-python-books/amp/"><link rel="icon" href="https://www.anysoftwaretools.com/wp-content/uploads/cropped-anysoftwaretools-square-32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.anysoftwaretools.com/wp-content/uploads/cropped-anysoftwaretools-square-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://www.anysoftwaretools.com/wp-content/uploads/cropped-anysoftwaretools-square-180x180.png">
+<meta name="msapplication-TileImage" content="https://www.anysoftwaretools.com/wp-content/uploads/cropped-anysoftwaretools-square-270x270.png">
+		<style type="text/css" id="wp-custom-css">
+			/* GeneratePress Site CSS */ .inside-article,
+.sidebar .widget,
+.comments-area {
+		border: 1px solid rgba(232, 234, 237, 1);
+	box-shadow: 0 0 10px rgba(232, 234, 237, 0.5);
+}
+
+/* Featured widget */
+
+.sidebar .widget:first-child .widget-title,
+.sidebar .widget:first-child a:not(.button) {
+	color: #fff;
+}
+
+.sidebar .widget li {
+	margin-bottom: 15px;
+}
+
+.button.light {
+	background: #fff;
+	color: #000;
+}
+
+.button.light:hover {
+	background: #fafafa;
+	color: #222;
+}
+
+.separate-containers .page-header {
+	background: transparent;
+	padding: 20px 0;
+}
+
+.page-header h1 {
+	font-size: 30px;
+}
+
+@media (min-width: 769px) {
+	.post-image-aligned-left .post-image img {
+		max-width: 300px;
+	}
+} /* End GeneratePress Site CSS */		</style>
+		<style>.ez-toc-widget-container ul.ez-toc-list li::before{line-height:undefined;height:undefined}</style><style type="text/css">.adthrive-ad{margin-top:10px;margin-bottom:10px;text-align:center;overflow-x:visible;clear:both;line-height:0}.adthrive-ad>div[id^=google_ads_iframe]{margin:0 auto!important}.adthrive-stuck.adthrive-sticky.adthrive-header,.adthrive-stuck.adthrive-sticky.adthrive-sidebar{position:fixed;top:0;z-index:9999}.adthrive-stuck.adthrive-header{margin-top:0}.adthrive-sticky.adthrive-footer{text-align:center;margin:0;width:100%;overflow:hidden;position:fixed;left:0;bottom:0;z-index:99999;background-color:hsla(0,0%,100%,.8);border-top:2px solid hsla(0,0%,88.2%,.8)}.adthrive-sticky.adthrive-footer>.adthrive-close{cursor:pointer;color:#b2b2b2;border:1px solid #b2b2b2;border-radius:20px;background:#fff;line-height:20px;display:inline-block;font-size:20px;font-family:arial,sans-serif;padding:0 5px;position:absolute;top:5px;right:5px}.adthrive-device-desktop .adthrive-sticky.adthrive-footer>.adthrive-close{top:10px;right:10px}#_inv_voicefive___{display:none}.adthrive-ccpa-link,.adthrive-footer-message,.adthrive-privacy-preferences{text-align:center;margin-top:5px}.adthrive-ccpa-link,.adthrive-ccpa-link span,.adthrive-footer-message span,.adthrive-privacy-preferences a{font-family:Arial,Helvetica Neue,Helvetica,sans-serif;font-size:13px;color:#b2b2b2}.adthrive-ccpa-link a{text-decoration:underline;cursor:pointer}.adthrive-device-phone .adthrive-footer-message{margin-bottom:60px}.adthrive-footer-message{margin-bottom:100px}.adthrive-footer-message>span{text-transform:uppercase;border-top:1px solid #b2b2b2;padding-top:5px}.adthrive-collapse-player{width:90%;border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;padding:8px!important;margin-left:auto;margin-right:auto}.adthrive-player-position.adthrive-collapse-float{position:fixed;padding-top:20px;padding-bottom:10px;width:300px;background:#fff;z-index:2147483644}.adthrive-player-position.adthrive-collapse-float.adthrive-collapse-right{top:0;right:20%}.adthrive-player-position.adthrive-collapse-float.adthrive-collapse-left{top:0;left:20%}.adthrive-player-position.adthrive-collapse-float>.adthrive-player-title{display:none}.adthrive-player-position.adthrive-collapse-sticky{padding-top:20px;padding-bottom:20px;position:fixed;z-index:9999}.adthrive-player-position.adthrive-collapse-sticky>.adthrive-player-title{display:none}.adthrive-player-position.adthrive-collapse-mobile{position:fixed;padding:2px;top:26px;right:10px;width:300px;background:#fff;z-index:2147483644}.adthrive-player-position.adthrive-collapse-mobile>.adthrive-player-title{display:none}.adthrive-player-close{position:absolute;top:0;right:0;height:20px;cursor:pointer;text-align:center;padding-left:5px;padding-right:5px}.adthrive-sekindo-mobile-center{display:flex;flex-direction:row;justify-content:center;text-align:center}.adthrive-collapse-mobile>.adthrive-player-close{position:absolute;top:-25px;right:0;height:26px;cursor:pointer;text-align:center;padding-left:5px;padding-right:5px;font-weight:700;font-size:12px;border:1px solid;border-radius:15px;background-color:#fff;align-items:center}</style><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.anysoftwaretools.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.anysoftwaretools.com"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2020022401.js" async=""></script><link rel="stylesheet" type="text/css" href="https://ads.adthrive.com/sites/5e0cc92517a8be5a76a36c67/ads.min.css"></head>
+
+<body class="post-template-default single single-post postid-4680 single-format-standard wp-embed-responsive post-image-above-header post-image-aligned-center sticky-menu-no-transition sticky-enabled both-sticky-menu adthrive-disable-all right-sidebar nav-below-header fluid-header separate-containers active-footer-widgets-0 nav-search-enabled nav-aligned-right header-aligned-left dropdown-click-arrow dropdown-click featured-image-active elementor-default adthrive-device-desktop" itemtype="https://schema.org/Blog" itemscope="">
+	<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>		<nav id="site-navigation" class="auto-hide-sticky has-branding main-navigation stuckElement" itemtype="https://schema.org/SiteNavigationElement" itemscope="" style="z-index: 100;">
+			<div class="inside-navigation grid-container grid-parent">
+				<div class="navigation-branding"><p class="main-title" itemprop="headline">
+				<a href="https://www.anysoftwaretools.com/" rel="home">
+					AnySoftwareTools
+				</a>
+			</p></div><form method="get" class="search-form navigation-search" action="https://www.anysoftwaretools.com/">
+				<input type="search" class="search-field" value="" name="s" title="Search">
+			</form>		<div class="mobile-bar-items">
+						<span class="search-item">
+				<a aria-label="Open Search Bar" href="#">
+									</a>
+			</span>
+		</div><!-- .mobile-bar-items -->
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="mobile-menu">Menu</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-top" class=" menu sf-menu"><li id="menu-item-7423" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-7423"><a href="https://www.anysoftwaretools.com/computer-tips/">Computer<span role="button" class="dropdown-menu-toggle" tabindex="0"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-7425" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7425"><a href="https://www.anysoftwaretools.com/computer-tips/windows/">Windows</a></li>
+	<li id="menu-item-7424" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7424"><a href="https://www.anysoftwaretools.com/computer-tips/mac/">macOS</a></li>
+</ul>
+</li>
+<li id="menu-item-7427" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-7427"><a href="https://www.anysoftwaretools.com/device-tips/">Mobile<span role="button" class="dropdown-menu-toggle" tabindex="0"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-7428" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7428"><a href="https://www.anysoftwaretools.com/device-tips/ios/">iOS</a></li>
+	<li id="menu-item-7429" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7429"><a href="https://www.anysoftwaretools.com/device-tips/android/">Android</a></li>
+</ul>
+</li>
+<li id="menu-item-7426" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7426"><a href="https://www.anysoftwaretools.com/reviews/">Software</a></li>
+<li id="menu-item-7420" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-7420"><a href="https://www.anysoftwaretools.com/tech-accessories/">Buying Guides<span role="button" class="dropdown-menu-toggle" tabindex="0"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-7421" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7421"><a href="https://www.anysoftwaretools.com/tech-accessories/laptops/">Laptops</a></li>
+	<li id="menu-item-7509" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7509"><a href="https://www.anysoftwaretools.com/tech-accessories/tablets/">Tablets</a></li>
+	<li id="menu-item-7508" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7508"><a href="https://www.anysoftwaretools.com/tech-accessories/monitors/">Monitors</a></li>
+	<li id="menu-item-7422" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7422"><a href="https://www.anysoftwaretools.com/tech-accessories/headphones/">Headphones</a></li>
+	<li id="menu-item-7696" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7696"><a href="https://www.anysoftwaretools.com/tech-accessories/camera/">Camera</a></li>
+	<li id="menu-item-7505" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7505"><a href="https://www.anysoftwaretools.com/tech-accessories/hard-drives/">Hard Drives</a></li>
+	<li id="menu-item-7502" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7502"><a href="https://www.anysoftwaretools.com/tech-accessories/drones/">Drones</a></li>
+	<li id="menu-item-7507" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7507"><a href="https://www.anysoftwaretools.com/tech-accessories/iphone/">iPhone</a></li>
+	<li id="menu-item-7506" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7506"><a href="https://www.anysoftwaretools.com/tech-accessories/ipad/">iPad</a></li>
+	<li id="menu-item-7503" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7503"><a href="https://www.anysoftwaretools.com/tech-accessories/gopro/">GoPro</a></li>
+	<li id="menu-item-7504" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7504"><a href="https://www.anysoftwaretools.com/tech-accessories/gps/">GPS</a></li>
+</ul>
+</li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://www.anysoftwaretools.com/about/">About</a></li>
+<li class="search-item"><a aria-label="Open Search Bar" href="#"></a></li></ul></div>			</div><!-- .inside-navigation -->
+		</nav><nav id="sticky-placeholder" class="auto-hide-sticky has-branding main-navigation" style="visibility: hidden; display: none;">
+			<div class="inside-navigation grid-container grid-parent">
+				<div class="navigation-branding"><p class="main-title" itemprop="headline">
+				<a href="https://www.anysoftwaretools.com/" rel="home">
+					AnySoftwareTools
+				</a>
+			</p></div><form method="get" class="search-form navigation-search" action="https://www.anysoftwaretools.com/">
+				<input type="search" class="search-field" value="" name="s" title="Search">
+			</form>		<div class="mobile-bar-items">
+						<span class="search-item">
+				<a aria-label="Open Search Bar" href="#">
+									</a>
+			</span>
+		</div><!-- .mobile-bar-items -->
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="mobile-menu">Menu</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-top" class=" menu sf-menu"><li id="menu-item-7423" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-7423"><a href="https://www.anysoftwaretools.com/computer-tips/">Computer<span role="button" class="dropdown-menu-toggle" tabindex="0"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-7425" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7425"><a href="https://www.anysoftwaretools.com/computer-tips/windows/">Windows</a></li>
+	<li id="menu-item-7424" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7424"><a href="https://www.anysoftwaretools.com/computer-tips/mac/">macOS</a></li>
+</ul>
+</li>
+<li id="menu-item-7427" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-7427"><a href="https://www.anysoftwaretools.com/device-tips/">Mobile<span role="button" class="dropdown-menu-toggle" tabindex="0"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-7428" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7428"><a href="https://www.anysoftwaretools.com/device-tips/ios/">iOS</a></li>
+	<li id="menu-item-7429" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7429"><a href="https://www.anysoftwaretools.com/device-tips/android/">Android</a></li>
+</ul>
+</li>
+<li id="menu-item-7426" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7426"><a href="https://www.anysoftwaretools.com/reviews/">Software</a></li>
+<li id="menu-item-7420" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-7420"><a href="https://www.anysoftwaretools.com/tech-accessories/">Buying Guides<span role="button" class="dropdown-menu-toggle" tabindex="0"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-7421" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7421"><a href="https://www.anysoftwaretools.com/tech-accessories/laptops/">Laptops</a></li>
+	<li id="menu-item-7509" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7509"><a href="https://www.anysoftwaretools.com/tech-accessories/tablets/">Tablets</a></li>
+	<li id="menu-item-7508" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7508"><a href="https://www.anysoftwaretools.com/tech-accessories/monitors/">Monitors</a></li>
+	<li id="menu-item-7422" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7422"><a href="https://www.anysoftwaretools.com/tech-accessories/headphones/">Headphones</a></li>
+	<li id="menu-item-7696" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7696"><a href="https://www.anysoftwaretools.com/tech-accessories/camera/">Camera</a></li>
+	<li id="menu-item-7505" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7505"><a href="https://www.anysoftwaretools.com/tech-accessories/hard-drives/">Hard Drives</a></li>
+	<li id="menu-item-7502" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7502"><a href="https://www.anysoftwaretools.com/tech-accessories/drones/">Drones</a></li>
+	<li id="menu-item-7507" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7507"><a href="https://www.anysoftwaretools.com/tech-accessories/iphone/">iPhone</a></li>
+	<li id="menu-item-7506" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7506"><a href="https://www.anysoftwaretools.com/tech-accessories/ipad/">iPad</a></li>
+	<li id="menu-item-7503" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7503"><a href="https://www.anysoftwaretools.com/tech-accessories/gopro/">GoPro</a></li>
+	<li id="menu-item-7504" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7504"><a href="https://www.anysoftwaretools.com/tech-accessories/gps/">GPS</a></li>
+</ul>
+</li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://www.anysoftwaretools.com/about/">About</a></li>
+<li class="search-item"><a aria-label="Open Search Bar" href="#"></a></li></ul></div>			</div><!-- .inside-navigation -->
+		</nav><!-- #site-navigation -->
+		
+	<div id="page" class="hfeed site grid-container container grid-parent">
+				<div id="content" class="site-content">
+			
+	<div id="primary" class="content-area grid-parent mobile-grid-100 grid-70 tablet-grid-70">
+		<main id="main" class="site-main">
+			
+<article id="post-4680" class="post-4680 post type-post status-publish format-standard has-post-thumbnail hentry category-tech-accessories" itemtype="https://schema.org/CreativeWork" itemscope="">
+	<div class="inside-article">
+		
+		<header class="entry-header">
+			<h1 class="entry-title" itemprop="headline">7 Best Books to Learn Python in 2020</h1>			<div class="entry-meta">
+				<span class="posted-on"><a href="https://www.anysoftwaretools.com/best-python-books/" title="8:49 am" rel="bookmark"><time class="updated" datetime="2020-02-04T10:31:46+00:00" itemprop="dateModified">February 4, 2020</time><time class="entry-date published" datetime="2020-02-04T08:49:49+00:00" itemprop="datePublished">February 4, 2020</time></a></span> 			</div><!-- .entry-meta -->
+				</header><!-- .entry-header -->
+
+		
+		<div class="entry-content" itemprop="text">
+			<p><a href="https://www.anysoftwaretools.com/wp-content/uploads/python-books.png" class="fancybox image"><img class="aligncenter size-full wp-image-4682" src="https://www.anysoftwaretools.com/wp-content/uploads/python-books.png" alt="python books" width="800" height="400" srcset="https://www.anysoftwaretools.com/wp-content/uploads/python-books.png 800w, https://www.anysoftwaretools.com/wp-content/uploads/python-books-300x150.png 300w" sizes="(max-width: 800px) 100vw, 800px"></a></p>
+<p>There are many different programming languages out there that can be learned and practiced. One of the most popular is Python. It can be used for a variety of development-related tasks and has a ton of support and users.</p>
+<p>It is a popular choice for new programmers as it is very usable and in-demand in the job market. Learning Python online through videos, tutorials or other resources is helpful, but they are far from the only ways.</p>
+<p>Another great option for you is to crack open a good book. There are several great books that can help anyone learn Python effectively. With that in mind, let’s look at some of the best ones available today.</p>
+<div id="ez-toc-container" class="counter-hierarchy ez-toc-grey">
+<div class="ez-toc-title-container">
+<p class="ez-toc-title">Table of Contents</p>
+<span class="ez-toc-title-toggle"><a class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"><i class="ez-toc-glyphicon ez-toc-icon-toggle"></i></a></span></div>
+<nav><ul class="ez-toc-list" style="display: none;"><li><a href="#1_Python_Programming_An_Introduction_to_Computer_Science_3rd_Edition" title="1. Python Programming: An Introduction to Computer Science (3rd Edition)">1. Python Programming: An Introduction to Computer Science (3rd Edition)</a></li><li><a href="#2_Learn_Python_in_One_Day_and_Learn_It_Well_2nd_Edition" title="2. Learn Python in One Day and Learn It Well (2nd Edition)">2. Learn Python in One Day and Learn It Well (2nd Edition)</a></li><li><a href="#3_Automate_the_Boring_Stuff_with_Python" title="3. Automate the Boring Stuff with Python">3. Automate the Boring Stuff with Python</a></li><li><a href="#4_Learn_Python_the_Hard_Way_3rd_Edition" title="4. Learn Python the Hard Way (3rd Edition)">4. Learn Python the Hard Way (3rd Edition)</a></li><li><a href="#5_Python_Crash_Course_2nd_Edition" title="5. Python Crash Course (2nd Edition)">5. Python Crash Course (2nd Edition)</a></li><li><a href="#6_A_Smarter_Way_to_Learn_Python" title="6. A Smarter Way to Learn Python">6. A Smarter Way to Learn Python</a></li><li><a href="#7_Learning_Python_5th_Edition" title="7. Learning Python (5th Edition)">7. Learning Python (5th Edition)</a></li></ul></nav></div>
+<h2><span class="ez-toc-section" id="1_Python_Programming_An_Introduction_to_Computer_Science_3rd_Edition">1. <a href="https://amzn.to/337pY9M">Python Programming: An Introduction to Computer Science (3rd Edition)</a></span></h2>
+<p><a href="https://www.amazon.com/Python-Programming-Introduction-Computer-Science/dp/1590282752/ref=as_li_ss_il?ie=UTF8&amp;linkCode=li3&amp;tag=anysoftwaretools-20&amp;linkId=22af8098adcb6f7186b6ec0a175a8ff8&amp;language=en_US" target="_blank" rel="noopener noreferrer" data-amzn-asin="1590282752"><img class="aligncenter" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=1590282752&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=anysoftwaretools-20&amp;language=en_US" border="0"></a><img style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=anysoftwaretools-20&amp;language=en_US&amp;l=li3&amp;o=1&amp;a=1590282752" alt="" width="1" height="1" border="0"><br>
+Originally published in 2004, Python Programming is a very popular book. However, instead of simply looking at Python by itself, this book acts as an introduction to programming and computer science as a whole. It uses the Python language as a medium for delivering the messages to you.</p>
+<p>This means it is a great option for someone brand new to the ideas around computer science and programming, especially if Python is what you want to learn. It is easy to understand for beginners and interesting enough to keep you interested. The 3rd edition of the book includes many updates and changes such as talking about new technologies, showing new graphics and more.</p>
+<h2><span class="ez-toc-section" id="2_Learn_Python_in_One_Day_and_Learn_It_Well_2nd_Edition">2. <a href="https://amzn.to/30QMuSL">Learn Python in One Day and Learn It Well (2nd Edition)</a></span></h2>
+<p><a href="https://www.amazon.com/Python-2nd-Beginners-Hands-Project-ebook/dp/B071Z2Q6TQ/ref=as_li_ss_il?ie=UTF8&amp;linkCode=li3&amp;tag=anysoftwaretools-20&amp;linkId=abbd31c0a67ece1a1cf166eebf76c194&amp;language=en_US" target="_blank" rel="noopener noreferrer" data-amzn-asin="B071Z2Q6TQ"><img class="aligncenter" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B071Z2Q6TQ&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=anysoftwaretools-20&amp;language=en_US" border="0"></a><img style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=anysoftwaretools-20&amp;language=en_US&amp;l=li3&amp;o=1&amp;a=B071Z2Q6TQ" alt="" width="1" height="1" border="0"><br>
+If you want to not only learn Python, but also learn it quickly, consider this book. The book breaks down potentially confusing and complex subjects into simple concepts that are easy for you to digest and understand. The book even covers things like what Python is, how you can run and code Python programs, and more.</p>
+<p>Of course, it goes much deeper than that to give you the necessary knowledge you need to begin experimenting with Python on your own. The book is very to-the-point, but still includes a plentiful amount of important topics.</p>
+<p>You’ll learn dozens of things and the examples used are varied to ensure they include all important concepts to give you a full introduction to Python. Of course, don’t expect this book (or any resource) to make you an expert in a day, but you can certainly gain valuable and usable knowledge on Python rather quickly.</p>
+<h2><span class="ez-toc-section" id="3_Automate_the_Boring_Stuff_with_Python">3. <a href="https://amzn.to/30Ug1el">Automate the Boring Stuff with Python</a></span></h2>
+<p><a href="https://www.amazon.com/Automate-Boring-Stuff-Python-Programming/dp/1593275994/ref=as_li_ss_il?ie=UTF8&amp;linkCode=li3&amp;tag=anysoftwaretools-20&amp;linkId=e372d7504ab2ee043f04d9e42be42720&amp;language=en_US" target="_blank" rel="noopener noreferrer" data-amzn-asin="1593275994"><img class="aligncenter" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=1593275994&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=anysoftwaretools-20&amp;language=en_US" border="0"></a><img style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=anysoftwaretools-20&amp;language=en_US&amp;l=li3&amp;o=1&amp;a=1593275994" alt="" width="1" height="1" border="0"><br>
+As we mentioned in the introduction, Python can do a lot of things for a lot of people. One of the most helpful things that Python can do is help improve efficiencies. This book will teach you how you can use Python to create software programs to handle time-consuming tasks that you would usually need to do manually.</p>
+<p>This includes searching text, sending reminders, download content, update and format data and several others. The book includes simple instructions and projects to help you practice throughout the book. The writing is clear and direct throughout the book, which is much appreciated.</p>
+<p>Whether you have experience with programming, or are brand new, this book can help you become more efficient. So while this book is quite different than others in the space, it is still incredibly valuable and helpful for learning the true potential of Python.</p>
+<h2><span class="ez-toc-section" id="4_Learn_Python_the_Hard_Way_3rd_Edition">4. <a href="https://amzn.to/2ANBlaC">Learn Python the Hard Way (3rd Edition)</a></span></h2>
+<p><a href="https://www.amazon.com/Learn-Python-Hard-Way-Introduction/dp/0321884914/ref=as_li_ss_il?ie=UTF8&amp;linkCode=li3&amp;tag=anysoftwaretools-20&amp;linkId=7f9db96c0182ead32791cf57f02ceda0&amp;language=en_US" target="_blank" rel="noopener noreferrer" data-amzn-asin="0321884914"><img class="aligncenter" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=0321884914&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=anysoftwaretools-20&amp;language=en_US" border="0"></a><img style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=anysoftwaretools-20&amp;language=en_US&amp;l=li3&amp;o=1&amp;a=0321884914" alt="" width="1" height="1" border="0"><br>
+This book covers one of the best and most helpful systems for learning Python. Written by Zed Shaw, this book has helped a ton of people learn Python over the years. The book takes you through a total of 52 exercises aimed at teaching you all aspects of Python from simple to complex.</p>
+<p>Going through these various exercises, you will learn how the software and programs work, how to write good code, and how to fix problems and more. You’ll also learn a number of Python-specific information such as variables, writing and reading the code, strings and text, program design and dozens of other things.</p>
+<p>This is a straight-forward book and while some may find it more difficult than others, it is very rewarding and provides you with high-quality knowledge.</p>
+<h2><span class="ez-toc-section" id="5_Python_Crash_Course_2nd_Edition">5. <a href="https://amzn.to/2pS64Bn">Python Crash Course (2nd Edition)</a></span></h2>
+<p><a href="https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280/ref=as_li_ss_il?ie=UTF8&amp;linkCode=li3&amp;tag=anysoftwaretools-20&amp;linkId=5ed867f762d43ed2809a4fdd938efbd6&amp;language=en_US" target="_blank" rel="noopener noreferrer" data-amzn-asin="1593279280"><img class="aligncenter" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=1593279280&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=anysoftwaretools-20&amp;language=en_US" border="0"></a><img style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=anysoftwaretools-20&amp;language=en_US&amp;l=li3&amp;o=1&amp;a=1593279280" alt="" width="1" height="1" border="0"><br>
+Like the title of this book, you will get a crash course in Python when you read it. The book is one of the best-selling Python-related books of all time, which is a testament to its viability. It focuses on the basics of programming itself, and is focused on getting you access to hands-on projects.</p>
+<p>It is a fast-paced book that is aimed at being the best no-nonsense guide to learning Python. The book provides important and foundational concepts with no fluff or unnecessary information to confuse you. Once you learn the knowledge necessary, the latter part of the book has you apply it in three different projects.</p>
+<p>You will make a game, create charts and graphs, and even build and deploy an application. The essentials of Python programming will be taught quickly, so you can get on putting your new skills to use.</p>
+<h2><span class="ez-toc-section" id="6_A_Smarter_Way_to_Learn_Python">6. <a href="https://amzn.to/2oZQu62">A Smarter Way to Learn Python</a></span></h2>
+<p><a href="https://www.amazon.com/Smarter-Way-Learn-Python-Remember-ebook/dp/B077Z55G3B/ref=as_li_ss_il?ie=UTF8&amp;linkCode=li3&amp;tag=anysoftwaretools-20&amp;linkId=645f0be4a7018f66ce14e6a726424875&amp;language=en_US" target="_blank" rel="noopener noreferrer" data-amzn-asin="B077Z55G3B"><img class="aligncenter" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=B077Z55G3B&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=anysoftwaretools-20&amp;language=en_US" border="0"></a><img style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=anysoftwaretools-20&amp;language=en_US&amp;l=li3&amp;o=1&amp;a=B077Z55G3B" alt="" width="1" height="1" border="0"><br>
+This book is all about utilizing a new and unique learning system to help you learn Python. The author, Mark Myers, uses a great method to help transfer confusing and tough information into more consumable and simple material.</p>
+<p>It is aimed at not only teaching yout the basic information you need to know, but also attempts to help you remember it. The book is perfect for younger individuals or some with little technical knowledge that want to get into programming.</p>
+<p>The chapters are short and exercises are interactive, which all make the difficult idea of programming, seem much more approachable. Actually doing the things you have just read about can help the knowledge stick. While this book may not turn you into a bonafide Python coding expert, it can provide the important basics and fundamentals to get you well on the way.</p>
+<h2><span class="ez-toc-section" id="7_Learning_Python_5th_Edition">7. <a href="https://amzn.to/2ANUb1t">Learning Python (5th Edition)</a></span></h2>
+<p><a href="https://www.amazon.com/Learning-Python-5th-Mark-Lutz/dp/1449355730/ref=as_li_ss_il?ie=UTF8&amp;linkCode=li3&amp;tag=anysoftwaretools-20&amp;linkId=d765f2a23bcf4c3f6d54982e64f866eb&amp;language=en_US" target="_blank" rel="noopener noreferrer" data-amzn-asin="1449355730"><img class="aligncenter" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=1449355730&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=anysoftwaretools-20&amp;language=en_US" border="0"></a><img style="border: none !important; margin: 0px !important;" src="https://ir-na.amazon-adsystem.com/e/ir?t=anysoftwaretools-20&amp;language=en_US&amp;l=li3&amp;o=1&amp;a=1449355730" alt="" width="1" height="1" border="0"><br>
+Learning Python will give you as a reader an in-depth look and introduction to the Python programming language. You will learn how to write high-quality, maintainable and efficient code in a timely manner.</p>
+<p>Whether you are experienced in other coding languages, or have never programmed once, this book can help you succeed. The book includes quizzes, illustrations and other things that help make this tutorial simple to understand and follow.</p>
+<p>Also, in addition to learning the basics and being introduced to Python, this book will also help you learn some advanced tools to better your skillset. Learning Python will teach you a variety of things such as how to create and process objects, how to use functions, how to organize statements and even write programs, just to name a few.</p>
+<p>Hopefully this list of books and resources has been able to help you learn the Python programming language. It can be an incredibly beneficial programming language with a wide range of different applications and uses.</p>
+<p>Every one of these aforementioned books can provide you with the knowledge needed to improve your Python skills quickly.</p>
+<p><em>Are you aware of another great book to learn Python that isn’t on this list? If so, let us know about it in the comments below.</em></p>
+<div class="saboxplugin-wrap" itemtype="http://schema.org/Person" itemscope="" itemprop="author"><div class="saboxplugin-gravatar"><img alt="" src="https://secure.gravatar.com/avatar/b7a97b2b6b1081ffd949097097c0f2e6?s=100&amp;r=g" srcset="https://secure.gravatar.com/avatar/b7a97b2b6b1081ffd949097097c0f2e6?s=200&amp;r=g 2x" class="avatar avatar-100 photo" height="100" width="100" itemprop="image"></div><div class="saboxplugin-authorname"><a href="https://www.anysoftwaretools.com/author/chris/" class="vcard author" rel="author" itemprop="url"><span class="fn" itemprop="name">Chris Hwang</span></a></div><div class="saboxplugin-desc"><div itemprop="description"><p>Chris is a lifelong tech enthusiast with a broad range of interests including coding, data analysis, traveling, and more. He used to work as a software programmer immersing himself in the world of codes, now he finds it more interesting talking to real people.</p>
+</div></div><div class="clearfix"></div><div class="saboxplugin-socials "><a target="_self" href="https://twitter.com/AnySoftwareTool" rel="nofollow" class="saboxplugin-icon-grey"><svg aria-hidden="true" class="sab-twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a><a target="_self" href="https://www.facebook.com/anysoftwaretools/" rel="nofollow" class="saboxplugin-icon-grey"><svg aria-hidden="true" class="sab-facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512"><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229"></path></svg></a><a target="_self" href="https://www.pinterest.com/anysoftwaretools/" rel="nofollow" class="saboxplugin-icon-grey"><svg aria-hidden="true" class="sab-pinterest" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"></path></svg></a></div></div>		</div><!-- .entry-content -->
+
+					<footer class="entry-meta">
+						<nav id="nav-below" class="post-navigation">
+			<span class="screen-reader-text">Post navigation</span>
+
+					</nav><!-- #nav-below -->
+					</footer><!-- .entry-meta -->
+			</div><!-- .inside-article -->
+</article><!-- #post-## -->
+
+					<div class="comments-area">
+						<div id="comments">
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/best-python-books/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://www.anysoftwaretools.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate=""><p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p><label for="author" class="screen-reader-text">Name</label><input placeholder="Name *" id="author" name="author" type="text" value="" size="30">
+<label for="email" class="screen-reader-text">Email</label><input placeholder="Email *" id="email" name="email" type="email" value="" size="30">
+<label for="url" class="screen-reader-text">Website</label><input placeholder="Website" id="url" name="url" type="url" value="" size="30">
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="4680" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="23ae20c68c"></p><p style="display: none;"></p><input type="hidden" id="ak_js" name="ak_js" value="1582991930275"></form>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+					</div>
+
+							</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<div id="right-sidebar" class="widget-area grid-30 tablet-grid-30 grid-parent sidebar" itemtype="https://schema.org/WPSideBar" itemscope="">
+	<div class="inside-right-sidebar">
+		<aside id="lsi_widget-2" class="widget inner-padding widget_lsi_widget"><ul class="lsi-social-icons icon-set-lsi_widget-2" style="text-align: left"><li class="lsi-social-facebook"><a class="tooltip tooltipstered" rel="nofollow" aria-label="Facebook" href="https://www.facebook.com/anysoftwaretools/" target="_blank"><i class="lsicon lsicon-facebook"></i></a></li><li class="lsi-social-twitter"><a class="tooltip tooltipstered" rel="nofollow" aria-label="Twitter" href="https://twitter.com/AnySoftwareTool" target="_blank"><i class="lsicon lsicon-twitter"></i></a></li><li class="lsi-social-pinterest"><a class="tooltip tooltipstered" rel="nofollow" aria-label="Pinterest" href="https://www.pinterest.com/anysoftwaretools/" target="_blank"><i class="lsicon lsicon-pinterest"></i></a></li></ul></aside><aside id="text-6" class="widget inner-padding widget_text">			<div class="textwidget"><p><strong>Affiliate Disclosure</strong>: We may earn a commission on certain products purchased through our links (at no additional cost to you). This helps support the work we do for our readers.</p>
+</div>
+		</aside><aside id="related-posts-by-taxonomy-2" class="widget inner-padding related_posts_by_taxonomy">
+<h2 class="widget-title">Related Articles</h2>
+<ul>
+					
+			<li>
+				<a href="https://www.anysoftwaretools.com/best-laptop-for-trading/">Best Laptops for Stock Trading in 2020</a>
+			</li>
+					
+			<li>
+				<a href="https://www.anysoftwaretools.com/best-over-ear-workout-headphones/">Best Over-Ear Headphones for Working Out in 2020</a>
+			</li>
+					
+			<li>
+				<a href="https://www.anysoftwaretools.com/best-laptop-for-artists/">Best Laptop for Artists in 2020</a>
+			</li>
+					
+			<li>
+				<a href="https://www.anysoftwaretools.com/best-headphones-for-air-travel/">Best Headphones for Sleeping on Plane</a>
+			</li>
+					
+			<li>
+				<a href="https://www.anysoftwaretools.com/best-laptops-under-600/">Best Laptops Under $600</a>
+			</li>
+					
+			<li>
+				<a href="https://www.anysoftwaretools.com/best-tablet-for-drawing/">Best Tablet for Drawing in 2020</a>
+			</li>
+					
+			<li>
+				<a href="https://www.anysoftwaretools.com/best-gopro-backpack-mount/">Best GoPro Backpack Mount in 2020</a>
+			</li>
+					
+			<li>
+				<a href="https://www.anysoftwaretools.com/best-desktop-computer-for-kids/">Best Desktop Computer for Kids in 2020</a>
+			</li>
+			</ul>
+</aside>	</div><!-- .inside-right-sidebar -->
+</div><!-- #secondary -->
+
+	</div><!-- #content -->
+</div><!-- #page -->
+
+<div id="amzn-assoc-ad-a3288f0c-ffac-44c8-8230-aeedea839614"></div><script async="" src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=a3288f0c-ffac-44c8-8230-aeedea839614"></script>
+<div class="site-footer footer-bar-active footer-bar-align-right">
+			<footer class="site-info" itemtype="https://schema.org/WPFooter" itemscope="">
+			<div class="inside-site-info grid-container grid-parent">
+						<div class="footer-bar">
+			<aside id="nav_menu-1" class="widget inner-padding widget_nav_menu"><div class="menu-footer-classic-container"><ul id="menu-footer-classic" class="menu"><li id="menu-item-7398" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7398"><a href="https://www.anysoftwaretools.com/contact/">Contact</a></li>
+<li id="menu-item-2991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2991"><a href="https://www.anysoftwaretools.com/disclaimer/">Disclaimer</a></li>
+<li id="menu-item-2992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2992"><a href="https://www.anysoftwaretools.com/privacy-policy/">Privacy Policy</a></li>
+</ul></div></aside>		</div>
+						<div class="copyright-bar">
+					© 2011-2020  anysoftwaretools.com | As an Amazon Associate I earn from qualifying purchases.				</div>
+			</div>
+		</footer><!-- .site-info -->
+		</div><!-- .site-footer -->
+
+<a title="Scroll back to top" rel="nofollow" href="#" class="generate-back-to-top" style="opacity:0;visibility:hidden;" data-scroll-speed="400" data-start-scroll="300">
+				<span class="screen-reader-text">Scroll back to top</span>
+				
+			</a>        <script type="text/javascript">
+            var thirstyGoogleClickTrack = function ( e ) {
+
+                var $this       = jQuery( this ),
+                    linkID      = $this.data( 'linkid' ),
+                    href        = linkID ? $this.attr( 'href' ) : thirstyFunctions.isThirstyLink( $this.attr( 'href' ) ),
+                    action_name = 'Affiliate Link',
+                    page_slug   = '/best-python-books/',
+                    home_url    = 'https://www.anysoftwaretools.com';
+
+                if ( ! href || typeof ga !== 'function' ) {
+                    return;
+                }
+
+                var is_uncloak  = href.indexOf( home_url + '/' + thirsty_global_vars.link_prefix ) < 0,
+                    href_parts  = href.split('/'),
+                    href_last   = href_parts[ href_parts.length - 1 ] ? href_parts[ href_parts.length - 1 ] : href_parts[ href_parts.length - 2 ],
+                    link_text   = $this.text(),
+                    link_uri    = linkID && is_uncloak ? href : href.replace( home_url , '' ),
+                    link_slug   = linkID && is_uncloak ? href : href_last;
+
+                ga( 'send' , 'event' , {
+                    eventCategory : action_name,
+                    eventAction   : link_uri,
+                    eventLabel    : page_slug,
+                    transport     : 'beacon'
+                } );
+            };
+
+            jQuery( document ).ready( function($) {
+                $( 'body' ).on( 'click', 'a', thirstyGoogleClickTrack );
+            });
+        </script>
+        <script>
+(function (w, d) {
+	var s = d.createElement('script');
+	s.src = "https://dstik9906m659.cloudfront.net/eVIfRVUUblIfRlskRCEyUu.js";
+	s.defer = true;
+	d.body.appendChild(s);
+})(window, document);
+</script><script src="https://dstik9906m659.cloudfront.net/eVIfRVUUblIfRlskRCEyUu.js" defer=""></script>
+<style type="text/css">.saboxplugin-wrap{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;border:1px solid #eee;width:100%;clear:both;display:block;overflow:hidden;word-wrap:break-word;position:relative}.saboxplugin-wrap .saboxplugin-gravatar{float:left;padding:20px}.saboxplugin-wrap .saboxplugin-gravatar img{max-width:100px;height:auto;border-radius:0;}.saboxplugin-wrap .saboxplugin-authorname{font-size:18px;line-height:1;margin:20px 0 0 20px;display:block}.saboxplugin-wrap .saboxplugin-authorname a{text-decoration:none}.saboxplugin-wrap .saboxplugin-authorname a:focus{outline:0}.saboxplugin-wrap .saboxplugin-desc{display:block;margin:5px 20px}.saboxplugin-wrap .saboxplugin-desc a{text-decoration:underline}.saboxplugin-wrap .saboxplugin-desc p{margin:5px 0 12px}.saboxplugin-wrap .saboxplugin-web{margin:0 20px 15px;text-align:left}.saboxplugin-wrap .sab-web-position{text-align:right}.saboxplugin-wrap .saboxplugin-web a{color:#ccc;text-decoration:none}.saboxplugin-wrap .saboxplugin-socials{position:relative;display:block;background:#fcfcfc;padding:5px;border-top:1px solid #eee}.saboxplugin-wrap .saboxplugin-socials a svg{width:20px;height:20px}.saboxplugin-wrap .saboxplugin-socials a svg .st2{fill:#fff; transform-origin:center center;}.saboxplugin-wrap .saboxplugin-socials a svg .st1{fill:rgba(0,0,0,.3)}.saboxplugin-wrap .saboxplugin-socials a:hover{opacity:.8;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;box-shadow:none!important;-webkit-box-shadow:none!important}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color{box-shadow:none;padding:0;border:0;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;display:inline-block;color:#fff;font-size:0;text-decoration:inherit;margin:5px;-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;overflow:hidden}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey{text-decoration:inherit;box-shadow:none;position:relative;display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom:1;margin:10px 5px;color:#444;fill:#444}.clearfix:after,.clearfix:before{content:' ';display:table;line-height:0;clear:both}.ie7 .clearfix{zoom:1}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitch{border-color:#38245c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-addthis{border-color:#e91c00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-behance{border-color:#003eb0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-delicious{border-color:#06c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-deviantart{border-color:#036824}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-digg{border-color:#00327c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-dribbble{border-color:#ba1655}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-facebook{border-color:#1e2e4f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-flickr{border-color:#003576}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-github{border-color:#264874}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-google{border-color:#0b51c5}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-googleplus{border-color:#96271a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-html5{border-color:#902e13}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-instagram{border-color:#1630aa}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-linkedin{border-color:#00344f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-pinterest{border-color:#5b040e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-reddit{border-color:#992900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-rss{border-color:#a43b0a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-sharethis{border-color:#5d8420}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-skype{border-color:#00658a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-soundcloud{border-color:#995200}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-spotify{border-color:#0f612c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stackoverflow{border-color:#a95009}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-steam{border-color:#006388}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-user_email{border-color:#b84e05}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stumbleUpon{border-color:#9b280e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-tumblr{border-color:#10151b}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitter{border-color:#0967a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vimeo{border-color:#0d7091}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-windows{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-whatsapp{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-wordpress{border-color:#0f3647}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-yahoo{border-color:#14002d}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-youtube{border-color:#900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-xing{border-color:#000202}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mixcloud{border-color:#2475a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vk{border-color:#243549}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-medium{border-color:#00452c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-quora{border-color:#420e00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-meetup{border-color:#9b181c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-goodreads{border-color:#000}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-snapchat{border-color:#999700}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-500px{border-color:#00557f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mastodont{border-color:#185886}.sabox-plus-item{margin-bottom:20px}@media screen and (max-width:480px){.saboxplugin-wrap{text-align:center}.saboxplugin-wrap .saboxplugin-gravatar{float:none;padding:20px 0;text-align:center;margin:0 auto;display:block}.saboxplugin-wrap .saboxplugin-gravatar img{float:none;display:inline-block;display:-moz-inline-stack;vertical-align:middle;zoom:1}.saboxplugin-wrap .saboxplugin-desc{margin:0 10px 20px;text-align:center}.saboxplugin-wrap .saboxplugin-authorname{text-align:center;margin:10px 0 20px}}body .saboxplugin-authorname a,body .saboxplugin-authorname a:hover{box-shadow:none;-webkit-box-shadow:none}a.sab-profile-edit{font-size:16px!important;line-height:1!important}.sab-edit-settings a,a.sab-profile-edit{color:#0073aa!important;box-shadow:none!important;-webkit-box-shadow:none!important}.sab-edit-settings{margin-right:15px;position:absolute;right:0;z-index:2;bottom:10px;line-height:20px}.sab-edit-settings i{margin-left:5px}.saboxplugin-socials{line-height:1!important}.rtl .saboxplugin-wrap .saboxplugin-gravatar{float:right}.rtl .saboxplugin-wrap .saboxplugin-authorname{display:flex;align-items:center}.rtl .saboxplugin-wrap .saboxplugin-authorname .sab-profile-edit{margin-right:10px}.rtl .sab-edit-settings{right:auto;left:0}img.sab-custom-avatar{max-width:75px;}.saboxplugin-wrap .saboxplugin-desc a, .saboxplugin-wrap .saboxplugin-desc  {color:0 !important;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey {color:0; fill:0;}.saboxplugin-wrap .saboxplugin-authorname a,.saboxplugin-wrap .saboxplugin-authorname span {color:0;}.saboxplugin-wrap {margin-top:0px; margin-bottom:0px; padding: 0px 0px }.saboxplugin-wrap .saboxplugin-authorname {font-size:18px; line-height:25px;}.saboxplugin-wrap .saboxplugin-desc p, .saboxplugin-wrap .saboxplugin-desc {font-size:14px !important; line-height:21px !important;}.saboxplugin-wrap .saboxplugin-web {font-size:14px;}.saboxplugin-wrap .saboxplugin-socials a svg {width:18px;height:18px;}</style><link rel="stylesheet" id="lsi-style-css" href="https://www.anysoftwaretools.com/wp-content/plugins/lightweight-social-icons/css/style-min.css?ver=1.0.1" type="text/css" media="all">
+<style id="lsi-style-inline-css" type="text/css">
+.icon-set-lsi_widget-2 a,
+			.icon-set-lsi_widget-2 a:visited,
+			.icon-set-lsi_widget-2 a:focus {
+				border-radius: 2px;
+				background: #1E72BD !important;
+				color: #ffffff !important;
+				font-size: 20px !important;
+			}
+
+			.icon-set-lsi_widget-2 a:hover {
+				background: #777777 !important;
+				color: #FFFFFF !important;
+			}
+</style>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/plugins/gp-premium/menu-plus/functions/js/sticky.min.js?ver=1.9.1"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var thirsty_global_vars = {"home_url":"\/\/www.anysoftwaretools.com","ajax_url":"https:\/\/www.anysoftwaretools.com\/wp-admin\/admin-ajax.php","link_fixer_enabled":"yes","link_prefix":"go","link_prefixes":{"0":"recommends","2":"go"},"post_id":"4680","enable_record_stats":"yes","enable_js_redirect":"","disable_thirstylink_class":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/plugins/thirstyaffiliates/js/app/ta.js?ver=3.9.2"></script>
+<!--[if lte IE 11]>
+<script type='text/javascript' src='https://www.anysoftwaretools.com/wp-content/themes/generatepress/js/classList.min.js?ver=2.4.1'></script>
+<![endif]-->
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/themes/generatepress/js/menu.min.js?ver=2.4.1"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/themes/generatepress/js/a11y.min.js?ver=2.4.1"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/themes/generatepress/js/dropdown-click.min.js?ver=2.4.1"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var generatepressNavSearch = {"open":"Open Search Bar","close":"Close Search Bar"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/themes/generatepress/js/navigation-search.min.js?ver=2.4.1"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/themes/generatepress/js/back-to-top.min.js?ver=2.4.1"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-includes/js/comment-reply.min.js?ver=5.3.2"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/plugins/easy-fancybox/js/jquery.fancybox.min.js?ver=1.3.24"></script>
+<script type="text/javascript">
+var fb_timeout, fb_opts={'overlayShow':true,'hideOnOverlayClick':true,'showCloseButton':true,'margin':20,'centerOnScroll':false,'enableEscapeButton':true,'autoScale':true };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery('.nofancybox,a.wp-block-file__button,a.pin-it-button,a[href*="pinterest.com/pin/create"],a[href*="facebook.com/share"],a[href*="twitter.com/share"]').addClass('nolightbox');
+/* IMG */
+var fb_IMG_select='a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a),area[href*=".jpg"]:not(.nolightbox),a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a),area[href*=".jpeg"]:not(.nolightbox),a[href*=".png"]:not(.nolightbox,li.nolightbox>a),area[href*=".png"]:not(.nolightbox),a[href*=".webp"]:not(.nolightbox,li.nolightbox>a),area[href*=".webp"]:not(.nolightbox)';
+jQuery(fb_IMG_select).addClass('fancybox image');
+var fb_IMG_sections=jQuery('.gallery,.wp-block-gallery,.tiled-gallery,.wp-block-jetpack-tiled-gallery');
+fb_IMG_sections.each(function(){jQuery(this).find(fb_IMG_select).attr('rel','gallery-'+fb_IMG_sections.index(this));});
+jQuery('a.fancybox,area.fancybox,li.fancybox a').each(function(){jQuery(this).fancybox(jQuery.extend({},fb_opts,{'transitionIn':'elastic','easingIn':'easeOutBack','transitionOut':'elastic','easingOut':'easeInBack','opacity':false,'hideOnContentClick':false,'titleShow':true,'titlePosition':'over','titleFromAlt':true,'showNavArrows':true,'enableKeyboardNav':true,'cyclic':false}))});};
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+};
+var easy_fancybox_auto=function(){setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+jQuery(easy_fancybox_auto);
+</script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/plugins/easy-fancybox/js/jquery.easing.min.js?ver=1.4.1"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-includes/js/wp-embed.min.js?ver=5.3.2"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/plugins/easy-table-of-contents/vendor/smooth-scroll/jquery.smooth-scroll.min.js?ver=1.5.5"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/plugins/easy-table-of-contents/vendor/js-cookie/js.cookie.min.js?ver=2.0.3"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?ver=1.9.2"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/plugins/easy-table-of-contents/vendor/waypoints/jquery.waypoints.min.js?ver=1.9.2"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var ezTOC = {"smooth_scroll":"1","visibility_hide_by_default":"1","width":"auto","scroll_offset":"30"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?ver=1.7.1"></script>
+<script async="async" type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/plugins/akismet/_inc/form.js?ver=4.1.3"></script>
+<script type="text/javascript" src="https://www.anysoftwaretools.com/wp-content/plugins/lightweight-social-icons/js/jquery.tooltipster.min.js?ver=1.0.1"></script>
+
+
+
+<div id="fancybox-tmp"></div><div id="fancybox-loading"><div></div></div><div id="fancybox-overlay"></div><div id="fancybox-wrap"><div id="fancybox-outer"><div class="fancybox-bg" id="fancybox-bg-n"></div><div class="fancybox-bg" id="fancybox-bg-ne"></div><div class="fancybox-bg" id="fancybox-bg-e"></div><div class="fancybox-bg" id="fancybox-bg-se"></div><div class="fancybox-bg" id="fancybox-bg-s"></div><div class="fancybox-bg" id="fancybox-bg-sw"></div><div class="fancybox-bg" id="fancybox-bg-w"></div><div class="fancybox-bg" id="fancybox-bg-nw"></div><div id="fancybox-content"></div><a id="fancybox-close"></a><div id="fancybox-title"></div><a id="fancybox-left"><span class="fancy-ico" id="fancybox-left-ico"></span></a><a id="fancybox-right"><span class="fancy-ico" id="fancybox-right-ico"></span></a></div></div><iframe id="__uspapiLocator" name="__uspapiLocator" style="display: none;"></iframe><div class="adthrive-comscore adthrive-footer-message"><span>An Elite CafeMedia Tech Publisher</span></div></body></html>

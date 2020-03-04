@@ -1,0 +1,705 @@
+<!DOCTYPE html><html lang="en-US" class="js"><head><script type="text/javascript">
+
+(function() {
+	if(typeof amzn_assoc_utils==="undefined"){amzn_assoc_utils={};}if(typeof amzn_assoc_utils.parse==="undefined"){amzn_assoc_utils.parse=(function(){var d,b,a={'"':'"',"\\":"\\","/":"/",b:"\b",f:"\f",n:"\n",r:"\r",t:"\t"},m,k=function(n){throw {name:"SyntaxError",message:n,at:d,text:m};},g=function(n){if(n&&n!==b){k("Expected '"+n+"' instead of '"+b+"'");}b=m.charAt(d);d+=1;return b;},f=function(){var o,n="";if(b==="-"){n="-";g("-");}while(b>="0"&&b<="9"){n+=b;g();}if(b==="."){n+=".";while(g()&&b>="0"&&b<="9"){n+=b;}}if(b==="e"||b==="E"){n+=b;g();if(b==="-"||b==="+"){n+=b;g();}while(b>="0"&&b<="9"){n+=b;g();}}o=+n;if(!isFinite(o)){k("Bad number");}else{return o;}},h=function(){var q,p,o="",n;if(b==='"'){while(g()){if(b==='"'){g();return o;}if(b==="\\"){g();if(b==="u"){n=0;for(p=0;p<4;p+=1){q=parseInt(g(),16);if(!isFinite(q)){break;}n=n*16+q;}o+=String.fromCharCode(n);}else{if(typeof a[b]==="string"){o+=a[b];}else{break;}}}else{o+=b;}}}k("Bad string");},j=function(){while(b&&b<=" "){g();}},c=function(){switch(b){case"t":g("t");g("r");g("u");g("e");return true;case"f":g("f");g("a");g("l");g("s");g("e");return false;case"n":g("n");g("u");g("l");g("l");return null;}k("Unexpected '"+b+"'");},l,i=function(){var n=[];if(b==="["){g("[");j();if(b==="]"){g("]");return n;}while(b){n.push(l());j();if(b==="]"){g("]");return n;}g(",");j();}}k("Bad array");},e=function(){var o,n={};if(b==="{"){g("{");j();if(b==="}"){g("}");return n;}while(b){o=h();j();g(":");if(Object.hasOwnProperty.call(n,o)){k('Duplicate key "'+o+'"');}n[o]=l();j();if(b==="}"){g("}");return n;}g(",");j();}}k("Bad object");};l=function(){j();switch(b){case"{":return e();case"[":return i();case'"':return h();case"-":return f();default:return b>="0"&&b<="9"?f():c();}};return function(p,o){var n;m=p;d=0;b=" ";n=l();j();if(b){k("Syntax error");}return n;};}());}if(typeof amzn_assoc_utils.stringify==="undefined"){amzn_assoc_utils.stringify=function(b){var a="";if(typeof JSON!=="undefined"){a=JSON.stringify(b);}return a;};}if(typeof amzn_assoc_utils.addCssRules==="undefined"){amzn_assoc_utils.addCssRules=function(g,n){var h=document.createElement("style"),m,e=0,k="";h.appendChild(document.createTextNode(""));document.head.appendChild(h);m=h.sheet;for(e=0,rl=n.length;e<rl;e++){var d=1,l=n[e],b=n[e][0],f="";if(Object.prototype.toString.call(l[1][0])==="[object Array]"){l=l[1];d=0;}for(var c=l.length;d<c;d++){var a=l[d];f+=a[0]+":"+a[1]+(a[2]?" !important":"")+";\n";}if(typeof g==="string"){m.insertRule(g+"{"+b+"{"+f+"}}",m.cssRules.length);}else{m.insertRule(b+"{"+f+"}",m.cssRules.length);}}};}window.trackingUtils=function(l,c,e,o,p,h,d,r,t,n,q){var g={},j=new RegExp("/(ref=[\\w]+)/?","i"),a="assocPayloadId",i=function(u){return u&&encodeURIComponent(u).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");},m=(function(){var u=document.createElement("a");u.href=(window.location!==window.parent.location)?document.referrer:document.location;return u.protocol+"//"+u.hostname+((u.port===""||u.port==="80"||u.port==="443")?"":(":"+u.port))+(u.pathname.indexOf("/")!==0?("/"+u.pathname):u.pathname);}()),s=(function(){return i(m);}()),k=function(u,w,x,v){if(typeof x==="string"&&x!==""){if(u.search===""){u.search="?"+w+"="+x;}else{if(!u.search.match(new RegExp("[?&]"+w+"="))){u.search=u.search.replace(/\?/,"?"+w+"="+x+"&");}else{if(v){u.search=u.search.replace(new RegExp(w+"=([^&]*)"),w+"="+x);}}}}return u;},f=function(w,u,v){if(typeof v==="string"&&v!==""){if(!w.match(/\?/)){w=w+"?"+u+"="+v;}else{if(!w.match(u)){w=w.replace(/\?/,"?"+u+"="+v+"&");}}}return w;},b=function(v){var u=(typeof d!=="undefined")?d:0;if(typeof v!=="undefined"){u=v;}return u;};g.addRefUrls=function(z,A,v,u){var B=new RegExp("^http://.*(amazon|endless|myhabit|amazonwireless|javari|smallparts)\\.(com|ca|co\\.jp|de|fr|co\\.uk|cn|it|es)/.*","i"),w,y,x;for(x=0;x<z.length;x++){z[x].rel="nofollow";w=String(z[x].href);if(y=w.match(B)){z[x].href=g.addTrackingParameters(z[x],A,v,u);}}};g.addRefRefUrl=function(u){return k(u,"ref-refURL",s);};g.getRefRefUrl=function(){return s;};g.getRawRefUrl=function(){return m;};g.addSignature=function(v,u,w){return k(k(v,"sig",u),"sigts",w);};g.addLinkCode=function(v,u){return k(v,"linkCode",u);};g.addTrackingId=function(v,u){return k(v,"tag",u);};g.addLinkId=function(u,v){return k(u,"linkId",v);};g.addSubtag=function(u,v){return k(u,"ascsubtag",v);};g.addCreativeAsin=function(u,v){return k(k(u,"creativeASIN",v),"adId",v);};g.addAdType=function(v,u){return k(v,"adType",u);};g.addAdMode=function(u,v){return k(u,"adMode",v);};g.addAdFormat=function(v,u){return k(v,"adFormat",u);};g.addImpressionTimestamp=function(u,v){if(typeof v==="number"){v=v.toString();}return k(u,"impressionTimestamp",v);};g.convertToRedirectedUrl=function(u,x,v){var w=document.createElement("a");w.setAttribute("href",x);if(typeof v!=="undefined"){k(w,v,i(u.getAttribute("href")),true);}else{w.setAttribute("href",x+"/"+w.getAttribute("href"));}u.setAttribute("href",w.getAttribute("href"));return u;};g.getImpressionToken=function(){return h;};g.generateTransitId=function(){return g.getHashedImpressionToken();};g.getHashedImpressionToken=function(){var u=o.split("/");var v=u[u.length-2];return v;};g.getTransitId=function(){if(typeof assoc_session_storage!=="undefined"){var u=assoc_session_storage.get(a);return u;}return null;};g.getClickUrl=function(){return p;};g.addImpressionToken=function(v,w){var u=b(w);if(typeof h==="string"&&h!==""){k(v,"imprToken",h);if(typeof u!=="undefined"){k(v,"slotNum",u);}}return v;};g.addImpressionTokenStr=function(w,v){var u=b(v);if(typeof h==="string"&&h!==""){w=f(w,"imprToken",h);if(typeof u!=="undefined"){w=f(w,"slotNum",u);}}return w;};g.addTrackingParameters=function(A,B,z,E,x,u,y,w,v,F,D,C){return g.addSignature(g.addCreativeAsin(g.addLinkId(g.addTrackingId(g.addSubtag(g.addLinkCode(g.addRefRefUrl(g.addImpressionToken(g.addRefMarker(g.addAdType(g.addAdMode(g.addAdFormat(g.addImpressionTimestamp(A,C),D),F),v),x))),z),r),E),B),u),y,w);};g.addRefMarker=function(v,x){var w,u=false;if(typeof x==="undefined"){return v;}if(w=v.pathname.match(j)){v.pathname=v.pathname.replace(w[1],"ref="+x);}else{u=(v.pathname.charAt(v.pathname.length-1)==="/");v.pathname=v.pathname+(u?"":"/")+"ref="+x;}return v;};g.getRefMarker=function(u){var v;if(v=u.pathname.match(j)){return v[1].substr(4);}else{return undefined;}};g.getCurrentURL=function(){return(window.location!==window.parent.location)?document.referrer:document.location.href;};g.makeForesterCall=function(w){var u=undefined,v;if(typeof JSON!=="undefined"){v=JSON.stringify(w);}else{if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){v=amzn_assoc_utils.stringify(w);}else{return;}}if(typeof o==="string"){u=o+"?assoc_payload="+encodeURIComponent(v);g.generateImage(u);}};g.recordImpression=function(w,u,z,x,B){z.linkCode=w;z.trackingId=u;z.refUrl=g.getCurrentURL();if(n||!t){g.makeForesterCall(z);}else{g.addABPFlag(z,g.makeForesterCall);}if(typeof x==="undefined"||!x){var y=(new Date()).getTime();var A=(typeof B!=="undefined")?B:"";var v=e+"?l="+w+"&t="+u+"&o="+l+"&cb="+y+A;g.generateImage(v);}};g.createAssocPayload=function(y,w,v,u){y.linkCode=w;y.trackingId=v;y.refUrl=u;var x="";if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){x=amzn_assoc_utils.stringify(y);}return x;};g.recordAESImpression=function(w,u,x){if(typeof q==="string"){var z=g.createAssocPayload(x,w,u,g.getCurrentURL());var v=g.getHashedImpressionToken();var y=q+v+"/pixel?assoc_payload="+encodeURIComponent(z);g.generateImage(y);}};g.recordTransit=function(){if(!(g.getTransitId())||g.isUTMParamPresentInUrl(g.getCurrentURL())){assoc_session_storage.set(a,g.generateTransitId());}};g.isUTMParamPresentInUrl=function(v){var u=v.match(/utm_source=/i);return(u!==null);};g.addAAXClickUrls=function(v){var x,w,u;if(typeof v==="undefined"||typeof p==="undefined"){return;}for(w=0;w<v.length;w++){u=String(v[w].href);if(u.indexOf(p)<0){x=p+u;v[w].href=x;}}};g.addAAXClickUrl=function(u){if(typeof u==="undefined"||u.indexOf(p)===0){return u;}return p+u;};g.updateLinks=function(v,x){var w,u;if(typeof x!=="function"){return;}for(w=0;w<v.length;w++){u=String(v[w].href);v[w].href=x(u);}};g.elementInViewPort=function(u){var v=u.getBoundingClientRect(),w=(v.top>=0&&v.left>=0&&v.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&v.right<=(window.innerWidth||document.documentElement.clientWidth));return{posX:v.left+window.pageXOffset,posY:v.top+window.pageYOffset,inViewPort:w};};g.recordViewability=function(z,y,v,w){if(typeof o==="string"){var x=g.createViewbilityPayload(z,y,v,w);var u=o+x+"&cb="+(new Date()).getTime();g.generateImage(u);}};g.recordAESViewability=function(B,A,v,w){if(typeof q==="string"){var x=g.createViewbilityPayload(B,A,v,w);var u=g.getHashedImpressionToken();var z=encodeURIComponent(x);var y=q+u+"/pixel/"+z+"&cb="+(new Date()).getTime();g.generateImage(y);}};g.createViewbilityPayload=function(z,y,v,x){var w={};if(typeof y!=="undefined"){w.above_the_fold=y;}if(typeof v!=="undefined"){w.topPos=v;}if(typeof x!=="undefined"){w.leftPos=x;}if(typeof z!=="undefined"){if(Object.keys(w).length===0){w.viewable=true;}w.slotNum=z;}var u="";if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){u=amzn_assoc_utils.stringify({adViewability:[w]});}return u;};g.generateImage=function(u){if(typeof u!=="undefined"){(new Image()).src=u;}};g.addABPFlag=function(x,F){var z=false,y=2,w=document.body?document.body.appendChild(new Image()):new Image(),v=document.body?document.body.appendChild(new Image()):new Image(),C=false,A=false,u=Math.random()*11,E=t+"?ch=*&rn=*",D=function(H,G){if(y===0||G>1000){x.supplySideMetadata={ABPInstalled:y===0&&z};H(x);}else{setTimeout(function(){D(H,G*2);},G*2);}},B=function(){if(--y){return;}z=!C&&A;};w.style.display="none";v.style.display="none";w.onload=B;w.onerror=function(){C=true;B();};w.src=E.replace(/\*/,1).replace(/\*/,u);v.onload=B;v.onerror=function(){A=true;B();};v.src=E.replace(/\*/,2).replace(/\*/,u);D(F,250);};return g;};var assoc_session_storage=(function(){var a={};a.get=function(c){var d=null;if(typeof(window.sessionStorage)!=="undefined"){try{d=window.sessionStorage.getItem(c);}catch(b){}}return d;};a.set=function(c,d){if(typeof(window.sessionStorage)!=="undefined"){try{window.sessionStorage.setItem(c,d);}catch(b){}}};return a;}());window.elemTracker=function(b){var a={};a.trackElements=function(d,c){var f,e;if(typeof d!=="undefined"&&d.length>0&&typeof c==="function"){window.addEventListener("scroll",function(){for(f=0;f<d.length;f++){e=b.elementInViewPort(d[f]);if(e.inViewPort){c();}}},false);}};return a;};
+	var amznAutoTaggerMaker=function(h,v,B){var D={CA:"ca",CN:"cn",IN:"in",DE:"de",FR:"fr",GB:"co.uk",JP:"co.jp",US:"com"},j={CA:[],CN:[],IN:[],DE:["javari"],FR:["javari"],GB:["javari"],JP:["javari"],US:["smallparts","amazonwireless","endless","myhabit"]},F=(function(){var P=-1,O={};O.getNextSlotNum=function(){return ++P;};return O;}()),q,o,e=Math.max(document.body.scrollHeight,document.body.offsetHeight,document.documentElement.clientHeight,document.documentElement.scrollHeight,document.documentElement.offsetHeight),m=Math.max(document.body.scrollWidth,document.body.offsetWidth,document.documentElement.clientWidth,document.documentElement.scrollWidth,document.documentElement.offsetWidth),y={totalDocWidth:m,totalDocHeight:e,logType:"onetag_pageload",pageTitle:document.title},a="w50",J="w61",H="g12",C={},b=new RegExp("%3F"),w=new Object(),x=false,l="",s="",u=0,L=0,d=0,G=new RegExp("amzn.to"),r=new RegExp(h.redirectorEndPoint),E=["kdp.amazon.com"],N=[],I="assocPayloadId",c=function(P){var Q,O=false;for(Q=0;Q<E.length;Q++){if(P.match(E[Q])){O=true;break;}}return O;},p=function(O){return O.nextSibling&&O.nextSibling.tagName==="IMG"&&O.nextSibling.hasAttribute("src")&&(O.nextSibling.getAttribute("src").search(/ir-[a-z]{2}\.amazon-adsystem\.com/)>-1||O.nextSibling.getAttribute("src").search(/www\.assoc-amazon\.*/)>-1);},n=function(O){if(!O.href.match(r)){O.href=h.redirectorEndPoint+O.href;}},k=function(Y,ae){var Z=new RegExp("/(ref=[\\w]+)/?","i"),U,ad=false,P,S,T=false,X=Y.search.match(/\?tag=([^&]+)|&tag=([^&]+)|\?tag-value=([^&]+)|&tag-value=([^&]+)|\?tag_value=([^&]+)|&tag_value=([^&]+)|\?t=([^&]+)|&t=([^&]+)/),R=Y.search.match(/\?tag=|&tag=|\?tag-value=|&tag-value=|\?tag_value=|&tag_value=|\?t=|&t=/),O=Y.search.match(/(linkCode|link_code|lc)=([^&]+)/i),W=v.elementInViewPort(Y),ac={autoTagged:false,overwritten:false,geoRedirected:false,atf:W.inViewPort},Q=F.getNextSlotNum(),V={destinationURL:Y.href,slotNum:Q,atfInFirstLoad:W.inViewPort,posX:W.posX,posY:W.posY,logType:"onetag_textlink"},ab=p(Y),aa;ac.slotNum=Q;if(Y.search===""){Y.search="?imprToken="+v.getImpressionToken()+"&slotNum="+Q;}else{Y.search=Y.search.replace(/\?/,"?imprToken="+v.getImpressionToken()+"&slotNum="+Q+"&");}if(h.enableAutoTagging){ac.autoTagged=true;if(X){if(h.overwrite){for(S=1;S<9;S++){if(X[S]!=undefined){Y.search=Y.search.replace(X[S],ae);break;}}ac.overwritten=true;ad=true;}}else{if(R){Y.search=Y.search.replace(/tag=/,"tag="+ae);ad=true;}else{Y.search=Y.search.replace(/\?/,"?tag="+ae+"&");ad=true;}}}if(O&&typeof h.overridableLinkCodes[O[2]]!=="undefined"){T=true;}if(O&&!T){P=O[2];}else{P=ad?a:J;}if(O){V.oldLinkCode=O[2];Y.search=Y.search.replace(O[2],P);}else{Y.search=Y.search.replace(/\?/,"?linkCode="+P+"&");}if(ad){aa=ae;}else{if(typeof X!=="undefined"&&X instanceof Array&&X.length>=S+1&&typeof X[S]==="string"){aa=X[S];}else{aa="";}}if(C.shouldBeGeoRedirected()){ac.geoRedirected=true;n(Y);}if(Y.hasAttribute("data-amzn-asin")&&!Y.search.match("creativeASIN")){Y.search=Y.search.replace(/\?/,"?creativeASIN="+Y.getAttribute("data-amzn-asin")+"&");}if(C.shouldTrackTransit(h)){v.recordTransit();V[I]=v.getTransitId();}N.push({pos:W,slotNum:Q,linkCode:P,linkInfo:V,skipIRCall:ab,imprTag:aa});Y.href=v.addAAXClickUrl(Y.href);return ac;},A=function(O){if(O.href.match(b)){o=O.href.split(b);O.href=o[0]+"?"+decodeURIComponent(o[1]);}},t=function(P,O,S){var R,Q;for(R=0;R<P.length;R++){for(Q=0;Q<O.length;Q++){if(window.addEventListener){P[R].addEventListener(O[Q],S,false);}else{P[R].attachEvent("on"+O[Q],S);}}}},K=function(O,P){var Q=false;t([O],["touchstart"],function(){Q=false;});t([O],["touchmove"],function(){Q=true;});t([O],["click","touchend"],function(R){if(Q){return;}O.setAttribute("href",P);});t([O],["auxclick","contextmenu"],function(R){O.setAttribute("href",P);});t([O],["mouseup"],function(R){if(R.button===1||R.ctrlKey){O.setAttribute("href",P);}});},M=function(){var O="";for(i=0;i<h.itemRefs.length;i++){if(typeof h.itemRefs[i].type!=="undefined"&&h.itemRefs[i].type==="ASIN"&&typeof h.itemRefs[i].sourceLink!=="undefined"&&String(h.itemRefs[i].sourceLink).match(G)!==null&&typeof h.itemRefs[i].destinationLink!=="undefined"){w[h.itemRefs[i].sourceLink]=h.itemRefs[i].destinationLink;if(l!==""){O=",";}l=l+O+h.itemRefs[i].sourceLink;u++;}}},f=function(P,O){B.trackElements([P],function(){if(typeof O!==undefined&&O.slotNum!==undefined&&(O.viewed===undefined||!O.viewed)){v.recordViewability(O.slotNum);if(C.shouldInteractWithAES(h)){v.recordAESViewability(O.slotNum);}O.viewed=true;}});},g=function(O,P){K(O,O.getAttribute("href"));O.setAttribute("href",P);},z=function(){var Q,P,O;for(Q=0;Q<N.length;Q++){P=N[Q];O=P.pos;v.recordImpression(P.linkCode,P.imprTag,P.linkInfo,P.skipIRCall,P.slotNum);v.recordViewability(P.slotNum,O.inViewPort,O.posX,O.posY);if(C.shouldInteractWithAES(h)){v.recordAESImpression(P.linkCode,P.imprTag,P.linkInfo);v.recordAESViewability(P.slotNum,O.inViewPort,O.posX,O.posY);}}N=[];};if(h.locale!=undefined){q=h.locale;}else{q="US";}C.shouldBeGeoRedirected=function(){return h.enableGeoRedirection&&(h.region!==""&&h.region!==h.viewerCountry);};C.publisherCallBack=function(){window["amzn_assoc_client_cb_"+h.adUnitSlotNum]({type:"onload",data:{},widget:C});};C.decorateLinkElement=function(O){A(O);linkProperties=k(O,h.trackingId);f(O,linkProperties);return linkProperties;};C.shouldTrackTransit=function(O){return((typeof O.disableTransitTracking==="undefined")||!O.disableTransitTracking);};C.shouldInteractWithAES=function(O){return((typeof O.enableAESInteraction!=="undefined")&&O.enableAESInteraction);};C.tagLinks=function(af){var ah,ag,P,aa,aj,ac=[],al=0,X,Z,ai,ae,ak,O,Y,V=0,R=0,ab=0,Q=0,U=0,S=0,T,W,ad="";P=D[q];aa=j[q];aj=new RegExp("^(http|https)://(www|[\\w\\-\\.]+)?amazon\\.("+P+")/","i");if(aa){for(al=0;al<aa.length;al++){X=P;if(P=="co.jp"){X="co.jp|jp";}ac[al]=new RegExp("^(http|https)://(www\\.)?("+aa[al]+")\\.("+X+")/","i");}}Z=af.getElementsByTagName("a");if(!x){M();x=true;}for(ah=0;ah<Z.length;ah++){Y=undefined;ai=String(Z[ah].href);if(ae=ai.match(aj)&&!c(ai)){Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}else{if(h.isShortLinksSupported&&(ak=ai.match(G))!==null){L++;if(s!==""){ad=",";}s=s+ad+Z[ah].href;T=w[Z[ah].href];if(typeof T!=="undefined"){d++;Z[ah].setAttribute("href",T);Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}else{if(C.shouldBeGeoRedirected()){Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}}}else{for(O=0;O<ac.length;O++){if(ae=ai.match(ac[O])){C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}}}}if(typeof Y!=="undefined"){if(Y.autoTagged){R++;}if(Y.overwritten){S++;}if(Y.geoRedirected){ab++;}if(Y.atf){Q++;}else{U++;}V++;}}y.numLinks=V;y.numAutoTaggedLinks=R;y.autoTaggingEnabled=h.enableAutoTagging;y.geoRedirectEnabled=h.enableGeoRedirection;y.disableTransitTracking=h.disableTransitTracking;y.numLinksATF=Q;y.numLinksBTF=U;y.shortLinksInLivePool=l;y.shortLinksInPage=s;y.shortLinksInLivePoolCount=u;y.shortLinksInPageCount=L;y.shortLinksMatchCount=d;if(C.shouldTrackTransit(h)){v.recordTransit();y[I]=v.getTransitId();}v.recordImpression(h.linkCode,h.trackingId,y);if(C.shouldInteractWithAES(h)){v.recordAESImpression(h.linkCode,h.trackingId,y);}t([window],["load"],z);};return C;};
+    var spec = {
+        trackingId : "parslyblog-20",
+        region : "US",
+        overwrite : false,
+        enableAutoTagging : false,
+        linkCode : "w49",
+        overridableLinkCodes :  {   "am1": ""   , "am2": ""   , "am3": ""   , "as1": ""   , "as2": ""   , "as3": ""   , "as4": ""   , "li1": ""   , "li2": ""   , "li3": ""   , "ll1": ""   , "ll2": ""   },
+        enableGeoRedirection : true,
+        redirectorEndPoint : "https://assoc-redirect.amazon.com/g/r/",
+        adUnitSlotNum : "0",
+        itemRefs : [],
+        isShortLinksSupported : true,
+        viewerCountry : "US",
+        disableTransitTracking : false,
+        enableAESInteraction : false
+    }, trackingUtils = window.trackingUtils(
+        "1",
+        "//fls-na.amazon-adsystem.com/1/associates-ads/1/OP/r/json",
+        "//ir-na.amazon-adsystem.com/e/ir",
+        "https://aax-us-east.amazon-adsystem.com/x/px/QjZsUN9Vvjokzdt6EKgfyTkAAAFwkamTngEAAAFKAVuOpzk/", "https://aax-us-east.amazon-adsystem.com/x/c/QjZsUN9Vvjokzdt6EKgfyTkAAAFwkamTngEAAAFKAVuOpzk/", "WwkF65nut2R0CDbbHcKUGQ", undefined, undefined, undefined, true,
+        "https://assoc-na.associate-amazon.com/onetag/"
+    );
+
+    window.amznAutoTagger = amznAutoTaggerMaker(spec, trackingUtils, window.elemTracker(trackingUtils));
+    window.amznAutoTagger.tagLinks(document);
+    window.amznAutoTagger.publisherCallBack();
+}());
+
+ //# sourceURL=dynscript-0.js</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://amontalenti.com/wordpress/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="https://amontalenti.com/wordpress/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]-->
+	<!-- IBM Plex Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Sans+Condensed|IBM+Plex+Serif:400,400i,700,700i" rel="stylesheet">
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-KJH4MRM"></script><script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>The 3 Best Python Books for Your Team</title>
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" type="text/javascript">//<![CDATA[
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+//]]>
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><meta name="description" content="Python is the core programming language used at Parse.ly. It also happens to be a quickly-growing language with wide adoption among open source projects. It's no wonder it's quickly becoming the leading language for software teams. I've written a couple of blog posts with original material for learning Python, including…">
+<link rel="canonical" href="https://amontalenti.com/2015/06/06/pybooks">
+<script type="application/ld+json">{"@context" : "https://schema.org","@type" : "Person","name" : "Andrew Montalenti","url" : "https:\/\/amontalenti.com","sameAs" : ["https:\/\/twitter.com\/@amontalenti"]}</script>
+<meta property="og:url" content="https://amontalenti.com/2015/06/06/pybooks/">
+<meta property="og:site_name" content="Andrew Montalenti">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The 3 Best Python Books for Your Team">
+<meta property="og:description" content="Python is the core programming language used at Parse.ly. It also happens to be a quickly-growing language with wide adoption among open source projects. It's no wonder it's quickly becoming the leading language for software teams. I've written a couple of blog posts with original material for learning Python, including…">
+<meta property="og:image" content="http://amontalenti.com/wordpress/wp-content/uploads/2015/06/essential_reference.png">
+<meta property="og:image:secure_url" content="http://amontalenti.com/wordpress/wp-content/uploads/2015/06/essential_reference.png">
+<meta property="og:image:width" content="374">
+<meta property="og:image:height" content="263">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@amontalenti">
+<meta name="twitter:creator" content="@amontalenti">
+<meta name="twitter:title" content="The 3 Best Python Books for Your Team">
+<meta name="twitter:description" content="Python is the core programming language used at Parse.ly. It also happens to be a quickly-growing language with wide adoption among open source projects. It's no wonder it's quickly becoming the leading language for software teams. I've written a couple of blog posts with original material for learning Python, including…">
+<meta name="twitter:image" content="http://amontalenti.com/wordpress/wp-content/uploads/2015/06/essential_reference.png">
+<link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//secure.gravatar.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Andrew Montalenti » Feed" href="https://amontalenti.com/feed">
+<link rel="alternate" type="application/rss+xml" title="Andrew Montalenti » Comments Feed" href="https://amontalenti.com/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="Andrew Montalenti » The 3 Best Python Books for Your Team Comments Feed" href="https://amontalenti.com/2015/06/06/pybooks/feed">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/amontalenti.com\/wordpress\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.16"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="twentyfifteen-jetpack-css" href="https://amontalenti.com/wordpress/wp-content/plugins/jetpack/modules/theme-tools/compat/twentyfifteen.css?ver=6.4.3" type="text/css" media="all">
+<link rel="stylesheet" id="wp-parsely-style-css" href="https://amontalenti.com/wordpress/wp-content/plugins/wp-parsely/wp-parsely.css?ver=1546472458" type="text/css" media="all">
+<link rel="stylesheet" id="wp-syntax-css-css" href="https://amontalenti.com/wordpress/wp-content/plugins/wp-syntax/css/wp-syntax.css?ver=1.1" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://amontalenti.com/wordpress/wp-includes/css/dashicons.min.css?ver=4.7.16" type="text/css" media="all">
+<link rel="stylesheet" id="twentyfifteen-fonts-css" href="https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&amp;subset=latin%2Clatin-ext" type="text/css" media="all">
+<link rel="stylesheet" id="genericons-css" href="https://amontalenti.com/wordpress/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1" type="text/css" media="all">
+<link rel="stylesheet" id="twentyfifteen-style-css" href="https://amontalenti.com/wordpress/wp-content/themes/twentyfifteen/style.css?ver=4.7.16" type="text/css" media="all">
+<link rel="stylesheet" id="twentyfifteen-block-style-css" href="https://amontalenti.com/wordpress/wp-content/themes/twentyfifteen/css/blocks.css?ver=20181018" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='https://amontalenti.com/wordpress/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='https://amontalenti.com/wordpress/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="jetpack-widget-social-icons-styles-css" href="https://amontalenti.com/wordpress/wp-content/plugins/jetpack/modules/widgets/social-icons/social-icons.css?ver=20170506" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="https://amontalenti.com/wordpress/wp-content/plugins/jetpack/css/jetpack.css?ver=6.4.3" type="text/css" media="all">
+<script type="text/javascript" src="https://amontalenti.com/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://amontalenti.com/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<link rel="https://api.w.org/" href="https://amontalenti.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://amontalenti.com/wordpress/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://amontalenti.com/wordpress/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Picking tech stacks" href="https://amontalenti.com/2015/05/24/picking-tech-stacks">
+<link rel="next" title="Programming: it’s weird" href="https://amontalenti.com/2015/06/14/programming-its-weird">
+<meta name="generator" content="WordPress 4.7.16">
+<link rel="shortlink" href="https://wp.me/saayKl-pybooks">
+<link rel="alternate" type="application/json+oembed" href="https://amontalenti.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Famontalenti.com%2F2015%2F06%2F06%2Fpybooks">
+<link rel="alternate" type="text/xml+oembed" href="https://amontalenti.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Famontalenti.com%2F2015%2F06%2F06%2Fpybooks&amp;format=xml">
+
+<!-- BEGIN wp-parsely Plugin Version 2.0 -->
+<meta name="wp-parsely_version" id="wp-parsely_version" content="2.0">
+			<script type="application/ld+json">
+		{"@context":"http:\/\/schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/amontalenti.com\/2015\/06\/06\/pybooks"},"headline":"The 3 Best Python Books for Your Team","url":"http:\/\/amontalenti.com\/2015\/06\/06\/pybooks","dateCreated":"2015-06-06T17:08:04Z","datePublished":"2015-06-06T17:08:04Z","dateModified":"2015-06-06T17:08:04Z","articleSection":"Technology","author":[{"@type":"Person","name":"Andrew Montalenti"}],"creator":["Andrew Montalenti"],"keywords":[],"publisher":{"@type":"Organization","name":"Andrew Montalenti","logo":{"@type":"ImageObject","url":"http:\/\/amontalenti.com\/wordpress\/wp-content\/uploads\/2005\/07\/pic.jpg"}}}
+		</script>
+
+			<!-- END wp-parsely Plugin Version 2.0 -->
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" type="text/javascript">//<![CDATA[
+	dataLayer.push({"pageTitle":"The 3 Best Python Books for Your Team | ","pagePostType":"post","pagePostType2":"single-post","pageCategory":["technology"],"pagePostAuthorID":2,"pagePostAuthor":"Andrew Montalenti","pagePostDate":"June 6, 2015","pagePostDateYear":"2015","pagePostDateMonth":"06","pagePostDateDay":"06","browserName":"Chrome","browserVersion":"75.0.3770.100","browserEngineName":"Blink","browserEngineVersion":"","osName":"OS X","osVersion":"10.14.5","deviceType":"desktop","deviceManufacturer":"Apple","deviceModel":"Macintosh","postCountOnPage":1,"postCountTotal":1,"postID":1932,"postFormat":"standard"});//]]>
+</script>
+<script data-cfasync="false">//<![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJH4MRM');//]]>
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+<link rel="dns-prefetch" href="//v0.wordpress.com">
+<link rel="dns-prefetch" href="//jetpack.wordpress.com">
+<link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//s1.wp.com">
+<link rel="dns-prefetch" href="//s2.wp.com">
+<link rel="dns-prefetch" href="//public-api.wordpress.com">
+<link rel="dns-prefetch" href="//0.gravatar.com">
+<link rel="dns-prefetch" href="//1.gravatar.com">
+<link rel="dns-prefetch" href="//2.gravatar.com">
+<style type="text/css">img#wpstats{display:none}</style>			<style type="text/css" id="wp-custom-css">
+				article li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+article div {
+    margin-bottom: 20px;
+}
+
+#site-navigation {
+    margin-bottom: 10%;
+}
+
+#menu-social li {
+   width: 19%;
+}
+
+article blockquote {
+	font-size: inherit;
+}
+
+.tagcloud {
+	font-family: "IBM Plex Mono", mono;	
+}
+
+#menu-site {
+  font-family: "IBM Plex Mono", mono;
+}
+
+.page-title {
+  font-family: "IBM Plex Sans", sans;
+}			</style>
+		<script src="https://srv-2020-02-29-15.pixel.parsely.com/start/?rand=1582991773134&amp;plid=13876743&amp;idsite=pixelmonkey.org&amp;url=https%3A%2F%2Famontalenti.com%2F2015%2F06%2F06%2Fpybooks&amp;urlref=&amp;screen=1920x1080%7C1920x1080%7C24&amp;data=%7B%7D&amp;sid=1&amp;surl=https%3A%2F%2Famontalenti.com%2F2015%2F06%2F06%2Fpybooks&amp;sref=&amp;sts=1582991773129&amp;slts=0&amp;title=The+3+Best+Python+Books+for+Your+Team&amp;date=Sat+Feb+29+2020+15%3A56%3A13+GMT%2B0000+(Coordinated+Universal+Time)&amp;action=pageview&amp;pvid=55894372&amp;callback=parselyStartCallback"></script><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="https://secure.gravatar.com/dist/css/hovercard.min.css?ver=2020Febaa"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="https://secure.gravatar.com/dist/css/services.min.css?ver=2020Febaa"></head>
+
+<body class="post-template-default single single-post postid-1932 single-format-standard wp-custom-logo ">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJH4MRM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><br style="display:none;">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+				<a href="https://amontalenti.com/" class="custom-logo-link" rel="home" itemprop="url"><img width="245" height="213" src="https://amontalenti.com/wordpress/wp-content/uploads/2005/07/pic.jpg" class="custom-logo" alt="" itemprop="logo"></a>						<p class="site-title"><a href="https://amontalenti.com/" rel="home">Andrew Montalenti</a></p>
+											<p class="site-description">@amontalenti – Parse.ly Founder. Coding in Python, JavaScript, Clojure, &amp; C.</p>
+									<button class="secondary-toggle" aria-expanded="false" aria-controls="secondary">Menu and widgets</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+			<div id="secondary" class="secondary" aria-expanded="false">
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+				<div class="menu-site-container"><ul id="menu-site" class="nav-menu"><li id="menu-item-2159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2159"><a href="https://amontalenti.com/about">/about</a></li>
+<li id="menu-item-2189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2189"><a href="/category/technology">/tech</a></li>
+<li id="menu-item-2183" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2183"><a href="/?s=python">/python</a></li>
+<li id="menu-item-2184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2184"><a href="/?s=startup">/startups</a></li>
+<li id="menu-item-2160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2160"><a href="https://amontalenti.com/contact">/contact</a></li>
+<li id="menu-item-2161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2161"><a href="https://amontalenti.com/gallery">/photos</a></li>
+<li id="menu-item-2168" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2168"><a target="_blank" href="https://parse.ly">» https://parse.ly</a></li>
+</ul></div>			</nav><!-- .main-navigation -->
+		
+					<nav id="social-navigation" class="social-navigation" role="navigation">
+				<div class="menu-social-container"><ul id="menu-social" class="menu"><li id="menu-item-2163" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2163"><a href="https://twitter.com/amontalenti"><span class="screen-reader-text">On Twitter</span></a></li>
+<li id="menu-item-2164" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2164"><a href="https://github.com/amontalenti"><span class="screen-reader-text">On Github</span></a></li>
+<li id="menu-item-2165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2165"><a href="https://www.linkedin.com/in/andrewmontalenti/"><span class="screen-reader-text">On LinkedIn</span></a></li>
+<li id="menu-item-2166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2166"><a href="https://facebook.com/amontalenti"><span class="screen-reader-text">On Facebook</span></a></li>
+<li id="menu-item-2209" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2209"><a href="https://flickr.com/amontalenti"><span class="screen-reader-text">On Flickr</span></a></li>
+</ul></div>			</nav><!-- .social-navigation -->
+		
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+<article id="post-1932" class="post-1932 post type-post status-publish format-standard hentry category-technology">
+	
+	<header class="entry-header">
+		<h1 class="entry-title">The 3 Best Python Books for Your Team</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Python is the core programming language used at <a href="http://parse.ly">Parse.ly</a>. It also happens to be a <a href="http://www.tiobe.com/index.php/paperinfo/tpci/Python.html">quickly-growing language</a> with <a href="https://github.com/languages">wide adoption</a> among open source projects. It’s no wonder it’s quickly becoming the leading language for software teams.</p>
+<p>I’ve written a couple of blog posts with original material for learning Python, including <a href="https://amontalenti.com/2011/10/29/import-this">“import this: learning the Zen of Python with code and slides”</a> and <a href="https://amontalenti.com/2012/06/14/web-app">“Build a web app fast”</a>.</p>
+<p>Newcomers to Python are often overwhelmed by the wealth of information, available online and in print, for the language. I am often asked by others, “What are the best books for my Python team?” I plan to answer that question with this post, by highlighting what I consider to be the three best Python books on the market today.</p>
+<p><span id="more-1932"></span></p>
+<h3>Python Essential Reference</h3>
+<p>The best all-around book for Python is Python Essential Reference, 4th Edition, by David Beazley.</p>
+<div align="center">
+<a href="https://amzn.to/1AUGTgo"><img src="https://amontalenti.com/wordpress/wp-content/uploads/2015/06/essential_reference.png" alt="essential_reference" width="374" height="263" class="aligncenter size-full wp-image-1935" srcset="https://amontalenti.com/wordpress/wp-content/uploads/2015/06/essential_reference.png 374w, https://amontalenti.com/wordpress/wp-content/uploads/2015/06/essential_reference-300x210.png 300w" sizes="(max-width: 374px) 100vw, 374px"></a>
+</div>
+<p>This edition of the book was published in 2009, at basically the perfect time — just as Python 2.7 had fully stabilized and work on Python 3 began. Python 2.7 is still the most widely used version of Python, so if you are a newcomer to the language, you won’t be missing anything by focusing on this version of the language.</p>
+<p>The author, David Beazley, is a bit of a Python celebrity. He has given several highly-referenced PyCon talks, including some detailed discussions of generators, coroutines and the Python Global Interpreter Lock (GIL). He regularly teaches advanced Python courses from his office in Chicago. And he has a clear writing style, honed over years of experience.</p>
+<p>The book is structured in two parts. The first part is a narrative walk through of the language, entitled simply, “The Python Language”. I think of this section like “JavaScript: The Good Parts”, but for Python. It weighs in around 200 pages, and covers all the most important parts of the language in expert detail. The sections on types, functions, iterators/generators, and object oriented programming with Python are particularly strong.</p>
+<p>The second part of the book is where the title comes from — it’s essentially a reference to the Python Standard Library.</p>
+<p>It walks through all of the most important standard library modules, and illustrates each with examples. This section is, honestly, not meant to be read in chapter order. It’s meant to be skimmed and dipped into, depending on what kind of programming you’re actually doing. In a way, I wish this part was spun out into a separate book, because I think the overall book’s ~700 pages seem unapproachable to many, even though the most important part of this book, the first one, is only 200 pages.</p>
+<h3>Fluent Python</h3>
+<p>Once you understand the basics of a programming language, your next level of mastery is to understand its idioms and best practices. This is where the next book, Fluent Python, comes in.</p>
+<p>This book is a newcomer to the Python scene, and is authored by Luciano Ramalho. It was published in 2015.</p>
+<div align="center">
+<a href="https://amzn.to/1cE1euW"><img src="https://amontalenti.com/wordpress/wp-content/uploads/2015/06/fluent_python.png" alt="fluent_python" width="380" height="326" class="aligncenter size-full wp-image-1936" srcset="https://amontalenti.com/wordpress/wp-content/uploads/2015/06/fluent_python.png 380w, https://amontalenti.com/wordpress/wp-content/uploads/2015/06/fluent_python-300x257.png 300w" sizes="(max-width: 380px) 100vw, 380px"></a></div>
+<p>Fluent Python tries its hardest to distill what it means to be “Pythonic” into a book. In a past blog post, I wrote that “Pythonic” means <a href="https://amontalenti.com/2010/11/03/pythonic-means-idiomatic-and-tasteful">idiomatic and tasteful</a>, and I tried to illustrate that concept with a small example. This book will try to actually get you to “see the light” and write Python in an idiomatic and tasteful way, even while teaching you the basics, and the advanced internals, of the language.</p>
+<p>I was particularly impressed with this book’s discussion of Python’s data structures, which is supplemented with an overview of their internal implementation. The second half of the book goes into more depth on several topics than any other book on the market: things like iterators, generators, decorators, coroutines, descriptors, and class metaprogramming. I also found some of the historical discussion included in sidebars to be illuminating. This is a book I even recommend to Python old-timers.</p>
+<h3>Python Cookbook</h3>
+<p>I have to admit that I learned Python before many great print books were available for the language. I first learned Python in 2000, after reading Eric S. Raymond’s Linux Journal article, <a href="https://www.linuxjournal.com/article/3882">“Why Python?”</a>. But one of the places I learned Python really well was via the early <a href="https://code.activestate.com/recipes/langs/python/">ActiveState Python Recipes</a> website.</p>
+<p>Though this website is still around (and somewhat active), the Python web community is much more diverse today; you can find tons of blog posts, recorded conference presentations, Stack Overflow posts, as well as print/digital books all over the place. But in the 2000-2002 period, ActiveState’s Python Recipes website was basically “it” in terms of learning advanced concepts for Python.</p>
+<p>In fact, if you want to really challenge yourself in Python, you should read through all of <a href="https://code.activestate.com/recipes/users/178123/">Raymond Hettinger’s recipes</a>. Many of the standard library’s most popular modules started as recipes on this site, such as <a href="https://code.activestate.com/recipes/500261-named-tuples/">namedtuple</a> and <a href="https://code.activestate.com/recipes/576611-counter-class/?in=user-178123">Counter</a>!</p>
+<p>Anyway, the reason I am mentioning the Python recipes website is because in 2002, O’Reilly published many of the most popular ActiveState recipes into the book, Python Cookbook, which was edited by <a href="http://www.aleax.it/python_mat_en.html">Alex Martelli</a>, one of the circa-2002 Python community luminaries.</p>
+<div align="center"><a href="https://amzn.to/1AUGWIU"><img src="https://amontalenti.com/wordpress/wp-content/uploads/2015/06/python_cookbook.png" alt="python_cookbook" width="425" height="332" class="aligncenter size-full wp-image-1937" srcset="https://amontalenti.com/wordpress/wp-content/uploads/2015/06/python_cookbook.png 425w, https://amontalenti.com/wordpress/wp-content/uploads/2015/06/python_cookbook-300x234.png 300w" sizes="(max-width: 425px) 100vw, 425px"></a></div>
+<p>In addition to the code recipes themselves, Martelli provided some excellent commentary on why each  recipe was necessary, what Python features it leveraged, and how it might be applicable to your own code. This book was basically my bible as I was developing with Python in the 2004-2008 period, when I started to apply Python to real software problems at scale.</p>
+<p>By 2012, however, this book was already over a decade old, and showing its age. Luckily, none other than the heroic David Beazley decided to team up with Brian K. Jones and revitalize the title to publish a 3rd Edition. It went to press in May 2013. This book was re-thought from the 2nd edition from the ground up. It no longer relied exclusively on ActiveState recipes as a starting point, and was instead a more general “cookbook” approach to learning a modern and idiomatic version of the language.</p>
+<p>What’s more, Beazley decided to focus his cookbook examples exclusively on Python 3 (specifically, Python 3.3, the latest version as of the time of publication). This means it’s the perfect third book to read, after Python Essential Reference and Fluent Python. Not only will it cover more advanced recipes, but it’ll cover them while also highlighting features from the newest version of the language, Python 3.</p>
+<p>One tip: despite its age, I think the 2nd edition of Python Cookbook included some pretty sage explanations of Python internals by Alex Martelli, and these were pretty much entirely edited out of the new version of the book. Therefore, if you want bonus points, also pick up a used copy of the 2nd edition of this title for historical value!</p>
+<p>It’ll also be fun to see how Python (the language, and the community) evolved over the last decade. By the way, Alex Martelli’s <a href="http://shop.oreilly.com/product/9780596100469.do">“Python in a Nutshell” 2nd edition</a> is also a great book, and has some wonderful sections on Python’s data model, dunder methods, and object oriented programming “Pythonista style”, but at this point some of the core reference material in it is dated enough that I can’t still recommend the book as anything but a historical artifact.</p>
+<h3>A Certified Pythonista</h3>
+<p>So, that’s it — these are the 3 titles I recommend for Python software teams.</p>
+<p>Python expertise awaits. Whether you are a pair of hackers building a prototype for a new startup; a 20-person team that is doing large-scale engineering with Python; or a thousand-person engineering department that is switching from Java/C++, your team will benefit greatly from copies of each of these!</p>
+<ol>
+<li><a href="https://amzn.to/1AUGTgo">Python Essential Reference, 4e (Beazley)</a></li>
+<li><a href="https://amzn.to/1cE1euW">Fluent Python, 1e (Ramalho)</a></li>
+<li><a href="https://amzn.to/1AUGWIU">Python Cookbook, 3e (Beazley, Jones)</a></li>
+</ol>
+<p>Bonus: <a href="https://amzn.to/1JyLs1s">Python Cookbook, 2e (Martelli, Ascher)</a></p>
+<p>You’ll all be certified Pythonistas in no time. Welcome to the community, and Happy Hacking!</p>
+<p>–</p>
+<p><small><br>
+p.s. you might be wondering, on what basis am I making these recommendations? Well, I’ve read <strong>a lot</strong> of Python books over the years.</small></p><small>
+<p>Here are some “additional readings” — books I’ve read cover-to-cover, think are quite good, but wouldn’t put in my top 3 selections:</p>
+<ul>
+<li><strong>Dive Into Python</strong></li>
+<li><strong>Natural Language Processing with Python</strong></li>
+<li><strong>Python for Data Analysis</strong></li>
+<li><strong>Think Stats</strong></li>
+<li><strong>The Python Standard Library by Example</strong></li>
+<li><strong>Python in a Nutshell</strong></li>
+<li><strong>The Definitive Guide to Django</strong></li>
+<li><strong>Introduction to Tornado</strong></li>
+</ul>
+<p>Here are some other Python books I’ve read cover-to-cover, which are OK and may be worth a skim, but not on a “greatest hits” list:</p>
+<ul>
+<li>Learning Python</li>
+<li>A Byte of Python</li>
+<li>Python Pocket Reference</li>
+<li>Think Python</li>
+<li>Learn Python the Hard Way</li>
+<li>High Performance Python</li>
+<li>The Quick Python Book</li>
+<li>Programming in Python 3</li>
+<li>Practical Programming (with Python)</li>
+<li>Python and AWS Cookbook</li>
+<li>Instant Flask Web Development</li>
+<li>Pro Django</li>
+</ul>
+<p>Many of these are good books, but the 3 recommended in this article are the best for learning the language overall, in my opinion.</p>
+</small><p><small>Books referenced and reviewed: <em>Python Essential Reference</em>, 4e, Addison-Wessley; <em>Fluent Python</em>, O’Reilly; <em>Python Cookbook</em> (2e and 3e), O’Reilly. NOTE: The book links, when they linked to Amazon.com, included an affiliate tracking code.<br>
+</small></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="https://amontalenti.com/2015/06/06/pybooks" rel="bookmark"><time class="entry-date published" datetime="2015-06-06T12:08:04+00:00">June 6, 2015</time><time class="updated" datetime="2019-01-02T16:08:15+00:00">January 2, 2019</time></a></span><span class="byline"><span class="author vcard"><span class="screen-reader-text">Author </span><a class="url fn n" href="https://amontalenti.com/author/pixelmonkey">Andrew Montalenti</a></span></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="https://amontalenti.com/category/technology" rel="category tag">Technology</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-## -->
+
+<div id="comments" class="comments-area">
+
+			<h2 class="comments-title">
+			10 thoughts on “The 3 Best Python Books for Your Team”		</h2>
+
+		
+		<ol class="comment-list">
+					<li id="comment-1872389" class="comment even thread-even depth-1">
+			<article id="div-comment-1872389" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="https://secure.gravatar.com/avatar/beb294ef2eeef9559222a824c7f93c8d?s=56&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/beb294ef2eeef9559222a824c7f93c8d?s=112&amp;d=mm&amp;r=g 2x" class="avatar avatar-56 photo grav-hashed grav-hijack" height="56" width="56" id="grav-beb294ef2eeef9559222a824c7f93c8d-0">						<b class="fn">Paul Hoffman</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://amontalenti.com/2015/06/06/pybooks#comment-1872389">
+							<time datetime="2015-06-06T14:27:07+00:00">
+								June 6, 2015 at 2:27 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Python in Practice, but Summerfield. Would probably not make it into your top 3, but has some useful thought nuggets for structuring programs in Python.</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-1881386" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-1881386" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="https://secure.gravatar.com/avatar/274af5729c3caa8d5382f9980aa50cd6?s=56&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/274af5729c3caa8d5382f9980aa50cd6?s=112&amp;d=mm&amp;r=g 2x" class="avatar avatar-56 photo grav-hashed grav-hijack" height="56" width="56" id="grav-274af5729c3caa8d5382f9980aa50cd6-0">						<b class="fn">macias</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://amontalenti.com/2015/06/06/pybooks#comment-1881386">
+							<time datetime="2015-06-25T07:22:59+00:00">
+								June 25, 2015 at 7:22 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thank you for great post. Cookbook and Fluent is on my to-buy list, any thoughts on Effective Python by Brett Slatkin?</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-1962980" class="comment even thread-even depth-1">
+			<article id="div-comment-1962980" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="https://secure.gravatar.com/avatar/a96dd0afc13b56a4a965eca289973c8f?s=56&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a96dd0afc13b56a4a965eca289973c8f?s=112&amp;d=mm&amp;r=g 2x" class="avatar avatar-56 photo grav-hashed grav-hijack" height="56" width="56" id="grav-a96dd0afc13b56a4a965eca289973c8f-0">						<b class="fn"><a href="http://henrikwarne.com/" rel="external nofollow" class="url">Henrik Warne</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://amontalenti.com/2015/06/06/pybooks#comment-1962980">
+							<time datetime="2015-11-26T10:22:10+00:00">
+								November 26, 2015 at 10:22 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Nice write-up! I can also recommend “Effective Python” by Brett Slatkin (from March 2015). Pragmatic, to the point, and taught me several things I didn’t know about Python.</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-1965021" class="pingback odd alt thread-odd thread-alt depth-1">
+			<div class="comment-body">
+				Pingback: <a href="https://amontalenti.com/2015/11/29/idiomatic-python" rel="external nofollow" class="url">» Idiomatic Python Resources</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-1967399" class="comment byuser comment-author-pixelmonkey bypostauthor even thread-even depth-1">
+			<article id="div-comment-1967399" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="https://secure.gravatar.com/avatar/a836551cb074c41c5fd8b554c7520011?s=56&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a836551cb074c41c5fd8b554c7520011?s=112&amp;d=mm&amp;r=g 2x" class="avatar avatar-56 photo grav-hashed grav-hijack" height="56" width="56" id="grav-a836551cb074c41c5fd8b554c7520011-0">						<b class="fn"><a href="https://amontalenti.com" rel="external nofollow" class="url">pixelmonkey</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://amontalenti.com/2015/06/06/pybooks#comment-1967399">
+							<time datetime="2015-12-03T08:02:33+00:00">
+								December 3, 2015 at 8:02 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>@Macias I recently purchased “Effective Python”, but haven’t had the chance yet to read or review. It looks like a good one, though! I purchased after hearing a podcast interview with the author.</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-2015662" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-2015662" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="https://secure.gravatar.com/avatar/8f9b4e932a6e8e1c4f8f579ebc941c78?s=56&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/8f9b4e932a6e8e1c4f8f579ebc941c78?s=112&amp;d=mm&amp;r=g 2x" class="avatar avatar-56 photo grav-hashed grav-hijack" height="56" width="56" id="grav-8f9b4e932a6e8e1c4f8f579ebc941c78-0">						<b class="fn">Tomas</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://amontalenti.com/2015/06/06/pybooks#comment-2015662">
+							<time datetime="2016-04-29T09:38:01+00:00">
+								April 29, 2016 at 9:38 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Hey, this was really helpful, been looking for a few days for a good, argumented list of python recommended books to start with.<br>
+Do you have any words on WROX Python books (Beg, Pro, Projects)? I may have access to those for free.<br>
+Thanks in advance</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-2062353" class="comment even thread-even depth-1">
+			<article id="div-comment-2062353" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="https://secure.gravatar.com/avatar/98bd6749d6263030b3a9c2231bc73230?s=56&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/98bd6749d6263030b3a9c2231bc73230?s=112&amp;d=mm&amp;r=g 2x" class="avatar avatar-56 photo grav-hashed grav-hijack" height="56" width="56" id="grav-98bd6749d6263030b3a9c2231bc73230-0">						<b class="fn">Rydel</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://amontalenti.com/2015/06/06/pybooks#comment-2062353">
+							<time datetime="2016-09-12T13:51:40+00:00">
+								September 12, 2016 at 1:51 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Python for Collective Intelligence and Machine Learning with Python are also very noteworthy.</p>
+<p>The first is an application of ML Theory, and the second is the theory and application (requiring knowledge of Linear Algebra)</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-2367924" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-2367924" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="https://secure.gravatar.com/avatar/2ad0d8efd7f61912eaa41df3f5803281?s=56&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/2ad0d8efd7f61912eaa41df3f5803281?s=112&amp;d=mm&amp;r=g 2x" class="avatar avatar-56 photo grav-hashed grav-hijack" height="56" width="56" id="grav-2ad0d8efd7f61912eaa41df3f5803281-0">						<b class="fn">Randy</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://amontalenti.com/2015/06/06/pybooks#comment-2367924">
+							<time datetime="2018-06-13T23:09:08+00:00">
+								June 13, 2018 at 11:09 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Any thoughts on the third edition of Martelli’s Python in a Nutshell?</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-2421533" class="comment even thread-even depth-1">
+			<article id="div-comment-2421533" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="https://secure.gravatar.com/avatar/a836551cb074c41c5fd8b554c7520011?s=56&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/a836551cb074c41c5fd8b554c7520011?s=112&amp;d=mm&amp;r=g 2x" class="avatar avatar-56 photo grav-hashed grav-hijack" height="56" width="56" id="grav-a836551cb074c41c5fd8b554c7520011-1">						<b class="fn">amontalenti</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://amontalenti.com/2015/06/06/pybooks#comment-2421533">
+							<time datetime="2018-08-17T07:42:52+00:00">
+								August 17, 2018 at 7:42 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>@Randy I haven’t had a chance to look at Martelli’s new edition of Python in a Nutshell. I look forward to reading it, though!</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-2423708" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-2423708" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt="" src="https://secure.gravatar.com/avatar/032606f1d88b2c5e425e38d046cb9806?s=56&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/032606f1d88b2c5e425e38d046cb9806?s=112&amp;d=mm&amp;r=g 2x" class="avatar avatar-56 photo grav-hashed grav-hijack" height="56" width="56" id="grav-032606f1d88b2c5e425e38d046cb9806-0">						<b class="fn">Ryan Shaughnessy</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://amontalenti.com/2015/06/06/pybooks#comment-2423708">
+							<time datetime="2019-12-03T15:01:53+00:00">
+								December 3, 2019 at 3:01 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Is Python Pocket Reference good as a Reference book?  Or do you have another recommendation?</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+	
+	
+		<div id="respond" class="comment-respond">
+							<h3 id="reply-title" class="comment-reply-title">Leave a Reply					<small><a rel="nofollow" id="cancel-comment-reply-link" href="/2015/06/06/pybooks#respond" style="display:none;">Cancel reply</a></small>
+				</h3>
+						<form id="commentform" class="comment-form">
+				<iframe title="Comment Form" src="https://jetpack.wordpress.com/jetpack-comment/?blogid=150280209&amp;postid=1932&amp;comment_registration=0&amp;require_name_email=1&amp;stc_enabled=1&amp;stb_enabled=1&amp;show_avatars=1&amp;avatar_default=mystery&amp;greeting=Leave+a+Reply&amp;greeting_reply=Leave+a+Reply+to+%25s&amp;color_scheme=light&amp;lang=en_US&amp;jetpack_version=6.4.3&amp;show_cookie_consent=10&amp;has_cookie_consent=0&amp;sig=0232d6f03a4bfe6fbca1128188db2ff84b0e53f3#parent=https%3A%2F%2Famontalenti.com%2F2015%2F06%2F06%2Fpybooks" style="width: 100%; height: 58px; border: 0px;" name="jetpack_remote_comment" class="jetpack_remote_comment" id="jetpack_remote_comment" sandbox="allow-same-origin allow-top-navigation allow-scripts allow-forms allow-popups" scrolling="no"></iframe>
+									<!--[if !IE]><!-->
+					<script>
+						document.addEventListener('DOMContentLoaded', function () {
+							var commentForms = document.getElementsByClassName('jetpack_remote_comment');
+							for (var i = 0; i < commentForms.length; i++) {
+								commentForms[i].allowTransparency = false;
+								commentForms[i].scrolling = 'no';
+							}
+						});
+					</script>
+					<!--<![endif]-->
+							<input id="ak_js" name="ak_js" type="hidden" value="1582991773252"></form>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="">
+
+		
+</div><!-- .comments-area -->
+
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="https://amontalenti.com/2015/05/24/picking-tech-stacks" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">Picking tech stacks</span></a></div><div class="nav-next"><a href="https://amontalenti.com/2015/06/14/programming-its-weird" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">Programming: it’s weird</span></a></div></div>
+	</nav>
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+
+
+<!-- START Parse.ly Include: Standard -->
+
+<script data-cfasync="false" id="parsely-cfg" data-parsely-site="pixelmonkey.org" src="//cdn.parsely.com/keys/pixelmonkey.org/p.js"></script>
+
+<!-- END Parse.ly Include: Standard -->
+	<div style="display:none">
+	<div class="grofile-hash-map-beb294ef2eeef9559222a824c7f93c8d">
+	</div>
+	<div class="grofile-hash-map-274af5729c3caa8d5382f9980aa50cd6">
+	</div>
+	<div class="grofile-hash-map-a96dd0afc13b56a4a965eca289973c8f">
+	</div>
+	<div class="grofile-hash-map-a836551cb074c41c5fd8b554c7520011">
+	</div>
+	<div class="grofile-hash-map-8f9b4e932a6e8e1c4f8f579ebc941c78">
+	</div>
+	<div class="grofile-hash-map-98bd6749d6263030b3a9c2231bc73230">
+	</div>
+	<div class="grofile-hash-map-2ad0d8efd7f61912eaa41df3f5803281">
+	</div>
+	<div class="grofile-hash-map-a836551cb074c41c5fd8b554c7520011">
+	</div>
+	<div class="grofile-hash-map-032606f1d88b2c5e425e38d046cb9806">
+	</div>
+	</div>
+<script type="text/javascript" src="https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=202009"></script>
+<script type="text/javascript" src="https://amontalenti.com/wordpress/wp-content/plugins/wp-syntax/js/wp-syntax.js?ver=1.1"></script>
+<script type="text/javascript" src="https://secure.gravatar.com/js/gprofiles.js?ver=2020Febaa"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://amontalenti.com/wordpress/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.7.16"></script>
+<script type="text/javascript" src="https://amontalenti.com/wordpress/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010"></script><div id="amzn-assoc-ad-49105ac5-59da-4eb6-bcb9-8c05f27232ab"></div><script type="text/javascript" id="" src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=49105ac5-59da-4eb6-bcb9-8c05f27232ab"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://amontalenti.com/wordpress/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330"></script>
+<script type="text/javascript" src="https://amontalenti.com/wordpress/wp-includes/js/wp-embed.min.js?ver=4.7.16"></script>
+<script async="async" type="text/javascript" src="https://amontalenti.com/wordpress/wp-content/plugins/akismet/_inc/form.js?ver=4.1.2"></script>
+
+		<!--[if IE]>
+		<script type="text/javascript">
+			if ( 0 === window.location.hash.indexOf( '#comment-' ) ) {
+				// window.location.reload() doesn't respect the Hash in IE
+				window.location.hash = window.location.hash;
+			}
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			(function () {
+				var comm_par_el = document.getElementById( 'comment_parent' ),
+					comm_par = ( comm_par_el && comm_par_el.value ) ? comm_par_el.value : '',
+					frame = document.getElementById( 'jetpack_remote_comment' ),
+					tellFrameNewParent;
+
+				tellFrameNewParent = function () {
+					if ( comm_par ) {
+						frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=150280209&postid=1932&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=mystery&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=6.4.3&show_cookie_consent=10&has_cookie_consent=0&sig=0232d6f03a4bfe6fbca1128188db2ff84b0e53f3#parent=https%3A%2F%2Famontalenti.com%2F2015%2F06%2F06%2Fpybooks" + '&replytocom=' + parseInt( comm_par, 10 ).toString();
+					} else {
+						frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=150280209&postid=1932&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=mystery&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=6.4.3&show_cookie_consent=10&has_cookie_consent=0&sig=0232d6f03a4bfe6fbca1128188db2ff84b0e53f3#parent=https%3A%2F%2Famontalenti.com%2F2015%2F06%2F06%2Fpybooks";
+					}
+				};
+
+				
+				// Do the post message bit after the dom has loaded.
+				document.addEventListener( 'DOMContentLoaded', function () {
+					var iframe_url = "https:\/\/jetpack.wordpress.com";
+					if ( window.postMessage ) {
+						if ( document.addEventListener ) {
+							window.addEventListener( 'message', function ( event ) {
+								var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+								if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+									return;
+								}
+								jQuery( frame ).height( event.data );
+							});
+						} else if ( document.attachEvent ) {
+							window.attachEvent( 'message', function ( event ) {
+								var origin = event.origin.replace( /^http:\/\//i, 'https://' );
+								if ( iframe_url.replace( /^http:\/\//i, 'https://' ) !== origin ) {
+									return;
+								}
+								jQuery( frame ).height( event.data );
+							});
+						}
+					}
+				})
+
+			})();
+		</script>
+
+		<script type="text/javascript" src="https://stats.wp.com/e-202009.js" async="async" defer="defer"></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:6.4.3',blog:'150280209',post:'1932',tz:'-5',srv:'amontalenti.com'} ]);
+	_stq.push([ 'clickTrackerInit', '150280209', '1932' ]);
+</script>
+
+
+
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 19/137 objects using memcache
+Page Caching using memcache (SSL caching disabled) 
+
+Page cache debug info:
+Engine:             memcache
+Cache key:          
+Creation Time:      1582991768.000s
+Header info:
+Content-Type:        text/html; charset=UTF-8
+X-Pingback:          https://amontalenti.com/wordpress/xmlrpc.php
+Link:                <https://amontalenti.com/wp-json/>; rel="https://api.w.org/"
+Link:                <https://wp.me/saayKl-pybooks>; rel=shortlink
+
+Database Caching 1/49 queries in 0.013 seconds using memcache
+
+Served from: amontalenti.com @ 2020-02-29 10:56:08 by W3 Total Cache
+--><img src="https://pixel.wp.com/g.gif?v=ext&amp;j=1%3A6.4.3&amp;blog=150280209&amp;post=1932&amp;tz=-5&amp;srv=amontalenti.com&amp;host=amontalenti.com&amp;ref=&amp;fcp=1965&amp;rand=0.5814369469639389" alt=":)" width="6" height="5" id="wpstats"></body></html>

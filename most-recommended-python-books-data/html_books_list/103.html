@@ -1,0 +1,968 @@
+<!DOCTYPE html><html lang="en-US" class="no-js no-svg"><head><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_rendering_2020022401.js"></script><script type="text/javascript" src="https://clarium.global.ssl.fastly.net/gpt/a/wrap.js?v2_1"></script><script type="text/javascript" src="https://sb.scorecardresearch.com/beacon.js"></script><script type="text/javascript">
+
+(function() {
+	if(typeof amzn_assoc_utils==="undefined"){amzn_assoc_utils={};}if(typeof amzn_assoc_utils.parse==="undefined"){amzn_assoc_utils.parse=(function(){var d,b,a={'"':'"',"\\":"\\","/":"/",b:"\b",f:"\f",n:"\n",r:"\r",t:"\t"},m,k=function(n){throw {name:"SyntaxError",message:n,at:d,text:m};},g=function(n){if(n&&n!==b){k("Expected '"+n+"' instead of '"+b+"'");}b=m.charAt(d);d+=1;return b;},f=function(){var o,n="";if(b==="-"){n="-";g("-");}while(b>="0"&&b<="9"){n+=b;g();}if(b==="."){n+=".";while(g()&&b>="0"&&b<="9"){n+=b;}}if(b==="e"||b==="E"){n+=b;g();if(b==="-"||b==="+"){n+=b;g();}while(b>="0"&&b<="9"){n+=b;g();}}o=+n;if(!isFinite(o)){k("Bad number");}else{return o;}},h=function(){var q,p,o="",n;if(b==='"'){while(g()){if(b==='"'){g();return o;}if(b==="\\"){g();if(b==="u"){n=0;for(p=0;p<4;p+=1){q=parseInt(g(),16);if(!isFinite(q)){break;}n=n*16+q;}o+=String.fromCharCode(n);}else{if(typeof a[b]==="string"){o+=a[b];}else{break;}}}else{o+=b;}}}k("Bad string");},j=function(){while(b&&b<=" "){g();}},c=function(){switch(b){case"t":g("t");g("r");g("u");g("e");return true;case"f":g("f");g("a");g("l");g("s");g("e");return false;case"n":g("n");g("u");g("l");g("l");return null;}k("Unexpected '"+b+"'");},l,i=function(){var n=[];if(b==="["){g("[");j();if(b==="]"){g("]");return n;}while(b){n.push(l());j();if(b==="]"){g("]");return n;}g(",");j();}}k("Bad array");},e=function(){var o,n={};if(b==="{"){g("{");j();if(b==="}"){g("}");return n;}while(b){o=h();j();g(":");if(Object.hasOwnProperty.call(n,o)){k('Duplicate key "'+o+'"');}n[o]=l();j();if(b==="}"){g("}");return n;}g(",");j();}}k("Bad object");};l=function(){j();switch(b){case"{":return e();case"[":return i();case'"':return h();case"-":return f();default:return b>="0"&&b<="9"?f():c();}};return function(p,o){var n;m=p;d=0;b=" ";n=l();j();if(b){k("Syntax error");}return n;};}());}if(typeof amzn_assoc_utils.stringify==="undefined"){amzn_assoc_utils.stringify=function(b){var a="";if(typeof JSON!=="undefined"){a=JSON.stringify(b);}return a;};}if(typeof amzn_assoc_utils.addCssRules==="undefined"){amzn_assoc_utils.addCssRules=function(g,n){var h=document.createElement("style"),m,e=0,k="";h.appendChild(document.createTextNode(""));document.head.appendChild(h);m=h.sheet;for(e=0,rl=n.length;e<rl;e++){var d=1,l=n[e],b=n[e][0],f="";if(Object.prototype.toString.call(l[1][0])==="[object Array]"){l=l[1];d=0;}for(var c=l.length;d<c;d++){var a=l[d];f+=a[0]+":"+a[1]+(a[2]?" !important":"")+";\n";}if(typeof g==="string"){m.insertRule(g+"{"+b+"{"+f+"}}",m.cssRules.length);}else{m.insertRule(b+"{"+f+"}",m.cssRules.length);}}};}window.trackingUtils=function(l,c,e,o,p,h,d,r,t,n,q){var g={},j=new RegExp("/(ref=[\\w]+)/?","i"),a="assocPayloadId",i=function(u){return u&&encodeURIComponent(u).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;");},m=(function(){var u=document.createElement("a");u.href=(window.location!==window.parent.location)?document.referrer:document.location;return u.protocol+"//"+u.hostname+((u.port===""||u.port==="80"||u.port==="443")?"":(":"+u.port))+(u.pathname.indexOf("/")!==0?("/"+u.pathname):u.pathname);}()),s=(function(){return i(m);}()),k=function(u,w,x,v){if(typeof x==="string"&&x!==""){if(u.search===""){u.search="?"+w+"="+x;}else{if(!u.search.match(new RegExp("[?&]"+w+"="))){u.search=u.search.replace(/\?/,"?"+w+"="+x+"&");}else{if(v){u.search=u.search.replace(new RegExp(w+"=([^&]*)"),w+"="+x);}}}}return u;},f=function(w,u,v){if(typeof v==="string"&&v!==""){if(!w.match(/\?/)){w=w+"?"+u+"="+v;}else{if(!w.match(u)){w=w.replace(/\?/,"?"+u+"="+v+"&");}}}return w;},b=function(v){var u=(typeof d!=="undefined")?d:0;if(typeof v!=="undefined"){u=v;}return u;};g.addRefUrls=function(z,A,v,u){var B=new RegExp("^http://.*(amazon|endless|myhabit|amazonwireless|javari|smallparts)\\.(com|ca|co\\.jp|de|fr|co\\.uk|cn|it|es)/.*","i"),w,y,x;for(x=0;x<z.length;x++){z[x].rel="nofollow";w=String(z[x].href);if(y=w.match(B)){z[x].href=g.addTrackingParameters(z[x],A,v,u);}}};g.addRefRefUrl=function(u){return k(u,"ref-refURL",s);};g.getRefRefUrl=function(){return s;};g.getRawRefUrl=function(){return m;};g.addSignature=function(v,u,w){return k(k(v,"sig",u),"sigts",w);};g.addLinkCode=function(v,u){return k(v,"linkCode",u);};g.addTrackingId=function(v,u){return k(v,"tag",u);};g.addLinkId=function(u,v){return k(u,"linkId",v);};g.addSubtag=function(u,v){return k(u,"ascsubtag",v);};g.addCreativeAsin=function(u,v){return k(k(u,"creativeASIN",v),"adId",v);};g.addAdType=function(v,u){return k(v,"adType",u);};g.addAdMode=function(u,v){return k(u,"adMode",v);};g.addAdFormat=function(v,u){return k(v,"adFormat",u);};g.addImpressionTimestamp=function(u,v){if(typeof v==="number"){v=v.toString();}return k(u,"impressionTimestamp",v);};g.convertToRedirectedUrl=function(u,x,v){var w=document.createElement("a");w.setAttribute("href",x);if(typeof v!=="undefined"){k(w,v,i(u.getAttribute("href")),true);}else{w.setAttribute("href",x+"/"+w.getAttribute("href"));}u.setAttribute("href",w.getAttribute("href"));return u;};g.getImpressionToken=function(){return h;};g.generateTransitId=function(){return g.getHashedImpressionToken();};g.getHashedImpressionToken=function(){var u=o.split("/");var v=u[u.length-2];return v;};g.getTransitId=function(){if(typeof assoc_session_storage!=="undefined"){var u=assoc_session_storage.get(a);return u;}return null;};g.getClickUrl=function(){return p;};g.addImpressionToken=function(v,w){var u=b(w);if(typeof h==="string"&&h!==""){k(v,"imprToken",h);if(typeof u!=="undefined"){k(v,"slotNum",u);}}return v;};g.addImpressionTokenStr=function(w,v){var u=b(v);if(typeof h==="string"&&h!==""){w=f(w,"imprToken",h);if(typeof u!=="undefined"){w=f(w,"slotNum",u);}}return w;};g.addTrackingParameters=function(A,B,z,E,x,u,y,w,v,F,D,C){return g.addSignature(g.addCreativeAsin(g.addLinkId(g.addTrackingId(g.addSubtag(g.addLinkCode(g.addRefRefUrl(g.addImpressionToken(g.addRefMarker(g.addAdType(g.addAdMode(g.addAdFormat(g.addImpressionTimestamp(A,C),D),F),v),x))),z),r),E),B),u),y,w);};g.addRefMarker=function(v,x){var w,u=false;if(typeof x==="undefined"){return v;}if(w=v.pathname.match(j)){v.pathname=v.pathname.replace(w[1],"ref="+x);}else{u=(v.pathname.charAt(v.pathname.length-1)==="/");v.pathname=v.pathname+(u?"":"/")+"ref="+x;}return v;};g.getRefMarker=function(u){var v;if(v=u.pathname.match(j)){return v[1].substr(4);}else{return undefined;}};g.getCurrentURL=function(){return(window.location!==window.parent.location)?document.referrer:document.location.href;};g.makeForesterCall=function(w){var u=undefined,v;if(typeof JSON!=="undefined"){v=JSON.stringify(w);}else{if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){v=amzn_assoc_utils.stringify(w);}else{return;}}if(typeof o==="string"){u=o+"?assoc_payload="+encodeURIComponent(v);g.generateImage(u);}};g.recordImpression=function(w,u,z,x,B){z.linkCode=w;z.trackingId=u;z.refUrl=g.getCurrentURL();if(n||!t){g.makeForesterCall(z);}else{g.addABPFlag(z,g.makeForesterCall);}if(typeof x==="undefined"||!x){var y=(new Date()).getTime();var A=(typeof B!=="undefined")?B:"";var v=e+"?l="+w+"&t="+u+"&o="+l+"&cb="+y+A;g.generateImage(v);}};g.createAssocPayload=function(y,w,v,u){y.linkCode=w;y.trackingId=v;y.refUrl=u;var x="";if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){x=amzn_assoc_utils.stringify(y);}return x;};g.recordAESImpression=function(w,u,x){if(typeof q==="string"){var z=g.createAssocPayload(x,w,u,g.getCurrentURL());var v=g.getHashedImpressionToken();var y=q+v+"/pixel?assoc_payload="+encodeURIComponent(z);g.generateImage(y);}};g.recordTransit=function(){if(!(g.getTransitId())||g.isUTMParamPresentInUrl(g.getCurrentURL())){assoc_session_storage.set(a,g.generateTransitId());}};g.isUTMParamPresentInUrl=function(v){var u=v.match(/utm_source=/i);return(u!==null);};g.addAAXClickUrls=function(v){var x,w,u;if(typeof v==="undefined"||typeof p==="undefined"){return;}for(w=0;w<v.length;w++){u=String(v[w].href);if(u.indexOf(p)<0){x=p+u;v[w].href=x;}}};g.addAAXClickUrl=function(u){if(typeof u==="undefined"||u.indexOf(p)===0){return u;}return p+u;};g.updateLinks=function(v,x){var w,u;if(typeof x!=="function"){return;}for(w=0;w<v.length;w++){u=String(v[w].href);v[w].href=x(u);}};g.elementInViewPort=function(u){var v=u.getBoundingClientRect(),w=(v.top>=0&&v.left>=0&&v.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&v.right<=(window.innerWidth||document.documentElement.clientWidth));return{posX:v.left+window.pageXOffset,posY:v.top+window.pageYOffset,inViewPort:w};};g.recordViewability=function(z,y,v,w){if(typeof o==="string"){var x=g.createViewbilityPayload(z,y,v,w);var u=o+x+"&cb="+(new Date()).getTime();g.generateImage(u);}};g.recordAESViewability=function(B,A,v,w){if(typeof q==="string"){var x=g.createViewbilityPayload(B,A,v,w);var u=g.getHashedImpressionToken();var z=encodeURIComponent(x);var y=q+u+"/pixel/"+z+"&cb="+(new Date()).getTime();g.generateImage(y);}};g.createViewbilityPayload=function(z,y,v,x){var w={};if(typeof y!=="undefined"){w.above_the_fold=y;}if(typeof v!=="undefined"){w.topPos=v;}if(typeof x!=="undefined"){w.leftPos=x;}if(typeof z!=="undefined"){if(Object.keys(w).length===0){w.viewable=true;}w.slotNum=z;}var u="";if(typeof amzn_assoc_utils!=="undefined"&&typeof amzn_assoc_utils.stringify==="function"){u=amzn_assoc_utils.stringify({adViewability:[w]});}return u;};g.generateImage=function(u){if(typeof u!=="undefined"){(new Image()).src=u;}};g.addABPFlag=function(x,F){var z=false,y=2,w=document.body?document.body.appendChild(new Image()):new Image(),v=document.body?document.body.appendChild(new Image()):new Image(),C=false,A=false,u=Math.random()*11,E=t+"?ch=*&rn=*",D=function(H,G){if(y===0||G>1000){x.supplySideMetadata={ABPInstalled:y===0&&z};H(x);}else{setTimeout(function(){D(H,G*2);},G*2);}},B=function(){if(--y){return;}z=!C&&A;};w.style.display="none";v.style.display="none";w.onload=B;w.onerror=function(){C=true;B();};w.src=E.replace(/\*/,1).replace(/\*/,u);v.onload=B;v.onerror=function(){A=true;B();};v.src=E.replace(/\*/,2).replace(/\*/,u);D(F,250);};return g;};var assoc_session_storage=(function(){var a={};a.get=function(c){var d=null;if(typeof(window.sessionStorage)!=="undefined"){try{d=window.sessionStorage.getItem(c);}catch(b){}}return d;};a.set=function(c,d){if(typeof(window.sessionStorage)!=="undefined"){try{window.sessionStorage.setItem(c,d);}catch(b){}}};return a;}());window.elemTracker=function(b){var a={};a.trackElements=function(d,c){var f,e;if(typeof d!=="undefined"&&d.length>0&&typeof c==="function"){window.addEventListener("scroll",function(){for(f=0;f<d.length;f++){e=b.elementInViewPort(d[f]);if(e.inViewPort){c();}}},false);}};return a;};
+	var amznAutoTaggerMaker=function(h,v,B){var D={CA:"ca",CN:"cn",IN:"in",DE:"de",FR:"fr",GB:"co.uk",JP:"co.jp",US:"com"},j={CA:[],CN:[],IN:[],DE:["javari"],FR:["javari"],GB:["javari"],JP:["javari"],US:["smallparts","amazonwireless","endless","myhabit"]},F=(function(){var P=-1,O={};O.getNextSlotNum=function(){return ++P;};return O;}()),q,o,e=Math.max(document.body.scrollHeight,document.body.offsetHeight,document.documentElement.clientHeight,document.documentElement.scrollHeight,document.documentElement.offsetHeight),m=Math.max(document.body.scrollWidth,document.body.offsetWidth,document.documentElement.clientWidth,document.documentElement.scrollWidth,document.documentElement.offsetWidth),y={totalDocWidth:m,totalDocHeight:e,logType:"onetag_pageload",pageTitle:document.title},a="w50",J="w61",H="g12",C={},b=new RegExp("%3F"),w=new Object(),x=false,l="",s="",u=0,L=0,d=0,G=new RegExp("amzn.to"),r=new RegExp(h.redirectorEndPoint),E=["kdp.amazon.com"],N=[],I="assocPayloadId",c=function(P){var Q,O=false;for(Q=0;Q<E.length;Q++){if(P.match(E[Q])){O=true;break;}}return O;},p=function(O){return O.nextSibling&&O.nextSibling.tagName==="IMG"&&O.nextSibling.hasAttribute("src")&&(O.nextSibling.getAttribute("src").search(/ir-[a-z]{2}\.amazon-adsystem\.com/)>-1||O.nextSibling.getAttribute("src").search(/www\.assoc-amazon\.*/)>-1);},n=function(O){if(!O.href.match(r)){O.href=h.redirectorEndPoint+O.href;}},k=function(Y,ae){var Z=new RegExp("/(ref=[\\w]+)/?","i"),U,ad=false,P,S,T=false,X=Y.search.match(/\?tag=([^&]+)|&tag=([^&]+)|\?tag-value=([^&]+)|&tag-value=([^&]+)|\?tag_value=([^&]+)|&tag_value=([^&]+)|\?t=([^&]+)|&t=([^&]+)/),R=Y.search.match(/\?tag=|&tag=|\?tag-value=|&tag-value=|\?tag_value=|&tag_value=|\?t=|&t=/),O=Y.search.match(/(linkCode|link_code|lc)=([^&]+)/i),W=v.elementInViewPort(Y),ac={autoTagged:false,overwritten:false,geoRedirected:false,atf:W.inViewPort},Q=F.getNextSlotNum(),V={destinationURL:Y.href,slotNum:Q,atfInFirstLoad:W.inViewPort,posX:W.posX,posY:W.posY,logType:"onetag_textlink"},ab=p(Y),aa;ac.slotNum=Q;if(Y.search===""){Y.search="?imprToken="+v.getImpressionToken()+"&slotNum="+Q;}else{Y.search=Y.search.replace(/\?/,"?imprToken="+v.getImpressionToken()+"&slotNum="+Q+"&");}if(h.enableAutoTagging){ac.autoTagged=true;if(X){if(h.overwrite){for(S=1;S<9;S++){if(X[S]!=undefined){Y.search=Y.search.replace(X[S],ae);break;}}ac.overwritten=true;ad=true;}}else{if(R){Y.search=Y.search.replace(/tag=/,"tag="+ae);ad=true;}else{Y.search=Y.search.replace(/\?/,"?tag="+ae+"&");ad=true;}}}if(O&&typeof h.overridableLinkCodes[O[2]]!=="undefined"){T=true;}if(O&&!T){P=O[2];}else{P=ad?a:J;}if(O){V.oldLinkCode=O[2];Y.search=Y.search.replace(O[2],P);}else{Y.search=Y.search.replace(/\?/,"?linkCode="+P+"&");}if(ad){aa=ae;}else{if(typeof X!=="undefined"&&X instanceof Array&&X.length>=S+1&&typeof X[S]==="string"){aa=X[S];}else{aa="";}}if(C.shouldBeGeoRedirected()){ac.geoRedirected=true;n(Y);}if(Y.hasAttribute("data-amzn-asin")&&!Y.search.match("creativeASIN")){Y.search=Y.search.replace(/\?/,"?creativeASIN="+Y.getAttribute("data-amzn-asin")+"&");}if(C.shouldTrackTransit(h)){v.recordTransit();V[I]=v.getTransitId();}N.push({pos:W,slotNum:Q,linkCode:P,linkInfo:V,skipIRCall:ab,imprTag:aa});Y.href=v.addAAXClickUrl(Y.href);return ac;},A=function(O){if(O.href.match(b)){o=O.href.split(b);O.href=o[0]+"?"+decodeURIComponent(o[1]);}},t=function(P,O,S){var R,Q;for(R=0;R<P.length;R++){for(Q=0;Q<O.length;Q++){if(window.addEventListener){P[R].addEventListener(O[Q],S,false);}else{P[R].attachEvent("on"+O[Q],S);}}}},K=function(O,P){var Q=false;t([O],["touchstart"],function(){Q=false;});t([O],["touchmove"],function(){Q=true;});t([O],["click","touchend"],function(R){if(Q){return;}O.setAttribute("href",P);});t([O],["auxclick","contextmenu"],function(R){O.setAttribute("href",P);});t([O],["mouseup"],function(R){if(R.button===1||R.ctrlKey){O.setAttribute("href",P);}});},M=function(){var O="";for(i=0;i<h.itemRefs.length;i++){if(typeof h.itemRefs[i].type!=="undefined"&&h.itemRefs[i].type==="ASIN"&&typeof h.itemRefs[i].sourceLink!=="undefined"&&String(h.itemRefs[i].sourceLink).match(G)!==null&&typeof h.itemRefs[i].destinationLink!=="undefined"){w[h.itemRefs[i].sourceLink]=h.itemRefs[i].destinationLink;if(l!==""){O=",";}l=l+O+h.itemRefs[i].sourceLink;u++;}}},f=function(P,O){B.trackElements([P],function(){if(typeof O!==undefined&&O.slotNum!==undefined&&(O.viewed===undefined||!O.viewed)){v.recordViewability(O.slotNum);if(C.shouldInteractWithAES(h)){v.recordAESViewability(O.slotNum);}O.viewed=true;}});},g=function(O,P){K(O,O.getAttribute("href"));O.setAttribute("href",P);},z=function(){var Q,P,O;for(Q=0;Q<N.length;Q++){P=N[Q];O=P.pos;v.recordImpression(P.linkCode,P.imprTag,P.linkInfo,P.skipIRCall,P.slotNum);v.recordViewability(P.slotNum,O.inViewPort,O.posX,O.posY);if(C.shouldInteractWithAES(h)){v.recordAESImpression(P.linkCode,P.imprTag,P.linkInfo);v.recordAESViewability(P.slotNum,O.inViewPort,O.posX,O.posY);}}N=[];};if(h.locale!=undefined){q=h.locale;}else{q="US";}C.shouldBeGeoRedirected=function(){return h.enableGeoRedirection&&(h.region!==""&&h.region!==h.viewerCountry);};C.publisherCallBack=function(){window["amzn_assoc_client_cb_"+h.adUnitSlotNum]({type:"onload",data:{},widget:C});};C.decorateLinkElement=function(O){A(O);linkProperties=k(O,h.trackingId);f(O,linkProperties);return linkProperties;};C.shouldTrackTransit=function(O){return((typeof O.disableTransitTracking==="undefined")||!O.disableTransitTracking);};C.shouldInteractWithAES=function(O){return((typeof O.enableAESInteraction!=="undefined")&&O.enableAESInteraction);};C.tagLinks=function(af){var ah,ag,P,aa,aj,ac=[],al=0,X,Z,ai,ae,ak,O,Y,V=0,R=0,ab=0,Q=0,U=0,S=0,T,W,ad="";P=D[q];aa=j[q];aj=new RegExp("^(http|https)://(www|[\\w\\-\\.]+)?amazon\\.("+P+")/","i");if(aa){for(al=0;al<aa.length;al++){X=P;if(P=="co.jp"){X="co.jp|jp";}ac[al]=new RegExp("^(http|https)://(www\\.)?("+aa[al]+")\\.("+X+")/","i");}}Z=af.getElementsByTagName("a");if(!x){M();x=true;}for(ah=0;ah<Z.length;ah++){Y=undefined;ai=String(Z[ah].href);if(ae=ai.match(aj)&&!c(ai)){Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}else{if(h.isShortLinksSupported&&(ak=ai.match(G))!==null){L++;if(s!==""){ad=",";}s=s+ad+Z[ah].href;T=w[Z[ah].href];if(typeof T!=="undefined"){d++;Z[ah].setAttribute("href",T);Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}else{if(C.shouldBeGeoRedirected()){Y=C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}}}else{for(O=0;O<ac.length;O++){if(ae=ai.match(ac[O])){C.decorateLinkElement(Z[ah]);g(Z[ah],ai);}}}}if(typeof Y!=="undefined"){if(Y.autoTagged){R++;}if(Y.overwritten){S++;}if(Y.geoRedirected){ab++;}if(Y.atf){Q++;}else{U++;}V++;}}y.numLinks=V;y.numAutoTaggedLinks=R;y.autoTaggingEnabled=h.enableAutoTagging;y.geoRedirectEnabled=h.enableGeoRedirection;y.disableTransitTracking=h.disableTransitTracking;y.numLinksATF=Q;y.numLinksBTF=U;y.shortLinksInLivePool=l;y.shortLinksInPage=s;y.shortLinksInLivePoolCount=u;y.shortLinksInPageCount=L;y.shortLinksMatchCount=d;if(C.shouldTrackTransit(h)){v.recordTransit();y[I]=v.getTransitId();}v.recordImpression(h.linkCode,h.trackingId,y);if(C.shouldInteractWithAES(h)){v.recordAESImpression(h.linkCode,h.trackingId,y);}t([window],["load"],z);};return C;};
+    var spec = {
+        trackingId : "linuxhint-20",
+        region : "US",
+        overwrite : false,
+        enableAutoTagging : false,
+        linkCode : "w49",
+        overridableLinkCodes :  {   "am1": ""   , "am2": ""   , "am3": ""   , "as1": ""   , "as2": ""   , "as3": ""   , "as4": ""   , "li1": ""   , "li2": ""   , "li3": ""   , "ll1": ""   , "ll2": ""   },
+        enableGeoRedirection : true,
+        redirectorEndPoint : "https://assoc-redirect.amazon.com/g/r/",
+        adUnitSlotNum : "0",
+        itemRefs : [],
+        isShortLinksSupported : true,
+        viewerCountry : "US",
+        disableTransitTracking : false,
+        enableAESInteraction : false
+    }, trackingUtils = window.trackingUtils(
+        "1",
+        "//fls-na.amazon-adsystem.com/1/associates-ads/1/OP/r/json",
+        "//ir-na.amazon-adsystem.com/e/ir",
+        "https://aax-us-east.amazon-adsystem.com/x/px/Qoix4pWDi0lERHpNppRQkfwAAAFwkbKguAEAAAFKAdUfYPc/", "https://aax-us-east.amazon-adsystem.com/x/c/Qoix4pWDi0lERHpNppRQkfwAAAFwkbKguAEAAAFKAdUfYPc/", "poKOxxMRUkQFJuDGgM8FCQ", undefined, undefined, undefined, true,
+        "https://assoc-na.associate-amazon.com/onetag/"
+    );
+
+    window.amznAutoTagger = amznAutoTaggerMaker(spec, trackingUtils, window.elemTracker(trackingUtils));
+    window.amznAutoTagger.tagLinks(document);
+    window.amznAutoTagger.publisherCallBack();
+}());
+
+ //# sourceURL=dynscript-0.js</script><script type="text/javascript" src="https://ads.adthrive.com/core/v1/vendor/prebid/prebid.min.js"></script><script type="text/javascript" src="https://js-sec.indexww.com/ht/p/182496-52135363727691.js"></script><script type="text/javascript" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script type="text/javascript" src="https://c.amazon-adsystem.com/aax2/apstag.js"></script><script type="text/javascript" src="https://ads.adthrive.com/core/v1/js/adthrive.min.js?threshold=79"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<title>Best 50 Python Books for Programmers with All Skill Sets – Linux Hint</title>
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" type="text/javascript" src="https://ads.adthrive.com/sites/5c9b6001b80bec0dfaf0b493/ads.min.js?threshold=79"></script><script>
+window.adthrive = window.adthrive || {};
+window.adthrive.cmd = window.adthrive.cmd || [];
+window.adthrive.host = 'ads.adthrive.com';
+window.adthrive.plugin = 'adthrive-ads-1.0.37';
+window.adthrive.threshold = Math.floor(Math.random() * 100 + 1);
+
+(function() {
+	var script = document.createElement('script');
+	script.async = true;
+	script.type = 'text/javascript';
+	script.src = 'https://ads.adthrive.com/sites/5c9b6001b80bec0dfaf0b493/ads.min.js?threshold=' + window.adthrive.threshold;
+	var node = document.getElementsByTagName('script')[0];
+	node.parentNode.insertBefore(script, node);
+})();
+</script>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Linux Hint » Feed" href="https://linuxhint.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Linux Hint » Comments Feed" href="https://linuxhint.com/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/linuxhint.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://linuxhint.com/wp-includes/js/wp-emoji-release.min.js?ver=5.3.2" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://linuxhint.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="spacexchimp_p005-bootstrap-tooltip-css-css" href="https://linuxhint.com/wp-content/plugins/social-media-buttons-toolbar/inc/lib/bootstrap-tooltip/bootstrap-tooltip.css?ver=4.58" type="text/css" media="all">
+<link rel="stylesheet" id="spacexchimp_p005-frontend-css-css" href="https://linuxhint.com/wp-content/plugins/social-media-buttons-toolbar/inc/css/frontend.css?ver=4.58" type="text/css" media="all">
+<style id="spacexchimp_p005-frontend-css-inline-css" type="text/css">
+
+                    .sxc-follow-buttons {
+                        text-align: center !important;
+                    }
+                    .sxc-follow-buttons .sxc-follow-button,
+                    .sxc-follow-buttons .sxc-follow-button a,
+                    .sxc-follow-buttons .sxc-follow-button a img {
+                        width: 64px !important;
+                        height: 64px !important;
+                    }
+                    .sxc-follow-buttons .sxc-follow-button {
+                        margin: 5px !important;
+                    }
+                  
+</style>
+<link rel="stylesheet" id="vce-fonts-css" href="https://fonts.googleapis.com/css?family=Poppins%3A400%2C600&amp;subset=latin%2Clatin-ext&amp;ver=2.9.2" type="text/css" media="all">
+<link rel="stylesheet" id="vce-style-css" href="https://linuxhint.com/wp-content/themes/voice/assets/css/min.css?ver=2.9.2" type="text/css" media="all">
+<style id="vce-style-inline-css" type="text/css">
+body, button, input, select, textarea {font-size: 1.6rem;}.vce-single .entry-headline p{font-size: 2.2rem;}.main-navigation a{font-size: 1.4rem;}.sidebar .widget-title{font-size: 1.8rem;}.sidebar .widget, .vce-lay-c .entry-content, .vce-lay-h .entry-content {font-size: 1.4rem;}.vce-featured-link-article{font-size: 5.2rem;}.vce-featured-grid-big.vce-featured-grid .vce-featured-link-article{font-size: 3.4rem;}.vce-featured-grid .vce-featured-link-article{font-size: 2.2rem;}h1 { font-size: 4.5rem; }h2 { font-size: 4.0rem; }h3 { font-size: 3.5rem; }h4 { font-size: 2.5rem; }h5 { font-size: 2.0rem; }h6 { font-size: 1.8rem; }.comment-reply-title, .main-box-title{font-size: 2.2rem;}h1.entry-title{font-size: 4.5rem;}.vce-lay-a .entry-title a{font-size: 3.4rem;}.vce-lay-b .entry-title{font-size: 2.4rem;}.vce-lay-c .entry-title, .vce-sid-none .vce-lay-c .entry-title{font-size: 2.2rem;}.vce-lay-d .entry-title{font-size: 1.5rem;}.vce-lay-e .entry-title{font-size: 1.4rem;}.vce-lay-f .entry-title{font-size: 1.4rem;}.vce-lay-g .entry-title a, .vce-lay-g .entry-title a:hover{font-size: 3.0rem;}.vce-lay-h .entry-title{font-size: 2.4rem;}.entry-meta div,.entry-meta div a,.vce-lay-g .meta-item,.vce-lay-c .meta-item{font-size: 1.4rem;}.vce-lay-d .meta-category a,.vce-lay-d .entry-meta div,.vce-lay-d .entry-meta div a,.vce-lay-e .entry-meta div,.vce-lay-e .entry-meta div a,.vce-lay-e .fn,.vce-lay-e .meta-item{font-size: 1.3rem;}body {background-color:#f0f0f0;}body,.mks_author_widget h3,.site-description,.meta-category a,textarea {font-family: 'Poppins';font-weight: 400;}h1,h2,h3,h4,h5,h6,blockquote,.vce-post-link,.site-title,.site-title a,.main-box-title,.comment-reply-title,.entry-title a,.vce-single .entry-headline p,.vce-prev-next-link,.author-title,.mks_pullquote,.widget_rss ul li .rsswidget,#bbpress-forums .bbp-forum-title,#bbpress-forums .bbp-topic-permalink {font-family: 'Poppins';font-weight: 400;}.main-navigation a,.sidr a{font-family: 'Poppins';font-weight: 600;}.vce-single .entry-content,.vce-single .entry-headline,.vce-single .entry-footer,.vce-share-bar {width: 750px;}.vce-lay-a .lay-a-content{width: 750px;max-width: 750px;}.vce-page .entry-content,.vce-page .entry-title-page {width: 600px;}.vce-sid-none .vce-single .entry-content,.vce-sid-none .vce-single .entry-headline,.vce-sid-none .vce-single .entry-footer {width: 800px;}.vce-sid-none .vce-page .entry-content,.vce-sid-none .vce-page .entry-title-page,.error404 .entry-content {width: 750px;max-width: 750px;}body, button, input, select, textarea{color: #444444;}h1,h2,h3,h4,h5,h6,.entry-title a,.prev-next-nav a,#bbpress-forums .bbp-forum-title, #bbpress-forums .bbp-topic-permalink,.woocommerce ul.products li.product .price .amount{color: #444444;}a,.entry-title a:hover,.vce-prev-next-link:hover,.vce-author-links a:hover,.required,.error404 h4,.prev-next-nav a:hover,#bbpress-forums .bbp-forum-title:hover, #bbpress-forums .bbp-topic-permalink:hover,.woocommerce ul.products li.product h3:hover,.woocommerce ul.products li.product h3:hover mark,.main-box-title a:hover{color: #cf4d35;}.vce-square,.vce-main-content .mejs-controls .mejs-time-rail .mejs-time-current,button,input[type="button"],input[type="reset"],input[type="submit"],.vce-button,.pagination-wapper a,#vce-pagination .next.page-numbers,#vce-pagination .prev.page-numbers,#vce-pagination .page-numbers,#vce-pagination .page-numbers.current,.vce-link-pages a,#vce-pagination a,.vce-load-more a,.vce-slider-pagination .owl-nav > div,.vce-mega-menu-posts-wrap .owl-nav > div,.comment-reply-link:hover,.vce-featured-section a,.vce-lay-g .vce-featured-info .meta-category a,.vce-404-menu a,.vce-post.sticky .meta-image:before,#vce-pagination .page-numbers:hover,#bbpress-forums .bbp-pagination .current,#bbpress-forums .bbp-pagination a:hover,.woocommerce #respond input#submit,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.woocommerce ul.products li.product .added_to_cart,.woocommerce #respond input#submit:hover,.woocommerce a.button:hover,.woocommerce button.button:hover,.woocommerce input.button:hover,.woocommerce ul.products li.product .added_to_cart:hover,.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,.woocommerce span.onsale,.woocommerce .widget_price_filter .ui-slider .ui-slider-range,.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,.comments-holder .navigation .page-numbers.current,.vce-lay-a .vce-read-more:hover,.vce-lay-c .vce-read-more:hover{background-color: #cf4d35;}#vce-pagination .page-numbers,.comments-holder .navigation .page-numbers{background: transparent;color: #cf4d35;border: 1px solid #cf4d35;}.comments-holder .navigation .page-numbers:hover{background: #cf4d35;border: 1px solid #cf4d35;}.bbp-pagination-links a{background: transparent;color: #cf4d35;border: 1px solid #cf4d35 !important;}#vce-pagination .page-numbers.current,.bbp-pagination-links span.current,.comments-holder .navigation .page-numbers.current{border: 1px solid #cf4d35;}.widget_categories .cat-item:before,.widget_categories .cat-item .count{background: #cf4d35;}.comment-reply-link,.vce-lay-a .vce-read-more,.vce-lay-c .vce-read-more{border: 1px solid #cf4d35;}.entry-meta div,.entry-meta-count,.entry-meta div a,.comment-metadata a,.meta-category span,.meta-author-wrapped,.wp-caption .wp-caption-text,.widget_rss .rss-date,.sidebar cite,.site-footer cite,.sidebar .vce-post-list .entry-meta div,.sidebar .vce-post-list .entry-meta div a,.sidebar .vce-post-list .fn,.sidebar .vce-post-list .fn a,.site-footer .vce-post-list .entry-meta div,.site-footer .vce-post-list .entry-meta div a,.site-footer .vce-post-list .fn,.site-footer .vce-post-list .fn a,#bbpress-forums .bbp-topic-started-by,#bbpress-forums .bbp-topic-started-in,#bbpress-forums .bbp-forum-info .bbp-forum-content,#bbpress-forums p.bbp-topic-meta,span.bbp-admin-links a,.bbp-reply-post-date,#bbpress-forums li.bbp-header,#bbpress-forums li.bbp-footer,.woocommerce .woocommerce-result-count,.woocommerce .product_meta{color: #9b9b9b;}.main-box-title, .comment-reply-title, .main-box-head{background: #cf4d35;color: #ffffff;}.main-box-title a{color: #ffffff;}.sidebar .widget .widget-title a{color: #ffffff;}.main-box,.comment-respond,.prev-next-nav{background: #f9f9f9;}.vce-post,ul.comment-list > li.comment,.main-box-single,.ie8 .vce-single,#disqus_thread,.vce-author-card,.vce-author-card .vce-content-outside,.mks-bredcrumbs-container,ul.comment-list > li.pingback{background: #ffffff;}.mks_tabs.horizontal .mks_tab_nav_item.active{border-bottom: 1px solid #ffffff;}.mks_tabs.horizontal .mks_tab_item,.mks_tabs.vertical .mks_tab_nav_item.active,.mks_tabs.horizontal .mks_tab_nav_item.active{background: #ffffff;}.mks_tabs.vertical .mks_tab_nav_item.active{border-right: 1px solid #ffffff;}#vce-pagination,.vce-slider-pagination .owl-controls,.vce-content-outside,.comments-holder .navigation{background: #f3f3f3;}.sidebar .widget-title{background: #ffffff;color: #dd3333;}.sidebar .widget{background: #f9f9f9;}.sidebar .widget,.sidebar .widget li a,.sidebar .mks_author_widget h3 a,.sidebar .mks_author_widget h3,.sidebar .vce-search-form .vce-search-input,.sidebar .vce-search-form .vce-search-input:focus{color: #444444;}.sidebar .widget li a:hover,.sidebar .widget a,.widget_nav_menu li.menu-item-has-children:hover:after,.widget_pages li.page_item_has_children:hover:after{color: #cf4d35;}.sidebar .tagcloud a {border: 1px solid #cf4d35;}.sidebar .mks_author_link,.sidebar .tagcloud a:hover,.sidebar .mks_themeforest_widget .more,.sidebar button,.sidebar input[type="button"],.sidebar input[type="reset"],.sidebar input[type="submit"],.sidebar .vce-button,.sidebar .bbp_widget_login .button{background-color: #cf4d35;}.sidebar .mks_author_widget .mks_autor_link_wrap,.sidebar .mks_themeforest_widget .mks_read_more,.widget .meks-instagram-follow-link {background: #f3f3f3;}.sidebar #wp-calendar caption,.sidebar .recentcomments,.sidebar .post-date,.sidebar #wp-calendar tbody{color: rgba(68,68,68,0.7);}.site-footer{background: #373941;}.site-footer .widget-title{color: #ffffff;}.site-footer,.site-footer .widget,.site-footer .widget li a,.site-footer .mks_author_widget h3 a,.site-footer .mks_author_widget h3,.site-footer .vce-search-form .vce-search-input,.site-footer .vce-search-form .vce-search-input:focus{color: #ccd2d8;}.site-footer .widget li a:hover,.site-footer .widget a,.site-info a{color: #cf4d35;}.site-footer .tagcloud a {border: 1px solid #cf4d35;}.site-footer .mks_author_link,.site-footer .mks_themeforest_widget .more,.site-footer button,.site-footer input[type="button"],.site-footer input[type="reset"],.site-footer input[type="submit"],.site-footer .vce-button,.site-footer .tagcloud a:hover{background-color: #cf4d35;}.site-footer #wp-calendar caption,.site-footer .recentcomments,.site-footer .post-date,.site-footer #wp-calendar tbody,.site-footer .site-info{color: rgba(204,210,216,0.7);}.top-header,.top-nav-menu li .sub-menu{background: #2c2d34;}.top-header,.top-header a{color: #ffffff;}.top-header .vce-search-form .vce-search-input,.top-header .vce-search-input:focus,.top-header .vce-search-submit{color: #ffffff;}.top-header .vce-search-form .vce-search-input::-webkit-input-placeholder { color: #ffffff;}.top-header .vce-search-form .vce-search-input:-moz-placeholder { color: #ffffff;}.top-header .vce-search-form .vce-search-input::-moz-placeholder { color: #ffffff;}.top-header .vce-search-form .vce-search-input:-ms-input-placeholder { color: #ffffff;}.header-1-wrapper{height: 100px;padding-top: 15px;}.header-2-wrapper,.header-3-wrapper{height: 100px;}.header-2-wrapper .site-branding,.header-3-wrapper .site-branding{top: 15px;left: 0px;}.site-title a, .site-title a:hover{color: #23282d;}.site-description{color: #aaaaaa;}.main-header{background-color: #000000;}.header-bottom-wrapper{background: #e64338;}.vce-header-ads{margin: 5px 0;}.header-3-wrapper .nav-menu > li > a{padding: 40px 15px;}.header-sticky,.sidr{background: rgba(0,0,0,0.95);}.ie8 .header-sticky{background: #000000;}.main-navigation a,.nav-menu .vce-mega-menu > .sub-menu > li > a,.sidr li a,.vce-menu-parent{color: #ffffff;}.nav-menu > li:hover > a,.nav-menu > .current_page_item > a,.nav-menu > .current-menu-item > a,.nav-menu > .current-menu-ancestor > a,.main-navigation a.vce-item-selected,.main-navigation ul ul li:hover > a,.nav-menu ul .current-menu-item a,.nav-menu ul .current_page_item a,.vce-menu-parent:hover,.sidr li a:hover,.sidr li.sidr-class-current_page_item > a,.main-navigation li.current-menu-item.fa:before,.vce-responsive-nav{color: #ff0505;}#sidr-id-vce_main_navigation_menu .soc-nav-menu li a:hover {color: #ffffff;}.nav-menu > li:hover > a,.nav-menu > .current_page_item > a,.nav-menu > .current-menu-item > a,.nav-menu > .current-menu-ancestor > a,.main-navigation a.vce-item-selected,.main-navigation ul ul,.header-sticky .nav-menu > .current_page_item:hover > a,.header-sticky .nav-menu > .current-menu-item:hover > a,.header-sticky .nav-menu > .current-menu-ancestor:hover > a,.header-sticky .main-navigation a.vce-item-selected:hover{background-color: #000000;}.search-header-wrap ul {border-top: 2px solid #ff0505;}.vce-cart-icon a.vce-custom-cart span,.sidr-class-vce-custom-cart .sidr-class-vce-cart-count {background: #ff0505;font-family: 'Poppins';}.vce-border-top .main-box-title{border-top: 2px solid #cf4d35;}.tagcloud a:hover,.sidebar .widget .mks_author_link,.sidebar .widget.mks_themeforest_widget .more,.site-footer .widget .mks_author_link,.site-footer .widget.mks_themeforest_widget .more,.vce-lay-g .entry-meta div,.vce-lay-g .fn,.vce-lay-g .fn a{color: #FFF;}.vce-featured-header .vce-featured-header-background{opacity: 0.5}.vce-featured-grid .vce-featured-header-background,.vce-post-big .vce-post-img:after,.vce-post-slider .vce-post-img:after{opacity: 0.5}.vce-featured-grid .owl-item:hover .vce-grid-text .vce-featured-header-background,.vce-post-big li:hover .vce-post-img:after,.vce-post-slider li:hover .vce-post-img:after {opacity: 0.8}.vce-featured-grid.vce-featured-grid-big .vce-featured-header-background,.vce-post-big .vce-post-img:after,.vce-post-slider .vce-post-img:after{opacity: 0.5}.vce-featured-grid.vce-featured-grid-big .owl-item:hover .vce-grid-text .vce-featured-header-background,.vce-post-big li:hover .vce-post-img:after,.vce-post-slider li:hover .vce-post-img:after {opacity: 0.8}#back-top {background: #323232}.sidr input[type=text]{background: rgba(255,255,255,0.1);color: rgba(255,255,255,0.5);}.is-style-solid-color{background-color: #cf4d35;color: #ffffff;}.wp-block-image figcaption{color: #9b9b9b;}.wp-block-cover .wp-block-cover-image-text, .wp-block-cover .wp-block-cover-text, .wp-block-cover h2, .wp-block-cover-image .wp-block-cover-image-text, .wp-block-cover-image .wp-block-cover-text, .wp-block-cover-image h2,p.has-drop-cap:not(:focus)::first-letter,p.wp-block-subhead{font-family: 'Poppins';font-weight: 400;}.wp-block-cover .wp-block-cover-image-text, .wp-block-cover .wp-block-cover-text, .wp-block-cover h2, .wp-block-cover-image .wp-block-cover-image-text, .wp-block-cover-image .wp-block-cover-text, .wp-block-cover-image h2{font-size: 2.5rem;}p.wp-block-subhead{font-size: 2.2rem;}.wp-block-button__link{background: #cf4d35}.wp-block-search .wp-block-search__button{color: #ffffff}.meta-image:hover a img,.vce-lay-h .img-wrap:hover .meta-image > img,.img-wrp:hover img,.vce-gallery-big:hover img,.vce-gallery .gallery-item:hover img,.wp-block-gallery .blocks-gallery-item:hover img,.vce_posts_widget .vce-post-big li:hover img,.vce-featured-grid .owl-item:hover img,.vce-post-img:hover img,.mega-menu-img:hover img{-webkit-transform: scale(1.1);-moz-transform: scale(1.1);-o-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}.has-small-font-size{ font-size: 1.2rem;}.has-large-font-size{ font-size: 1.9rem;}.has-huge-font-size{ font-size: 2.3rem;}@media(min-width: 671px){.has-small-font-size{ font-size: 1.3rem;}.has-normal-font-size{ font-size: 1.6rem;}.has-large-font-size{ font-size: 2.1rem;}.has-huge-font-size{ font-size: 2.8rem;}}.has-vce-acc-background-color{ background-color: #cf4d35;}.has-vce-acc-color{ color: #cf4d35;}.has-vce-meta-background-color{ background-color: #9b9b9b;}.has-vce-meta-color{ color: #9b9b9b;}.has-vce-txt-background-color{ background-color: #444444;}.has-vce-txt-color{ color: #444444;}.has-vce-bg-background-color{ background-color: #ffffff;}.has-vce-bg-color{ color: #ffffff;}.has-vce-cat-0-background-color{ background-color: ;}.has-vce-cat-0-color{ color: ;}.site-title a{text-transform: uppercase;}.site-description{text-transform: uppercase;}.nav-menu li a{text-transform: uppercase;}.main-box-title{text-transform: uppercase;}.sidebar .widget-title{text-transform: uppercase;}.site-footer .widget-title{text-transform: uppercase;}.vce-featured-link-article{text-transform: uppercase;}
+</style>
+<link rel="stylesheet" id="vce_child_load_scripts-css" href="https://linuxhint.com/wp-content/themes/voice-child/style.css?ver=2.9.2" type="text/css" media="screen">
+<link rel="stylesheet" id="meks-author-widget-css" href="https://linuxhint.com/wp-content/plugins/meks-smart-author-widget/css/style.css?ver=1.1.1" type="text/css" media="all">
+<link rel="stylesheet" id="__EPYT__style-css" href="https://linuxhint.com/wp-content/plugins/youtube-embed-plus/styles/ytprefs.min.css?ver=13.2.0.2" type="text/css" media="all">
+<style id="__EPYT__style-inline-css" type="text/css">
+
+                .epyt-gallery-thumb {
+                        width: 33.333%;
+                }
+                
+</style>
+<link rel="stylesheet" id="codecolorer-css" href="https://linuxhint.com/wp-content/plugins/codecolorer/codecolorer.css?ver=0.9.16" type="text/css" media="screen">
+<script type="text/javascript" src="https://linuxhint.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+<script type="text/javascript" src="https://linuxhint.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<script type="text/javascript" src="https://linuxhint.com/wp-content/plugins/social-media-buttons-toolbar/inc/lib/bootstrap-tooltip/bootstrap-tooltip.js?ver=4.58"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _EPYT_ = {"ajaxurl":"https:\/\/linuxhint.com\/wp-admin\/admin-ajax.php","security":"171a2cbe76","gallery_scrolloffset":"20","eppathtoscripts":"https:\/\/linuxhint.com\/wp-content\/plugins\/youtube-embed-plus\/scripts\/","eppath":"https:\/\/linuxhint.com\/wp-content\/plugins\/youtube-embed-plus\/","epresponsiveselector":"[\"iframe.__youtube_prefs_widget__\"]","epdovol":"1","version":"13.2.0.2","evselector":"iframe.__youtube_prefs__[src], iframe[src*=\"youtube.com\/embed\/\"], iframe[src*=\"youtube-nocookie.com\/embed\/\"]","ajax_compat":"","ytapi_load":"light","stopMobileBuffer":"1","vi_active":"","vi_js_posttypes":[]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://linuxhint.com/wp-content/plugins/youtube-embed-plus/scripts/ytprefs.min.js?ver=13.2.0.2"></script>
+<link rel="https://api.w.org/" href="https://linuxhint.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://linuxhint.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://linuxhint.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Working with Debian Firewalls (UFW)" href="https://linuxhint.com/debian_firewalls_ufw/">
+<link rel="next" title="How to Install and Use Steam on Arch Linux" href="https://linuxhint.com/install_steam_arch_linux/">
+<meta name="generator" content="WordPress 5.3.2">
+<link rel="canonical" href="https://linuxhint.com/best_50_python_books/">
+<link rel="shortlink" href="https://linuxhint.com/?p=42078">
+<link rel="alternate" type="application/json+oembed" href="https://linuxhint.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flinuxhint.com%2Fbest_50_python_books%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://linuxhint.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flinuxhint.com%2Fbest_50_python_books%2F&amp;format=xml">
+<meta name="description" content="Today I’m going to give you guys an insight into the best 50 Python books. The article is divided into two parts having 25 books each, first 25 books are for the beginners, kids and programming newbies while rest 25 are for those web enthusiasts, statisticians, data scientists and all machine learning experts out there.">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-2559550-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-2559550-13',{'dimension1': 'Swapnil Tirthakar', 'dimension2': '2019-06'}); 
+</script>		<style type="text/css" id="wp-custom-css">
+			div#wpbody a {
+color: #0000FF;
+}
+
+div#wpbody a:visited {
+color: #0000FF;
+}
+
+h1.entry-title {
+font-size: 38px;
+font-weight: bold;
+}
+
+h1 {
+font-size: 34px;
+font-weight: bold;
+}
+
+h2 {
+font-size: 26px;
+font-weight: bold;
+}
+
+h3 {
+font-size: 26px;
+font-weight: bold;
+}
+
+h4{
+font-weight: bold;
+}
+
+.codecolorer, .codecolorer *, .codecolorer-container, .codecolorer-container * {
+font: 1.4rem/1.4rem Monaco, Lucida Console, monospace ! important;
+}
+
+.comment-form {
+    margin-bottom: inherit;
+}
+
+.gglcptch_v1, .gglcptch_v2 {
+    text-align: -webkit-right;
+}
+
+pre {
+    background: #36363e;
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: floralwhite;
+}
+
+.apsc-theme-1 .apsc-each-profile {
+    margin: 3px;
+}
+
+input[type=text] {
+    background: #fff;
+}
+div#wpbody {
+ font-family: 'Arimo', sans-serif;
+ font-weight: 400;
+ font-size: 1.14286em;
+}
+
+div#wpbody blockquote {
+ font-family: 'Arimo', sans-serif;
+ font-weight: 400;
+ font-size: 0.8em;
+ font-style: italic;
+ font-weight: bold;
+}
+
+div#newshl a {
+color: #000000;
+font-family: 'Arimo', sans-serif;
+font-weight: 400;
+font-size: 1.14286em;
+text-decoration: underline;
+}
+
+div#newshl a:visited {
+color: #000000;
+font-family: 'Arimo', sans-serif;
+font-weight: 400;
+font-size: 1.14286em;
+text-decoration: underline;
+}/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+h1 {
+font-size:25px;
+color: #ba3925;}
+h2 {
+font-size:20px;
+color: #ba3925;}
+h3 {
+font-size:20px;
+color: #ba3925;
+}
+h4 {
+font-size:18px;
+color: #ba3925;
+opacity:0.9;}
+h5 {
+font-size:15px;
+color: #ba3925;}
+h6 {
+font-size:12px;
+color: #ba3925;}
+@media only screen and (max-width: 1200px){
+.codecolorer-container, .codecolorer {
+max-width: 100%;
+	}
+}
+@media only screen and (max-width: 1000px){
+.main-header {
+margin-bottom: 100px;
+	}
+}
+@media only screen and (max-width: 1000px){
+ .vce-header-ads {
+   display: block !important;
+   max-width: 100%;
+	 text-align:center;
+	}
+}
+		</style>
+		<style id="voice-full-fix" type="text/css">.alignfull { max-width: 720px; position: relative; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); width: 100vw; left: 50%; }</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><style type="text/css">.adthrive-ad{margin-top:10px;margin-bottom:10px;text-align:center;overflow-x:visible;clear:both;line-height:0}.adthrive-ad>div[id^=google_ads_iframe]{margin:0 auto!important}.adthrive-stuck.adthrive-sticky.adthrive-header,.adthrive-stuck.adthrive-sticky.adthrive-sidebar{position:fixed;top:0;z-index:9999}.adthrive-stuck.adthrive-header{margin-top:0}.adthrive-sticky.adthrive-footer{text-align:center;margin:0;width:100%;overflow:hidden;position:fixed;left:0;bottom:0;z-index:99999;background-color:hsla(0,0%,100%,.8);border-top:2px solid hsla(0,0%,88.2%,.8)}.adthrive-sticky.adthrive-footer>.adthrive-close{cursor:pointer;color:#b2b2b2;border:1px solid #b2b2b2;border-radius:20px;background:#fff;line-height:20px;display:inline-block;font-size:20px;font-family:arial,sans-serif;padding:0 5px;position:absolute;top:5px;right:5px}.adthrive-device-desktop .adthrive-sticky.adthrive-footer>.adthrive-close{top:10px;right:10px}#_inv_voicefive___{display:none}.adthrive-ccpa-link,.adthrive-footer-message,.adthrive-privacy-preferences{text-align:center;margin-top:5px}.adthrive-ccpa-link,.adthrive-ccpa-link span,.adthrive-footer-message span,.adthrive-privacy-preferences a{font-family:Arial,Helvetica Neue,Helvetica,sans-serif;font-size:13px;color:#b2b2b2}.adthrive-ccpa-link a{text-decoration:underline;cursor:pointer}.adthrive-device-phone .adthrive-footer-message{margin-bottom:60px}.adthrive-footer-message{margin-bottom:100px}.adthrive-footer-message>span{text-transform:uppercase;border-top:1px solid #b2b2b2;padding-top:5px}.adthrive-collapse-player{width:90%;border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;padding:8px!important;margin-left:auto;margin-right:auto}.adthrive-player-position.adthrive-collapse-float{position:fixed;padding-top:20px;padding-bottom:10px;width:300px;background:#fff;z-index:2147483644}.adthrive-player-position.adthrive-collapse-float.adthrive-collapse-right{top:0;right:20%}.adthrive-player-position.adthrive-collapse-float.adthrive-collapse-left{top:0;left:20%}.adthrive-player-position.adthrive-collapse-float>.adthrive-player-title{display:none}.adthrive-player-position.adthrive-collapse-sticky{padding-top:20px;padding-bottom:20px;position:fixed;z-index:9999}.adthrive-player-position.adthrive-collapse-sticky>.adthrive-player-title{display:none}.adthrive-player-position.adthrive-collapse-mobile{position:fixed;padding:2px;top:26px;right:10px;width:300px;background:#fff;z-index:2147483644}.adthrive-player-position.adthrive-collapse-mobile>.adthrive-player-title{display:none}.adthrive-player-close{position:absolute;top:0;right:0;height:20px;cursor:pointer;text-align:center;padding-left:5px;padding-right:5px}.adthrive-sekindo-mobile-center{display:flex;flex-direction:row;justify-content:center;text-align:center}.adthrive-collapse-mobile>.adthrive-player-close{position:absolute;top:-25px;right:0;height:26px;cursor:pointer;text-align:center;padding-left:5px;padding-right:5px;font-weight:700;font-size:12px;border:1px solid;border-radius:15px;background-color:#fff;align-items:center}</style><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=linuxhint.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=linuxhint.com"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2020022401.js" async=""></script><link rel="stylesheet" type="text/css" href="https://ads.adthrive.com/sites/5c9b6001b80bec0dfaf0b493/ads.min.css"><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html"></head>
+
+<body class="post-template-default single single-post postid-42078 single-format-standard wp-embed-responsive vce-sid-none voice-v_2_9_2 voice-child adthrive-device-tablet">
+
+
+<div id="vce-main">
+
+<header id="header" class="main-header">
+<div class="container header-main-area header-3-wrapper">	
+		<div class="vce-res-nav">
+	<a class="vce-responsive-nav" href="#sidr-main"><i class="fa fa-bars"></i></a>
+</div>
+<div class="site-branding">
+	<span class="site-title"><a href="https://linuxhint.com/" rel="home" class="has-logo"><picture class="vce-logo"><source media="(min-width: 1024px)" srcset="https://linuxhint.com/wp-content/uploads/2019/11/Logo-final.png"><source srcset="https://linuxhint.com/wp-content/uploads/2019/11/Logo-final.png"><img src="https://linuxhint.com/wp-content/uploads/2019/11/Logo-final.png" alt="Linux Hint"></picture></a></span></div>
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+	<ul id="vce_main_navigation_menu" class="nav-menu"><li id="menu-item-18534" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-18534"><a href="https://linuxhint.com">Home</a></li><li id="menu-item-28744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28744"><a target="_blank" rel="noopener noreferrer" href="https://help.linuxhint.com/">Help Forum</a></li><li id="menu-item-19816" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19816"><a href="https://linuxhint.com/subscribe-to-linuxhint-com/">Subscribe!</a></li><li id="menu-item-30754" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30754"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/c/linuxhint">Videos</a></li><li id="menu-item-33966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33966"><a href="https://linuxhint.com/write-for-linuxhint-com/">Write For Us</a></li><li id="menu-item-23466" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23466"><a href="https://linuxhint.com/policies-and-privacy/">Privacy</a></li><li id="menu-item-37290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37290"><a href="https://linuxhint.com/terms-of-use/">Terms</a></li><li class="search-header-wrap"><a class="search_header" href="javascript:void(0)"><i class="fa fa-search"></i></a><ul class="search-header-form-ul"><li><form class="vce-search-form" action="https://linuxhint.com/" method="get">
+	<input name="s" class="vce-search-input" size="20" type="text" value="Type here to search..." onfocus="(this.value == 'Type here to search...') &amp;&amp; (this.value = '')" onblur="(this.value == '') &amp;&amp; (this.value = 'Type here to search...')" placeholder="Type here to search...">
+		<button type="submit" class="vce-search-submit"><i class="fa fa-search"></i></button> 
+</form></li></ul></li></ul></nav></div></header>
+
+
+<div id="main-wrapper"><div id="AdThrive_Header_1_tablet" class="adthrive-ad adthrive-header adthrive-header-1"><div id="google_ads_iframe_/18190176/AdThrive_Header_1/5c9b6001b80bec0dfaf0b493_0__container__" style="border: 0pt none; width: 728px; height: 90px;"></div></div>
+
+
+
+
+
+<div id="content" class="container site-content vce-sid-none">
+	
+			
+	<div id="primary" class="vce-main-content">
+
+		<main id="main" class="main-box main-box-single">
+
+		
+			<article id="post-42078" class="vce-single post-42078 post type-post status-publish format-standard has-post-thumbnail hentry category-book-review category-python">
+
+			<header class="entry-header">
+							<span class="meta-category"><a href="https://linuxhint.com/category/book-review/" class="category-1770">Book Review</a> <span>•</span> <a href="https://linuxhint.com/category/python/" class="category-1531">Python</a></span>
+			
+			<h1 class="entry-title">Best 50 Python Books for Programmers with All Skill Sets</h1>
+			<div class="entry-meta"><div class="meta-item date"><span class="updated">9 months ago</span></div><div class="meta-item author"><span class="vcard author"><span class="fn">by <a href="https://linuxhint.com/author/swapnil/">Swapnil Tirthakar</a></span></span></div></div>
+		</header>
+	
+	
+	
+		
+	    
+		
+	<div class="entry-content">
+		<div id="wpbody">
+Python has been one of my favorite programming languages ever since I started working with it. While writing this article on Python books, it reminds me of my early days with Python and searching for resources to get going with this simple but amazing programming language. Since its early days, Python has come a long way to establish its dominance in the field of data science and machine learning. For any programming task you can use Python, right from application development to debugging.Python is a powerful programming language and its contribution to the field of data science is second to none. From a simple file search computer program to the script behind self-driving cars, there is data science backed by Python. There is no surprise there is a huge demand for data science experts in today’s tech savvy world.<p></p><div id="AdThrive_Content_1_tablet" class="adthrive-ad adthrive-content adthrive-content-1"><div id="google_ads_iframe_/18190176/AdThrive_Content_1/5c9b6001b80bec0dfaf0b493_0__container__" style="border: 0pt none; width: 300px; height: 250px;"></div></div>
+<p>So today I’m going to give you guys an insight into the best 50 Python books. The article is divided into two parts having 25 books each, first 25 books are for the beginners, kids and programming newbies while rest 25 are for those web enthusiasts, statisticians, data scientists and all machine learning experts out there.</p>
+<h2><strong>Best Python Books for Beginners…</strong></h2>
+<h3><strong>1. Python Crash Course (2<sup>nd</sup> Edition)</strong></h3>
+<p><img class="aligncenter  wp-image-42083" src="https://linuxhint.com/wp-content/uploads/2019/06/1-1-775x1024.jpg" alt="" width="260" height="248"></p><div id="AdThrive_Content_2_tablet" class="adthrive-ad adthrive-content adthrive-content-1"><div id="google_ads_iframe_/18190176/AdThrive_Content_2/5c9b6001b80bec0dfaf0b493_0__container__" style="border: 0pt none; width: 300px; height: 250px;"></div></div>
+<p><strong>Author: </strong><em>Eric Matthes</em><br>
+<a href="https://amzn.to/2Wwc3ex"><strong><em>Buy Here</em></strong></a></p>
+<p>Python Crash Course, A hands-on, project-based introduction to programming is one of the best books with thorough introduction to Python language and no surprise it is one of the bestselling Python programming language books on Amazon. This is a fast-paced book but it will have you writing and compiling Python programs in a go.</p>
+<p>This book is highly recommended for beginners and newbies, while introducing you to basic fundamentals of Python, this book will have you made your first Python game or application software in no time.</p>
+<p>Nicely crafted by Eric Matthes, this book will make sure you become a pro in Python programming language as it covers everything right from the basics which covers lists, dictionaries, classes to guide to create you first Web application and getting it online safely.</p><div id="AdThrive_Content_3_tablet" class="adthrive-ad adthrive-content adthrive-content-1"><div id="google_ads_iframe_/18190176/AdThrive_Content_3/5c9b6001b80bec0dfaf0b493_0__container__" style="border: 0pt none; width: 300px; height: 250px;"></div></div>
+<p>Reason why this book features first on my list is that it covers every minute detail which Python newbies will love to have. In the first half, this book covers all the basic concepts of the programming language while making you ready for the second half of the book which covers three projects viz. a Space Invaders – arcade game, data visualization and a simple web app.</p>
+<p><a href="https://amzn.to/2Wwc3ex"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.6/5<br>
+<strong>Goodreads: </strong>4.26/5</p>
+<h3><strong>2. Learning Python (5<sup>th</sup> Edition)</strong></h3>
+<p><img class="aligncenter size-full wp-image-42084" src="https://linuxhint.com/wp-content/uploads/2019/06/2.jpg" alt="" width="260" height="248"></p><div id="AdThrive_Content_4_tablet" class="adthrive-ad adthrive-content adthrive-content-1"><div id="google_ads_iframe_/18190176/AdThrive_Content_4/5c9b6001b80bec0dfaf0b493_0__container__" style="border: 0pt none; width: 300px; height: 250px;"></div></div>
+<p><strong>Author: </strong><em>Mark Lutz</em><br>
+<a href="https://amzn.to/2KCkm1j"><strong><em>Buy Here</em></strong></a></p>
+<p>Python is an open-source object-oriented programming language and it has become one of the most favored languages for developing standalone as well as scripting applications by developer community. Learning Python written by Python expert Mark Lutz will give you comprehensive and in-depth introduction to the core of Python language.</p>
+<p>This book is ideal for novice as well as professional programmers as it will have you quickly write efficient and quality programs with Python in no time. Book has covered everything from numbers, lists and dictionaries to exception-handling model and various development tools to match every programmers needs.</p><div id="AdThrive_Content_5_tablet" class="adthrive-ad adthrive-content adthrive-content-1"><div id="google_ads_iframe_/18190176/AdThrive_Content_5/5c9b6001b80bec0dfaf0b493_0__container__" style="border: 0pt none; width: 300px; height: 250px;"></div></div>
+<p><a href="https://amzn.to/2KCkm1j"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4/5<br>
+<strong>Goodreads: </strong>3.94/5</p>
+<h3><strong>3. Automate the Boring Stuff with Python: Practical Programming for Total Beginners</strong></h3>
+<p><img class="aligncenter size-full wp-image-42085" src="https://linuxhint.com/wp-content/uploads/2019/06/3-1.jpg" alt="" width="260" height="248"></p><div id="AdThrive_Content_6_tablet" class="adthrive-ad adthrive-content adthrive-content-1"><div id="google_ads_iframe_/18190176/AdThrive_Content_6/5c9b6001b80bec0dfaf0b493_0__container__" style="border: 0pt none; width: 300px; height: 250px;"></div></div>
+<p><strong>Author: </strong><em>Al Sweigart</em><br>
+<a href="https://amzn.to/2Wy1yYb"><strong><em>Buy Here</em></strong></a></p>
+<p>As the name suggests <em>Automate the Boring Stuff with Python,</em> this book will let you skip through some tedious and boring task to save your time. Using this book by Al Sweigart, you will learn to use Python for writing programs that will do your computing tasks in seconds, normally what would take hours if done manually.</p>
+<p>With the help of step-by-step guide provided in the book you can create your own program that will help you automate some computing tasks such as search for text or file, rename files, update, move and many day to day tasks. This book is blessing for beginners as well as professional programmer as some fruitful guides are included in the book for all the programmers and coders.</p>
+<p><a href="https://amzn.to/2Wy1yYb"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.6/5<br>
+<strong>Goodreads: </strong>4.26/5</p>
+<h3><strong>4. Learn Python in One Day and Learn It Well: Python for Beginners with Hands-on-Project (2<sup>nd</sup> Edition)</strong></h3>
+<p><img class="aligncenter size-full wp-image-42086" src="https://linuxhint.com/wp-content/uploads/2019/06/4.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong>LCF Publishing &amp; Jamie Chan<br>
+<a href="https://amzn.to/2MCbCLk"><strong><em>Buy Here</em></strong></a></p>
+<p>The book is a complete treat for the beginners who want learn a programming language or Python programming language to be specific. What I liked about this book is that it has been beautifully crafted by keeping novice programmers in mind as it features some complex Python concepts broken down into simple steps to ensure that any newbie can master in Python programming.</p>
+<p>The selection of topics and relevant examples in this book is just perfect to give reader a broad exposure to Python and its applications. As the name of the book suggests you can genuinely starting coding in Python language in a day.</p>
+<p>The first edition of this book was #1 bestselling eBook on Amazon for more than a year, may be that tells so much about this book.</p>
+<p><a href="https://amzn.to/2MCbCLk"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.4/5<br>
+<strong>Goodreads: </strong>3.86/5</p>
+<h3><strong>5. Learn Python Programming: The no-nonsense, beginner’s guide to programming, data science, and web development with Python 3.7 (2<sup>nd</sup> Edition)</strong></h3>
+<p><img class="aligncenter size-full wp-image-42087" src="https://linuxhint.com/wp-content/uploads/2019/06/5-1.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author:</strong> <em>Fabrizio Romano</em><br>
+<a href="https://amzn.to/2WyI99o"><strong><em>Buy Here</em></strong></a></p>
+<p>The book is a complete package for both novice as well as professional programmers as it not only introduces you to basics of Python programming but also going a step further it guides you to using Python for applications in data science and web application development.&nbsp; <strong>&nbsp;</strong></p>
+<p>Some of the key features of the book includes guide to fundamentals of Python programming, application of Python language to data science with the help of IPython and Jupyter tools and building a real word web application using Django.</p>
+<p><a href="https://amzn.to/2WyI99o"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>5/5</p>
+<h3><strong>6. Head First Python: A Brain-Friendly Guide</strong></h3>
+<p><img class="aligncenter size-full wp-image-42088" src="https://linuxhint.com/wp-content/uploads/2019/06/6-1.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Paul Barry</em><br>
+<a href="https://amzn.to/2K70gwx"><strong><em>Buy Here</em></strong></a></p>
+<p>Head First Python is simple but exciting way to become a professional Python programmer. It is a best answer to searching for Python manuals to learn basics of Python programming and its syntax as this will make you a pro in Python programming by its own unique methods.</p>
+<p>It will help you learn fundamentals of Python programming and going further it will slowly and steadily ease you in exception handling, web development, Google App Engine and many more applications of Python. This book will save you a lot of time as it is specially designed to match the way you brain works with the help of cognitive science and learning theory to give you multi-sensory learning experience.</p>
+<p><a href="https://amzn.to/2K70gwx"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.2/5<br>
+<strong>Goodreads: </strong>3.76/5</p>
+<h3><strong>&nbsp;7. </strong><strong>Learn Python 3 the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code</strong></h3>
+<p><img class="aligncenter  wp-image-42089" src="https://linuxhint.com/wp-content/uploads/2019/06/7-1-748x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Zed A. Shaw</em><br>
+<a href="https://amzn.to/2WqsoMX"><strong><em>Buy Here</em></strong></a></p>
+<p>Welcome to the word of Zed Shaw’s hard way series, Learn Python 3 the Hard Way features 52 brilliantly crafted exercise that well make any novice programmer a professional in&nbsp; Python programming language and its applications in data science as well as web development.</p>
+<p>You might find this book a bit hard at start but you will get used to it in no time. This book is perfect for beginners with zero programming experience or the developers with knowledge of one or two programming languages. Professional developers and programmers can also use this book to test and brush up their skills in Python.</p>
+<p><a href="https://amzn.to/2WqsoMX"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>3.6/5<br>
+<strong>Goodreads: </strong>4.02/5</p>
+<h3><strong>8.Python Programming: An Introduction to Computer Science</strong> <strong>(3<sup>rd</sup> Edition)</strong></h3>
+<p><img class="aligncenter size-full wp-image-42090" src="https://linuxhint.com/wp-content/uploads/2019/06/8-1.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>John M. Zelle</em><br>
+<a href="https://amzn.to/2WUGkTL"><strong><em>Buy Here</em></strong></a></p>
+<p>The 3<sup>rd</sup> edition of John M. Zelle’s Python Programming follows the tradition of introducing new technologies in the world of computer science. Even though Python is not at the core of this book, still you will take a lot of knowledge from this book.</p>
+<p>Some the interesting features of this amazing textbook are extensive use of computer graphics for engaging learning experience, extensive problems at the end of every chapter, interesting examples and many more.</p>
+<p><a href="https://amzn.to/2WUGkTL"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.4/5<br>
+<strong>Goodreads: </strong>4/5</p>
+<h3><strong>9. Python Cookbook: Recipes for Mastering Python 3</strong></h3>
+<p><img class="aligncenter size-full wp-image-42091" src="https://linuxhint.com/wp-content/uploads/2019/06/9.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>David Beazley</em><br>
+<a href="https://amzn.to/31hqyS9"><strong><em>Buy Here</em></strong></a></p>
+<p>Python Cookbook is a perfect recipe for those who wish to learn and upgrade to Python 3. This book is recommended for both beginners and professional programmers as it covers dozens of topics that will match every programmers needs.</p>
+<p>Some of the topics included in the book are data structure and algorithm, data encoding and processing, Files and I/O, modules and packages, classes and objects, network and web programming, testing, debugging and exception handling and many other important topics.</p>
+<p><a href="https://amzn.to/31hqyS9"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.5/5<br>
+<strong>Goodreads: </strong>4.13/5</p>
+<h3><strong>10. Learning Python in 1 Day: Complete Python Guide with Examples</strong></h3>
+<p><img class="aligncenter size-full wp-image-42092" src="https://linuxhint.com/wp-content/uploads/2019/06/10-1.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Krishna Rungta</em><br>
+<a href="https://amzn.to/2MMQ26O"><strong><em>Buy Here</em></strong></a></p>
+<p>Python is a powerful language and many might find it difficult to understand at start if they don’t get right material to start with. Learning Python in 1 Day is one of those few books that will really make you coding in Python in a day.</p>
+<p>This book features total 22 chapters which guide you right from installing Python on your computer to mastering you in Python language. It introduces you to some basics of Python such as variables, strings, tuples, and functions. There is also good guide on how to access Internet data with Python. The best thing I liked about this book is that it explains the nuances of the language by giving multiple examples.</p>
+<p><a href="https://amzn.to/2MMQ26O"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>3.8/5</p>
+<h3><strong>11. Django for Beginners: Build Websites with Python and Django</strong></h3>
+<p><img class="aligncenter size-full wp-image-42093" src="https://linuxhint.com/wp-content/uploads/2019/06/11-1.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>William S. Vincent</em><br>
+<a href="https://amzn.to/2K631y6"><strong><em>Buy Here</em></strong></a></p>
+<p>This one is especially for all the web developers who want to simplify the task of web development. Django for Beginners will introduce you to the Django features and its real world applications with Python around templates, custom user models, user registration, authentications and many more.</p>
+<p>This book will give you tutorial to build 5 complex web applications which include a <strong>Newspaper app</strong> with reader comments and a complete user registration flow, a <strong>Blog app</strong> with user account, and a <strong>Message Board</strong> app. At the end of these 5 tutorials you will get all your concepts clear and become a master in web development with the help of Python and Django.</p>
+<p><a href="https://amzn.to/2K631y6"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.7/5<br>
+<strong>Goodreads: </strong>4.75/5</p>
+<h3><strong>12. Python for Kids: A Playful Introduction to Programming</strong></h3>
+<p><img class="aligncenter  wp-image-42094" src="https://linuxhint.com/wp-content/uploads/2019/06/12-2-775x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Jason R. Briggs</em><br>
+<a href="https://amzn.to/2F2qgoN"><strong><em>Buy Here</em></strong></a></p>
+<p>Okay this book is especially for all the little ones who want to be programmers and their parents. Writer Jason R. Briggs gives life to learning process of Python language which rather sometimes dull and boring in some books and tutorials.</p>
+<p>This book will guide you to core of Python programming with help of some hilarious example programs that feature secret agents, monsters and thieving ravens. Book will help you learn use of fundamental data structure like lists, tuples, and maps, use of control structures such as loops and conditional statements, use of Python’s turtle module to draw shapes and patterns and using tkinter for creating games and animations.</p>
+<p><a href="https://amzn.to/2F2qgoN"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.5/5<br>
+<strong>Goodreads: </strong>4.17/5</p>
+<h3><strong>13. Teach Your Kids to Code: A Parent Friendly Guide to Python Programming</strong></h3>
+<p><img class="aligncenter size-full wp-image-42095" src="https://linuxhint.com/wp-content/uploads/2019/06/13-2.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Bryson Payne</em><br>
+<a href="https://amzn.to/2Fc88cn"><strong><em>Buy Here</em></strong></a></p>
+<p>This book is a masterpiece for teaching kids basics of programming and problem using Python programming language. Book features visual and game oriented examples with step-by-step explanation which will make learning process a fun activity for kids.</p>
+<p>This book will help you create visually inspiring graphics, code and decode messages, create animations and use sound in apps, build variables, loops and functions and many more useful tutorials.</p>
+<p><a href="https://amzn.to/2Fc88cn"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.6/5<br>
+<strong>Goodreads: </strong>4.06/5</p>
+<h3><strong>14. Invent Your Own Computer Games with Python</strong></h3>
+<p><img class="aligncenter  wp-image-42096" src="https://linuxhint.com/wp-content/uploads/2019/06/14-1-775x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Al Sweigart</em><br>
+<a href="https://amzn.to/2MM1yj0"><strong><em>Buy Here</em></strong></a></p>
+<p>As the name suggests this one is for all the gamers out there. Doesn’t matter if you have any knowledge about programming or not, with the help of this book you will be developing your own computer games.</p>
+<p>The book starts with guides to build some classic but simple games such as Hangman, Guess the Number, and Tic-Tac-Toe and eases you in to building more advanced games such as text-based treasure hunting game and an animated treasure hunting game with sound effects as you begin to feel comfortable with Python programming language.</p>
+<p><a href="https://amzn.to/2MM1yj0"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.7/5<br>
+<strong>Goodreads: </strong>4.04/5</p>
+<h3><strong>15. Think Python: How to Think Like a Computer Scientist</strong></h3>
+<p><img class="aligncenter  wp-image-42097" src="https://linuxhint.com/wp-content/uploads/2019/06/15-1-785x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Allen B. Downey</em><br>
+<a href="https://amzn.to/2XB5bsS"><strong><em>Buy Here</em></strong></a></p>
+<p>Anyone wants to learn programming then Python is the best programming language to start with. This is one of the best guides which begins with basic programming concepts then slowly takes you to next level with introducing you to functions, data structures and other fundamentals of object oriented programming.</p>
+<p><a href="https://amzn.to/2XB5bsS"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.3/5<br>
+<strong>Goodreads: </strong>4.08/5</p>
+<h3><strong>16. Python Machine Learning: A Guide For Beginners</strong></h3>
+<p><img class="aligncenter size-full wp-image-42098" src="https://linuxhint.com/wp-content/uploads/2019/06/16-2.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Leonard Eddison</em><br>
+<a href="https://amzn.to/2MD1y4L"><strong><em>Buy Here</em></strong></a></p>
+<p>Well I think I don’t need to tell you guys the importance of machine learning and its applications in this ever growing online business world. And this book is a good way to start with if you wish to establish yourself as a machine learning expert in the world of programming.</p>
+<p>Most of the topics covered in this book are related to machine learning and the branches of Artificial Intelligence.</p>
+<p><a href="https://amzn.to/2MD1y4L"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>3.5/5<br>
+<strong>Goodreads: </strong>2.91/5</p>
+<h3><strong>17. Python 101</strong></h3>
+<p><img class="aligncenter  wp-image-42099" src="https://linuxhint.com/wp-content/uploads/2019/06/17-2-768x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Michael Driscoll</em><br>
+<a href="https://amzn.to/2XA9ncr"><strong><em>Buy Here</em></strong></a></p>
+<p>Python 101 by Michael Driscoll is mainly designed for beginners but it can be used by intermediate programmers also because good part of the book is crafted for the both sets of programmers.</p>
+<p>The book is split into 5 parts which includes beginner’s material in first part, the Python standard library in second, topics for intermediate programmers in third, third-party modules in fourth one and distributions in final i.e. fifth part.</p>
+<p><a href="https://amzn.to/2XA9ncr"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.1/5<br>
+<strong>Goodreads: </strong>3.79/5</p>
+<h3><strong>18. Python for Everybody: Exploring Data in Python</strong></h3>
+<p><img class="aligncenter  wp-image-42100" src="https://linuxhint.com/wp-content/uploads/2019/06/18-2-715x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Dr. Charles Russell Severance</em><br>
+<a href="https://amzn.to/2KBOzNX"><strong><em>Buy Here</em></strong></a></p>
+<p>Tired of using spreadsheets for data related problems, then this one is for you. This book will guide you through the process to solve data problems with the help of Python programming language. Those who are willing to become expert in data science will find this book helpful.</p>
+<p><a href="https://amzn.to/2KBOzNX"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.5/5<br>
+<strong>Goodreads: </strong>4.33/5</p>
+<h3><strong>19. A Smarter Way to Learn Python: Learn it faster, Remember it longer.</strong></h3>
+<p><img class="aligncenter size-full wp-image-42101" src="https://linuxhint.com/wp-content/uploads/2019/06/19-1.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Mark Myers</em><br>
+<a href="https://amzn.to/2MCbX0B"><strong><em>Buy Here</em></strong></a></p>
+<p>Learning Python language is quite difficult task and retaining it in mind is at another level of difficulty. But the writer Mark Myers makes it easier to consume, truly understand and apply into real-world applications.</p>
+<p><a href="https://amzn.to/2MCbX0B"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.8/5<br>
+<strong>Goodreads: </strong>4.28/5</p>
+<h3><strong>20. Coding for Kids: Python: Learn to Code with 50 Awesome Games</strong> <strong>and Activities</strong></h3>
+<p><img class="aligncenter  wp-image-42102" src="https://linuxhint.com/wp-content/uploads/2019/06/20-2-830x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Adrienne Tacke</em><br>
+<a href="https://amzn.to/31oWEf5"><strong><em>Buy Here</em></strong></a></p>
+<p>This book will introduce your kids to essential skills of Python programming language right from basic building blocks to creating very own computer games using Python.</p>
+<p>The best thing about this book is that it features easy to follow guide, creative projects to improve thinking capacity of kids, game-based learning with 50 innovative and interesting exercises.</p>
+<p><a href="https://amzn.to/31oWEf5"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.7/5<br>
+<strong>Goodreads: </strong>4.57/5</p>
+<h3><strong>21. Coding Projects in Python</strong></h3>
+<p><img class="aligncenter  wp-image-42105" src="https://linuxhint.com/wp-content/uploads/2019/06/21-1-857x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>DK Publishing</em><br>
+<a href="https://amzn.to/2EZ2euU"><strong><em>Buy Here</em></strong></a></p>
+<p>Coding Projects in Python by DK Publishing is graphical easy to follow instruction ideal for the young and novice programmers. It covers essential coding basics such as loops and conditions and also features 14 exciting projects which include a quiz to challenge family and friends, a script that cracks secret codes, a matching game and many more fun activities.</p>
+<p>This is an ideal book for those who start their programming and Python is the best programming language to start with.</p>
+<p><a href="https://amzn.to/2EZ2euU"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.7/5<br>
+<strong>Goodreads: </strong>4.18/5</p>
+<h3><strong>22. Python Machine Learning: Machine Learning and Deep Learning with Python, scikit-learn, and TensorFlow (Step-by-Step Tutorial For Beginners Book 1)</strong></h3>
+<p><img class="aligncenter  wp-image-42106" src="https://linuxhint.com/wp-content/uploads/2019/06/22-1-683x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Samuel Burns</em><br>
+<a href="https://amzn.to/2MDsRf7"><strong><em>Buy Here</em></strong></a></p>
+<p>This is an excellent step-by-step guide to learn machine learning, deep learning and other applications in Python. Best thing about this book is simple language has been used, many theoretical and programmatic examples have been included with screenshots showing program outputs.</p>
+<p><a href="https://amzn.to/2MDsRf7"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.7/5</p>
+<h3><strong>23. Python Programming 3 Books in 1 </strong></h3>
+<p><img class="aligncenter  wp-image-42107" src="https://linuxhint.com/wp-content/uploads/2019/06/23-1-672x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Ryan Turner</em><br>
+<a href="https://amzn.to/2WqQFlS"><strong><em>Buy Here</em></strong></a></p>
+<p>Python Programming by Ryan Turner is a package of three books named <strong><em>Ultimate Beginner’s</em></strong> for absolute noobs,<strong><em> Intermediate </em></strong>for coders with some knowledge of other programming languages <strong><em>and Advanced Guide to Learn Python Step-by-Step </em></strong>viz. for advance programmers.</p>
+<p>These books will give you proper ride to each and every concept of Python programming language while making you reach at the pro level in no time.</p>
+<p><a href="https://amzn.to/2WqQFlS"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>3/5<br>
+<strong>Goodreads: </strong>3/5</p>
+<h3>24. Python Programming for beginners: A Crash Course Guide to Learn Python in 1 Week (coding, programming, web-programming, programmer)</h3>
+<p><img class="aligncenter size-full wp-image-42108" src="https://linuxhint.com/wp-content/uploads/2019/06/24-1.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Timothy C. Needham</em><br>
+<a href="https://amzn.to/2K6e8XV"><strong><em>Buy Here</em></strong></a></p>
+<p>As I discussed above, now it is very clear that Python is very simple language and can be learned in less time yet it is very powerful as it gives an individual a strong feeling like a programmer right from the start of learning this language.</p>
+<p>Timothy C. Needham has done justice with the people who don’t know anything about the language but are willing to learn in this book. User will get a complete gist about the Python and the easy and simple way of this book will inculcate a bit more confidence in the new learner to learn more about the Python.</p>
+<p><a href="https://amzn.to/2K6e8XV"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon</strong>:&nbsp; 4.3/5</p>
+<h3><strong>&nbsp;25. </strong><strong>Starting out with Python: 4<sup>th</sup> edition</strong></h3>
+<p><img class="aligncenter size-full wp-image-42109" src="https://linuxhint.com/wp-content/uploads/2019/06/25-1.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Tony Gaddis</em><br>
+<a href="https://amzn.to/2KcYla7"><strong><em>Buy Here</em></strong></a></p>
+<p>As name suggests, if one wants to start and get mastered in Python then this book by Tony Gaddis will be the perfect book to start with as it prepares an user to learn a complicated language too.</p>
+<p>In the market there are ample of books available on Python but a serious question arises in the mind of beginner that is <strong>which book I should start with? </strong>&nbsp;As a regular user I will suggest this book to you guys those who don’t want to stop at easier level of Python but want to learn more about it.</p>
+<p><a href="https://amzn.to/2KcYla7"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Goodreads: </strong>4/5</p>
+<h2><strong>Best Python Books for Intermediates/Advanced Coders…</strong></h2>
+<h3>26. Introduction to Machine Learning with Python: A Guide for Data Scientists</h3>
+<p><img class="aligncenter size-full wp-image-42110" src="https://linuxhint.com/wp-content/uploads/2019/06/26-1.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author</strong>: <em>Andreas Muller</em><br>
+<a href="https://amzn.to/2WnZPjm"><strong><em>Buy Here</em></strong></a></p>
+<p>So talking about this book, the book gives a competitive edge to a programmer in comparison with other programmers. Having knowledge of machine learning is very crucial to solve the problems faced by companies hence this book will teach you how to build a practical machine learning applications and frequent use of them in the big companies.</p>
+<p>If you go through this whole book you will come across many concepts, models, advanced methods, machine learning algorithms and many more things which will help you to understand and grasp Python Language easily.</p>
+<p>The book focuses more on practical applications of Python rather than theory behind it.</p>
+<p><a href="https://amzn.to/2WnZPjm"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon:&nbsp; </strong>3.9/5<br>
+<strong>Goodreads:&nbsp;</strong>4.34/5</p>
+<h3>27. Fluent Python: Clear, Concise, and Effective Programming, 1<sup>st</sup> Edition</h3>
+<p><img class="aligncenter size-full wp-image-42111" src="https://linuxhint.com/wp-content/uploads/2019/06/27-1.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Luciano Ramalho</em><br>
+<a href="https://amzn.to/2Wt3WL0"><strong><em>Buy Here</em></strong></a></p>
+<p>Many programmers have basic idea about the Python but very few are excellent in it. Being a good programmer is not only meant to develop a Python based application but have to draw productivity of out of it.</p>
+<p>Keeping this concern in mind author Luciano Ramalho has put very simple and easy to grasp language which will help a user to become proficient in Python.</p>
+<p>The book comprises of Python data model, data structure, functions as objects, objects oriented idioms, control flow and meta programming.</p>
+<p><a href="https://amzn.to/2Wt3WL0"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.4/5<br>
+<strong>Goodreads:&nbsp; </strong>4.68/5</p>
+<h3><strong>28. Programming Python: Powerful object-oriented programming</strong></h3>
+<p><a href="https://linuxhint.com/wp-content/uploads/2019/06/programming-python-mark-lutz.jpg"><img src="https://linuxhint.com/wp-content/uploads/2019/06/programming-python-mark-lutz.jpg" alt="" width="260" height="248" class="aligncenter size-full wp-image-42154"></a></p>
+<p><strong>Author: </strong><em>Mark Lutz</em><br>
+<a href="https://amzn.to/2KCtxPm"><strong><em>Buy Here</em></strong></a></p>
+<p>Learning Python language is not a big deal now-a-days but using it in proper and concise manner and getting your work done out of it is a big task. This book covers all the necessary things a programmer should know to work efficiently.</p>
+<p>In this book author Mark Lutz has given many examples related to the use of Python in daily life to make user more clear and understandable of it.</p>
+<p>This book includes topics like quick python tour, GUI programming, more ways to apply Python, system programming and internet programming, etc.</p>
+<p><a href="https://amzn.to/2KCtxPm"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4/5<br>
+<strong>Goodreads: </strong>3.96/5</p>
+<h3>29. Effective Python: 59 Specific Ways to Write Better Python</h3>
+<p><img class="aligncenter  wp-image-42113" src="https://linuxhint.com/wp-content/uploads/2019/06/29-1-754x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Brett Slatkin</em><br>
+<a href="https://amzn.to/2MM25Bw"><strong><em>Buy Here</em></strong></a></p>
+<p>If you ask me, this book will be on the top of all books on Python in my recommendation list. Reason behind it is you will get all the required learning in one book. The book consists of many shortcuts to design a code, tips with examples and easier language a user can understand and apply in data science and web development.</p>
+<p>The book “Effective Python” is divided into 59 sections and each section will surely help you to create true Pythonic approach towards programming. Simply, all the necessary things a programmer should know have been uncovered by Slatkin to achieve excellence in programming.</p>
+<p><a href="https://amzn.to/2MM25Bw"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>3.8/5<br>
+<strong>Goodreads:</strong> 4.27/5</p>
+<h3>30. Python Tricks: A Buffet of Awesome Python Features</h3>
+<p><img class="aligncenter  wp-image-42114" src="https://linuxhint.com/wp-content/uploads/2019/06/30-683x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author</strong>: <em>Dan Bader</em><br>
+<a href="https://amzn.to/31nUsnI"><em>Buy Here</em></a></p>
+<p>A step by step narration by Dan Bader makes this book simpler and easier and gives a roadmap to a programmer to improve his knowledge about the Python. Those who are kind of idle in reading books in details; this book perfectly suits them because in “Python Tricks” ample of short tricks have been given.</p>
+<p>Writer “Dan Bader” has written this book in such a way that users will not need to go thoroughly through the book; they can just use short tricks to enhance their knowledge and can take their skill of coding to the next level.</p>
+<p><a href="https://amzn.to/31nUsnI"><em>Buy Here</em></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon</strong>: 4.5/5<br>
+<strong>Goodreads</strong>:&nbsp; 4.42/5</p>
+<h3><strong>31. Deep Learning with Python</strong></h3>
+<p><img class="aligncenter  wp-image-42115" src="https://linuxhint.com/wp-content/uploads/2019/06/31-820x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Francois Chollet</em><br>
+<a href="https://amzn.to/2XzNgCN"><strong><em>Buy Here</em></strong></a></p>
+<p>Many of us get confused by the name of this book but don’t worry I will tell you the actual meaning of <strong>Deep Learning. </strong></p>
+<p>So, Deep Learning is the technology which is used to solve the Artificial Intelligence problems such as image recognition, voice recognition, text-to-speech etc. Also it is that technology which is used in photo tagging at Google and Facebook.</p>
+<p>In the first half of the book author has given many practical examples on coding but the time you finishes the book you feel like an expert in Python.</p>
+<p><a href="https://amzn.to/2XzNgCN"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings: </em></strong><br>
+<strong>Amazon: </strong>3.9/5<br>
+<strong>Goodreads: </strong>4.67/5</p>
+<h3><strong>32. Python 201: Intermediate Python</strong></h3>
+<p><img class="aligncenter size-full wp-image-42116" src="https://linuxhint.com/wp-content/uploads/2019/06/32.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Michael Driscoll</em><br>
+<a href="https://amzn.to/2WqsGnc"><strong><em>Buy Here</em></strong></a></p>
+<p>Python 201 is the sequel of book Python 101 by Michael Driscoll. This book is mainly for those intermediate level Python programmer who are confident enough in their basic knowledge about Python and now wondering to reach at its next level.</p>
+<p>I would suggest the beginners not to refer this book as there is not any chapter which will help beginners to start off with Python. However, it is one of the best books for advanced programmers.</p>
+<p><a href="https://amzn.to/2WqsGnc"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.1/5<br>
+<strong>Goodreads:&nbsp; </strong>3.53/5</p>
+<h3>33. Python Testing with Pytest: Simple, Rapid, Effective, and Scalable</h3>
+<p><img class="aligncenter size-full wp-image-42117" src="https://linuxhint.com/wp-content/uploads/2019/06/33.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Brian Okken</em><br>
+<a href="https://amzn.to/2WucBwt"><strong><em>Buy Here</em></strong></a></p>
+<p>Testing is very important part of programming, quality of tests performed on particular program or web application will determine the quality and responsiveness of end-product.</p>
+<p>Pytest is second to none when it comes to choosing testing framework which is feature rich, API independent and flexible. This book will easily guide you through all the concepts of Python testing with Pytest.</p>
+<p><a href="https://amzn.to/2WucBwt"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon:&nbsp; </strong>4.6/5<br>
+<strong>Goodreads: </strong>4.11/5</p>
+<h3>34. Python for Data Analysis: Data Wrangling with Pandas, NumPy, and Ipython</h3>
+<p><img class="aligncenter  wp-image-42118" src="https://linuxhint.com/wp-content/uploads/2019/06/34-802x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author</strong>: Wes McKinney<br>
+<a href="https://amzn.to/2KEpVwb"><strong><em>Buy Here</em></strong></a></p>
+<p>Data analysis is one of the important areas in Python language. Python for Data Analysis is related with the manipulating, processing, cleaning and crunching of the data in Python.</p>
+<p>This book is full of practical based case studies which will make it easier to a programmer to understand Data Science thoroughly and he would be able to solve large set of problems effectively.</p>
+<p>It is proved to be one of the best books because it is concerned with the data analysis which is the need of current market and this is very crucial to have this skill for a programmer.</p>
+<p><a href="https://amzn.to/2KEpVwb"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.1/5<br>
+<strong>Goodreads: </strong>4.1/5</p>
+<h3>35. Python for Finance: Mastering Data-Driven Finance, Second Edition</h3>
+<p><img class="aligncenter  wp-image-42119" src="https://linuxhint.com/wp-content/uploads/2019/06/35-793x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Yves Hilpisch</em><br>
+<a href="https://amzn.to/2MD2w0T"><strong><em>Buy Here</em></strong></a></p>
+<p>Python has become one of the widely spread and most usable languages and now-a-days a large number of companies are adapting Python as their core language in systems such as risk management and problem solving.</p>
+<p>Out of all departments in companies, Finance is the one which requires huge set up of system which is coded in Python now-a-days. Author Yves Hilpisch has awesomely explained the importance and need of Python in Finance with practical examples which make a book more interesting. I highly recommend this book to those programmers who are interested in Finance and would love to code Python in Finance.</p>
+<p><a href="https://amzn.to/2MD2w0T"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong><br>
+<strong>Goodreads: </strong>3.67/5</p>
+<h3>36. Hands-On Unsupervised Learning Using Python: How to Build Applied Machine Learning Solutions from Unlabeled Data</h3>
+<p><img class="aligncenter size-full wp-image-42120" src="https://linuxhint.com/wp-content/uploads/2019/06/36.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author</strong>: <em>Ankur A. Patel</em><br>
+<a href="https://amzn.to/2WqsOTI"><strong><em>Buy Here</em></strong></a></p>
+<p>We have already discussed upon a book on machine leaning i.e. Introdution to Machine Learning with Python. The current book is advanced version of above book. In this book the author Ankur Patel has explained how to derive machine learning solutions from unlabeled data.</p>
+<p>Here two major frameworks have been discussed i. e. Scikit and TensorFlow using Keras. These frameworks are the focal points in this book.</p>
+<p>Those who have sufficient experience in Python, in matter of time they will be expert in Machine Learning if they refer this book.</p>
+<p><a href="https://amzn.to/2WqsOTI"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings: </em></strong><br>
+<strong>Amazon: </strong>5/5<br>
+<strong>Goodreads: </strong>2.5/5</p>
+<h3>37. Web Scraping with Python: Collecting More Data from the Modern Web</h3>
+<p><img class="aligncenter  wp-image-42121" src="https://linuxhint.com/wp-content/uploads/2019/06/37-793x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Ryan Mitchell</em><br>
+<a href="https://amzn.to/2XAig5L"><strong><em>Buy Here</em></strong></a></p>
+<p>The book Web Scraping with Python is mainly divided into two parts. In Part 1 writer talks about Web Scraping Mechanism whereas in the Part 2 a huge range of tools and applications which would be needed in the web scraping have discussed.</p>
+<p>This book is all about storing and extracting the data whenever it is needed.</p>
+<p><a href="https://amzn.to/2XAig5L"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon:&nbsp; </strong>5/5<br>
+<strong>Goodreads:&nbsp; </strong>4.15/5</p>
+<h3>38. Impractical Python Projects: Playful Programming Activities to Make You Smarter</h3>
+<p><img class="aligncenter size-full wp-image-42122" src="https://linuxhint.com/wp-content/uploads/2019/06/38.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>Lee Vaughan</em><br>
+<a href="https://amzn.to/2MDucTb"><strong><em>Buy Here</em></strong></a></p>
+<p>Just like the name of book it is a kind of fun book where a programmer can enhance his skills having casual approach towards book and at the same time he will be entertained while learning because book has a collection of many fun and educational projects.</p>
+<p>Author Lee Vaughan has written this book especially for those who have ended up reading beginners’ books and now wondering to expand their basic knowledge.</p>
+<p><a href="https://amzn.to/2MDucTb"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon:&nbsp; </strong>4.7/5<br>
+<strong>Goodreads:&nbsp; </strong>4.54/5</p>
+<h3>39.&nbsp;Mastering Python Networking: Your one-stop solution to using Python for network automation, DevOps, and Test-Driven Development, 2nd Edition</h3>
+<p><a href="https://linuxhint.com/wp-content/uploads/2019/06/mastering_python_networking.jpeg"><img src="https://linuxhint.com/wp-content/uploads/2019/06/mastering_python_networking.jpeg" alt="" width="260" height="248" class="aligncenter size-full wp-image-42157"></a></p>
+<p><strong>Author</strong>: <em>Eric Chou</em><br>
+<strong><a href="https://amzn.to/2KApHpI"><em>Buy Here</em></a></strong></p>
+<p>For network engineering Python is the perfect language to start with as it enables a programmer to face complicated networking problems effectively.</p>
+<p>From network device automation to advanced network related tasks have been covered here. In this way you will come across many unknown things which will add on in your Python knowledge.</p>
+<p><strong><a href="https://amzn.to/2KApHpI"><em>Buy Here</em></a></strong><br>
+<em><strong>Ratings</strong>:</em><br>
+<strong>Amazon</strong>:&nbsp; 5/5</p>
+<h3>40. Math Adventures with Python: An Illustrated Guide to Exploring Math with Code</h3>
+<p><img class="aligncenter  wp-image-42124" src="https://linuxhint.com/wp-content/uploads/2019/06/40-1-772x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author</strong>: <em>Peter Farrell</em><br>
+<a href="https://amzn.to/2MR6l2H"><em><strong>Buy</strong> Here</em></a></p>
+<p>Math is in everything out there in the universe but many of us always in a try to avoid or run away from math but no need to worry I have brought you the best book which will definitely help you to solve wide range of math problems faced in Python coding. Some of the crucial mathematical concepts such as trigonometry, algebra and matrices have been covered in this book.</p>
+<p>Key features of this book are 2D and 3D graphics, colorful designs, Koch snowflake, secret codes using genetic algorithm etc.</p>
+<p><a href="https://amzn.to/2MR6l2H"><em><strong>Buy</strong> Here</em></a><br>
+<em><strong>Ratings</strong>:</em><br>
+<strong>Amazon</strong>:&nbsp; 4/5<br>
+<strong>Goodreads</strong>: 3.75/5</p>
+<h3>41.&nbsp; Numerical Python: Scientific Computing and Data Science Applications with NumPy, SciPy and Matplotlib</h3>
+<p><img class="aligncenter size-full wp-image-42125" src="https://linuxhint.com/wp-content/uploads/2019/06/41-1.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author</strong>: <em>Robert Johansson</em><br>
+<a href="https://amzn.to/2EYUKIe"><strong><em>Buy Here</em></strong></a></p>
+<p>Numerical Python by Robert Johansson is the latest updated edition where author has explained how to build Data science applications using open source numerical Python packages such as NumPy, SciPy and Matplotlib.</p>
+<p>First few pages of the book may not catch the attention of reader but as he reaches to the end he will be familiar with the many computing techniques which will build up confidence and he will be proficient in coding advanced numerical Python language.</p>
+<p><a href="https://amzn.to/2EYUKIe"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>5/5<br>
+<strong>Goodreads:</strong></p>
+<h3>42. Serious Python: Black-Belt Advice on Deployment, Scalability, Testing, and More</h3>
+<p><img class="aligncenter  wp-image-42126" src="https://linuxhint.com/wp-content/uploads/2019/06/42-775x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author</strong>: <em>Julien Danjou</em><br>
+<a href="https://amzn.to/2KFLvQT"><strong><em>Buy Here</em></strong></a></p>
+<p>As you go deep into the Python, many difficult problems come on the way and these problems should be solved in less time hence Serious Pythons has brought an easier way to tackle those problems. If one uses this book he will be able to overcome his silly mistakes and would take his Python to next level.</p>
+<p>Author Juliem Danjou is an expert in the Python and learning from such an expert will definitely lead you towards your desired level in Python with this book <strong>Serious Python. </strong></p>
+<p><a href="https://amzn.to/2KFLvQT"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon:&nbsp; </strong>5/5<br>
+<strong>Goodreads:&nbsp; </strong>4/5</p>
+<h3>43. Black Hat Python: Python Programming for Hackers and Pentesters</h3>
+<p><a href="https://linuxhint.com/wp-content/uploads/2019/06/black_hat_python.jpg"><img src="https://linuxhint.com/wp-content/uploads/2019/06/black_hat_python.jpg" alt="" width="260" height="248" class="aligncenter size-full wp-image-42159"></a><br>
+<strong>Author: </strong><em>Justin Seitz</em><br>
+<a href="https://amzn.to/2WtA5ls"><strong><em>Buy Here</em></strong></a></p>
+<p>Unlike the other books this book is known for its darker side of Python capabilities. This is the fun read book for the young hackers who are willing to learn most powerful hacking tools.</p>
+<p>Author Justin Seitz( writer of best-selling book <strong>Gray Hat Python</strong>) is one of the most popular hackers and has covered wide range of topics which might not lead a user to become an excellent hacker but will surely help him to start with his hacking career.</p>
+<p><a href="https://amzn.to/2WtA5ls"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.7/5<br>
+<strong>Goodreads: </strong>4.07/5</p>
+<h3>44. Django for APIs: Build web APIs with Python and Django</h3>
+<p><img class="aligncenter size-full wp-image-42128" src="https://linuxhint.com/wp-content/uploads/2019/06/44.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author: </strong><em>William S. Vincent</em><br>
+<a href="https://amzn.to/2EZD8w6"><strong><em>Buy Here</em></strong></a></p>
+<p>This one is for those who are really expert in Python because Django for APIs by William S. Vincent guides you through developing fully responsive web application with complete front-end and back-end developed with Django API and Python.</p>
+<p>Chapter wise this book guides you through developing user authentication mechanism, permission mechanism and creating 3 Django back-ends: a Library API, Todo API and Blog API.sss</p>
+<p><a href="https://amzn.to/2EZD8w6"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>5/5</p>
+<h3>45. Python Machine Learning: Machine Learning and Deep Learning with Python, scikit-learn, and TensorFlow, 2nd Edition</h3>
+<p><img class="aligncenter size-full wp-image-42129" src="https://linuxhint.com/wp-content/uploads/2019/06/45.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author</strong>: <em>Sebastian Raschka and Vahid Mirjalili</em><br>
+<a href="https://amzn.to/31lcpU3"><strong><em>Buy Here</em></strong></a></p>
+<p>The book is all about practical based machine learning applications and how to use them in real life. Those who want to take their Python skills from good to great and want to extend their machine learning knowledge, this is the book they are wondering for.</p>
+<p>This is the updated book from Python open source libraries and provides practical tools and techniques to be effective and efficient in machine learning, deep learning and key frameworks in data science.</p>
+<p><a href="https://amzn.to/31lcpU3"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon:&nbsp; </strong>3.8/5<br>
+<strong>Goodreads: </strong>4.28/5</p>
+<h3>46. Python Programming: A Step By Step Guide from Beginner to Expert</h3>
+<p><img class="aligncenter size-full wp-image-42130" src="https://linuxhint.com/wp-content/uploads/2019/06/46.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author</strong>: <em>Anthony Brun</em><br>
+<a href="https://amzn.to/2WOMoxd"><strong><em>Buy Here</em></strong></a></p>
+<p>A very popular and best-selling book which is recommendable for both kinds of people those who are new to Python and those who have basic experience of language and now willing to learn advanced Python.</p>
+<p>A beginner does not need to refer another book for advanced Python, he will get all in one book.</p>
+<p><a href="https://amzn.to/2WOMoxd"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon:&nbsp; </strong>3.7/5<br>
+<strong>Goodreads: </strong>3.07/5</p>
+<h3>47. Creative Coding in Python: 30+ Programming Projects in Art, Games, and More</h3>
+<p><img class="aligncenter  wp-image-42131" src="https://linuxhint.com/wp-content/uploads/2019/06/47-890x1024.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author</strong>: <em>Sheena Vaidyanathan</em><br>
+<a href="https://amzn.to/2F0Wgtz"><em>Buy Here</em></a></p>
+<p>There are some people who don’t do their work in normal way, they always want something different and creative in their work.</p>
+<p>So, I brought the book which is perfectly suitable for those kinds of people. User can learn new creative coding techniques and it will make a language more excited.</p>
+<p><a href="https://amzn.to/2F0Wgtz"><em>Buy Here</em></a><br>
+<em><strong>Ratings:</strong> </em><br>
+<strong>Amazon</strong>: 5/5<br>
+<strong>Goodreads</strong>: 4.35/5</p>
+<h3>48. Python Machine Learning: The Ultimate Beginner’s Guide to Learn Python Machine Learning Step by Step</h3>
+<p><img class="aligncenter size-full wp-image-42132" src="https://linuxhint.com/wp-content/uploads/2019/06/48.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author</strong>: <em>Ryan Turner</em><br>
+<a href="https://amzn.to/2MxjcXh"><strong><em>Buy Here</em></strong></a></p>
+<p>We have already seen many books on machine learning and this book is one of them. Machine learning is a vast concept in Python and every programmer should have the knowledge about machine learning.</p>
+<p>This book adds value in the existing knowledge of a programmer and helps in perform more complex task. The step by step narration of this book makes it easier to understand.</p>
+<p><a href="https://amzn.to/2MxjcXh"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon: </strong>4.4/5<br>
+<strong>Goodreads:&nbsp; </strong>3.5/5</p>
+<h3>49. Python: The Complete Reference</h3>
+<p><img class="aligncenter size-full wp-image-42133" src="https://linuxhint.com/wp-content/uploads/2019/06/49.jpg" alt="" width="260" height="248"></p>
+<p><strong>Author</strong>: <em>Martin C. Brown</em><br>
+<a href="https://amzn.to/2WRk7WI"><em>Buy Here</em></a></p>
+<p>Python is an open source programming language which is used in large number of companies for their web development and software development and these two are the main advantages of Python.</p>
+<p>This book guides you how to build complex application and a complete knowledge to the beginners as well as experienced programmers.</p>
+<p><a href="https://amzn.to/2WRk7WI"><em>Buy Here</em></a><br>
+<em><strong>Ratings</strong>:</em><br>
+<strong>Amazon</strong>: 3.8/5<br>
+<strong>Goodreads</strong>: 3.91/5</p>
+<h3>50. Python Essential Reference</h3>
+<p><a href="https://linuxhint.com/wp-content/uploads/2019/06/python_essential_refernce.jpg"><img src="https://linuxhint.com/wp-content/uploads/2019/06/python_essential_refernce.jpg" alt="" width="260" height="248" class="aligncenter size-full wp-image-42161"></a><br>
+<strong>Author: </strong><em>David M. Beazley</em><br>
+<a href="https://amzn.to/2K6eWvV"><strong><em>Buy Here</em></strong></a></p>
+<p>Author David M. Beazley has covered new features like new style classes, unification of types and classes, xmlrpclip, intertools, bz2 and optparse. These new features add on values to the book and make it one of the most reliable ones.</p>
+<p>It guides you how to build complex modules effectively in less time and helps you to take yourself to the beyond of this Python world.</p>
+<p><a href="https://amzn.to/2K6eWvV"><strong><em>Buy Here</em></strong></a><br>
+<strong><em>Ratings:</em></strong><br>
+<strong>Amazon:&nbsp; </strong>4.4/5<br>
+<strong>Goodreads: </strong>4.21/5</p>
+<p>So these are the best 50 Python books available on Amazon which you can read for learning and brushing up your skills in Python programming language and its every growing world of Artificial Intelligence and Machine Learning. Get in touch with us at <a href="https://twitter.com/linuxhint">@LinuxHint</a> and <a href="https://twitter.com/SwapTirthakar">@SwapTirthakar</a> .</p>
+</div>
+	<div id="AdThrive_Below_Post_1_tablet" class="adthrive-ad adthrive-below-post adthrive-below-post-1"></div></div>
+
+	
+			<footer class="entry-footer">
+			<div class="meta-tags">
+							</div>
+		</footer>
+	
+	
+	 
+</article>
+		
+		
+		</main>
+
+		
+		
+					
+	<section class="main-box mbt-border-top author-box">
+
+		<h3 class="main-box-title">About the author</h3>
+
+		<div class="main-box-inside">
+
+		<div class="data-image">
+			<img src="https://linuxhint.com/wp-content/uploads/2018/02/swap-150x150.jpg" width="112" height="112" alt="Swapnil Tirthakar" class="avatar avatar-112 wp-user-avatar wp-user-avatar-112 alignnone photo">		</div>
+		
+		<div class="data-content">
+			<h4 class="author-title">Swapnil Tirthakar</h4>
+			<div class="data-entry-content">
+				<p>A Software Engineer who loves football and passionate about traveling. I often spend my free time playing with gadgets and exploring new possibilities in tech world.  I am Linux enthusiast and have about 6 years of experience in web development. I have good command on Python, Java, SQL and system security.</p>
+			</div>
+		</div>
+
+		</div>
+
+		<div class="vce-content-outside">
+			<div class="data-links">
+					<a href="https://linuxhint.com/author/swapnil/" class="vce-author-link vce-button">View all posts</a>
+			</div>
+			<div class="vce-author-links">
+											
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+												
+									
+			</div>
+		</div>
+
+	</section>
+
+		
+		
+
+	</div>
+
+	
+</div>
+
+
+
+
+	<footer id="footer" class="site-footer">
+
+				<div class="container">
+			<div class="container-fix">
+										<div class="bit-1">
+									</div>
+						</div>
+		</div>
+		
+					<div class="container-full site-info">
+				<div class="container">
+					
+						
+
+											<div class="vce-wrap-center">
+							<p><strong>Linux Hint LLC<br>
+1669 Holenbeck Ave, #2-244, Sunnyvale, CA 94087<br>
+editor@linuxhint.com</strong></p>						</div>
+					
+			
+				</div>
+			</div>
+		
+
+	</footer>
+
+
+</div>
+</div>
+
+<a href="javascript:void(0)" id="back-top"><i class="fa fa-angle-up"></i></a>
+
+<div id="amzn-assoc-ad-1438d7d4-c08f-4515-a13e-60829ea462e5"></div><script async="" src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=1438d7d4-c08f-4515-a13e-60829ea462e5"></script><script>
+(function (w, d) {
+	var s = d.createElement('script');
+	s.src = "https://dstik9906m659.cloudfront.net/eVIfRVUUblIfRlskRCEyUu.js";
+	s.defer = true;
+	d.body.appendChild(s);
+})(window, document);
+</script><script src="https://dstik9906m659.cloudfront.net/eVIfRVUUblIfRlskRCEyUu.js" defer=""></script>
+<script type="text/javascript" src="https://linuxhint.com/wp-includes/js/imagesloaded.min.js?ver=3.2.0"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var vce_js_settings = {"sticky_header":"","sticky_header_offset":"700","sticky_header_logo":"","logo":"https:\/\/linuxhint.com\/wp-content\/uploads\/2019\/11\/Logo-final.png","logo_retina":"","logo_mobile":"","logo_mobile_retina":"","rtl_mode":"0","ajax_url":"https:\/\/linuxhint.com\/wp-admin\/admin-ajax.php","ajax_wpml_current_lang":null,"ajax_mega_menu":"1","mega_menu_slider":"","mega_menu_subcats":"","lay_fa_grid_center":"","full_slider_autoplay":"","grid_slider_autoplay":"","grid_big_slider_autoplay":"","fa_big_opacity":{"1":"0.5","2":"0.7"},"top_bar_mobile":"1","top_bar_mobile_group":"","top_bar_more_link":"More"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://linuxhint.com/wp-content/themes/voice/assets/js/min.js?ver=2.9.2"></script>
+<script type="text/javascript" src="https://linuxhint.com/wp-content/plugins/youtube-embed-plus/scripts/fitvids.min.js?ver=13.2.0.2"></script>
+<script type="text/javascript" src="https://linuxhint.com/wp-includes/js/wp-embed.min.js?ver=5.3.2"></script>
+
+
+<div id="sidr-main" class="sidr left"><div class="sidr-inner">
+	<ul id="sidr-id-vce_main_navigation_menu" class="sidr-class-nav-menu"><li id="sidr-id-menu-item-18534" class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-home sidr-class-menu-item-18534"><a href="https://linuxhint.com">Home</a></li><li id="sidr-id-menu-item-28744" class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-28744"><a target="_blank" rel="noopener noreferrer" href="https://help.linuxhint.com/">Help Forum</a></li><li id="sidr-id-menu-item-19816" class="sidr-class-menu-item sidr-class-menu-item-type-post_type sidr-class-menu-item-object-page sidr-class-menu-item-19816"><a href="https://linuxhint.com/subscribe-to-linuxhint-com/">Subscribe!</a></li><li id="sidr-id-menu-item-30754" class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-30754"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/c/linuxhint">Videos</a></li><li id="sidr-id-menu-item-33966" class="sidr-class-menu-item sidr-class-menu-item-type-post_type sidr-class-menu-item-object-page sidr-class-menu-item-33966"><a href="https://linuxhint.com/write-for-linuxhint-com/">Write For Us</a></li><li id="sidr-id-menu-item-23466" class="sidr-class-menu-item sidr-class-menu-item-type-post_type sidr-class-menu-item-object-page sidr-class-menu-item-23466"><a href="https://linuxhint.com/policies-and-privacy/">Privacy</a></li><li id="sidr-id-menu-item-37290" class="sidr-class-menu-item sidr-class-menu-item-type-post_type sidr-class-menu-item-object-page sidr-class-menu-item-37290"><a href="https://linuxhint.com/terms-of-use/">Terms</a></li><li class="sidr-class-search-header-wrap"><a class="sidr-class-search_header" href="javascript:void(0)"><i class="sidr-class-fa sidr-class-fa-search"></i></a><ul class="sidr-class-search-header-form-ul"><li><form class="sidr-class-vce-search-form" action="https://linuxhint.com/" method="get">
+	<input name="s" class="sidr-class-vce-search-input" size="20" type="text" value="Type here to search..." onfocus="(this.value == 'Type here to search...') &amp;&amp; (this.value = '')" onblur="(this.value == '') &amp;&amp; (this.value = 'Type here to search...')" placeholder="Type here to search...">
+		<button type="submit" class="sidr-class-vce-search-submit"><i class="sidr-class-fa sidr-class-fa-search"></i></button> 
+</form></li></ul></li></ul></div></div><iframe id="__uspapiLocator" name="__uspapiLocator" style="display: none;"></iframe><div id="AdThrive_Footer_1_tablet" class="adthrive-ad adthrive-footer adthrive-footer-1 adthrive-sticky"></div><div class="adthrive-comscore adthrive-footer-message"><span>An Elite CafeMedia Publisher</span></div><iframe src="https://s.amazon-adsystem.com/iu3?cm3ppd=1&amp;d=dtb-pub&amp;csif=t&amp;dl=gg_rbd_oath_dm_sovrn_dmx_3lift" style="display: none;"></iframe></body></html>
