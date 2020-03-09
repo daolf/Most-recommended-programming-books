@@ -3,7 +3,7 @@
 ## Table of Content
 
 - [Methodology](#methodology)
-- [Most recommended programming books](#25-most-recommended-programming-books-of-all-time)
+- [Most recommended Programming books](#25-most-recommended-programming-books-of-all-time)
 - [Most recommended Python books](#25-most-recommended-python-books-of-all-time)
 - [Most recommended JavaScript books (coming soon)](#25-most-recommended-javascript-books-of-all-time)
 - [Most recommended Java books (coming soon)](#25-most-recommended-java-books-of-all-time)
